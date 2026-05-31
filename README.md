@@ -10,6 +10,7 @@ Management Environment
 | Resource | N | N | N | N |
 
 Other Environments
+| Resource Name | Create | Delete | Verify |
 | :--- | :---: | :---: | :---: |
 | Resource | N | N | N | N |
 | Resource | N | N | N | N |
