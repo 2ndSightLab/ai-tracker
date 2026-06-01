@@ -36,41 +36,41 @@ N = Not Done Y = Done B = Broke N/A = not applicable for that resource.
 
 ### Management Environment ###
 
-| Feature | Deploy | Delete | Verify | Tested |
-| :--- | :---: | :---: | :---: | :---: |
-| Environment | N | N | N | N | N |
-| Resource | N | N | N | N | N |
-| TODO | N | N | N | N | N |
+| Feature | Deploy | Delete | Verify | Tested | Code Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| Environment | N | N | N | N | N | N |
+| Resource | N | N | N | N | N | N |
+| TODO | N | N | N | N | N | N |
 
 ### Jobs Environment ###
 
-| Feature | Deploy | Delete | Verify | Tested |
-| :--- | :---: | :---: | :---: | :---: |
-| Environment | N | N | N | N | N |
-| Resource | N | N | N | N | N |
-| TODO | N | N | N | N | N |
+| Feature | Deploy | Delete | Verify | Tested | Code Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| Environment | N | N | N | N | N | N |
+| Resource | N | N | N | N | N | N |
+| TODO | N | N | N | N | N | N |
 
 ### Test Environment ###
 
-| Feature | Deploy | Delete | Verify | Tested |
-| :--- | :---: | :---: | :---: | :---: |
-| Environment | N | N | N | N | N |
-| Resource | N | N | N | N | N |
-| TODO | N | N | N | N | N |
+| Feature | Deploy | Delete | Verify | Tested | Code Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| Environment | N | N | N | N | N | N |
+| Resource | N | N | N | N | N | N |
+| TODO | N | N | N | N | N | N |
 
 ### Prod Environment ###
 
-| Feature | Deploy | Delete | Verify | Tested |
-| :--- | :---: | :---: | :---: | :---: |
-| Environment | N | N | N | N | N |
-| Resource | N | N | N | N | N |
-| TODO | N | N | N | N | N |
+| Feature | Deploy | Delete | Verify | Tested | Code Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| Environment | N | N | N | N | N | N |
+| Resource | N | N | N | N | N | N |
+| TODO | N | N | N | N | N | N |
 
 ### Job Framework ###
-| Feature | Deploy | Delete | Verify | Tested |
-| :--- | :---: | :---: | :---: | :---: |
-| Yubikey Lambda | N | N | N | N | N |
-| Lambda Layer | N | N | N | N | N |
-| API Gateway | N | N | N | N | N |
-| TODO | N | N | N | N | N |
+| Feature | Deploy | Delete | Verify | Tested | Code Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| Yubikey Lambda | N | N | N | N | N | N |
+| Lambda Layer | N | N | N | N | N | N |
+| API Gateway | N | N | N | N | N | N |
+| TODO | N | N | N | N | N | N |
 
