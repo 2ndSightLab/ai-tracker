@@ -30,6 +30,8 @@ Token and infrastructure spend.
 
 Note that cost includes some times when the model was nerfed, billing snafus, and I took most of May off (though my plan rolled over and charged me even though I cancelled it before a trip.)
 
+## Legend
+
 N = Not Done Y = Done B = Broke N/A = not applicable for that resource.
 
 ### Management Environment ###
