@@ -14,6 +14,8 @@ https://teriradichel.substack.com/p/what-ive-vibe-coded-in-25-weeks
 
 I had to take a break for abou three weeks in May. 
 
+Cost (Includes billing snafus and nerfed models): TBD
+
 N = Not Done Y = Done B = Broke
 
 ### Management Environment ###
