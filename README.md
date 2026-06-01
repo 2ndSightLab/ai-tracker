@@ -4,11 +4,11 @@
 
 Track how long it takes and how much it costs to create projects with AI in an attempt to optimize progress.
 
-## Project: AWS Bootstrap Script for AI Agent Environment 
+## Project Objective: AWS Bootstrap Script for AI Agent Environment 
 
-Build a script to deploy, delete, and test an AWS environment to securely run AI agents. This includes my organizational framework and security controls to segregate environemnts and monitor AWS activity. Specifically I want to segregate my security testing, development, production, and management environments. The framework also sets up my organization with things like budgets and security services used by delegated administrators (Guard Duty, etc.)
+Build a script to deploy, delete, and test an AWS environment to securely run AI agents. This includes my organizational framework and security controls to segregate environemnts and monitor AWS activity. Specifically I want to segregate my security testing, development, production, and management environments. The framework also sets up my organization with monitoring including budgets and security services used by delegated administrators (Guard Duty, etc.)
 
-The whole point of this is to be able to quickly spin up and tear down environments for projects. As for agents I want to be able to quickly deploy new ideas. That is in part acheived by my job framework wich is the follow on project to this one, but I need first and foremost have the secure base infrastructure in which to deploy my agent framework and agent resources. If I am running AI agents in an enviroment and they mess it up, I can tear down the whole environment and rebuild it easily. In addition, it ensures that my agents cannot affect production resources with proper security boundaries. When something is deployed incorrectly or I have a billing issue I cannot fix, I can tear down the environment to stop the biling and build a new one.
+The whole point of this is to be able to quickly spin up and tear down environments for projects. As for agents I want to be able to quickly deploy new ideas. That is in part acheived by my job framework wich is the follow on project to this one, but I need first and foremost have the secure base infrastructure in which to deploy my agent framework and agent resources. I also spin up separate environments for each penetration tests so one test cannot affect another. If I am running AI agents in an enviroment and they mess it up, I can tear down the whole environment and rebuild it easily. In addition, it ensures that my agents cannot affect production resources with proper security boundaries. When something is deployed incorrectly or I have a billing issue I cannot fix, I can tear down the environment to stop the biling and build a new one.
 
 A full series on what I am developing in this project can be found here:
 
