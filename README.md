@@ -4,7 +4,7 @@
 
 Track how long it takes and how much it costs to create projects with AI in an attempt to optimize progress.
 
-## AWS Bootstrap Script for AI Agent Environment
+## AWS Bootstrap Script for AI Agent Environment (Project)
 
 Build an AWS environment to securely run AI agents. This includes my organizational framework and security controls to segregate environemnts and monitor AWS activity. Specifically I want to segregate my security testing, development, production, and management environments. The framework also sets up my organization with things like budgets and security services used by delegated administrators (Guard Duty, etc.)
 
