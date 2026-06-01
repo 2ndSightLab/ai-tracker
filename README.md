@@ -31,7 +31,21 @@ N = Not Done Y = Done B = Broke N/A = not applicable for that resource.
 | Environment | N | N | N | N | N |
 | Resource | N | N | N | N | N |
 
-### Other Environments ###
+### Jobs Environment ###
+
+| Resource Name | Deploy | Delete | Verify | Tested |
+| :--- | :---: | :---: | :---: | :---: |
+| Environment | N | N | N | N | N |
+| Resource | N | N | N | N | N |
+
+### Test Environment ###
+
+| Resource Name | Deploy | Delete | Verify | Tested |
+| :--- | :---: | :---: | :---: | :---: |
+| Environment | N | N | N | N | N |
+| Resource | N | N | N | N | N |
+
+### Prod Environment ###
 
 | Resource Name | Deploy | Delete | Verify | Tested |
 | :--- | :---: | :---: | :---: | :---: |
