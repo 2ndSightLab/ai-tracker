@@ -104,14 +104,12 @@ Resources installed in every environment. Some are optinoal.
 | Deployment Route Table | N | N | N | N | N | N |
 | Deployment Security Group | N | N | N | N | N | N |
 | Deployment VPC Ram Shares | N | N | N | N | N | N |
+| Deployment VPC Endpoints | N | N | N | N | N | N |
+| Deployment VPC Endpoints SGs | N | N | N | N | N | N |
 | Delete default VPCs | N | N | N | N | N | N |
 | Lambdas (with VPC) | N | N | N | N | N | N |
 | S3 buckets (with KMS) | N | N | N | N | N | N |
 | Bucket policies | N | N | N | N | N | N |
-| Route 53 Hosted Zone | N | N | N | N | N | N |
-| ACM Certificate | N | N | N | N | N | N |
-| API Gateway | N | N | N | N | N | N |
-| CNAME | N | N | N | N | N | N |
 | SSH Security Group | N | N | N | N | N | N |
 | RDP Security Group | N | N | N | N | N | N |
 | HTTP/HTTPS Security Group | N | N | N | N | N | N |
@@ -207,8 +205,9 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | Auth Security Group | N | N | N | N | N | N |
 | Auth Internet Gateway | N | N | N | N | N | N |
 | Auth Route Table | N | N | N | N | N | N |
-| Auth Security Group | N | N | N | N | N | N |
+| Auth Lambda Security Groups | N | N | N | N | N | N |
 | Auth VPC Endpoints | N | N | N | N | N | N |
+| Auth VPC Endpoint SGs | N | N | N | N | N | N |
 | DynamoDB | N | N | N | N | N | N |
 | Auth Lambdas (With VPC) | N | N | N | N | N | N |
 | Job Base Lambda (With VPC) | N | N | N | N | N | N |
@@ -219,6 +218,10 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | Job Route Table | N | N | N | N | N | N |
 | Job Security Group | N | N | N | N | N | N |
 | Job VPC Endpoints | N | N | N | N | N | N |
+| Route 53 Hosted Zone | N | N | N | N | N | N |
+| ACM Certificate | N | N | N | N | N | N |
+| API Gateway | N | N | N | N | N | N |
+| CNAME | N | N | N | N | N | N |
 
 ### Backup Infrastructure ###
 
