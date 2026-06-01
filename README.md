@@ -8,15 +8,19 @@ Track how long it takes and how much it costs to create projects with AI
 
 This is a project to deploy resources to create AWS environments in an organization. 
 
-I started this project around March 7th.
+I started this project around March 7th. I had to take a break for abou three weeks in May. I haven't really worked on anyting else besides this and blog posts because I keep thinking it is "almost done." I've also been working kind of long hours to do it and figure things out.
 
 https://teriradichel.substack.com/p/what-ive-vibe-coded-in-25-weeks
 
-I had to take a break for abou three weeks in May. 
+I'm writing about how I'm doing this here:
+
+https://teriradichel.substack.com/p/toc-aws-organizations-and-ai-agent
+
+I have multiple steps for amots every reasource: Deploy, Delete and Verifiy. I am tracking whether they are done below. I also indicate B if something broke when I made changes and I'm fixing it. Things break when I refactor the code to add new functionality or fix functional problems or other bugs.
 
 Cost (Includes billing snafus and nerfed models): TBD
 
-N = Not Done Y = Done B = Broke
+N = Not Done Y = Done B = Broke N/A = not applicable for that resource.
 
 ### Management Environment ###
 
@@ -29,5 +33,5 @@ N = Not Done Y = Done B = Broke
 
 | Resource Name | Create | Delete | Verify |
 | :--- | :---: | :---: | :---: |
-| Resource | N | N | N | N |
+| Environment | N | N | N | N |
 | Resource | N | N | N | N |
