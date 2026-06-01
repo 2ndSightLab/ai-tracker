@@ -148,25 +148,25 @@ The management environment contains accounts where my organization deletegated a
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Organization | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Accounts: IAM, Network, Accounting, Org, Security, KMS, Security, Backup | 🟡 | 🔴 | 🟡  | 🔴 | 🔴 | 🔴 |
-| Org resource policy | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Delegate IPAM admin | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Delegate Security Hub admin | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Delegate GuardDuty admin | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Delegate CloudTrail admin | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Delegate AWS Config admin | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Delegate Firewall Manager admin | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Delegate Macie admin | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Delegate Inspector admin | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Delegate IAM Access Analyzer admin | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Delegate Audit Manager admin | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Delegate Health admin | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Delegate Detective admin | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Delegate Backup admin | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Delegate Network Manager admin | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Delegate VPC Reachability Analyzer admin | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Delegate Cost Optimization Hub admin | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Delegate Compute Optimizer admin | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| IPAM | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Org resource policy | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Delegate IPAM admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Delegate Security Hub admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Delegate GuardDuty admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Delegate CloudTrail admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Delegate AWS Config admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Delegate Firewall Manager admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Delegate Macie admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Delegate Inspector admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Delegate IAM Access Analyzer admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Delegate Audit Manager admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Delegate Health admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Delegate Detective admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Delegate Backup admin || 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Delegate Network Manager admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Delegate VPC Reachability Analyzer admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Delegate Cost Optimization Hub admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Delegate Compute Optimizer admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| IPAM | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Configure GuardDuty | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Configure Security Hub | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Configure CloudTrail | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -177,10 +177,21 @@ The management environment contains accounts where my organization deletegated a
 | Configure Security Alerts | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Deny-All OU | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
+### SCPs ##
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| kms-account-allowed-services [env] | 🔴 | 🔴 | 🟢  | 🔴 | 🔴 | 🔴 |
+| deny-external-access [env] | 🔴 | 🔴 | 🟢  | 🔴 | 🔴 | 🔴 |
+| always-denied-actions [root] | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| allowed-regions [root]  | 🟢  | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
+| always-denied-actions [env] | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| always-denied-actions [account] | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| deny-leave-organization[root]  | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
+
 ### Web Infrastructure ###
 
 The production environment is where I run production applications and websites.
-
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
