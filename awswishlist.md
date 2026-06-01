@@ -27,3 +27,17 @@ https://builder.aws.com/wishlist/3ETEXLx2zZ9GFzQHFYKqmJBcS9M_w/kiro-in-aws-conso
 🟠 Could not log an issue with Kiro CLI custom agent not deployed in home directory using CLI (not TUI). Also it requires GitHub credentials and I do not give my agents GitHub credentials. https://builder.aws.com/wishlist/3EKpq8aeFC8FgkduqlJg5iioBWN_w/can-you-please-fix-kiro-cli-issue-not-working-with-custom-agent
 
 🟠 Found it really confusing to delete an IPAM pool and IPAM https://builder.aws.com/wishlist/3E46zJ0uQmSowGKuw8FEUBmPa8D_w/very-confusing-to-delete-ipam
+
+🟠 Crazy one that will probably never happen - shared ENIs https://builder.aws.com/wishlist/3CwU2CB8h5G3vPIiMqwh6WAKc6w_w/create-eni-with-proper-networking-and-share-with-ram
+
+🟠 Can't see VPC Flow Logs for shared VPCs in the account to which they are shared. Would like the option to share them: https://builder.aws.com/wishlist/3CkNQ2tBuuFzGSZjuRPUNiENpWC_w/share-vpc-flow-logs-through-ram
+
+🟠 When I share some things with RAM the name of the resource doesn't show up in the account to which it is shared. https://builder.aws.com/wishlist/3CkJD4qHgRT4gx3lcfzzXOb551N_w/ability-to-share-name-of-network-resources-when-sharing
+
+🟠 Anthropic's model told me I could use a shared security group for may lambda functions after it had initially put them in what I thought was the wrong account. So I rearchitected my whole code base to move the to the network account. Then I tested it and no. They have to be in the same account as the lambda function. That is problematic for more reasons than one. I would like to create one security group and share it in some cases but I ended up just refactoring all the code to return it to it's original state. Why can't Lambdas use shared security groups: https://builder.aws.com/wishlist/3CkItsAbmt1Ejyunyk8E2H7NvSo_w/allow-lambda-to-use-ram-shared-security-groups
+
+🟢 Kiro plan mode. Ugh no. THANK YOU. https://builder.aws.com/wishlist/3Bj8bjsMmuiRGwdXYKcr7n4SYiZ_w/kiro-cli-please-confirm-before-going-into-plan-mode-and-provide-shortcut-above-prompt-to-exit-plan-mode
+
+🟠 Automatically end sessions when plan has ended: https://builder.aws.com/wishlist/3BSzYWdtlumRyuB4gSrPyzvY05V_w/automatically-log-me-out-and-terminate-all-sessions-when-kiro-plan-used-up
+
+🟠 Incorrect IP in policy so cannot use IPAddress condition to restrict access to assume role in console with MFA. I get around this by creating a policy that uses the IPAddress for the action that it works with IPAddress but not MFA and MFA with the action that works with MFA but not IPAddress. https://builder.aws.com/wishlist/3BRoMdDzlCs5XBlhZEEEt7OzXMn_w/incorrect-ip-address-in-aws-assume-role-in-cloudtrail-cant-apply-source-ip-condition-in-policies
