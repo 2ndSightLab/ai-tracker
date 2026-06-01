@@ -12,15 +12,15 @@ I started this project around March 7th.
 
 https://teriradichel.substack.com/p/what-ive-vibe-coded-in-25-weeks
 
-I had to take a break for abou three weeks in May.
+I had to take a break for abou three weeks in May. 
 
-Here's how it's going
+N = Not Done Y = Done B = Broke
 
 ### Management Environment ###
 
 | Resource Name | Create | Delete | Verify |
 | :--- | :---: | :---: | :---: |
-| Resource | N | N | N | N |
+| Environment | N | N | N | N |
 | Resource | N | N | N | N |
 
 ### Other Environments ###
