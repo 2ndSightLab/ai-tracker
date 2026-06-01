@@ -50,7 +50,7 @@ Note that cost includes some times when the model was nerfed, billing snafus, an
 
 ## Objectives
 
-N = Not Done Y = Done B = Broke N/A = not applicable for that resource.
+🔴 = Not Done Y = Done B = Broke N/A = not applicable for that resource.
 
 ### Bootstrap Role ###
 
