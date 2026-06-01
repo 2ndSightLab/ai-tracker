@@ -14,6 +14,10 @@ I'm writing about how I'm doing this here:
 
 https://teriradichel.substack.com/p/toc-aws-organizations-and-ai-agent
 
+This environment includes a Yubikey auth mechanism I'm trying to build and the instances I use for pentesting and bug bounties.
+
+https://teriradichel.substack.com/p/mfa-to-run-a-lambda-function
+
 I have multiple steps for amots every reasource: Deploy, Delete and Verifiy. I am tracking whether they are done below. I also indicate B if something broke when I made changes and I'm fixing it. Things break when I refactor the code to add new functionality or fix functional problems or other bugs.
 
 Cost (Includes billing snafus and nerfed models): TBD
