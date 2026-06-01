@@ -38,6 +38,8 @@ N = Not Done Y = Done B = Broke N/A = not applicable for that resource.
 
 ### Management Environment ###
 
+The management environment contains accounts where my organization deletegated administrators exist.
+
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Environment | N | N | N | N | N | N | N |
@@ -46,29 +48,38 @@ N = Not Done Y = Done B = Broke N/A = not applicable for that resource.
 
 ### Jobs Environment ###
 
+The jobs environment is where I can deploy and test jobs and agents.
+
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Environment | N | N | N | N | N | N | N |
 | Resource | N | N | N | N | N | N | N |
 | TODO | N | N | N | N | N | N | N |
 
-### Test Environment ###
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Environment | N | N | N | N | N | N | N |
-| Resource | N | N | N | N | N | N | N |
-| TODO | N | N | N | N | N | N | N |
-
 ### Prod Environment ###
 
+The production environment is where I run production applications and websites.
+
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Environment | N | N | N | N | N | N | N |
 | Resource | N | N | N | N | N | N | N |
 | TODO | N | N | N | N | N | N | N |
 
-### Job Framework ###
+### Test Infrastructure ###
+
+Some enviroments may include penetration testing and security research resources.
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Environment | N | N | N | N | N | N | N |
+| Resource | N | N | N | N | N | N | N |
+| TODO | N | N | N | N | N | N | N |
+
+### Job Framework Infrastructure ###
+
+The job framework infrastructure allows me to quickly and securely run jobs. 
+
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Yubikey Lambda | N | N | N | N | N | N | N |
