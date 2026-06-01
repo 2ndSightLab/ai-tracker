@@ -4,6 +4,12 @@
 
 Track how long it takes and how much it costs to create projects with AI in an attempt to optimize progress.
 
+## Support this research
+
+If you want to support of follow this research consider becoming a paid subscriber on my substack blog. You can also just sign up for free.
+
+https://teriradichel.substack.com
+
 ## Project Objective: AWS Bootstrap Script for AI Agent Environment 
 
 Build a script to deploy, delete, and test an AWS environment to securely run AI agents. This includes my organizational framework and security controls to segregate environemnts and monitor AWS activity. Specifically I want to segregate my security testing, development, production, and management environments. The framework also sets up my organization with monitoring including budgets and security services used by delegated administrators (Guard Duty, etc.)
