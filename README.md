@@ -28,6 +28,10 @@ I'm primarily using Kiro CLI and anthropic models, though I do use Google aimode
 
 https://github.com/2ndSightLab/ai-tracker/blob/main/issues.md
 
+## AWS Wishlist
+
+https://github.com/2ndSightLab/ai-tracker/blob/main/awswishlist.md
+
 ## Time
 
 I started this project around March 7th. I had to take a break for about three weeks in May. I haven't really worked on anyting else besides this and blog posts because I keep thinking it is "almost done." I've also been working kind of long hours to do it and figure things out.
