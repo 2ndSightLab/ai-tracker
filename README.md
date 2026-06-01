@@ -26,14 +26,21 @@ N = Not Done Y = Done B = Broke N/A = not applicable for that resource.
 
 ### Management Environment ###
 
-| Resource Name | Create | Delete | Verify |
+| Resource Name | Deploy | Delete | Verify | Tested |
 | :--- | :---: | :---: | :---: |
 | Environment | N | N | N | N |
 | Resource | N | N | N | N |
 
 ### Other Environments ###
 
-| Resource Name | Create | Delete | Verify |
+| Resource Name | Deploy | Delete | Verify | Tested |
 | :--- | :---: | :---: | :---: |
 | Environment | N | N | N | N |
 | Resource | N | N | N | N |
+
+### Job Framework ###
+| Resource Name | Deploy | Delete | Verify | Tested |
+| Yubikey Lambda | N | N | N | N |
+| Lambda Layer | N | N | N | N |
+| Lambda Layer | N | N | N | N |
+
