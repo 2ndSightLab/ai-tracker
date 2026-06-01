@@ -40,6 +40,7 @@ N = Not Done Y = Done B = Broke N/A = not applicable for that resource.
 | :--- | :---: | :---: | :---: | :---: |
 | Environment | N | N | N | N | N |
 | Resource | N | N | N | N | N |
+| TODO | N | N | N | N | N |
 
 ### Jobs Environment ###
 
@@ -47,6 +48,7 @@ N = Not Done Y = Done B = Broke N/A = not applicable for that resource.
 | :--- | :---: | :---: | :---: | :---: |
 | Environment | N | N | N | N | N |
 | Resource | N | N | N | N | N |
+| TODO | N | N | N | N | N |
 
 ### Test Environment ###
 
@@ -54,6 +56,7 @@ N = Not Done Y = Done B = Broke N/A = not applicable for that resource.
 | :--- | :---: | :---: | :---: | :---: |
 | Environment | N | N | N | N | N |
 | Resource | N | N | N | N | N |
+| TODO | N | N | N | N | N |
 
 ### Prod Environment ###
 
@@ -61,6 +64,7 @@ N = Not Done Y = Done B = Broke N/A = not applicable for that resource.
 | :--- | :---: | :---: | :---: | :---: |
 | Environment | N | N | N | N | N |
 | Resource | N | N | N | N | N |
+| TODO | N | N | N | N | N |
 
 ### Job Framework ###
 | Feature | Deploy | Delete | Verify | Tested |
@@ -68,4 +72,5 @@ N = Not Done Y = Done B = Broke N/A = not applicable for that resource.
 | Yubikey Lambda | N | N | N | N | N |
 | Lambda Layer | N | N | N | N | N |
 | API Gateway | N | N | N | N | N |
+| TODO | N | N | N | N | N |
 
