@@ -80,12 +80,15 @@ Resources installed in every environment. Some are optinoal.
 | Admin user policy | Y | N | N | N | N | N |
 | Admin roles | Y | N | N | N | N | N |
 | Admin role policy | Y | N | N | N | N | N |
-| Deployment Lambdas (no VPC) | N | N | N | N | N | N |
 | S3 buckets (no KMS) | N | N | N | N | N | N |
 | KMS keys | N | N | N | N | N | N |
 | KMS key aliases | N | N | N | N | N | N |
 | KMS policies | N | N | N | N | N | N |
 | AWS Prefix Lists | N | N | N | N | N | N |
+| Deploy S3 Bucket Lambda | N | N | N | N | N | N |
+| Deploy S3 SG | N | N | N | N | N | N |
+| Deploy Netork Lambda | N | N | N | N | N | N |
+| Deploy Netork SG | N | N | N | N | N | N |
 | VPC Flow Logs Role | N | N | N | N | N | N |
 | Remote Access VPC | N | N | N | N | N | N |
 | Remote Access Subnet | N | N | N | N | N | N |
@@ -93,8 +96,14 @@ Resources installed in every environment. Some are optinoal.
 | Remote Access Internet Gateway | N | N | N | N | N | N |
 | Rmemote Access Route Table | N | N | N | N | N | N |
 | Rmemote Access Security Group | N | N | N | N | N | N |
-| Remote access prefix list | N | N | N | N | N | N |
-| Network Ram Share | N | N | N | N | N | N |
+| Remote Access VPC Ram Shares | N | N | N | N | N | N |
+| Deployment VPC | N | N | N | N | N | N |
+| Deplopyment Subnet | N | N | N | N | N | N |
+| Deployment Security Group | N | N | N | N | N | N |
+| Deployment Internet Gateway | N | N | N | N | N | N |
+| Deployment Route Table | N | N | N | N | N | N |
+| Deployment Security Group | N | N | N | N | N | N |
+| Deployment VPC Ram Shares | N | N | N | N | N | N |
 | Delete default VPCs | N | N | N | N | N | N |
 | Lambdas (with VPC) | N | N | N | N | N | N |
 | S3 buckets (with KMS) | N | N | N | N | N | N |
@@ -182,7 +191,6 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | Deploy Lambdas (no VPC) | N | N | N | N | N | N |
 | S3 buckets (no KMS) | N | N | N | N | N | N |
 | KMS keys | N | N | N | N | N | N |
-| VPCs | N | N | N | N | N | N |
 | Lambdas (with VPC) | N | N | N | N | N | N |
 | S3 buckets (with KMS) | N | N | N | N | N | N |
 | Bucket policies | N | N | N | N | N | N |
@@ -204,6 +212,13 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | DynamoDB | N | N | N | N | N | N |
 | Auth Lambdas (With VPC) | N | N | N | N | N | N |
 | Job Base Lambda (With VPC) | N | N | N | N | N | N |
+| Job VPC | N | N | N | N | N | N |
+| Job Subnet | N | N | N | N | N | N |
+| Job Security Group | N | N | N | N | N | N |
+| Job Internet Gateway | N | N | N | N | N | N |
+| Job Route Table | N | N | N | N | N | N |
+| Job Security Group | N | N | N | N | N | N |
+| Job VPC Endpoints | N | N | N | N | N | N |
 
 ### Backup Infrastructure ###
 
