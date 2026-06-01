@@ -16,7 +16,7 @@ I had to take a break for abou three weeks in May.
 
 Here's how it's going
 
-##3 Management Environment ###
+### Management Environment ###
 
 | Resource Name | Create | Delete | Verify |
 | :--- | :---: | :---: | :---: |
