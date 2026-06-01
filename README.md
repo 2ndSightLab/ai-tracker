@@ -20,7 +20,15 @@ https://teriradichel.substack.com/p/mfa-to-run-a-lambda-function
 
 I have multiple steps for amots every reasource: Deploy, Delete and Verifiy. I am tracking whether they are done below. I also indicate B if something broke when I made changes and I'm fixing it. Things break when I refactor the code to add new functionality or fix functional problems or other bugs.
 
-Cost (Includes billing snafus and nerfed models): TBD
+## Cost: ##
+
+Token and infrastructure spend.
+
+| March | April | May |
+| :---: | :---: | :---: | 
+| $ | $ | $ |
+
+Note that cost includes some times when the model was nerfed, billing snafus, and I took most of May off (though my plan rolled over and charged me even though I cancelled it before a trip.)
 
 N = Not Done Y = Done B = Broke N/A = not applicable for that resource.
 
