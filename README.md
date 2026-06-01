@@ -59,7 +59,7 @@ Role, policy and permission boundary deployed in root management account in AWS 
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Role | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
 | Policy | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
-| Permission Boundary | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
+| Permission Boundary | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 |
 | Trust policy with MFA and IP condition  | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
 
 ### AWS CLI Auth ###
@@ -78,7 +78,7 @@ Separate reusable project that handles configuring role profiles and role assump
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Reusaable Numbered Menu with Filter by letters | N/A | N/A | N/A | 🟢 | 🔴 | 🔴 |
-| Reusable y/n/e prompt | N/A | N/A | N/A | 🟢  | 🔴 | 🔴 |
+| Reusable y/n/e prompt | N/A | N/A | N/A | 🟢 | 🔴 | 🔴 |
 | Step completion prompt | N/A | N/A | N/A | 🟡 | 🔴 | 🔴 |
 
 ### Base Environment ###
@@ -87,7 +87,7 @@ Resources installed in every environment. Some are optinoal.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Organization | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Environment (all resources) | 🟡 | 🔴 | 🔴  | 🔴 | 🔴 | 🔴 |
 | OU | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Accounts | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Move accounts to OU | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
@@ -146,6 +146,7 @@ The management environment contains accounts where my organization deletegated a
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Organization | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Accounts: IAM, Network, Accounting, Org, Security, KMS, Security, Backup | 🟡 | 🔴 | 🟡  | 🔴 | 🔴 | 🔴 |
 | Org resource policy | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Delegate IPAM admin | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -205,7 +206,6 @@ Some enviroments may include penetration testing and security research resources
 
 The job framework infrastructure allows me to quickly and securely run jobs. 
 
-
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Git Credentials Secrets | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -216,7 +216,7 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | S3 buckets (with KMS) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Bucket policies | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Instance Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Kiro CLI Identity Center | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Kiro CLI Identity Center | 🟡 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Job Dev ENI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Dev Instance | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Dev AMI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
