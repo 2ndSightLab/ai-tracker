@@ -1,3 +1,6 @@
+# My AWS Wishlist Items Related To This Project
+
+This is a list of my wishes on the [AWS Builder Center](https://builder.aws.com/wishlist) related to this project. These are things that cost me time, money, or both or didn't allow me to implement the security controls and cost management controls the way I wanted. I mean it doesn't hurt to ask, right? If you like any of these wishes I included a link below and you can give them a thunbs up if you would like to see them implemented as well.
 
 🟠 Open Wish related to this project 🟢 Resolved
 
