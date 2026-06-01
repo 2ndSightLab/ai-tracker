@@ -71,6 +71,15 @@ Separate reusable project that handles configuring role profiles and role assump
 | Configure Role Profile | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
 | Assume Role With MFA | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
 
+### UI ##
+
+Separate reusable project that handles configuring role profiles and role assumption with MFA.
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Reusaable Numbered Menu with Filter by letters | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Reusable y/n/e prompt | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+
 ### Base Environment ###
 
 Resources installed in every environment. Some are optinoal.
