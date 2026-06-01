@@ -73,8 +73,8 @@ Resources installed in every environment. Some are optinoal.
 | Accounts | Y | N | Y | N | N | N |
 | Move accounts to OU | Y | N | Y | N | N | N |
 | Account aliases | Y | N | Y | N | N | N |
-| IPAM botz pool | B | N | Y | N | N | N |
-| IPAM botz EIP allocation | B | N | Y | N | N | N |
+| IPAM pool | B | N | Y | N | N | N |
+| IPAM EIP allocation | B | N | Y | N | N | N |
 | SCPs | Y | N | Y | N | N | N |
 | Admin users | Y | N | Y | N | N | N |
 | Admin user policy | Y | N | N | N | N | N |
@@ -186,7 +186,7 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | Lambdas (with VPC) | N | N | N | N | N | N |
 | S3 buckets (with KMS) | N | N | N | N | N | N |
 | Bucket policies | N | N | N | N | N | N |
-| Foxy-Botz Instance Role | N | N | N | N | N | N |
+| Job Instance Role | N | N | N | N | N | N |
 | Kiro CLI Identity Center | N | N | N | N | N | N |
 | Job Dev ENI | N | N | N | N | N | N |
 | Job Dev Instance | N | N | N | N | N | N |
