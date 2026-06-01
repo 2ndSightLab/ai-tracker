@@ -5,10 +5,11 @@
 
 This is a list of my wishes on the [AWS Builder Center](https://builder.aws.com/wishlist) related to this project. These are things that cost me time, money, or both or didn't allow me to implement the security controls and cost management controls the way I wanted. I mean it doesn't hurt to ask, right? If you like any of these wishes I included a link below and you can give them a thunbs up if you would like to see them implemented as well.
 
-## Wishes
+## Status
 
 🟠 Open Wish related to this project 🟢 Resolved
 
+## Wishes
 
 🟠 If I forget to chagne the email address, alias or name of a closed account I can't recreatea new one with the same information. https://builder.aws.com/wishlist/3ETtg4AwifUcBqGG03ZknTjF1g3_w/cannot-use-alias-email-name-that-was-used-on-a-closed-account
 
