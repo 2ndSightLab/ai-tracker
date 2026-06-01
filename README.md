@@ -119,7 +119,7 @@ Resources installed in every environment. Some are optinoal.
 | Base Ubuntu AMI | N | N | N | N | N | N |
 | External AMI Share Key | N | N | N | N | N | N |
 | Share AMI | N | N | N | N | N | N |
-| Budgets | N | N | N | N | N | N |
+| Budgets | Y | N | N | N | N | N |
 
 ### Management Environment ###
 
@@ -127,8 +127,8 @@ The management environment contains accounts where my organization deletegated a
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Org resource policy | N | N | N | N | N | N |
-| Delegate IPAM admin | N | N | N | N | N | N |
+| Org resource policy | Y | N | N | N | N | N |
+| Delegate IPAM admin | B | N | N | N | N | N |
 | Delegate Security Hub admin | N | N | N | N | N | N |
 | Delegate GuardDuty admin | N | N | N | N | N | N |
 | Delegate CloudTrail admin | N | N | N | N | N | N |
@@ -145,7 +145,7 @@ The management environment contains accounts where my organization deletegated a
 | Delegate VPC Reachability Analyzer admin | N | N | N | N | N | N |
 | Delegate Cost Optimization Hub admin | N | N | N | N | N | N |
 | Delegate Compute Optimizer admin | N | N | N | N | N | N |
-| IPAM | N | N | N | N | N | N |
+| IPAM | B | N | N | N | N | N |
 | Configure GuardDuty | N | N | N | N | N | N |
 | Configure Security Hub | N | N | N | N | N | N |
 | Configure CloudTrail | N | N | N | N | N | N |
