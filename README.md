@@ -44,7 +44,7 @@ N = Not Done Y = Done B = Broke N/A = not applicable for that resource.
 
 ### Jobs Environment ###
 
-| Feature | Deploy | Delete | Verify | Tested | Code Review |
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Environment | N | N | N | N | N | N | N |
 | Resource | N | N | N | N | N | N | N |
@@ -52,7 +52,7 @@ N = Not Done Y = Done B = Broke N/A = not applicable for that resource.
 
 ### Test Environment ###
 
-| Feature | Deploy | Delete | Verify | Tested | Code Review |
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Environment | N | N | N | N | N | N | N |
 | Resource | N | N | N | N | N | N | N |
@@ -60,14 +60,14 @@ N = Not Done Y = Done B = Broke N/A = not applicable for that resource.
 
 ### Prod Environment ###
 
-| Feature | Deploy | Delete | Verify | Tested | Code Review |
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Environment | N | N | N | N | N | N | N |
 | Resource | N | N | N | N | N | N | N |
 | TODO | N | N | N | N | N | N | N |
 
 ### Job Framework ###
-| Feature | Deploy | Delete | Verify | Tested | Code Review |
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Yubikey Lambda | N | N | N | N | N | N | N |
 | Lambda Layer | N | N | N | N | N | N | N |
