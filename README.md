@@ -16,7 +16,7 @@ https://teriradichel.substack.com/p/toc-aws-organizations-and-ai-agent
 
 ## Time
 
-I started this project around March 7th. I had to take a break for abou three weeks in May. I haven't really worked on anyting else besides this and blog posts because I keep thinking it is "almost done." I've also been working kind of long hours to do it and figure things out.
+I started this project around March 7th. I had to take a break for about three weeks in May. I haven't really worked on anyting else besides this and blog posts because I keep thinking it is "almost done." I've also been working kind of long hours to do it and figure things out.
 
 My initial post on this project tracks the start project and initial progress in 2.5 weeks
 
