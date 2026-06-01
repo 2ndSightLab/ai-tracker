@@ -176,18 +176,21 @@ The management environment contains accounts where my organization deletegated a
 | Configure IAM Access Analyzer | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Configure Security Alerts | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Deny-All OU | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Enable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Disable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### SCPs ##
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | kms-account-allowed-services [env] | 🟢  | 🔴 | 🟢  | 🔴 | 🔴 | 🔴 |
-| deny-external-access [env] | 🟢  | 🔴 | 🟢  | 🔴 | 🔴 | 🔴 |
-| always-denied-actions [root] | 🟢  | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| allowed-regions [root]  | 🟢  | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
-| always-denied-actions [env] | 🟢  | 🔴 | 🟢  | 🔴 | 🔴 | 🔴 |
-| always-denied-actions [account] | 🟢  | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| deny-external-access [env] | 🟢 | 🔴 | 🟢  | 🔴 | 🔴 | 🔴 |
+| always-denied-actions [root] | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| allowed-regions [root]  | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
+| always-denied-actions [env] | 🟢 | 🔴 | 🟢  | 🔴 | 🔴 | 🔴 |
+| always-denied-actions [account] | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | deny-leave-organization[root]  | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
+| always-default-org-rool [root] | 🔴 | 🔴 | 🔴  | 🔴 | 🔴 | 🔴 |
 
 ### Web Infrastructure ###
 
