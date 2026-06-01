@@ -52,21 +52,34 @@ Note that cost includes some times when the model was nerfed, billing snafus, an
 
 N = Not Done Y = Done B = Broke N/A = not applicable for that resource.
 
+### Bootstrap Role ###
+
+Role, policy and permission boundary deployed in root management account in AWS CloudShell.
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Role | Y | Y | Y | Y | Y | Y |
+| Policy | Y | Y | Y | Y | Y | Y |
+| Permission Boundary | Y | Y | Y | Y | Y | Y |
+| Trust policy with MFA and IP condition  | Y | Y | Y | Y | Y | Y |
+
 ### Base Environment ###
 
 Resources installed in every environment
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| OU | N | N | N | N | N | N |
-| Accounts | N | N | N | N | N | N |
-| Move accounts to OU | N | N | N | N | N | N |
-| Account aliases | N | N | N | N | N | N |
-| IPAM botz pool | N | N | N | N | N | N |
-| IPAM botz EIP allocation | N | N | N | N | N | N |
-| SCPs | N | N | N | N | N | N |
-| Admin users | N | N | N | N | N | N |
-| Admin roles | N | N | N | N | N | N |
+| OU | Y | N | Y | N | N | N |
+| Accounts | Y | N | Y | N | N | N |
+| Move accounts to OU | Y | N | Y | N | N | N |
+| Account aliases | Y | N | Y | N | N | N |
+| IPAM botz pool | B | N | Y | N | N | N |
+| IPAM botz EIP allocation | B | N | Y | N | N | N |
+| SCPs | Y | N | Y | N | N | N |
+| Admin users | Y | N | Y | N | N | N |
+| Admin user policy | Y | N | N | N | N | N |
+| Admin roles | Y | N | N | N | N | N |
+| Admin role policy | Y | N | N | N | N | N |
 | Deployment Lambdas (no VPC) | N | N | N | N | N | N |
 | S3 buckets (no KMS) | N | N | N | N | N | N |
 | KMS keys | N | N | N | N | N | N |
