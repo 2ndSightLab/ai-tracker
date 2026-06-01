@@ -4,7 +4,7 @@
 
 Track how long it takes and how much it costs to create projects with AI
 
-AWS Bootstrap Script
+## AWS Bootstrap Script
 
 This is a project to deploy resources to create AWS environments in an organization. 
 
