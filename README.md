@@ -20,6 +20,10 @@ A full series on what I am developing in this project can be found here:
 
 https://teriradichel.substack.com/p/toc-aws-organizations-and-ai-agent
 
+## Tools and models
+
+I'm primarily using Kiro CLI and anthropic models, though I do use Google aimode to ask questions at times and may branch out to test other models and technologies after this infrastructure is up and running.
+
 ## Time
 
 I started this project around March 7th. I had to take a break for about three weeks in May. I haven't really worked on anyting else besides this and blog posts because I keep thinking it is "almost done." I've also been working kind of long hours to do it and figure things out.
