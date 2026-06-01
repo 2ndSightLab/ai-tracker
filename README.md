@@ -58,7 +58,7 @@ Role, policy and permission boundary deployed in root management account in AWS 
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Role | Y | Y | Y | Y | Y | Y |
+| Role | <c>Y</c> | Y | Y | Y | Y | Y |
 | Policy | Y | Y | Y | Y | Y | Y |
 | Permission Boundary | Y | Y | Y | Y | Y | Y |
 | Trust policy with MFA and IP condition  | Y | Y | Y | Y | Y | Y |
@@ -233,3 +233,8 @@ Back up infrastructure segregated from other infrastructure
 | Backup Role | N | N | N | N | N | N |
 | Backup Job | N | N | N | N | N | N |
 
+<style>
+  c:contains("Y") { background-color: #ffcccc; color: #cc0000; padding: 2px 6px; border-radius: 3px; }
+  c:contains("B") { background-color: #fff2cc; color: #cc9900; padding: 2px 6px; border-radius: 3px; }
+  c:contains("G") { background-color: #d9ead3; color: #274e13; padding: 2px 6px; border-radius: 3px; }
+</style>
