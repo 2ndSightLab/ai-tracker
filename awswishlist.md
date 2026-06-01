@@ -21,4 +21,6 @@
 
 🟠 Got blocked because the same SCP for allowed regions does not have all global services in it. AWS Wishlist: https://builder.aws.com/wishlist/3EPxyllN1bbH05lQOpAzbY0QfEG_w/update-service-control-policy-for-allowed-regions-in-documentation
 
-🟠 Would love to have a global condition tag for global services so I don't to update the SPC when services change. AWS Wishlist: https://builder.aws.com/wishlist/3EPyR5RzXZFnAmk73tsSqT4oQAa_w/new-method-allowing-global-services-in-region-specific-service-control-policy and 
+🟠 Would love to have a global condition tag for global services so I don't to update the SPC when services change. AWS Wishlist: https://builder.aws.com/wishlist/3EPyR5RzXZFnAmk73tsSqT4oQAa_w/new-method-allowing-global-services-in-region-specific-service-control-policy 
+
+🟠 I want to be able to manage budgets for my accounts in a delegated admin account (my Accounting account). Because I don't want to take actions in my management account I'm currently managing budgets in every single account. I would like to be able to create a separate delegated budget admin for each environment so organization can delegate budgeting to the head of an LOB or department manager or product owner assigned to an environment (OU) https://builder.aws.com/wishlist/3ENCSBRPEeL3dKz9POY14EnZ4rJ_w/cost-management-delegated-administrator-in-aws-organizations
