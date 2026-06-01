@@ -32,6 +32,8 @@ My initial post on this project tracks the start project and initial progress in
 
 https://teriradichel.substack.com/p/what-ive-vibe-coded-in-25-weeks
 
+The time it takes is demonstrated by feature completion and the timestapms in this GitHub repo, though my time may be taken away for other things periodically. 
+
 ## Cost: ##
 
 Token and infrastructure spend.
