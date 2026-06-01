@@ -9,6 +9,8 @@
 
 🟠 When deploying delegated admins, all the CLI commands have different error messages. I would like to have consistent error messages with a number associated so I can handle them all with the same code. AWS Wishlist: https://builder.aws.com/wishlist/3EIb2oBW7qkDj8E60yXZMct9Zmm_w/standard-error-messages-and-codes-please-defined-in-documentation-for-proper-error-handling
 
+🟠 Had to delete my IPAM because I could not release an IP address in a closed account. AWS Wishlist: https://builder.aws.com/wishlist/3ETscwuhjHF9Jy9CKxWYgUKFXUj_w/cannot-release-eip-in-closed-account-using-ipam
+
 🟡 Make sure VPC endpoints are optional and not configured eveywhere until confirm everything else is working properly to reduce costs excpet possibly the auth Lambda.
 
 🟡 UI: Step completion prompt is inconsistent. Sometimes has Quit and Exit. 
