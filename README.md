@@ -67,5 +67,5 @@ N = Not Done Y = Done B = Broke N/A = not applicable for that resource.
 | :--- | :---: | :---: | :---: | :---: |
 | Yubikey Lambda | N | N | N | N | N |
 | Lambda Layer | N | N | N | N | N |
-| Lambda Layer | N | N | N | N | N |
+| API Gateway | N | N | N | N | N |
 
