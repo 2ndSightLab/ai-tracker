@@ -2,7 +2,7 @@
 
 ## Objective
 
-Track how long it takes and how much it costs to create projects with AI
+Track how long it takes and how much it costs to create projects with AI in an attempt to optimize progress.
 
 ## AWS Bootstrap Script for AI Agent Environment
 
