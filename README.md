@@ -52,35 +52,97 @@ Note that cost includes some times when the model was nerfed, billing snafus, an
 
 N = Not Done Y = Done B = Broke N/A = not applicable for that resource.
 
+### Base Environment ###
+
+Resources installed in every environment
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| OU | N | N | N | N | N | N |
+| Accounts | N | N | N | N | N | N |
+| Move accounts to OU | N | N | N | N | N | N |
+| Account aliases | N | N | N | N | N | N |
+| IPAM botz pool | N | N | N | N | N | N |
+| IPAM botz EIP allocation | N | N | N | N | N | N |
+| SCPs | N | N | N | N | N | N |
+| Admin users | N | N | N | N | N | N |
+| Admin roles | N | N | N | N | N | N |
+| Deployment Lambdas (no VPC) | N | N | N | N | N | N |
+| S3 buckets (no KMS) | N | N | N | N | N | N |
+| KMS keys | N | N | N | N | N | N |
+| KMS key aliases | N | N | N | N | N | N |
+| KMS policies | N | N | N | N | N | N |
+| AWS Prefix Lists | N | N | N | N | N | N |
+| VPC Flow Logs Role | N | N | N | N | N | N |
+| Remote Access VPC | N | N | N | N | N | N |
+| Remote Access Subnet | N | N | N | N | N | N |
+| Remote Access Security Group | N | N | N | N | N | N |
+| Remote Access Internet Gateway | N | N | N | N | N | N |
+| Rmemote Access Route Table | N | N | N | N | N | N |
+| Rmemote Access Security Group | N | N | N | N | N | N |
+| Remote access prefix list | N | N | N | N | N | N |
+| Network Ram Share | N | N | N | N | N | N |
+| Delete default VPCs | N | N | N | N | N | N |
+| Lambdas (with VPC) | N | N | N | N | N | N |
+| S3 buckets (with KMS) | N | N | N | N | N | N |
+| Bucket policies | N | N | N | N | N | N |
+| Route 53 Hosted Zone | N | N | N | N | N | N |
+| ACM Certificate | N | N | N | N | N | N |
+| API Gateway | N | N | N | N | N | N |
+| CNAME | N | N | N | N | N | N |
+| SSH Security Group | N | N | N | N | N | N |
+| RDP Security Group | N | N | N | N | N | N |
+| HTTP/HTTPS Security Group | N | N | N | N | N | N |
+| Base Ubuntu Instance Role | N | N | N | N | N | N |
+| Base Ubuntu ENI | N | N | N | N | N | N |
+| Base Ubuntu Instance | N | N | N | N | N | N |
+| Base Ubuntu AMI | N | N | N | N | N | N |
+| External AMI Share Key | N | N | N | N | N | N |
+| Share AMI | N | N | N | N | N | N |
+| Budgets | N | N | N | N | N | N |
+
 ### Management Environment ###
 
 The management environment contains accounts where my organization deletegated administrators exist.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Environment | N | N | N | N | N | N | N |
-| Resource | N | N | N | N | N | N | N |
-| TODO | N | N | N | N | N | N | N |
+| Org resource policy | N | N | N | N | N | N |
+| Delegate IPAM admin | N | N | N | N | N | N |
+| Delegate Security Hub admin | N | N | N | N | N | N |
+| Delegate GuardDuty admin | N | N | N | N | N | N |
+| Delegate CloudTrail admin | N | N | N | N | N | N |
+| Delegate AWS Config admin | N | N | N | N | N | N |
+| Delegate Firewall Manager admin | N | N | N | N | N | N |
+| Delegate Macie admin | N | N | N | N | N | N |
+| Delegate Inspector admin | N | N | N | N | N | N |
+| Delegate IAM Access Analyzer admin | N | N | N | N | N | N |
+| Delegate Audit Manager admin | N | N | N | N | N | N |
+| Delegate Health admin | N | N | N | N | N | N |
+| Delegate Detective admin | N | N | N | N | N | N |
+| Delegate Backup admin | N | N | N | N | N | N |
+| Delegate Network Manager admin | N | N | N | N | N | N |
+| Delegate VPC Reachability Analyzer admin | N | N | N | N | N | N |
+| Delegate Cost Optimization Hub admin | N | N | N | N | N | N |
+| Delegate Compute Optimizer admin | N | N | N | N | N | N |
+| IPAM | N | N | N | N | N | N |
+| Configure GuardDuty | N | N | N | N | N | N |
+| Configure Security Hub | N | N | N | N | N | N |
+| Configure CloudTrail | N | N | N | N | N | N |
+| Configure AWS Config | N | N | N | N | N | N |
+| Configure Macie | N | N | N | N | N | N |
+| Configure Inspector | N | N | N | N | N | N |
+| Configure IAM Access Analyzer | N | N | N | N | N | N |
+| Configure Security Alerts | N | N | N | N | N | N |
+| Deny-All OU | N | N | N | N | N | N |
 
-### Jobs Environment ###
-
-The jobs environment is where I can deploy and test jobs and agents.
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Environment | N | N | N | N | N | N | N |
-| Resource | N | N | N | N | N | N | N |
-| TODO | N | N | N | N | N | N | N |
-
-### Prod Environment ###
+### Web Infrastructure ###
 
 The production environment is where I run production applications and websites.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Environment | N | N | N | N | N | N | N |
-| Resource | N | N | N | N | N | N | N |
-| TODO | N | N | N | N | N | N | N |
+| Static Web Site | N | N | N | N | N | N |
 
 ### Test Infrastructure ###
 
@@ -88,9 +150,14 @@ Some enviroments may include penetration testing and security research resources
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Environment | N | N | N | N | N | N | N |
-| Resource | N | N | N | N | N | N | N |
-| TODO | N | N | N | N | N | N | N |
+| Burp ENI | N | N | N | N | N | N |
+| Burp Instance Role | N | N | N | N | N | N |
+| Burp Instance | N | N | N | N | N | N |
+| Burp AMI | N | N | N | N | N | N |
+| Collab ENI | N | N | N | N | N | N |
+| Collab Instance Role | N | N | N | N | N | N |
+| Collab Instance | N | N | N | N | N | N |
+| Collab AMI | N | N | N | N | N | N |
 
 ### Job Framework Infrastructure ###
 
@@ -98,9 +165,40 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Yubikey Lambda | N | N | N | N | N | N | N |
-| Lambda Layer | N | N | N | N | N | N | N |
-| API Gateway | N | N | N | N | N | N | N |
-| TODO | N | N | N | N | N | N | N |
+| Git Credentials Secrets | N | N | N | N | N | N |
+| Deploy Lambdas (no VPC) | N | N | N | N | N | N |
+| S3 buckets (no KMS) | N | N | N | N | N | N |
+| KMS keys | N | N | N | N | N | N |
+| VPCs | N | N | N | N | N | N |
+| Lambdas (with VPC) | N | N | N | N | N | N |
+| S3 buckets (with KMS) | N | N | N | N | N | N |
+| Bucket policies | N | N | N | N | N | N |
+| Foxy-Botz Instance Role | N | N | N | N | N | N |
+| Kiro CLI Identity Center | N | N | N | N | N | N |
+| Job Dev ENI | N | N | N | N | N | N |
+| Job Dev Instance | N | N | N | N | N | N |
+| Job Dev AMI | N | N | N | N | N | N |
+| Job ENI | N | N | N | N | N | N |
+| Job Instance | N | N | N | N | N | N |
+| Job AMI | N | N | N | N | N | N |
+| Auth VPC | N | N | N | N | N | N |
+| Auth Subnet | N | N | N | N | N | N |
+| Auth Security Group | N | N | N | N | N | N |
+| Auth Internet Gateway | N | N | N | N | N | N |
+| Auth Route Table | N | N | N | N | N | N |
+| Auth Security Group | N | N | N | N | N | N |
+| Auth VPC Endpoints | N | N | N | N | N | N |
+| DynamoDB | N | N | N | N | N | N |
+| Auth Lambdas (With VPC) | N | N | N | N | N | N |
+| Job Base Lambda (With VPC) | N | N | N | N | N | N |
 
+### Backup Infrastructure ###
+
+Back up infrastructure segregated from other infrastructure
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Backup Account Per Environment | N | N | N | N | N | N |
+| Backup Role | N | N | N | N | N | N |
+| Backup Job | N | N | N | N | N | N |
 
