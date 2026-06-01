@@ -161,7 +161,7 @@ The management environment contains accounts where my organization deletegated a
 | Delegate Audit Manager admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Delegate Health admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Delegate Detective admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Delegate Backup admin || 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Delegate Backup admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Delegate Network Manager admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Delegate VPC Reachability Analyzer admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Delegate Cost Optimization Hub admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
