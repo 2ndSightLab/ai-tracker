@@ -99,3 +99,7 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | API Gateway | N | N | N | N | N | N | N |
 | TODO | N | N | N | N | N | N | N |
 
+
+## Issues:
+
+https://github.com/2ndSightLab/ai-tracker/blob/main/issues.md
