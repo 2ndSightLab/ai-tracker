@@ -85,7 +85,6 @@ Separate reusable project that handles configuring role profiles and role assump
 
 Resources installed in every environment. Some are optinoal.
 
-
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Organization | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
@@ -145,9 +144,9 @@ Resources installed in every environment. Some are optinoal.
 
 The management environment contains accounts where my organization deletegated administrators exist.
 
-
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Accounts: IAM, Network, Accounting, Org, Security, KMS, Security, Backup | 🟡 | 🔴 | 🟡  | 🔴 | 🔴 | 🔴 |
 | Org resource policy | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Delegate IPAM admin | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Delegate Security Hub admin | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
