@@ -65,7 +65,7 @@ Role, policy and permission boundary deployed in root management account in AWS 
 
 ### Base Environment ###
 
-Resources installed in every environment
+Resources installed in every environment. Some are optinoal.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
