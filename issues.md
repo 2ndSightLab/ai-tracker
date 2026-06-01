@@ -11,4 +11,6 @@
 
 🟡 UI: Step completion prompt is inconsistent. Sometimes has Quit and Exit. 
 
-🟡 Management Env Account List 
+🟡 Management Env Account List is incorrect in verification step. It's missing the security account and backup account. There are also too many accounts in the management environment. The script can be used to deploy the job framework, AMIs and other accounts to the environment as needed but for my purposes I don't need that. Remove those account.
+
+🟡 Close account is not working and before closing an account need to fix the following: change alias name, change account name, change email address - to avoid conflicts if need to recreate the account.
