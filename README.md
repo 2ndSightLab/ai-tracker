@@ -2,7 +2,7 @@
 
 ## Objective
 
-Track how long it takes and how much it costs to create projects with AI in an attempt to optimize progress.
+Track how long it takes and how much it costs to create projects with AI 🤖 in an attempt to optimize progress.
 
 ## Support this research
 
