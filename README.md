@@ -6,19 +6,19 @@ Track how long it takes and how much it costs to create projects with AI in an a
 
 ## AWS Bootstrap Script for AI Agent Environment
 
-This is a project to deploy resources to create AWS environments in an organization. I wnat to segregate the agents that are running from other resources in my AWS account. While I'm at it I want to deploy the security controls to manage my organization in a management environment. I started this project around March 7th. I had to take a break for abou three weeks in May. I haven't really worked on anyting else besides this and blog posts because I keep thinking it is "almost done." I've also been working kind of long hours to do it and figure things out.
+Build an AWS environment to securely run AI agents. This includes my organizational framework and security controls to segregate environemnts and monitor AWS activity. Specifically I want to segregate my security testing, development, production, and management environments. The framework also sets up my organization with things like budgets and security services used by delegated administrators (Guard Duty, etc.)
 
-https://teriradichel.substack.com/p/what-ive-vibe-coded-in-25-weeks
-
-I'm writing about how I'm doing this here:
+A full series on what I am developing in this project can be found here:
 
 https://teriradichel.substack.com/p/toc-aws-organizations-and-ai-agent
 
-This environment includes a Yubikey auth mechanism I'm trying to build and the instances I use for pentesting and bug bounties.
+## Time
 
-https://teriradichel.substack.com/p/mfa-to-run-a-lambda-function
+I started this project around March 7th. I had to take a break for abou three weeks in May. I haven't really worked on anyting else besides this and blog posts because I keep thinking it is "almost done." I've also been working kind of long hours to do it and figure things out.
 
-I have multiple steps for amots every reasource: Deploy, Delete and Verifiy. I am tracking whether they are done below. I also indicate B if something broke when I made changes and I'm fixing it. Things break when I refactor the code to add new functionality or fix functional problems or other bugs.
+My initial post on this project tracks the start project and initial progress in 2.5 weeks
+
+https://teriradichel.substack.com/p/what-ive-vibe-coded-in-25-weeks
 
 ## Cost: ##
 
