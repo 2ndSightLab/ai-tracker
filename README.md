@@ -6,7 +6,7 @@ Track how long it takes and how much it costs to create projects with AI in an a
 
 ## Support this research
 
-If you want to support of follow this research consider becoming a paid subscriber on my substack blog. You can also just sign up for free.
+If you want to support of follow this research consider becoming a paid subscriber on my substack blog. Paid subscribers can add comments. Founding members can ask questions (i.e. consulting or training). You can also just sign up for free - no worries! All are welcome.
 
 https://teriradichel.substack.com
 
