@@ -62,6 +62,15 @@ Role, policy and permission boundary deployed in root management account in AWS 
 | Permission Boundary | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
 | Trust policy with MFA and IP condition  | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
 
+### AWS Auth ###
+
+Separate project that handles configuring role profiles and role assumption with MFA.
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Configure Role Profile | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
+| Assume Role With MFA | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
+
 ### Base Environment ###
 
 Resources installed in every environment. Some are optinoal.
