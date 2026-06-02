@@ -265,6 +265,6 @@ Back up infrastructure segregated from other infrastructure
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Backup Account Per Environment | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Backup Account Per Environment | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Backup Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Backup Job | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
