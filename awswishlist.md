@@ -57,3 +57,81 @@ https://builder.aws.com/wishlist/3ETEXLx2zZ9GFzQHFYKqmJBcS9M_w/kiro-in-aws-conso
 🟠 Automatically end sessions when plan has ended: https://builder.aws.com/wishlist/3BSzYWdtlumRyuB4gSrPyzvY05V_w/automatically-log-me-out-and-terminate-all-sessions-when-kiro-plan-used-up
 
 🟠 Incorrect IP in policy so cannot use IPAddress condition to restrict access to assume role in console with MFA. I get around this by creating a policy that uses the IPAddress for the action that it works with IPAddress but not MFA and MFA with the action that works with MFA but not IPAddress. https://builder.aws.com/wishlist/3BRoMdDzlCs5XBlhZEEEt7OzXMn_w/incorrect-ip-address-in-aws-assume-role-in-cloudtrail-cant-apply-source-ip-condition-in-policies
+
+🟠 Prefix list for every service. I came up with a work around with the AWS JSON IP range list and created my own IP ranges. But the IP ranges in that document are not granular enough which is the other problem. https://builder.aws.com/wishlist/3AExvFQSsi84BV9PQeUm7hN8qV6_w/prefix-list-for-every-aws-service-region-and-all-aws-services-for-easier-network-management
+
+🟠 Create a policy that says the principal can only delete or modify resources it created https://builder.aws.com/wishlist/3AExAgHvsMsIaSHBbSIjWyxjdY6_w/create-a-policy-that-says-the-principal-can-only-delete-or-modify-resources-it-created
+
+🟠 The AWS Pricing API is incomplete making it pretty much useless. https://builder.aws.com/wishlist/3AEbZTUvVORoKr1RW4d2Twgl9Uw_w/add-all-services-and-features-of-services-to-the-aws-pricing-api
+
+🟠 When you are using AWS IAM, CloudFormation, the AWS CLI, and various APIs the same thing has different names all over the place making it difficult to programmatically integrate with all of them. I started creating a mapping but it would be great if AWS had a name mapping API or something where you could look this up. Also the AWS CLI doesn't have a way to list all service names and all commands so I do a hokey work around. https://builder.aws.com/wishlist/3AEZjv9MemxNzRpd1bdX24EZUNv_w/service-name-alignment-or-mapping-different-sources-have-different-service-names
+
+🟠 Kiro created invalid role for EC2 instance and IAM allowed it to be deployed - would like it to fail on deployment https://builder.aws.com/wishlist/3AEVYwSJWDAuoGTkz56Q7A2IY17_w/kiro-created-invalid-role-for-ec2-instance-and-iam-allowed-it-to-be-deployed-would-like-it-to-fail-on-deployment
+
+🟠 This dispatch error on logout is really conffusing when you start out. It means your session has timed out. Shoudl say something better and have the option to exit, but the option to login behind the scenes and continue. https://builder.aws.com/wishlist/3ABqjssN0gfIBOJ7ON23pQ3YpZC_w/automatic-redirect-to-login-when-session-time-out-in-kiro-cli
+
+🟠 Terminate a session completely instead of just blocking with a policy - IAM. This has always bugged me. The session remains active if you block it with a policy. If you remove the policy the session is still active. Need a way to actually terminate the session meaning it's GONE. https://builder.aws.com/wishlist/3AB8llUn6KGE8ZxXQTEUD8p2n7Y_w/terminate-a-session-completely-instead-of-just-blocking-with-a-policy-iam
+
+🟠 Support or buildx and SBOMs when using Lambda containers https://builder.aws.com/wishlist/3AB7Rx65B0Iiyv5huuh9KDHu1rQ_w/support-or-buildx-and-sboms-when-using-lambda-containers
+
+🟠 File name completion when using ! in Kiro CLI https://builder.aws.com/wishlist/39xuD45F9cv4mJnrMGTTYkqF7Wx_w/file-name-completion-when-using-in-kiro-cli
+
+🟠 Kiro doesn't follow rules in README (or steering file or anything else) -- really this can't be fixed without some deterministic solution and probably really can't be fixed at all. When I rwote this it was more of wishful thinking. And it's not Kiro. It's all AI models. Kiro may be better at undoing what it did - somethings -- and again that's not Kiro that's the model I think. But I still have cases where it forgets what it just did.  https://builder.aws.com/wishlist/39xeZHPgs2YbY3fl3iHoYGFyh5K_w/kiro-cli-does-not-follow-rules-in-readme-and-then-it-cant-undo-what-it-did
+
+🟠 The error message when you enter an incorrect region is confusing and I wish it would stop right at that point. https://builder.aws.com/wishlist/39urIqzZx3dLxhWQbk9yOpINdqe_w/if-i-enter-an-invalid-region-logging-into-kiro-cli-stop-me-there
+
+🟠 Copy and paste in CloudShell on a Mac https://builder.aws.com/wishlist/39uqjcSSSL4xNycUAAbTJsKj6EC_w/copy-and-paste-in-cloudshell-on-a-mac
+
+🟠 Termination protection for EIP in IPAM pool https://builder.aws.com/wishlist/39r3UNLWKBoXF14vnYnumh0Le2K_w/termination-protection-and-resource-policy-for-ipam-address-pool
+
+🟠 I really dislike device code flow becuase it is constantly phished. I just want to use the mechanism I use to enforce MFA with an IAM role I've written about many times. There are examples in the aws-scripts repo in my profile if you don't know how to do that. https://builder.aws.com/wishlist/39pNDkwg1erGDg464JD9qCu8igH_w/ability-to-login-to-kiro-with-iam-user-and-no-device-code-flow
+
+🟠 User name for Kiro needs to show up in CloudTrail https://builder.aws.com/wishlist/39pLm6X6TXbwgCqYIti039aTswx_w/need-to-see-username-associated-with-an-error-in-cloudtrail-for-kiro-sso-login-failures
+
+🟠 Include a resource for every action in CloudTrail where appropriate so search works correctly. https://builder.aws.com/wishlist/39pLNVTBveWsdroWf22KV57R8yR_w/include-a-resource-for-every-action-in-cloudtrail-where-appropriate-so-search-works-correctly
+
+🟠 Ability to Force MFA Yubikey Button Push EVERY TIME I Switch Roles in AWS Console. The keys to the kingdom AWS Identity Center role switching type access is risky. https://builder.aws.com/wishlist/39pL24LNZciQi8y8bv1DZoihrLk_w/ability-to-force-mfa-yubikey-button-push-every-time-i-switch-roles-in-aws-console
+
+🟠 Show KMS keys with RAM and have them shoe up in select list when creating an EC2 instance (see screenshot) https://builder.aws.com/wishlist/397qZjAcvAexuRrrkirbOcF1TTr_w/share-key-with-ram-and-shows-up-in-ec2-select-list
+
+🟠 AI troubleshooting for CloudTrail error. I saw something like this in the console but it needs to allow you to ask follow on questions. https://builder.aws.com/wishlist/397pnNiP3bmDWyxOqLHENWQY9WC_w/ai-troubleshooting-for-cloudtrail-error
+
+🟠 Do not show accuont number in url when switching accounts. Account numbers are not supposed to be secret but I still do not want to share them unneccessarily in a URL. If in the request/response might be hidden but not in the URL. Unfortuately S3 buckets are also in URL sometimes and account specific buckets have this same issue. If it's in completely encyrpted data fine but as demonstrated in one of my blog posts this information is available to attackers sniffing traffic. They can associate a user IP address with a particular account which may have some usefulness in certain types of attacks (assoicating a particular user IP address with a particular account they may be targeting. https://builder.aws.com/wishlist/397rHL9DpejZJdDqkKTdmfsdYn4_w/do-not-show-the-aws-account-number-in-url-when-using-multi-session-feature
+
+🟠 This has bugged me foreever. Why do I have to click three times to get to the place where I want to change the encryption key for an EC2 instance. It feels hidden rather than obvious and encouraged. https://builder.aws.com/wishlist/397ojhJjMxb17rDQLJC0EUWezj5_w/please-dont-make-me-click-three-times-to-get-to-encryption-key-for-storage-in-ec2-console
+
+🟠 This is another crazy one. Create a key pair and share it in RAM so an admin can create the SSH key in an account where they can manage SSH keys and the user controls the starting, stopping, and logging into the instnace. https://builder.aws.com/wishlist/397oBuJhv55YX8gCmgaknlVlBhg_w/create-and-share-an-aws-ec2-keypair-associated-with-a-user-using-ram
+
+🟠 Keep the network traffic for firmware updates on the AWS network. https://builder.aws.com/wishlist/397nXH0vjkAxBDv2gqbjqzrBn8T_w/keep-network-traffic-for-firmware-updates-on-the-aws-network
+
+🟠 Let me choose what I see when I log into the EC2 service dashboard (or any dashboard for that matter) https://builder.aws.com/wishlist/397nBUcYDdMM7zFylwnp1vOvJME_w/let-me-choose-what-i-see-when-i-log-into-the-ec2-service-dashboard-or-any-dashboard-for-that-matter
+
+🟠 Let me choose what screen I land on when I log into an AWS account https://builder.aws.com/wishlist/397mf1Mnn98uWQRxncGxbtETLSD_w/let-me-choose-what-screen-i-land-on-when-i-log-into-an-aws-account
+
+🟠 Choose My IP when creating an AWS prefix list - show me my ip address and let me choose it for my remote access prefix list shared to every account so I can update all the remote access security groups in all accounts in one place. https://builder.aws.com/wishlist/392kUggY5rGI23ICt6WjZlLVT3I_w/choose-my-ip-when-creating-an-aws-prefix-list
+
+🟠 Another crazy one. Allows administrator management of AWS access keys. Resource Policy on Developer Access Key with MFA and/or IP conditions. https://builder.aws.com/wishlist/392izAOoyL1ihFiDlS9adqIBis1_w/resource-policy-on-developer-access-key-with-mfa-andor-ip-conditions
+
+🟠 Simplify Cross-Account Access by Using RAM for everything. I've been using RAM if you could use it more globally it would be easier to manage policies on resource and share them from global locations. I put all my KMS keys in my organization in a single account. I also have AMIs used by the whole OU in one account. I'd love to use RAM in the KMS account to share the KMS keys and RAM in the AMIs account to share the AMIs. https://builder.aws.com/wishlist/392iQglVJcELS3NGGRhArbhFjGO_w/simplify-cross-account-access-by-using-ram-for-everything
+
+🟠 When I open the AWS console in us-east-2 I'm seeing traffic to regions all over the work including Asia, Europe, Mexico, Canada, and South Africa on top of other us-east-2 regiosn. Doesn't seem right. There are so many breaches involving sending data to alternate regions that I really do not want to see this. It haappens when I use other services as well. The traffic from my computer should remain in my selected regions and if needed traffic should stay within the AWS network to get to other regions. https://builder.aws.com/wishlist/392hfO1cY7ldkULrw12B2YgHPWw_w/please-keep-all-network-traffic-in-region
+
+🟠 I waste time trying to launch instances when I don't have KMS configured correctly to give the user that I'm logged in as protected access. It gets all the way to launching the instance then fails. Make it fail when I try to select the key and tell me what needs to be fixed. https://builder.aws.com/wishlist/392euD9I2Wd3Y7Ua4VoyXP7rcti_w/if-i-do-not-have-permission-to-launch-an-ec2-instance-due-to-lack-of-kms-key-permissions-warn-me-before-i-launch-the-instance-and-tell-me-how-to-fix
+
+🟠 CloudTrail filter on errors. Why does this not exist? It seems like the single most useful case for CloudTrail. Many times when you're going to CloudTrail aren't you trying to find errors? https://builder.aws.com/wishlist/392eMFoWYcyIU6zaAZNIKpBZQIL_w/cloudtrail-filter-on-errors
+
+🟠 CloudTrail error column setting - on by default. Why are they not? Isn't one of the most common use cases in CloudTrail looking for what caused an error? https://builder.aws.com/wishlist/392dYfiCpiV12TSZbDHYiTAcpQJ_w/cloudtrail-error-column-setting-on-by-default
+
+
+
+
+
+
+
+
+
+
+
+
+
+
