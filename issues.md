@@ -39,6 +39,8 @@
 
 🟡 Pull admin ips from other configs if exist keep having to look thos up, also admin acct, email domain, etc. maybe have a default configuration file
 
+🟡 Delete should show resources in reverse order as last things deployed get deleted first due to dependencies
+
 🟡 why is this empty stuff in the configuration
 
   --- us-east-1 ---
