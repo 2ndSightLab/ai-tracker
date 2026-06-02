@@ -108,10 +108,7 @@ Resources installed in every environment. Some are optinoal.
 | KMS key aliases | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | KMS policies | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | AWS Prefix Lists | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deploy S3 Bucket Lambda | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deploy S3 SG | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deploy Netork Lambda | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deploy Netork SG | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deploy Lambdas | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | VPC Flow Logs Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Remote Access VPC | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Remote Access Subnet | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -171,15 +168,15 @@ The management environment contains accounts where my organization deletegated a
 | Delegate Cost Optimization Hub admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Delegate Compute Optimizer admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | IPAM | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Configure GuardDuty | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Configure Security Hub | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Configure CloudTrail | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Configure AWS Config | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Configure Macie | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Configure Inspector | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Configure IAM Access Analyzer | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Configure GuardDuty | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Configure Security Hub | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Configure CloudTrail | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Configure AWS Config | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Configure Macie | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Configure Inspector | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Configure IAM Access Analyzer | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Configure Security Alerts | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deny-All OU | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deny-All OU | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Enable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Disable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
@@ -227,7 +224,8 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Git Credentials Secrets | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deploy Lambdas (no VPC) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Auth Lambdas (no VPC) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Run Lambdas (no VPC) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | S3 buckets (no KMS) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | KMS keys | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Lambdas (with VPC) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -250,8 +248,6 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | Auth VPC Endpoints | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Auth VPC Endpoint SGs | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | DynamoDB | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth Lambdas (With VPC) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Base Lambda (With VPC) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job VPC | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Subnet | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Security Group | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
