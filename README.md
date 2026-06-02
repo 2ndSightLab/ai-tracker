@@ -231,7 +231,7 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | S3 buckets (with KMS) | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Bucket policies | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Instance Role | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Kiro CLI Identity Center | 🟡 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Kiro CLI Identity Center | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Job Dev ENI | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Dev Instance | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Dev AMI | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
