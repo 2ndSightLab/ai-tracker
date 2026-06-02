@@ -205,7 +205,6 @@ This is a separate project that allows deploying a static website in any web acc
 
 Some enviroments may include penetration testing and security research resources.
 
-
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Burp ENI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
