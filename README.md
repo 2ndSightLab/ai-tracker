@@ -195,7 +195,7 @@ The management environment contains accounts where my organization deletegated a
 
 ### Web Infrastructure ###
 
-The production environment is where I run production applications and websites.
+This is a separate project that allows deploying a static website in any web account in any enviroment
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
