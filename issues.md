@@ -7,8 +7,6 @@
 
 🟡 Cannot deploy specific accounts. it's giving an error saying required accounts are not deployed. Also shoudl be able to deploy an account with whatever name. Requirement accounts depend on environment type.
 
-🟡 Last time I set up Kiro it seemed like there was something duplicated in there.
-
 🟡 Make sure VPC endpoints are optional and not configured eveywhere until confirm everything else is working properly to reduce costs excpet possibly the auth Lambda.
 
 🟡 UI: Step completion prompt is inconsistent. Sometimes has Quit and Exit. 
