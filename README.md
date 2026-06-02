@@ -6,7 +6,7 @@ Track how long it takes and how much it costs to create projects with AI 🤖 in
 
 ## Support this research
 
-If you want to support of follow this research consider becoming a paid subscriber on my substack blog. Paid subscribers can add comments. Founding members can ask questions (i.e. consulting or training). You can also just sign up for free - no worries! All are welcome and appreciated. 🩵
+If you want to support of follow this research consider becoming a paid subscriber on my substack blog. Paid subscribers can add comments and see the archives. Founding members can ask questions (i.e. consulting or training). You can also just sign up for free - no worries! All are welcome and appreciated. 🩵
 
 https://teriradichel.substack.com
 
@@ -101,10 +101,10 @@ Resources installed in every environment. Some are optinoal.
 | SCPs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Admin users | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Admin user policy | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Admin roles | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Admin role policy | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| S3 buckets (no KMS) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| KMS keys | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Admin roles | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Admin role policy | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| S3 buckets (no KMS) | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| KMS keys | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | KMS key aliases | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | KMS policies | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | AWS Prefix Lists | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -139,7 +139,7 @@ Resources installed in every environment. Some are optinoal.
 | Base Ubuntu AMI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | External AMI Share Key | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Share AMI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Budgets | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Budgets | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 
 ### Management Environment ###
 
@@ -269,9 +269,3 @@ Back up infrastructure segregated from other infrastructure
 | Backup Account Per Environment | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Backup Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Backup Job | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-
-<style>
-  c:contains("Y") { background-color: #ffcccc; color: #cc0000; padding: 2px 6px; border-radius: 3px; }
-  c:contains("B") { background-color: #fff2cc; color: #cc9900; padding: 2px 6px; border-radius: 3px; }
-  c:contains("G") { background-color: #d9ead3; color: #274e13; padding: 2px 6px; border-radius: 3px; }
-</style>
