@@ -132,6 +132,8 @@ https://builder.aws.com/wishlist/3ETEXLx2zZ9GFzQHFYKqmJBcS9M_w/kiro-in-aws-conso
 
 🟠 Why does the console still say Q developer in the service list?
 
+🟠 I thinek the AI model is understandably getting confused due to the way IPAM works. I would have had the EIP allocated in the IPAM itself and then share that out with RAM share to the acount that needs to use it. That way if the account is deleted (one of my other issues) the EIP can still be managed by the IPAM account. And this is all confusing because the program has to switch roles from the IPAM account to the account using an IP to create a new EIP. I suppose this is because a network team might want to allow end users in the accounts add and release IPs as needed. But it's confusing for the model and difficult to maanage when the account using the EIP gets deleted. 
+
 
 
 
