@@ -7,6 +7,8 @@
 
 🟡 Rename and account - name, email, alias - use this before closing an account
 
+🟡 request what env type up front - management, jobs, web, test, other and display corresponding list of resources to deploy
+
 🟡 Cannot deploy specific accounts. it's giving an error saying required accounts are not deployed. Also shoudl be able to deploy an account with whatever name. Requirement accounts depend on environment type.
 
 🟡 Last time I set up Kiro it seemed like there was something duplicated in there.
@@ -36,8 +38,6 @@
 🟡 Clarify what the domain names are for in the prompts for env config - do i need the org domain in all cases? 
 
 🟡 add a help function for all configuration items - type h and it writes the info then prompts again
-
-🟡 request what kind of env up front - management, jobs, web, test, other and display corresponding list of resources to deploy
 
 🟡 review code and reduce redundant code
 
