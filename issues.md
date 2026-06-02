@@ -17,3 +17,7 @@
 
 🟡 Issue with role assumption - until the org admin role is created need to use the AWS default role with no MFA. Once created, the AWS Org role needs to be disabled with an SCP (presuming it is not a service-linked role which is not subject to SCPs). I need to #1. Verify it is deployed as a non-SLR #2 Create the SCP #3 Depploy it at the appopriate point #4 maybe have an undeploy step run to remove it if needed
 
+🟡 Lists need a Return to Main Menu option before Exit
+
+🟡 y/n/e probable needs an m (main) option to go back to the main menu y/n/m/e
+
