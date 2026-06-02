@@ -105,38 +105,38 @@ Resources installed in every environment. Some are optinoal.
 | Admin role policy | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | S3 buckets (no KMS) | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | KMS keys | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| KMS key aliases | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| KMS policies | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| AWS Prefix Lists | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deploy Lambdas | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| VPC Flow Logs Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Remote Access VPC | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Remote Access Subnet | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Remote Access Security Group | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Remote Access Internet Gateway | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Rmemote Access Route Table | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Rmemote Access Security Group | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Remote Access VPC Ram Shares | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deployment VPC | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deplopyment Subnet | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deployment Security Group | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deployment Internet Gateway | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deployment Route Table | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deployment Security Group | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deployment VPC Ram Shares | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deployment VPC Endpoints | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deployment VPC Endpoints SGs | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Delete default VPCs | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Lambdas (with VPC) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| S3 buckets (with KMS) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Bucket policies | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| SSH Security Group | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| RDP Security Group | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| HTTP/HTTPS Security Group | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Base Ubuntu Instance Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Base Ubuntu ENI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Base Ubuntu Instance | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Base Ubuntu AMI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| KMS key aliases | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| KMS policies | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| AWS Prefix Lists | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deploy Lambdas | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| VPC Flow Logs Role | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Remote Access VPC | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Remote Access Subnet | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Remote Access Security Group | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Remote Access Internet Gateway | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Rmemote Access Route Table | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Rmemote Access Security Group | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Remote Access VPC Ram Shares | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deployment VPC | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deplopyment Subnet | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deployment Security Group | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deployment Internet Gateway | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deployment Route Table | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deployment Security Group | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deployment VPC Ram Shares | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deployment VPC Endpoints | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deployment VPC Endpoints SGs | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Delete default VPCs | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Lambdas (with VPC) | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| S3 buckets (with KMS) | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Bucket policies | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| SSH Security Group | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| RDP Security Group | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| HTTP/HTTPS Security Group | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Base Ubuntu Instance Role | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Base Ubuntu ENI | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Base Ubuntu Instance | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Base Ubuntu AMI | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | External AMI Share Key | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Share AMI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Budgets | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
@@ -191,7 +191,7 @@ The management environment contains accounts where my organization deletegated a
 | always-denied-actions [env] | 🟢 | 🔴 | 🟢  | 🔴 | 🔴 | 🔴 |
 | always-denied-actions [account] | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | deny-leave-organization[root]  | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
-| always-default-org-rool [root] | 🔴 | 🔴 | 🔴  | 🔴 | 🔴 | 🔴 |
+| always-default-org-rool [root] | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 
 ### Web Infrastructure ###
 
@@ -207,10 +207,10 @@ Some enviroments may include penetration testing and security research resources
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Burp ENI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Burp Instance Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Burp Instance | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Burp AMI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Burp ENI | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Burp Instance Role | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Burp Instance | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Burp AMI | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Collab ENI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Collab Instance Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Collab Instance | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -222,42 +222,41 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Git Credentials Secrets | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Auth Lambdas (no VPC) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Run Lambdas (no VPC) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| S3 buckets (no KMS) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| KMS keys | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Lambdas (with VPC) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| S3 buckets (with KMS) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Bucket policies | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Instance Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Git Credentials Secrets | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Auth Lambdas (no VPC) | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Run Lambdas (no VPC) | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| S3 buckets (no KMS) | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| KMS keys | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Lambdas (with VPC) | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| S3 buckets (with KMS) | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Bucket policies | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Instance Role | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Kiro CLI Identity Center | 🟡 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Job Dev ENI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Dev Instance | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Dev AMI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job ENI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Instance | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job AMI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth VPC | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth Subnet | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth Security Group | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth Internet Gateway | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth Route Table | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth Lambda Security Groups | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth VPC Endpoints | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth VPC Endpoint SGs | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| DynamoDB | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job VPC | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Subnet | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Security Group | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Internet Gateway | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Route Table | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Security Group | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job VPC Endpoints | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Route 53 Hosted Zone | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| ACM Certificate | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| API Gateway | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| CNAME | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Dev ENI | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Dev Instance | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Dev AMI | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job ENI | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Instance | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job AMI | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth VPC | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth Subnet | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth Security Group | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth Route Table | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth Lambda Security Groups | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth VPC Endpoints | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth VPC Endpoint SGs | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| DynamoDB | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job VPC | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Subnet | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Security Group | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Internet Gateway | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Route Table | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Security Group | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job VPC Endpoints | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Route 53 Hosted Zone | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| ACM Certificate | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| API Gateway | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| CNAME | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Backup Infrastructure ###
 
