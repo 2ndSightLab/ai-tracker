@@ -7,13 +7,7 @@
 
 🟡 Make sure VPC endpoints are optional and not configured eveywhere until confirm everything else is working properly to reduce costs excpet possibly the auth Lambda.
 
-🟡 UI: Step completion prompt is inconsistent. Sometimes has Quit and Exit. 
-
 🟡 Close account is not working and before closing an account need to fix the following: change alias name, change account name, change email address - to avoid conflicts if need to recreate the account.
-
-🟡 Backup account is missing from accounts list in non-management verficiation step. 
-
-🟡 Backup account is missing from accounts list in management account verficiation step.
 
 🟡 Currently I choose a region per env and I may allow different environments to operate in different regions but have no support for that. SCP allowed-regions [root] needs to only be deployed with management environment and allow global regions. Then an SCP per environment or account can optionally further restrict access.
 
@@ -70,6 +64,7 @@ Users & Groups
 🟡 Adding object logs to CloudTrail is expensive. Todo: Try this hack I got out of Google aimode:
 
 1. Enable Free S3 Server Access LogsS3 Server Access Logs are completely free to generate.Create a dedicated log destination bucket (e.g., my-s3-logs-bucket).Turn on Server Access Logging on your primary data bucket and point the destination to your log bucket.2. Deploy a Lambda "Log Processor"Create an AWS Lambda function triggered by an S3 Event Notification whenever a new log object is created in your log bucket.Because S3 writes logs in batches every few minutes, Lambda only triggers a few times an hour—not on every single file download. This keeps compute costs incredibly low.3. Write a Python script to filter and uploadUse a Python script inside your Lambda function to compress, filter out unneeded traffic, and send only the important data to CloudWatch using boto3.Below is a complete, production-ready Lambda function to handle this pipeline:pythonimport boto3
+```
 import gzip
 import re
 
@@ -141,6 +136,7 @@ def lambda_handler(event, context):
             )
             
     return {"statusCode": 200, "body": "Logs processed successfully"}
+```
 4. Apply a Strict Cost FilterThe main code logic that saves money is the Cost Saving Filter block in the code above.The Secret: CloudWatch still charges $0.50 per GB for data ingestion [1].If you forward every single read/write line from S3 to CloudWatch, you will still run up a high CloudWatch bill.Use the Lambda code to discard GET or HEAD operations. Only forward high-importance actions like DELETE or PUT, or actions originating from unauthorized IP addresses.Summary: CloudTrail vs. S3+Lambda ArchitectureMetricCloudTrail ApproachS3 + Lambda ApproachAWS Event Fee$0.10 per 100k events [1]$0.00 (Completely Free)Ingestion FeeFull price on every byte logged [1]Massively reduced via Lambda filtersSpeedNear real-time (1–3 mins)Slightly batched (5–10 mins delay)
 
 ## Fixed
@@ -164,4 +160,26 @@ Fix: was able to deploy Identity Center and Kiro in new environment even though 
 
 🟢 Cannot deploy specific accounts. it's giving an error saying required accounts are not deployed. Also shoudl be able to deploy an account with whatever name. Requirement accounts depend on environment type.
 - Added custom option for environment type allowing any account list - in theory only resources for selected accounts will be deployed but this needs to be tested.
+🟢 AI Bug -  line 38: ENV_TYPE: unbound variable
+🟢 Deafult to what is in XML if set - Environment type:
+  1. Management (organization management OU)
+  2. Jobs (standard multi-account)
+  3. Custom (choose accounts)
+  4. Exit
+🟢 UI: Step completion prompt is inconsistent. Sometimes has Quit and Exit. > removed quit - found a large list of menus not using the shared menu file and fixed. I don't like the way it implemted this weird list of strings instead of using an array but asking Kiro says strings are better:
+> Newline-separated string is better here because:
+
+1. Arrays can't be passed between sourced files without declare -n or global naming conventions — strings just 
+work with simple variable assignment
+2. The items contain spaces (e.g. "Deploy all lambdas (all regions, no prompts)") — arrays would need careful 
+quoting at every call site
+3. <<< with a newline string is a single-command pattern that's easy to read and doesn't hide errors
+4. No risk of word splitting bugs — IFS read with newline delimiter handles it cleanly
+
+Arrays would only be better if items could contain literal newlines, which they don't here.
+Hmm. 
+Lines removed: 115
+🟢 Backup account is missing from accounts list in non-management verficiation step. 
+🟢 Backup account is missing from accounts list in management account verficiation step.
+
 
