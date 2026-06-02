@@ -7,6 +7,8 @@
 
 🟡 Rename and account - name, email, alias - use this before closing an account
 
+🟡 Cannot deploy specific accounts. it's giving an error saying required accounts are not deployed. Also shoudl be able to deploy an account with whatever name. Requirement accounts depend on environment type.
+
 🟡 Last time I set up Kiro it seemed like there was something duplicated in there.
 
 🟡 Make sure VPC endpoints are optional and not configured eveywhere until confirm everything else is working properly to reduce costs excpet possibly the auth Lambda.
