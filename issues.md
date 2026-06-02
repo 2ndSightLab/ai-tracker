@@ -21,3 +21,4 @@
 
 🟡 y/n/e probable needs an m (main) and environment action (a) option to go back to the main menu y/n/m/a/e
 
+🟡 Deploy budgets works but verify budgets deletes the budget it is supposed to be verifying.
