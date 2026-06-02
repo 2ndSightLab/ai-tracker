@@ -22,3 +22,81 @@
 🟡 y/n/e probable needs an m (main) and environment action (a) option to go back to the main menu y/n/m/a/e
 
 🟡 Deploy budgets works but verify budgets deletes the budget it is supposed to be verifying.
+
+🟡 Adding bucket logging somehow broke bucket deployments.
+
+🟡 Adding object logs to CloudTrail is expensive. Todo: Try this hack I got out of Google aimode:
+
+1. Enable Free S3 Server Access LogsS3 Server Access Logs are completely free to generate.Create a dedicated log destination bucket (e.g., my-s3-logs-bucket).Turn on Server Access Logging on your primary data bucket and point the destination to your log bucket.2. Deploy a Lambda "Log Processor"Create an AWS Lambda function triggered by an S3 Event Notification whenever a new log object is created in your log bucket.Because S3 writes logs in batches every few minutes, Lambda only triggers a few times an hour—not on every single file download. This keeps compute costs incredibly low.3. Write a Python script to filter and uploadUse a Python script inside your Lambda function to compress, filter out unneeded traffic, and send only the important data to CloudWatch using boto3.Below is a complete, production-ready Lambda function to handle this pipeline:pythonimport boto3
+import gzip
+import re
+
+s3_client = boto3.client('s3')
+cw_client = boto3.client('logs')
+
+# Change these to match your environment
+LOG_GROUP_NAME = '/aws/s3/custom-object-access'
+LOG_STREAM_NAME = 's3-access-stream'
+
+def lambda_handler(event, context):
+    # Ensure the CloudWatch log stream exists
+    try:
+        cw_client.create_log_stream(logGroupName=LOG_GROUP_NAME, logStreamName=LOG_STREAM_NAME)
+    except cw_client.exceptions.ResourceAlreadyExistsException:
+        pass
+
+    # Extract bucket and file name from the S3 event trigger
+    bucket = event['Records'][0]['s3']['bucket']['name']
+    key = event['Records'][0]['s3']['object']['key']
+    
+    # Download the log file from S3
+    response = s3_client.get_object(Bucket=bucket, Key=key)
+    log_data = response['Body'].read()
+    
+    # Decompress if S3 automatically gzipped it
+    if key.endswith('.gz'):
+        log_data = gzip.decompress(log_data)
+        
+    log_lines = log_data.decode('utf-8').splitlines()
+    
+    log_events = []
+    
+    # Regex pattern to parse standard S3 Server Access Log format
+    log_pattern = re.compile(
+        r'(?P<owner>\S+) (?P<bucket>\S+) \[(?P<time>[^\]]+)\] (?P<ip>\S+) '
+        r'(?P<requester>\S+) (?P<req_id>\S+) (?P<operation>\S+) (?P<key>\S+) '
+        r'"(?P<request>[^"]*)" (?P<status>\d+) (?P<error>\S+) (?P<bytes>\S+)'
+    )
+    
+    for line in log_lines:
+        match = log_pattern.match(line)
+        if match:
+            data = match.groupdict()
+            
+            # --- COST SAVING FILTER ---
+            # Example: Only send DELETE or PUT operations to CloudWatch, ignore GETs
+            if data['operation'] not in ['REST.PUT.OBJECT', 'REST.DELETE.OBJECT']:
+                continue
+                
+            # If it passes the filter, format for CloudWatch
+            import time
+            # Fallback to current time if log timestamp parsing is omitted for simplicity
+            timestamp_ms = int(time.time() * 1000) 
+            
+            log_events.append({
+                'timestamp': timestamp_ms,
+                'message': f"User: {data['requester']} | Op: {data['operation']} | File: {data['key']} | IP: {data['ip']}"
+            })
+            
+    # Batch upload to CloudWatch if any matching logs were found
+    if log_events:
+        # CloudWatch limits batch uploads to 10,000 events at a time
+        for i in range(0, len(log_events), 10000):
+            cw_client.put_log_events(
+                logGroupName=LOG_GROUP_NAME,
+                logStreamName=LOG_STREAM_NAME,
+                logEvents=log_events[i:i+10000]
+            )
+            
+    return {"statusCode": 200, "body": "Logs processed successfully"}
+Use code with caution.4. Apply a Strict Cost FilterThe main code logic that saves money is the Cost Saving Filter block in the code above.The Secret: CloudWatch still charges $0.50 per GB for data ingestion [1].If you forward every single read/write line from S3 to CloudWatch, you will still run up a high CloudWatch bill.Use the Lambda code to discard GET or HEAD operations. Only forward high-importance actions like DELETE or PUT, or actions originating from unauthorized IP addresses.Summary: CloudTrail vs. S3+Lambda ArchitectureMetricCloudTrail ApproachS3 + Lambda ApproachAWS Event Fee$0.10 per 100k events [1]$0.00 (Completely Free)Ingestion FeeFull price on every byte logged [1]Massively reduced via Lambda filtersSpeedNear real-time (1–3 mins)Slightly batched (5–10 mins delay)
