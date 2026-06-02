@@ -22,8 +22,6 @@
 
 🟡 Delete should show resources in reverse order as last things deployed get deleted first due to dependencies
 
-🟡 request what env type up front - management, jobs, web, test, other and display corresponding list of resources to deploy
-
 🟡 Rename and account - name, email, alias - use this before closing an account
 
 🟡 add a help function for all configuration items - type h and it writes the info then prompts again
@@ -176,5 +174,7 @@ Fix: was able to deploy Identity Center and Kiro in new environment even though 
 🟢 Backup account is missing from accounts list in non-management verficiation step. 
 
 🟢 Backup account is missing from accounts list in management account verficiation step.
+
+🟢 request what env type up front - management, jobs, web, test, other and display corresponding list of resources to deploy
 
 
