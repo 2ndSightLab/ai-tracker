@@ -1,7 +1,9 @@
 
+# Issues
+
 🟡 For me to fix  🟢 Resolved
 
-6/1/2026
+## Showstoppers
 
 🟡 Stuck in all directions and connot test any further until I fix the following. What I have to do now is re-set up my Kiro environment or use an account temporarily in my old environment until I fix and deploy Kiro in the new environment. Since I deleted my old instances and AWS Identity center I'm going to set up a temp OU and account for this purpose
 
@@ -35,19 +37,21 @@
 
 🟡 Adding bucket logging somehow broke bucket deployments.
 
-🟡 Clarify what the domain names are for in the prompts for env config - do i need the org domain in all cases? 
-
-🟡 add a help function for all configuration items - type h and it writes the info then prompts again
-
-🟡 review code and reduce redundant code
-
 🟡 Pull admin ips from other configs if exist keep having to look thos up, also admin acct, email domain, etc. maybe have a default configuration file
 
 🟡 Delete should show resources in reverse order as last things deployed get deleted first due to dependencies
 
-🟡 Not sure this is really my bug. After programmatically creating Kiro profile in acount it's all blank. It wasn't this way before so I think some thing at AWS cahnged. Need to revisit and test adding and removing Kiro but it ssems to be working with that last manual step. I had documented that I had to manually take that last step in the program so maybe that's the way it is.
 
-🟡 Info missing kiro instance:
+## Not Showstoppers
+
+🟡 add a help function for all configuration items - type h and it writes the info then prompts again
+
+🟡 Clarify what the domain names are for in the prompts for env config - do i need the org domain in all cases? 
+
+🟡 review code and reduce redundant code
+
+🟡 Info missing kiro instance: Not sure this is really my bug. After programmatically creating Kiro profile in acount it's all blank. It wasn't this way before so I think some thing at AWS cahnged. Need to revisit and test adding and removing Kiro but it ssems to be working with that last manual step. I had documented that I had to manually take that last step in the program so maybe that's the way it is.
+
 Name
 -
 Description
