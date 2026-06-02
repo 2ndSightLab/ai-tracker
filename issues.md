@@ -3,9 +3,7 @@
 
 🟡 For me to fix  🟢 Resolved
 
-🟡 Adding bucket logging somehow broke bucket deployments.
-
-🟡 Cannot deploy specific accounts. it's giving an error saying required accounts are not deployed. Also shoudl be able to deploy an account with whatever name. Requirement accounts depend on environment type.
+6/1/2026 - 6/2/2026
 
 🟡 Make sure VPC endpoints are optional and not configured eveywhere until confirm everything else is working properly to reduce costs excpet possibly the auth Lambda.
 
@@ -25,7 +23,6 @@
 
 🟡 y/n/e probable needs an m (main) and environment action (a) option to go back to the main menu y/n/m/a/e
 
-🟡 Deploy budgets works but verify budgets deletes the budget it is supposed to be verifying.
 
 🟡 Pull admin ips from other configs if exist keep having to look thos up, also admin acct, email domain, etc. maybe have a default configuration file
 
@@ -150,3 +147,15 @@ def lambda_handler(event, context):
 
 🟢  Stuck in all directions and connot test any further until I fix the following. What I have to do now is re-set up my Kiro environment or use an account temporarily in my old environment until I fix and deploy Kiro in the new environment. Since I deleted my old instances and AWS Identity center I'm going to set up a temp OU and account for this purpose
 Fix: was able to deploy Identity Center and Kiro in new environment even though other stuff was blocked. Had to figure ou why the profile was blank and what to do about that. Had to enteer a user email to enable kiro which was not my logged in user or a user I had given ANY permissions to so that was weird.
+🟢 Was not checking for log bucket existence before assigning log bucket to a bucket
+🟢 Added verification bucket lambda exists beore deploying buckets - this is the problem with using lambdas vs. just using the script with the CLI
+🟢 Deploy budgets works but verify budgets deletes the budget it is supposed to be verifying.
+🟢 Adding bucket logging somehow broke bucket deployments.
+🟢 AI Bug
+[us-east-2]
+/usr/local/share/botz-projects/botz-env-bootstrap/config/env/x.xml:1: parser error : Specification mandates value for attribute ...arser error : expected '>'
+🟢 AI Bug - rules say to use xmllint and it used python
+🟢 Cannot deploy specific accounts. it's giving an error saying required accounts are not deployed. Also shoudl be able to deploy an account with whatever name. Requirement accounts depend on environment type.
+- Added custom option for environment type allowing any account list - in theory only resources for selected accounts will be deployed but this needs to be tested.
+
+
