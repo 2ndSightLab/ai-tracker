@@ -35,6 +35,8 @@
 
 🟡 request what kind of env up front - management, jobs, web, test, other and display corresponding list of resources to deploy
 
+🟡 review code and reduce redundant code
+
 🟡 Adding object logs to CloudTrail is expensive. Todo: Try this hack I got out of Google aimode:
 
 1. Enable Free S3 Server Access LogsS3 Server Access Logs are completely free to generate.Create a dedicated log destination bucket (e.g., my-s3-logs-bucket).Turn on Server Access Logging on your primary data bucket and point the destination to your log bucket.2. Deploy a Lambda "Log Processor"Create an AWS Lambda function triggered by an S3 Event Notification whenever a new log object is created in your log bucket.Because S3 writes logs in batches every few minutes, Lambda only triggers a few times an hour—not on every single file download. This keeps compute costs incredibly low.3. Write a Python script to filter and uploadUse a Python script inside your Lambda function to compress, filter out unneeded traffic, and send only the important data to CloudWatch using boto3.Below is a complete, production-ready Lambda function to handle this pipeline:pythonimport boto3
