@@ -192,6 +192,7 @@ The management environment contains accounts where my organization deletegated a
 | always-denied-actions [account] | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | deny-leave-organization[root]  | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
 | always-default-org-rool [root] | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| deploy-scp-require-imdsv2.sh | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 
 ### Web Infrastructure ###
 
