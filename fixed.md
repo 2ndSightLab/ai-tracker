@@ -1,5 +1,7 @@
 # Fixed Issues
 
+6/2/2026 6:18 PM 
+
 6/1/2026 - 6/2/2026
 
 🟢  Stuck in all directions and connot test any further until I fix the following. What I have to do now is re-set up my Kiro environment or use an account temporarily in my old environment until I fix and deploy Kiro in the new environment. Since I deleted my old instances and AWS Identity center I'm going to set up a temp OU and account for this purpose
