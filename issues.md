@@ -5,6 +5,8 @@ Fixed issues in fixed.md
 
 6/2/2026 6:18 PM 
 
+🟡 Org Policy to only allow IMDSv2
+
 6/1/2026 - 6/2/2026
 
 🟡 Make sure VPC endpoints are optional and not configured eveywhere until confirm everything else is working properly to reduce costs except possibly the auth Lambda.
