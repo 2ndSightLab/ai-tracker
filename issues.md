@@ -45,6 +45,22 @@
 
 🟡 Delete should show resources in reverse order as last things deployed get deleted first due to dependencies
 
+🟡 Info missing kiro instance:
+Name
+-
+Description
+-
+AWS Organizations account type
+Individual
+Profile ARN
+-
+IAM Identity Center region
+-
+Sign in URL
+-
+Users & Groups
+-
+
 🟡 why is this empty stuff in the configuration
 
   --- us-east-1 ---
