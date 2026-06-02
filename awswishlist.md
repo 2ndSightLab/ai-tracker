@@ -124,7 +124,9 @@ https://builder.aws.com/wishlist/3ETEXLx2zZ9GFzQHFYKqmJBcS9M_w/kiro-in-aws-conso
 
 🟠 CloudTrail error column setting - on by default. Why are they not? Isn't one of the most common use cases in CloudTrail looking for what caused an error? https://builder.aws.com/wishlist/392dYfiCpiV12TSZbDHYiTAcpQJ_w/cloudtrail-error-column-setting-on-by-default
 
+## Not reported
 
+🟠 This is just weird - I programmatically created a kiro instance to configure a new account. THe instance is there but no sesttings are onfigured. When I enable Kiro it asks for an email. I'm logged in with an IAM user and I'm using a standalone identity center. I've programmaticaly created my new user which in theory has no permissions. So which email? I use the email address of the admin and it doesn't work because it is an IAM user. I use the email of the identity center user and it is accepted and enables Kiro even though that user has been granted no permissions. In that case why not just enable by deafult automaticaly because it is the same difference.
 
 
 
