@@ -35,3 +35,8 @@ Fix: was able to deploy Identity Center and Kiro in new environment even though 
 ⭐️⭐️⭐️ Lines removed: 115 ⭐️⭐️⭐️ 
 
 🟢 Backup account is missing from accounts list in non-management verficiation step. 
+
+🟢 Backup account is missing from accounts list in management account verficiation step.
+
+🟢 request what env type up front - management, jobs, web, test, other and display corresponding list of resources to deploy
+
