@@ -3,6 +3,8 @@
 
 🟡 For me to fix  🟢 Resolved
 
+6/2/2026 6:18 PM 
+
 6/1/2026 - 6/2/2026
 
 🟡 Make sure VPC endpoints are optional and not configured eveywhere until confirm everything else is working properly to reduce costs excpet possibly the auth Lambda.
