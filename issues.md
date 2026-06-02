@@ -160,12 +160,15 @@ Fix: was able to deploy Identity Center and Kiro in new environment even though 
 
 🟢 Cannot deploy specific accounts. it's giving an error saying required accounts are not deployed. Also shoudl be able to deploy an account with whatever name. Requirement accounts depend on environment type.
 - Added custom option for environment type allowing any account list - in theory only resources for selected accounts will be deployed but this needs to be tested.
+
 🟢 AI Bug -  line 38: ENV_TYPE: unbound variable
+
 🟢 Deafult to what is in XML if set - Environment type:
   1. Management (organization management OU)
   2. Jobs (standard multi-account)
   3. Custom (choose accounts)
   4. Exit
+
 🟢 UI: Step completion prompt is inconsistent. Sometimes has Quit and Exit. > removed quit - found a large list of menus not using the shared menu file and fixed.
 
 ⭐️⭐️⭐️ Lines removed: 115 ⭐️⭐️⭐️ 
