@@ -45,6 +45,8 @@
 
 🟡 Delete should show resources in reverse order as last things deployed get deleted first due to dependencies
 
+🟡 Not sure this is really my bug. After programmatically creating Kiro profile in acount it's all blank. It wasn't this way before so I think some thing at AWS cahnged. Need to revisit and test adding and removing Kiro but it ssems to be working with that last manual step. I had documented that I had to manually take that last step in the program so maybe that's the way it is.
+
 🟡 Info missing kiro instance:
 Name
 -
