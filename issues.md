@@ -3,11 +3,7 @@
 
 🟡 For me to fix  🟢 Resolved
 
-## Showstoppers
-
-🟡 Rename and account - name, email, alias - use this before closing an account
-
-🟡 request what env type up front - management, jobs, web, test, other and display corresponding list of resources to deploy
+🟡 Adding bucket logging somehow broke bucket deployments.
 
 🟡 Cannot deploy specific accounts. it's giving an error saying required accounts are not deployed. Also shoudl be able to deploy an account with whatever name. Requirement accounts depend on environment type.
 
@@ -33,14 +29,13 @@
 
 🟡 Deploy budgets works but verify budgets deletes the budget it is supposed to be verifying.
 
-🟡 Adding bucket logging somehow broke bucket deployments.
-
 🟡 Pull admin ips from other configs if exist keep having to look thos up, also admin acct, email domain, etc. maybe have a default configuration file
 
 🟡 Delete should show resources in reverse order as last things deployed get deleted first due to dependencies
 
+🟡 request what env type up front - management, jobs, web, test, other and display corresponding list of resources to deploy
 
-## Not Showstoppers
+🟡 Rename and account - name, email, alias - use this before closing an account
 
 🟡 add a help function for all configuration items - type h and it writes the info then prompts again
 
