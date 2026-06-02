@@ -166,20 +166,12 @@ Fix: was able to deploy Identity Center and Kiro in new environment even though 
   2. Jobs (standard multi-account)
   3. Custom (choose accounts)
   4. Exit
-🟢 UI: Step completion prompt is inconsistent. Sometimes has Quit and Exit. > removed quit - found a large list of menus not using the shared menu file and fixed. I don't like the way it implemted this weird list of strings instead of using an array but asking Kiro says strings are better:
-> Newline-separated string is better here because:
+🟢 UI: Step completion prompt is inconsistent. Sometimes has Quit and Exit. > removed quit - found a large list of menus not using the shared menu file and fixed.
 
-1. Arrays can't be passed between sourced files without declare -n or global naming conventions — strings just 
-work with simple variable assignment
-2. The items contain spaces (e.g. "Deploy all lambdas (all regions, no prompts)") — arrays would need careful 
-quoting at every call site
-3. <<< with a newline string is a single-command pattern that's easy to read and doesn't hide errors
-4. No risk of word splitting bugs — IFS read with newline delimiter handles it cleanly
+⭐️⭐️⭐️ Lines removed: 115 ⭐️⭐️⭐️ 
 
-Arrays would only be better if items could contain literal newlines, which they don't here.
-Hmm. 
-Lines removed: 115
 🟢 Backup account is missing from accounts list in non-management verficiation step. 
+
 🟢 Backup account is missing from accounts list in management account verficiation step.
 
 
