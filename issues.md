@@ -7,24 +7,23 @@ Fixed issues in fixed.md
 
 6/1/2026 - 6/2/2026
 
-🟡 Make sure VPC endpoints are optional and not configured eveywhere until confirm everything else is working properly to reduce costs excpet possibly the auth Lambda.
+🟡 Make sure VPC endpoints are optional and not configured eveywhere until confirm everything else is working properly to reduce costs except possibly the auth Lambda.
 
-🟡 Close account is not working and before closing an account need to fix the following: change alias name, change account name, change email address - to avoid conflicts if need to recreate the account.
+🟡 Delete should show resources in reverse order as last things deployed get deleted first due to dependencies
 
-🟡 Currently I choose a region per env and I may allow different environments to operate in different regions but have no support for that. SCP allowed-regions [root] needs to only be deployed with management environment and allow global regions. Then an SCP per environment or account can optionally further restrict access.
-
-🟡 Issue with role assumption - until the org admin role is created need to use the AWS default role with no MFA. Once created, the AWS Org role needs to be disabled with an SCP (presuming it is not a service-linked role which is not subject to SCPs). I need to #1. Verify it is deployed as a non-SLR #2 Create the SCP #3 Depploy it at the appopriate point #4 maybe have an undeploy step run to remove it if needed
+🟡 Pull admin ips from other configs if exist keep having to look thos up, also admin acct, email domain, etc. maybe have a default configuration file
 
 🟡 Lists need a Return to Main Menu and return to Environment Action menu option before Exit
 
 🟡 y/n/e probable needs an m (main) and environment action (a) option to go back to the main menu y/n/m/a/e
 
-
-🟡 Pull admin ips from other configs if exist keep having to look thos up, also admin acct, email domain, etc. maybe have a default configuration file
-
-🟡 Delete should show resources in reverse order as last things deployed get deleted first due to dependencies
+🟡 Issue with role assumption - until the org admin role is created need to use the AWS default role with no MFA. Once created, the AWS Org role needs to be disabled with an SCP (presuming it is not a service-linked role which is not subject to SCPs). I need to #1. Verify it is deployed as a non-SLR #2 Create the SCP #3 Depploy it at the appopriate point #4 maybe have an undeploy step run to remove it if needed
 
 🟡 Rename and account - name, email, alias - use this before closing an account
+
+🟡 Close account is not working and before closing an account need to fix the following: change alias name, change account name, change email address - to avoid conflicts if need to recreate the account.
+
+🟡 Currently I choose a region per env and I may allow different environments to operate in different regions but have no support for that. SCP allowed-regions [root] needs to only be deployed with management environment and allow global regions. Then an SCP per environment or account can optionally further restrict access.
 
 🟡 add a help function for all configuration items - type h and it writes the info then prompts again
 
@@ -139,6 +138,3 @@ def lambda_handler(event, context):
     return {"statusCode": 200, "body": "Logs processed successfully"}
 ```
 4. Apply a Strict Cost FilterThe main code logic that saves money is the Cost Saving Filter block in the code above.The Secret: CloudWatch still charges $0.50 per GB for data ingestion [1].If you forward every single read/write line from S3 to CloudWatch, you will still run up a high CloudWatch bill.Use the Lambda code to discard GET or HEAD operations. Only forward high-importance actions like DELETE or PUT, or actions originating from unauthorized IP addresses.Summary: CloudTrail vs. S3+Lambda ArchitectureMetricCloudTrail ApproachS3 + Lambda ApproachAWS Event Fee$0.10 per 100k events [1]$0.00 (Completely Free)Ingestion FeeFull price on every byte logged [1]Massively reduced via Lambda filtersSpeedNear real-time (1–3 mins)Slightly batched (5–10 mins delay)
-
-
-
