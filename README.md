@@ -109,12 +109,12 @@ Resources installed in every environment. Some are optinoal.
 | KMS key aliases | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Deploy Lambdas | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | VPC Flow Logs Role | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Remote Access VPC | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Remote Access (Work) VPC | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Remote Access Subnet | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Remote Access Security Group | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Remote Access Internet Gateway | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Rmemote Access Route Table | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Rmemote Access Security Group | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Remote Access Route Table | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Remote Access Security Group | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Remote Access VPC Ram Shares | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Deployment VPC | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Deplopyment Subnet | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -201,6 +201,7 @@ This is a separate project that allows deploying a static website in any web acc
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Static Web Site | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Web VPC | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Test Infrastructure ###
 
@@ -247,7 +248,7 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | Auth VPC Endpoints | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Auth VPC Endpoint SGs | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | DynamoDB | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job VPC | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job VPC | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Subnet | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Security Group | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Internet Gateway | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
