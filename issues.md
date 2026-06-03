@@ -11,13 +11,10 @@ Fixed issues in fixed.md
 
 🟡 May be a dup but I think the user/role has to be deployed prior to teh location it is in the base env.
 
-🟡 Add a verfication step for KMS policies
 
 6/1/2026 - 6/2/2026
 
 🟡 Make sure VPC endpoints are optional and not configured eveywhere until confirm everything else is working properly to reduce costs except possibly the auth Lambda.
-
-🟡 Pull admin ips from other configs if exist keep having to look thos up, also admin acct, email domain, etc. maybe have a default configuration file
 
 🟡 Lists need a Return to Main Menu and return to Environment Action menu option before Exit
 
