@@ -191,7 +191,7 @@ This is a separate project that allows deploying a static website in any web acc
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Static Web Site | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Web Lambda | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Test Infrastructure ###
 
