@@ -110,22 +110,13 @@ Resources installed in every environment. Some are optinoal.
 | Deploy Lambdas | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | VPC Flow Logs Role | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Remote Access (Work) VPC | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Remote Access Subnet | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Remote Access Security Group | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Remote Access Internet Gateway | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Remote Access Route Table | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Remote Access Security Group | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Remote Access VPC Ram Shares | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deployment VPC | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deplopyment Subnet | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deployment Security Group | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deployment Internet Gateway | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deployment Route Table | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deployment Security Group | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deployment VPC Ram Shares | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deployment VPC Endpoints | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deployment VPC Endpoints SGs | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Delete default VPCs | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Remote Access Subnet | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Remote Access Security Group | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Remote Access Internet Gateway | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Remote Access Route Table | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Remote Access Security Group | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Remote Access VPC Ram Shares | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Delete default VPCs | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Deploy Lambdas (with VPC) | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | S3 buckets (with KMS) | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Bucket policies | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -240,12 +231,13 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | Job Instance | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job AMI | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Auth VPC | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth Subnet | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth Security Group | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth Route Table | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth Lambda Security Groups | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth VPC Endpoints | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth VPC Endpoint SGs | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth Subnet | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth Security Group | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth Route Table | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth Lambda Security Groups | 🟢  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth VPC Endpoints | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth VPC Endpoint SGs | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth VPC RAM share | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | DynamoDB | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job VPC | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Subnet | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
