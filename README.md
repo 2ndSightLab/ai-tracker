@@ -282,6 +282,6 @@ Back up infrastructure segregated from other infrastructure
 
 | Feature | Deploy | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: |:---: |
-| IAM Acccess Analyzer | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Prowler / AWS Equivalent (To review) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| IAM Acccess Analyzer Report | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Prowler Report | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
