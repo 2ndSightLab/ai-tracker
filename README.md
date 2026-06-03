@@ -52,13 +52,19 @@ The time it takes is demonstrated by feature completion and the timestamps in th
 
 ## Cost: ##
 
-Token and infrastructure spend.
+### Costs while building an AI Agent Bootstrap Script and Framework
+**Date Range:** Mar 7, 2026 - Jun 2, 2026
 
-| March | April | May |
-| :---: | :---: | :---: | 
-| $ | $ | $ |
+| Cost Category | Total | Mar 2026 | Apr 2026 | May 2026 | Jun 2026* |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| **TOTAL COSTS** | **\$1,389.34** | **\$359.07** | **\$387.55** | **\$621.52** | **\$21.20** |
+| Kiro | \$613.43 | \$193.55 | \$129.07 | \$285.79 | \$5.02 |
 
-Note that cost includes some times when the model was nerfed, billing snafus, and I took most of May off (though my plan rolled over and charged me even though I cancelled it before a trip.)
+Costs broken down by service can be found here:
+
+https://github.com/2ndSightLab/ai-tracker/blob/main/cost.md
+
+This data is pulled from a custom Dashboard I created in the AWS Cost Management serivce in the AWS Console. I copy and paste the data into Google aimode, translate it to markdown, and paste it here periodically. Note that the organizational costs include monitoring for a few other accounts that contain static websites, storage and where I do some security research and pentesting. Those account costs are not included bu the cost of the organizational services includes those other accounts. I didn't bother to try to filter that out due to lack of time and I'm not sure how to do that wihtout looking into it further. The cost is minimal and not worth the effort at them moment.
 
 ## Objectives
 
