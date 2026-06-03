@@ -81,9 +81,9 @@ Separate reusable project that handles configuring role profiles and role assump
 
 | Feature | Deploy | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | 
-| Reusaable Numbered Menu with Filter by letters | N/A | N/A | N/A | 🟢 | 🟢 | 🔴 | 🔴 |
-| Reusable y/n/e prompt | N/A | N/A | N/A | 🟢 | 🟢 | 🔴 | 🔴 |
-| Step completion prompt | N/A | N/A | N/A | 🟢 | 🟢 | 🔴 | 🔴 |
+| Reusaable Numbered Menu with Filter by letters | N/A | 🟢 | 🟢 | 🔴 | 🔴 |
+| Reusable y/n/e prompt | N/A |  🟢 | 🟢 | 🔴 | 🔴 |
+| Step completion prompt | N/A | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ### Base Environment ###
 
