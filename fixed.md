@@ -37,7 +37,7 @@ Fix: was able to deploy Identity Center and Kiro in new environment even though 
 
 🟢 AI Bug
 [us-east-2]
-/usr/local/share/botz-projects/botz-env-bootstrap/config/env/x.xml:1: parser error : Specification mandates value for attribute ...arser error : expected '>'
+/usr/local/share/-projects/-env-bootstrap/config/env/x.xml:1: parser error : Specification mandates value for attribute ...arser error : expected '>'
 
 🟢 AI Bug - rules say to use xmllint and it used python
 
