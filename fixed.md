@@ -2,6 +2,8 @@
 
 6/2/2026 6:18 PM - started with opus 4.6 but switched to 4.8 because it was makign mistakes. had to tell it to stop beign so verbose.
 
+🟢 Job lambdas were incorrectly in management OU. Added to a new job step deploy job lambdas as an optional step if environmet type = jobs.
+
 🟢 Delete should show resources in reverse order as last things deployed get deleted first due to dependencies
 
 🟢 Delete lambdas wasn't listing ALL lambdas for review
