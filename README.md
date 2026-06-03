@@ -107,7 +107,7 @@ Resources installed in every environment. Some are optinoal.
 | KMS keys | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | KMS policies | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | KMS key aliases | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deploy Lambdas | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deploy Lambdas | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | VPC Flow Logs Role | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Remote Access (Work) VPC | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Remote Access Subnet | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -126,7 +126,7 @@ Resources installed in every environment. Some are optinoal.
 | Deployment VPC Endpoints | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Deployment VPC Endpoints SGs | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Delete default VPCs | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Lambdas (with VPC) | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deploy Lambdas (with VPC) | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | S3 buckets (with KMS) | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Bucket policies | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | SSH Security Group | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -224,11 +224,11 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Git Credentials Secrets | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Auth Lambdas (no VPC) | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth Lambdas (no VPC) | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Run Lambdas (no VPC) | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | S3 buckets (no KMS) | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | KMS keys | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Lambdas (with VPC) | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth Lambdas (with VPC) | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | S3 buckets (with KMS) | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Bucket policies | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Instance Role | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
