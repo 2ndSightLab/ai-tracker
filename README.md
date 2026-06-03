@@ -201,7 +201,6 @@ This is a separate project that allows deploying a static website in any web acc
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Static Web Site | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Web VPC | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Test Infrastructure ###
 
@@ -240,7 +239,7 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | Job ENI | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Instance | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job AMI | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth VPC | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth VPC | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Auth Subnet | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Auth Security Group | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Auth Route Table | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
