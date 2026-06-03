@@ -6,6 +6,7 @@
 
 - Added: ~95 lines (new files)
 - Removed: ~208 lines (XML boilerplate)
+  
 ⭐️ Net: Removed ~-113 lines
 
 🟢 EIPs were not being deleted in the correct account. had to tell it to look up which accounts had eips to release/delete.
