@@ -7,16 +7,10 @@ Fixed issues in fixed.md
 
 🟡 Kiro can only be deployed in us-east-1. Maybe put it in it's own acct locked down to that region? or even it's own ou? TBD
 
-🟡 Org Policy to only allow IMDSv2
-
 🟡 May be a dup but I think the user/role has to be deployed prior to teh location it is in the base env.
 
 
 6/1/2026 - 6/2/2026
-
-🟡 Make sure VPC endpoints are optional and not configured eveywhere until confirm everything else is working properly to reduce costs except possibly the auth Lambda.
-
-🟡 Lists need a Return to Main Menu and return to Environment Action menu option before Exit
 
 🟡 y/n/e probable needs an m (main) and environment action (a) option to go back to the main menu y/n/m/a/e
 
