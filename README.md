@@ -71,7 +71,7 @@ Role, policy and permission boundary deployed in root management account in AWS 
 Separate reusable project that handles configuring role profiles and role assumption with MFA.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| :--- | :---: | :---: | :---: | :---: | 
 | Configure Role Profile | N/A | N/A | N/A | 🟢 | 🟢 | 🟢 |
 | Assume Role With MFA | N/A | N/A | N/A | 🟢 | 🟢 | 🟢 |
 
