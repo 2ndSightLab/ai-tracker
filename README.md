@@ -240,12 +240,13 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | Auth VPC RAM share | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | DynamoDB | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job VPC | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Subnet | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Security Group | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Internet Gateway | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Route Table | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Security Group | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job VPC Endpoints | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Subnet | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Security Group | 🟢  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Internet Gateway | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Route Table | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Security Group | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job VPC Endpoints | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job RAM Share | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Route 53 Hosted Zone | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | ACM Certificate | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | API Gateway | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
