@@ -105,8 +105,8 @@ Resources installed in every environment. Some are optinoal.
 | Admin role policy | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | S3 buckets (no KMS) | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | KMS keys | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| KMS key aliases | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| KMS policies | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| KMS policies | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| KMS key aliases | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | AWS Prefix Lists | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Deploy Lambdas | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | VPC Flow Logs Role | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -270,3 +270,11 @@ Back up infrastructure segregated from other infrastructure
 | Backup Account Per Environment | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Backup Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Backup Job | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+
+### Security Checks ###
+
+| Feature | Deploy | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: |:---: |
+| IAM Acccess Analyzer | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Prowler / AWS Equivalent (To review) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+
