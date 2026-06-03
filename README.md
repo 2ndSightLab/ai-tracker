@@ -175,8 +175,8 @@ The management environment contains accounts where my organization deletegated a
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| kms-account-allowed-services [env] | 🟢 | 🔴 | 🟢  | 🔴 | 🔴 | 🔴 |
-| deny-external-access [env] | 🟢 | 🟢  | 🟢  | 🔴 | 🔴 | 🔴 |
+| kms-account-allowed-services [env] | 🟢 | 🟢 | 🟢  | 🔴 | 🔴 | 🔴 |
+| deny-external-access [env] | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
 | always-denied-actions [root] | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
 | allowed-regions [root]  | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
 | always-denied-actions [env] | 🟢 | 🟢  | 🟢  | 🔴 | 🔴 | 🔴 |
