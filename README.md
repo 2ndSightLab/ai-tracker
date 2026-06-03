@@ -264,8 +264,8 @@ Back up infrastructure segregated from other infrastructure
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Backup OU | 🟢  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Backup Account Per Environment | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Backup OU | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Backup Account Per Environment | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Archive Account Lambda Role | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Archive Account Lambda | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Archive Account Lambda SG | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
