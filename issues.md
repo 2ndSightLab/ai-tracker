@@ -5,6 +5,8 @@ Fixed issues in fixed.md
 
 6/2/2026 6:18 PM 
 
+🟡 Kiro can only be deployed in us-east-1. Maybe put it in it's own acct locked down to that region? or even it's own ou? TBD
+
 🟡 Org Policy to only allow IMDSv2
 
 🟡 May be a dup but I think the user/role has to be deployed prior to teh location it is in the base env.
@@ -14,8 +16,6 @@ Fixed issues in fixed.md
 6/1/2026 - 6/2/2026
 
 🟡 Make sure VPC endpoints are optional and not configured eveywhere until confirm everything else is working properly to reduce costs except possibly the auth Lambda.
-
-🟡 Delete should show resources in reverse order as last things deployed get deleted first due to dependencies
 
 🟡 Pull admin ips from other configs if exist keep having to look thos up, also admin acct, email domain, etc. maybe have a default configuration file
 
