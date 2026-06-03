@@ -100,7 +100,7 @@ Resources installed in every environment. Some are optinoal.
 | IPAM EIP allocation | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | SCPs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Admin users | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Admin user policy | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Admin user policy | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Admin roles | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Admin role policy | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | S3 buckets (no KMS) | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
