@@ -2,6 +2,8 @@
 
 6/2/2026 6:18 PM - started with opus 4.6 but switched to 4.8 because it was makign mistakes. had to tell it to stop beign so verbose.
 
+🟢 Root SCPs only run in mangaement account and attached to root ou; env scps run in every environent and attached to env ou
+
 🟢 Code reduction: After reviewign and fixing issues with IPAM/EIP code:
 
 - Added: ~95 lines (new files)
