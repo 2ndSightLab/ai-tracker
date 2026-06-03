@@ -118,8 +118,8 @@ Resources installed in every environment. Some are optinoal.
 | Remote Access VPC Ram Shares | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Delete default VPCs | n/a | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Deploy Lambdas (with VPC) | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| S3 buckets (with KMS) | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Bucket policies | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| S3 buckets (with KMS) | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Bucket policies | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | SSH Security Group | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | RDP Security Group | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | HTTP/HTTPS Security Group | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -182,7 +182,7 @@ The management environment contains accounts where my organization deletegated a
 | always-denied-actions [env] | 🟢 | 🟢  | 🟢  | 🔴 | 🔴 | 🔴 |
 | always-denied-actions [account] | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
 | deny-leave-organization[root]  | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
-| always-default-org-rool [root] | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
+| always-default-org-root [root] | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
 | deploy-scp-require-imdsv2.sh | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
 
 ### Web Infrastructure ###
