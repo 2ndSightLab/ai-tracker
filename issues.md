@@ -3,6 +3,10 @@
 
 Fixed issues in fixed.md
 
+6/3/2026 3:19 PM
+
+🟡 Move arhcive lambda and role into it's own step.
+
 6/2/2026 6:18 PM 
 
 🟡 Kiro can only be deployed in us-east-1. Maybe put it in it's own acct locked down to that region? or even it's own ou? TBD
