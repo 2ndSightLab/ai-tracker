@@ -2,13 +2,17 @@
 
 6/2/2026 6:18 PM - started with opus 4.6 but switched to 4.8 because it was makign mistakes. had to tell it to stop beign so verbose.
 
+🟢 Pull admin ips from other configs if exist keep having to look thos up, also admin acct, email domain, etc. maybe have a default configuration file
+
+🟢 Add a verfication step for KMS policies - added output to kms verification
+
 🟢 Job lambdas were incorrectly in management OU. Added to a new job step deploy job lambdas as an optional step if environmet type = jobs.
 
-🟢 Delete should show resources in reverse order as last things deployed get deleted first due to dependencies
+🟢 Delete should show resources in reverse order as last things deployed get deleted first due to dependencies; bug - ddin't properly align selection numbers with new step numbers.
 
 🟢 Delete lambdas wasn't listing ALL lambdas for review
 
-🟢 Quiet option for role ssumption to make output easier to read but leave the option for detailed troubleshooting; 3 tries still not working
+🟢 Quiet option for role ssumption to make output easier to read but leave the option for detailed troubleshooting; 4 tries still not working
 
 🟢 Previously told model to move all the auth related stuff to a new account and it did not move the related networking. fixed. hopefully. 
 
