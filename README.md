@@ -217,15 +217,15 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | Git Credentials Secrets | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Auth Lambdas (no VPC) | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Run Lambdas (no VPC) | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| S3 buckets (no KMS) | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| KMS keys | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| S3 buckets (no KMS) | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| KMS keys | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Auth Lambdas (with VPC) | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | S3 buckets (with KMS) | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Bucket policies | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Instance Role | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Kiro CLI Identity Center | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Job Dev ENI | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Dev Instance | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Dev EC2 Instance | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Dev AMI | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job ENI | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Instance | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
