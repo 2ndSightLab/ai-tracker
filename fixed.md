@@ -2,6 +2,8 @@
 
 6/3/2026 
 
+🟢 Auth VPC incorrectly named web vpc when switched accounts
+
  Removed ~230, added ~220. Net: ~-10 lines.
 
 🟢 Still working...3:24 am menu code is royally messed up. so much duplication. I strated asking Google aimode how to fix it and does it SO MUCH FASTER. Gve it to Opus and I think it made opus go faster though Google AI mode code didn't follow my rules and hides a lot of errors. I've used 11% of $200 plan and feels like most of that was on stupid menus.
