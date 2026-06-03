@@ -109,14 +109,14 @@ Resources installed in every environment. Some are optinoal.
 | KMS key aliases | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Deploy Lambdas | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | VPC Flow Logs Role | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Remote Access (Work) VPC | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Remote Access Subnet | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Remote Access Security Group | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Remote Access Internet Gateway | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Remote Access Route Table | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Remote Access Security Group | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Remote Access (Work) VPC | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Remote Access Subnet | 🟢 | 🟢  | 🔴 | 🔴 | 🔴 | 🔴 |
+| Remote Access Security Group | 🟢 | 🟢  | 🔴 | 🔴 | 🔴 | 🔴 |
+| Remote Access Internet Gateway | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Remote Access Route Table | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Remote Access Security Group | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Remote Access VPC Ram Shares | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Delete default VPCs | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Delete default VPCs | n/a | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Deploy Lambdas (with VPC) | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | S3 buckets (with KMS) | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Bucket policies | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -239,13 +239,13 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | Auth VPC Endpoint SGs | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Auth VPC RAM share | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | DynamoDB | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job VPC | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Subnet | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Security Group | 🟢  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Internet Gateway | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Route Table | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Security Group | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job VPC Endpoints | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job VPC | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Subnet | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Security Group | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Internet Gateway | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Route Table | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Security Group | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job VPC Endpoints | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job RAM Share | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Route 53 Hosted Zone | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | ACM Certificate | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
