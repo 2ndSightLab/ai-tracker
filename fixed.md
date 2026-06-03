@@ -8,7 +8,7 @@
 
 🟢 Delete lambdas wasn't listing ALL lambdas for review
 
-🟢 Quiet option for role ssumption to make output easier to read but leave the option for detailed troubleshooting
+🟢 Quiet option for role ssumption to make output easier to read but leave the option for detailed troubleshooting; 3 tries still not working
 
 🟢 Previously told model to move all the auth related stuff to a new account and it did not move the related networking. fixed. hopefully. 
 
