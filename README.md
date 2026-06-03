@@ -261,8 +261,9 @@ Back up infrastructure segregated from other infrastructure
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Backup OU | 🟢  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Backup Account Per Environment | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Backup Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Backup Job | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Archive Account Lambda Role | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Archive Account Lambda | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Archive Account Lambda SG | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Security Checks ###
 
