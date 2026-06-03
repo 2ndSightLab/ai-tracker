@@ -118,7 +118,7 @@ Resources installed in every environment. Some are optinoal.
 | Remote Access VPC Ram Shares | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Delete default VPCs | n/a | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Deploy Lambdas (with VPC) | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| S3 buckets (with KMS) | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| S3 buckets (with KMS) | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Bucket policies | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | SSH Security Group | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | RDP Security Group | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -236,11 +236,11 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | Auth Lambdas (with VPC) | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | S3 buckets (with KMS) | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Bucket policies | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Git Credentials Secrets | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth Lambdas (no VPC) | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Run Lambdas (no VPC) | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Instance Role | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Dev ENI | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Git Credentials Secrets | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth Lambdas | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Run Lambdas | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Instance Role | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Job Dev ENI | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Dev EC2 Instance | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Dev AMI | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job ENI | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
