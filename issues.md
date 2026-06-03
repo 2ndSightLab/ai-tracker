@@ -5,7 +5,11 @@ Fixed issues in fixed.md
 
 6/3/2026 3:19 PM
 
-🟡 Move arhcive lambda and role into it's own step.
+🟡 Migrate AWS domain - separate project so it doesn't get messed up.
+
+🟡 Complete listing of services before close an account - offer to move or delete.
+
+🟡 Move archive lambda and role into it's own step.
 
 6/2/2026 6:18 PM 
 
