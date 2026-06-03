@@ -20,6 +20,10 @@ A full series on what I am developing in this project can be found here:
 
 https://teriradichel.substack.com/p/toc-aws-organizations-and-ai-agent
 
+More granular updates on X @teriradichel and the AWS Builder Center.
+
+https://builder.aws.com/profile?tab=articles
+
 ## Tools and models
 
 I'm primarily using Kiro CLI and anthropic models, though I do use Google aimode to ask questions at times and may branch out to test other models and technologies after this infrastructure is up and running.
@@ -27,6 +31,10 @@ I'm primarily using Kiro CLI and anthropic models, though I do use Google aimode
 ## Issues:
 
 https://github.com/2ndSightLab/ai-tracker/blob/main/issues.md
+
+## Fixed:
+
+https://github.com/2ndSightLab/ai-tracker/blob/main/fixed.md
 
 ## AWS Wishlist
 
