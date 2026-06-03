@@ -42,13 +42,13 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/awswishlist.md
 
 ## Time
 
-I started this project around March 7th. I had to take a break for about three weeks in May. I haven't really worked on anyting else besides this and blog posts because I keep thinking it is "almost done." I've also been working kind of long hours to do it and figure things out.
+I started this project around March 7th. I had to take a break for about three weeks in May. I haven't really worked on anything else besides this and blog posts because I keep thinking it is "almost done." I've also been working kind of long hours to do it and figure things out.
 
 My initial post on this project tracks the start project and initial progress in 2.5 weeks
 
 https://teriradichel.substack.com/p/what-ive-vibe-coded-in-25-weeks
 
-The time it takes is demonstrated by feature completion and the timestapms in this GitHub repo, though my time may be taken away for other things periodically. 
+The time it takes is demonstrated by feature completion and the timestamps in this GitHub repo, though my time may be taken away for other things periodically. 
 
 ## Cost: ##
 
