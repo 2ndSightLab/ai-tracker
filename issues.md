@@ -7,6 +7,10 @@ Fixed issues in fixed.md
 
 🟡 Org Policy to only allow IMDSv2
 
+🟡 May be a dup but I think the user/role has to be deployed prior to teh location it is in the base env.
+
+🟡 Add a verfication step for KMS policies
+
 6/1/2026 - 6/2/2026
 
 🟡 Make sure VPC endpoints are optional and not configured eveywhere until confirm everything else is working properly to reduce costs except possibly the auth Lambda.
