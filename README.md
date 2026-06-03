@@ -81,7 +81,9 @@ Role, policy and permission boundary deployed in root management account in AWS 
 
 ### AWS CLI Auth ###
 
-Separate reusable project that handles configuring role profiles and role assumption <span style="color:red">with MFA</span>. The policies also contain IPAddress conditions.
+Separate reusable project that handles configuring role profiles and role assumption <span style="color:red">with MFA</span>. 
+
+Note that the role trust policies contain MFA and IPAddress conditions to assume the role and the user associated with the keys cannot do anything except asusme a role with MFA.
 
 | Feature | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | 
