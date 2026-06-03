@@ -2,6 +2,8 @@
 
 6/2/2026 6:18 PM - started with opus 4.6 but switched to 4.8 because it was makign mistakes. had to tell it to stop beign so verbose.
 
+🟢 Add option to go back to select ou menu and deploy/delete/verify menu.
+
 🟢 Pull admin ips from other configs if exist keep having to look thos up, also admin acct, email domain, etc. maybe have a default configuration file
 
 🟢 Add a verfication step for KMS policies - added output to kms verification
