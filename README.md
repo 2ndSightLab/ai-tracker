@@ -240,7 +240,8 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | Auth VPC RAM share | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | S3 buckets (no KMS) | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | KMS keys | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Auth Lambdas (with VPC) | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth Lambdas | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth Lambda VPC Config | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | S3 buckets (with KMS) | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Bucket policies | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Git Credentials Secrets | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
