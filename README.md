@@ -214,31 +214,7 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Git Credentials Secrets | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth Lambdas (no VPC) | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Run Lambdas (no VPC) | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| S3 buckets (no KMS) | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| KMS keys | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Auth Lambdas (with VPC) | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| S3 buckets (with KMS) | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Bucket policies | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Instance Role | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Kiro CLI Identity Center | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Job Dev ENI | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Dev EC2 Instance | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Dev AMI | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job ENI | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Instance | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job AMI | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth VPC | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth Subnet | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth Security Group | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth Route Table | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth Lambda Security Groups | 🟢  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth VPC Endpoints | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth VPC Endpoint SGs | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth VPC RAM share | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| DynamoDB | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job VPC | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Subnet | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Security Group | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -247,6 +223,30 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | Job Security Group | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job VPC Endpoints | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job RAM Share | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth VPC | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth Subnet | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth Security Group | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth Route Table | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth Lambda Security Groups | 🟢  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth VPC Endpoints | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth VPC Endpoint SGs | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth VPC RAM share | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| S3 buckets (no KMS) | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| KMS keys | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Auth Lambdas (with VPC) | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| S3 buckets (with KMS) | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Bucket policies | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Git Credentials Secrets | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth Lambdas (no VPC) | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Run Lambdas (no VPC) | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Instance Role | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Dev ENI | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Dev EC2 Instance | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Dev AMI | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job ENI | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Instance | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job AMI | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| DynamoDB | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Route 53 Hosted Zone | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | ACM Certificate | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | API Gateway | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
