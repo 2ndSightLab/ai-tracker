@@ -2,6 +2,20 @@
 
 6/2/2026 6:18 PM - started with opus 4.6 but switched to 4.8 because it was makign mistakes. had to tell it to stop beign so verbose.
 
+🟢 Delete should show resources in reverse order as last things deployed get deleted first due to dependencies
+
+🟢 Delete lambdas wasn't listing ALL lambdas for review
+
+🟢 Quiet option for role ssumption to make output easier to read but leave the option for detailed troubleshooting
+
+🟢 Previously told model to move all the auth related stuff to a new account and it did not move the related networking. fixed. hopefully. 
+
+🟢 Fixed VPC cost calcaultion bug / syntax error - not sure how it go there as I didn't think i cahnged the code in the VPC project. Hmm.
+
+🟢 Kiro verification step doesn't display all settings. By the way I cannot change the URL but I 100% changed the url in the past somehow or the model wrote code that could do that somhow. Not sure how that happened because now all models are saying it is not possible ??/
+
+🟢 Fixed some menu defaults that were missing after menu refactor. There are more...need to find them all.
+
 🟢 Root SCPs only run in mangaement account and attached to root ou; env scps run in every environent and attached to env ou
 
 🟢 Code reduction: After reviewign and fixing issues with IPAM/EIP code:
