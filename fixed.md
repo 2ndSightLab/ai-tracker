@@ -1,8 +1,18 @@
 # Fixed Issues
 
-6/2/2026 6:18 PM 
+6/2/2026 6:18 PM - started with opus 4.6 but switched to 4.8 because it was makign mistakes. had to tell it to stop beign so verbose.
 
-🟢 IPAM updates were messed up tat some point when I added the verification of each step. These shoudl be two searpate blocks of code. First of all the code was incorrectly changed to the xml file as just noted. Secondly, the model is confused because the IPAM pools are in the IPAM account but the EIP is alloated and registered in the account using the EIP - and if the model is cnofused may be the design needs a look. This is all confusing and I would have put the EIP in the IPAM account and used RAM share to share it out to an account. So there's a wish...
+🟢 Code reduction: After reviewign and fixing issues with IPAM/EIP code:
+
+- Added: ~95 lines (new files)
+- Removed: ~208 lines (XML boilerplate)
+⭐️ Net: Removed ~-113 lines
+
+🟢 EIPs were not being deleted in the correct account. had to tell it to look up which accounts had eips to release/delete.
+
+🟢 IPAM fix did not work. Got it on second try easily.
+
+🟢 IPAM updates were messed up at some point when I added the verification of each step. These shoudl be two searpate blocks of code. First of all the code was incorrectly changed to the xml file as just noted. Secondly, the model is confused because the IPAM pools are in the IPAM account but the EIP is alloated and registered in the account using the EIP - and if the model is cnofused may be the design needs a look. This is all confusing and I would have put the EIP in the IPAM account and used RAM share to share it out to an account. So there's a wish...
 
 🟢 XML loading was all messed up and intertwined wiht another file in a way that made it possible to correct the execution order of loading and prompting. Created a load xml file instead and pull the junk out of the file that had diffenre stuff interwined all together like prompting, validation, and display configuration. A real mess actually.
 
