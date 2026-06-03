@@ -107,9 +107,8 @@ Resources installed in every environment. Some are optinoal.
 | KMS keys | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | KMS policies | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | KMS key aliases | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| AWS Prefix Lists | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deploy Lambdas | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| VPC Flow Logs Role | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deploy Lambdas | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| VPC Flow Logs Role | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Remote Access VPC | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Remote Access Subnet | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Remote Access Security Group | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -168,6 +167,7 @@ The management environment contains accounts where my organization deletegated a
 | Delegate Cost Optimization Hub admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Delegate Compute Optimizer admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | IPAM | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| AWS Prefix Lists | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Configure GuardDuty | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Configure Security Hub | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Configure CloudTrail | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
