@@ -2,6 +2,10 @@
 
 6/3/2026 
 
+🟢 Redeloy single VPC wasn't working right
+
+🟢 Security groups - prefix list not found
+
 🟢 Auth VPC incorrectly named web vpc when switched accounts
 
  Removed ~230, added ~220. Net: ~-10 lines.
