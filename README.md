@@ -58,7 +58,6 @@ Note that cost includes some times when the model was nerfed, billing snafus, an
 
 Role, policy and permission boundary deployed in root management account in AWS CloudShell.
 
-
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Role | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
@@ -71,7 +70,7 @@ Role, policy and permission boundary deployed in root management account in AWS 
 Separate reusable project that handles configuring role profiles and role assumption with MFA.
 
 | Feature | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | 
+| :--- | :---: | :---: | :---: | 
 | Configure Role Profile | 🟢 | 🟢 | 🟢 |
 | Assume Role With MFA | 🟢 | 🟢 | 🟢 |
 
