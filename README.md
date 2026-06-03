@@ -96,8 +96,8 @@ Resources installed in every environment. Some are optinoal.
 | Accounts | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Move accounts to OU | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Account aliases | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| IPAM pool | 🟡 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| IPAM EIP allocation | 🟡 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| IPAM pool | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| IPAM EIP allocation | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | SCPs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Admin users | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Admin user policy | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
