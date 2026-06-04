@@ -311,4 +311,5 @@ Back up infrastructure segregated from other infrastructure
 | Register domain | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Archive Account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Move website | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Transfer GitHub repo to Code Commit | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
