@@ -1,6 +1,11 @@
 # Fixed Issues
 
 6/3/2026 
+
+🟢 Used Google AI mode to simplify main menu.
+
+⭐️ 18 lines removed.
+
 🟢 Add backup vpc for archive acount lambda
 
 🟢 why is this empty stuff in the configuration
