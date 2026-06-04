@@ -11,4 +11,4 @@ Fixed issues in fixed.md
 
 🟡 The KMS key polic is too broad - allows access to any key and is applying it to eevery lamda in ou. I have an SCP to block that but still annoying. I need to review all the policies in detail later and will use the IAM access analyzer plus manual review. I don't think IAM access analyzer handles resource policies but prowler will to a degree.
 
-🟡 Deploy resources concurrently where possible
+🟡 Deploy resources concurrently where possible; my initial attempt to ask this quetion got really convoluted sugestions.
