@@ -119,7 +119,7 @@ Fix: was able to deploy Identity Center and Kiro in new environment even though 
 
 🟢 UI: Step completion prompt is inconsistent. Sometimes has Quit and Exit. > removed quit - found a large list of menus not using the shared menu file and fixed.
 
-⭐️⭐️⭐️ Lines removed: 115 ⭐️⭐️⭐️ 
+⭐️ Lines removed: 115
 
 🟢 Backup account is missing from accounts list in non-management verficiation step. 
 
