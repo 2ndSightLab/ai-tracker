@@ -203,6 +203,12 @@ The management environment contains accounts where my organization deletegated a
 | Enable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Disable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
+### Deploy to sandalone account ##
+| Network | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| User | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Jobs Run Instance | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+
 ### SCPs ##
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
