@@ -191,7 +191,7 @@ The management environment contains accounts where my organization deletegated a
 | Configure Inspector | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Configure IAM Access Analyzer | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Configure Security Alerts | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Move Domain | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Move Domain | n/a | 🟢 | n/a | 🟢 | 🔴 | 🔴 |
 | Deny-All OU | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Enable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Disable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
