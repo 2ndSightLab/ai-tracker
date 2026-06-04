@@ -1,6 +1,7 @@
 # Fixed Issues
 
 6/3/2026 
+🟢 Add backup vpc for archive acount lambda
 
 🟢 why is this empty stuff in the configuration
 ```
