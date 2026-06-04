@@ -10,7 +10,7 @@ F: Feature B: Bug O: Optimize
 
 6/3/2026 7:00 PM
 
-🟡 F: Admin IP update functionality in Yubikey auth project.
+🟡 F: Update admin IP in prefix list in Yubikey project.
 
 🟡 F: Complete listing of services before close an account - offer to move or delete.
 
