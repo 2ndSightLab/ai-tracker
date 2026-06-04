@@ -2,6 +2,8 @@
 
 6/3/2026 
 
+🟢 Model really strugges with UI consisteny. In the move domain step it put the header for the next step above the list of items including an option to run the next step.
+
 🟢 Register domain step
 
 🟢 Run IAM Access analyzer Step - per ou or in entire organization 
