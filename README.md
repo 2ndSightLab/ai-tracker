@@ -196,12 +196,7 @@ The management environment contains accounts where my organization deletegated a
 | Configure Inspector | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Configure IAM Access Analyzer | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Configure Security Alerts | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Move Domain | n/a | 🟢 | n/a | 🟢 | 🔴 | 🔴 |
-| Move Hosted Zone | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Register domain | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Deny-All OU | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Enable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Disable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Deploy to single account (in a different organization or standalone) ##
 
@@ -301,10 +296,16 @@ Back up infrastructure segregated from other infrastructure
 | Archive Account Lambda | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Archive Account Lambda SG | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
-### Security Checks ###
+### Run Menu Steps ###
 
 | Feature | Deploy | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: |:---: |
 | IAM Acccess Analyzer Report | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Prowler Report | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Enable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Disable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Move Domain | n/a | 🟢 | n/a | 🟢 | 🔴 | 🔴 |
+| Move Hosted Zone | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Register domain | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Archivae Account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
