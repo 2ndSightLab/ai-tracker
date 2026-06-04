@@ -203,7 +203,10 @@ The management environment contains accounts where my organization deletegated a
 | Enable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Disable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
-### Deploy to sandalone account ##
+### Deploy to single account (in a different organization or standalone) ##
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Network | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | User | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
