@@ -2,6 +2,14 @@
 
 6/4/2026 2:27 Let's go. Unlocking and logging in.
 
+🟢 Tried to add unneccesary files again to deploy additional log buckets. WHY? just loop over the accounts and call create-bucket.sh. Had to walk the agent through that.
+
+🟢 Log buckets missing.
+
+🟢 old configuration menu after steps is inconsistent even though I told it to make sure has the same menu after every step.
+
+🟢 Redeploying the role when nothing has changed - in every account.
+
 🟢 Spending WAYYY to long just trying to deploy a lambda funciton. (Correctly wihtout generating garbage slop code).
 
 🟢 Error in archive lambda related to kms keys; such covolutedness trying to sovle that. Everything always about KMS keys policies and permissions is always convolutedness so no wonder the model can't figure it out. After reewing the policy, logging an issues and coming back to the original problem after telling it to forget all the plicy isues, it magically quickly fixed the code to deploy the policy in very few lines and is suposedly assuming a role it told me didn't exist a minute ago. Let's see if it works now.
