@@ -113,7 +113,7 @@ Resources installed in every environment. Some are optinoal.
 | Account aliases | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | IPAM pool | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | IPAM EIP allocation | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| SCPs | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Environment SCPs | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Admin users | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Admin user policy | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Admin roles | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
@@ -182,6 +182,7 @@ The management environment contains accounts where my organization deletegated a
 | Delegate Cost Optimization Hub admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Delegate Compute Optimizer admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | IPAM | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Root SCPs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | AWS Prefix Lists | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Configure GuardDuty | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Configure Security Hub | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
