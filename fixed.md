@@ -2,6 +2,8 @@
 
 6/3/2026 
 
+🟢 y/n/e probable needs an m (main) and environment action (a) option to go back to the main menu y/n/m/a/e (implemented anotehr way)
+
 🟢 archive lambda needs cross account permissions to read any resource it needs to back up in any account in the OU 
 
 🟢 step for selecting which resources to deploy instead of just deploying "all" - deploy all or select numbers, shared menu that can be used for all resources.
