@@ -2,6 +2,8 @@
 
 6/3/2026 
 
+🟢 AI models are bad at reusable, clean menu code.
+
 🟢 Super annoying !!! I think the models get dumber in the middle of the night. I have explicit file names in readme. The model just started adding a bunch of extraneos fiesl - ddeploy-single-bucket, deploy-bucket-iwth-kms blah blah blah. I spent a lot of time steamlining that in the past nad it jsut screwed it all up and ducliated a bunch fo code. FFFFFANNOYING. I told it to read the reuqiremetns agin. The code is probably a mess again. This is why you can't trust AI. Have to watch it all the time.
 
 🟢 Every time I start deploying Lambdas in a new account I get this and have to fix it.
