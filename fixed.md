@@ -2,6 +2,18 @@
 
 6/3/2026 
 
+🟢 why is this empty stuff in the configuration
+```
+  --- us-east-1 ---
+  CONFIG_BUCKET: not set
+  LOGS_BUCKET: not set
+  JOBS_BUCKET: not set
+  VPC: not set
+  KMS_ALIAS_LOGS: not set
+  KMS_ALIAS_CONFIG: not set
+  KMS_ALIAS_AUTH: not set
+  KMS_ALIAS_JOBS: not set
+```
 🟢 O: review code and reduce redundant code
 
 🟢 y/n/e probable needs an m (main) and environment action (a) option to go back to the main menu y/n/m/a/e (implemented anotehr way)
