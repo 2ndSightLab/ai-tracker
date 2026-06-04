@@ -310,4 +310,5 @@ Back up infrastructure segregated from other infrastructure
 | Move Hosted Zone | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Register domain | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Archive Account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Move website | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
