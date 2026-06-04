@@ -2,6 +2,12 @@
 
 6/4/2026 2:27 Let's go. Unlocking and logging in.
 
+⭐️ Lines added: 321 Lines removed: 70 Net: +251
+
+⭐️ So approximately 120-130 distinct lines were edited more than once, with the error blocks and the SKIPMENUS loop being
+the most-rechurned. That rework is wasted token/effort churn — most of it from me adding step-error-menu.sh and the 
+SKIPMENUS approaches before settling on the final version.
+
 🟢 Tried to add unneccesary files again to deploy additional log buckets. WHY? just loop over the accounts and call create-bucket.sh. Had to walk the agent through that.
 
 🟢 Log buckets missing.
