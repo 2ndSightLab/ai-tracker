@@ -2,9 +2,9 @@
 
 6/3/2026 
 
-Remove more dead code
+🟢 Remove more dead code
 
-98 more lines of dead code
+⭐️ 98 more lines of dead code
 
 🟢 Duplicate sg verify for every sg 
 
