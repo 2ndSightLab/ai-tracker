@@ -131,8 +131,17 @@ Resources installed in every environment. Some are optinoal.
 | Remote Access Route Table | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Remote Access Security Group | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Remote Access VPC Ram Shares | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Backup VPC | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Backup Subnet | 🟢 | 🟢  | 🔴 | 🔴 | 🔴 | 🔴 |
+| Backup Security Group | 🟢 | 🟢  | 🔴 | 🔴 | 🔴 | 🔴 |
+| Backup Internet Gateway | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Backup Route Table | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Backup Security Group | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Backup VPC Ram Shares | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Delete default VPCs | n/a | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deploy Lambdas (with VPC) | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deploy Deployment Lambdas | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deploy Archive Account Lambda | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deploy Archive Lambda VPC Config | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | S3 buckets (with KMS) | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Bucket policies | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | SSH Security Group | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -182,6 +191,7 @@ The management environment contains accounts where my organization deletegated a
 | Configure Inspector | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Configure IAM Access Analyzer | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Configure Security Alerts | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Move Domain | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Deny-All OU | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Enable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Disable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
