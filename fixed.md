@@ -2,6 +2,14 @@
 
 6/3/2026 
 
+Remove more dead code
+
+98 more lines of dead code
+
+🟢 Duplicate sg verify for every sg 
+
+⭐️ 49 lines removed
+
 🟢 Remove dead code realted to teardown function that was revised to use a per resource deletion scipts but the model never removed the dead code.
 
 ⭐️ 3,703 lines of dead code.
@@ -13,6 +21,7 @@
 ⭐️ ~320 lines removed.
 
 🟢 I have a rule to never use temp files and yet the code is writing a multitude of temp files in teh config directory creating a humongous mess. I told the agent to make every piece of code that is writing a temp file to clean up after itself rather than try to fix this all at once and break everything. Those temp files are wasting resources if the model is reading them. Super annoying.
+
 
 🟢 Added transfer domain step sing soe code I wrote before. I inadvertantly closed an account with some doains and had to get AWS to restore the account. Now I nee to use that step to transfer those domaisn into a new OU.
 
