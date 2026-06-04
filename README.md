@@ -210,7 +210,7 @@ The management environment contains accounts where my organization deletegated a
 | Network | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | User | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Jobs Run Instance | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Jobs Instance | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### SCPs ##
 
