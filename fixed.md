@@ -2,7 +2,7 @@
 
 6/3/2026 
 
-🟢 Run IAM Access analyzer
+🟢 Run IAM Access analyzer Step - per ou or in entire organization 
 
 🟢 Used Google AI mode to simplify main menu.
 
