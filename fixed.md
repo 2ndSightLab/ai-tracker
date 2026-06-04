@@ -2,7 +2,7 @@
 
 6/4/2026 2:27 Let's go. Unlocking and logging in.
 
-🟢 Ensure the bucket deploy lambda is deployed to every account to deploy the log buckets
+🟢 Ensure the bucket deploy lambda is deployed to every account to deploy the log buckets. I had to spend a lot of time gettng the model to do this in a way that would result in good code.
 
 ⭐️ Net Lines removed: 44
 
