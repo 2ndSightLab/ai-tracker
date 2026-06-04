@@ -2,23 +2,11 @@
 
 Features to add
 
-6/3/2026 7:00 PM
-
-
-6/3/2026 7:00 PM
-
 🟡 F: Update admin IP in prefix list in Yubikey project.
 
 🟡 F: Complete listing of services before close an account - offer to move or delete.
 
-6/3/2026 3:19 PM
-
-
-6/2/2026 6:18 PM 
-
 🟡 F: Kiro can only be deployed in us-east-1. Maybe put it in it's own acct locked down to that region? or even it's own ou? TBD
-
-6/1/2026 - 6/2/2026
 
 🟡 F: Disable default org admin role with SCP after new roles are deployed since it has no MFA or IP restrictions by default.
 
