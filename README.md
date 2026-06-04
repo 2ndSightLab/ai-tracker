@@ -139,14 +139,14 @@ Resources installed in every environment. Some are optinoal.
 | Backup Security Group | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Backup VPC Ram Shares | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Delete default VPCs | n/a | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deploy Deployment Lambdas | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deploy Archive Account Lambda | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deploy Archive Lambda VPC Config | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deploy Deployment Lambdas | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deploy Archive Account Lambda | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deploy Archive Lambda VPC Config | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | S3 buckets (with KMS) | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Bucket policies | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| SSH Security Group | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| RDP Security Group | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| HTTP/HTTPS Security Group | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| SSH Security Group | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| RDP Security Group | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| HTTP/HTTPS Security Group | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Base Ubuntu Instance Role | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Base Ubuntu ENI | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Base Ubuntu Instance | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -265,7 +265,6 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | S3 buckets (with KMS) | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Bucket policies | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Git Credentials Secrets | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth Lambdas | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Run Lambdas | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Instance Role | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Job Dev ENI | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
