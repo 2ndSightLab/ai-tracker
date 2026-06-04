@@ -307,5 +307,5 @@ Back up infrastructure segregated from other infrastructure
 | Move Domain | n/a | 🟢 | n/a | 🟢 | 🔴 | 🔴 |
 | Move Hosted Zone | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Register domain | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Archivae Account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Archive Account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
