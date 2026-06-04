@@ -1,8 +1,6 @@
-# Issues
+# Features
 
-Fixed issues in fixed.md
-
-F: Feature B: Bug O: Optimize
+Features to add
 
 6/3/2026 7:00 PM
 
@@ -20,15 +18,9 @@ F: Feature B: Bug O: Optimize
 
 🟡 F: Kiro can only be deployed in us-east-1. Maybe put it in it's own acct locked down to that region? or even it's own ou? TBD
 
-🟡 B :May be a dup but I think the user/role has to be deployed prior to teh location it is in the base env.
-
 6/1/2026 - 6/2/2026
 
 🟡 F: Disable default org admin role with SCP after new roles are deployed since it has no MFA or IP restrictions by default.
-
-🟡 B Rename and account - name, email, alias - use this before closing an account
-
-🟡 CB: lose account is not working and before closing an account need to fix the following: change alias name, change account name, change email address - to avoid conflicts if need to recreate the account.
 
 🟡 F: Currently I choose a region per env and I may allow different environments to operate in different regions but have no support for that. SCP allowed-regions [root] needs to only be deployed with management environment and allow global regions. Then an SCP per environment or account can optionally further restrict access.
 
