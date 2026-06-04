@@ -2,6 +2,19 @@
 
 6/3/2026 
 
+🟢 Super annoying !!! I think the models get dumber in the middle of the night. I have explicit file names in readme. The model just started adding a bunch of extraneos fiesl - ddeploy-single-bucket, deploy-bucket-iwth-kms blah blah blah. I spent a lot of time steamlining that in the past nad it jsut screwed it all up and ducliated a bunch fo code. FFFFFANNOYING. I told it to read the reuqiremetns agin. The code is probably a mess again. This is why you can't trust AI. Have to watch it all the time.
+
+🟢 Every time I start deploying Lambdas in a new account I get this and have to fix it.
+
+  Existing quota increase requests:
+    Status: CASE_OPENED  Desired: 1000.0  Created: 2026-06-04T08:09:07.522000+00:00
+
+  To request 1000 concurrent executions, run in CloudShell:...
+
+🟢 After some change double promted to deploy things
+
+🟢 Added Previous step like next step
+
 🟢 Model really strugges with UI consisteny. In the move domain step it put the header for the next step above the list of items including an option to run the next step.
 
 🟢 Register domain step
