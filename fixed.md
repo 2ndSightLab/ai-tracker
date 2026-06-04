@@ -2,7 +2,9 @@
 
 6/4/2026 2:27 Let's go. Unlocking and logging in.
 
-🟢 Another menu is not consistent. Fixing.
+🟢 If prompt has ? at end do not add : like Change creds?:
+
+🟢 Another menu is not consistent.
 
 ⭐️ Lines added: 321 Lines removed: 70 Net: +251
 
