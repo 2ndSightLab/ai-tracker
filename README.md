@@ -266,8 +266,6 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | KMS keys | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Auth Lambdas | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Auth Lambda VPC Config | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| S3 buckets (with KMS) | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Bucket policies | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Git Credentials Secrets | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Run Lambdas | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Instance Role | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
