@@ -1,5 +1,23 @@
 # Fixed Issues
 
+6/4/2026 2:27 Let's go. Unlocking and logging in.
+
+🟢 And... while trying to fix that did to much and broken even mroe code.
+
+🟢 And....it broke a working menu so fixing that again.
+
+🟢 archive lambda didn't use the shared assume role code was doing it's own thing. GEEZ. It spun it's wheesl forever on something so dang simple. I had to stop it multple times. Told it to follow the patterin gin the bootstrap role. It didn't. I told it what file to look at it did it wrong. I gave it the code and said create a wrapper script (which is like the bootstarp project and is like 6 lines of code). It copied all the code out ouf the shared role assumption file. I told it to delete that file and create a file with exactly the code I gave it and what to name it and in about 3 lines of additional output it was done. It's like it's intentionally trying to get control of the role assumption code and mess it up. I know the model itself has no intentions but what was it trained on that causes it to do that? It meses up role asumption a LOT and tries to duplicate it rather than use shared code.
+
+🟢 Fix the menu after every error message to be consistent to use the common step completion menu so I don't have to keep exiting the program and startin gover when something goes wrong.
+
+🟢 Had to quit session and start over because I started a new request and was mixing up with the prior request. 
+
+🟢 Failed to follow rules again. Had to remind it by asking "Are you following the rules?"
+
+🟢 Add to global prompt to always show me the ui and ask for approval before changing; don't write what you see just waht you are going to do or have done. Also need to add model selection option to upate agents in my framework.
+
+🟢 found more incorrect menus and model is struggling to update them correctly
+
 6/3/2026 
 
 🟢 AI models are bad at reusable, clean menu code.
