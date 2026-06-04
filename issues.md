@@ -5,9 +5,7 @@ Fixed issues in fixed.md
 
 6/3/2026 7:00 PM
 
-🟡 archive lambda needs cross account permissions to read any resource it needs to back up in any account in the OU 
 
-🟡 Need archive vpc that can be deployed if needed and torn down when done archiving to save money (vpc endpoints especially) + remove the role?
 
 6/3/2026 7:00 PM
 
