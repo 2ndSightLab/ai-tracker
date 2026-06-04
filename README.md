@@ -244,6 +244,8 @@ Some enviroments may include penetration testing and security research resources
 | Collab Instance | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Collab AMI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
+( And other stuff not shown here :^) 
+
 ### Job Framework Infrastructure ###
 
 The job framework infrastructure allows me to quickly and securely run jobs. 
