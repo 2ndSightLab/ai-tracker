@@ -2,6 +2,10 @@
 
 6/3/2026 
 
+🟢 Remove dead code realted to teardown function that was revised to use a per resource deletion scipts but the model never removed the dead code.
+
+⭐️ 3,703 lines of dead code.
+
 🟢 Move archive lambda and role into it's own step. - forgetting where to put this. It goes in teh backup account because that account needs to pull stuff into it. Also that lambda needs cross account permissions to read any resource it needs to back up in any account in the OU (to reivew later).
 
 🟢 Remove duplicate code in delegated administrator code.
