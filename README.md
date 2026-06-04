@@ -147,7 +147,7 @@ Resources installed in every environment. Some are optinoal.
 | SSH Security Group | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | RDP Security Group | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | HTTP/HTTPS Security Group | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Base Ubuntu Instance Role | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Base Ubuntu Instance Role | 🟢  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Base Ubuntu ENI | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Base Ubuntu Instance | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Base Ubuntu AMI | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
