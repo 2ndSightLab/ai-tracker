@@ -265,7 +265,21 @@ Also separates account from specific projects or activities.
 | Kiro | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Standalone Identity Center | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 
-### Jobs Environment (Work Environment, Web Environment, +) ###
+
+### Jobs Auth Environment (Web Environment, +) ###
+
+If I use CloudFront have to allow us-east-1 for ACM Cert. Lock down when not acively making chanages.
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Job Auth Lambdas | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Auth Lambda VPC Config | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| ACM Certificate | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| API Gateway | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| API Gateway CNAME | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| DynamoDB | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+
+### Jobs Run Environment (Work Environment, Web Environment, +) ###
 
 The job framework infrastructure allows me to quickly and securely run jobs which could include AI agents.
 
@@ -298,13 +312,7 @@ The job framework infrastructure allows me to quickly and securely run jobs whic
 | Job Dev EC2 Instance | 🟢 | 🔴 | 🟢  | 🔴 | 🔴 | 🔴 |
 | Job Dev AMI | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Route 53 Hosted Zone | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Job/Auth Lambdas | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Auth Lambda VPC Config | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| ACM Certificate | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| API Gateway | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| API Gateway CNAME | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| DynamoDB | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-
+| Job Run Lambdas | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 
 ### Test Environment (Work Environment, Web Environment, Jobs Environment, +) ###
 
