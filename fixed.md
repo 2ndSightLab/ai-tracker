@@ -1,5 +1,11 @@
 # Fixed Issues
 
+6/4/2026 9:03 PM Going to give automode another chance
+
+🟢 Previously I asked it to rename an instance step and it also renamed a file to match the step I didn't ask it to change that references a file in another project. That caused me to scratch my head for a while until I figured it out. There was no file not found error or configuration confirmation so I added that.
+
+🟢 This is from a prior update. Why does th emodel alwasy put so many ../../../tmp instead of just /tmp?
+
 6/4/2026 2:27 Let's go. Unlocking and logging in.
 
 🟢 Ensure the bucket deploy lambda is deployed to every account to deploy the log buckets. I had to spend a lot of time gettng the model to do this in a way that would result in good code.
