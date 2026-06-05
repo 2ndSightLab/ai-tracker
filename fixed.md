@@ -2,6 +2,10 @@
 
 6/4/2026
 
+🟢 Syntax error after fixing menu which goes to prove the models are dumber at this time of night (it's jsut after midnight ET). I rarely see blatant syntax errors.
+
+🟢 The model seems to just deteriorate the later it gets. I just told it steps were missing from a menu. It gave me this lengthy explanation. I told me to rerun the program without fixing anything.
+
 🟢 Tryign to findinstance code that was working does not work anymore. when it renamed the step it must have changed something related to the instance name or query incorrectly. I never told it to toucht that code or anyting aobu the instance code only rename the step so not sure why it did that.
 
 🟢 When I told it to rename all the files related to a step it missed the verify file. I asked it multipel times to fix that label and insted of removing the stuff in parenthesis like it did before it changed Deploy to Create which is not what I wanted. I said "this is still not right" and it didn't check back to see what that meant. Obv I can be more explicit.
