@@ -106,10 +106,8 @@ Resources installed in every environment. Some are optinoal.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Environment (all resources) | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Environment (OU) | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Accounts: IAM, KMS, Backup (in backup OU) | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
-| OU | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Accounts | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Move accounts to OU | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Account aliases | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Admin users | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
@@ -117,9 +115,12 @@ Resources installed in every environment. Some are optinoal.
 | Admin roles | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Admin role policy | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Deployment Lambdas | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| S3 Logs bucket | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Logs KMS key | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | SCP: kms-account-allowed-services [env] | 🟢 | 🟢 | 🟢  | 🔴 | 🔴 | 🔴 |
 | SCP: deny-external-access [env] | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
 | SCP: always-denied-actions [env] | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
+| SCP: env-allowed-regions [env]  | 🟡 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
 
 ### Management Environment ###
 
@@ -161,16 +162,22 @@ The management environment contains accounts where my organization deletegated a
 | Deny-All OU | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Configure Security Alerts | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | SCP: always-denied-actions [root] | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
-| SCP: allowed-regions [root]  | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
 | SCP: deny-leave-organization[root]  | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
 | SCP: always-default-org-root [root] | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
 | SCP: deploy-scp-require-imdsv2.sh [root] | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Environment SCPs | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
-| SCP: deny-all [account or OU] | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| SCP: deny-all [account or OU] | 🟡 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 
+| SCP: org-allowed-regions [root]  | 🟡 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
 
-### Domains Envirnoment ( Base Environment +)##
+🟡 Broke: Restructing scps - where are they deployed and fix naming conventio)
+
+### Domains Envirnoment ( Base Environment +) ###
+
+Domain name management. One for prod and one for test in my case. 
+Can lock when not in use with deny all SCP.
 
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Accounts: dns, backup | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Move Domain | 🟢 | 🟢 | 🔴 | 🔴 | 
 | Move Hosted Zone | 🟢 | 🔴 | 🔴 | 🔴 | 
 | Register domain | 🔴 | 🔴 | 🔴 | 🔴 | 
@@ -178,6 +185,9 @@ The management environment contains accounts where my organization deletegated a
 
 # Work Environment Resources ( Base Environment +) ###
 
+Environment where people log into EC2 instances.
+
+| Accounts: work, backup | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
 | IPAM pool | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
 | IPAM EIP allocation | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Environment SCPs | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
@@ -218,14 +228,16 @@ This is a separate project that allows deploying a static website in any web acc
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Accounts: web, backup | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Deploy Web Lambda | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
-### Test Environment Resources (Work Environment +) ###
+### Test Environment (Work Environment +) ###
 
 Some enviroments may include penetration testing and security research resources.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Accounts: project | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Burp ENI | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Burp Instance Role | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Burp Instance | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -237,13 +249,23 @@ Some enviroments may include penetration testing and security research resources
 
 ( And other stuff not shown here :^) 
 
+### Kiro management environment ###
+
+Separaete environment because it reuqires us-east-1. Manage Kiro subscriptions.
+Also separates account from specific projects or activities.
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Kiro | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Standalone Identity Center | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+
 ### Job + AI Agents Environment (Work Environment +) ###
 
 The job framework infrastructure allows me to quickly and securely run jobs. 
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Kiro CLI Identity Center | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Accounts: jobs | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Job VPC | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Subnet | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Security Group | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
