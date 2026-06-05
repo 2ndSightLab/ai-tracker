@@ -309,16 +309,16 @@ Back up infrastructure segregated from other infrastructure
 ### Run Menu Steps ###
 
 | Feature | Run | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: |:---: |
-| Share all amis to all acounts in ou | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| IAM Acccess Analyzer Report | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Prowler Report | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Enable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Disable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Move Domain | n/a | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Move Hosted Zone | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Register domain | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Archive Account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Move website | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Transfer GitHub repo to Code Commit | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Transfer one Code Commit repo to Another | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| :--- | :---: | :---: | :---: 
+| Share all amis to all acounts in ou | 🔴 | 🔴 | 🔴 | 🔴 | 
+| IAM Acccess Analyzer Report | 🔴 | 🔴 | 🔴 | 🔴 |
+| Prowler Report | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Enable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Disable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 |
+| Move Domain | 🟢 | 🟢 | 🔴 | 🔴 | 
+| Move Hosted Zone | 🟢 | 🔴 | 🔴 | 
+| Register domain | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Archive Account | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Move website | 🔴 | 🔴 | 🔴 | 🔴 |
+| Transfer GitHub repo to Code Commit | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Transfer one Code Commit repo to Another | 🔴 | 🔴 | 🔴 | 🔴 | 
