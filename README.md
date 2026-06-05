@@ -140,7 +140,8 @@ Resources installed in every environment. Some are optinoal.
 | Backup VPC Ram Shares | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Delete default VPCs | n/a | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Deploy Deployment Lambdas | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deploy Archive Account Lambda | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deploy Archive Account Lambda | 🟢  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deploy Archive Lambda Roles | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Deploy Archive Lambda VPC Config | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | S3 buckets (with KMS) | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Bucket policies | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
