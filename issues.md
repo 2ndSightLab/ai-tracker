@@ -3,6 +3,8 @@
 
 Fixed issues in fixed.md
 
+🟡 Ram sharing worked for one VPC but it's not working for the other three nad the models are going aroudn and around in circles and cannot figure it out.
+
 🟡 May be a dup but I think the user/role has to be deployed prior to teh location it is in the base env.
 
 🟡 Rename and account - name, email, alias - use this before closing an account
