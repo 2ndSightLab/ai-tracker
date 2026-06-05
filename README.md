@@ -258,7 +258,7 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | Job Security Group | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job VPC Endpoints | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job RAM Share | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job VPC Flow Logs | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job VPC Flow Logs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Auth VPC | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Auth Subnet | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Auth Security Group | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
@@ -267,7 +267,7 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | Auth VPC Endpoints | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Auth VPC Endpoint SGs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Auth VPC RAM share | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Auth VPC Flowlogs | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth VPC Flowlogs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | S3 buckets (no KMS) | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | KMS keys | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Auth Lambdas | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -304,7 +304,7 @@ Back up infrastructure segregated from other infrastructure
 | Backup VPC Endpoints | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Backup VPC Endpoint SGs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Backup VPC RAM share | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Bacup VPC Flowlogs | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Bacup VPC Flowlogs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 
 ### Run Menu Steps ###
 
