@@ -2,6 +2,8 @@
 
 6/4/2026
 
+🟢 When I told it to rename all the files related to a step it missed the verify file. I asked it multipel times to fix that label and insted of removing the stuff in parenthesis like it did before it changed Deploy to Create which is not what I wanted. I said "this is still not right" and it didn't check back to see what that meant. Obv I can be more explicit.
+
 🟢 Still hasn't gotten fixing menu labels right for something used across all resource steps.
 
 🟢 Running verify steps for ram shares and VPCs were not properly shared to traget accoutns in all cases.
