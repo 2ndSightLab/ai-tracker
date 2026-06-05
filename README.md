@@ -159,11 +159,11 @@ The management environment contains accounts where my organization deletegated a
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Organization | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Enable Org all features | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Accounts: IAM, Network, Accounting, Org, Security, KMS, Security, Backup | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Organization | 🟢 | 🔴 | 🟢 | 🟢  | 🔴 | 🔴 |
+| Enable Org all features | 🟢 | 🔴 | 🟢 | 🟢  | 🔴 | 🔴 |
+| Accounts: IAM, Network, Accounting, Org, Security, KMS, Security, Backup | 🟢 | 🔴 | 🟢 | 🟢  | 🔴 | 🔴 |
 | Org resource policy | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Delegate IPAM admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Delegate IPAM admin | 🟢 | 🔴 | 🟢 | 🟢  | 🔴 | 🔴 |
 | Delegate Security Hub admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Delegate GuardDuty admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Delegate CloudTrail admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
@@ -180,7 +180,7 @@ The management environment contains accounts where my organization deletegated a
 | Delegate VPC Reachability Analyzer admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Delegate Cost Optimization Hub admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Delegate Compute Optimizer admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| IPAM | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| IPAM | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Root SCPs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | AWS Prefix Lists | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Configure GuardDuty | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
@@ -190,8 +190,8 @@ The management environment contains accounts where my organization deletegated a
 | Configure Macie | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Configure Inspector | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Configure IAM Access Analyzer | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Configure Security Alerts | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Deny-All OU | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Configure Security Alerts | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### SCPs ##
 
