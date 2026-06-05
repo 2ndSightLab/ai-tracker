@@ -1,6 +1,14 @@
 # Fixed Issues
 
-6/4/2026 9:03 PM Going to give automode another chance
+6/4/2026 9:03 PM Going to give automode another chance here's how it went
+
+🟢 I have an SCP designed to only allow an enviromment to taek actions or access it's own resources. So many complicates with that. The orgpaths condition doesn't work consistently across all resources for one thing. I had to open it up to allow the org IPAM since I can't create an environmnt specific IPAM. And now for the AMIs. I am trying to launch AMIs and I have to make an exceptoin for Amazon AMIs. I don't wnat to allow all, only AWS AMIs. What I would rather do is have a way to pull those AMIs inot my own repo in the env and use that. BUt that action in itelf might require an exception. Maybe I could put that in a separate env to access external resoruces or something. But anyway fixed for now the way it is and think about it more later. I do not want to have ServiceLinkedRoles in my account as much as possible since they are not subject to SCPs.
+
+🟢 When i asked if it read the rules it interpeted that as reading the mistakes at the bottom of the readme; and by the way I haven't really been using mistakes much lately. Not sure how much is helping.
+
+🟢 Saying it cant run an AWS command which is true its supposed to write it in the code not run it.
+
+🟢 It doesn't follow rules in auto mode tried to write to another project.
 
 🟢 Previously I asked it to rename an instance step and it also renamed a file to match the step I didn't ask it to change that references a file in another project. That caused me to scratch my head for a while until I figured it out. There was no file not found error or configuration confirmation so I added that.
 
