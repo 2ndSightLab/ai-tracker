@@ -132,13 +132,7 @@ Resources installed in every environment. Some are optinoal.
 | Remote Access Route Table | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Remote Access NACLs | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Remote Access VPC Ram Shares | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Backup VPC | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Backup Subnet | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Backup Security Group | 🟢 | 🟢  | 🔴 | 🔴 | 🔴 | 🔴 |
-| Backup Internet Gateway | 🟢 | 🟢 | n/a | 🔴 | 🔴 | 🔴 |
-| Backup Route Table | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Backup Security Group | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Backup VPC Ram Shares | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Remote Access VPC Flowlogs | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Delete default VPCs | n/a | n/a | 🟢 | 🟢 | 🔴 | 🔴 |
 | Deploy Deployment Lambdas | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Deploy Archive Account Lambda | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -272,6 +266,7 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | Auth VPC Endpoints | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Auth VPC Endpoint SGs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Auth VPC RAM share | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Auth VPC Flowlogs | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | S3 buckets (no KMS) | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | KMS keys | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Auth Lambdas | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -286,7 +281,7 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | Route 53 Hosted Zone | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | ACM Certificate | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | API Gateway | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| CNAME | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| API Gateway CNAME | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Backup Infrastructure ###
 
@@ -300,6 +295,15 @@ Back up infrastructure segregated from other infrastructure
 | Archive Account Lambda Role | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Archive Account Lambda | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Archive Account Lambda SG | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Backup VPC | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Backup Subnet | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Backup Security Group | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Backup Route Table | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Backup Lambda Security Groups | 🟢  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Backup VPC Endpoints | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Backup VPC Endpoint SGs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Backup VPC RAM share | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Bacup VPC Flowlogs | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Run Menu Steps ###
 
