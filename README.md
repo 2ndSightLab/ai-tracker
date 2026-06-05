@@ -120,10 +120,11 @@ Resources installed in every environment. Some are optinoal.
 | Admin role policy | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | S3 buckets (no KMS) | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | KMS keys | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| KMS policies | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| KMS key aliases | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| KMS policies | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| KMS key aliases | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Deploy Lambdas | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| VPC Flow Logs Role | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| VPC Flow Logs Role | 🟢 | 🔴 | 🟢| 🔴 | 🔴 | 🔴 |
+| Remote Access Prefix List | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Remote Access (Work) VPC | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Remote Access Subnet | 🟢 | 🟢  | 🔴 | 🔴 | 🔴 | 🔴 |
 | Remote Access Security Group | 🟢 | 🟢  | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -131,8 +132,8 @@ Resources installed in every environment. Some are optinoal.
 | Remote Access Route Table | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Remote Access Security Group | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Remote Access VPC Ram Shares | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Backup VPC | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Backup Subnet | 🟢 | 🟢  | 🔴 | 🔴 | 🔴 | 🔴 |
+| Backup VPC | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Backup Subnet | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Backup Security Group | 🟢 | 🟢  | 🔴 | 🔴 | 🔴 | 🔴 |
 | Backup Internet Gateway | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Backup Route Table | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -140,15 +141,15 @@ Resources installed in every environment. Some are optinoal.
 | Backup VPC Ram Shares | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Delete default VPCs | n/a | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Deploy Deployment Lambdas | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deploy Archive Account Lambda | 🟢  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deploy Archive Account Lambda | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Deploy Archive Lambda Roles | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Deploy Archive Lambda VPC Config | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | S3 buckets (with KMS) | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Bucket policies | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| SSH Security Group | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| RDP Security Group | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| HTTP/HTTPS Security Group | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Base Ubuntu Instance Role | 🟢  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| SSH Security Group | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| RDP Security Group | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| HTTP/HTTPS Security Group | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Base Ubuntu Instance Role | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Base Ubuntu ENI | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Base Ubuntu Instance | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Base Ubuntu AMI | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -277,8 +278,8 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | Git Credentials Secrets | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Run Lambdas | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Instance Role | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Job Dev ENI | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Dev EC2 Instance | 🟢  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Dev ENI | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Job Dev EC2 Instance | 🟢 | 🔴 | 🟢  | 🔴 | 🔴 | 🔴 |
 | Job Dev AMI | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | DynamoDB | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Route 53 Hosted Zone | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
