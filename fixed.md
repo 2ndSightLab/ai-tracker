@@ -2,6 +2,8 @@
 
 6/4/2026
 
+🟢 Fixed various things, added organization adn all features step, tested, verified and in between tested ACM step and dosn't work. Told the model to add code to check status of domain and hsotd zoen befoer installing the cert. FINALLY. I kept telling the agent to gather any and all info to troubleshoot the problem and it couldn't figure it out. Finally i rant the move hosted zone step again which has all the output about what it is moving. I gave that to the agent and it figured out that the domain was wrong in a config file. Added another check to display teh domain and the hsoted zonesin the accout and tel the user if no matching hosted zone. Should have made that problem obvious.
+
 🟢 Syntax error after fixing menu which goes to prove the models are dumber at this time of night (it's jsut after midnight ET). I rarely see blatant syntax errors.
 
 🟢 The model seems to just deteriorate the later it gets. I just told it steps were missing from a menu. It gave me this lengthy explanation. I told me to rerun the program without fixing anything.
