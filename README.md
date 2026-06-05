@@ -151,8 +151,6 @@ Resources installed in every environment. Some are optinoal.
 | Base Amazon Linux ENI | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Base Amazon Linux Instance | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Base Amazon Linux AMI | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| External AMI Share Key | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Share AMI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Budgets | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 
 ### Management Environment ###
@@ -312,6 +310,13 @@ Back up infrastructure segregated from other infrastructure
 | Move website | 🔴 | 🔴 | 🔴 | 🔴 |
 | Transfer GitHub repo to Code Commit | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Transfer one Code Commit repo to Another | 🔴 | 🔴 | 🔴 | 🔴 | 
+
+### Share AMI to External Account ###
+
+| Feature | Run | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: |
+| External AMI Share Key | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Share AMI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Deploy to single account (in a different organization or standalone) ##
 
