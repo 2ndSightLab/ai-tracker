@@ -168,6 +168,7 @@ The management environment contains accounts where my organization deletegated a
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Organization | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Enable Org all features | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Accounts: IAM, Network, Accounting, Org, Security, KMS, Security, Backup | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Org resource policy | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Delegate IPAM admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
