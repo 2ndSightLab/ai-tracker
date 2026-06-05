@@ -108,11 +108,11 @@ Resources installed in every environment. Some are optinoal.
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Environment (all resources) | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | OU | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Accounts | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Move accounts to OU | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Account aliases | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| IPAM pool | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| IPAM EIP allocation | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Accounts | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Move accounts to OU | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Account aliases | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
+| IPAM pool | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
+| IPAM EIP allocation | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Environment SCPs | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Admin users | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Admin user policy | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
@@ -122,7 +122,7 @@ Resources installed in every environment. Some are optinoal.
 | KMS keys | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | KMS policies | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | KMS key aliases | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Deploy Lambdas | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Deployment Lambdas | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | VPC Flow Logs Role | 🟢 | 🔴 | 🟢| 🔴 | 🔴 | 🔴 |
 | Remote Access Prefix List | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Remote Access (Work) VPC | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -135,9 +135,6 @@ Resources installed in every environment. Some are optinoal.
 | Remote Access VPC Flowlogs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Delete default VPCs | n/a | n/a | 🟢 | 🟢 | 🔴 | 🔴 |
 | Deploy Deployment Lambdas | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deploy Archive Account Lambda | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deploy Archive Lambda Roles | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deploy Archive Lambda VPC Config | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | S3 buckets (with KMS) | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Bucket policies | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | SSH Security Group | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
