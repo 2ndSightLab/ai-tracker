@@ -149,7 +149,7 @@ Resources installed in every environment. Some are optinoal.
 | SSH Security Group | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | RDP Security Group | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | HTTP/HTTPS Security Group | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Base Ubuntu Instance Role | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Base Ubuntu Instance Role | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Base Ubuntu ENI | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Base Ubuntu Instance | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Base Ubuntu AMI | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -277,7 +277,7 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | Auth Lambda VPC Config | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Git Credentials Secrets | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Run Lambdas | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Instance Role | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Job Dev Instance Role | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Job Dev ENI | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Job Dev EC2 Instance | 🟢 | 🔴 | 🟢  | 🔴 | 🔴 | 🔴 |
 | Job Dev AMI | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
