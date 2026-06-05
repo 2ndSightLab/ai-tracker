@@ -351,6 +351,7 @@ Deploy environment to single account (account in a different organization or sta
 
 | Feature | Run | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: |
+| Configure Organization | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Share all amis to all acounts in ou | 🔴 | 🔴 | 🔴 | 🔴 | 
 | IAM Acccess Analyzer Report | 🔴 | 🔴 | 🔴 | 🔴 |
 | Prowler Report | 🔴 | 🔴 | 🔴 | 🔴 | 
