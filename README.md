@@ -122,7 +122,7 @@ Resources installed in every environment. Some are optinoal.
 | KMS keys | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | KMS policies | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | KMS key aliases | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Deploy Lambdas | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deploy Lambdas | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | VPC Flow Logs Role | 🟢 | 🔴 | 🟢| 🔴 | 🔴 | 🔴 |
 | Remote Access Prefix List | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Remote Access (Work) VPC | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -150,9 +150,9 @@ Resources installed in every environment. Some are optinoal.
 | RDP Security Group | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | HTTP/HTTPS Security Group | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Base Ubuntu Instance Role | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Base Ubuntu ENI | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Base Ubuntu Instance | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Base Ubuntu AMI | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Base Ubuntu ENI | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Base Ubuntu Instance | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Base Ubuntu AMI | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Base Amazon Linux Instance Role | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Base Amazon Linux ENI | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Base Amazon Linux Instance | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -296,7 +296,7 @@ Back up infrastructure segregated from other infrastructure
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Backup OU | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Backup Account Per Environment | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Archive Account Lambda Role | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Archive Account Lambda Role | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Archive Account Lambda | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Archive Account Lambda SG | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
