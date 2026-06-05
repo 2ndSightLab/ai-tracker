@@ -280,8 +280,8 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | Job Dev Instance Role | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Job Dev ENI | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Job Dev EC2 Instance | 🟢 | 🔴 | 🟢  | 🔴 | 🔴 | 🔴 |
-| Job Dev AMI | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| DynamoDB | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job Dev AMI | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| DynamoDB | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Route 53 Hosted Zone | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | ACM Certificate | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | API Gateway | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
