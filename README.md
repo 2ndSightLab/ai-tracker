@@ -199,7 +199,7 @@ Can lock when not in use with deny all SCP.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Accounts: dns (no backup) | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Accounts: dns (no backup) | 🟡 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Move Domain | 🟢 | 🟢 | 🔴 | 🔴 | 
 | Move Hosted Zone | 🟢 | 🔴 | 🔴 | 🔴 | 
 | Register domain | 🔴 | 🔴 | 🔴 | 🔴 | 
@@ -248,7 +248,8 @@ Environment where people log into EC2 instances.
 
 ### Web Environment ( Base Environment +) ###
 
-This is a separate project that allows deploying a static website in any web account in any enviroment
+This environment is used to host static websites and web applications.
+I have a separate project that allows deploying a static website in any web account in any enviroment
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
@@ -262,7 +263,7 @@ Also separates account from specific projects or activities.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Account (kiro mangement) | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Account (kiro mangement) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Kiro | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Standalone Identity Center | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | SCP: kiro-identity-center-only | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
@@ -273,6 +274,7 @@ If I use CloudFront have to allow us-east-1 for ACM Cert. Lock down when not aci
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Accounts (web, backup)| 🟡 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Job Auth Lambdas | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Auth Lambda VPC Config | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | ACM Certificate | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -283,6 +285,7 @@ If I use CloudFront have to allow us-east-1 for ACM Cert. Lock down when not aci
 ### Jobs Run Environment (Work Environment, Web Environment, +) ###
 
 The job framework infrastructure allows me to quickly and securely run jobs which could include AI agents.
+I have a separate set of projects for the Job and AI agent application layer framework and job infrastructure.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
