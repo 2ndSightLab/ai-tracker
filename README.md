@@ -147,8 +147,8 @@ Resources installed in every environment. Some are optinoal.
 | Base Ubuntu ENI | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Base Ubuntu Instance | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Base Ubuntu AMI | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Base Amazon Linux Instance Role | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Base Amazon Linux ENI | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Base Amazon Linux Instance Role | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Base Amazon Linux ENI | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Base Amazon Linux Instance | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Base Amazon Linux AMI | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | External AMI Share Key | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
