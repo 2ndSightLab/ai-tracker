@@ -316,7 +316,7 @@ Back up infrastructure segregated from other infrastructure
 | Enable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Disable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 |
 | Move Domain | 🟢 | 🟢 | 🔴 | 🔴 | 
-| Move Hosted Zone | 🟢 | 🔴 | 🔴 | 
+| Move Hosted Zone | 🟢 | 🔴 | 🔴 | 🔴 | 
 | Register domain | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Archive Account | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Move website | 🔴 | 🔴 | 🔴 | 🔴 |
