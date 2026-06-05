@@ -263,14 +263,14 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | Job Security Group | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job VPC Endpoints | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job RAM Share | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth VPC | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth Subnet | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth Security Group | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth Route Table | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth VPC | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Auth Subnet | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Auth Security Group | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Auth Route Table | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Auth Lambda Security Groups | 🟢  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth VPC Endpoints | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth VPC Endpoint SGs | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth VPC RAM share | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth VPC Endpoints | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Auth VPC Endpoint SGs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Auth VPC RAM share | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | S3 buckets (no KMS) | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | KMS keys | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Auth Lambdas | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
