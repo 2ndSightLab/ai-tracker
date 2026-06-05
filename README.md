@@ -303,15 +303,15 @@ Back up infrastructure segregated from other infrastructure
 
 ### Run Menu Steps ###
 
-| Feature | Deploy | Tested | Code Review | Security Review |
+| Feature | Run | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: |:---: |
 | Share all amis to all acounts in ou | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | IAM Acccess Analyzer Report | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Prowler Report | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Enable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Disable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Move Domain | n/a | 🟢 | n/a | 🟢 | 🔴 | 🔴 |
-| Move Hosted Zone | 🟢 | n/a | 🔴 | 🔴 | 🔴 |
+| Move Domain | n/a | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Move Hosted Zone | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Register domain | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Archive Account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Move website | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
