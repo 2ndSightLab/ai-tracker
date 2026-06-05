@@ -176,6 +176,7 @@ The management environment contains accounts where my organization deletegated a
 Domain name management. One for prod and one for test in my case. 
 Can lock when not in use with deny all SCP.
 
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Accounts: dns, backup | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Move Domain | 🟢 | 🟢 | 🔴 | 🔴 | 
@@ -187,6 +188,8 @@ Can lock when not in use with deny all SCP.
 
 Environment where people log into EC2 instances.
 
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Accounts: work, backup | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
 | IPAM pool | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
 | IPAM EIP allocation | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
