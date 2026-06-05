@@ -100,51 +100,26 @@ Separate reusable project that handles configuring role profiles and role assump
 | Reusable y/n/e prompt | N/A |  🟢 | 🟢 | 🔴 | 🔴 |
 | Step completion prompt | N/A | 🟢 | 🟢 | 🔴 | 🔴 |
 
-### Base Environment ###
+### Base Environment Resources ###
 
 Resources installed in every environment. Some are optinoal.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Environment (all resources) | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Accounts: IAM, KMS, Backup (in backup OU) | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
 | OU | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Accounts | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Move accounts to OU | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Account aliases | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
-| IPAM pool | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
-| IPAM EIP allocation | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Environment SCPs | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Admin users | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Admin user policy | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Admin roles | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Admin role policy | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| S3 buckets (no KMS) | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| KMS keys | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| KMS policies | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| KMS key aliases | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Deployment Lambdas | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| VPC Flow Logs Role | 🟢 | 🔴 | 🟢| 🔴 | 🔴 | 🔴 |
-| Remote Access Prefix List | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Remote Access (Work) VPC | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Remote Access Subnet | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Remote Access Security Group | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Remote Access Internet Gateway | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Remote Access Route Table | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Remote Access NACLs | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Remote Access VPC Ram Shares | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Remote Access VPC Flowlogs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Delete default VPCs | n/a | n/a | 🟢 | 🟢 | 🔴 | 🔴 |
-| Deploy Deployment Lambdas | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| S3 buckets (with KMS) | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Bucket policies | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| SSH Security Group | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| RDP Security Group | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| HTTP/HTTPS Security Group | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Base Ubuntu Instance Role | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Base Ubuntu ENI | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Base Ubuntu Instance | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Base Ubuntu AMI | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Budgets | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| SCP: kms-account-allowed-services [env] | 🟢 | 🟢 | 🟢  | 🔴 | 🔴 | 🔴 |
+| SCP: deny-external-access [env] | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
+| SCP: always-denied-actions [env] | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
 
 ### Management Environment ###
 
@@ -154,7 +129,7 @@ The management environment contains accounts where my organization deletegated a
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Organization | 🟢 | 🔴 | 🟢 | 🟢  | 🔴 | 🔴 |
 | Enable Org all features | 🟢 | 🔴 | 🟢 | 🟢  | 🔴 | 🔴 |
-| Accounts: IAM, Network, Accounting, Org, Security, KMS, Security, Backup | 🟢 | 🔴 | 🟢 | 🟢  | 🔴 | 🔴 |
+| Accounts: IAM, IPAM, Accounting, Org, Security, KMS, Security, Backup (in backup OU) | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Org resource policy | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Delegate IPAM admin | 🟢 | 🔴 | 🟢 | 🟢  | 🔴 | 🔴 |
 | Delegate Security Hub admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
@@ -185,30 +160,67 @@ The management environment contains accounts where my organization deletegated a
 | Configure IAM Access Analyzer | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Deny-All OU | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Configure Security Alerts | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| SCP: always-denied-actions [root] | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
+| SCP: allowed-regions [root]  | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
+| SCP: deny-leave-organization[root]  | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
+| SCP: always-default-org-root [root] | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
+| SCP: deploy-scp-require-imdsv2.sh [root] | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Environment SCPs | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
+| SCP: deny-all [account or OU] | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 
-### SCPs ##
+### Domains Envirnoment ( Base Environment +)##
 
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| kms-account-allowed-services [env] | 🟢 | 🟢 | 🟢  | 🔴 | 🔴 | 🔴 |
-| deny-external-access [env] | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
-| always-denied-actions [root] | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
-| allowed-regions [root]  | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
-| always-denied-actions [env] | 🟢 | 🟢  | 🟢  | 🔴 | 🔴 | 🔴 |
-| always-denied-actions [account] | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
-| deny-leave-organization[root]  | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
-| always-default-org-root [root] | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
-| deploy-scp-require-imdsv2.sh | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
+| Move Domain | 🟢 | 🟢 | 🔴 | 🔴 | 
+| Move Hosted Zone | 🟢 | 🔴 | 🔴 | 🔴 | 
+| Register domain | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Update Parent Hosted Zone (specific steps TBD) | 🔴 | 🔴 | 🔴 | 🔴 | 
 
-### Web Infrastructure ###
+# Work Environment Resources ( Base Environment +) ###
+
+| IPAM pool | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
+| IPAM EIP allocation | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Environment SCPs | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| S3 buckets (no KMS) | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| KMS keys | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| KMS policies | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| KMS key aliases | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| VPC Flow Logs Role | 🟢 | 🔴 | 🟢| 🔴 | 🔴 | 🔴 |
+| Remote Access Prefix List | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Remote Access (Work) VPC | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Remote Access Subnet | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Remote Access Security Group | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Remote Access Internet Gateway | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Remote Access Route Table | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Remote Access NACLs | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Remote Access VPC Ram Shares | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Remote Access VPC Flowlogs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Delete default VPCs | n/a | n/a | 🟢 | 🟢 | 🔴 | 🔴 |
+| Deploy Deployment Lambdas | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| S3 buckets (with KMS) | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Bucket policies | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| SSH Security Group | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| RDP Security Group | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| HTTP/HTTPS Security Group | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Budgets | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Base Ubuntu Instance Role | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Base Ubuntu ENI | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Base Ubuntu Instance | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Base Ubuntu AMI | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Base Amazon Linux Instance Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Base Amaxon Linux ENI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Base Amazon Linux Instance | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Base Amazon Linux AMI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+
+### Web Environment ( Base Environment +) ###
 
 This is a separate project that allows deploying a static website in any web account in any enviroment
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Web Lambda | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deploy Web Lambda | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
-### Test Infrastructure ###
+### Test Environment Resources (Work Environment +) ###
 
 Some enviroments may include penetration testing and security research resources.
 
@@ -225,7 +237,7 @@ Some enviroments may include penetration testing and security research resources
 
 ( And other stuff not shown here :^) 
 
-### Job Framework Infrastructure ###
+### Job + AI Agents Environment (Work Environment +) ###
 
 The job framework infrastructure allows me to quickly and securely run jobs. 
 
@@ -269,7 +281,6 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 
 Back up infrastructure segregated from other infrastructure
 
-
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Backup OU | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
@@ -296,22 +307,16 @@ Back up infrastructure segregated from other infrastructure
 | Prowler Report | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Enable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Disable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 |
-| Move Domain | 🟢 | 🟢 | 🔴 | 🔴 | 
-| Move Hosted Zone | 🟢 | 🔴 | 🔴 | 🔴 | 
-| Register domain | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Archive Account | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Move website | 🔴 | 🔴 | 🔴 | 🔴 |
 | Transfer GitHub repo to Code Commit | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Transfer one Code Commit repo to Another | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Lock (apply deny-all SCP) | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Unlock (remove deny-all SCP) | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Deploy External AMI Share Key | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Share AMI To External| 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
-### Share AMI to External Account ###
-
-| Feature | Run | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: |
-| External AMI Share Key | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Share AMI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-
-### Deploy to single account (in a different organization or standalone) ##
+### Deploy to single account (account in a different organization or standalone) ##
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
@@ -319,3 +324,4 @@ Back up infrastructure segregated from other infrastructure
 | User | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Jobs Instance | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+
