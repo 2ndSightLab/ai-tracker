@@ -3,6 +3,12 @@
 
 Fixed issues in fixed.md
 
+🟡 Move hosted zone didn't update existing hosted zone so now the correct NS records are in one acount and the domain is associated ot the one with the wrong NS records I think not sure what is going on figure out tomororw.
+
+🟡 Need a way to handle dup hostd zones in account 
+
+🟡 Delete hosted zone didn't work becuase need to delete child records first.
+
 🟡 Ram sharing worked for one VPC but it's not working for the other three nad the models are going aroudn and around in circles and cannot figure it out.
 
 🟡 May be a dup but I think the user/role has to be deployed prior to teh location it is in the base env.
