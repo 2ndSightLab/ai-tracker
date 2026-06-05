@@ -3,6 +3,8 @@
 
 Fixed issues in fixed.md
 
+🟡 As per usual it messed up the DNS. It was only supposed to copy records except NS records and it update the NS records so I told it to fix that and fix and validate any incorret records at the time of the move.
+
 🟡 Move hosted zone didn't update existing hosted zone so now the correct NS records are in one acount and the domain is associated ot the one with the wrong NS records I think not sure what is going on figure out tomororw.
 
 🟡 Need a way to handle dup hostd zones in account 
