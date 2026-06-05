@@ -126,20 +126,20 @@ Resources installed in every environment. Some are optinoal.
 | VPC Flow Logs Role | 🟢 | 🔴 | 🟢| 🔴 | 🔴 | 🔴 |
 | Remote Access Prefix List | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Remote Access (Work) VPC | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Remote Access Subnet | 🟢 | 🟢  | 🔴 | 🔴 | 🔴 | 🔴 |
-| Remote Access Security Group | 🟢 | 🟢  | 🔴 | 🔴 | 🔴 | 🔴 |
-| Remote Access Internet Gateway | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Remote Access Route Table | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Remote Access Security Group | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Remote Access Subnet | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Remote Access Security Group | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Remote Access Internet Gateway | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Remote Access Route Table | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Remote Access NACLs | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Remote Access VPC Ram Shares | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Backup VPC | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Backup Subnet | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Backup Security Group | 🟢 | 🟢  | 🔴 | 🔴 | 🔴 | 🔴 |
-| Backup Internet Gateway | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Backup Route Table | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Backup Security Group | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Backup VPC Ram Shares | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Delete default VPCs | n/a | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Backup Internet Gateway | 🟢 | 🟢 | n/a | 🔴 | 🔴 | 🔴 |
+| Backup Route Table | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Backup Security Group | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Backup VPC Ram Shares | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Delete default VPCs | n/a | n/a | 🟢 | 🟢 | 🔴 | 🔴 |
 | Deploy Deployment Lambdas | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Deploy Archive Account Lambda | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Deploy Archive Lambda Roles | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
