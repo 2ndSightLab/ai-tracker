@@ -258,6 +258,7 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | Job Security Group | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job VPC Endpoints | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job RAM Share | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job VPC Flow Logs | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Auth VPC | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Auth Subnet | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Auth Security Group | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
