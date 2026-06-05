@@ -1,5 +1,13 @@
 # Fixed Issues
 
+6/4/2026
+
+🟢 Still hasn't gotten fixing menu labels right for something used across all resource steps.
+
+🟢 Running verify steps for ram shares and VPCs were not properly shared to traget accoutns in all cases.
+
+🟢 At some point it switched back to 4.6 don't know why but anyway whateer it was tried three times to get the label on a menu item right and can't figure it out. Tried to fix the backslash issue multipel times as well.
+
 6/4/2026 9:03 PM Going to give automode another chance here's how it went
 
 🟢 I have an SCP designed to only allow an enviromment to taek actions or access it's own resources. So many complicates with that. The orgpaths condition doesn't work consistently across all resources for one thing. I had to open it up to allow the org IPAM since I can't create an environmnt specific IPAM. And now for the AMIs. I am trying to launch AMIs and I have to make an exceptoin for Amazon AMIs. I don't wnat to allow all, only AWS AMIs. What I would rather do is have a way to pull those AMIs inot my own repo in the env and use that. BUt that action in itelf might require an exception. Maybe I could put that in a separate env to access external resoruces or something. But anyway fixed for now the way it is and think about it more later. I do not want to have ServiceLinkedRoles in my account as much as possible since they are not subject to SCPs.
