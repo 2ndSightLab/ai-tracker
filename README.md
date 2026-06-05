@@ -125,16 +125,19 @@ Resources installed in every environment. Some are optinoal.
 | Deploy Lambdas | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | VPC Flow Logs Role | 🟢 | 🔴 | 🟢| 🔴 | 🔴 | 🔴 |
 | Remote Access Prefix List | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Remote Access (Work) VPC | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Remote Access (Work) VPC | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Remote Access Subnet | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Remote Access Security Group | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Remote Access Internet Gateway | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Remote Access Route Table | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Remote Access NACLs | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Remote Access VPC Ram Shares | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Remote Access VPC Flowlogs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Remote Access VPC Flowlogs | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Delete default VPCs | n/a | n/a | 🟢 | 🟢 | 🔴 | 🔴 |
-| Deploy Deployment Lambdas | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Deploy Deployment Lambdas | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deploy Archive Account Lambda | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deploy Archive Lambda Roles | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deploy Archive Lambda VPC Config | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | S3 buckets (with KMS) | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Bucket policies | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | SSH Security Group | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
@@ -267,10 +270,9 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | Auth VPC Flowlogs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | S3 buckets (no KMS) | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | KMS keys | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Auth Lambdas | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Job/Auth Lambdas | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Auth Lambda VPC Config | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Git Credentials Secrets | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Job Run Lambdas | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Job Dev Instance Role | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Job Dev ENI | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Job Dev EC2 Instance | 🟢 | 🔴 | 🟢  | 🔴 | 🔴 | 🔴 |
@@ -302,9 +304,6 @@ Back up infrastructure segregated from other infrastructure
 | Backup VPC Endpoint SGs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Backup VPC RAM share | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Bacup VPC Flowlogs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Deploy Archive Account Lambda | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Deploy Archive Lambda Roles | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Deploy Archive Lambda VPC Config | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Run Menu Steps ###
 
