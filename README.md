@@ -282,7 +282,7 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | Job Dev EC2 Instance | 🟢 | 🔴 | 🟢  | 🔴 | 🔴 | 🔴 |
 | Job Dev AMI | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | DynamoDB | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Route 53 Hosted Zone | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Route 53 Hosted Zone | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | ACM Certificate | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | API Gateway | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | CNAME | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
