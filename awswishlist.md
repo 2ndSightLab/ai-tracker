@@ -13,6 +13,8 @@ These wishes are likely most applicable to those involved in AWS account securit
 
 ## Wishes
 
+🟠 I want to be able to select any model available in Amazon Bedrock in Kiro. https://builder.aws.com/wishlist/3EdZnhuYbi5bCR6vBvzE4THvE8C_w/i-wish-we-could-select-from-all-the-bedrock-models-in-kiro-cli-and-others
+
 🟠 If I forget to chagne the email address, alias or name of a closed account I can't recreatea new one with the same information. https://builder.aws.com/wishlist/3ETtg4AwifUcBqGG03ZknTjF1g3_w/cannot-use-alias-email-name-that-was-used-on-a-closed-account
 
 🟠  I'm having to redo my Kiro subscription again. I don't like it that overages cost more than the base plan. That means I keep having to delete and create subscriptions to get the lowest price per token at all times. Even though I deleted some subscriptions at the end of the month in the past they got renewed. The fine print says the rollover is UTC which I thought caused my initial issues. But then it rolled over pre-UTC at the end of the month and I still got billed for a subscription in the next month when I tried to cancel it because I as taking a trip. This whole monthly subscription thing is painful. Some months I need to use it a lot and others not so much. Pay as you go pricing like all the rest of AWS - one of the core principles on which the service was built - would be so much more cost-effective to manage. Monthly billing is simple - but in the end it is painful for the user and the customer when you get into the details of using it and are trying to track costs and get the best value. 
@@ -135,7 +137,6 @@ https://builder.aws.com/wishlist/3ETEXLx2zZ9GFzQHFYKqmJBcS9M_w/kiro-in-aws-conso
 🟠 I thinek the AI model is understandably getting confused due to the way IPAM works. I would have had the EIP allocated in the IPAM itself and then share that out with RAM share to the acount that needs to use it. That way if the account is deleted (one of my other issues) the EIP can still be managed by the IPAM account. And this is all confusing because the program has to switch roles from the IPAM account to the account using an IP to create a new EIP. I suppose this is because a network team might want to allow end users in the accounts add and release IPs as needed. But it's confusing for the model and difficult to maanage when the account using the EIP gets deleted. 
 
 🟠 I want to be able to define what appears on the default dashboard when I create a new account. I never use the application thing and I don't wnat all those lists appearing in evry account. I just wnat the cost, the recently visited, and if it's a service specific account I want to define which service dashbard I see on the main page like KMS or whatever. But if it's a KMS only acocunt really I just wnat to land directly on the KMS page. If i use two services in an account like KMS, ACM then I woudl want both those on the home page only. All that stuff is making extraneous network connections (somtimes to wrong region) and cluttering the logs.
-
 
 
 
