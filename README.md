@@ -309,7 +309,7 @@ Back up infrastructure segregated from other infrastructure
 ### Run Menu Steps ###
 
 | Feature | Run | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: 
+| :--- | :---: | :---: | :---: | :---: |
 | Share all amis to all acounts in ou | 🔴 | 🔴 | 🔴 | 🔴 | 
 | IAM Acccess Analyzer Report | 🔴 | 🔴 | 🔴 | 🔴 |
 | Prowler Report | 🔴 | 🔴 | 🔴 | 🔴 | 
