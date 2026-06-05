@@ -131,7 +131,7 @@ Resources installed in every environment. Some are optinoal.
 | Remote Access Internet Gateway | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Remote Access Route Table | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Remote Access NACLs | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Remote Access VPC Ram Shares | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Remote Access VPC Ram Shares | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Remote Access VPC Flowlogs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Delete default VPCs | n/a | n/a | 🟢 | 🟢 | 🔴 | 🔴 |
 | Deploy Deployment Lambdas | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
