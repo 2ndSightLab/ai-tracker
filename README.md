@@ -171,6 +171,27 @@ The management environment contains accounts where my organization deletegated a
 
 🟡 Broke: Restructing scps - where are they deployed and fix naming conventio)
 
+### Backup Environment ###
+
+Back up infrastructure segregated from other infrastructure
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Backup OU | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Backup Account Per Environment | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Archive Account Lambda Role | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Archive Account Lambda | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Archive Account Lambda SG | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Backup VPC | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Backup Subnet | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Backup Security Group | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Backup Route Table | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Backup Lambda Security Groups | 🟢  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Backup VPC Endpoints | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Backup VPC Endpoint SGs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Backup VPC RAM share | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Bacup VPC Flowlogs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+
 ### Domains Envirnoment ( Base Environment +) ###
 
 Domain name management. One for prod and one for test in my case. 
@@ -190,7 +211,7 @@ Environment where people log into EC2 instances.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Accounts: work, backup | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Accounts: work, amis, backup | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
 | IPAM pool | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
 | IPAM EIP allocation | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Environment SCPs | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
@@ -234,24 +255,6 @@ This is a separate project that allows deploying a static website in any web acc
 | Accounts: web, backup | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Deploy Web Lambda | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
-### Test Environment (Work Environment +) ###
-
-Some enviroments may include penetration testing and security research resources.
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Accounts: project | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Burp ENI | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Burp Instance Role | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Burp Instance | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Burp AMI | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Collab ENI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Collab Instance Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Collab Instance | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Collab AMI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-
-( And other stuff not shown here :^) 
-
 ### Kiro management environment ###
 
 Separaete environment because it reuqires us-east-1. Manage Kiro subscriptions.
@@ -262,9 +265,9 @@ Also separates account from specific projects or activities.
 | Kiro | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Standalone Identity Center | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 
-### Job + AI Agents Environment (Work Environment +) ###
+### Jobs Environment (Work Environment, Web Environment, +) ###
 
-The job framework infrastructure allows me to quickly and securely run jobs. 
+The job framework infrastructure allows me to quickly and securely run jobs which could include AI agents.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
@@ -302,26 +305,35 @@ The job framework infrastructure allows me to quickly and securely run jobs.
 | API Gateway CNAME | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | DynamoDB | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
-### Backup Infrastructure ###
 
-Back up infrastructure segregated from other infrastructure
+### Test Environment (Work Environment, Web Environment, Jobs Environment, +) ###
+
+Some enviroments may include penetration testing and security research resources.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Backup OU | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Backup Account Per Environment | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Archive Account Lambda Role | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Archive Account Lambda | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Archive Account Lambda SG | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Backup VPC | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Backup Subnet | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Backup Security Group | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Backup Route Table | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Backup Lambda Security Groups | 🟢  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Backup VPC Endpoints | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Backup VPC Endpoint SGs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Backup VPC RAM share | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Bacup VPC Flowlogs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Accounts: project | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Burp ENI | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Burp Instance Role | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Burp Instance | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Burp AMI | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Collab ENI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Collab Instance Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Collab Instance | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Collab AMI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+
+( And other stuff not shown here :^) 
+
+### Single Account Test Environment ##
+
+Deploy environment to single account (account in a different organization or standalone) 
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Network | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| User | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Jobs Instance | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Run Menu Steps ###
 
@@ -341,12 +353,4 @@ Back up infrastructure segregated from other infrastructure
 | Deploy External AMI Share Key | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Share AMI To External| 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
-### Deploy to single account (account in a different organization or standalone) ##
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Network | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| User | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Jobs Instance | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
