@@ -199,7 +199,7 @@ Can lock when not in use with deny all SCP.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Accounts: dns, backup | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Accounts: dns (no backup) | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Move Domain | 🟢 | 🟢 | 🔴 | 🔴 | 
 | Move Hosted Zone | 🟢 | 🔴 | 🔴 | 🔴 | 
 | Register domain | 🔴 | 🔴 | 🔴 | 🔴 | 
@@ -255,16 +255,17 @@ This is a separate project that allows deploying a static website in any web acc
 | Accounts: web, backup | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Deploy Web Lambda | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
-### Kiro management environment ###
+### Kiro management environment (Base Environment +) ###
 
 Separaete environment because it reuqires us-east-1. Manage Kiro subscriptions.
 Also separates account from specific projects or activities.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Account (kiro mangement) | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Kiro | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Standalone Identity Center | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-
+| SCP: kiro-identity-center-only | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 
 ### Jobs Auth Environment (Web Environment, +) ###
 
