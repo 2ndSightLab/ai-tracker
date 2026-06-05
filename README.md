@@ -305,6 +305,7 @@ Back up infrastructure segregated from other infrastructure
 
 | Feature | Deploy | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: |:---: |
+| Share all amis to all acounts in ou | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | IAM Acccess Analyzer Report | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Prowler Report | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Enable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -315,4 +316,4 @@ Back up infrastructure segregated from other infrastructure
 | Archive Account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Move website | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Transfer GitHub repo to Code Commit | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-
+| Transfer one Code Commit repo to Another | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
