@@ -134,10 +134,7 @@ Resources installed in every environment. Some are optinoal.
 | Remote Access VPC Ram Shares | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Remote Access VPC Flowlogs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Delete default VPCs | n/a | n/a | 🟢 | 🟢 | 🔴 | 🔴 |
-| Deploy Deployment Lambdas | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deploy Archive Account Lambda | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deploy Archive Lambda Roles | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Deploy Archive Lambda VPC Config | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Deploy Deployment Lambdas | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | S3 buckets (with KMS) | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Bucket policies | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | SSH Security Group | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
@@ -305,6 +302,9 @@ Back up infrastructure segregated from other infrastructure
 | Backup VPC Endpoint SGs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Backup VPC RAM share | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Bacup VPC Flowlogs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Deploy Archive Account Lambda | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Deploy Archive Lambda Roles | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Deploy Archive Lambda VPC Config | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Run Menu Steps ###
 
