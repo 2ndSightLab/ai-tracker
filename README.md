@@ -195,15 +195,6 @@ The management environment contains accounts where my organization deletegated a
 | Configure Security Alerts | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Deny-All OU | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
 
-### Deploy to single account (in a different organization or standalone) ##
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Network | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| User | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Jobs Instance | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-
 ### SCPs ##
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
@@ -321,3 +312,12 @@ Back up infrastructure segregated from other infrastructure
 | Move website | 🔴 | 🔴 | 🔴 | 🔴 |
 | Transfer GitHub repo to Code Commit | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Transfer one Code Commit repo to Another | 🔴 | 🔴 | 🔴 | 🔴 | 
+
+### Deploy to single account (in a different organization or standalone) ##
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Network | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| User | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Jobs Instance | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
