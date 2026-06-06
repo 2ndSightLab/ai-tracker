@@ -96,8 +96,8 @@ Separate reusable project provides xml driven menues for consistency and easy up
 | Feature | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | 
 | Reusaable Numbered Menu with Filter by letters | N/A | 🟢 | 🔴 | 🔴 |
-| Reusable y/n/e prompt | N/A |  🟢 | 🔴 | 🔴 |
-| Step completion prompt | N/A | 🟢 | 🔴 | 🔴 |
+| Reusable y/n/e prompt | 🟢 | 🔴 | 🔴 |
+| Step completion prompt | 🟢 | 🔴 | 🔴 |
 | Organization Selection / Create / Delete menu | 🟢 | 🔴 | 🔴 |
 | Environment / Create / Rename / Delete menu | 🟢 | 🔴 | 🔴 |
 | Action menu | 🟢 | 🔴 | 🔴 |
