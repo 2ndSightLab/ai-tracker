@@ -95,11 +95,12 @@ I used some previously written code as a starting point in which the [role trust
 Separate reusable project provides xml driven menues for consistency and easy updates
 | Feature | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | 
-| Reusaable Numbered Menu with Filter by letters | N/A | 🟢 | 🔴 | 🔴 |
+| Reusaable Numbered Menu with Filter by letters | 🟢 | 🔴 | 🔴 |
 | Reusable y/n/e prompt | 🟢 | 🔴 | 🔴 |
 | Step completion prompt | 🟢 | 🔴 | 🔴 |
 | Organization Selection / Create / Delete menu | 🟢 | 🔴 | 🔴 |
 | Environment / Create / Rename / Delete menu | 🟢 | 🔴 | 🔴 |
+| Edit Environment | 🟡 | 🔴 | 🔴 |
 | Action menu | 🟢 | 🔴 | 🔴 |
 | Resources / Create / Rename / Delete menu | 🟢 | 🔴 | 🔴 |
 | Run menu | 🟢 | 🔴 | 🔴 |
