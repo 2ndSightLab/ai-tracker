@@ -186,8 +186,6 @@ The management environment contains accounts where my organization deletegated a
 | SCP: org-allowed-regions [root]  | 🟡 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
 | Configure Security Alerts | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
-🟡 Broke: Restructing scps - where are they deployed and fix naming conventio)
-
 ### Backup Environment ###
 
 Back up infrastructure segregated from other infrastructure
