@@ -99,12 +99,17 @@ Separate reusable project provides xml driven menues for consistency and easy up
 | Reusable y/n/e prompt | 🟢 | 🔴 | 🔴 |
 | Step completion prompt | 🟢 | 🔴 | 🔴 |
 | Organization Selection / Create / Delete menu | 🟢 | 🔴 | 🔴 |
-| Edit Organization Definition File | 🟡 | 🔴 | 🔴 |
 | Environment / Create / Rename / Delete menu | 🟢 | 🔴 | 🔴 |
-| Edit Environment Definition File | 🟡 | 🔴 | 🔴 |
 | Action menu | 🟢 | 🔴 | 🔴 |
 | Resources / Create / Rename / Delete menu | 🟢 | 🔴 | 🔴 |
 | Run menu | 🟢 | 🔴 | 🔴 |
+
+
+### Organization Definition ##
+| Add/Remove Organization in Configuration | 🟡 | 🔴 | 🔴 |
+| Add/Remove/Rename OUs in Configuration | 🟡 | 🔴 | 🔴 |
+| Edit Environment Configuration File | 🟡 | 🔴 | 🔴 |
+| Add/Remove/Edit Environment Types | 🔴 | 🔴 | 🔴 |
 
 ### Base Environment Resources ###
 
