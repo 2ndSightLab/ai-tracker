@@ -2,6 +2,11 @@
 
 6/6/2026 1:46 AM
 
+🟢 Cleaned up ugly code to make it more maintainable and better ogranized. Result:
+
+So very roughly: ~335 added, ~215 removed, net +120 lines — but spread so that run.sh got much smaller and the logic moved into small focused 
+files.
+
 🟢 Created a new project with a mechanism to define an org name, configure all the environments form a list of environments with default recommendations such as management (one and only one), kiro management environment, work environment (where people log into ec2), web environment (no ec2 logins), DNS, test (for test infrastructure like burp and other instances used for testing not development), etc. So they can add a list of environments with a name and a type and then the appropriate resource list shows up for each environment type so they can deploy those resources to the environments. The mapping mechanism helps add/remove new resources easily to menus and thereby create any grouping of resources that can be deployed in an environment.  It works the same as existing code but the menus are actually written properly and configurable via XML which Anthropoic models like. Then my new project can source all the files that do the actual deployments via the files in the bootstrap project. And the bootstrap resource files can't mess up the menus and vice versa. Also this would break everything if I did it in one project (as it did before) only worse - I wouldn't be able to manage some existing resources. So what I have now is the ability to manage the existing resources with the old menus until I get the new menus working and the environments aligned. I added the organization deployment and now that can be read from the organization name stored in the xml file and the environment names match OUs. I'm not doing any nesting here because I found that complicated for my small org but could easily add a parent node to the environment xml files and have them reference each other. More testing is needed but this should resolve a bunch of issues and make it harder for the creation of resource fields to get so messed up and keep menus in tact and consistent.
 
 6/5/2026 5:04 PM Starting now...have to login and update some settings each time I start - something I hope to automate n the future. It's related to some stringent security controls because I'm a super security nerd.
