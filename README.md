@@ -105,7 +105,9 @@ Separate reusable project provides xml driven menues for consistency and easy up
 | Run menu | 🟢 | 🔴 | 🔴 |
 
 
-### Organization Definition ##
+### Organization Configuration ##
+| Feature | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | 
 | Add/Remove Organization in Configuration | 🟡 | 🔴 | 🔴 |
 | Add/Remove/Rename OUs in Configuration | 🟡 | 🔴 | 🔴 |
 | Edit Environment Configuration File | 🟡 | 🔴 | 🔴 |
