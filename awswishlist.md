@@ -138,6 +138,8 @@ https://builder.aws.com/wishlist/3ETEXLx2zZ9GFzQHFYKqmJBcS9M_w/kiro-in-aws-conso
 
 🟠 I want to be able to define what appears on the default dashboard when I create a new account. I never use the application thing and I don't wnat all those lists appearing in evry account. I just wnat the cost, the recently visited, and if it's a service specific account I want to define which service dashbard I see on the main page like KMS or whatever. But if it's a KMS only acocunt really I just wnat to land directly on the KMS page. If i use two services in an account like KMS, ACM then I woudl want both those on the home page only. All that stuff is making extraneous network connections (somtimes to wrong region) and cluttering the logs.
 
+🟠 Kiro or model keeps saying changes ewre cancelled and not written when I hit ctrl-c and tell it to stop and restore what it just did - when they actually were written. It should check before saying that.
+
 
 
 
