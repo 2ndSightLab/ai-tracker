@@ -94,11 +94,13 @@ I used some previously written code as a starting point in which the [role trust
 
 Separate reusable project that handles configuring role profiles and role assumption with MFA.
 
-| Feature | Deploy | Tested | Code Review | Security Review |
+| Feature | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | 
-| Reusaable Numbered Menu with Filter by letters | N/A | 🟢 | 🟢 | 🔴 | 🔴 |
-| Reusable y/n/e prompt | N/A |  🟢 | 🟢 | 🔴 | 🔴 |
-| Step completion prompt | N/A | 🟢 | 🟢 | 🔴 | 🔴 |
+| Reusaable Numbered Menu with Filter by letters | N/A | 🟢 | 🔴 | 🔴 |
+| Reusable y/n/e prompt | N/A |  🟢 | 🔴 | 🔴 |
+| Step completion prompt | N/A | 🟢 | 🔴 | 🔴 |
+| Organization Selection / Create / Delete menu | 🟢 | 🔴 | 🔴 |
+| Environment / Create / Rename / Delete menu | 🟢 | 🔴 | 🔴 |
 
 ### Base Environment Resources ###
 
