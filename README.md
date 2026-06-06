@@ -92,10 +92,9 @@ I used some previously written code as a starting point in which the [role trust
 
 ### UI ##
 
-Separate reusable project that handles configuring role profiles and role assumption with MFA.
-
+Separate reusable project provides xml driven menues for consistency and easy updates
 | Feature | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | 
+| :--- | :---: | :---: | :---: | 
 | Reusaable Numbered Menu with Filter by letters | N/A | 🟢 | 🔴 | 🔴 |
 | Reusable y/n/e prompt | N/A |  🟢 | 🔴 | 🔴 |
 | Step completion prompt | N/A | 🟢 | 🔴 | 🔴 |
