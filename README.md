@@ -99,8 +99,9 @@ Separate reusable project provides xml driven menues for consistency and easy up
 | Reusable y/n/e prompt | 🟢 | 🔴 | 🔴 |
 | Step completion prompt | 🟢 | 🔴 | 🔴 |
 | Organization Selection / Create / Delete menu | 🟢 | 🔴 | 🔴 |
+| Edit Organization Definition File | 🟡 | 🔴 | 🔴 |
 | Environment / Create / Rename / Delete menu | 🟢 | 🔴 | 🔴 |
-| Edit Environment | 🟡 | 🔴 | 🔴 |
+| Edit Environment Definition File | 🟡 | 🔴 | 🔴 |
 | Action menu | 🟢 | 🔴 | 🔴 |
 | Resources / Create / Rename / Delete menu | 🟢 | 🔴 | 🔴 |
 | Run menu | 🟢 | 🔴 | 🔴 |
