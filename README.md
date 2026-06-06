@@ -93,6 +93,7 @@ I used some previously written code as a starting point in which the [role trust
 ### UI ##
 
 Separate reusable project provides xml driven menues for consistency and easy updates
+
 | Feature | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | 
 | Reusaable Numbered Menu with Filter by letters | 🟢 | 🔴 | 🔴 |
@@ -106,6 +107,9 @@ Separate reusable project provides xml driven menues for consistency and easy up
 
 
 ### Organization Configuration ##
+
+Configure organization to deploy; define environemnt types (allowed resources)
+
 | Feature | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | 
 | Add/Remove Organization in Configuration | 🟡 | 🔴 | 🔴 |
@@ -213,12 +217,17 @@ Can lock when not in use with deny all SCP.
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Accounts: dns (no backup) | 🟡 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Move Domain | 🟢 | 🟢 | 🔴 | 🔴 | 
-| Move Hosted Zone | 🟢 | 🔴 | 🔴 | 🔴 | 
-| Register domain | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Update Parent Hosted Zone (specific steps TBD) | 🔴 | 🔴 | 🔴 | 🔴 | 
 
-# Work Environment Resources ( Base Environment +) ###
+### DNS Actions ###
+
+| Feature | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | 
+| Move Domain | 🟢 | 🟢 | 🔴 |
+| Move Hosted Zone | 🟢 | 🔴 | 🔴 |
+| Register domain | 🔴 | 🔴 | 🔴 | 
+| Update Parent Hosted Zone (specific steps TBD) | 🔴 | 🔴 | 🔴 | 
+
+### Work Environment Resources ( Base Environment +) ###
 
 Environment where people log into EC2 instances.
 
