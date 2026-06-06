@@ -101,6 +101,9 @@ Separate reusable project that handles configuring role profiles and role assump
 | Step completion prompt | N/A | 🟢 | 🔴 | 🔴 |
 | Organization Selection / Create / Delete menu | 🟢 | 🔴 | 🔴 |
 | Environment / Create / Rename / Delete menu | 🟢 | 🔴 | 🔴 |
+| Action menu | 🟢 | 🔴 | 🔴 |
+| Resources / Create / Rename / Delete menu | 🟢 | 🔴 | 🔴 |
+| Run menu | 🟢 | 🔴 | 🔴 |
 
 ### Base Environment Resources ###
 
