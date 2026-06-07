@@ -122,13 +122,13 @@ Reduces context and scope of the org and environment projects.
 
 Configure organization to deploy; define environemnt types (allowed resources)
 
-| Feature | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | 
-| Add/Remove Organization in Configuration | 🟡 | 🔴 | 🔴 |
-| Add/Remove/Rename Environments Types | 🟡 | 🔴 | 🔴 |
-| Add/Remove/Rename Environments Type Accounts | 🟡 | 🔴 | 🔴 |
-| Add/Remove/Rename Environments Type Resources | 🟡 | 🔴 | 🔴 |
-| Add/Remove/Rename Environments in Organization | 🟡 | 🔴 | 🔴 |
+| Feature | List | Add | Remove | Rename | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Add/Remove Organization in Configuration | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Add/Remove/Rename Environments Types | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Add/Remove/Rename Environments Type Accounts | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Add/Remove/Rename Environments Type Resources | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Add/Remove/Rename Environments in Organization | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 ||
 
 ### Base Environment Resources ###
 
