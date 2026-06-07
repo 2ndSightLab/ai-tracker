@@ -2,6 +2,8 @@
 
 6/6/2026 4:406 PM
 
+🟢 Adding suport for account types.
+
 🟢 Restructure bootstrap menu - Configure organization, deploy, drift management
 
 🟢 Add drift detection report project. Finds resources that do not align with organization configuration.
