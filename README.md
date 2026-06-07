@@ -68,6 +68,14 @@ This data is pulled from a custom Dashboard I created in the AWS Cost Management
 
 ## Objectives
 
+### Status Legend ###
+
+| Status | Description | 
+| :--- | :---: | 
+| 🟢 | Done |
+| 🟡 | Broke or Implmeented Not Yet Run |
+| 🔴 | Not Done |
+
 ### Bootstrap Role ###
 
 Role, policy and permission boundary deployed in root management account in AWS CloudShell.
@@ -124,11 +132,11 @@ Configure organization to deploy; define environemnt types (allowed resources)
 
 | Feature | List | Add | Remove | Rename | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Add/Remove Organization in Configuration | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Add/Remove/Rename Environments Types | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Add/Remove/Rename Environments Type Accounts | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Add/Remove/Rename Environments Type Resources | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Add/Remove/Rename Environments in Organization | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Add/Remove Organization in Configuration | 🟢 | 🟢 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Add/Remove/Rename Environments Types | 🟢 | 🟢 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Add/Remove/Rename Environments Type Accounts | 🟢 | 🟢 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Add/Remove/Rename Environments Type Resources | 🟢 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Add/Remove/Rename Environments in Organization | 🟢 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Base Environment Resources ###
 
@@ -197,7 +205,7 @@ The management environment contains accounts where my organization deletegated a
 | Environment SCPs | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
 | SCP: deny-all [account or OU] | 🟡 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 
 | SCP: org-allowed-regions [root]  | 🟡 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
-| Configure Security Alerts | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Configure Security Alerts | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Backup Environment ###
 
@@ -235,7 +243,7 @@ Can lock when not in use with deny all SCP.
 | :--- | :---: | :---: | :---: | 
 | Move Domain | 🟢 | 🟢 | 🔴 |
 | Move Hosted Zone | 🟢 | 🔴 | 🔴 |
-| Register domain | 🔴 | 🔴 | 🔴 | 
+| Register domain | 🟡 | 🔴 | 🔴 | 
 | Update Parent Hosted Zone (specific steps TBD) | 🔴 | 🔴 | 🔴 | 
 
 ### Work Environment Resources ( Base Environment +) ###
@@ -375,28 +383,27 @@ Deploy environment to single account (account in a different organization or sta
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Network | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| User | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Jobs Instance | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Network | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| User | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Role | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Jobs Instance | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Run Menu Steps ###
 
 | Feature | Run | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: |
-| Configure Organization | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Share all amis to all acounts in ou | 🔴 | 🔴 | 🔴 | 🔴 | 
-| IAM Acccess Analyzer Report | 🔴 | 🔴 | 🔴 | 🔴 |
+| Share all amis to all acounts in ou | 🟡 | 🔴 | 🔴 | 🔴 | 
+| IAM Acccess Analyzer Report | 🟡 | 🔴 | 🔴 | 🔴 |
 | Prowler Report | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Enable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Disable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 |
-| Archive Account | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Archive Account | 🟡 | 🔴 | 🔴 | 🔴 | 
 | Move website | 🔴 | 🔴 | 🔴 | 🔴 |
 | Transfer GitHub repo to Code Commit | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Transfer one Code Commit repo to Another | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Lock (apply deny-all SCP) | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Unlock (remove deny-all SCP) | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Deploy External AMI Share Key | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Share AMI To External| 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Share AMI To External | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 
