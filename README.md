@@ -317,11 +317,11 @@ If I use CloudFront have to allow us-east-1 for ACM Cert. Lock down when not aci
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Accounts (web, backup)| 🟡 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Job Auth Lambdas | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Auth Lambda VPC Config | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| ACM Certificate | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| API Gateway | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| API Gateway CNAME | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| DynamoDB | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Auth Lambda VPC Config | 🟡 | 🟢 | 🟡 | 🔴 | 🔴 | 🔴 |
+| ACM Certificate | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| API Gateway | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| API Gateway CNAME | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| DynamoDB | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 
 ### Jobs Run Environment (Work Environment, Web Environment, +) ###
 
