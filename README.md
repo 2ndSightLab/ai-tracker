@@ -130,8 +130,9 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | XML Driven Enviroment Type Accounts menu | 🟡 | 🔴 | 🔴 |
 | Add/Remove/Rename Environments in Configuration | 🟡 | 🔴 | 🔴 |
 | Add/Remove/Edit Accounts in Environment Type Configuration | 🔴 | 🔴 | 🔴 |
-| XML Driven Environemnt Action menu | 🟢 | 🔴 | 🔴 |
-| XML Driven Environment Run menu | 🟢 | 🔴 | 🔴 |
+| Add/Remove/Edit Resources in Environment Type Configuration | 🔴 | 🔴 | 🔴 |
+| XML Driven Environemnt Action menu | 🟡 | 🔴 | 🔴 |
+| XML Driven Environment Run menu | 🟡 | 🔴 | 🔴 |
 
 ### Base Environment Resources ###
 
