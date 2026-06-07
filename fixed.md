@@ -2,6 +2,8 @@
 
 6/6/2026 4:406 PM
 
+🟢 Add configure step to menu instead of displaying it before running enviroment deployemnt. Insteada of showing it every time and asking if ok can choose to configure/check it as needed. Also works better in the flow and keeps the control of that with the environment project.
+
 🟢 So I had to have two agents argue with each other about 10 times until I could get them to agree on how to handle complex menus. HOpefully it works. Test tomorrow. Now there's a way to manage Environment Types, Acocunts in Environment Types, and items that appear in the list of Resources that you can deploy to an environemnt of a particular type.
 
 🟢 The agent/model/whatever doesn't read the full readem or all requiremetns even when my instructions say read it and then read it again to see what you missed. I tried to create prompts to fix this. Nothing works. Just have to reprompt and create tests which I've added to all projects - but half the time the agent messes up the tests so we'll see how that looks when I check the code.
