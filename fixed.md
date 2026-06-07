@@ -2,6 +2,8 @@
 
 6/6/2026 4:406 PM
 
+🟢 Added to readme to one project (need to add everywhere) not to add specific requirement numbers in code since they change. That's just a waste of tokens to try to keep taht up to date. Long comments also waste context. I told it not to repeate requiremetns in files and only reference requierment headers. I also changed the requirements to have section headers like ### Whatever and a list of numbers 1, 2, 3, 4 so I cna avoid having to update the whole reuqirement section numbers if I wnat to add a new reuqirements section. 
+
 🟢 Add configure step to menu instead of displaying it before running enviroment deployemnt. Insteada of showing it every time and asking if ok can choose to configure/check it as needed. Also works better in the flow and keeps the control of that with the environment project. Had env and orcheatrator arguing about how to fix it.
 
 🟢 So I had to have two agents argue with each other about 10 times until I could get them to agree on how to handle complex menus. HOpefully it works. Test tomorrow. Now there's a way to manage Environment Types, Acocunts in Environment Types, and items that appear in the list of Resources that you can deploy to an environemnt of a particular type.
