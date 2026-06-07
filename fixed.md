@@ -2,6 +2,10 @@
 
 6/6/2026 4:406 PM
 
+🟢 Independent generice menu project to handle gereric simple or xml driven menus in a way that any bash can use it.
+
+🟢 Bootstrap orchestrator project; completely segregated code so env project does not depend on org project and vice versa. Both continue to run independently as needed until I convirm everything is working correctly.
+
 🟢 Tested integration and deployments work from new menu project. But the menu project is not generic enough...
 
 🟢 Initial review of xml parsing code found numerous errors which have been fixed and tests written to prove correct. Still needs more testing and review but better. Now the two other projects can't introduce security problems into xml parsing code. Just need to make sure they only use that code and don't end up writing their own xml parsing code which happens.
