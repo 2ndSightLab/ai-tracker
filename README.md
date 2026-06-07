@@ -106,7 +106,8 @@ Separate reusable project provides simple and xml driven menus for consistency a
 | :--- | :---: | :---: | :---: | 
 | Reusaable Numbered Menu with Filter by letters | 🟢 | 🔴 | 🔴 |
 | Reusable y/n/e prompt | 🟢 | 🔴 | 🔴 |
-| XML data driven prompt | 🟢 | 🔴 | 🔴 |
+| XML data driven Menu | 🟢 | 🔴 | 🔴 |
+| Multi-select menu | 🟢 | 🔴 | 🔴 |
 
 ### Bootstrap Orchestrator Project ##
 
