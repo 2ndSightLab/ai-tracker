@@ -90,7 +90,15 @@ I used some previously written code as a starting point in which the [role trust
 | Configure Role Profile | 🟢 | 🟢 | 🟢 |
 | Assume Role With MFA | 🟢 | 🟢 | 🟢 |
 
-### UI ##
+### XML Parser ###
+
+A generic XML parser project that can be used by any bash project to move error prone and vulnerability prone code to a spearate locked down project.
+
+| Feature | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | 
+| XML read/write/load by path, single value | 🟢 | 🔴 | 🔴 |
+
+### UI ###
 
 Separate reusable project provides xml driven menues for consistency and easy updates
 
@@ -105,6 +113,14 @@ Separate reusable project provides xml driven menues for consistency and easy up
 | Resources / Create / Rename / Delete menu | 🟢 | 🔴 | 🔴 |
 | Run menu | 🟢 | 🔴 | 🔴 |
 
+### Bootstrap Orchestrator Project ##
+
+A project to manaage te handoff from org to environnet project so neither depends on the other.
+Reduces context and scope of the org and environment projects.
+
+| Feature | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | 
+| Run | 🟢 | 🔴 | 🔴 |
 
 ### Organization Configuration ##
 
