@@ -2,7 +2,7 @@
 
 6/6/2026 4:406 PM
 
-🟢 AI is really, really bad at menus structures. Have I said that already? Yes. Yes I have. Still fixing things.
+🟢 AI is really, really bad at menus structures. Have I said that already? Yes. Yes I have. Still fixing things. I mean the complex relatinships with menus that drive other menus and all the data involved not just a simple menu or y/n prompt. I may have a solution but still testing...
 
 🟢 Ability to Modify Environment Type account list
 
