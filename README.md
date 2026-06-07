@@ -134,7 +134,7 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | Organization | 🟢 | 🟢 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Environment Types | 🟢 | 🟢 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Environment Type Accounts | 🟢 | 🟢 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Environment Type Account Types | 🟢 | 🟢 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Environment Type Allowed Resource Types | 🟢 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Environments | 🟢 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
 
