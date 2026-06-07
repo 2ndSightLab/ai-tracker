@@ -96,7 +96,7 @@ I used some previously written code as a starting point in which the [role trust
 | Feature | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | 
 | Configure Role Profile | 🟢 | 🟢 | 🟢 |
-| Assume Role With MFA | 🟢 | 🟢 | 🟢 |
+| Assume Role With MFA | 🟢 | 🟡 | 🟡 |
 
 ### XML Parser ###
 
