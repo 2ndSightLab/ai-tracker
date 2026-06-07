@@ -2,7 +2,7 @@
 
 6/6/2026 4:406 PM
 
-🟢 Independent generice menu project to handle gereric simple or xml driven menus in a way that any bash can use it.
+🟢 Independent generic menu project to handle gereric simple or xml driven menus in a way that any bash can use it.
 
 🟢 Bootstrap orchestrator project; completely segregated code so env project does not depend on org project and vice versa. Both continue to run independently as needed until I convirm everything is working correctly.
 
