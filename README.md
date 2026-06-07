@@ -259,7 +259,7 @@ Environment where people log into EC2 instances.
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Accounts: work, amis, backup | 🟢 | 🟡 | 🟢 | 🟢 | 🔴 | 🔴 |
 | IPAM pool | 🟢 | 🟡  | 🟢 | 🟢 | 🔴 | 🔴 |
-| IPAM EIP allocation | 🟢 | 🟡  🟢 | 🟢 | 🔴 | 🔴 |
+| IPAM EIP allocation | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 |
 | Environment SCPs | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | S3 buckets (no KMS) | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
 | KMS keys | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
