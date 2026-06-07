@@ -98,20 +98,15 @@ A generic XML parser project that can be used by any bash project to move error 
 | :--- | :---: | :---: | :---: | 
 | XML read/write/load by path, single value | 🟢 | 🔴 | 🔴 |
 
-### UI ###
+### Common Menus ###
 
-Separate reusable project provides xml driven menues for consistency and easy updates
+Separate reusable project provides simple and xml driven menus for consistency and easy updates
 
 | Feature | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | 
 | Reusaable Numbered Menu with Filter by letters | 🟢 | 🔴 | 🔴 |
 | Reusable y/n/e prompt | 🟢 | 🔴 | 🔴 |
-| Step completion prompt | 🟢 | 🔴 | 🔴 |
-| Organization Selection / Create / Delete menu | 🟢 | 🔴 | 🔴 |
-| Environment / Create / Rename / Delete menu | 🟢 | 🔴 | 🔴 |
-| Action menu | 🟢 | 🔴 | 🔴 |
-| Resources / Create / Rename / Delete menu | 🟢 | 🔴 | 🔴 |
-| Run menu | 🟢 | 🔴 | 🔴 |
+| XML data driven prompt | 🟢 | 🔴 | 🔴 |
 
 ### Bootstrap Orchestrator Project ##
 
@@ -128,10 +123,15 @@ Configure organization to deploy; define environemnt types (allowed resources)
 
 | Feature | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | 
+| XML Driven Organization menu | 🟢 | 🔴 | 🔴 |
 | Add/Remove Organization in Configuration | 🟡 | 🔴 | 🔴 |
-| Add/Remove/Rename OUs in Configuration | 🟡 | 🔴 | 🔴 |
-| Edit Environment Configuration File | 🟡 | 🔴 | 🔴 |
-| Add/Remove/Edit Environment Types | 🔴 | 🔴 | 🔴 |
+| XML Driven Enviroment menu | 🟢 | 🔴 | 🔴 |
+| Add/Remove/Rename Environments in Configuration | 🟡 | 🔴 | 🔴 |
+| XML Driven Enviroment Type Accounts menu | 🟡 | 🔴 | 🔴 |
+| Add/Remove/Rename Environments in Configuration | 🟡 | 🔴 | 🔴 |
+| Add/Remove/Edit Accounts in Environment Type Configuration | 🔴 | 🔴 | 🔴 |
+| XML Driven Environemnt Action menu | 🟢 | 🔴 | 🔴 |
+| XML Driven Environment Run menu | 🟢 | 🔴 | 🔴 |
 
 ### Base Environment Resources ###
 
