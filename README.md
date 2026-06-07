@@ -124,16 +124,11 @@ Configure organization to deploy; define environemnt types (allowed resources)
 
 | Feature | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | 
-| XML Driven Organization menu | 🟢 | 🔴 | 🔴 |
 | Add/Remove Organization in Configuration | 🟡 | 🔴 | 🔴 |
-| XML Driven Enviroment menu | 🟢 | 🔴 | 🔴 |
-| Add/Remove/Rename Environments in Configuration | 🟡 | 🔴 | 🔴 |
-| XML Driven Enviroment Type Accounts menu | 🟡 | 🔴 | 🔴 |
-| Add/Remove/Rename Environments in Configuration | 🟡 | 🔴 | 🔴 |
-| Add/Remove/Edit Accounts in Environment Type Configuration | 🔴 | 🔴 | 🔴 |
-| Add/Remove/Edit Resources in Environment Type Configuration | 🔴 | 🔴 | 🔴 |
-| XML Driven Environemnt Action menu | 🟡 | 🔴 | 🔴 |
-| XML Driven Environment Run menu | 🟡 | 🔴 | 🔴 |
+| Add/Remove/Rename Environments Types | 🟡 | 🔴 | 🔴 |
+| Add/Remove/Rename Environments Type Accounts | 🟡 | 🔴 | 🔴 |
+| Add/Remove/Rename Environments Type Resources | 🟡 | 🔴 | 🔴 |
+| Add/Remove/Rename Environments in Organization | 🟡 | 🔴 | 🔴 |
 
 ### Base Environment Resources ###
 
