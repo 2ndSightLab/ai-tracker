@@ -127,6 +127,7 @@ Reduces context and scope of the org and environment projects.
 | Run Configure Org | 🟢 | 🔴 | 🔴 |
 | Run Deploy Org | 🟢 | 🔴 | 🔴 |
 | Run Manage Drift | 🟢 | 🔴 | 🔴 |
+| Automated Tests | 🟢 | 🔴 | 🔴 |
 
 ### Organization Environment Configuration ##
 
@@ -142,6 +143,7 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Drift Report | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Drift Cleanup | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Environments | 🟢 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Automated Tests | 🟢 | 🔴 | 🔴 |
 
 ### Base Environment Resources ###
 
@@ -313,6 +315,7 @@ Also separates account from specific projects or activities.
 | Kiro | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Standalone Identity Center | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
 | SCP: kiro-identity-center-only | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| SCP for us-east-1 only | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 
 ### Jobs Auth Environment (Web Environment, +) ###
 
@@ -327,6 +330,7 @@ If I use CloudFront have to allow us-east-1 for ACM Cert. Lock down when not aci
 | API Gateway | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | API Gateway CNAME | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | DynamoDB | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| SCP for us-east-1 only | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 
 ### Jobs Run Environment (Work Environment, Web Environment, +) ###
 
