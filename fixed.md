@@ -2,6 +2,8 @@
 
 6/6/2026 4:406 PM
 
+🟢 Interesting thing just now. Model was trying to write some test code and it wrote an eternal loop, ran the code and got stuck. So what if that happend inside an AI agent running autonoously. Would it crash?
+
 🟢 Adding suport for account types.
 
 🟢 Restructure bootstrap menu - Configure organization, deploy, drift management
