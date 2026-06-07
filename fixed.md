@@ -2,6 +2,8 @@
 
 6/6/2026 4:406 PM
 
+🟢 AI is really, really bad at menus structures. Have I said that already? Yes. Yes I have. Still fixing things.
+
 🟢 Ability to Modify Environment Type account list
 
 🟢 Independent generic menu project to handle gereric simple or xml driven menus in a way that any bash can use it.
