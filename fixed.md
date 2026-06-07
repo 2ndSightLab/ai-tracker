@@ -2,6 +2,8 @@
 
 6/6/2026 4:406 PM
 
+🟢 Restructure bootstrap menu - Configure organization, deploy, drift management
+
 🟢 Add drift detection report project. Finds resources that do not align with organization configuration.
 
 🟢 Another review of the enviroment resources deployment project to make sure it uses the shared menu code removed another batch of code
