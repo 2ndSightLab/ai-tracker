@@ -126,17 +126,17 @@ Reduces context and scope of the org and environment projects.
 | :--- | :---: | :---: | :---: | 
 | Run | 🟢 | 🔴 | 🔴 |
 
-### Organization Configuration ##
+### Organization Environment Configuration ##
 
 Configure organization to deploy; define environemnt types (allowed resources)
 
 | Feature | List | Add | Remove | Rename | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Add/Remove Organization in Configuration | 🟢 | 🟢 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Add/Remove/Rename Environments Types | 🟢 | 🟢 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Add/Remove/Rename Environments Type Accounts | 🟢 | 🟢 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Add/Remove/Rename Environments Type Resources | 🟢 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Add/Remove/Rename Environments in Organization | 🟢 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Organization | 🟢 | 🟢 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Environment Types | 🟢 | 🟢 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Environment Type Accounts | 🟢 | 🟢 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Environment Type Resources | 🟢 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Environments | 🟢 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Base Environment Resources ###
 
