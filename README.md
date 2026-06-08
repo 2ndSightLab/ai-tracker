@@ -104,7 +104,12 @@ A generic XML parser project that can be used by any bash project to move error 
 
 | Feature | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | 
-| XML read/write/load by path, single value | 🟢 | 🔴 | 🔴 |
+| XML read by path | 🟢 | 🔴 | 🔴 |
+| XML write by path | 🟢 | 🔴 | 🔴 |
+| XML load by path | 🟢 | 🔴 | 🔴 |
+| XML read by single value | 🟢 | 🔴 | 🔴 |
+| XML write by single value | 🟢 | 🔴 | 🔴 |
+| XML load by single value | 🟢 | 🔴 | 🔴 |
 
 ### Common Menus ###
 
@@ -127,7 +132,6 @@ Reduces context and scope of the org and environment projects.
 | Run Configure Org | 🟢 | 🔴 | 🔴 |
 | Run Deploy Org | 🟢 | 🔴 | 🔴 |
 | Run Manage Drift | 🟢 | 🔴 | 🔴 |
-| Automated Tests | 🟢 | 🔴 | 🔴 |
 
 ### Organization Environment Configuration ##
 
@@ -143,7 +147,6 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Drift Report | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Drift Cleanup | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Environments | 🟢 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Automated Tests | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
 
 ### Base Environment Resources ###
 
