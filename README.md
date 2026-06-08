@@ -156,8 +156,8 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Configure Environment | 🟢 | 🟢 | 🔴 | 
 | Display all resources (loop through accounts) | 🟢 | 🟢 | 🔴 | 
 | Display resources per acount (display resources available for account) | 🔴 | 🔴 | 🔴 |
-
-
+| Auto-gen env SCP | 🔴 | 🔴 | 🔴 |
+| Auto-gen account SCP | 🔴 | 🔴 | 🔴 |
 
 ### Base Environment Resources ###
 
