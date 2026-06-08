@@ -139,8 +139,8 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Environment Types | 🟢 | 🟢 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Environment Type Account Types | 🟢 | 🟢 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Environment Type Allowed Resource Types | 🟢 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Account Type Allowed Resource Types | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Drift Report | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Account Type Allowed Resource Types | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Drift Report | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Drift Cleanup | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Environments | 🟢 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Automated Tests | 🟢 | 🔴 | 🔴 |
@@ -174,8 +174,8 @@ The management environment contains accounts where my organization deletegated a
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Organization | 🟢 | 🔴 | 🟢 | 🟢  | 🔴 | 🔴 |
-| Enable Org all features | 🟢 | 🔴 | 🟢 | 🟢  | 🔴 | 🔴 |
-| Accounts: IAM, IPAM, Accounting, Org, Security, KMS, Security, Backup (in backup OU) | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Enable Org all features | 🟢 | 🟡 | 🟢 | 🟢  | 🔴 | 🔴 |
+| Accounts: IAM, IPAM, Accounting, Org, Security, KMS, Security, Backup (in backup OU) | 🟢 | 🟡 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Org resource policy | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Delegate IPAM admin | 🟢 | 🟡 | 🟢 | 🟢  | 🔴 | 🔴 |
 | Delegate Security Hub admin | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
@@ -209,7 +209,7 @@ The management environment contains accounts where my organization deletegated a
 | SCP: deny-leave-organization[root]  | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
 | SCP: always-default-org-root [root] | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | SCP: deploy-scp-require-imdsv2.sh [root] | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Environment SCPs | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
+| Environment SCPs | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | SCP: deny-all [account or OU] | 🟡 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 
 | SCP: org-allowed-regions [root]  | 🟡 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
 | Configure Security Alerts | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -242,7 +242,7 @@ Can lock when not in use with deny all SCP.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Accounts: dns (no backup) | 🟡 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Accounts: dns (no backup) | 🟡 | 🟡 | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ### DNS Actions ###
 
