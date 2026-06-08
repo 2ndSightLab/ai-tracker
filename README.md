@@ -155,7 +155,7 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Select Environment | 🟢 | 🔴 | 🔴 |
 | Configure Environment | 🟢 | 🟢 | 🔴 | 
 | Display all resources (loop through accounts) | 🟢 | 🟢 | 🔴 | 
-| Display resources per acount (display resources availble for account) | 🔴 | 🔴 | 🔴 |
+| Display resources per acount (display resources available for account) | 🔴 | 🔴 | 🔴 |
 
 
 
