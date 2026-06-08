@@ -424,8 +424,10 @@ Deploy environment to single account (account in a different organization or sta
 | Move website | 🔴 | 🔴 | 🔴 | 🔴 |
 | Transfer GitHub repo to Code Commit | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Transfer one Code Commit repo to Another | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Lock (apply deny-all SCP) | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Unlock (remove deny-all SCP) | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Lock Environment (apply deny-all SCP) | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Unlock Environment (remove deny-all SCP) | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Lock Account (apply deny-all SCP) | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Unlock Account (remove deny-all SCP) | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Deploy External AMI Share Key | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Share AMI To External | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
