@@ -143,7 +143,7 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Drift Report | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Drift Cleanup | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Environments | 🟢 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Automated Tests | 🟢 | 🔴 | 🔴 |
+| Automated Tests | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
 
 ### Base Environment Resources ###
 
