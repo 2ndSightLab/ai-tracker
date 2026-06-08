@@ -129,9 +129,9 @@ Reduces context and scope of the org and environment projects.
 
 | Feature | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | 
-| Run Configure Org | 🟢 | 🔴 | 🔴 |
-| Run Deploy Org | 🟢 | 🔴 | 🔴 |
-| Run Manage Drift | 🟢 | 🔴 | 🔴 |
+| Configure Org (Menu Action)  | 🟢 | 🔴 | 🔴 |
+| Deploy Env (Menu Action) | 🟢 | 🔴 | 🔴 |
+| Manage Drift (Menu Action) | 🟢 | 🔴 | 🔴 |
 
 ### Organization Environment Configuration ##
 
