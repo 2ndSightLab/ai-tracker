@@ -139,7 +139,7 @@ Configure organization to deploy; define environemnt types (allowed resources)
 
 | Feature | List | Add | Remove | Rename | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Organization | 🟢 | 🟢 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Organization Configuration | 🟢 | 🟢 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Environment Types | 🟢 | 🟢 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Environment Type Account Types | 🟢 | 🟢 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Environment Type Allowed Resource Types | 🟢 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -147,6 +147,17 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Drift Report | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Drift Cleanup | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Environments | 🟢 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
+
+### Organization Environment Deployment ##
+
+| Feature | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | 
+| Select Environment | 🟢 | 🔴 | 🔴 |
+| Configure Environment | 🟢 | 🟢 | 🔴 | 
+| Display all resources (loop through accounts) | 🟢 | 🟢 | 🔴 | 
+| Display resources per acount (display resources availble for account) | 🔴 | 🔴 | 🔴 |
+
+
 
 ### Base Environment Resources ###
 
