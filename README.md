@@ -130,7 +130,7 @@ Reduces context and scope of the org and environment projects.
 
 | Feature | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | 
-| Configure Org (Menu Action)  | 🟡 | 🔴 | 🔴 |
+| Configure Org (Menu Action)  | 🟢 | 🔴 | 🔴 |
 | Deploy Env (Menu Action) | 🟢 | 🔴 | 🔴 |
 | Manage Drift (Menu Action) | 🟢 | 🔴 | 🔴 |
 | Bridge Config Org to Deploy | 🟡 | 🔴 | 🔴 |
