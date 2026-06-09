@@ -2,6 +2,8 @@
 
 Features to add
 
+🟡 F: Autogen SCP for allowed services in account.
+
 🟡 F: Update admin IP in prefix list in Yubikey project.
 
 🟡 F: Complete listing of services before close an account - offer to move or delete.
