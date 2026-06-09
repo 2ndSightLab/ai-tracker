@@ -140,6 +140,8 @@ https://builder.aws.com/wishlist/3ETEXLx2zZ9GFzQHFYKqmJBcS9M_w/kiro-in-aws-conso
 
 🟠 Kiro or model keeps saying changes ewre cancelled and not written when I hit ctrl-c and tell it to stop and restore what it just did - when they actually were written. It should check before saying that.
 
+🟠 When I close an account I can't reuse the email, name, and alias in a new account. I also found out that buckets using the naming convention locked to a specific acocunt also can't be reused. Should warn users of that prior to closing account and have some kind of override for that or auto nenaming feature so can close and create new accounts with same info but still be able to restore the old ones if needed.
+
 
 
 
