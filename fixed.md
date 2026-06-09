@@ -2,6 +2,10 @@
 
 6/8/2026 9:13 PM ~ had to do other thigns today not going to get much done.
 
+🟢 removed dead code in deployment project and revised to work with org config and bootstrap project...untested.
+
+🟢 Fixed requiremnets and mistakes to a less wordy format; added file names and file modes to requiremenst where approprate and role names for deploying resources
+
 🟢 Yeah this is sketch. Somehow while making edits to readme the model wrote a requirement to give itself an exception to not touch credentials or do anything with them because they are handled by a project dedicated to that purpose which has been reviewed a bunch of times - and gave itself an exception to read AWS credentials for the CLI. Luckily I require MFA and an specific IP address to use those credentials. Yet somehow I reviewed that shared project and some code was added at some point to read credentials in an insecure way. I'm sure that wasn't there before. I haven't edited that project. What?
 
 🟢 Fixing the same thing AGAIN. The org project is trying to directly interact with teh env project instead of keeping it's code sepaate. It did not follow instructions and changed the readme so I'm fixing that now.
