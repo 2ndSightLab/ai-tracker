@@ -2,6 +2,8 @@
 
 6/8/2026 9:13 PM ~ had to do other thigns today not going to get much done.
 
+🟢 Fixing the same thing AGAIN. The org project is trying to directly interact with teh env project instead of keeping it's code sepaate. It did not follow instructions and changed the readme so I'm fixing that now.
+
 🟢 Too many mistakes to log here. First the model told me to do something blantant not allowed in its readme. Then it can't figure out how to write accurate instrutions. It's not correctly file name in README when strucuture has changed. We are fixing config moving from env to org because it's org wide and the model keeps screwing up. It update the file and left hte new config out of the readme. It's not doing what I ask right away or the way I ask. *sigh*. I can't spend all my time logging all of this. The models are not good at complex cross project architectures. But if you give them all the code in one project they mess it up. I'm having to be very explicit and ask it questions to ensure it has analyzed things correctly and repat myself a lot right now. But it eventually gets it. Switching back to 4.6 to see if it does any better.
 
 6/6/2026 4:406 PM
