@@ -2,6 +2,8 @@
 
 6/8/2026 9:13 PM ~ had to do other thigns today not going to get much done.
 
+🟢 Finally got bootstrap and env (deploy) project in sync and filled in missing complicated reuquirements after going in circles to get the agent to write them in a sipmle way. It was giving me a lot of convoluted nonsense. Maybe the answer was in there but it was so noisy I just didn't have the energy to sort itout. I told it to write the answers in 8 lines or less in my requirements format and fincally got all the correct info in the orchestrator readme explaining how it shoudl work and had the other project reference that. Even after checking both project's code the env project said everything was wrong when a file path was wrong. Finally I told it tha the other project was fixing the file path and it figured that out. Removed a lot of unnessary comments wasting tokenas and told it to refernce the readme at the top fo th efile only except for variables. Defining what each veraible is for is useful. I still thing ther eare extraneous comments in readme but will deal with that - and test it - alter.
+
 🟢 removed dead code in deployment project and revised to work with org config and bootstrap project...untested.
 
 🟢 Fixed requiremnets and mistakes to a less wordy format; added file names and file modes to requiremenst where approprate and role names for deploying resources
