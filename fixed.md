@@ -10,6 +10,8 @@ Typos cuz these are just notes for me...
 
 🟢 Here's another problem: I have in my readme not to write comments in code only reference readme sections for functional code - because I don't wnat to be paying for comment and code updates and have project bloat. It continues to write commetns even after I have alrady had it clear out comments and told it to operate this way and logged the mistake numerous times. 
 
+🟢 Oddly enough as soon as I published some thoughts about all of this on X my network got cut off, all my sessions ended, and I had to reconnect and start over.
+
 6/9/2026 9:28 PM ~ back to testing
 
 🟢 The menus are still messed up. I asked to insert another menu and it randomly changed the headings which I did not ask it to do. If I don't copy and paste the UI it can't figure out what menu comes next. It randoly names things Remove or Delete incosistently. It can't figure out what "Move this option to the next menu after they select x" means. It can't figure out "Move this menu to the x menu (matching banner above menu). It can't seem to understand the consitency of other menus and carry that consistency forward. Everything is multuiple painful prompts. But it's still less painful than manually updateing all the requrirements, xml and glue code to make this all work. That said, I think I am going to have to go in and manually create what the UI is suposed to look like for the menus in the readme because I think that will be faster. I'll have to revisit all that. But add/remove things in config is working. it's jsut a mess to navigate.
