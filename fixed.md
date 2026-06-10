@@ -2,7 +2,7 @@
 
 6/9/2026 9:28 PM ~ back to testing
 
-🟢 Messed up banner for a menu. Added single banner printing file for consistency and all bnners use it.
+🟢 Messed up banner for a menu. Added single banner printing file for consistency and all bnners use it. Then I realized for consistency that should be in the menus project so moved it over there and had all projects reference it.
 
 🟢 50 tries later got it to show me three menus with the correct menu items and had it update the readme.
 
