@@ -1,6 +1,12 @@
 # Fixed Issues
 
-6/9/202 2:49 PM ~ testing configure organization
+6/9/2026 9:28 PM ~ back to testing
+
+🟢 Here's how bad Anthropoic models are at Linux pemrissions. It took me weeks to get these permissions right with tons of testing. The group gets read only permissions. THe project owner gets write and EC2 user. So to "fix" this problem it wants to give the project group write access to all projects, completely destroying my sandboxing. NEVER TRUST ANTHROPIC MODELS TO WRITE LINUX PERMISSIONS WITHOUT TESTING THEM. 
+
+🟢 Still fixing scripss referencing q after was renamed to Kiro. Please don't rename products. Broke some premissions and had to fix that and was very difficult for the agents to fidn the problem. Wasted TONS of tokens. ANTRHOPIC MODELS ARE REALLY BAD AT LINUX PERMISSIONS. 
+
+6/9/2026 2:49 PM ~ testing configure organization
 
 🟢 rename projects because it's not really org vs rquirement its -bootstrap -configure -deploy -drift. my framework has a way to rename projects.
 
