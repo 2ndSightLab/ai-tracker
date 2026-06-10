@@ -421,7 +421,7 @@ Deploy environment to single account (account in a different organization or sta
 | Role | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Jobs Instance | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 
-### Run Menu Steps ###
+### Run Actions ###
 
 | Feature | Run | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: |
