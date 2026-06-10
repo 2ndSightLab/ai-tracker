@@ -2,6 +2,10 @@
 
 Typos cuz these are just notes for me...
 
+6/10/2026 7:00 PM
+
+🟢 Figured out that the project made a huge mess of the menus putting them all in one file insted of putting each menu in it's own file as instructed. I fixed that by telling it to put each menu in it's own file name matching the menu banner that sets vars and calls the common menu code. What a MESS. I also fixed naming conventions and banner titles to be more consistent and have a unique section in the readme for each menu with the file name. This is why it can't figure anytihng eles. And it was not instructed to create the menus that way I should have checked that sooner. Still, it shoudl be able to trace the code and struggles with that.
+
 6/10/2026 3:30 PM
 
 🟢 Wrote another eternal loop. Had to stop it. Happens when writing tests.
