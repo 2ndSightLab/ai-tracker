@@ -2,7 +2,7 @@
 
 6/9/202 2:49 PM ~ testing configure organization
 
-🟢 rename projects because it's not really org vs rquirement its -bootstrap -configure -deploy -manage-drift. my framework has a way to rename projects.
+🟢 rename projects because it's not really org vs rquirement its -bootstrap -configure -deploy -drift. my framework has a way to rename projects.
 
 🟢 Repeated analysis and not following instructions and not reading readme mistaeks
 
