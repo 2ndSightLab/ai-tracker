@@ -2,7 +2,7 @@
 
 6/9/2026 9:28 PM ~ back to testing
 
-🟢 The menus are still messed up. I asked to insert another menu and it randomly changed the headings which I di dnot ask it to do. It randoly names things Remove or Delet eor something else incosistently. I'll ahve ot revisit all that. But add/remove things inconfig is working. it's jsut a mess to navigate.
+🟢 The menus are still messed up. I asked to insert another menu and it randomly changed the headings which I did not ask it to do. If I don't copy and paste the UI it can't figure out what menu comes next. It randoly names things Remove or Delete incosistently. It can't figure out what "Move this option to the next menu after they select x" means. It can't figure out "Move this menu to the x menu (matching banner above menu). It can't seem to understand the consitency of other menus and carry that consistency forward. Everything is multuiple painful prompts. I'll have to revisit all that. But add/remove things inconfig is working. it's jsut a mess to navigate.
 
 🟢 Just realized needs to work diff than depoy project; Need source profile and role profile. Then look up Account, ou, root IDs if exist. Can get MFA serial and all that from the configured profile. Otherwise the user has to specify the aws mangemnt account number like I did in the deploy project. Either way. Or give the user the option to create the role profile. I'll review this all more later. need to get somethign else done. 
 
