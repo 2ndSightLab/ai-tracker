@@ -2,6 +2,32 @@
 
 6/9/2026 9:28 PM ~ back to testing
 
+🟢 Just realized needs to work diff than depoy project; Need source profile and role profile. Then look up Account, ou, root IDs if exist. Cna get MFA serial and all that from the configured profile. Otherwise the user has to specify the aws mangemnt account number like I did in the deploy project. Either way. Or give the user the option to create the role profile. I'll review this all more later. need to get somethign else done. 
+
+🟢 Not following rules for comments again. Adding bloat to project that is already in the readme.
+
+🟢 The model really DOES NOT want to follow rules related to role assumption. I have a third party project and it's like a little kid pretending it did not hear what I said and skiping ahead. I said do exaclty what the other project is doing a bundh of itmes. Then I had to expicitly say copy the section of the readme and copy file x into yoru project.  Now it's writing too much text again for something tha tis not coplicated at all.
+
+🟢 If the user enters a new role profile use the assume role script to assuem the role which should then have the user fill in the necesary role profile info.
+
+🟢 Throw an error if a profile is selected but has no MFA as the role trsut policy requires MFA.
+
+🟢 If the role profile is set ask the user if they want to populte the IDS (org id, root id, etc.)
+
+🟢 Tell the user the ids are optional and can be filled in when deployed.
+
+🟢 If no account or profile don't show the ARN.
+
+🟢 If management account and role profile name are selected calculate the ARN from that.
+
+🟢 If the profile is selected set the ARN from that.
+
+🟢 Let the user select from list of CLI profiles for the bootstrap role.
+
+🟢 Make the copying of default envionments optional if the user wants to build all from scratch.
+
+🟢 Let the suer select the mamangement enviroment from list of enviromnents or display no enviroment sconfigured.
+
 🟢 And finally at 11:29 I can delete an orgnization in the configuration which is what I thought I'd do in two minutes at 9:29 PM. Ugh.
 
 🟢 Messed up banner for a menu. Added single banner printing file for consistency and all bnners use it. Then I realized for consistency that should be in the menus project so moved it over there and had all projects reference it.
