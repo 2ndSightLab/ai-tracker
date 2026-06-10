@@ -149,7 +149,7 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Environment Type Allowed Resource Types | 🟢 | 🟢  | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Account Type Allowed Resource Types | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Environments | 🟢 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Navigation Menus | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Navigation Menus | 🟢 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Drift ##
 
