@@ -122,6 +122,7 @@ Separate reusable project provides simple and xml driven menus for consistency a
 | XML data driven Menu | 🟢 | 🔴 | 🔴 |
 | Multi-select menu | 🟢 | 🔴 | 🔴 |
 | /c to return to previous menu | 🟢 | 🔴 | 🔴 |
+| common banner with lines above and below and text between | 🟢 | 🔴 | 🔴 |
 
 ### Bootstrap Orchestrator Project ##
 
@@ -131,24 +132,30 @@ Reduces context and scope of the org and environment projects.
 | Feature | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | 
 | Configure Org (Menu Action)  | 🟢 | 🔴 | 🔴 |
-| Deploy Env (Menu Action) | 🟢 | 🔴 | 🔴 |
-| Manage Drift (Menu Action) | 🟢 | 🔴 | 🔴 |
+| Deploy Resources (Menu Action) | 🟡  | 🔴 | 🔴 |
+| Manage Drift (Menu Action) | 🟡  | 🔴 | 🔴 |
 | Bridge Config Org to Deploy | 🟡 | 🔴 | 🔴 |
 
 ### Organization Environment Configuration ##
 
 Configure organization to deploy; define environemnt types (allowed resources)
 
-| Feature | List | Add | Remove | Rename | Tested | Code Review | Security Review |
+| Feature | List | Add | Delete | Rename | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Organization Configuration | 🟢 | 🟢 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Environment Types | 🟢 | 🟢 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Environment Type Account Types | 🟢 | 🟢 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Environment Type Allowed Resource Types | 🟢 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Organization Configuration | 🟢 | 🟢 | 🟢 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Environment Types | 🟢 | 🟢 | 🟢 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Environment Type Account Types | 🟢 | 🟢 | 🟢 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Environment Type Allowed Resource Types | 🟢 | 🟢  | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Account Type Allowed Resource Types | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Environments | 🟢 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Navigation Menus | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
+
+### Drift ##
+
+| Feature | List | Add | Delete | Rename | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | Drift Report | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Drift Cleanup | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Environments | 🟢 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Organization Environment Deployment ##
 
