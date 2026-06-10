@@ -4,6 +4,10 @@ Typos cuz these are just notes for me...
 
 6/10/2026 7:00 PM
 
+🟢 in the very small orchestrator bootstrap project which should be like one file and a menu :
+
+⭐️ Removed ~ 804 lines of dead code.
+
 🟢 I have a super explicit requirement and went over this whith the one project so much: Create a file named assume-role-wrapper.sh and call the external assume role project. Never assume roles, never touch credentials, never cache any of that. And yet when i tell the model to clean up dead code it says that is a dead code file and the code ahs been moved somewhre else. The literal adamant instructions are in the readme. This is so bad.
 
 🟢 OMG. The parent orchestrator projec tis still displayign the wrong menus been over this like 100 times. I told it to fix it again, write a test and remove dead code. I swaear I've done this like 25 times already.
