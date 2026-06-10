@@ -2,6 +2,8 @@
 
 6/9/2026 9:28 PM ~ back to testing
 
+🟢 And finally at 11:29 I can delete an orgnization in the configuration which is what I thought I'd do in two minutes at 9:29 PM. Ugh.
+
 🟢 Messed up banner for a menu. Added single banner printing file for consistency and all bnners use it. Then I realized for consistency that should be in the menus project so moved it over there and had all projects reference it.
 
 🟢 50 tries later got it to show me three menus with the correct menu items and had it update the readme.
