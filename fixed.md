@@ -12,6 +12,8 @@ Typos cuz these are just notes for me...
 
 🟢 Oddly enough as soon as I published some thoughts about all of this on X my network got cut off, all my sessions ended, and I had to reconnect and start over.
 
+🟢 I have the model track it's mistakes and increment plus on eevery time it makes a mistake. What is bother me is that the model is logging the mistake + 1 like 4 becomes 5. THen it says "but wai thte count is already 5" and then it changes it to 6. That feels like there's something between my prompts and the model or a threading error or something. What is causing that?
+
 6/9/2026 9:28 PM ~ back to testing
 
 🟢 The menus are still messed up. I asked to insert another menu and it randomly changed the headings which I did not ask it to do. If I don't copy and paste the UI it can't figure out what menu comes next. It randoly names things Remove or Delete incosistently. It can't figure out what "Move this option to the next menu after they select x" means. It can't figure out "Move this menu to the x menu (matching banner above menu). It can't seem to understand the consitency of other menus and carry that consistency forward. Everything is multuiple painful prompts. But it's still less painful than manually updateing all the requrirements, xml and glue code to make this all work. That said, I think I am going to have to go in and manually create what the UI is suposed to look like for the menus in the readme because I think that will be faster. I'll have to revisit all that. But add/remove things in config is working. it's jsut a mess to navigate.
