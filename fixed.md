@@ -2,6 +2,14 @@
 
 6/9/202 2:49 PM ~ testing configure organization
 
+🟢 rename projects because it's not really org vs rquirement its -bootstrap -configure -deploy -manage-drift. my framework has a way to rename projects.
+
+🟢 Repeated analysis and not following instructions and not reading readme mistaeks
+
+🟢 Have to repeatedly tell it how to behave which is the first three lines of the reqs
+
+🟢 Had to remvert comments again as told it only to add section headers to reference readme in reqs which it ignores.
+
 🟢 fix rquirements in menu project to new format and add requiements to add /c to any manu to go back to the prior menu. The requirements coudl not be completely put into the menus project because of project specific state changes in projects using the menu code, so had to ipmlemnet that in other projects and provide usage instructions in the menus project.
 
 🟢 organization wide configuration moved out of environment (now deployment) project is loading proroplery. Will test editing it later with a test org.
