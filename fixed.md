@@ -4,6 +4,8 @@ Typos cuz these are just notes for me...
 
 6/10/2026 7:00 PM
 
+🟢 OMG repeated so many times to only use shared menu code. The larger project that is messing up all the menus says it's "Mimicking" not using the code. Meaning it copied the code into it's won project. ARRRRRGH. So frustrating. Removing that and dead code.
+
 🟢 in the very small orchestrator bootstrap project which should be like one file and a menu :
 
 ⭐️ Removed ~ 804 lines of dead code.
