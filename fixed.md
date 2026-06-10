@@ -4,6 +4,8 @@ Typos cuz these are just notes for me...
 
 6/10/2026 7:00 PM
 
+🟢 I have a super explicit requirement and went over this whith the one project so much: Create a file named assume-role-wrapper.sh and call the external assume role project. Never assume roles, never touch credentials, never cache any of that. And yet when i tell the model to clean up dead code it says that is a dead code file and the code ahs been moved somewhre else. The literal adamant instructions are in the readme. This is so bad.
+
 🟢 OMG. The parent orchestrator projec tis still displayign the wrong menus been over this like 100 times. I told it to fix it again, write a test and remove dead code. I swaear I've done this like 25 times already.
 
 🟢 Figured out that the project made a huge mess of the menus putting them all in one file insted of putting each menu in it's own file as instructed. I fixed that by telling it to put each menu in it's own file name matching the menu banner that sets vars and calls the common menu code. What a MESS. I also fixed naming conventions and banner titles to be more consistent and have a unique section in the readme for each menu with the file name. This is why it can't figure anytihng eles. And it was not instructed to create the menus that way I should have checked that sooner. Still, it shoudl be able to trace the code and struggles with that.
