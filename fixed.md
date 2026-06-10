@@ -4,6 +4,8 @@ Typos cuz these are just notes for me...
 
 6/10/2026 3:30 PM
 
+🟢 Wrote another eternal loop. Had to stop it. Happens when writing tests.
+
 🟢 Model is suuuuuper slow righ tnow. I'm having to kill it and start over to get it to keep going.
 
 🟢 I wish I had a better way to quanitfy this. I'm thinking about it. But right now it's just notes. Whenever I get to the end of my subscription the model seems wonky. Also whenever Anthropic is about to release a new model. Is it one? Is it both? Random? My imagination? I have no idea. But just now the model took a very long time to try to implemnt what seemed like a simple-ish request. Then I tested it. Then the model figured out after spending whatever amount of tokens that everything it just did was wrong and spent more tokens backing it out and telling me the problem was in another project. This plus all the menu issues yesterday. It's also basically struggling with a complex architecture where I'm trying to keep the deployment scripts separate from organization configuration data. Onwards and upwards. Have to figure that out now -- this one is not fixed....OK I figured out part of the problem. The one readme refernces the other readme and the model simply ignored teh other readme. These modesl are really not good at instructions like: Follow the instructurions in file xyz to ipmlment this.
