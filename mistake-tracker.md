@@ -45,8 +45,6 @@ MISTAKE: Left dead code and files in the code base. CORRECTION: Remove all dead 
 
 ## Config
 
-## Previous Mistakes
-
 MISTAKE: Hid errors with redirects or temp files. CORRECTION: Never use temp files or suppress stderr. Count: 2
 
 MISTAKE: Made claims without verifying first. CORRECTION: Verify before making claims. Count: 4
