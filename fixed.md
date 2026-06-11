@@ -2,6 +2,12 @@
 
 Typos cuz these are just notes for me...
 
+6/10/2026 9:00 PM
+
+🟢 New session after dinner. Orchestrator project once again started adding a boatload of code instead of following instructions in readme. Fix and had to re-remove code.
+
+⭐️ Removed ~ 94 lines of incorrrectly added code before I stopped it.
+
 6/10/2026 7:00 PM
 
 🟢 OMG repeated so many times to only use shared menu code. It's in the erquiremtns. It's very clear. The larger project that is messing up all the menus says it's "Mimicking" not using the code. Meaning it copied the code into it's won project. ARRRRRGH. So frustrating. Removing that and dead code.
