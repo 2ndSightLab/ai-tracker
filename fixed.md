@@ -4,7 +4,7 @@ Typos cuz these are just notes for me...
 
 6/10/2026 11:15 PM
 
-🟢 Added new user another $200 plan.
+🟢 Added new user another $200 plan. The reason I'm adding a new user and plan is because AWS does not offer a pay as you go pricing plan. When you go over your plan amount it costs more per token.
 
 6/10/2026 9:00 PM
 
