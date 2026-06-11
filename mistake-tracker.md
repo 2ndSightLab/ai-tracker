@@ -2,6 +2,8 @@
 
 See more about this project there: https://github.com/2ndSightLab/ai-tracker
 
+Timeline of what I've been able to accomplish and when I'm slowed down here: https://github.com/2ndSightLab/ai-tracker/blob/main/fixed.md
+
 The mistake tracker is a new part of the project added a few months in. This is not super scientific as it is hard to quantify. 
 I'm just telling the model to increment the mistakes it's making +1 if it starts making a bunch of mistakes. 
 
