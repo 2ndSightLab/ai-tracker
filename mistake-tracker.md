@@ -12,8 +12,9 @@ Something like that. I don't log every error when it is cruising along and makin
 to increment these mistakes +1 or add a new one. 
 
 
-In the beginning it would log everything as a completely different mistake with too many details when they are basically the same mistakes over and over again
-when you boil it down to the core problem.
+In the beginning it would log everything as a completely different mistake with too many details when they are *basically the same mistakes over and over again
+when you boil it down to the core problems*.
+
 Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting very frustrated because the model feels nerfed. I don't have time to log every error because there are so many. I also just started tracking this way after working on this project for a couple of months because logging every error caused the readme to get too massive, wasting tokens.
 
 
