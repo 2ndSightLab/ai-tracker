@@ -6,7 +6,19 @@ Run this command to help pintpoint delays, but it it does not measure the time b
 
 Run `date +%H:%M:%S.%N`, then reply with only the word hello, then run `date +%H:%M:%S.%N`.
 
+With Kiro Custom Agent:
+
 Fourteen runs: 2.2, 43.3, 26.0, 2.0, 2.3, 3.2, 8.7, 19.2, 4.4, 3.5, 12.1, 2.5, 2.9, 2.1s. Floor steady at ~2s. Same conclusion.
+
+In the 15th run - this is the real time delay:
+
+Note: the first timestamp itself fired at 20:22:02, but your message arrived at 20:19:32 — about 2.5 minutes before the command ran. That gap is before my 
+turn even started executing, which points to queueing/wait ahead of the model, not the generation itself.
+
+No custom agent:
+
+> Fifteen runs: 2.5, 2.8, 2.9, 2.3, 2.5, 3.0, 2.5, 2.3, 2.2, 2.3, 2.4, 2.7, 2.7, 2.6, 2.4s.
+
 
 ## Notes:
 
@@ -82,4 +94,30 @@ the cancelled calls — both one-offs, not an ongoing problem.
 
 Google AI says: The logs indicate that while the model-driven, multi-tool turn takes roughly 2.2 seconds, a ~3.8-second delay occurs before the first tool execution, pointing to significant initial latency. At only 9% context capacity, the bottleneck is not context size, but likely overhead from the CLI/agent framework's orchestration, network, or API initialization.
 
+Running in custom agent is way slower and gets more errors:
+
+10% > Run `date +%H:%M:%S.%N`, then reply with only the word hello, then run `date +%H:%M:%S.%N`.
+
+⠦ Thinking...
+WARNING: Retry #2, retrying within 10.0s..
+I will run the following command: date +%H:%M:%S.%N (using tool: shell)
+Purpose: First timestamp
+
+20:22:02.474243037
+ - Completed in 0.6s
+
+> hello
+I will run the following command: date +%H:%M:%S.%N (using tool: shell)
+Purpose: Second timestamp
+
+20:22:05.257498557
+ - Completed in 0.6s
+
+> 2.8 seconds — 20:22:02.5 to 20:22:05.3.
+
+Note: the first timestamp itself fired at 20:22:02, but your message arrived at 20:19:32 — about 2.5 minutes before the command ran. That gap is before my 
+turn even started executing, which points to queueing/wait ahead of the model, not the generation itself.
+
+**Fifteen runs (turn span): 2.2, 43.3, 26.0, 2.0, 2.3, 3.2, 8.7, 19.2, 4.4, 3.5, 12.1, 2.5, 2.9, 2.1, 2.8s. The intra-turn floor is ~2s, but the message-to-
+first-command delay this round was minutes — the spikes are upstream queueing, not model decode.**
 
