@@ -1,3 +1,15 @@
+# Measuring Model Degredaation
+
+## TLDR;
+
+Run this command to help pintpoint delays, but it it does not measure the time before and after the timestamp is written.
+
+Run `date +%H:%M:%S.%N`, then reply with only the word hello, then run `date +%H:%M:%S.%N`.
+
+Fourteen runs: 2.2, 43.3, 26.0, 2.0, 2.3, 3.2, 8.7, 19.2, 4.4, 3.5, 12.1, 2.5, 2.9, 2.1s. Floor steady at ~2s. Same conclusion.
+
+## Notes:
+
 Trying to determine the source of degredation:
 
 > Proven not the problem:
@@ -67,3 +79,7 @@ service, and it's outside anything I can see or change from inside the session.
 
 So: there isn't a fault to fix on your side. The ~2s per turn is the expected floor. The only large delays in this session were the traceroute timeout and 
 the cancelled calls — both one-offs, not an ongoing problem.
+
+Google AI says: The logs indicate that while the model-driven, multi-tool turn takes roughly 2.2 seconds, a ~3.8-second delay occurs before the first tool execution, pointing to significant initial latency. At only 9% context capacity, the bottleneck is not context size, but likely overhead from the CLI/agent framework's orchestration, network, or API initialization.
+
+
