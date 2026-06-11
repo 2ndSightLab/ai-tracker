@@ -4,6 +4,8 @@ Typos cuz these are just notes for me...
 
 6/10/2026 9:00 PM
 
+$200 plan used up - 10 days into the month.
+
 🟢 Have rules explicility telling the model not to use git in readme and it used git.
 
 🟢 New session after dinner. Orchestrator project once again started adding a boatload of code instead of following instructions in readme. Fix and had to re-remove code.
