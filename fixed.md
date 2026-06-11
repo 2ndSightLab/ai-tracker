@@ -4,6 +4,18 @@ Typos cuz these are just notes for me...
 
 6/10/2026 11:15 PM
 
+🟢 This is a waste of time. Anthropic models are too slow to be bearable and completely nerfed right now. I'm having to fix th esame things over and over agian. 
+- It can't follow the instructions in the read me and is formatting all the requirements incorrectly. It doesn't usually do that. I'm having to fix them over and over agian. 
+- It's doing really dumb things not just not following rules but really, really dumb things with foramtatting.
+- I have to be super explict about everything and stop it constantly and say NO and reexplain.
+- It is asking questions over and over agian that are already answered in the reuqirements
+- It's not reading the requirements after being told to multiple times.
+- It's not doing what I ask
+- It's not doing what I ask right way.
+- I asked it to modify some code and it completely ignored that what wa sneeded was already implmented it only needed to chagne a menu. Instaed it re-implemetned all the existing files doucmented in the readme with new files and then it wanted to delete the files that ALREADY WORKED.
+
+So as of now I have another big mess to clean up in a project that I can't seem to get completed when I get back to this. 
+  
 🟢 Added new user another $200 plan. The reason I'm adding a new user and plan is because AWS does not offer a pay as you go pricing plan. When you go over your plan amount it costs more per token. This is what you face with AI. The initial project is great and works pretty well. As it gets more complex it starts falling apart. Let's see if I can fix it...the bad architectural decisions with an overly complex and brittle design was pretty much designed by the bootstrap model project based on trying to separate duties. Btu I've decided that it's not worth the pain. I can still segregate the organization configuration from resource deployment and drift dection. In theory once I get one working it can't mess up the others. But the model just doesn't follow the rules in the readme or even read the readme as far as I can tell. Let's see how it goes with a new pplan.
 
 Whoah....what a game....Phew Nicks. Talk about a comeback...
