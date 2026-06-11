@@ -5,6 +5,8 @@ The way I'm ordering this is weird sorry. I write the date/time adn stuff I did 
 
 6/11/2026 4:45 PM
 
+🟢 Well, int it's menu trailer fix it figued out how to mess up all the menus again. And the common trailer items don't exist everywhere. So it's worse. 
+
 🟢 Had the agent rewrite the requimensts for requirements formatting to try to resolve that problem. It is rewriting the requirements now finally correctly and doing what it absolutely coudl not figure out in the middle of the night.
 
 🟢 Writing req in wrong format agaain. IT can't pickup that there's a line break in a line that should not be there per req's. Did it three times. Also told it to +3 reuqirements errors and it's stuck thinking or something.
