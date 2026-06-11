@@ -2,6 +2,12 @@
 
 Typos cuz these are just notes for me...
 
+6/11/2026 4:45 PM
+
+🟢 In an efforto pinpoint the source of degredation: 
+https://github.com/2ndSightLab/ai-tracker/blob/main/assessing-degredation.md
+Turning off telemetry for Kiro custom agents seems to help.
+
 6/10/2026 11:15 PM
 
 🟢 This is a waste of time. Anthropic models are too slow to be bearable and completely nerfed right now. I'm having to fix th esame things over and over agian. 
