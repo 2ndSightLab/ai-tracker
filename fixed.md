@@ -8,7 +8,9 @@ The way I'm ordering this is weird sorry. I write the date/time adn stuff I did 
 🟢 Well, int it's menu trailer fix the common menu items that are suposed to be at the bottom of every menu are not there. Fixing again. Added explicit requiremnt to put all back locations for each menu in back.xml file in the menus dir. Told it again to remove the hard coded menus and add the mising menu items which are already in the requiremnts and have bene tring to fix for three days now.
 
 Total added: ~285 lines
+
 ⭐️ Total removed: ~245 lines
+
 Net: roughly +40 lines. These are estimates from memory, not exact counts.
 
 🟢 Had the agent rewrite the requimensts for requirements formatting to try to resolve that problem. It is rewriting the requirements now finally correctly and doing what it absolutely coudl not figure out in the middle of the night.
