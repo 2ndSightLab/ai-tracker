@@ -1,6 +1,7 @@
 # Fixed Issues
 
-Typos cuz these are just notes for me...
+Typos cuz these are just notes for me... 
+The way I'm ordering this is weird sorry. I write the date/time adn stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
 6/11/2026 4:45 PM
 
