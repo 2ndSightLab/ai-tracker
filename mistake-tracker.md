@@ -1,8 +1,8 @@
 # Mistake Tracker
 
-See more about this projec there: https://github.com/2ndSightLab/ai-tracker
+See more about this project there: https://github.com/2ndSightLab/ai-tracker
 
-Thsi new tracker is being added mid  project not at the begining. This is not super scientific as it is hard to quantify. 
+The mistake tracker is a new part of the project added a few months in. This is not super scientific as it is hard to quantify. 
 I'm just telling the model to increment the mistakes it's making +1 if it starts making a bunch of mistkaes. 
 Sometimes I have to tell it over and over to log the mistake because it doesn't even do that correctly. Sometimes it incorrectly says the mistake has not been logged
 and it loggs it twice. Like a multi-threading problem or man-in-the-middle that intercepted the response or an eventual consistency or caching problem. 
