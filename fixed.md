@@ -4,6 +4,8 @@ Typos cuz these are just notes for me...
 
 6/10/2026 9:00 PM
 
+🟢 Have rules explicility telling the model not to use git in readme and it used git.
+
 🟢 New session after dinner. Orchestrator project once again started adding a boatload of code instead of following instructions in readme. Fix and had to re-remove code.
 
 ⭐️ Removed ~ 94 lines of incorrrectly added code before I stopped it.
