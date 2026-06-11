@@ -4,7 +4,7 @@ Typos cuz these are just notes for me...
 
 6/10/2026 11:15 PM
 
-🟢 Added new user another $200 plan. The reason I'm adding a new user and plan is because AWS does not offer a pay as you go pricing plan. When you go over your plan amount it costs more per token.
+🟢 Added new user another $200 plan. The reason I'm adding a new user and plan is because AWS does not offer a pay as you go pricing plan. When you go over your plan amount it costs more per token. This is what you face with AI. The initial project is great and works pretty well. As it gets more complex it starts falling apart. Let's see if I can fix it...
 
 6/10/2026 9:00 PM
 
