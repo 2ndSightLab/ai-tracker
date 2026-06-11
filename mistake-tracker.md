@@ -11,7 +11,7 @@ In the beginning it would log everything as a completely different mistake with 
 when you boil it down to the core problem. Doesn't follow directions precisely. Doens't read the readme. Doesn't read a referneced file. Makes assumptions or guesses without re-reading or looking at the code. 
 Reading the code when it doesn't need to and wasting tokens and compute paower. Not following an established architecture. Creating duplicate code. Deleting things it shouldn't. 
 
-Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting very frustrated because the model feels nerfed. I don't have time to log every error because there are so many. I also just started tracking this way redcently.
+Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting very frustrated because the model feels nerfed. I don't have time to log every error because there are so many. I also just started tracking this way after working on this project for a couple of months because logging evvery error caused the readme to get too massive, wasing tokens.
 
 Here's my list on whatever date this file was last updated for the following projects:
 
