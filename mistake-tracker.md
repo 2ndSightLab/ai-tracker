@@ -1,6 +1,7 @@
 # Mistake Tracker
 
-This is not super scientific as it is hard to quantify. I'm just telling the model to increment the mistakes it's making +1 if it starts making a bunch of mistkaes. 
+Thsi new tracker is being added mid  project not at the begining. This is not super scientific as it is hard to quantify. 
+I'm just telling the model to increment the mistakes it's making +1 if it starts making a bunch of mistkaes. 
 Sometimes I have to tell it over and over to log the mistake because it doesn't even do that correctly. Sometimes it incorrectly says the mistake has not been logged
 and it loggs it twice. Like a multi-threading problem or man-in-the-middle that intercepted the response or an eventual consistency or caching problem. 
 Something like that. I don't log every error when it is cruising along and making a mild mistake here and there but when it makes repeated mistakes I tell it 
