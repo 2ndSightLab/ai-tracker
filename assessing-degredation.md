@@ -1,4 +1,4 @@
-# Measuring Model Degredaation
+# Measuring Model Degredation
 
 ## TLDR;
 
