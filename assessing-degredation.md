@@ -19,6 +19,9 @@ No custom agent:
 
 > Fifteen runs: 2.5, 2.8, 2.9, 2.3, 2.5, 3.0, 2.5, 2.3, 2.2, 2.3, 2.4, 2.7, 2.7, 2.6, 2.4s.
 
+There is differnet infrasturcture used for custom agnets apparently. Get completely different timing results. With help of Google AI pinpointed telemnetry.
+
+Disabling telemnentry seems to help.
 
 ## Notes:
 
