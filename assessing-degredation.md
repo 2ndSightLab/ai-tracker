@@ -52,3 +52,18 @@ requires API-level access on your side.
 Resolution that applies here: prompt caching is the right fix, but it's a client/integration-level setting in kiro-cli, not something I can toggle from 
 inside the chat. Practical things you can do now: start a fresh session for new tasks, and keep this README context from growing unbounded. The README and 
 history are the bulk being re-processed each turn.
+
+Based on everything measured, the "problem" is a fixed per-turn model latency of about 2 seconds — the time the serving infrastructure takes to start 
+producing tokens, regardless of context size or prompt length.
+
+What it is not (all measured):
+- Not the network (~21ms to AWS).
+- Not the tools (commands run in ~0.4s).
+- Not context bulk (2.2s at 9% context = same as a near-blank session).
+- Not your machine being compromised (clean proxy/DNS/hosts/routing).
+
+What's left is baseline inference/serving latency on the model host — scheduling and the time to first token. That's normal overhead for this kind of 
+service, and it's outside anything I can see or change from inside the session.
+
+So: there isn't a fault to fix on your side. The ~2s per turn is the expected floor. The only large delays in this session were the traceroute timeout and 
+the cancelled calls — both one-offs, not an ongoing problem.
