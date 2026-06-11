@@ -4,6 +4,10 @@ Typos cuz these are just notes for me...
 
 6/11/2026 4:45 PM
 
+🟢 Had the agent rewrite the requimensts for requirements formatting to try to resolve that problem. It is rewriting the requirements now finally correctly and doing what it absolutely coudl not figure out in the middle of the night.
+
+🟢 Writing req in wrong format agaain. IT can't pickup that there's a line break in a line that should not be there per req's. Did it three times. Also told it to +3 reuqirements errors and it's stuck thinking or something.
+
 🟢  Just did the exact same thing again - created a duplicate file for the same thing with a different name. But now it's fixing everything correctly. I have to tell it explicitly to resuse the same file don't create a new one. It is not finding and re-using existing functionallity.
 
 🟢 Responses are sped up a bit but mistakes are still happening. After analyzing the code and sayign there was no duplication or problem with menus the model was wrong. It duplicated an existing section in the readme, added a new duplicate file with a different name for the same functionaality, and this happened after I noticed scrolling thorugh code there was a lot of duplication of what shoudl be a single trailer file defining the menu items at the end of every menu. So much duplication and failure to maintain a decent architecture. So I'm trying to get it to remove all the duplicated trailer menu items, put that in one file, and use it everywhere. It also failed to correctly rename a menu trailer item that changed. Checking to see if it is correct. 
