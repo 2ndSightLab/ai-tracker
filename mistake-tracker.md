@@ -1,10 +1,10 @@
 # Mistake Tracker
 
-See more about this project there: 
+See more about this project here: 
 
 https://github.com/2ndSightLab/ai-tracker
 
-Timeline of what I've been able to accomplish and when I'm slowed down here: 
+More details on the mistake and timeline here. You can see when I'm being slowed down and by what a bit more specifically:
 
 https://github.com/2ndSightLab/ai-tracker/blob/main/fixed.md
 
