@@ -3,6 +3,10 @@
 Typos cuz these are just notes for me... 
 The way I'm ordering this is weird sorry. I write the date/time adn stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
+6/11/2026 12:36 AM
+
+🟢  DUPLICATED WHAT IS IN XML FILES AGAIN. So tired of this. I cannot get this proejct done correctly. The XML files track management type resources. This is all in the readme. Instead of using the data to list the managemet type reousrces the model put it all in the code and duplicated all the code and variables agian. Fixing.
+
 6/11/2026 9:30 PM
 
 🟢 reallizing I need a separate list for resources - adding.
