@@ -3,6 +3,12 @@
 Typos cuz these are just notes for me... 
 The way I'm ordering this is weird sorry. I write the date/time adn stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
+6/11/2026 9:30 PM
+
+🟢 Trying to add rename functionality to rename entries in list to differnet names because somewhere the program is loading the wrong data into lists. I can't tell acocunt types from accounts because they ahve the same name. So while trying to fix that I asked to add a missing rename fucntion which shoudl be available for any item. Instead of reusign the existing type code tried to add duplicate code. AGAIN.
+
+🟢 The first set of menus seemed ok so I started testing the second set of menus from option #2 in the main organization menu. Data I entered in prior testing is missing. I asked the model to figure it out and instead of correctly using the XML parser to edit a file it truncated a whole file and wiped out data. It took it like three tries to read the readme and figure out it was supposed to use the xml-parser and not truncate the data. It also had problems correctly logging generic mistake and not creating duplicates. Turns out there is a limitation in the XML parser and instaed of telling me that teh configure project decided it woudl just delete all the data and do some hokey work around. Had it write a prompt for the xml project.
+
 6/11/2026 4:45 PM
 
 🟢 Testing code changes. Well, it's pretty good but there's a defect where the code continuously loops through two menus intead of going to the corect one on Back. So I asked the model and it was a defect. I todl it to fix it. Then it did a bunch of analysis and came back and said it was not a defect (it is). So I asked it why it said it was not a defect when it said it was one earlier and it said it make a mistake and logged an error for itself for incorrect analysis and Asked if I wanted it to fix it. I said yes.  Now all tests pass. Try again...Well. It did not work exactly right but good enough. It jumps back two menus to avoid the eternal loop.
