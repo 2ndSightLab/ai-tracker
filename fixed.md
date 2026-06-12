@@ -5,7 +5,7 @@ The way I'm ordering this is weird sorry. I write the date/time adn stuff I did 
 
 6/11/2026 12:36 AM
 
-🟢 Well, since th emodel wiped out all the data in my organization configuration, I'll add a Reset to Default option which copies bakc in the default configuration files.
+🟢 Well, since the model WIPED OUT all the data in my organization configuration, I'll add a Reset to Default option which copies bakc in the default configuration files.
 
 🟢 Adding whether a resource type is management only to reosurce list. Simpler for the model to parse than relationships that span files. Also the master list is filater by management only types.
 
