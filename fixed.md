@@ -5,6 +5,8 @@ The way I'm ordering this is weird sorry. I write the date/time adn stuff I did 
 
 6/11/2026 12:36 AM
 
+🟢 Adding whether a resource type is management only to reosurce list. Simpler for the model to parse than relationships that span files. Also the master list is filater by management only types.
+
 🟢 Still writing comments that are too verbose, ignoring instructions over and over again.
 
 🟢 Writing way too much noise to the screen and hard to get it to STOP. Too many nothing words.
