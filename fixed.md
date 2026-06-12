@@ -5,6 +5,8 @@ The way I'm ordering this is weird sorry. I write the date/time adn stuff I did 
 
 6/11/2026 9:30 PM
 
+🟢 reallizing i need a separate list for resources - adding.
+
 🟢 Renmoving unneccessary comments. AGAIN. Lots of files have mammoth comment blocks agian and in/out comments that the model deosn't want to remove for some reason even though the requirements explicitly say not to add those.
 
 🟢 Trying to add rename functionality to rename entries in list to differnet names because somewhere the program is loading the wrong data into lists. I can't tell acocunt types from accounts because they ahve the same name. So while trying to fix that I asked to add a missing rename fucntion which shoudl be available for any item. Instead of reusign the existing type code tried to add duplicate code. AGAIN.
