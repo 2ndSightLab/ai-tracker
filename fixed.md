@@ -5,7 +5,7 @@ The way I'm ordering this is weird sorry. I write the date/time adn stuff I did 
 
 6/11/2026 9:30 PM
 
-🟢 reallizing i need a separate list for resources - adding.
+🟢 reallizing I need a separate list for resources - adding.
 
 🟢 Renmoving unneccessary comments. AGAIN. Lots of files have mammoth comment blocks agian and in/out comments that the model deosn't want to remove for some reason even though the requirements explicitly say not to add those.
 
