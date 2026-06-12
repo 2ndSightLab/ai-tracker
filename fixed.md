@@ -5,6 +5,8 @@ The way I'm ordering this is weird sorry. I write the date/time adn stuff I did 
 
 6/12/2026 2:52 PM
 
+🟢 Created project shell for types only. Defined objecitve. Told the agent to copy over rules. Did that. Told it to copy over reuqirements applicable to the objective. It re-copied the rules instead of only the requirements. It's going slow again and I had to tell it to delete the rules it just added because they are duplicates. The n the agent tried to delete ALL the rules. I said no only delete the rules from a certain point to end. It figured it out and did that but then stoppped doing the overall task.
+
 🟢 Woke up thinking that the agent is getting confused by Environment Types / Account Types Environmetns / Accounts. The reason I have both is that I might have a penetest environemnt, for example, and I might create muultiople pentested accounts in the pentest environment using the pentest account type. Or I might create multiple enviroments of type Web - like Web Prod, Web Dev, etc. So going to try to split off the types from the actual accounts and see if that helps...here we go... 
 
 6/11/2026 12:36 AM
