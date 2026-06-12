@@ -3,6 +3,10 @@
 Typos cuz these are just notes for me... 
 The way I'm ordering this is weird sorry. I write the date/time adn stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
+6/12/2026 2:52 PM
+
+🟢 Woke up thinking that the agent is getting confused by Environment Types / Account Types Environmetns / Accounts. The reason I have both is that I might have a penetest environemnt, for example, and I might create muultiople pentested accounts in the pentest environment using the pentest account type. Or I might create multiple enviroments of type Web - like Web Prod, Web Dev, etc. So going to try to split off the types from the actual accounts and see if that helps...here we go... 
+
 6/11/2026 12:36 AM
 
 🟢 Well, since the model WIPED OUT all the data in my organization configuration, I'll add a Reset to Default option which copies bakc in the default configuration files.
