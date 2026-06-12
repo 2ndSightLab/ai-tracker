@@ -5,6 +5,8 @@ The way I'm ordering this is weird sorry. I write the date/time adn stuff I did 
 
 6/11/2026 12:36 AM
 
+🟢 Still writing comments that are too verbose, ignoring instructions over and over again.
+
 🟢 Writing way too much noise to the screen and hard to get it to STOP. Too many nothing words.
 
 🟢  DUPLICATED WHAT IS IN XML FILES AGAIN. So tired of this. I cannot get this proejct done correctly. The XML files track management type resources. This is all in the readme. Instead of using the data to list the managemet type reousrces the model put it all in the code and duplicated all the code and variables agian. Fixing.
