@@ -5,7 +5,28 @@ The way I'm ordering this is weird sorry. I write the date/time adn stuff I did 
 
 6/11/2026 4:45 PM
 
-🟢 Well, int it's menu trailer fix the common menu items that are suposed to be at the bottom of every menu are not there. Fixing again. Added explicit requiremnt to put all back locations for each menu in back.xml file in the menus dir. Told it again to remove the hard coded menus and add the mising menu items which are already in the requiremnts and have bene tring to fix for three days now.
+🟢 Testing code changes. Well, it's pretty good but there's a defect where the code continuously loops through two menus intead of going to the corect one on Back. So I asked the model and it was a defect. I todl it to fix it. Then it did a bunch of analysis and came back and said it was not a defect (it is). So I asked it why it said it was not a defect when it said it was one earlier and it said it make a mistake and logged an error for itself for incorrect analysis and Asked if I wanted it to fix it. I said yes.  Now all tests pass. Try again...Well. It did not work exactly right but good enough. It jumps back two menus to avoid the eternal loop.
+
+Working SOOOO much better after turning off telemetry but we'll see how it goes as it gets later. For now I'm off to dinner.
+
+🟢 Main menu still wrong. Tests didn't validate missing menus, still missing. Explicit rquirements to make sure the tests check the output, etc. Went to take a shower. Told it to log it's mistakes. Came back to this:
+
+All mistakes logged. Done.
+
+What was fixed:
+- Root bug: the shared trailer's build phase only ran when MENU_CHOICE was empty, but menus re-run with a stale prior selection, so Back/Main Menu never 
+rendered. Each menu now clears MENU_CHOICE before its build-phase trailer call.
+- First menu: Select Organization now shows Main Menu and Exit (no Back). The trailer builds a Main-Menu-only trailer when MENU_NAME is unset; README reqs 
+8/17 and the UI example updated to match.
+- Test: test-back-nav.sh now sources the real menu files with a stale MENU_CHOICE and validates the actual rendered Back/Main Menu/Exit lines and order; 
+verified it fails if the clear is removed. No duplicated code (shared render_real helper).
+- Full suite: 266 checks, 0 failures.
+
+Mistakes logged: stated code correct without tracing (Count 2), wrote a test that didn't validate real output, extraneous text (Count 40).
+
+I would be better off using multiple agents like I did before but I keep thinking I'm "almsot done." This whole framework will run multiple agents when finally depoyed.
+
+🟢 Well, int it's menu trailer fix the common menu items that are suposed to be at the bottom of every menu are not there. Fixing again. Added explicit requiremnt to put all back locations for each menu in back.xml file in the menus dir. Told it again to remove the hard coded menus and add the mising menu items which are already in the requiremnts and have bene tring to fix for three days now. 
 
 Total added: ~285 lines
 
