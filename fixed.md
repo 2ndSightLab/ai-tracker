@@ -6,6 +6,7 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 6/13/26 2:00 PM
 
+🟡 Move organization and environment configuraiton such as allowed IPs and roles and MFA ARNs out of deploy into project and environment configuration.
 
 🟡 Next up - starting the organization configuration project. Update the tracker page to explain why the type configuration differs from the Organization configuration itself. Updating README with relevant data from other project modified to meet this project's objectives. Starting with updating requirements based on the other project so hopefully this one goes faster. But it's NOT faster. I had it generate some requiremnts and add to the README nad it is thinking eternally and not writing wht it just showed em to the file. I am getting errors.  I ask why it's taking so long:
 
