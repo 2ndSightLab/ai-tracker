@@ -27,6 +27,8 @@ Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting 
 
 ## 6/13/2026 -- egregious mistakes by Opus 4.8:
 
+🟡 Incorrecct analysis a lot that creates rework and unneccessary changes and wasted tokens. I avoid this by asking another agent to verify the analsyis. But that means I have to pay for the tokens in two agents doubling costs. If I don't do that things go in circles.
+
 🟡 I told an agent to exaclty copy a requirements section from another readme. There were 9 reuqiremnts in that section and it copied 8.
 
 🟡 When i tell the agent to restore something it messed up it doesn't restore it correctly.
