@@ -25,6 +25,14 @@ Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting 
 
 ##
 
+## 6/13/2026 -- egregious mistakes:
+
+🟡 Even when specifically instructed to exaclty copy the structure of the other project's readme and implmenetation the project created XML files with a completely different structure and hit errors due to structures the common XML parser does not support. Had to spend a lot of time re-writing code and files to follow the correct pattern.
+
+🟡 Did not make exact copies of other readme when directed to do so altered xml file formats and reuquirements
+
+🟡 Duplicated sections in readme
+
 ## 6/12/2026 -- state of projects and mistakes
 
 ### Orchestrator
