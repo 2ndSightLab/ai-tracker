@@ -171,9 +171,9 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Environment Configuration | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Organization Diagram (hopefully) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
-### Organization Environment Deploy ##
+### Organization Environment ###
 
-* Manage Enviroments as a group
+* Manage enviroment resources as a group
   
 | Feature | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | 
