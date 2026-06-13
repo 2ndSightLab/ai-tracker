@@ -1,7 +1,8 @@
 # Fixed Issues
 
 Typos cuz these are just notes for me... 
-The way I'm ordering this is weird sorry. I write the date/time adn stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
+
+The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
 🟢 I opened a new session at same time as other. I pasted ina bug. The new seession IMMEDIATELY failed to read teh erquiremsnts and wrote a test to confirm that somethign wrong should always happen. The reeuqirements CLEARLY say that is not right. Modifying existing code is a big problem and I don't have a way to fix it. It needs to be fixed in the models. Otheriwse you're spinning your wheels paying for tokens unneccesarily simply because the model does not follow the directions in your requiremnts. THat's a waste of compute power, money, and time. But I reverted the incorrect test.
 
