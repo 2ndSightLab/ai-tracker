@@ -41,6 +41,8 @@ Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting 
 
 🟡 Duplicated sections in readme
 
+🟡 Documenting - yesterday the agent wrong a test that hung because it performed an eternal loop. That has happened before but only noticed in 4.8 not 4.7. It used to stop itself on too many iterations.
+
 ## 6/12/2026 -- state of projects and mistakes
 
 ### Orchestrator
