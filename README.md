@@ -171,7 +171,7 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Environment Configuration | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Organization Diagram (hopefully) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
-### Organization Environment ###
+### Manage Organization Environment ###
 
 * Manage enviroment resources as a group
   
@@ -214,7 +214,7 @@ Resources installed in every environment. Some are optinoal.
 | SCP: always-denied-actions [env] | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
 | SCP: env-allowed-regions [env]  | 🟡 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
 
-### Management Environment ###
+### Management Environment Resources ###
 
 The management environment contains accounts where my organization deletegated administrators exist.
 
