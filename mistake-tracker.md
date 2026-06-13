@@ -27,6 +27,8 @@ Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting 
 
 ## 6/13/2026 -- egregious mistakes:
 
+🟡 When I ask a yes or no question I want an yes or no answer not 50 lines of text. If I want to know why I'll ask why.
+
 🟡 Even when specifically instructed to exaclty copy the structure of the other project's readme and implmenetation the project created XML files with a completely different structure and hit errors due to structures the common XML parser does not support. Had to spend a lot of time re-writing code and files to follow the correct pattern.
 
 🟡 Did not make exact copies of other readme when directed to do so altered xml file formats and reuquirements
