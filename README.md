@@ -142,6 +142,10 @@ Reduces context and scope of the org and environment projects.
 
 Configure organization to deploy; define environemnt types (allowed resources)
 
+* Environment Types Define accounts and resources that can be deployed to an environment.
+* Accounts define resources that can be deployed to account on top of environmen resources.
+* The resource master list maps a reosurce to a script that deploys it (to create a menu of resources to deploy)
+
 | Feature | List | Add | Delete | Rename | Edit | Menus | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | Resource Types | 🟢 | 🟢 | 🟢 | 🟢| n/a | 🟢 | 🟢 | 🔴 | 🔴 |
@@ -154,6 +158,10 @@ Configure organization to deploy; define environemnt types (allowed resources)
 
 ### Configure Organization ###
 
+* Multiple enviroments of a single type can be created (Web-Dev, Web-Prod, etc.)
+* Multiple accounts of the same type can be created (Pentest1, Pentest2, etc.)
+* The resource list is pullled from the type configuration, not altered here.
+
 | Feature | List | Add | Delete | Rename | Edit | Menus | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | Organization | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -165,6 +173,8 @@ Configure organization to deploy; define environemnt types (allowed resources)
 
 ### Organization Environment Deploy ##
 
+* Manage Enviroments as a group
+  
 | Feature | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | 
 | Select Environment | 🟡 | 🔴 | 🔴 |
