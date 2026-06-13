@@ -27,6 +27,9 @@ Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting 
 
 ## 6/13/2026 -- egregious mistakes by Opus 4.8:
 
+
+🔴 The model is WAY too verbose. I have a requirement and rule that says to answer in 8 lines or less to try to stop that which the model doesn't obey. I have to say in many different ways multiple times to be less verbose and evenually it stops doing that but then it starts up again later and I have to tell it all over again.
+
 🔴 What is causing this: 
 
 I had it generate some requiremnts and add to the README nad it is thinking eternally and not writing wht it just showed em to the file. I am getting errors.  I ask why it's taking so long:
