@@ -93,7 +93,7 @@ Role, policy and permission boundary deployed in root management account in AWS 
 
 Separate reusable project that handles configuring role profiles and role assumption with MFA.
 
-I used some previously written code as a starting point in which the [role trust policies contain MFA and IPAddress conditions to assume the role and the user associated with the keys cannot do anything except asusme a role with MFA](https://github.com/2ndSightLab/aws-scripts/tree/main/scripts).
+I used some previously written code as a starting point in which the [role trust policies contain MFA and IPAddress conditions to assume the role and the user associated with the keys cannot do anything except asusme a role with MFA](https://github.com/2ndSightLab/aws-scripts/tree/main/scripts). I found at some point the CLI Auth code in my AI repos was modified to cache creds. I thought I removed that in the original repo. Do your own code review.
 
 | Feature | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | 
