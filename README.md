@@ -140,16 +140,16 @@ Reduces context and scope of the org and environment projects.
 
 Configure organization to deploy; define environemnt types (allowed resources)
 
-| Feature | List | Add | Delete | Rename | Edit | Tested | Code Review | Security Review |
+| Feature | List | Add | Delete | Rename | Edit | Menus | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Resource Types | 🟢 | 🟢 | 🟢 | 🟢| 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Account Types | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Account Resource Types | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Environment Types | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Environment Type Account Types | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Environment Type Resource Types | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Define Management Environment |  🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Define Management Environment |  🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Resource Types | 🟢 | 🟢 | 🟢 | 🟢| 🔴 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Account Types | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Account Resource Types | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Environment Types | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Environment Type Account Types | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Environment Type Resource Types | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Define Management Environment |  🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Define Management Environment |  🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Configure Organization ###
 
