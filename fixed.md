@@ -3,7 +3,7 @@
 Typos cuz these are just notes for me... 
 The way I'm ordering this is weird sorry. I write the date/time adn stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
-⭐️ 45 lines remove (and the models are really not good at math so don't ask them to do it - farm that out to some deterministic code)
+⭐️ 45 lines removed (and the models are really not good at math so don't ask them to do it - farm that out to some deterministic code)
 
 6/12/2026 2:52 PM
 
