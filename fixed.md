@@ -6,9 +6,9 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 6/13/26 2:00 PM
 
-🟡 Move organization and environment configuraiton such as allowed IPs and roles and MFA ARNs out of deploy into project and environment configuration.
+🟢 Move organization and environment configuraiton such as allowed IPs and roles and MFA ARNs out of deploy into project and environment configuration. Broke on first try.
 
-🟡 Next up - starting the organization configuration project. Update the tracker page to explain why the type configuration differs from the Organization configuration itself. Updating README with relevant data from other project modified to meet this project's objectives. Starting with updating requirements based on the other project so hopefully this one goes faster. Facing some delays related added to mistakes.md. Got the requirements, code and tests written. On to testing.
+🟢  Next up - starting the organization configuration project. Update the tracker page to explain why the type configuration differs from the Organization configuration itself. Updating README with relevant data from other project modified to meet this project's objectives. Starting with updating requirements based on the other project so hopefully this one goes faster. Facing some delays related added to mistakes.md. Got the requirements, code and tests written. On to testing.
 
 🟢 Spent some time cleaning up, organizing and updating the tracker readme. I'm figuring out a better architecture as I go. Also update the costs. Is something wrong with billing? I mean I'm not complaining about it now because it seems like it's lower than it should be but it seems off.
 
