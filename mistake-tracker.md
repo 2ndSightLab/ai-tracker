@@ -28,7 +28,7 @@ Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting 
 ## 6/13/2026 -- egregious mistakes by Opus 4.8:
 
 🔴 Having to be way more specific than in the past. What changed? Example. 
-- what requirements need to be chagned?
+- what requirements need to be changed?
 - 2, 4, 6, 8, 10
 - Do not change 10 chanage the others
 - OK I'm changing 2, 4, 6, 8 and 20 and 22
