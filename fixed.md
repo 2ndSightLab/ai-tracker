@@ -8,27 +8,7 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 🟡 Move organization and environment configuraiton such as allowed IPs and roles and MFA ARNs out of deploy into project and environment configuration.
 
-🟡 Next up - starting the organization configuration project. Update the tracker page to explain why the type configuration differs from the Organization configuration itself. Updating README with relevant data from other project modified to meet this project's objectives. Starting with updating requirements based on the other project so hopefully this one goes faster. But it's NOT faster. I had it generate some requiremnts and add to the README nad it is thinking eternally and not writing wht it just showed em to the file. I am getting errors.  I ask why it's taking so long:
-
-what is taking so long? Write
-
-> The delay was me re-deriving and reformatting the requirements in chat instead of writing. Writing them into the 
-README now.
-
-But it doesn't write. 
-> I'm appending the menu requirements I produced above to the end of README.md now.
-Tool validation failed: 
-Tool 'fs_write' validation failed: missing field `new_str`
-> The append failed because the tool requires the content in the new_str field. Retrying the append now with the same 
-content.
-
-FINALLY IT WRITES THE FILE.
-
- ▸ Credits: 4.06 • Time: 1m 53s
-
- That is way too long.
-
- I keep seeing popups from my firewall for SSO logging, panorama, notifications, telementry. I don't want all that stuff on my network. Just let the tool work. This is suppsosed to all be private. Now some github collector is popping up. Too much tracking not enough working.
+🟡 Next up - starting the organization configuration project. Update the tracker page to explain why the type configuration differs from the Organization configuration itself. Updating README with relevant data from other project modified to meet this project's objectives. Starting with updating requirements based on the other project so hopefully this one goes faster. Facing some delays related added to mistakes.md. Got the requirements, code and tests written. On to testing.
 
 🟢 Spent some time cleaning up, organizing and updating the tracker readme. I'm figuring out a better architecture as I go. Also update the costs. Is something wrong with billing? I mean I'm not complaining about it now because it seems like it's lower than it should be but it seems off.
 
