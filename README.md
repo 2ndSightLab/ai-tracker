@@ -152,12 +152,14 @@ Configure organization to deploy; define environemnt types (allowed resources)
 
 ### Configure Organization ###
 
-| Feature | List | Add | Delete | Rename | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Organization Configuration |  🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Evironments | 🟡 | 🟡 | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 
-| Environment Accounts | 🟡 | 🟡 | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Organization Diagram (hopefully) | 🔴 | 🔴 | 🔴  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+
+
+| Feature | List | Add | Delete | Rename | Edit | Menus | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Organization Configuration |  🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Evironments | 🟡 | 🟡 | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴  🔴 |
+| Environment Accounts | 🟡 | 🟡 | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Organization Diagram (hopefully) | 🔴 | 🔴 | 🔴  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Drift ##
 
