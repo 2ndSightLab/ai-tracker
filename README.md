@@ -142,24 +142,24 @@ Configure organization to deploy; define environemnt types (allowed resources)
 
 | Feature | List | Add | Delete | Rename | Edit | Menus | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Resource Types | 🟢 | 🟢 | 🟢 | 🟢| n/a | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Account Types | 🟢 | 🟢 | 🟢 | n/a | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Account Resource Types | 🟢 | 🟢 | 🟢 | 🟢 | n/a | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Environment Types | 🟢 | 🟢 | 🟢 | 🟢 | n/a | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Environment Type Account Types | 🟢 | 🟢 | 🟢 | n/a | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Environment Type Resource Types | 🟢 | 🟢 | 🟢 | n/a | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Default Org (define mangemnt env) | 🔴 | n/a | n/a | n/a | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Resource Types | 🟢 | 🟢 | 🟢 | 🟢| n/a | 🟢 | 🟢 | 🟢  | 🔴 | 🔴 |
+| Account Types | 🟢 | 🟢 | 🟢 | n/a | 🟢 | 🟢 | 🟢 | 🟢  | 🔴 | 🔴 |
+| Account Resource Types | 🟢 | 🟢 | 🟢 | 🟢 | n/a | 🟢 | 🟢 | 🟢  | 🟢  | 🔴 |
+| Environment Types | 🟢 | 🟢 | 🟢 | 🟢 | n/a | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Environment Type Account Types | 🟢 | 🟢 | 🟢 | n/a | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 |
+| Environment Type Resource Types | 🟢 | 🟢 | 🟢 | n/a | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 |
+| Default Org (define mangemnt env) | 🟢 | n/a | n/a | n/a | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ### Configure Organization ###
 
-
-
 | Feature | List | Add | Delete | Rename | Edit | Menus | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Organization Configuration |  🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Evironments | 🟡 | 🟡 | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴  🔴 |
-| Environment Accounts | 🟡 | 🟡 | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Organization Diagram (hopefully) | 🔴 | 🔴 | 🔴  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Organization | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Organization Configuration | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Evironments | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴  🔴 |
+| Environment Accounts | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Environment Configuration | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Organization Diagram (hopefully) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Drift ##
 
