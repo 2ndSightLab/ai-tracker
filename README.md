@@ -184,8 +184,8 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Feature | Run | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: 
 | Drift Report | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Drift Delete | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Drift Deploy | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Drift Delete Unauthorized Resources | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Drift Deploy Missing Resources | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
 
 ### Base Environment Resources ###
 
