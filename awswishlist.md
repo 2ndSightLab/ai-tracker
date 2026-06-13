@@ -150,6 +150,10 @@ https://builder.aws.com/wishlist/3ETEXLx2zZ9GFzQHFYKqmJBcS9M_w/kiro-in-aws-conso
 
 🟠 Let me turn off os panorama requests in the AWS console. Seeing too many repeated connections that beacon like a C2 channel. Just want to turn it off. I find panorama API calls odd because Google aimode reports Panarama as a deperecated client camera service. What even is that?
 
+🟠 I don't know if or how you can fix it but would really like AI agents to stop making these mistakes:
+
+https://github.com/2ndSightLab/ai-tracker/blob/main/mistake-tracker.md
+
 
 
 
