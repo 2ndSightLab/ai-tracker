@@ -163,23 +163,29 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Environment Configuration | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Organization Diagram (hopefully) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
-### Drift ##
-
-| Feature | List | Add | Delete | Rename | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Drift Report | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Drift Cleanup | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-
-### Organization Environment Deployment ##
+### Organization Environment Deploy ##
 
 | Feature | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | 
-| Select Environment | 🟢 | 🔴 | 🔴 |
-| Configure Environment | 🟢 | 🟢 | 🔴 | 
-| Display all resources (loop through accounts) | 🟢 | 🟢 | 🔴 | 
-| Display resources per acount (display resources available for account) | 🔴 | 🔴 | 🔴 |
+| Select Environment | 🟡 | 🔴 | 🔴 |
+| Deploy all resources | 🟡 | 🟡 | 🔴 | 
 | Auto-gen env SCP | 🔴 | 🔴 | 🔴 |
 | Auto-gen account SCP | 🔴 | 🔴 | 🔴 |
+
+### Organization Environment Delete ##
+
+| Feature | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | 
+| Select Environment | 🟡 | 🔴 | 🔴 |
+| Delete all resources | 🔴 | 🔴 | 🔴 | 
+
+### Drift ##
+
+| Feature | Run | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Drift Report | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Drift Delete | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Drift Deploy | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Base Environment Resources ###
 
@@ -250,6 +256,7 @@ The management environment contains accounts where my organization deletegated a
 | SCP: org-allowed-regions [root]  | 🟡 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
 | Configure Security Alerts | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
+
 ### Backup Environment ###
 
 Back up infrastructure segregated from other infrastructure
@@ -271,6 +278,12 @@ Back up infrastructure segregated from other infrastructure
 | Backup VPC RAM share | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Bacup VPC Flowlogs | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
 
+### Backup Environment Actions ###
+
+Feature | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | 
+| Archive Acount | 🔴 | 🔴 | 🔴 | 🔴 | 
+
 ### Domains Envirnoment ( Base Environment +) ###
 
 Domain name management. One for prod and one for test in my case. 
@@ -280,7 +293,7 @@ Can lock when not in use with deny all SCP.
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Accounts: dns (no backup) | 🟡 | 🟡 | 🟢 | 🟢 | 🔴 | 🔴 |
 
-### DNS Actions ###
+### DNS Environment Actions ###
 
 | Feature | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | 
@@ -330,6 +343,20 @@ Environment where people log into EC2 instances.
 | Base Amazon Linux Instance | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Base Amazon Linux AMI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
+### Management Environment Actions ###
+
+| Feature | Run | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: |
+| IAM Acccess Analyzer Report | 🟡 | 🔴 | 🔴 | 🔴 |
+| Prowler Report | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Enable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Disable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 |
+| Move website | 🔴 | 🔴 | 🔴 | 🔴 |
+| Lock Environment (apply deny-all SCP) | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Unlock Environment (remove deny-all SCP) | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Lock Account (apply deny-all SCP) | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Unlock Account (remove deny-all SCP) | 🔴 | 🔴 | 🔴 | 🔴 | 
+
 ### Web Environment ( Base Environment +) ###
 
 This environment is used to host static websites and web applications.
@@ -339,6 +366,12 @@ I have a separate project that allows deploying a static website in any web acco
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Accounts: web, backup | 🟢 | 🟡 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Deploy Web Lambda | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
+
+### Backup Environment Actions ###
+
+Feature | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | 
+| Deploy Static Website | 🔴 | 🔴 | 🔴 | 🔴 | 
 
 ### Kiro management environment (Base Environment +) ###
 
@@ -433,24 +466,24 @@ Deploy environment to single account (account in a different organization or sta
 | Role | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Jobs Instance | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 
-### Run Actions ###
+### AMI Account Actions ###
 
 | Feature | Run | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: |
 | Share all amis to all acounts in ou | 🟡 | 🔴 | 🔴 | 🔴 | 
-| IAM Acccess Analyzer Report | 🟡 | 🔴 | 🔴 | 🔴 |
-| Prowler Report | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Enable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Disable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 |
-| Archive Account | 🟡 | 🔴 | 🔴 | 🔴 | 
-| Move website | 🔴 | 🔴 | 🔴 | 🔴 |
+| Share AMI To External | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+
+### Repo Account Actions ###
+
+| Feature | Run | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: |
 | Transfer GitHub repo to Code Commit | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Transfer one Code Commit repo to Another | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Lock Environment (apply deny-all SCP) | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Unlock Environment (remove deny-all SCP) | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Lock Account (apply deny-all SCP) | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Unlock Account (remove deny-all SCP) | 🔴 | 🔴 | 🔴 | 🔴 | 
+
+### KMS Account Actions ###
+
+| Feature | Run | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: |
 | Deploy External AMI Share Key | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Share AMI To External | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 
