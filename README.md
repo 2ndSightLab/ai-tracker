@@ -146,10 +146,10 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Account Types | 🟢 | 🟢 | 🟢 | 🟢 | n/a | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Account Resource Types | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Environment Types | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Environment Type Account Types | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Environment Type Resource Types | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Environment Type Account Types | 🟢 | 🟢 | 🟢 | n/a | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Environment Type Resource Types | 🟢 | 🟢 | 🟢 | n/a | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Default Org (define mangemnt env) | 🔴 | n/a | n/a | n/a | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Organization Enviroment Types | 🔴 | n/a | n/a | n/a | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Organization Enviroment Types | 🔴 | 🔴 | 🔴 | n/a |  🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Configure Organization ###
 
