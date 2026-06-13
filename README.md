@@ -136,20 +136,27 @@ Reduces context and scope of the org and environment projects.
 | Manage Drift (Menu Action) | 🟡  | 🔴 | 🔴 |
 | Bridge Config Org to Deploy | 🟡 | 🔴 | 🔴 |
 
-### Organization Environment Configuration ##
+### Configure Organization Types ##
 
 Configure organization to deploy; define environemnt types (allowed resources)
 
 | Feature | List | Add | Delete | Rename | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Organization Configuration | 🟢 | 🟢 | 🟢 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Resource Types | 🟢 | 🟢 | 🟢 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Account Types | 🟢 | 🟢 | 🟢 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Account Resource Types | 🟢 | 🟢 | 🟢 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Environment Types | 🟢 | 🟢 | 🟢 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Environment Type Account Types | 🟢 | 🟢 | 🟢 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Account Type Required | 🟢 | 🟢 | 🟢 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Environment Type Allowed Resource Types | 🟢 | 🟢  | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Account Type Allowed Resource Types | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Environments | 🟢 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Navigation Menus | 🟢 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Environment Type Resource Types | 🟢 | 🟢 | 🟢 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
+
+### Configure Organization ###
+
+| Feature | List | Add | Delete | Rename | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Organization Configuration |  🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Evironments | 🟡 | 🟡 | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 
+| Environment Accounts | 🟡 | 🟡 | 🟡  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Organization Diagram (hopefully) | 🔴 | 🔴 | 🔴  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Drift ##
 
