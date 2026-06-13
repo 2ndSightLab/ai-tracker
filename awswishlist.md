@@ -142,13 +142,13 @@ https://builder.aws.com/wishlist/3ETEXLx2zZ9GFzQHFYKqmJBcS9M_w/kiro-in-aws-conso
 
 🟠 When I close an account I can't reuse the email, name, and alias in a new account. I also found out that buckets using the naming convention locked to a specific acocunt also can't be reused. Should warn users of that prior to closing account and have some kind of override for that or auto nenaming feature so can close and create new accounts with same info but still be able to restore the old ones if needed.
 
-🟠 Let me turn off telementry everywhere including AWS console. Seeing too many repeated connections that becon like a C2 channel. Just want to turn it off. 
+🟠 Let me turn off telementry everywhere including AWS console. Seeing too many repeated connections that beacon like a C2 channel. Just want to turn it off. 
 
 🟠 I just had major issues with Kiro teleemtry...what is that all about? Need a better breakdown for monitoring purposes that shows exactly what part of the infrasatructure is causing deleys - is it the model? Is it telemetry? Is it Kiro infrastructure? I only had this issue with a custom agent while the default agent showed no such degredation. Why? Would like more visibility into all of that to pinpoint issues and know how or what is actually causing the problem. Once I turned off telementry the model behavior improved as well. I don't know if that was a coincidence as Antrhopic changed is suppoed rules for AI resaearch at the same time. I don't know if my research got caught up in that but I'm just trying to deploy AWS infrastructure so that wouldn't really make sense.
 
-🟠 Let me turn off os notifications in the AWS console. Seeing too many repeated connections that becon like a C2 channel. Just want to turn it off.
+🟠 Let me turn off os notifications in the AWS console. Seeing too many repeated connections that beacon like a C2 channel. Just want to turn it off.
 
-🟠 Let me turn off os panorama requests in the AWS console. Seeing too many repeated connections that becon like a C2 channel. Just want to turn it off. I find panorama API calls odd because Google aimode reports Panarama as a deperecated client camera service. What even is that?
+🟠 Let me turn off os panorama requests in the AWS console. Seeing too many repeated connections that beacon like a C2 channel. Just want to turn it off. I find panorama API calls odd because Google aimode reports Panarama as a deperecated client camera service. What even is that?
 
 
 
