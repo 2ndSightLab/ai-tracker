@@ -27,6 +27,9 @@ Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting 
 
 ## 6/13/2026 -- egregious mistakes by Opus 4.8:
 
+🔴 I just fugured out that tests are making up XML to run tests instead of using XML that is atually in the project. So the XML it put in the tests doesn't even match teh actual XML data in the project and of course they pass. 4.8 is not smart enough to figure out that taht the XML needs to actualy match what the project is using. It also should proably figure out it can make a copy of the actual file for it's test to make sure the real run of the program works.
+
+🔴 I told the model to add a requirement to the readme. Then I asked it to fix what it just did and it keeps making the same error over and over not meeting the requirement it literally just wrong. How does it not remember what it just wrote? 
 
 🔴 The model is WAY too verbose. I have a requirement and rule that says to answer in 8 lines or less to try to stop that which the model doesn't obey. I have to say in many different ways multiple times to be less verbose and evenually it stops doing that but then it starts up again later and I have to tell it all over again.
 
