@@ -2,7 +2,7 @@
 
 **Date Range:** Mar 7, 2026 - Jun 12, 2026
 
-This is interesting because I had a $200 plan which was all used up by June 10th so I cancelled it and started a new one. But this report is not reflecting that dollar amount. The total cost is < $200. Hmm. Also, my EC2 costs are higher than they should be for reasons...it's not you, it's me.
+This is interesting because I had a $200 plan which was all used up by June 10th so I cancelled it and started a new one. But this report is not reflecting that dollar amount. The total cost is < $200. Hmm. Also, my EC2 costs are higher than they should be for reasons...it's not you, it's me. VPC endpoints. WHY????
 
 | Service / Category | Total | Mar 2026 | Apr 2026 | May 2026 | Jun 2026* |
 | :--- | :---: | :---: | :---: | :---: | :---: |
