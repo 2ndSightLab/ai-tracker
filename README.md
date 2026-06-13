@@ -181,13 +181,8 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Deploy all resources | 🟡 | 🟡 | 🔴 | 
 | Auto-gen env SCP | 🔴 | 🔴 | 🔴 |
 | Auto-gen account SCP | 🔴 | 🔴 | 🔴 |
-
-### Organization Environment Delete ##
-
-| Feature | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | 
-| Select Environment | 🟡 | 🔴 | 🔴 |
 | Delete all resources | 🔴 | 🔴 | 🔴 | 
+| View all resources | 🔴 | 🔴 | 🔴 | 
 
 ### Drift ##
 
