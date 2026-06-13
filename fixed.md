@@ -3,6 +3,8 @@
 Typos cuz these are just notes for me... 
 The way I'm ordering this is weird sorry. I write the date/time adn stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
+⭐️ 45 lines remove (and the models are really not good at math so don't ask them to do it - farm that out to some deterministic code)
+
 6/12/2026 2:52 PM
 
 🟢 I don't know if it was just my approach but WAY better today. I revised my structure to make it easiery for the model to undesrtand by defining the complete menu struccture and all the data in XML. Then I defined the requierements to explicity write reusable code in certain place.s there's a specific file name associated with most requirement sections. Everything is still faster after the issue I discovered yesterday (and reported to AWS through various channels). The model is not being nearly so dumb today. WAY BETTER. UNTIL. Literally as I'm writing this it added one new file for a new menu item wiht some new functionality and it broke all the rules. More functinoality and more code = more Q#$&#$*^&#WSDSBGFJT&$%@. Fixing. It mostly followed the rules and I watched it to make sure it was following the rules. But hese modesl require A LOT of arhictectureal guideance and to be reminded CONSTANTLY to keep architectural integrity in tact. THat is why I write small pieces in separate projects and then move on so the existing code doesn't get mangled. 
