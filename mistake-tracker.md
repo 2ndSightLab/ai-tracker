@@ -55,7 +55,7 @@ MISTAKE: The orchestrator menu did not render the items required by the UI secti
 
 MISTAKE: Left dead code and files in the code base. CORRECTION: Remove all dead code after making changes, prompting before deleting files. Count: 1
 
-## Config
+### Config
 
 MISTAKE: Hid errors with redirects or temp files. CORRECTION: Never use temp files or suppress stderr. Count: 2
 
@@ -150,5 +150,3 @@ MISTAKE: Incorrect analysis. CORRECTION: Analyze all pertinent code accurately a
 
 MISTAKE: Left dead code in the project. CORRECTION: Remove dead code, variables, and files immediately. Count: 5
 
-
-## Drift Manager
