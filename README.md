@@ -141,7 +141,7 @@ Reduces context and scope of the org and environment projects.
 Configure organization to deploy; define environemnt types (allowed resources)
 
 | Feature | List | Add | Delete | Rename | Edit | Menus | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | Resource Types | 🟢 | 🟢 | 🟢 | 🟢| 🔴 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Account Types | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Account Resource Types | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
