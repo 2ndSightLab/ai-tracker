@@ -27,7 +27,7 @@ Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting 
 
 ## 6/12/2026 -- state of projects and mistakes
 
-## Orchestrator
+### Orchestrator
 
 MISTAKE: Added a menu option as a hardcoded string instead of a data-driven item through the shared menu code. CORRECTION: Add menu options as items resolved through the shared menu code. Count: 1
 
