@@ -142,10 +142,10 @@ Configure organization to deploy; define environemnt types (allowed resources)
 
 | Feature | List | Add | Delete | Rename | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Resource Types | 🟢 | 🟢 | 🟢 | 🟢| 🟢 | 🔴 | 🔴 | 🔴 |
-| Account Types | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Account Resource Types | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Environment Types | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Resource Types | 🟢 | 🟢 | 🟢 | 🟢| 🟢 | 🟢 | 🔴 | 🔴 |
+| Account Types | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Account Resource Types | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Environment Types | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
 
 | Feature | List | Add | Remove | Edit (Required) | Tested | Code Review | Security Review |
