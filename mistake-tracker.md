@@ -27,6 +27,8 @@ Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting 
 
 ## 6/13/2026 -- egregious mistakes by Opus 4.8:
 
+🔴 This could be partially acceptable confusion but I wish the model had brought this to my attention rather than messing things up. I told it to copy the menthod of processing XML files and creating menus from another project. I told it to copy some default folders into a directory matching an organization id. It initially had that in the requirements. But then I had the other project agent check if this agent corectly modeled it's XML files using the pattern in the other poject. It did not. It add a <node id="123" .. model when the other project only uses <node><tag></tag> construct. It can't seem to correclty follow that pattern or recognize architectural pattners. In the course of trying to align the method for modifying files, elements, and implmentation of data types, it removed the folder and messe dup the whole structure. So I'm having to go through the whole project and update the readme and readjust all that code. It also moved the position of the element in the deafult file without asking so I had to tell it to fix that as well.
+
 🔴 Having to be way more specific than in the past. What changed? Example. 
 - what requirements need to be changed?
 - 2, 4, 6, 8, 10
