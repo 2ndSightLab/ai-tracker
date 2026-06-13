@@ -27,6 +27,18 @@ Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting 
 
 ## 6/13/2026 -- egregious mistakes by Opus 4.8:
 
+🔴 Having to be way more specific than in the past. What changed? Example. 
+- what requirements need to be chagned?
+- 2, 4, 6, 8, 10
+- Do not change 10 chanage the others
+- OK I'm changing 2, 4, 6, 8 and 20 and 22
+- WHAT? STOP. Do not change 20 and 22.
+- OK I'll change 2, 4, 6, 8, 10
+- STOP! revert 8, 10, 20, 22.
+- Only change 2, 4, 6, 8
+
+Yes, I can be more precise but it used to be able to figure that out. Feels degraded.
+
 🔴 Ask the model to modify requirements and it dropped a key important requirement.
 
 🔴 I just fugured out that tests are making up XML to run tests instead of using XML that is atually in the project. So the XML it put in the tests doesn't even match teh actual XML data in the project and of course they pass. 4.8 is not smart enough to figure out that taht the XML needs to actualy match what the project is using. It also should proably figure out it can make a copy of the actual file for it's test to make sure the real run of the program works.
