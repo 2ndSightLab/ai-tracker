@@ -53,12 +53,15 @@ The time it takes is demonstrated by feature completion and the timestamps in th
 ## Cost: ##
 
 ### Costs while building an AI Agent Bootstrap Script and Framework
-**Date Range:** Mar 7, 2026 - Jun 2, 2026
+**Date Range:** Mar 7, 2026 - Jun 12, 2026
 
 | Cost Category | Total | Mar 2026 | Apr 2026 | May 2026 | Jun 2026* |
 | :--- | ---: | ---: | ---: | ---: | ---: |
 | **TOTAL COSTS** | **\$1,389.34** | **\$359.07** | **\$387.55** | **\$621.52** | **\$21.20** |
-| Kiro | \$613.43 | \$193.55 | \$129.07 | \$285.79 | \$5.02 |
+Service / Category	Total	Mar 2026	Apr 2026	May 2026	Jun 2026*
+Total costs	$1,571.19	$359.07	$387.55	$621.52	$203.04
+Kiro	$692.19	$193.55	$129.07	$285.79	$83.77
+Virtual Private Cloud	$344.92	$50.07	$118.34	$137.58	$38.94
 
 Costs broken down by service can be found here:
 
