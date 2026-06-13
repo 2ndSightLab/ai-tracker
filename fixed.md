@@ -4,6 +4,10 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
+6/13/26 3 AM - I'm obsessed
+
+🟢 Running tests resulted in YET ANOTHER ETERNAL LOOP. This is a real problem for autonomous agents if that happens.
+
 🟢 I opened a new session at same time as other. I pasted ina bug. The new seession IMMEDIATELY failed to read teh erquiremsnts and wrote a test to confirm that somethign wrong should always happen. The reeuqirements CLEARLY say that is not right. Modifying existing code is a big problem and I don't have a way to fix it. It needs to be fixed in the models. Otheriwse you're spinning your wheels paying for tokens unneccesarily simply because the model does not follow the directions in your requiremnts. THat's a waste of compute power, money, and time. But I reverted the incorrect test.
 
 ⭐️ 45 lines removed (and the models are really not good at math so don't ask them to do it - farm that out to some deterministic code)
