@@ -27,21 +27,45 @@ Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting 
 
 ## 6/13/2026 -- egregious mistakes by Opus 4.8:
 
-🟡 Incorrecct analysis a lot that creates rework and unneccessary changes and wasted tokens. I avoid this by asking another agent to verify the analsyis. But that means I have to pay for the tokens in two agents doubling costs. If I don't do that things go in circles.
+🔴 What is causing this: 
 
-🟡 I told an agent to exaclty copy a requirements section from another readme. There were 9 reuqiremnts in that section and it copied 8.
+I had it generate some requiremnts and add to the README nad it is thinking eternally and not writing wht it just showed em to the file. I am getting errors.  I ask why it's taking so long:
 
-🟡 When i tell the agent to restore something it messed up it doesn't restore it correctly.
+what is taking so long? Write
 
-🟡 When I ask a yes or no question I want an yes or no answer not 50 lines of text. If I want to know why I'll ask why.
+> The delay was me re-deriving and reformatting the requirements in chat instead of writing. Writing them into the 
+README now.
 
-🟡 Even when specifically instructed to exaclty copy the structure of the other project's readme and implmenetation the project created XML files with a completely different structure and hit errors due to structures the common XML parser does not support. Had to spend a lot of time re-writing code and files to follow the correct pattern.
+But it doesn't write. 
+> I'm appending the menu requirements I produced above to the end of README.md now.
+Tool validation failed: 
+Tool 'fs_write' validation failed: missing field `new_str`
+> The append failed because the tool requires the content in the new_str field. Retrying the append now with the same 
+content.
 
-🟡 Did not make exact copies of other readme when directed to do so altered xml file formats and reuquirements
+FINALLY IT WRITES THE FILE.
 
-🟡 Duplicated sections in readme
+ ▸ Credits: 4.06 • Time: 1m 53s
 
-🟡 Documenting - yesterday the agent wrong a test that hung because it performed an eternal loop. That has happened before but only noticed in 4.8 not 4.7. It used to stop itself on too many iterations.
+ That is way too long.
+
+ I keep seeing popups from my firewall for SSO logging, panorama, notifications, telementry. I don't want all that stuff on my network. Just let the tool work. This is suppsosed to all be private. Now some github collector is popping up. Too much tracking not enough working.
+
+🔴 Incorrecct analysis a lot that creates rework and unneccessary changes and wasted tokens. I avoid this by asking another agent to verify the analsyis. But that means I have to pay for the tokens in two agents doubling costs. If I don't do that things go in circles.
+
+🔴 I told an agent to exaclty copy a requirements section from another readme. There were 9 reuqiremnts in that section and it copied 8.
+
+🔴 When i tell the agent to restore something it messed up it doesn't restore it correctly.
+
+🔴 When I ask a yes or no question I want an yes or no answer not 50 lines of text. If I want to know why I'll ask why.
+
+🔴 Even when specifically instructed to exaclty copy the structure of the other project's readme and implmenetation the project created XML files with a completely different structure and hit errors due to structures the common XML parser does not support. Had to spend a lot of time re-writing code and files to follow the correct pattern.
+
+🔴 Did not make exact copies of other readme when directed to do so altered xml file formats and reuquirements
+
+🔴 Duplicated sections in readme
+
+🔴 Documenting - yesterday the agent wrong a test that hung because it performed an eternal loop. That has happened before but only noticed in 4.8 not 4.7. It used to stop itself on too many iterations.
 
 ## 6/12/2026 -- state of projects and mistakes
 
