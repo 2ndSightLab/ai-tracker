@@ -142,7 +142,11 @@ https://builder.aws.com/wishlist/3ETEXLx2zZ9GFzQHFYKqmJBcS9M_w/kiro-in-aws-conso
 
 🟠 When I close an account I can't reuse the email, name, and alias in a new account. I also found out that buckets using the naming convention locked to a specific acocunt also can't be reused. Should warn users of that prior to closing account and have some kind of override for that or auto nenaming feature so can close and create new accounts with same info but still be able to restore the old ones if needed.
 
+🟠 Let me turn off telementry everywhere including AWS console. Seeing too many repeated connections that becon like a C2 channel. Just want to turn it off.
 
+🟠 Let me turn off os notifications in the AWS console. Seeing too many repeated connections that becon like a C2 channel. Just want to turn it off.
+
+🟠 Let me turn off os panorama requests in the AWS console. Seeing too many repeated connections that becon like a C2 channel. Just want to turn it off. I find panorama API calls odd because Google aimode reports Panarama as a deperecated client camera service. What even is that?
 
 
 
