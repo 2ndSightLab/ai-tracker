@@ -148,7 +148,8 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Environment Types | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Environment Type Account Types | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Environment Type Resource Types | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Default Org (define mangemnt env) | 🔴 | 🔴 | 🔴  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Default Org (define mangemnt env) | 🔴 | n/a | n/a | n/a | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Organization Enviroment Types | 🔴 | n/a | n/a | n/a | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Configure Organization ###
 
