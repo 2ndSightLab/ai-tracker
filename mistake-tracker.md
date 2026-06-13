@@ -22,11 +22,9 @@ In the beginning it would log everything as a completely different mistake with 
 when you boil it down to the core problems*.
 
 Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting very frustrated because the model feels nerfed. I don't have time to log every error because there are so many. I also just started tracking this way after working on this project for a couple of months because logging every error caused the readme to get too massive, wasting tokens.
-________
+
 
 ## 6/12/2026 -- state of projects and mistakes
-
-________
 
 ## Orchestrator
 
