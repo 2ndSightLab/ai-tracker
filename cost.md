@@ -1,6 +1,6 @@
 ### Costs while building an AI Agent Bootstrap Script and Framework
 
-Date Range: Mar 7, 2026 - Jun 12, 2026
+**Date Range:** Mar 7, 2026 - Jun 12, 2026
 
 This is interesting because I had a $200 plan which was all used up but this report is not reflecting that dollar amount. Hmm. I used up the initial $200 June 1 - 10. I cancelled the original plan and strated a new plan and I'm on my second $200 plan. Also, my EC2 costs are higher than they should be for reasons...it's not you, it's me.
 
