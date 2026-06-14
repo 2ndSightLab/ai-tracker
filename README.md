@@ -294,11 +294,6 @@ Back up infrastructure segregated from other infrastructure
 | Backup VPC RAM share | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Bacup VPC Flowlogs | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
 
-### Backup Environment Actions ###
-
-Feature | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | 
-| Archive Acount | 🔴 | 🔴 | 🔴 | 🔴 | 
 
 ### Domains Envirnoment ( Base Environment +) ###
 
@@ -309,14 +304,6 @@ Can lock when not in use with deny all SCP.
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Accounts: dns (no backup) | 🟡 | 🟡 | 🟢 | 🟢 | 🔴 | 🔴 |
 
-### DNS Environment Actions ###
-
-| Feature | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | 
-| Move Domain | 🟢 | 🟢 | 🔴 |
-| Move Hosted Zone | 🟢 | 🔴 | 🔴 |
-| Register domain | 🟡 | 🔴 | 🔴 | 
-| Update Parent Hosted Zone (specific steps TBD) | 🔴 | 🔴 | 🔴 | 
 
 ### Work Environment Resources ( Base Environment +) ###
 
@@ -382,12 +369,6 @@ I have a separate project that allows deploying a static website in any web acco
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Accounts: web, backup | 🟢 | 🟡 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Deploy Web Lambda | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
-
-### Backup Environment Actions ###
-
-Feature | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | 
-| Deploy Static Website | 🔴 | 🔴 | 🔴 | 🔴 | 
 
 ### Kiro management environment (Base Environment +) ###
 
@@ -482,6 +463,15 @@ Deploy environment to single account (account in a different organization or sta
 | Role | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Jobs Instance | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 
+### DNS Environment Actions ###
+
+| Feature | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | 
+| Move Domain | 🟢 | 🟢 | 🔴 |
+| Move Hosted Zone | 🟢 | 🔴 | 🔴 |
+| Register domain | 🟡 | 🔴 | 🔴 | 
+| Update Parent Hosted Zone (specific steps TBD) | 🔴 | 🔴 | 🔴 | 
+
 ### AMI Account Actions ###
 
 | Feature | Run | Tested | Code Review | Security Review |
@@ -501,6 +491,18 @@ Deploy environment to single account (account in a different organization or sta
 | Feature | Run | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: |
 | Deploy External AMI Share Key | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+
+### Web Environment Actions ###
+
+Feature | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | 
+| Deploy Static Website | 🔴 | 🔴 | 🔴 | 🔴 | 
+
+### Backup Environment Actions ###
+
+Feature | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | 
+| Archive Acount | 🔴 | 🔴 | 🔴 | 🔴 | 
 
 ### Manage Organization Environment ###
 
