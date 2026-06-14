@@ -187,9 +187,13 @@ Configure organization to deploy; define environemnt types (allowed resources)
 
 | Feature | Run | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: 
-|  | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Drift Delete Unauthorized Resources | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Drift Deploy Missing Resources | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Select Organization | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Deploy Org | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Select Env | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Deploy OU | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Deploy Accounts | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Deploy Env Resoruces (All Accounts) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Deploy Account Resoruces (Per Account) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
 
 ### Drift ##
 
