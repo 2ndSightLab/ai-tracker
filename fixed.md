@@ -66,7 +66,7 @@ I should have studied the reference project first and stayed within the existing
 
 🟢 Default settings, edit account settings with validation based on define settings schem in config types project
 
-6/13/26 2:00 PM
+## 6/13/26 2:00 PM
 
 🟢 Diagram of org - shows org environments, acocunts, allowed resources in acounts, rename works, add, remove, etc. all seem to dispaly correct values
 
@@ -76,7 +76,7 @@ I should have studied the reference project first and stayed within the existing
 
 🟢 Spent some time cleaning up, organizing and updating the tracker readme. I'm figuring out a better architecture as I go. Also update the costs. Is something wrong with billing? I mean I'm not complaining about it now because it seems like it's lower than it should be but it seems off.
 
-6/13/26 3 AM - I'm obsessed
+## 6/13/26 3 AM - I'm obsessed
 
 🟢 Running tests resulted in YET ANOTHER ETERNAL LOOP. This is a real problem for autonomous agents if that happens. Kille dan fixed the problem in the test. But anyway: YAY 🎉🎉🎉 I just finsihed what I ahve been trying to do ALL WEEK in one day. Good night.
 
@@ -86,7 +86,7 @@ I should have studied the reference project first and stayed within the existing
 
 ⭐️ 45 lines removed (and the models are really not good at math so don't ask them to do it - farm that out to some deterministic code)
 
-6/12/2026 2:52 PM
+## 6/12/2026 2:52 PM
 
 🟢 I don't know if it was just my approach but WAY better today. I revised my structure to make it easiery for the model to undesrtand by defining the complete menu struccture and all the data in XML. Then I defined the requierements to explicity write reusable code in certain place.s there's a specific file name associated with most requirement sections. Everything is still faster after the issue I discovered yesterday (and reported to AWS through various channels). The model is not being nearly so dumb today. WAY BETTER. UNTIL. Literally as I'm writing this it added one new file for a new menu item wiht some new functionality and it broke all the rules. More functinoality and more code = more Q#$&#$*^&#WSDSBGFJT&$%@. Fixing. It mostly followed the rules and I watched it to make sure it was following the rules. But hese modesl require A LOT of arhictectureal guideance and to be reminded CONSTANTLY to keep architectural integrity in tact. THat is why I write small pieces in separate projects and then move on so the existing code doesn't get mangled. 
 
@@ -94,7 +94,7 @@ I should have studied the reference project first and stayed within the existing
 
 🟢 Woke up thinking that the agent is getting confused by Environment Types / Account Types Environmetns / Accounts. The reason I have both is that I might have a penetest environemnt, for example, and I might create muultiople pentested accounts in the pentest environment using the pentest account type. Or I might create multiple enviroments of type Web - like Web Prod, Web Dev, etc. So going to try to split off the types from the actual accounts and see if that helps...here we go... 
 
-6/11/2026 12:36 AM
+## 6/11/2026 12:36 AM
 
 🟢 Well, since the model WIPED OUT all the data in my organization configuration, I'll add a Reset to Default option which copies bakc in the default configuration files.
 
@@ -106,7 +106,7 @@ I should have studied the reference project first and stayed within the existing
 
 🟢  DUPLICATED WHAT IS IN XML FILES AGAIN. So tired of this. I cannot get this proejct done correctly. The XML files track management type resources. This is all in the readme. Instead of using the data to list the managemet type reousrces the model put it all in the code and duplicated all the code and variables agian. Fixing.
 
-6/11/2026 9:30 PM
+## 6/11/2026 9:30 PM
 
 🟢 reallizing I need a separate list for resources - adding.
 
@@ -116,7 +116,7 @@ I should have studied the reference project first and stayed within the existing
 
 🟢 The first set of menus seemed ok so I started testing the second set of menus from option #2 in the main organization menu. Data I entered in prior testing is missing. I asked the model to figure it out and instead of correctly using the XML parser to edit a file it truncated a whole file and wiped out data. It took it like three tries to read the readme and figure out it was supposed to use the xml-parser and not truncate the data. It also had problems correctly logging generic mistake and not creating duplicates. Turns out there is a limitation in the XML parser and instaed of telling me that teh configure project decided it woudl just delete all the data and do some hokey work around. Had it write a prompt for the xml project.
 
-6/11/2026 4:45 PM
+## 6/11/2026 4:45 PM
 
 🟢 Testing code changes. Well, it's pretty good but there's a defect where the code continuously loops through two menus intead of going to the corect one on Back. So I asked the model and it was a defect. I todl it to fix it. Then it did a bunch of analysis and came back and said it was not a defect (it is). So I asked it why it said it was not a defect when it said it was one earlier and it said it make a mistake and logged an error for itself for incorrect analysis and Asked if I wanted it to fix it. I said yes.  Now all tests pass. Try again...Well. It did not work exactly right but good enough. It jumps back two menus to avoid the eternal loop.
 
