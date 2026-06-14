@@ -23,6 +23,10 @@ when you boil it down to the core problems*.
 
 Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting very frustrated because the model feels nerfed. I don't have time to log every error because there are so many. I also just started tracking this way after working on this project for a couple of months because logging every error caused the readme to get too massive, wasting tokens.
 
+## 6/14/2026 3:41 PM
+
+Let's see how many mistakes we get today...
+
 ## 6/13/2026 
 egregious mistakes by Opus 4.8 which was being way too annoyingly verbose and wouldn't stop, reading too many files, overcomplicating things, so I switched back to 4.6 which was slightly better not much:
 ##
