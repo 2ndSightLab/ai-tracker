@@ -27,7 +27,7 @@ Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting 
 
 Let's see how many mistakes we get today...
 
-
+🔴 Figured out why one project is continuously hanging. It was due to improper error handling in another projecct. The project using the other project cannot diagnose that for some reason after repeatedly having the issues. The third paroject was able to diagnose it on the first try. Why did the project continously churn and not figure it out?
 
 ## 6/13/2026 
 egregious mistakes by Opus 4.8 which was being way too annoyingly verbose and wouldn't stop, reading too many files, overcomplicating things, so I switched back to 4.6 which was slightly better not much:
