@@ -170,18 +170,26 @@ Configure organization to deploy; define environemnt types (allowed resources)
 
 ### Configure Actions ###
 
-| Feature | Tested | Code Review | Security Review |
+| Feature | Run | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | 
-| Create CLI Profiles | 🟡 | 🔴 | 🔴 |
-| Select CLI Profiles | 🟢 | 🔴 | 🔴 | 
-| Test CLI Porfile |  🟢 | 🔴 | 🔴 | 
-| Look up Org, Root, Acount ID | 🟢 | 🔴 | 🔴 | 
-| Organization Seettings | 🟢 | 🔴 | 🔴 | 
-| Environment Settings | 🔴 | 🔴 | 🔴 | 
-| List Available Account Resources | 🟢 | 🔴 | 🔴 | 
-| Organization Diagram - All | 🟢 | 🔴 | 🔴 | 
-| Organization Diagram - Enviroments | 🟢 | 🔴 | 🔴 | 
-| Organization Diagram - Accounts | 🟢 | 🔴 | 🔴 | 
+| Create CLI Profiles | 🟡 | 🟡 | 🔴 | 🔴 |
+| Select CLI Profiles | 🟢 | 🟢 | 🔴 | 🔴 | 
+| Test CLI Porfile | 🟢 | 🟢 | 🔴 | 🔴 | 
+| Look up Org, Root, Acount ID | 🟢 | 🟢 | 🔴 | 🔴 | 
+| Organization Seettings | 🟢 | 🟢 | 🔴 | 🔴 | 
+| Environment Settings | 🔴  | 🔴 | 🔴 | 🔴 | 
+| List Available Account Resources | 🟢 | 🟢 | 🔴 | 🔴 | 
+| Organization Diagram - All | 🟢 | 🟢 | 🔴 | 🔴 | 
+| Organization Diagram - Enviroments | 🟢 | 🟢 | 🔴 | 🔴 | 
+| Organization Diagram - Accounts | 🟢 | 🟢 | 🔴 | 🔴 | 
+
+### Deploy ##
+
+| Feature | Run | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: 
+|  | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Drift Delete Unauthorized Resources | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Drift Deploy Missing Resources | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
 
 ### Drift ##
 
