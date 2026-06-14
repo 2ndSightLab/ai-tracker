@@ -174,11 +174,11 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | :--- | :---: | :---: | :---: | 
 | Create CLI Profiles | 🟡 | 🔴 | 🔴 |
 | Select CLI Profiles | 🟢 | 🔴 | 🔴 | 
-| Test CLI Porfile | 🟡 | 🔴 | 🔴 | 
-| Look up Org, Root, Acount ID | 🔴 | 🔴 | 🔴 | 
-| Organization Seettings | 🟡  | 🔴 | 🔴 | 
+| Test CLI Porfile |  🟢 | 🔴 | 🔴 | 
+| Look up Org, Root, Acount ID | 🟢 | 🔴 | 🔴 | 
+| Organization Seettings | 🟢 | 🔴 | 🔴 | 
 | Environment Settings | 🔴 | 🔴 | 🔴 | 
-| List Available Account Resources  | 🟢 | 🔴 | 🔴 | 
+| List Available Account Resources | 🟢 | 🔴 | 🔴 | 
 | Organization Diagram - All | 🟢 | 🔴 | 🔴 | 
 | Organization Diagram - Enviroments | 🟢 | 🔴 | 🔴 | 
 | Organization Diagram - Accounts | 🟢 | 🔴 | 🔴 | 
