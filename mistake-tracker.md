@@ -27,6 +27,12 @@ Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting 
 
 ## 6/13/2026 -- egregious mistakes by Opus 4.8:
 
+🔴 Trying to chagne the root node for some dumb reason when it's suposed to be editing values in a block inside the root. NO REASON.  Good news: for an existing non-empty file, xml-write-nested does NOT change the root. It only...
+
+🔴 Model says: You're right. The parser is fine — the README ### XML Parsing requirements say I can use bracket predicates and the descendant // 
+construct in an XML_XPATH for reads. The fix is to write scoped to the parent, not change the parser. The xml-write upsert matches the 
+first <name> anywhere because I'm not using the parser correctly per the requirements.
+
 🔴 I have a rule in readme to NOT write comments in code only to refernece requiremet sections otherwise I end up with comments that do not match the requiremnts I do not want long nonsense commets no one should be looking at. They should be lookign at the requiremnts in the README. I cannot get the model to stop writing verbose unneccessary coments.  Please make that stop.
 
 🔴  I told AI to fix dispply which looked really weird like this when a value is not set on an edit sreen: 
