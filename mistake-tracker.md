@@ -27,6 +27,8 @@ Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting 
 
 ## 6/13/2026 -- egregious mistakes by Opus 4.8:
 
+🔴 Reading the same files over and over again when all the data is already in memory.
+
 🔴 Noticed a hideously long block of code and pasted into google aimode and asked to simplify. Instantly removed 50+ lines of code when Opus was spinning its wheels trying to figure out how to simplify the file.
 
 🔴 Trying to chagne the root node for some dumb reason when it's suposed to be editing values in a block inside the root. NO REASON.  Good news: for an existing non-empty file, xml-write-nested does NOT change the root. It only...
