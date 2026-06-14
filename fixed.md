@@ -4,7 +4,10 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
-6/14/26 12:00 AM
+## 6/14/2026 3:41 PM Let's see what we can get done today...
+
+
+## 6/14/26 12:00 AM
 
 Have already used 53% of next $200/month plan.
 
@@ -156,7 +159,7 @@ Net: roughly +40 lines. These are estimates from memory, not exact counts.
 https://github.com/2ndSightLab/ai-tracker/blob/main/assessing-degredation.md
 Turning off telemetry for Kiro custom agents seems to help.
 
-6/10/2026 11:15 PM
+## 6/10/2026 11:15 PM
 
 🟢 This is a waste of time. Anthropic models are too slow to be bearable and completely nerfed right now. I'm having to fix th esame things over and over agian. 
 - It can't follow the instructions in the read me and is formatting all the requirements incorrectly. It doesn't usually do that. I'm having to fix them over and over agian. 
@@ -174,7 +177,7 @@ So as of now I have another big mess to clean up in a project that I can't seem 
 
 Whoah....what a game....Phew Knicks. Talk about a comeback...
 
-6/10/2026 9:00 PM
+## 6/10/2026 9:00 PM
 
 $200 plan used up - 10 days into the month.
 
@@ -198,7 +201,7 @@ $200 plan used up - 10 days into the month.
 
 🟢 Figured out that the project made a huge mess of the menus putting them all in one file insted of putting each menu in it's own file as instructed. I fixed that by telling it to put each menu in it's own file name matching the menu banner that sets vars and calls the common menu code. What a MESS. I also fixed naming conventions and banner titles to be more consistent and have a unique section in the readme for each menu with the file name. This is why it can't figure anytihng eles. And it was not instructed to create the menus that way I should have checked that sooner. Still, it shoudl be able to trace the code and struggles with that.
 
-6/10/2026 3:30 PM
+## 6/10/2026 3:30 PM
 
 🟢 Wrote another eternal loop. Had to stop it. Happens when writing tests.
 
@@ -282,7 +285,7 @@ $200 plan used up - 10 days into the month.
 
 🟢 Too many mistakes to log here. First the model told me to do something blantant not allowed in its readme. Then it can't figure out how to write accurate instrutions. It's not correctly file name in README when strucuture has changed. We are fixing config moving from env to org because it's org wide and the model keeps screwing up. It update the file and left hte new config out of the readme. It's not doing what I ask right away or the way I ask. *sigh*. I can't spend all my time logging all of this. The models are not good at complex cross project architectures. But if you give them all the code in one project they mess it up. I'm having to be very explicit and ask it questions to ensure it has analyzed things correctly and repat myself a lot right now. But it eventually gets it. Switching back to 4.6 to see if it does any better.
 
-6/6/2026 4:406 PM
+## 6/6/2026 4:406 PM
 
 🟢 Moved organization wide cnofiguration items out of env to org.
 
@@ -322,7 +325,7 @@ $200 plan used up - 10 days into the month.
 
 🟢 Single shared xml parser code in separate project. Like I've written about on my blog AI is non-deterministic. So I had two software projects using xmllint in two completely different ways, one of which was kind of sketchy and possibly insecure but I'd need to look into it more. I got one of the projects to write the code in such a way it will work for both, but the risk is that now the one project with control of the code might break it so it doesn't work for the other. So the first thing I'm going to do is put bash-xml-parser into it's own project both can use but not change. Along the way I'll try to ensure that the logic in that project is complete and secure and can work for all new future projects so I don't have XML parsing being done every which way and don't have to spend time on that. The readme in the XML parser project will say how to use it. Multiple projects reviewing and using it will tell me if there's anything wrong with it. I have a framework that lets me spin up a new project, create a github repo, set up the custom agent in a minute and customize all the Kiro settings along the way if I want to so I just use that each time I want to set up a new project. I do not give me credentials to the agent or third-party tools. All deterministic scripts I control.
 
-6/6/2026 1:46 AM
+## 6/6/2026 1:46 AM
 
 🟢 Cleaned up ugly code to make it more maintainable and better ogranized. Result:
 
@@ -339,7 +342,7 @@ files.
 
 🟢 Along with this I'm thinking about a configure organization script...added to run list.
 
-6/4/2026
+## 6/4/2026
 
 🟢 Fixed various things, added organization adn all features step, tested, verified and in between tested ACM step and dosn't work. Told the model to add code to check status of domain and hsotd zoen befoer installing the cert. FINALLY. I kept telling the agent to gather any and all info to troubleshoot the problem and it couldn't figure it out. Finally i rant the move hosted zone step again which has all the output about what it is moving. I gave that to the agent and it figured out that the domain was wrong in a config file. Added another check to display teh domain and the hsoted zonesin the accout and tel the user if no matching hosted zone. Should have made that problem obvious.
 
@@ -449,7 +452,7 @@ SKIPMENUS approaches before settling on the final version.
 
 🟢 found more incorrect menus and model is struggling to update them correctly
 
-6/3/2026 
+## 6/3/2026 
 
 🟢 AI models are bad at reusable, clean menu code.
 
@@ -587,7 +590,7 @@ SKIPMENUS approaches before settling on the final version.
 
 🟢  The coee to skip env prompt when env was selected and save to file on prior run not working.
 
-6/1/2026 - 6/2/2026
+## 6/1/2026 - 6/2/2026
 
 🟢  Stuck in all directions and connot test any further until I fix the following. What I have to do now is re-set up my Kiro environment or use an account temporarily in my old environment until I fix and deploy Kiro in the new environment. Since I deleted my old instances and AWS Identity center I'm going to set up a temp OU and account for this purpose
 Fix: was able to deploy Identity Center and Kiro in new environment even though other stuff was blocked. Had to figure ou why the profile was blank and what to do about that. Had to enteer a user email to enable kiro which was not my logged in user or a user I had given ANY permissions to so that was weird.
