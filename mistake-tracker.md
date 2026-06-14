@@ -23,7 +23,10 @@ when you boil it down to the core problems*.
 
 Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting very frustrated because the model feels nerfed. I don't have time to log every error because there are so many. I also just started tracking this way after working on this project for a couple of months because logging every error caused the readme to get too massive, wasting tokens.
 
-## 6/13/2026 -- egregious mistakes by Opus 4.8 which was being way too annoyingly verbose and wouldn't stop, reading too many files, overcomplicatign things, so I switched back to 4.6 which was slightly better not much:
+## 6/13/2026 
+egregious mistakes by Opus 4.8 which was being way too annoyingly verbose and wouldn't stop, reading too many files, overcomplicatign things, so I switched back to 4.6 which was slightly better not much:
+
+🔴 Incosistent UI. There's a blank line after every prompt. But randomly decides not to add one.
 
 🔴 Just used aws configure to get mfa serial at my explicit direction to get that value from a role profile. Then had to get the role ARN and started doing all kinds of complicated things rather than use the same command it had literally just used but with a different variable. Wasting so much time.
 
