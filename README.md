@@ -195,14 +195,6 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Deploy Env Resoruces (All Accounts) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Deploy Account Resoruces (Per Account) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
 
-### Drift ##
-
-| Feature | Run | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: 
-| Drift Report | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Drift Delete Unauthorized Resources | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Drift Deploy Missing Resources | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
-
 ### Base Environment Resources ###
 
 Resources installed in every environment. Some are optinoal.
@@ -462,6 +454,14 @@ Deploy environment to single account (account in a different organization or sta
 | User | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Role | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Jobs Instance | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+
+### Drift ##
+
+| Feature | Run | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: 
+| Drift Report | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Drift Delete Unauthorized Resources | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Drift Deploy Missing Resources | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
 
 ### DNS Environment Actions ###
 
