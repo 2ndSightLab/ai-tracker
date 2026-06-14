@@ -6,8 +6,7 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 ## 6/14/2026 3:41 PM Let's see what we can get done today...
 
-
-
+🟢 First step > create a new project and extract requirements common to both the new projects I created that use the XML parsing and menu projects and try to create a generic set of requiremnts any project can use for that purpose. I want to try to make the instrucctions more generic and explicit and in a separtea project so when a project is working on a new task it exactly follows and does not chagne those instructions. It can only focus on and revise it's own readme and the things unique to its own project. Hopefully that will help prevent some of the variance I've seen... TBD.
 
 ## 6/14/26 12:00 AM
 
