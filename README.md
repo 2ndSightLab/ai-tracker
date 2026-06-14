@@ -171,7 +171,7 @@ Configure organization to deploy; define environemnt types (allowed resources)
 ### Configure Actions ###
 
 | Feature | Run | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | 
+| :--- | :---: | :---: | :---: | :---: | 
 | Create CLI Profiles | 🟡 | 🟡 | 🔴 | 🔴 |
 | Select CLI Profiles | 🟢 | 🟢 | 🔴 | 🔴 | 
 | Test CLI Porfile | 🟢 | 🟢 | 🔴 | 🔴 | 
