@@ -1,4 +1,4 @@
-# AI Tracker
+f# AI Tracker
 
 ## Objective
 
@@ -177,7 +177,7 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Test CLI Porfile | 🟢 | 🟢 | 🔴 | 🔴 | 
 | Look up Org, Root, Acount ID | 🟢 | 🟢 | 🔴 | 🔴 | 
 | Organization Seettings | 🟢 | 🟢 | 🔴 | 🔴 | 
-| Environment Settings | 🔴  | 🔴 | 🔴 | 🔴 | 
+| Environment Settings | 🔴 | 🔴 | 🔴 | 🔴 | 
 | List Available Account Resources | 🟢 | 🟢 | 🔴 | 🔴 | 
 | Organization Diagram - All | 🟢 | 🟢 | 🔴 | 🔴 | 
 | Organization Diagram - Enviroments | 🟢 | 🟢 | 🔴 | 🔴 | 
