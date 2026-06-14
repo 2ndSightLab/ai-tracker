@@ -164,14 +164,23 @@ Configure organization to deploy; define environemnt types (allowed resources)
 
 | Feature | List | Add | Delete | Rename | Edit | Menus | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Organization | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Organization Configuration | 🟢  | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Organization | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Evironments | 🟢 | 🟢 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Environment Accounts | 🟢 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Environment Configuration | 🟢 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Environment Resources | 🟢 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Environment Account Resources | 🟢 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Organization Diagram | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Organization Diagram | 🟢 | 🟢 | 🟢 | 🟢 | n/a | 🟢 | 🟢 | 🔴 | 🔴 |
+
+
+### Configure Actions ###
+
+| Feature | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | 
+| Create CLI Profiles | 🔴 | 🔴 | 🔴 |
+| Select CLI Profiles | 🟡  | 🔴 | 🔴 | 
+| Test CLI Porfile | 🔴 | 🔴 | 🔴 | 
+| Look up Org, Root, Acount ID | 🔴 | 🔴 | 🔴 | 
 
 ### Manage Organization Environment ###
 
