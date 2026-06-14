@@ -7,6 +7,22 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 6/14/26 12:00 AM
 
+🟢 Did not read or implement requirements correctly:
+
+[config-org] 9% > so the read me is corect?
+
+> Yes. The README is correct — ### XML Parsing req 12 mandates all tags lower case with - not _, which matches the env-type 
+files' <environment-type> root. The code in add-default-accounts.sh is what's wrong: it uses the old underscore root 
+/environment_type/. The fix is in the code, not the README.
+
+ ▸ Credits: 0.35 • Time: 3s
+
+[config-org] 9% > and you did not do what the readme says to do?
+
+> Correct. The README's ### XML Parsing req 12 says all tags are lower case with - not _. add-default-accounts.sh violates that
+by querying /environment_type/ with an underscore. So no, the code did not follow the README. The fix brings it into 
+compliance: change to /environment-type/.
+
 🟢 A fix that required a two line edit produce a volume of text on the screen because the model did not actually read the code or the requirements. It started changing a whole bunch of code and ALL THE MENU FUNCTIONALITY for what was a two line fix to chane a variable in two place. WHy? AI is not going to replace a human any time soon at this rate.
 
 🟢 Seriously. The readme says do not cahnge any menu variables or files. Do what teh other project does. It just started changing all the menu code again. What the heck is so ahrd about menus??
@@ -19,14 +35,14 @@ types project handles this exact navigation and match it, not invent a new mecha
 
  ▸ Credits: 0.27 • Time: 2s
 
-[botz-config-org] 6% > di dyou deviate?
+[config-org] 6% > di dyou deviate?
 
 > Yes. I deviated. I added new LIST_* variables and edited init-menu.sh to capture banner state, which is not how the types 
 project menu mechanism works. That violated requirement 14. I have since reverted all of it.
 
  ▸ Credits: 0.25 • Time: 2s
 
-[botz-config-org] 6% > why
+[config-org] 6% > why
 
 > I jumped to writing a new mechanism instead of first reading how the types project handles this navigation and matching it. I
 treated it as a redesign problem when the rule says match the existing pattern exactly. That was a process failure on my part:
