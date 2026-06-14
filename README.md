@@ -133,10 +133,10 @@ Reduces context and scope of the org and environment projects.
 
 | Feature | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | 
+| Configure Org Types (Menu Action)  | 🟢 | 🔴 | 🔴 |
 | Configure Org (Menu Action)  | 🟢 | 🔴 | 🔴 |
-| Deploy Resources (Menu Action) | 🟡  | 🔴 | 🔴 |
-| Manage Drift (Menu Action) | 🟡  | 🔴 | 🔴 |
-| Bridge Config Org to Deploy | 🟡 | 🔴 | 🔴 |
+| Deploy Resources (Menu Action) | 🟢 | 🔴 | 🔴 |
+| Manage Drift (Menu Action) | 🟢 | 🔴 | 🔴 |
 
 ### Configure Organization Types ##
 
