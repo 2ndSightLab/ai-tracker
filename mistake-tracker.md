@@ -27,6 +27,8 @@ Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting 
 
 ## 6/13/2026 -- egregious mistakes by Opus 4.8:
 
+🔴 I have a rule in readme to NOT write comments in code only to refernece requiremet sections otherwise I end up with comments that do not match the requiremnts I do not want long nonsense commets no one should be looking at. They should be lookign at the requiremnts in the README. I cannot get the model to stop writing verbose unneccessary coments.  Please make that stop.
+
 🔴  I told AI to fix dispply which looked really weird like this when a value is not set on an edit sreen: 
 Edit Whatever: (current: , /c to cancel)
 
