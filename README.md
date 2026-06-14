@@ -183,19 +183,6 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Organization Diagram - Enviroments | 🟢 | 🔴 | 🔴 | 
 | Organization Diagram - Accounts | 🟢 | 🔴 | 🔴 | 
 
-### Manage Organization Environment ###
-
-* Manage enviroment resources as a group
-  
-| Feature | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | 
-| Select Environment | 🟡 | 🔴 | 🔴 |
-| Deploy all resources | 🟡 | 🟡 | 🔴 | 
-| Auto-gen env SCP | 🔴 | 🔴 | 🔴 |
-| Auto-gen account SCP | 🔴 | 🔴 | 🔴 |
-| Delete all resources | 🔴 | 🔴 | 🔴 | 
-| View all resources | 🔴 | 🔴 | 🔴 | 
-
 ### Drift ##
 
 | Feature | Run | Tested | Code Review | Security Review |
@@ -503,4 +490,15 @@ Deploy environment to single account (account in a different organization or sta
 | :--- | :---: | :---: | :---: | :---: |
 | Deploy External AMI Share Key | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
+### Manage Organization Environment ###
 
+* Manage enviroment resources as a group
+  
+| Feature | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | 
+| Select Environment | 🟡 | 🔴 | 🔴 |
+| Deploy all resources | 🟡 | 🟡 | 🔴 | 
+| Auto-gen env SCP | 🔴 | 🔴 | 🔴 |
+| Auto-gen account SCP | 🔴 | 🔴 | 🔴 |
+| Delete all resources | 🔴 | 🔴 | 🔴 | 
+| View all resources | 🔴 | 🔴 | 🔴 | 
