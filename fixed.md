@@ -7,6 +7,8 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 6/14/26 12:00 AM
 
+🟢 A fix that required a two line edit produce a volume of text on the screen because the model did not actually read the code or the requirements. It started changing a whole bunch of code and ALL THE MENU FUNCTIONALITY for what was a two line fix to chane a variable in two place. WHy? AI is not going to replace a human any time soon at this rate.
+
 🟢 Seriously. The readme says do not cahnge any menu variables or files. Do what teh other project does. It just started changing all the menu code again. What the heck is so ahrd about menus??
 
  14 Do not deviate from how menus technically work in that project.
