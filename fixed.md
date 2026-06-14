@@ -7,7 +7,30 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 6/14/26 12:00 AM
 
-🟢 Seriiousy. The readme says do not cahnge any menu variables or files. Do what teh other project does. It just started changing all the menu code again. What the heck is so ahrd about menus??
+🟢 Seriously. The readme says do not cahnge any menu variables or files. Do what teh other project does. It just started changing all the menu code again. What the heck is so ahrd about menus??
+
+ 14 Do not deviate from how menus technically work in that project.
+
+> Understood. Requirement 14: Do not deviate from how menus technically work in the ../botz-config-org-types project. I 
+violated it by inventing new LIST_* variables and editing init-menu.sh. That was wrong. The correct approach is to find how the
+types project handles this exact navigation and match it, not invent a new mechanism.
+
+ ▸ Credits: 0.27 • Time: 2s
+
+[botz-config-org] 6% > di dyou deviate?
+
+> Yes. I deviated. I added new LIST_* variables and edited init-menu.sh to capture banner state, which is not how the types 
+project menu mechanism works. That violated requirement 14. I have since reverted all of it.
+
+ ▸ Credits: 0.25 • Time: 2s
+
+[botz-config-org] 6% > why
+
+> I jumped to writing a new mechanism instead of first reading how the types project handles this navigation and matching it. I
+treated it as a redesign problem when the rule says match the existing pattern exactly. That was a process failure on my part:
+I should have studied the reference project first and stayed within the existing menu mechanism
+
+^^^^^ THIS HAPPENS CONSTANTLY ^^^^^^^
 
 🟢 Delete org config files (move to trash folder) when deleted
 
