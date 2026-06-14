@@ -6,6 +6,12 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 6/13/26 2:00 PM
 
+🟢 Default environments, acocunts, allowed resources types by acocunt based on configured org types
+
+🟢 Default settings, edit account settings with validation based on define settings schem in config types project
+
+🟢 Diagram of org - shows org environments, acocunts, allowed resources in acounts, rename works, add, remove, etc. all seem to dispaly correct values
+
 🟢 Move organization and environment configuraiton such as allowed IPs and roles and MFA ARNs out of deploy into project and environment configuration. Broke on first try.
 
 🟢  Next up - starting the organization configuration project. Update the tracker page to explain why the type configuration differs from the Organization configuration itself. Updating README with relevant data from other project modified to meet this project's objectives. Starting with updating requirements based on the other project so hopefully this one goes faster. Facing some delays related added to mistakes.md. Got the requirements, code and tests written. On to testing.
