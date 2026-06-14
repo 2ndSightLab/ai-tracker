@@ -27,6 +27,17 @@ Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting 
 
 ## 6/13/2026 -- egregious mistakes by Opus 4.8:
 
+I told AI to fix dispply which looked really weird like this when a value is not set on an edit sreen: 
+Edit Whatever: (current: , /c to cancel)
+
+I told it to just diaply the existing value ($current) and no cancel: adn remove , /c to cancel but not the functionality. Do not display the () if not value exists. Do not display current:
+
+It suposedly did what I asked and said, OK now it is:
+
+(current: value)
+
+Something seems to be wrong with this model because it did not make mistakes like this in the past. Am I getting a dummbed down model because everynoe had to revert back to 4.8 and now it's overloaded or what is going on here? We really have no way to verify and validate what model we are actually getting.
+
 🔴 Eternal loop trying to fix a test:
 
 New organization name: value must not be empty
