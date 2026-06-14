@@ -7,6 +7,10 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 6/14/26 12:00 AM
 
+🟢 Role asumption - look up org id, ou, acount id. Poplulate MFA serial and role arn from CLI role profile. Set defaut values for lists in setting so can hit enter to continue. And settigs for an org are done. 
+
+🟢 Started adding mistakes to mistakes.md file becuse there are too many right now. Model is definitely not as good as before. I cannot believe there is not some bait and switch going on. Unless it's Kiro changes. The models seemed to be stuck spinning in plannning mode earlier.
+
 🟢 Did not read or implement requirements correctly:
 
 [config-org] 9% > so the read me is corect?
