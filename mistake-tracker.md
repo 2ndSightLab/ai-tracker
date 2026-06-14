@@ -29,7 +29,7 @@ Let's see how many mistakes we get today...
 
 🔴 Trying to reconcile global requirements every project should follow. Errors for one of the agents where it completely ignored which file to reaad:
 The agent that responded was actually reading a different README than the one on disk — the file does contain "## General Rules", "### 
-Most Critical Requirements...", "### Rules for Writing Requirements", and "### Error Handling file: botz-project/*". So that agent's 
+Most Critical Requirements...", "### Rules for Writing Requirements", and "### Error Handling file: project/*". So that agent's 
 claim those don't exist, and that there's "## Web Rules / ## Python Rules / ## Agent Rules", is wrong for this file. Possibly it read a 
 stale copy or a different project.
 
