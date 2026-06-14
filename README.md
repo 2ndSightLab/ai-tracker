@@ -162,25 +162,27 @@ Configure organization to deploy; define environemnt types (allowed resources)
 * Multiple accounts of the same type can be created (Pentest1, Pentest2, etc.)
 * The resource list is pullled from the type configuration, not altered here.
 
-| Feature | List | Add | Delete | Rename | Edit | Menus | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Organization | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Evironments | 🟢 | 🟢 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Environment Accounts | 🟢 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Environment Configuration | 🟢 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Environment Resources | 🟢 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Environment Account Resources | 🟢 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Organization Diagram | 🟢 | 🟢 | 🟢 | 🟢 | n/a | 🟢 | 🟢 | 🔴 | 🔴 |
-
+| Feature | List | Add | Delete | Rename | Menus | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Organization | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Evironments | 🟢 | 🟢 | 🟢 | n/a | 🔴 | 🔴 | 🔴 | 🔴 |
+| Environment Accounts | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Organization Diagram | 🟢 | 🟢 | 🟢 | 🟢 | n/a | 🟢 | 🔴 | 🔴 |
 
 ### Configure Actions ###
 
 | Feature | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | 
-| Create CLI Profiles | 🔴 | 🔴 | 🔴 |
-| Select CLI Profiles | 🟡  | 🔴 | 🔴 | 
-| Test CLI Porfile | 🔴 | 🔴 | 🔴 | 
+| Create CLI Profiles | 🟡 | 🔴 | 🔴 |
+| Select CLI Profiles | 🟢 | 🔴 | 🔴 | 
+| Test CLI Porfile | 🟡 | 🔴 | 🔴 | 
 | Look up Org, Root, Acount ID | 🔴 | 🔴 | 🔴 | 
+| Organization Seettings | 🟡  | 🔴 | 🔴 | 
+| Environment Settings | 🔴 | 🔴 | 🔴 | 
+| List Available Account Resources  | 🟢 | 🔴 | 🔴 | 
+| Organization Diagram - All | 🟢 | 🔴 | 🔴 | 
+| Organization Diagram - Enviroments | 🟢 | 🔴 | 🔴 | 
+| Organization Diagram - Accounts | 🟢 | 🔴 | 🔴 | 
 
 ### Manage Organization Environment ###
 
