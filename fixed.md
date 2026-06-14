@@ -10,7 +10,9 @@ Have already used 53% of next $200/month plan.
 
 🟢 Role asumption - look up org id, ou, acount id. Poplulate MFA serial and role arn from CLI role profile. Set defaut values for lists in setting so can hit enter to continue. And settigs for an org are done. 
 
+## 
 🟢 **Started adding mistakes to mistakes.md file becuse there are too many right now.**
+##
 
 🟢 Did not read or implement requirements correctly:
 
