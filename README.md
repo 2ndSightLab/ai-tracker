@@ -165,9 +165,8 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Feature | List | Add | Delete | Rename | Menus | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | Organization | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Evironments | 🟢 | 🟢 | 🟢 | n/a | 🔴 | 🔴 | 🔴 | 🔴 |
-| Environment Accounts | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Organization Diagram | 🟢 | 🟢 | 🟢 | 🟢 | n/a | 🟢 | 🔴 | 🔴 |
+| Evironments | 🟢 | 🟢 | 🟢 | n/a | 🟢 | 🟢 | 🔴 | 🔴 |
+| Environment Accounts | 🟢 | 🟢 | 🟢 | n/a | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ### Configure Actions ###
 
