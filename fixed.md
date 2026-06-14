@@ -4,11 +4,18 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
-6/13/26 2:00 PM
+
+6/14/26 12:00 AM
+
+🟢 Seriiousy. The readme says do not cahnge any menu variables or files. Do what teh other project does. It just started changing all the menu code again. What the heck is so ahrd about menus??
+
+🟢 Delete org config files (move to trash folder) when deleted
 
 🟢 Default environments, acocunts, allowed resources types by acocunt based on configured org types
 
 🟢 Default settings, edit account settings with validation based on define settings schem in config types project
+
+6/13/26 2:00 PM
 
 🟢 Diagram of org - shows org environments, acocunts, allowed resources in acounts, rename works, add, remove, etc. all seem to dispaly correct values
 
