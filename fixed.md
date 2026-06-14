@@ -4,8 +4,9 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
-
 6/14/26 12:00 AM
+
+Have already used 53% of next $200/month plan.
 
 🟢 Role asumption - look up org id, ou, acount id. Poplulate MFA serial and role arn from CLI role profile. Set defaut values for lists in setting so can hit enter to continue. And settigs for an org are done. 
 
