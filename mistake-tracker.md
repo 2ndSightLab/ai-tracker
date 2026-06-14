@@ -38,13 +38,6 @@ It suposedly did what I asked and said, OK now it is:
 
 Something seems to be wrong with this model because it did not make mistakes like this in the past. Am I getting a dummbed down model because everynoe had to revert back to 4.8 and now it's overloaded or what is going on here? We really have no way to verify and validate what model we are actually getting.
 
-Oh and now here's what it returned after telling it that is not what I said:
-
-ord and no "/c to cancel" text, and shows nothing in parentheses when the value is empty. The /c cancel still works. 
-All tests pass.
-
-There is something wrong with the model. It wasn't behaviing this poorly before.
-
 🔴 Eternal loop trying to fix a test:
 
 New organization name: value must not be empty
