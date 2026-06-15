@@ -23,6 +23,10 @@ when you boil it down to the core problems*.
 
 Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting very frustrated because the model feels nerfed. I don't have time to log every error because there are so many. I also just started tracking this way after working on this project for a couple of months because logging every error caused the readme to get too massive, wasting tokens.
 
+## 6/15/2026 12:00 AM
+
+🔴 It's happening again. 12:00 AM and the model is getting completely nerfed. It's answering questions in really dumb ways and not following my reuqiemsnts or project objecives. The objectives tell the project how to respond to prompts and it will get it half right, fix one thing and mess up another. It's so frustrating when it gets like this. Also, I'm not entirely sure if it also has to do with the model getting killed and starting a new session. When re-reading the reuqiemsnst in the new sestion it's having a really hard time figuring things out again. One shotting was pretting good. New sessiona nd revisions is: 👎
+
 ## 6/14/2026 3:41 PM
 
 Let's see how many mistakes we get today...
