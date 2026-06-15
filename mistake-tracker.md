@@ -27,6 +27,13 @@ Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting 
 
 Let's see how many mistakes we get today...
 
+🔴 Testing requirements to see if another project can follow explicit instrutions without making mistakes - one project making the generic requirements from two others and prompting third to follow and then checking to see if it did it right: 
+
+No — the requirements are clear here; this is the project's formatting error, not a requirements gap. The global headers are 
+correct and consistent. The agent just wrote the reference lines with a trailing period (e.g. "...init-menu.sh.") instead of 
+copying the header verbatim. The Comments/reference rule already implies references must match the header exactly, and the 
+generic prompt has been telling projects "each reference must match a global header verbatim." 
+
 🔴 Figured out why one project is continuously hanging. It was due to improper error handling in another projecct. The project using the other project cannot diagnose that for some reason after repeatedly having the issues. The third paroject was able to diagnose it on the first try. Why did the project continously churn and not figure it out?
 
 ## 6/13/2026 
