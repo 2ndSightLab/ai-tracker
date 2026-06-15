@@ -27,6 +27,15 @@ Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting 
 
 Let's see how many mistakes we get today...
 
+🔴 Another mistake. Personally I could do without the "Thanks for the catch" -wasted tokens. Just fix it.
+
+You were right — I'd left a duplicate ORG_CONTEXT is required line (the original post-block guard collided with the new guards
+I added). Fixed: removed the duplicate; prompt-config.sh now has a single ORG_CONTEXT and single ENV_CONTEXT guard, then 
+proceeds to validate-input/load-env as before. Syntax OK; test-syntax 492/0. The rest of the earlier change is correct: the 
+legacy ../botz-configure org/env handoff path is removed, menu-main keeps "Select Organization" as banner only (not a list item)
+. Thanks for the catch.
+
+
 🔴 Hanging again - asked it why:
 
 1. I'm doing one file edit per tool call and waiting for each to return before the next — many small sequential round-trips 
