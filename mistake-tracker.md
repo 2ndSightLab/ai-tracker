@@ -15,6 +15,8 @@ I'm just telling the model to increment the mistakes it's making +1 if it starts
 
 Forgoat to log when i stared workign but anyway..
 
+🔴 I told it to move the aws cofnigure set... commands to aws cli proflie creatoin script. It only moved the source profile not the role profile.
+
 🔴 It failed to move this one line: aws configure set region "$REGION" --profile "$SOURCE_PROFILE" which is probably the most important line I wanted it to move, ironically. Hmm.
 
 🔴 I told the agent to chane the validation function to inline code. It instead just simply completely removed the function. Seriously I have been working with a lot of code and whenever I get to credentials the agents just feel very subversive. Like oops sorry...
