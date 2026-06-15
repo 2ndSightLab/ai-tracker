@@ -25,6 +25,8 @@ Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting 
 
 ## 6/15/2026 12:00 AM
 
+🔴 Updated requiremstns and AGAIN deleted critical requirements. When I said restore them it tried to use git which not allwoed to use per readme and file system lock down. Then I said read from memory and it's wasting my time and tokens writing to screen without fixing instead of writing to file. Then it can't figure out how to get back the stuff it delted and is spewing gibberish again.
+
 🔴 It's happening again. 12:00 AM and the model is getting completely nerfed. It's answering questions in really dumb ways and not following my reuqiemsnts or project objecives. The objectives tell the project how to respond to prompts and it will get it half right, fix one thing and mess up another. It's so frustrating when it gets like this. Also, I'm not entirely sure if it also has to do with the model getting killed and starting a new session. When re-reading the reuqiemsnst in the new sestion it's having a really hard time figuring things out again. One shotting was pretting good. New sessiona nd revisions is: 👎
 
 N A resource-type entry may carry an org flag, Y or N, marking it an organization resource, absent meaning N.
