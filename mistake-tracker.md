@@ -22,6 +22,14 @@ when you boil it down to the core problems*.
 
 Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting very frustrated because the model feels nerfed. I don't have time to log every error because there are so many. I also just started tracking this way after working on this project for a couple of months because logging every error caused the readme to get too massive, wasting tokens.
 
+## 6/15/2026 7:04 PM
+
+Forgoat to log when i stared workign but anyway..
+
+🔴 I told the agent to chane the validation function to inline code. It instead just simply completely removed the function. Seriously I have been working with a lot of code and whenever I get to credentials the agents just feel very subversive. Like oops sorry...
+
+🔴 Oh my goodnees. I had an existin project to assume a role with MFA in my aws-scripts repo. I told an ai agent to use that code to create a similar project to work with my new projects. I am just reviewign the code adn I have a lot of requirements to validate the data - especially consiering a very problematic thing I found which the AWS and I disagree about whether is a secruity bug or not. But anyway, I have all this validation for inputs to an AWS CLI profile and it put the code in a function, even though my rules for my projects say not to use functions in bash. The reason I don't use functions in bash is that they can hide errors in really tricky ways that are hard to troubleshoot in bash. They're cleaner and prettier, but after writing a lot of bash code I find it simpler to set variables and source files and wipes out a whoel bunch of problems. So I found this function that validates all the variables used with aws cofigure set commands to create role profiles. Guess what. It was never getting called. *sigh*
+
 ## 6/15/2026 12:00 AM
 
 🔴 80% token usage. So like 30% of my tokens in one day. Doesn't seem right.
