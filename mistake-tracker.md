@@ -25,6 +25,12 @@ Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting 
 
 ## 6/15/2026 12:00 AM
 
+Where is it 9:00 AM when it is midnight ET?
+
+🔴 Thinking about time zones because right around midnight is when everything goes haywiere. Where in the world is it 9 a.m. at midnight ET?
+
+Pakistan (e.g., Karachi, Islamabad)Uzbekistan (e.g., Tashkent)Kazakhstan (entire country uses UTC+5 as of 2024, including Astana and Almaty)Tajikistan (e.g., Dushanbe)Turkmenistan (e.g., Ashgabat)Maldives (e.g., Malé)Russia (Only western regions on Ekaterinburg Time, including Yekaterinburg, Chelyabinsk, and Perm)French Southern and Antarctic Lands (Kerguelen Islands)Heard Island and McDonald Islands (Australia)
+
 🔴 Telling me Good Question is annoying because it wastes my tokens and I shouldn't have to be asking it the question I'm asking to get it to look at something it should have figured out on it's own...
 
 🔴 It is TOTALLY messing up the reuqirmnts file right now. It's deletign more than one requiremsnt section instead of just the one I ask. It's going very slowly. It's mangling sections...argh. Time for bed.
