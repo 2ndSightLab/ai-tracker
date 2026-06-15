@@ -27,6 +27,20 @@ Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting 
 
 Let's see how many mistakes we get today...
 
+🔴 Hanging again - asked it why:
+
+1. I'm doing one file edit per tool call and waiting for each to return before the next — many small sequential round-trips 
+instead of batching.
+2. I've been re-reading the same requirement sections and re-running the full 18-test suite repeatedly each step, which is a lot
+of redundant I/O.
+3. Each str_replace requires me to first read the exact surrounding lines, adding an extra round-trip per edit.
+
+For this specific edit, the holdup was just that I split "declare vars" and "run tests" into separate calls.
+
+Faster approach going forward: batch the independent reads/edits in one block and only run the targeted test (test-menu-main.sh)
+per step, running the full suite once at the end. Want me to finish this step that way now?
+
+
 🔴  did the other project not read the requiemsnts?
 
 > It read the global section, but it weighted the reference code over the requirement. The global "List vars for a type" item 3 
