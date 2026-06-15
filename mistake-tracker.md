@@ -29,7 +29,7 @@ Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting 
 
 A few test runs:
 
-| Round | | Total Tool Execution Time (Cmd 1 + Cmd 2) | Unaccounted Gap (Thinking & Log Overhead) |
+| Round | | Total Tool Execution Time (Cmd 1 + Cmd 2) | Unaccounted Gap (Thinking & Logging?) |
 | :--- | :--- | :--- | :--- |
 | **Round 1** | 3.181s | 0.72s (0.6s + 0.12s) | +2.461s |
 | **Round 2** | 1.888s | 1.10s (0.6s + 0.50s) | +0.788s |
