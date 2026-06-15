@@ -27,6 +27,15 @@ Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting 
 
 🔴 And...it's really slow again.
 
+A few test runs:
+
+| Round | | Total Tool Execution Time (Cmd 1 + Cmd 2) | Unaccounted Gap (Thinking & Log Overhead) |
+| :--- | :--- | :--- | :--- |
+| **Round 1** | 3.181s | 0.72s (0.6s + 0.12s) | +2.461s |
+| **Round 2** | 1.888s | 1.10s (0.6s + 0.50s) | +0.788s |
+| **Round 3** | 1.965s | 1.20s (0.6s + 0.60s) | +0.765s |
+| **Round 4** | 3.010s | 1.20s (0.6s + 0.60s) | +1.810s |
+
 🔴 referneces a file in another project and stopping to answer dumb questions answered in the other preoject's readme file.
 
 🔴 Was doing well now spewing out long winded garbage answers with the real isue buried in them somewhere.
