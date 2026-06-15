@@ -4,10 +4,10 @@
 
 Track how long it takes and how much it costs to create projects with AI 🤖 in an attempt to optimize progress.
 
-Token usage this month:
-| :---: | :---: |
-| $200 plan | maxed | 
-| $200 plan | +80% | 
+| Month | Plan | usage |
+| :---:| :---: | :---: |
+| June 12 | $200 plan | maxed | 
+| June 15 | $200 plan | +80% | 
 
 ## Support this research
 
