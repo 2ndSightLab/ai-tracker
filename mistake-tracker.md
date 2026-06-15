@@ -9,18 +9,7 @@ More details on the mistake and timeline here. You can see when I'm being slowed
 https://github.com/2ndSightLab/ai-tracker/blob/main/fixed.md
 
 The mistake tracker is a new part of the project added a few months in. This is not super scientific as it is hard to quantify. 
-I'm just telling the model to increment the mistakes it's making +1 if it starts making a bunch of mistakes. 
-
-
-Sometimes I have to tell it over and over to log the mistake because it doesn't even do that correctly. Sometimes it incorrectly says the mistake has not been logged
-and it logs it twice. Like a multi-threading problem or man-in-the-middle that intercepted the response or an eventual consistency or caching problem. 
-Something like that. I don't log every error when it is cruising along and making a mild mistake here and there but when it makes repeated mistakes I tell it 
-to increment these mistakes +1 or add a new one. 
-
-In the beginning it would log everything as a completely different mistake with too many details when they are *basically the same mistakes over and over again
-when you boil it down to the core problems*.
-
-Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting very frustrated because the model feels nerfed. I don't have time to log every error because there are so many. I also just started tracking this way after working on this project for a couple of months because logging every error caused the readme to get too massive, wasting tokens.
+I'm just telling the model to increment the mistakes it's making +1 if it starts making a bunch of mistakes. This is not every mistakes mostly only when I start getting annoyed. :-D
 
 ## 6/15/2026 7:04 PM
 
