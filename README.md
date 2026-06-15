@@ -189,10 +189,11 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | :--- | :---: | :---: | :---: | :---: 
 | Select Organization | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 
 | Deploy Org Resources | 🟢 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Select Env | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Deploy Env Resources | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Select Account | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Deploy Account Resources | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Select Env |  🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Deploy Env Resources |  🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Select Account | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Deploy Account Resources | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
+
 
 ### Base Environment Resources ###
 
@@ -432,7 +433,7 @@ Some enviroments may include penetration testing and security research resources
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Accounts: project | 🟢 | 🟡 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Burp ENI | 🟡  | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Burp ENI | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Burp Instance Role | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Burp Instance | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Burp AMI | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
