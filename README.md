@@ -185,15 +185,14 @@ Configure organization to deploy; define environemnt types (allowed resources)
 
 ### Deploy ##
 
-| Feature | Run | Tested | Code Review | Security Review |
+| Feature | Menus | Run | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: 
-| Select Organization | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Deploy Org | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Select Env | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Deploy OU | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Deploy Accounts | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Deploy Env Resoruces (All Accounts) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Deploy Account Resoruces (Per Account) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Select Organization | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 
+| Deploy Org Resources | 🟢 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Select Env | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Deploy Env Resources | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Select Account | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Deploy Account Resources | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
 
 ### Base Environment Resources ###
 
