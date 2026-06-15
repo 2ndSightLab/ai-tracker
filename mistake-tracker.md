@@ -27,6 +27,33 @@ Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting 
 
 🔴 It's happening again. 12:00 AM and the model is getting completely nerfed. It's answering questions in really dumb ways and not following my reuqiemsnts or project objecives. The objectives tell the project how to respond to prompts and it will get it half right, fix one thing and mess up another. It's so frustrating when it gets like this. Also, I'm not entirely sure if it also has to do with the model getting killed and starting a new session. When re-reading the reuqiemsnst in the new sestion it's having a really hard time figuring things out again. One shotting was pretting good. New sessiona nd revisions is: 👎
 
+N A resource-type entry may carry an org flag, Y or N, marking it an organization resource, absent meaning N.
+N The org flag is an optional flag field per ../x-requirements/README.md ### Type Files: <type id>-<id>.xml.
+N The org flag is editable through the Resource Type Edit action; see ../x-requirements/README.md ### Type Edit: type-
+edit.sh.
+
+ ▸ Credits: 0.56 • Time: 5s
+
+[x-requirements] 12% > what is this N A resource-type entry may carry an org flag, Y or N, marking it an organization resource, absent meaning N.
+N The org flag is an optional flag field per ../x-ƒborequirements/README.md ### Type Files: <type id>-<id>.xml.
+N The org flag is editable through the Resource Type Edit action; see ../x-requirements/README.md ### Type Edit: type-
+edit.sh.
+
+> The "N" is a placeholder I left in instead of real requirement numbers — that's wrong. Requirements use integers (Requirements
+Format req 5), and the implementing agent assigns the next numbers in that section; I shouldn't ship "N". Also the second line 
+duplicates a generic requirement by reference, which is fine, but the literal "N" makes it not requirements format.
+
+The lines should be plain numbered requirements appended after the last existing number in the resource-type section. Since I 
+don't have that section's current last number in front of me, the prompt should just say to add them as the next numbers. 
+Corrected requirement lines:
+
+A resource-type entry may carry an org flag, Y or N, marking it an organization resource, absent meaning N.
+The org flag is an optional flag field per ../x-global-requirements/README.md ### Type Files: <type id>-<id>.xml.
+The org flag is editable through the Resource Type Edit action; see ../x-global-requirements/README.md ### Type Edit: type-
+edit.sh.
+
+Want me to read that section's current numbering so I can hand you the lines with correct integers?
+
 ## 6/14/2026 3:41 PM
 
 Let's see how many mistakes we get today...
@@ -48,7 +75,7 @@ If I ask it for the objective anda there's a space in the objecive it doesn't re
 You were right — I'd left a duplicate ORG_CONTEXT is required line (the original post-block guard collided with the new guards
 I added). Fixed: removed the duplicate; prompt-config.sh now has a single ORG_CONTEXT and single ENV_CONTEXT guard, then 
 proceeds to validate-input/load-env as before. Syntax OK; test-syntax 492/0. The rest of the earlier change is correct: the 
-legacy ../botz-configure org/env handoff path is removed, menu-main keeps "Select Organization" as banner only (not a list item)
+legacy ../x-configure org/env handoff path is removed, menu-main keeps "Select Organization" as banner only (not a list item)
 . Thanks for the catch.
 
 
