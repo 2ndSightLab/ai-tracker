@@ -17,7 +17,6 @@ and it logs it twice. Like a multi-threading problem or man-in-the-middle that i
 Something like that. I don't log every error when it is cruising along and making a mild mistake here and there but when it makes repeated mistakes I tell it 
 to increment these mistakes +1 or add a new one. 
 
-
 In the beginning it would log everything as a completely different mistake with too many details when they are *basically the same mistakes over and over again
 when you boil it down to the core problems*.
 
@@ -29,7 +28,7 @@ Where is it 9:00 AM when it is midnight ET?
 
 🔴 Thinking about time zones because right around midnight is when everything goes haywiere. Where in the world is it 9 a.m. at midnight ET?
 
-Pakistan (e.g., Karachi, Islamabad)Uzbekistan (e.g., Tashkent)Kazakhstan (entire country uses UTC+5 as of 2024, including Astana and Almaty)Tajikistan (e.g., Dushanbe)Turkmenistan (e.g., Ashgabat)Maldives (e.g., Malé)Russia (Only western regions on Ekaterinburg Time, including Yekaterinburg, Chelyabinsk, and Perm)French Southern and Antarctic Lands (Kerguelen Islands)Heard Island and McDonald Islands (Australia)
+Pakistan (e.g., Karachi, Islamabad)Uzbekistan (e.g., Tashkent)Kazakhstan (entire country uses UTC+5 as of 2024, including Astana and Almaty)Tajikistan (e.g., Dushanbe)Turkmenistan (e.g., Ashgabat)Maldives (e.g., Malé)Russia (Only western regions on Ekaterinburg Time, including Yekaterinburg, Chelyabinsk, and Perm)French Southern and Antarctic Lands (Kerguelen Islands)Heard Island and McDonald Islands (Australia), +9.5 India, Sri Lanka, Nepal
 
 🔴 Telling me Good Question is annoying because it wastes my tokens and I shouldn't have to be asking it the question I'm asking to get it to look at something it should have figured out on it's own...
 
