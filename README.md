@@ -6,8 +6,8 @@ Track how long it takes and how much it costs to create projects with AI 🤖 in
 
 | Month | Plan | usage | charges |
 | :---:| :---: | :---: | :---: |
-| June 12 | $200 plan | maxed | $83 |
-| June 15 | $200 plan | +80% | ? |
+| June 1-12 | $200 plan | maxed | $83 |
+| June 13-15 | $200 plan | +80% | ? |
 
 ## Support this research
 
