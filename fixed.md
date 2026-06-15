@@ -6,7 +6,9 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 ## 6/14/2026 3:41 PM Let's see what we can get done today...
 
-🟢 First step > create a new project and extract requirements common to both the new projects I created that use the XML parsing and menu projects and try to create a generic set of requiremnts any project can use for that purpose. I want to try to make the instrucctions more generic and explicit and in a separtea project so when a project is working on a new task it exactly follows and does not chagne those instructions. It can only focus on and revise it's own readme and the things unique to its own project. Hopefully that will help prevent some of the variance I've seen... TBD.
+🟢 I got the deploy menus kind of working up to the point of deploy org resources. So the menus work and it all went decently well until my requiremnt project session died. The new session loaded up and it was being really dumb at first until I repeated myself a bunch of times. AI models seem to be good at the first shot. But re-reading existing ode and requirements is a problem. Then the other project had issues logged in my mistakes log. And 12:00 AM on the dot eveyrthing went haywire and got very slow. So where is it 9 a.m. when its midnight ET? HMM? Is it some legitiate work at that time or something else going on.?
+
+🟢 First step > create a new project and extract requirements common to both the new projects I created that use the XML parsing and menu projects and try to create a generic set of requiremnts any project can use for that purpose. I want to try to make the instrucctions more generic and explicit and in a separtea project so when a project is working on a new task it exactly follows and does not chagne those instructions. It can only focus on and revise it's own readme and the things unique to its own project. Hopefully that will help prevent some of the variance I've seen... TBD. Extensive work to fix numerous projects.
 
 ## 6/14/26 12:00 AM
 
