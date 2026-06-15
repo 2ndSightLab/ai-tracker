@@ -25,6 +25,8 @@ Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting 
 
 ## 6/15/2026 12:00 AM
 
+🔴 And...it's really slow again.
+
 🔴 referneces a file in another project and stopping to answer dumb questions answered in the other preoject's readme file.
 
 🔴 Was doing well now spewing out long winded garbage answers with the real isue buried in them somewhere.
