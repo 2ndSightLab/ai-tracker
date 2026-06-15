@@ -27,6 +27,40 @@ Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting 
 
 Let's see how many mistakes we get today...
 
+🔴  did the other project not read the requiemsnts?
+
+> It read the global section, but it weighted the reference code over the requirement. The global "List vars for a type" item 3 
+plainly says "the data file lives in the project data directory" — generic. The agent saw config-org-types' code uses CONFIG_DIR
+and treated that as the spec, then flagged the conflict. So it read the requirement but deferred to the example implementation,
+which is the wrong precedence.
+
+That's a known risk: when a project's reference code is more concrete than the generic requirement, agents copy the code. The 
+requirement is clear; the agent over-relied on the reference.
+
+The compound-types question, though, wasn't a misread — that's a real scoping question I created by listing only three files 
+when the project needs the sub-type files too. That one's on the prompt, not the agent.
+
+So: it read the requirements, but followed the reference code on the data dir instead of the generic requirement. The fix is the
+prompt I gave (data dir = project data directory via init variable, include sub-type branch).
+
+how can that be fixed?
+
+> Two ways, and I'd do both:
+
+1. Make the requirement explicit that the data dir is a named variable, not CONFIG_DIR. Right now it says "the project data 
+directory" — vague enough that an agent copies the reference's CONFIG_DIR. Fix the global section to name a variable, e.g. "The 
+data file lives in DATA_DIR, set by the project in init-start." Then there's nothing to infer from reference code.
+
+2. Add a precedence rule so agents stop copying reference code over requirements. A short global rule: "When a reference 
+implementation conflicts with a requirement, the requirement wins; reference code is an example, not the spec." That fixes the 
+root behavior, not just this one case.
+
+Both are global-doc edits. Want me to:
+- change List-vars-for-a-type item 3 to name a DATA_DIR variable, and
+- add the "requirement wins over reference code" rule?
+
+
+
 🔴 Testing requirements to see if another project can follow explicit instrutions without making mistakes - one project making the generic requirements from two others and prompting third to follow and then checking to see if it did it right: 
 
 No — the requirements are clear here; this is the project's formatting error, not a requirements gap. The global headers are 
