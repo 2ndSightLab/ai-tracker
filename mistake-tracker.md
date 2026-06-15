@@ -27,6 +27,18 @@ Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting 
 
 Let's see how many mistakes we get today...
 
+🔴 The readmen is broken down like this:
+
+# Project name
+
+## Objective
+
+## Rules
+
+## Requirements
+
+If I ask it for the objective anda there's a space in the objecive it doesn't read the full objectives only the first paragraph.
+
 🔴 Another mistake. Personally I could do without the "Thanks for the catch" -wasted tokens. Just fix it.
 
 You were right — I'd left a duplicate ORG_CONTEXT is required line (the original post-block guard collided with the new guards
