@@ -25,6 +25,12 @@ Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting 
 
 ## 6/15/2026 12:00 AM
 
+🔴 It is TOTALLY messing up the reuqirmnts file right now. It's deletign more than one requiremsnt section instead of just the one I ask. It's going very slowly. It's mangling sections...argh. Time for bed.
+
+🔴 Getting value from wrong project.
+
+🔴 Failing to imemdateily update readme when isntructed.
+
 🔴 And...it's really slow again.
 
 A few test runs:
