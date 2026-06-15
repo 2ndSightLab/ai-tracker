@@ -25,6 +25,8 @@ Again: THIS IS NOT COMPLETE. I don't log every error. Just when I start getting 
 
 ## 6/15/2026 12:00 AM
 
+🔴 referneces a file in another project and stopping to answer dumb questions answered in the other preoject's readme file.
+
 🔴 Was doing well now spewing out long winded garbage answers with the real isue buried in them somewhere.
 
 🔴 Updated requiremstns and AGAIN deleted critical requirements. When I said restore them it tried to use git which not allwoed to use per readme and file system lock down. Then I said read from memory and it's wasting my time and tokens writing to screen without fixing instead of writing to file. Then it can't figure out how to get back the stuff it delted and is spewing gibberish again.
