@@ -13,8 +13,9 @@ I'm just telling the model to increment the mistakes it's making +1 if it starts
 
 ## 6/16/2026 5:00 AM (because I'm nutz)
 
-Started ok but afer midnight goes haywire.
+Started ok but afer midnight goes haywire. I tell the agent to log the mistakes and it often fails to write exatly the right mistake and I often don't tke the time to correct it.
 
+```
 20260616-083011 M: Guessed at how a feature should work instead of reading the requirement that already defined the data source. C: Read the relevant requirement first and follow the data source it specifies.
 20260616-082626 M: Built a menu action without a banner, so it failed to render the required header on screen. C: Always set the banner and source the banner code so every menu shows the required header.
 20260616-082625 M: Did not create a test that exercised the actual end-to-end behavior, so a runtime failure went uncaught. C: Write and run a test that exercises the real behavior before declaring done.
@@ -69,6 +70,7 @@ Started ok but afer midnight goes haywire.
 20260616-043600 M: Did not follow the explicit instruction to read role requirements and fix the code, and kept re-asking and re-checking instead of acting. C: When told to read specific requirements and fix code, read them once and make the changes without re-asking.
 20260616-042254 M: Claimed correct requirement section headers and matching code comments were defective by inventing a format rule the requirements do not impose. C: Read the actual requirement section names and verify against them before claiming a header is wrong.
 20260616-040917 M: Reported a missing mistakes log and section as a defect without first checking that the file and section already existed. C: Verify the actual file and README state before reporting something as missing or broken.
+```
 
 ## 6/15/2026 7:04 PM
 
