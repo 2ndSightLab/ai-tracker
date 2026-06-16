@@ -191,7 +191,7 @@ Configure organization to deploy; define environemnt types (allowed resources)
 ### Deploy ##
 
 | Feature | Menus | Run | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: 
+| :--- | :---: | :---: | :---: | :---: | :---: | 
 | Select Organization | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 
 | Deploy Org Resources | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Select Env | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 
