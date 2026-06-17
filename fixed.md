@@ -4,6 +4,12 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
+## 6/17/3037 midnight - 2 a.m and 11:30 AM -
+
+🟢 This morning something that was working before I'm pretty sure is broken again. I have an Environemnt Type that Has an Account Type that defines the things that can be deployed to that environment and account. The list fo resources in the account is wrong. When I try to edit the account to add the missing resource it is not there. When I list my organization Diagram which shows resources availble to deploy the resource I want to deploy is not there. When I try to edit the account type configuration I can't fix that either. Having all the projects review each other's work and tests to figure out why the tests are not catching this and why the proejcts do not meet requirements and what broke the menus I spent hours upon hours getting rigth in teh first place as logged in this github repo.
+
+🟢 Last night I fixed an issue with renaming an environment that took WAY TOO LONG. See mistakes log.
+
 ## 6/14/2026 3:41 PM Let's see what we can get done today...
 
 🟢 I got the deploy menus kind of working up to the point of deploy org resources. So the menus work and it all went decently well until my requiremnt project session died. The new session loaded up and it was being really dumb at first until I repeated myself a bunch of times. AI models seem to be good at the first shot. But re-reading existing ode and requirements is a problem. Then the other project had issues logged in my mistakes log. And 12:00 AM on the dot eveyrthing went haywire and got very slow. So where is it 9 a.m. when its midnight ET? HMM? Is it some legitiate work at that time or something else going on.?
