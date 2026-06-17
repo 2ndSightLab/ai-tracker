@@ -6,6 +6,27 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 ## 6/17/3037 midnight - 2 a.m and 11:30 AM -
 
+🟢 Added permissions fix and test executed when any agent is started with this report:
+
+```
+[ PASS ] Agent cannot read .git
+[ PASS ] Agent cannot write inside .git
+[ PASS ] Agent can read its own project directory
+[ PASS ] Agent can read another project (read access via group)
+[ PASS ] Agent can write in its own project directory
+[ PASS ] Agent can write to the mistakes file
+[ PASS ] Agent can write to the temp directory
+[ PASS ] Agent cannot write outside its own project directory and temp
+[ PASS ] Agent can read a new file ec2-user created in config dir
+[ PASS ] Agent can write a new file ec2-user created in config dir
+[ PASS ] Agent can create a new file in the config dir
+[ PASS ] ec2-user can modify a file the agent created
+[ PASS ] Agent denied /etc/ssh
+[ PASS ] Agent denied /etc/pki/tls/private
+[ PASS ] Agent denied /etc/security
+[ PASS ] Agent cannot read another user's credential/key locations
+```
+
 🟢 This morning something that was working before I'm pretty sure is broken again. I have an Environemnt Type that Has an Account Type that defines the things that can be deployed to that environment and account. The list fo resources in the account is wrong. When I try to edit the account to add the missing resource it is not there. When I list my organization Diagram which shows resources availble to deploy the resource I want to deploy is not there. When I try to edit the account type configuration I can't fix that either. Having all the projects review each other's work and tests to figure out why the tests are not catching this and why the proejcts do not meet requirements and what broke the menus I spent hours upon hours getting rigth in teh first place as logged in this github repo.
 
 🟢 Last night I fixed an issue with renaming an environment that took WAY TOO LONG. See mistakes log.
