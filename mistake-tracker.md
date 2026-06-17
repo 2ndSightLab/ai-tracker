@@ -13,7 +13,9 @@ I'm just telling the model to increment the mistakes it's making +1 if it starts
 
 ## 6/17/2026 2:19 PM
 
-20260617-190237 M: Added explanatory comments in a test file when the rules allow only one comment, the section header. C: Put no comments in code; move any explanation into the requirements section.
+20260617-190237 M: Added explanatory comments in a test file when the rules allow only one comment, the section header. C: Put no comments in code; move any explanation into the requirements section as requirements if needed and only if does not conflict with
+existing requirements.
+
 20260617-190237 M: Fabricated XML in a test with printf and inline markup instead of copying the real project files. C: Copy and use the real xml files; never hand-write xml in a test.
 20260617-190237 M: Extended an existing rule-violating test pattern (fabricated config) instead of correcting it when adding a check. C: Fix the violation when touching the file; do not propagate a bad pattern.
 20260617-190237 M: Claimed the test followed all rules in a prior turn without auditing it against the test rules first. C: Audit code against the rules before asserting compliance.
