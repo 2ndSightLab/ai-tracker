@@ -13,6 +13,19 @@ I'm just telling the model to increment the mistakes it's making +1 if it starts
 
 ## 6/17/2026 2:19 PM
 
+20260617-190237 M: Added explanatory comments in a test file when the rules allow only one comment, the section header. C: Put no comments in code; move any explanation into the requirements section.
+20260617-190237 M: Fabricated XML in a test with printf and inline markup instead of copying the real project files. C: Copy and use the real xml files; never hand-write xml in a test.
+20260617-190237 M: Extended an existing rule-violating test pattern (fabricated config) instead of correcting it when adding a check. C: Fix the violation when touching the file; do not propagate a bad pattern.
+20260617-190237 M: Claimed the test followed all rules in a prior turn without auditing it against the test rules first. C: Audit code against the rules before asserting compliance.
+20260617-182905 M: Manage Account Resources and Manage Environment Resources build a sub-type menu-item-name by prepending the parent type word again, producing names no type matches so the resource list errors. C: Derive the sub-type list name so it equals the target type list-action menu-item-name without duplicating the parent word.
+20260617-182455 M: Diagram reads account resources only from the account config /account/resources which the spec requires to be empty, so allowed account-type resources never appear. C: Derive account resources in the diagram from the account type config by account-type-id; keep the account config resources node empty per spec.
+2026-06-17T06:16:39Z M: Messed up the menus so the Organization Edit Settings menu item disappeared (type-edit-settings.sh action missing from the menu). C: Never alter or drop menu actions; verify config/types.xml keeps every original action after any change.
+2026-06-17T06:05:44Z M: Stopped after a step and asked to proceed instead of continuing through the user's 5-step task to completion. C: Complete all requested steps without pausing to ask; only stop when the task is done.
+2026-06-17T05:06:55Z M: My test run set CONFIG_DIR/org id to "test" and wrote account files plus account configuration-file references into the real appcore config, corrupting filenames (account-test-*.xml) and the references inside env configs (test/account-test-*.xml). C: Never run a test against the real config; always use an isolated fixture dir.
+2026-06-17T05:06:55Z M: Did not run the full test suite after each code change to catch the data corruption immediately. C: Run all tests after every change and verify they only touch fixtures, not real config.
+2026-06-17T05:06:55Z M: Caused a working feature (selecting an environment to list environments/accounts) to break by corrupting the on-disk config filenames and references. C: Verify the live app path still works after changes; do not let test side effects reach real data.
+2026-06-17T05:06:55Z M: Spent many turns asking and proposing instead of reading the actual files first to diagnose. C: Read the real state first, diagnose precisely, then act.
+
 Kiro is having trouble responding right now: 
    0: Failed to send the request: An unknown error occurred: InternalServerException
    1: An unknown error occurred: InternalServerException
