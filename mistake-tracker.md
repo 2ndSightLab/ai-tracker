@@ -11,6 +11,70 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/fixed.md
 The mistake tracker is a new part of the project added a few months in. This is not super scientific as it is hard to quantify. 
 I'm just telling the model to increment the mistakes it's making +1 if it starts making a bunch of mistakes. This is not every mistakes mostly only when I start getting annoyed. :-D The mistakes are largely worded by the AI agent and sometimes it does not capture the correct mistake but I don't always fix that because I just want to get stuff done. It generally captures a valid mistake but not the one I actually wanted it to log. So these are all valid just some are missing I didn't bother to fix to the correct mistake. I don't care about typooooos this is just a fast as possible log. Trying to get things done.
 
+## 6/17/2026 4:04 PM
+These are mistakes made by kiro agent and google's aimode trying to come up with a solution to limit permissions on a linux system to specific dirctories:
+
+20260617-181500 Kiro: Gave an incorrect root-cause for an agent losing write access, blaming a correct ownership command. CORRECTION: Verify the actual mechanism in the code before naming a cause.
+
+20260617-192900 Kiro: Tried to verify privileged behavior by running commands despite having no elevated access. CORRECTION: Ask the user to run privileged checks and report output.
+
+20260617-193500 Kiro: Attempted to read system locations using elevated access after being told that was not available. CORRECTION: Only inspect what the unprivileged user can reach.
+
+20260617-191600 Google AI Mode: Proposed denying a group via ACL to block access to system config files. CORRECTION: World-readable files are reached through other-level permissions, which a group deny does not affect.
+
+20260617-191600 Kiro: Confirmed the group-deny proposal would not work and demonstrated other-level access bypasses it. CORRECTION: Test the access path before trusting a deny rule.
+
+20260617-192800 Google AI Mode: Claimed a user-deny ACL is always evaluated before owner permissions. CORRECTION: Owner permissions apply when the caller owns the file, so a named-user entry is skipped there.
+
+20260617-193000 Google AI Mode: Proposed a recursive deny across an entire system config tree. CORRECTION: Blanket denial on shared system config breaks core services and is unsafe.
+
+20260617-193000 Google AI Mode: Proposed a rule that granted write and execute while intending to lock down. CORRECTION: Verify each permission entry grants the intended access only.
+
+20260617-193000 Google AI Mode: Hid command failures by redirecting errors to the null device. CORRECTION: Keep error output visible during privileged operations.
+
+20260617-193100 Google AI Mode: Proposed a sandbox launcher that reintroduced privilege escalation inside an isolated namespace. CORRECTION: Drop privileges with a tool that needs no elevation helper.
+
+20260617-193100 Google AI Mode: Used wrong base paths that did not match the actual project layout. CORRECTION: Use the project's real directory variables.
+
+20260617-193100 Google AI Mode: Wrote a read-only test against a path that does not exist, causing a false pass. CORRECTION: Test against real sibling directories.
+
+20260617-193100 Google AI Mode: Introduced new account and command variables that the existing flow does not define. CORRECTION: Reuse the established naming convention.
+
+20260617-194600 Google AI Mode: Cleared all supplementary groups when dropping privileges, removing the membership needed for read access. CORRECTION: Preserve the group that grants read access.
+
+20260617-194600 Google AI Mode: Used a config-leak test condition that can fail on blank or comment lines. CORRECTION: Assert that every non-empty line matches the allowlist.
+
+20260617-194600 Google AI Mode: Staged an incomplete certificate path that can break secure connections. CORRECTION: Stage the full certificate bundle path used by the host.
+
+20260617-194600 Google AI Mode: Promised configuration files in the design that the implementation never stages. CORRECTION: Keep documentation and implementation consistent.
+
+20260617-193100 Google AI Mode: Claimed a base utility was part of a different package set than its actual one. CORRECTION: State the correct package origin of system utilities.
+
+20260617-193100 Google AI Mode: Claimed a base utility was built directly into the kernel. CORRECTION: Distinguish kernel features from userspace utilities.
+
+20260617-194300 Google AI Mode: Falsely claimed an architecture was changed secretly and a no-new-tools rule was ignored, when a base utility was used and disclosed openly. CORRECTION: Describe prior actions accurately and do not invent rule violations.
+
+20260617-194600 Kiro: Folded a separate concern about an unprivileged copy missing unreadable files into another note instead of logging it. CORRECTION: Log each distinct concern individually.
+
+20260617-194300 Google AI Mode: Falsely claimed an architecture was changed secretly and a no-new-tools rule was ignored, when a base utility was used and disclosed openly. CORRECTION: Describe prior actions accurately and do not invent rule violations.
+
+20260617-194100 Google AI Mode: Suggested a verification command that runs in the current directory and behaves misleadingly. CORRECTION: Use a probe that directly tests the needed operation.
+
+20260617-191600 Google AI Mode: Proposed a service-cache approach that would blind the user environment by cutting off name resolution. CORRECTION: Keep the files required for user and name resolution available.
+
+20260617-194600 Kiro: Initial requirement wording demanded a total system-config block that cannot be enforced without breaking the host. CORRECTION: Write requirements that are achievable and note known limitations.
+
+20260617-194800 Kiro: A file edit inserted a stray comment marker that malformed the block. CORRECTION: Re-read edited regions and confirm structure after each change.
+
+20260617-195800 Kiro: Did not add every accurately flagged mistake when first asked to list them all. CORRECTION: Review the full session and log every distinct flag.
+
+20260617-194600 Kiro: Noted a read-only test that checks only one sibling directory but did not log it as a distinct flag. CORRECTION: Log incomplete test coverage as its own entry.
+
+20260617-200200 Kiro: Did not log a correct point that removing a user from a group would not block other-level access. CORRECTION: Log every accurate technical flag from the analysis.
+
+20260617-200200 Kiro: Did not log that a test silenced errors in violation of a no-silence rule the same proposal introduced. CORRECTION: Log self-contradictions against a proposal's own rules.
+
+20260617-200200 Kiro: Again failed to log every flagged mistake until prompted a second time. CORRECTION: Exhaustively review the whole analysis before reporting completeness.
 ## 6/17/2026 2:19 PM
 
 20260617-190237 M: Added explanatory comments in a test file when the rules allow only one comment, the section header. C: Put no comments in code; move any explanation into the requirements section as requirements if needed and only if does not conflict with
