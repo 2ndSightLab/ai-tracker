@@ -6,17 +6,21 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 ## 6/17/3037 midnight - 2 a.m and 11:30 AM -
 
-🟢 Added permissions fix and test executed when any agent is started with this report:
+🟢 Added permissions fix and test of linux permissions executed when any agent is started with this report:
 
 ```
+───────────────────────────────────────────────────────────────────────────────
+Executing: project-test-permissions.sh
+───────────────────────────────────────────────────────────────────────────────
 [ PASS ] Agent cannot read .git
 [ PASS ] Agent cannot write inside .git
+[ PASS ] Agent cannot modify or delete .git contents
 [ PASS ] Agent can read its own project directory
 [ PASS ] Agent can read another project (read access via group)
 [ PASS ] Agent can write in its own project directory
 [ PASS ] Agent can write to the mistakes file
 [ PASS ] Agent can write to the temp directory
-[ PASS ] Agent cannot write outside its own project directory and temp
+[ PASS ] Agent cannot write, modify, or delete outside its own project directory and temp
 [ PASS ] Agent can read a new file ec2-user created in config dir
 [ PASS ] Agent can write a new file ec2-user created in config dir
 [ PASS ] Agent can create a new file in the config dir
