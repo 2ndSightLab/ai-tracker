@@ -10,8 +10,6 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 ```
 ───────────────────────────────────────────────────────────────────────────────
-Executing: project-test-permissions.sh
-───────────────────────────────────────────────────────────────────────────────
 [ PASS ] Agent cannot read .git
 [ PASS ] Agent cannot write inside .git
 [ PASS ] Agent cannot modify or delete .git contents
