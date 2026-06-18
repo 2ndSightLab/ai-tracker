@@ -6,6 +6,8 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 ## 6/17/3037 
 
+🟢 Figured out some incrrect xml config that got wiped out by tests that didn't meet test requirements and restored it.
+
 🟢 Kiro + anthropic going faster tonight. But I tried glm-5 and slow...doesn't matter it launched a container running as root and won't be using that on this machine...
 
 🟢 on my third $200 plan though don't seem to be gettign billed full amount.
