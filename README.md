@@ -7,7 +7,7 @@ Track how long it takes and how much it costs to create projects with AI 🤖 in
 | Usage Dates | Plan | % usage | charges |
 | :---:| :---: | :---: | :---: |
 | June 1-12 | $200 plan | 100% | $83 |
-| June 13-17 9:00 pm | $200 plan | 100% | ? |
+| June 13-17 9:00 pm | $200 plan | 100% | 67 |
 
 ## Support this research
 
