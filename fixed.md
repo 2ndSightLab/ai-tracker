@@ -15,9 +15,12 @@ Executing: project-test-permissions.sh
 [ PASS ] Agent cannot read .git
 [ PASS ] Agent cannot write inside .git
 [ PASS ] Agent cannot modify or delete .git contents
+[ PASS ] Agent cannot rename the .git directory itself
+[ PASS ] Agent cannot delete the .git directory itself
 [ PASS ] Agent can read its own project directory
 [ PASS ] Agent can read another project (read access via group)
-[ PASS ] Agent can write in its own project directory
+[ PASS ] Permissions-test agent can read but cannot write the botz-project directory
+[ PASS ] Agent can create directories and modify files within src
 [ PASS ] Agent can write to the mistakes file
 [ PASS ] Agent can write to the temp directory
 [ PASS ] Agent cannot write, modify, or delete outside its own project directory and temp
@@ -28,7 +31,16 @@ Executing: project-test-permissions.sh
 [ PASS ] Agent denied /etc/ssh
 [ PASS ] Agent denied /etc/pki/tls/private
 [ PASS ] Agent denied /etc/security
+[ PASS ] Agent denied /etc/ssl
 [ PASS ] Agent cannot read another user's credential/key locations
+[ PASS ] Agent can add run.sh and required .md files in root
+[ PASS ] Agent cannot add other files in root
+[ PASS ] Agent cannot create a directory in root
+[ PASS ] Agent can write within test, config, and src directories
+[ PASS ] Agent cannot rename or delete test, config, or src directories
+[ PASS ] Agent cannot delete, move, or rename the top level project directory
+[ PASS ] Agent can read but cannot create or modify hidden files in root
+[ PASS ] ec2-user can run git commands on the project
 ```
 
 🟢 This morning something that was working before I'm pretty sure is broken again. I have an Environemnt Type that Has an Account Type that defines the things that can be deployed to that environment and account. The list fo resources in the account is wrong. When I try to edit the account to add the missing resource it is not there. When I list my organization Diagram which shows resources availble to deploy the resource I want to deploy is not there. When I try to edit the account type configuration I can't fix that either. Having all the projects review each other's work and tests to figure out why the tests are not catching this and why the proejcts do not meet requirements and what broke the menus I spent hours upon hours getting rigth in teh first place as logged in this github repo.
