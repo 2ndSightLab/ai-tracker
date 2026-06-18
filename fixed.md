@@ -4,6 +4,22 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
+## 6/17/3037 
+
+🟢 Kiro + anthropic going faster tonight. But I tried glm-5 and slow...doesn't matter it launched a container running as root and won't be using that on this machine...
+
+🟢 on my third $200 plan though don't seem to be gettign billed full amount.
+
+🟢 read only settings for env that only org can change.
+
+🟢 remove dup unneccesary name field in settings
+
+🟢 added descirption and org-only, env-only resources to org diagram.
+
+🟢 added ability to add description to env types, acocunt types. 
+
+🟢 wrote tons of tests to fix lots of things. All the menus, org diagram got messed up due to missing data, lots and lots and lots of tests.
+
 ## 6/17/3037 midnight - 2 a.m and 11:30 AM -
 
 🟢 Added permissions fix and test of linux permissions executed when any agent is started with this report:
