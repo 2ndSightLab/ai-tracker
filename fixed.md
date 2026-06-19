@@ -4,7 +4,36 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
-## 6/17/3037 
+## 6/19/2026
+
+Been sepnding time fixing bugs and writing tests to fix old stuff so the needle has not moved on th emain page tracker mucH. I think most of that is working. Now I have to align the data in my system and use that configuration app to configure my organziation I want to deploy and adjust some of the deployment steps to work wtih the new model. There's a lot of data for the resources already deployed. I'm cheating a bit and using AI to align the data in the XML files with what I want. I hope to have someone else helping me test out that functionality soon in a new organization to make sure it all works and find issues. 
+
+Today's objectives:
+
+🟡 Align the data.
+
+🟡 Test and fix as many of the deployment steps as I can so it works with this model: Select Organization > Deploy organization resources > Select environment > Deploy the environment resources that go in every acount in the environment. Select account > Deploy account specific resources.
+
+🟡 The other thing I noticed is that the deploy project wrote different menus for acctions for each resource type. That should be one menu file for any resource. To fix.
+
+
+## 6/18/2026
+
+🟢 Added new diagram options to display a single environment or a single account because there's a lot of dat ato review.
+
+🟢 Changed the model to allow adding any type of action per resource so I can create any type of action to take on a resource and add a step in the menu for that.
+
+🟢 Added actions / files ot the diagram so I can review all that and make sure it's cnofigured correctly.
+
+🟢 Added both ID and Name to each resource since AI crated some generic IDs that didn't tell me what the resource actually is in the menu when I look at the diagram. Now I can see both the menu name and the ID. Fixed the IDs to more sensible names.
+
+🟢 Moving resources around to get them in the right place in the configuration.
+
+🟢 Wrote explicit instructions to not use functions in Bash since they tend to hide errors and source files instead. Wrote explicit directions to create helpers in a /helpers folder and the model seemed to quickly write those reduce a lot fo code and uncover errors with those instructions.
+
+🟢 Added common guard to prevent UI hangs when simulating and testing entering data in the UI to test the code.
+
+## 6/17/2026
 
 🟢 Figured out some incrrect xml config that got wiped out by tests that didn't meet test requirements and restored it.
 
