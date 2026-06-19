@@ -154,6 +154,19 @@ https://builder.aws.com/wishlist/3ETEXLx2zZ9GFzQHFYKqmJBcS9M_w/kiro-in-aws-conso
 
 https://github.com/2ndSightLab/ai-tracker/blob/main/mistake-tracker.md
 
+🟠 I see the new VPC see all regiongs thing in the console and that's interesting. But the problem is that it's reaching out to eveyr domain and IP in every other AWS region and I block those. If I'm in the console in let's say us-west-1 then I only want to allow traffic to us-wast-1 and us-east-1 (because I must) and not every other region all over the world. So that function doesn't work. Having it go straight to the region has some use cases but what I would prefer, unless I explicitily allow  multi-region traffic for testing purposes, is to have that traffic go through my current region to the AWS network and then from there internally to other regions. That prevents some sort of MITM interception on the Internet. The whole offloading of traffic to that other region is nifty but is less secure. A lot of data breaches involve moving data to other regions or access via regions customers are not paying attention to. That's why I have an SCP in my account to lock down actions to specific regions. However, that SCP does not apply in the AWS console wehre it is a free-for-all. I see traffic to endpoints all over the world. Let me lock that down so if I see something going somewhre else I can instantantly know something is wrong.
+
+🟠 I also do not like the "global" endpoints that capture data from everhwere and I can't tell what region they are in. That hs the same problem as the last bullet point. That traffic could be going anywhere given the vague nature of the JSON IP ranges - which I would like to be more region specific and granular to the detail of which services are being accessed instead of everything just being "EC2". Make each connection region specific so I can see where my traffic is going. Allow me to open up to more regions for better performance or select different regions if something is down. Maybe this is an advanced feature for customrs that want more control over their traffic in the AWS console. And maybe there's an alert if for performance reasons customers should switch to or allow a different region. For more information on why more granual endpoints are better see the security report on Microsoft Blizzard wehre enterprise and consumer endpoints were blended and sent to the same endpoint and therefore higher secruity and lower security traffic were mixed. If they had segregated those endpoints entterprise customers would not have been affected. In thsi case, and because I do not have an enterprise account, I would prefer regional segregation. I want to know that my traffic is not being sent to Europe, Africa, Asia, or Latin America and if possible, keep it in my own region. This is important not only for security but to maintain traffic within the bounds of the US where US laws are applicable.
+
+🟠 What is "panorama"??? I keep seing that domain and when I look it up it says it's a canceled AWS camera service? Can you please give that an appropriate name?
+
+🟠 I don't like the obscure .ai domain and I don't want to have my browser interacting with Adobe or demdex when I'm in the AWS console managing resources pelase.
+
+🟠 What is tangering box? Please provide more information about each domain and its purpose and why it is needed.
+
+🟠 When I go to the console in a us region why am I seeing EU regions popping up and Asian regions? I shoudl be getting the nearest regional endpoint or at least only US regions??? Maybe if an out of country region is required for perfromance region you ask the customer if they want to allow that - and in my case I do not.
+
+
 
 
 
