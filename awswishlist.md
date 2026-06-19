@@ -161,7 +161,9 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/mistake-tracker.md
 
 🟠 What is "panorama"??? I keep seing that domain and when I look it up it says it's a canceled AWS camera service? Can you please give that an appropriate DNS name and provide documentation so I know what that is doing?
 
-🟠 I don't like the obscure .ai domain and I don't want to have my browser interacting with Adobe or demdex when I'm in the AWS console managing resources please. No AI automagic stuff in my AWS console please.
+🟠 What is the .ai domain. No AI automagic stuff in my AWS console please.
+
+🟠 I would prefer no third party domains when I load the AWS console. I see Adobe and Demdex. Can't you front those with your own doamins so you can see the traffic going to those third party domains? Or if you do inspect that traffic can you document and explain what those are used for and why they exist?
 
 🟠 What is tangerine box? Please provide more information about each domain and its purpose and why it is needed.
 
