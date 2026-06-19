@@ -10,12 +10,17 @@ Been sepnding time fixing bugs and writing tests to fix old stuff so the needle 
 
 Today's objectives:
 
-🟡 Align the data.
+🟡 Align the data with the organization resources that are deployed or that I want to deplaoy.
 
 🟡 Test and fix as many of the deployment steps as I can so it works with this model: Select Organization > Deploy organization resources > Select environment > Deploy the environment resources that go in every acount in the environment. Select account > Deploy account specific resources.
 
 🟡 The other thing I noticed is that the deploy project wrote different menus for acctions for each resource type. That should be one menu file for any resource. To fix.
 
+🟡 Add the run steps as actions associated with specific resources like move / register domain > Route 53 Domain.
+
+🟡 Make sure eahc resource has it's own single resource deployment script so it can be deployed for all organizations or standalone in one organization.
+
+🟡 Separate each resource into it's own deployment option such as Lambdas and Buckets which are currently lumpted into one step in the menu with an option below that to select specific resources. I have the reosurce type. Maybe the type shows up and then the specific resources to deploy for that type - TBD.
 
 ## 6/18/2026
 
