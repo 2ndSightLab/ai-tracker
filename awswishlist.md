@@ -144,7 +144,9 @@ https://builder.aws.com/wishlist/3ETEXLx2zZ9GFzQHFYKqmJBcS9M_w/kiro-in-aws-conso
 
 🟠 Let me turn off telementry everywhere including AWS console. Seeing too many repeated connections that beacon like a C2 channel. Just want to turn it off. 
 
-🟠 I just had major issues with Kiro teleemtry...what is that all about? Need a better breakdown for monitoring purposes that shows exactly what part of the infrasatructure is causing deleys - is it the model? Is it telemetry? Is it Kiro infrastructure? I only had this issue with a custom agent while the default agent showed no such degredation. Why? Would like more visibility into all of that to pinpoint issues and know how or what is actually causing the problem. Once I turned off telementry the model behavior improved as well. I don't know if that was a coincidence as Antrhopic changed is suppoed rules for AI resaearch at the same time. I don't know if my research got caught up in that but I'm just trying to deploy AWS infrastructure so that wouldn't really make sense.
+🟠 I just had major issues with Kiro teleemtry...what is that all about? Need a better breakdown for monitoring purposes that shows exactly what part of the infrasatructure is causing deleys - is it the model? Is it telemetry? Is it Kiro infrastructure? I only had this issue with a custom agent while the default agent showed no such degredation. Why? Would like more visibility into all of that to pinpoint issues and know how or what is actually causing the problem. Once I turned off telementry the model behavior improved as well. I don't know if that was a coincidence as Antrhopic changed is suppoed rules for AI resaearch at the same time. I don't know if my research got caught up in that but I'm just trying to deploy AWS infrastructure so that wouldn't really make sense.   
+
+🟢 🧡 Note related to the last post. I had some issues with slowness around midnight with Kiro and memory-related exceptions which seem to have been resolved. 
 
 🟠 Let me turn off os notifications in the AWS console. Seeing too many repeated connections that beacon like a C2 channel. Just want to turn it off.
 
