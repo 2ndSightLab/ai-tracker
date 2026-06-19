@@ -168,6 +168,7 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/mistake-tracker.md
 
 🟠 When I go to the console in a us region why am I seeing EU regions popping up and Asian regions? I shoudl be getting the nearest regional endpoint or at least only US regions??? Maybe if an out of country region is required for perfromance region you ask the customer if they want to allow that - and in my case I do not.
 
+🟠 I know this is not directly AWS but can you get glm-5 model to stop launching a continaer with root privileges? At least that container appeared when I used that model through Kiro. I presume it was that model because it appeared after I used the model for like 5 minutes and it was too slow to be useful. I shut it down but the container persisted. Kiro CLI on Amazon Linux.
 
 
 
