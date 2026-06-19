@@ -1,6 +1,5 @@
 # My AWS Wishlist Items Related To This Project
 
-
 ## AWS Wish List
 
 This is a list of my wishes on the [AWS Builder Center](https://builder.aws.com/wishlist) related to this project. These are things that cost me time, money, or both or didn't allow me to implement the security controls and cost management controls the way I wanted. I mean it doesn't hurt to ask, right? 
@@ -160,17 +159,12 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/mistake-tracker.md
 
 🟠 I also do not like the "global" endpoints that capture data from everhwere and I can't tell what region they are in. That hs the same problem as the last bullet point. That traffic could be going anywhere given the vague nature of the JSON IP ranges - which I would like to be more region specific and granular to the detail of which services are being accessed instead of everything just being "EC2". Make each connection region specific so I can see where my traffic is going. Allow me to open up to more regions for better performance or select different regions if something is down. Maybe this is an advanced feature for customrs that want more control over their traffic in the AWS console. And maybe there's an alert if for performance reasons customers should switch to or allow a different region. For more information on why more granual endpoints are better see the security report on Microsoft Blizzard wehre enterprise and consumer endpoints were blended and sent to the same endpoint and therefore higher secruity and lower security traffic were mixed. If they had segregated those endpoints entterprise customers would not have been affected. In thsi case, and because I do not have an enterprise account, I would prefer regional segregation. I want to know that my traffic is not being sent to Europe, Africa, Asia, or Latin America and if possible, keep it in my own region. This is important not only for security but to maintain traffic within the bounds of the US where US laws are applicable.
 
-🟠 What is "panorama"??? I keep seing that domain and when I look it up it says it's a canceled AWS camera service? Can you please give that an appropriate name?
+🟠 What is "panorama"??? I keep seing that domain and when I look it up it says it's a canceled AWS camera service? Can you please give that an appropriate DNS name and provide documentation so I know what that is doing?
 
-🟠 I don't like the obscure .ai domain and I don't want to have my browser interacting with Adobe or demdex when I'm in the AWS console managing resources pelase.
+🟠 I don't like the obscure .ai domain and I don't want to have my browser interacting with Adobe or demdex when I'm in the AWS console managing resources please. No AI automagic stuff in my AWS console please.
 
-🟠 What is tangering box? Please provide more information about each domain and its purpose and why it is needed.
+🟠 What is tangerine box? Please provide more information about each domain and its purpose and why it is needed.
 
 🟠 When I go to the console in a us region why am I seeing EU regions popping up and Asian regions? I shoudl be getting the nearest regional endpoint or at least only US regions??? Maybe if an out of country region is required for perfromance region you ask the customer if they want to allow that - and in my case I do not.
 
 🟠 I know this is not directly AWS but can you get glm-5 model to stop launching a continaer with root privileges? At least that container appeared when I used that model through Kiro. I presume it was that model because it appeared after I used the model for like 5 minutes and it was too slow to be useful. I shut it down but the container persisted. Kiro CLI on Amazon Linux.
-
-
-
-
-
