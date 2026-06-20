@@ -47,6 +47,8 @@ the MENU_NO_CLEAR variable) was already in place before the 04:52 paste — I ch
 
 I had a variable in a file to solve a problem because the model coudl not resovel the problem. It was a simple fix. The model told me it no longer needed taht data and to remove it. Then it spent 20+ minutes figuring out hat wa sthe corect solution after spinning its wheels on no-end and completely re-architecting the program.
 
+Oh and after askign where it's going to put the var it tells me it si ALREADY THERE. SO it couldn't see this? Oh my. It is time to give it a rest. I just have one more thing...
+
 10 PM - Kiro is being dumb again.
 
 This was from earlier today:
