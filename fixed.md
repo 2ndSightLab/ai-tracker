@@ -14,6 +14,12 @@ Today's objectives:
 
 ...and digging into the details found huge discrepancies on the ways the projects wer eimlementing menus wiht unneccessary duplicated code. Again. After some lengthy analysis detemriend a revamp of menu actions could completely simplify the menus to a cleanrer data driven structure and move the problematic code into abstracted smaller est of code in the menus project. This is a massive change but allows me to create more extensible menus where I can have differnet plus common actions for each resource type and wipe out a whole bunch of errors.
 
+⭐️ orchestrator:
+⭐️ configure types: removed 800–900 lines
+⭐️ configure org:
+⭐️ deploy: 
+⭐️ menu project: Added: ~950 Removed: ~400
+
 🟡 Align the data with the organization resources that are deployed or that I want to deplaoy.
 
 🟡 Test and fix as many of the deployment steps as I can so it works with this model: Select Organization > Deploy organization resources > Select environment > Deploy the environment resources that go in every acount in the environment. Select account > Deploy account specific resources.
