@@ -40,7 +40,7 @@ So this took longer than expected but the end result is a completely data driven
 
 Around midnight models got dumb again. Really dumb mistakes and taking forever to do things. 
 
-But in theory, now everything is consistent and all menus work. Now I should be ableto focus on starting to depoy things and tweak the data as needed to align with my existing org.
+But in theory, now everything is consistent and all menus work. Now I should be ableto focus on starting to depoy things and tweak the data as needed to align with my existing org. Why did I do this? I hope it wasn't a waste of time but now in theory just add menu items to xml file and it should all work.
 
 ## 6/18/2026
 
