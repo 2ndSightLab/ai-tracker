@@ -4,15 +4,27 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
-## 6/19/2026
-
-Been sepnding time fixing bugs and writing tests to fix old stuff so the needle has not moved on th emain page tracker mucH. I think most of that is working. Now I have to align the data in my system and use that configuration app to configure my organziation I want to deploy and adjust some of the deployment steps to work wtih the new model. There's a lot of data for the resources already deployed. I'm cheating a bit and using AI to align the data in the XML files with what I want. I hope to have someone else helping me test out that functionality soon in a new organization to make sure it all works and find issues. 
+## 6/20/2026
 
 Today's objectives:
 
-🟢 The deploy project wrote different menus for acctions for each resource type. That should be one menu file for any resource. Mae this one menu file that lits the actions for a resource based on the new action model.
+🟡 Align the data with the organization resources that are deployed or that I want to deplaoy.
 
-...and digging into the details found huge discrepancies on the ways the projects wer eimlementing menus wiht unneccessary duplicated code. Again. After some lengthy analysis detemriend a revamp of menu actions could completely simplify the menus to a cleanrer data driven structure and move the problematic code into abstracted smaller est of code in the menus project. This is a massive change but allows me to create more extensible menus where I can have differnet plus common actions for each resource type and wipe out a whole bunch of errors.
+🟡 Test and fix as many of the deployment steps as I can so it works with this model: Select Organization > Deploy organization resources > Select environment > Deploy the environment resources that go in every acount in the environment. Select account > Deploy account specific resources.
+
+🟡 Add the run steps as actions associated with specific resources like move / register domain > Route 53 Domain.
+
+🟡 Make sure each resource has it's own single resource deployment script so it can be deployed for all organizations or standalone in one organization.
+
+🟡 Separate each resource into it's own deployment option such as Lambdas and Buckets which are currently lumpted into one step in the menu with an option below that to select specific resources. I have the reosurce type. Maybe the type shows up and then the specific resources to deploy for that type - TBD.
+
+## 6/19/2026
+
+Been sepnding time fixing bugs and writing tests to fix old stuff so the needle has not moved on the main page tracker mucH. I think most of that is working. Now I have to align the data in my system and use that configuration app to configure my organziation I want to deploy and adjust some of the deployment steps to work wtih the new model. There's a lot of data for the resources already deployed. I'm cheating a bit and using AI to align the data in the XML files with what I want. I hope to have someone else helping me test out that functionality soon in a new organization to make sure it all works and find issues...BUT
+
+🟢 I discovered at some point the deploy project is creating each menu uniquely instead of using common code when it creates the data list fof the menu items. It is using the common menu code but duplicating a lot of things and menus are still inconsistent.
+
+...and digging into the details found huge discrepancies on the ways the projects wer eimlementing menus with unneccessary duplicated code. Again. After some lengthy analysis determined a revamp of menu actions could completely simplify the menus to a cleanrer data driven structure and move the problematic code into abstracted smaller est of code in the menus project. This is a massive change but allows me to create more extensible menus where I can have differnet plus common actions for each resource type and wipe out a whole bunch of errors.
 
 ⭐️ orchestrator: ~40 removed
 
@@ -23,6 +35,10 @@ Today's objectives:
 ⭐️ deploy: lots and lots
 
 ⭐️ menu project: Added: ~950 Removed: ~400
+
+So this took longer than expected but the end result is a completely data driven menu file for menu actions which is much simpler. I just hope it works because some of my filtering in the depoy project is not yet fully tested. But a lot of the common code moved to the menu project forced the depoy project to fix its menus.
+
+Around midnight models got dumb again. Really dumb mistakes and taking forever to do things. 
 
 ## 6/18/2026
 
