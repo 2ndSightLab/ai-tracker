@@ -40,6 +40,8 @@ So this took longer than expected but the end result is a completely data driven
 
 Around midnight models got dumb again. Really dumb mistakes and taking forever to do things. 
 
+But in theory, now everything is consistent and all menus work. Now I should be ableto focus on starting to depoy things and tweak the data as needed to align with my existing org.
+
 ## 6/18/2026
 
 🟢 Added new diagram options to display a single environment or a single account because there's a lot of dat ato review.
