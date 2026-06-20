@@ -15,9 +15,13 @@ Today's objectives:
 ...and digging into the details found huge discrepancies on the ways the projects wer eimlementing menus wiht unneccessary duplicated code. Again. After some lengthy analysis detemriend a revamp of menu actions could completely simplify the menus to a cleanrer data driven structure and move the problematic code into abstracted smaller est of code in the menus project. This is a massive change but allows me to create more extensible menus where I can have differnet plus common actions for each resource type and wipe out a whole bunch of errors.
 
 ⭐️ orchestrator: ~40 removed
+
 ⭐️ configure types: removed 800–900 lines
+
 ⭐️ configure org: lots
+
 ⭐️ deploy: lots and lots
+
 ⭐️ menu project: Added: ~950 Removed: ~400
 
 ## 6/18/2026
