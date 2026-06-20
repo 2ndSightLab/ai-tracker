@@ -13,6 +13,8 @@ I'm just telling the model to increment the mistakes it's making +1 if it starts
 
 ## 6/19/2026
 
+I had a variable in a file to solve a problem because the model coudl not resovel the problem. It was a simple fix. The model told me it no longer needed taht data and to remove it. Then it spent 20+ minutes figuring out hat wa sthe corect solution after spinning its wheels on no-end and completely re-architecting the program.
+
 10 PM - Kiro is being dumb again.
 
 This was from earlier today:
