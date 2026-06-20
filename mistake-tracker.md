@@ -13,6 +13,10 @@ I'm just telling the model to increment the mistakes it's making +1 if it starts
 
 ## 6/19/2026
 
+10 PM - Kiro is being dumb again.
+
+This was from earlier today:
+
  Kiro is having trouble responding right now: 
    0: Failed to receive the next message: request_id: dafae184-1261-42be-abe4-21952c330d9e, error: InternalServerError: Encountered an unexpected error when processing the request, please try again.
 
