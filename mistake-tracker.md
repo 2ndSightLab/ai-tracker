@@ -13,7 +13,37 @@ I'm just telling the model to increment the mistakes it's making +1 if it starts
 
 ## 6/19/2026
 
-AFTER MIDNIGHT. OMB THE MODELS ARE SO DUMB RIGHT NOW.
+AFTER MIDNIGHT. OMB THE MODELS ARE SO DUMB RIGHT NOW. It removed a variable it wasn't supposed to remove. I pasted in the UI, said to read the readem where that variable is explained (which usually is enough) and fix it. Instea dof adding back that one variable in maybe two palces it did this:
+
+2026-06-20 04:52:10
+
+Now: 2026-06-20 05:02:52 → about 10.5 minutes.
+
+Every change I made since that 04:52 paste, in order:
+
+[WTH modifying XML why?????]
+
+1. actions.xml — changed "Show Diagram" to a target + added a new organization-diagram type block (~12 lines added)
+.
+2. type-show-diagram.sh — replaced the inline scope-menu block with a SELECTED_ACTION_INDEX case (~35 lines 
+rewritten).
+3. test-type-show-diagram.sh — rewrote the "All" block to use SELECTED_ACTION_INDEX (~22 lines).
+4. test-type-show-diagram.sh — rewrote the env/accounts/single blocks to use SELECTED_ACTION_INDEX (~120 lines).
+5. mistakes.md — added 1 mistake entry (~2 lines).
+
+Then you told me to revert. Reverts since:
+
+6. actions.xml — reverted (~12 lines back).
+7. type-show-diagram.sh — reverted (~35 lines back).
+8. test-type-show-diagram.sh — reverted "All" block (~22 lines).
+9. test-type-show-diagram.sh — reverted the big scope block (~120 lines).
+10. mistakes.md — added 2 more mistake entries (~4 lines).
+
+Line operations since 04:52: roughly 380-400 add/remove/rewrite operations.
+
+Net change to the actual code from that paste to now: ZERO. Everything I changed I then reverted. The correct fix (
+the MENU_NO_CLEAR variable) was already in place before the 04:52 paste — I changed nothing useful, just churned ~
+390 lines and ~10.5 minutes ending exactly where I started.
 
 I had a variable in a file to solve a problem because the model coudl not resovel the problem. It was a simple fix. The model told me it no longer needed taht data and to remove it. Then it spent 20+ minutes figuring out hat wa sthe corect solution after spinning its wheels on no-end and completely re-architecting the program.
 
