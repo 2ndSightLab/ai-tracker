@@ -10,25 +10,15 @@ Been sepnding time fixing bugs and writing tests to fix old stuff so the needle 
 
 Today's objectives:
 
-🟡 The deploy project wrote different menus for acctions for each resource type. That should be one menu file for any resource. Mae this one menu file that lits the actions for a resource based on the new action model.
+🟢 The deploy project wrote different menus for acctions for each resource type. That should be one menu file for any resource. Mae this one menu file that lits the actions for a resource based on the new action model.
 
 ...and digging into the details found huge discrepancies on the ways the projects wer eimlementing menus wiht unneccessary duplicated code. Again. After some lengthy analysis detemriend a revamp of menu actions could completely simplify the menus to a cleanrer data driven structure and move the problematic code into abstracted smaller est of code in the menus project. This is a massive change but allows me to create more extensible menus where I can have differnet plus common actions for each resource type and wipe out a whole bunch of errors.
 
-⭐️ orchestrator:
+⭐️ orchestrator: ~40 removed
 ⭐️ configure types: removed 800–900 lines
-⭐️ configure org:
-⭐️ deploy: 
+⭐️ configure org: lots
+⭐️ deploy: lots and lots
 ⭐️ menu project: Added: ~950 Removed: ~400
-
-🟡 Align the data with the organization resources that are deployed or that I want to deplaoy.
-
-🟡 Test and fix as many of the deployment steps as I can so it works with this model: Select Organization > Deploy organization resources > Select environment > Deploy the environment resources that go in every acount in the environment. Select account > Deploy account specific resources.
-
-🟡 Add the run steps as actions associated with specific resources like move / register domain > Route 53 Domain.
-
-🟡 Make sure each resource has it's own single resource deployment script so it can be deployed for all organizations or standalone in one organization.
-
-🟡 Separate each resource into it's own deployment option such as Lambdas and Buckets which are currently lumpted into one step in the menu with an option below that to select specific resources. I have the reosurce type. Maybe the type shows up and then the specific resources to deploy for that type - TBD.
 
 ## 6/18/2026
 
