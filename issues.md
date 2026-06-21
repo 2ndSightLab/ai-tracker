@@ -67,7 +67,6 @@ If you find active Inbound or Outbound endpoints that you do not need, you can d
 
 > **Note:** If you have active Rules associated with an outbound endpoint, the console will prompt you to delete or disassociate those forwarding rules first before it allows you to delete the endpoint itself.
 
-
 🟡 As per usual it messed up the DNS. It was only supposed to copy records except NS records and it update the NS records so I told it to fix that and fix and validate any incorret records at the time of the move.
 
 🟡 Move hosted zone didn't update existing hosted zone so now the correct NS records are in one acount and the domain is associated ot the one with the wrong NS records I think not sure what is going on figure out tomororw.
@@ -77,8 +76,6 @@ If you find active Inbound or Outbound endpoints that you do not need, you can d
 🟡 Delete hosted zone didn't work becuase need to delete child records first.
 
 🟡 Ram sharing worked for one VPC but it's not working for the other three nad the models are going aroudn and around in circles and cannot figure it out.
-
-🟡 May be a dup but I think the user/role has to be deployed prior to teh location it is in the base env.
 
 🟡 Rename and account - name, email, alias - use this before closing an account
 
