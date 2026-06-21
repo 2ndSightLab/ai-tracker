@@ -4,7 +4,7 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
-## 6/20/2026
+## TODO
 
 Today's objectives:
 
@@ -17,6 +17,14 @@ Today's objectives:
 🟡 Make sure each resource has it's own single resource deployment script so it can be deployed for all organizations or standalone in one organization.
 
 🟡 Separate each resource into it's own deployment option such as Lambdas and Buckets which are currently lumpted into one step in the menu with an option below that to select specific resources. I have the reosurce type. Maybe the type shows up and then the specific resources to deploy for that type - TBD.
+
+## 6/21/2026
+
+🟢 Figured out a way to implement a time tracker that shows the elapsed total time for each propmt and response I think. I need to play around with it a bit more. If it works then I can track average time and varianaces to track total time including my onwn network, harness (like kiro), tool calls, etc. Then I can see if the average time is varying a lot from session to session for similar types of prompts.
+
+🟢 Moved running tests to a separate proect so I can run full test suites for each project outside the model itself. In addition the tests project can perform validations to make sure tests actually test what they are supposed to based on the requirements and are getting good code coverage. This is a variation on things I've done before that I think might work better. Less time and tokens running test suites. Agents only run tests they are chaning. The global test project can provide a propmt to the original project agent to correct any tests that have failed. Agents focus solely on what needs to be fixed.
+
+🟢 I think I figured out a way to get better adhereance to my global rules. I prompt for something and then ask the agent to systematically check it's response to see if it followed all the rules and log any mistakes. I actually add that check to the global requirements. The way I want to the agents to operate I believe makes them faster and use less tokens. My global time tracker should check that.
 
 ## 6/19/2026
 
