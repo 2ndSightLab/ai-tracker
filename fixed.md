@@ -8,17 +8,29 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 Today's objectives:
 
-🟡 Align the data with the organization resources that are deployed or that I want to deplaoy.
+🟡 Alter the diagrams in the org configuraton to align with the org configuraiton instead of the default type configuration.
 
-🟡 Test and fix as many of the deployment steps as I can so it works with this model: Select Organization > Deploy organization resources > Select environment > Deploy the environment resources that go in every acount in the environment. Select account > Deploy account specific resources.
+🟡 A way to revert an org configuration back to the default org configuration.
 
-🟡 Add the run steps as actions associated with specific resources like move / register domain > Route 53 Domain.
+🟡 Move org specific steps into the management environment list.
 
-🟡 Make sure each resource has it's own single resource deployment script so it can be deployed for all organizations or standalone in one organization.
+🟡 Ensure OU is always the first step, accounts second. Need dependency tracking.
 
-🟡 Separate each resource into it's own deployment option such as Lambdas and Buckets which are currently lumpted into one step in the menu with an option below that to select specific resources. I have the reosurce type. Maybe the type shows up and then the specific resources to deploy for that type - TBD.
+🟡 Test and fix each deployment step.
+
+🟡 Add resource specific actions (like route 53 register domain)
+
+🟡 Each resource type has single item deployment with separate "deploy all" steps if needed.
+
+🟡 Each resource has it's own deployment step like each lambda with diff name, each bucket, etc.
+
+🟡 Revisit networking. Should that change somehow... that's big maybe later.
+
+🟡 Single account depoyment.
 
 ## 6/21/2026
+
+🟢 Created a separate diagram to show the default organization and types which in addition to the diagrams in the org confguraiton which need to aalign to teh org configuraiton not the deafult configuration. Just figured out why that was confusing me. :)
 
 🟢 Figured out a way to implement a time tracker that shows the elapsed total time for each propmt and response I think. I need to play around with it a bit more. If it works then I can track average time and varianaces to track total time including my onwn network, harness (like kiro), tool calls, etc. Then I can see if the average time is varying a lot from session to session for similar types of prompts.
 
