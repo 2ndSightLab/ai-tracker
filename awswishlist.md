@@ -175,5 +175,5 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/mistake-tracker.md
 
 🟠 Would like simply to have a --no-banner flag for no banner in no-interactive mode.
 
-🟠 Having problems getting my agents to work correclty unless I use --classic mode. Why. What changed? I need to look into this more but I'm not able to get no-agent mode working correctly unless I'm in classic mode so far. Also my entire agent frameowrk doesn't work with the TUI.
+🟠 Having problems getting my agents to work correclty unless I use --classic mode. Why. What changed in newer versions that broke that? I am afraid to update Kiro now. I need to look into this more but I'm not able to get no-agent mode working correctly unless I'm in classic mode so far. Also my entire agent frameowrk doesn't work with the TUI.
 
