@@ -15,7 +15,7 @@ I'm just telling the model to increment the mistakes it's making +1 if it starts
 
 I've got a new way of tracking time, lines changed, rework, etc. I log this all to time.md in my projects. Tonight I asked one project to evaluate another project's time.md file. Here you can see that starting at a certain time, the times ballooned to high numbers. This analysis claims it is wha the model is working on, but the model has bene fixing similar things all night. Notice that I'm trying to get the model to respond in fewer words - and those verbose responses are what is driving much of the cost (unneccesarily) as noted in this analysis. It's a lot of useless vebiage most of the time.
 
-Analysis:
+### Model Analysis of Time Log:
 
 Elapsed time: Early turns (06-22 00:29–04:05) were short, ~16–47s. From 06-22 22:18 onward, turns balloon to 150–1224s,
 with the longest single turn ~1224s (~20m) on the diagram name/id work and several 450–908s turns. The work shifted 
@@ -31,12 +31,12 @@ response size, not request size.
 
 The actionable signal: the diagram association/render path needs a real redesign rather than repeated incremental 
 tuning. 
-___
+
+### My Input:
 
 As for the diagram overhaul I haven't looked at that code but it's working fine and the changes were minimal to the diagram. I'm modifying the underlying data model again to make sure it is right because it wasn't working the way I wanted. The model struggles to follow directions and implment the data model the way I ask. It just finally consolidated the code the way I asked (I think) but it's going very slowly right now.
 
-__
-Sampe time entries:
+### Sample time entries:
 
 Gap = time between when the propmt was recieved and when a date command got executed.
 Rework = 1 means the model assessed it was doing rework. It underestimates what is rework.
@@ -78,6 +78,8 @@ Lines changed in request/readme (added or removed)
 20260623-004153 start:2026-06-23T00:40:32.188+00:00 stop:2026-06-23T00:41:53.035+00:00 elapsed:~81s req_words:25 resp_words:300 est_tokens:406 credits:NA gap:~10s req:+0/-0 code:+0/-0
 20260623-004032 start:2026-06-23T00:25:24.274+00:00 stop:2026-06-23T00:40:32.188+00:00 elapsed:~908s req_words:25 resp_words:240 est_tokens:344 credits:NA gap:~7s req:+0/-0 code:+0/-0
 20260623-002524 start:2026-06-23T00:15:59.922+00:00 stop:2026-06-23T00:25:24.274+00:00 elapsed:~565s req_words:80 resp_words:340 est_tokens:546 credits:NA gap:~7s req:+5/-6 code:+25/-35
+
+### Mistakes logged:
 
 Here are some recent mistakes in this project (UTC):
 
@@ -125,8 +127,6 @@ The model also failed to follow instructions to always log to the top:
 20260623-015625 M: Started editing code before fixing requirements per the instruction order. C: Fix x requirements first, then change code to match.
 20260623-015830 M: Asked the user a question already answered in the x and invented a false either/or about a name tag. C: Read the relevant requirement and proceed; the spec already requires the name tag, only the shared x change was requested.
 20260623-015904 M: Did not log timestamp before acting and did not append timestamp last in prior responses. C: Log timestamp to x first before any action and append it last every response.
-
-
 
 ## 6/19/2026
 
