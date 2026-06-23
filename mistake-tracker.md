@@ -26,10 +26,6 @@ redesign", "still optimizing render speed", "replaced slow per-account scan", "r
 "slow-render not infinite loop". Diagram render performance is a recurring, unresolved bottleneck driving the longest 
 turns.
 
-Data integrity issues: One duplicate line (20260623-031300 appears twice), and one zero-duration entry (20260623-031410
-start==stop, ~0s). Five stray bare-timestamp lines at the very bottom (20260623-013903, 015626, 015905) with no fields
-— malformed trailing junk like I had in my own file.
-
 Token/verbosity: resp_words is consistently high (200–600) while req_words is often tiny (1–14), so most cost is 
 response size, not request size.
 
