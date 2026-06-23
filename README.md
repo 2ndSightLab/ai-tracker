@@ -46,7 +46,7 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/fixed.md
 
 https://github.com/2ndSightLab/ai-tracker/blob/main/awswishlist.md
 
-## Time
+## My Time
 
 I started this project around March 7th. I had to take a break for about three weeks in May. I haven't really worked on anything else besides this and blog posts because I keep thinking it is "almost done." I've also been working kind of long hours to do it and figure things out.
 
@@ -55,6 +55,12 @@ My initial post on this project tracks the start project and initial progress in
 https://teriradichel.substack.com/p/what-ive-vibe-coded-in-25-weeks
 
 The time it takes is demonstrated by feature completion and the timestamps in this GitHub repo, though my time may be taken away for other things periodically. 
+
+## Response Time
+
+Sometimes I am blocked by the system being slow or copmletely unsuable. It's hard to tell if it's the model or Kiro so I tried to measure gaps. This is a work in progress. I have limited information to work with, which I think needs to improve. We need more transparency for all metrics.
+
+https://github.com/2ndSightLab/ai-tracker/blob/main/response-time.md
 
 ## Cost: ##
 
