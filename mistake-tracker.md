@@ -43,6 +43,7 @@ Rework = 1 means the model assessed it was doing rework. It underestimates what 
 Request words, response words, estiamted tokens based on a generalized formula since I have no way to get a precise number.
 Lines changed in request/readme (added or removed)
 
+```
 20260623-034038 start:2026-06-23T03:40:20.290+00:00 stop:2026-06-23T03:40:38.582+00:00 elapsed:~18s req_words:4 resp_words:60 est_tokens:83 credits:NA gap:~0s req:+0/-0 code:+0/-0 rework:0 confirmed prior turn time.md entry present; logged this turn
 20260623-033827 start:2026-06-23T03:29:22.216+00:00 stop:2026-06-23T03:38:27.746+00:00 elapsed:~545s req_words:30 resp_words:300 est_tokens:429 credits:NA gap:~8s req:+30/-20 code:+60/-90 rework:1 added read-record.sh generic reader, uniform type-id, consolidated diagram reads, renamed tags in src/README/tests
 20260623-032103 start:2026-06-23T03:20:51.394+00:00 stop:2026-06-23T03:21:40.000+00:00 elapsed:~49s req_words:9 resp_words:240 est_tokens:324 credits:NA gap:~0s req:+0/-0 code:+0/-0 rework:0 displayed populated x/x/x config after the population fix
@@ -78,11 +79,13 @@ Lines changed in request/readme (added or removed)
 20260623-004153 start:2026-06-23T00:40:32.188+00:00 stop:2026-06-23T00:41:53.035+00:00 elapsed:~81s req_words:25 resp_words:300 est_tokens:406 credits:NA gap:~10s req:+0/-0 code:+0/-0
 20260623-004032 start:2026-06-23T00:25:24.274+00:00 stop:2026-06-23T00:40:32.188+00:00 elapsed:~908s req_words:25 resp_words:240 est_tokens:344 credits:NA gap:~7s req:+0/-0 code:+0/-0
 20260623-002524 start:2026-06-23T00:15:59.922+00:00 stop:2026-06-23T00:25:24.274+00:00 elapsed:~565s req_words:80 resp_words:340 est_tokens:546 credits:NA gap:~7s req:+5/-6 code:+25/-35
+```
 
 ### Mistakes logged:
 
 Here are some recent mistakes in this project (UTC):
 
+```
 20260623-032922 M: Renamed three separate per-type x lines instead of consolidating the type read into one generic code path that handles every type the same way. C: With a uniform x, read the type through a single shared file used by every type; do not keep per-type duplicated reads.
 20260623-032709 M: Claimed the record model is already generic when it is not; each record stores a distinct type tag (x, x, x) instead of one uniform x, so shared code cannot read the type the same way for every type. C: Use a single uniform x tag on every record so one code path reads any type.
 ⚠️‼️ 20260623-032523 M: Ran x against the real config directory to reproduce a bug, creating and then deleting real x data instead of using a temp fixture copy. C: Reproduce only against a x copy; never run the program against the real config or modify real data.
@@ -116,9 +119,11 @@ Here are some recent mistakes in this project (UTC):
 20260622-002930 M: Did not follow the Response Timestamps prompt; no prompt-time line, timing block, end-of-turn line, or x append. C: Follow the verbatim timestamp prompt every reply and append each turn to x.
 20260622-002634 M: Ran a test with stdin redirected from x, which the rules forbid; tests must feed input via a heredoc. C: Feed an empty heredoc on stdin instead of x when running a test.
 20260622-002557 M: A test helper redirected prompt stdout to stderr so prompt text leaked to the runner output instead of being suppressed. C: Suppress prompt and menu output in the helper so a test prints only its PASS and FAIL line.
+```
 
 The model also failed to follow instructions to always log to the top: 
 
+```
 20260623-013900 M: Did not log a timestamp/mistake before acting and did not append timestamp last. C: Log timestamp and any mistake to x first, before any other action.
 20260623-013901 M: Did not log timestamp to x before acting and did not append timestamp last in prior response. C: Log timestamp to x first before any action and append timestamp last in every response.
 20260623-013902 M: Inspected x flags as if they belonged in x resource lists. C: Resource and child entries store only id and x; flags are looked up in the x project, never copied.
@@ -127,6 +132,7 @@ The model also failed to follow instructions to always log to the top:
 20260623-015625 M: Started editing code before fixing requirements per the instruction order. C: Fix x requirements first, then change code to match.
 20260623-015830 M: Asked the user a question already answered in the x and invented a false either/or about a name tag. C: Read the relevant requirement and proceed; the spec already requires the name tag, only the shared x change was requested.
 20260623-015904 M: Did not log timestamp before acting and did not append timestamp last in prior responses. C: Log timestamp to x first before any action and append it last every response.
+```
 
 ## 6/19/2026
 
