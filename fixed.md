@@ -28,6 +28,12 @@ Today's objectives:
 
 🟡 Single account depoyment.
 
+## 6/23/2026
+
+3:46 PM
+
+I am honestly a bit frustrated at this point that I am not further along. I started tracking time so I can see if the model is really slower at night or it is my imagination. It is not. See the mistakes tab. What I also noticed right before my third plan ran out was tha the model completely disregarded my instructions to rearchitect a part of the application. I did it very fast and did not watch everything the model wrote. Now extending that architecture is problematic and maintaining consistentcy across projects. So I think I need to fix that. Also tests run slowly. I am not sure if there is a way to speed that up. It has to do with the architecture and I'm not sure if it's worth fixing for this scripty project. I just need to get resources deployed. Let's see what we can do today.
+
 ## 6/21/2026
 
 🟢 Created a separate diagram to show the default organization and types which in addition to the diagrams in the org confguraiton which need to aalign to teh org configuraiton not the deafult configuration. Just figured out why that was confusing me. :)
