@@ -13,6 +13,30 @@ I'm just telling the model to increment the mistakes it's making +1 if it starts
 
 ## 6/23/2026
 
+Frustrating today...
+
+First the model says that the start time and end time are time between my last propmt and new prompt not the start of response and end of resopnse. What? Afer way too much review I think that was a made up inaccurate anaylis but not sure.  
+
+Did it forgot to log end times? I don't know. Just want it to be right today so I started asking what was wrong with the requirements can they be more clear?
+
+As I tried to correct the time logging it's making up a ton of garbage and nonsense which makes all the assessment incorrect. It messed up the requirements, when I tried to change the logging it logs garbage, and all kind os of other nonsense.
+
+And it is SO SLOW. Unbearably slow.
+
+I ask it to show me corected requiremetns for time logging and it compeltely leaves things out of the requirements and states things that are blatntly wrong.
+
+It's like it is trying really hard NOT to give accurate time measurements.
+
+It tells me it's faster than yesterady when it is CLEARLY NOT. 
+
+Finally I get it to log some things correctly and the other project does and analysis and I realize the first project has REMOVED ALL THE DATES FROM THE TIME LOG!?
+
+I try to restore the dates. Now have no idea if they are correct. But even without the dates the more recent times are 2X slower than earlier timestamps. That aligns with the project's own assessment that that gap between when the propmt is submitted and the model runs the first date commaned it's about 2x slower than yesterday.
+
+So many mistakes right now. I don't even trust it to change anything. I did some analysis with Sonnet and not even close to what the other models can produce. Timeout.
+
+Along the way had a crash:
+
 Oops.
 ```
 Kiro is having trouble responding right now: 
