@@ -34,7 +34,12 @@ Token/verbosity: resp_words is consistently high (200–600) while req_words is 
 response size, not request size.
 
 The actionable signal: the diagram association/render path needs a real redesign rather than repeated incremental 
-tuning, and that file's time.md has the same trailing-junk and non-integer-rework defects to clean up.
+tuning. 
+___
+
+As for the diagram overhaul I haven't looked at that code but it's working fine and the changes were minimal to the diagram. I'm modifying the underlying data model again to make sure it is right because it wasn't working the way I wanted. The model struggles to follow directions and implment the data model the way I ask. It jsuts finally consolidated the code the way I asked (I think) but it's going very slowly right now.
+
+20260623-033827 start:2026-06-23T03:29:22.216+00:00 stop:2026-06-23T03:38:27.746+00:00 elapsed:~545s req_words:30 resp_words:300 est_tokens:429 credits:NA gap:~8s req:+30/-20 code:+60/-90 rework:1 added read-record.sh generic reader, uniform type-id, consolidated diagram reads, renamed tags in src/README/tests
 
 ## 6/19/2026
 
