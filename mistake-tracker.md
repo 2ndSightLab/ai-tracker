@@ -11,6 +11,31 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/fixed.md
 The mistake tracker is a new part of the project added a few months in. This is not super scientific as it is hard to quantify. 
 I'm just telling the model to increment the mistakes it's making +1 if it starts making a bunch of mistakes. This is not every mistakes mostly only when I start getting annoyed. :-D The mistakes are largely worded by the AI agent and sometimes it does not capture the correct mistake but I don't always fix that because I just want to get stuff done. It generally captures a valid mistake but not the one I actually wanted it to log. So these are all valid just some are missing I didn't bother to fix to the correct mistake. I don't care about typooooos this is just a fast as possible log. Trying to get things done.
 
+## 6/22/2026
+
+I've got a new way of tracking time, lines changed, rework, etc. I log this all to time.md in my projects. Tonight I asked one project to evaluate another project's time.md file. Here you can see that starting at a certain time, the times ballooned to high numbers. This analysis claims it is wha the model is working on, but the model has bene fixing similar things all night. Notice that I'm trying to get the model to respond in fewer words - and those verbose responses are what is driving much of the cost (unneccesarily) as noted in this analysis. It's a lot of useless vebiage most of the time.
+
+Analysis:
+
+Elapsed time: Early turns (06-22 00:29–04:05) were short, ~16–47s. From 06-22 22:18 onward, turns balloon to 150–1224s,
+with the longest single turn ~1224s (~20m) on the diagram name/id work and several 450–908s turns. The work shifted 
+from quick edits to long debugging sessions.
+
+Rework cluster: Nearly every rework note is about diagram rendering being too slow — "pre-scan too slow needs 
+redesign", "still optimizing render speed", "replaced slow per-account scan", "removed duplicate scope=all render", 
+"slow-render not infinite loop". Diagram render performance is a recurring, unresolved bottleneck driving the longest 
+turns.
+
+Data integrity issues: One duplicate line (20260623-031300 appears twice), and one zero-duration entry (20260623-031410
+start==stop, ~0s). Five stray bare-timestamp lines at the very bottom (20260623-013903, 015626, 015905) with no fields
+— malformed trailing junk like I had in my own file.
+
+Token/verbosity: resp_words is consistently high (200–600) while req_words is often tiny (1–14), so most cost is 
+response size, not request size.
+
+The actionable signal: the diagram association/render path needs a real redesign rather than repeated incremental 
+tuning, and that file's time.md has the same trailing-junk and non-integer-rework defects to clean up.
+
 ## 6/19/2026
 
 AFTER MIDNIGHT. OMB THE MODELS ARE SO DUMB RIGHT NOW. It removed a variable it wasn't supposed to remove. I pasted in the UI, said to read the readem where that variable is explained (which usually is enough) and fix it. Instea dof adding back that one variable in maybe two palces it did this:
