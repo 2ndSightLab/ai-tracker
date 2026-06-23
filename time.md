@@ -1,4 +1,4 @@
-# Time
+# Response Time
 
 ## 6/23/2026
 
