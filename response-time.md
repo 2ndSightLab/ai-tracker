@@ -25,6 +25,7 @@ aligns with what you're feeling, and it points to the backend/processing path (l
 
 [end of turn: 2026-06-23T22:11:42.800+00:00 prompt; ~199s since your prior prompt]
 
+As I'm pondering all this I wonder how other hosts on the hypervisor can play into this or is it all in the system to which I'm connecting and getting responses from? Hard to know.
 
 ## 6/22/2026
 
