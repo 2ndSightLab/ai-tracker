@@ -177,3 +177,5 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/mistake-tracker.md
 
 🟠 Having problems getting my agents to work correclty unless I use --classic mode. Why. What changed in newer versions that broke that? I am afraid to update Kiro now. I need to look into this more but I'm not able to get no-agent mode working correctly unless I'm in classic mode so far. Also my entire agent frameowrk doesn't work with the TUI.
 
+🟠 Why am I seeing repeated connections to the IAM api after I'm already logged in on main AWS page? Why do I see multiple attempts to connect to a help domain? I'm not doing anything just sitting here looking at the screen? I blocked them and it still seems to work.
+
