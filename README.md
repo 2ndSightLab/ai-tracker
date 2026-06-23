@@ -5,7 +5,7 @@
 Track how long it takes and how much it costs to create projects with AI 🤖 in an attempt to optimize progress. Note that I have only been using Opus 6 and 8 same price per token.
 
 | Usage Dates | Plan | % usage | charges | days | cost per day
-| :---:| :---: | :---: | :---: |
+| :---:| :---: | :---: | :---: | :---: | :---: |
 | June 1 - 12 | $200 plan | 100% | $83 | 12 | $6.92 | 
 | June 13 - 17 9:00 pm | $200 plan | 100% | $67 | 4 | $16.75 | 
 | June 17 9:16PM - 23 3:00 AM | $200 plan | 100% | $120 | $20 | 
