@@ -38,7 +38,7 @@ I'm primarily using Kiro CLI and anthropic models, though I do use Google aimode
 
 https://github.com/2ndSightLab/ai-tracker/blob/main/issues.md
 
-## Fixed:
+## Fixed / Notes:
 
 https://github.com/2ndSightLab/ai-tracker/blob/main/fixed.md
 
