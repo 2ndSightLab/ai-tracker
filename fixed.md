@@ -40,7 +40,7 @@ Model is faster now. And went through the menus in the two projects. Yesterday t
 
 🟢 Fix the order in xml and diagrams (need to make sure gets added in correct order)
 
-Ready to deploy???
+Ready to deploy??? I think maybe possibly have the data model I want and the data kind of in place. I have a half written blog post I'll try to publish after confirming resource deployments work agian. Of course, I'll probbaly hit some glitches so we'll see how that goes.
 
 3:46 PM
 
