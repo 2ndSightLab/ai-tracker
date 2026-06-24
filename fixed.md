@@ -4,31 +4,43 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
-## TODO
+## Today's objectives:
 
-Today's objectives:
+🟡 Test and fix each deployment step, fixing per account issues as arise, maybe convert lambdas to scripts in some cases > these will become jobs later...
 
-🟡 Alter the diagrams in the org configuraton to align with the org configuraiton instead of the default type configuration.
-
-🟡 A way to revert an org configuration back to the default org configuration.
-
-🟡 Move org specific steps into the management environment list.
-
-🟡 Ensure OU is always the first step, accounts second. Need dependency tracking.
-
-🟡 Test and fix each deployment step.
+🟡 Add dependencies > KMS key before S3 encrytpion, e.g. as needed
 
 🟡 Add resource specific actions (like route 53 register domain)
 
-🟡 Each resource type has single item deployment with separate "deploy all" steps if needed.
-
-🟡 Each resource has it's own deployment step like each lambda with diff name, each bucket, etc.
-
 🟡 Revisit networking. Should that change somehow... that's big maybe later.
 
-🟡 Single account depoyment.
-
 ## 6/23/2026
+
+8:45 PM
+
+Model is faster now. And went through the menus in the two projects. Yesterday the project I was working on said that it didn't follow the menu requirements but digging into it today, it actually does. There were some conflicting rquiremstns in a global readme project from before things were consolidated in a global app runner in the menus porject so I removed the conflicts and double checked and the code is actually OK. Mostly. Only the first menu doesn't exactly match but that's fine. So now I'm back to trying to make sure all the data is correct to deploy the resources in my organization.
+
+🟢 Need to align types diagram and resources diagrams to match. Simpify the data structure Org.xml > resources deployed in the org adn resoures depoyed to every accouunt env.xml > OU + resources deployed to every account in the OU. Accounts > Account specifc resources.
+
+🟢 Clean up data to match my org from menory. 
+
+🟢 Splitting up resources to depoy per account instead of all acounts at once to match new model.
+
+🟢 Fix numerous diagram issues and data issues with new model.
+
+🟢 Add enviroment needs to add default resources.
+
+🟢 Blindly split some deploy files to work per resource instead of all acounts at once. Untested. No idea if that will work....
+
+🟢 Research and move log bucket in every acount to single log bugcket in security account.
+
+🟢 Revert org, env, accoutn to default.
+
+🟢 Restructure Org XML file to suppoert resources to each env, resources to each account
+
+🟢 Fix the order in xml and diagrams (need to make sure gets added in correct order)
+
+Ready to deploy???
 
 3:46 PM
 
