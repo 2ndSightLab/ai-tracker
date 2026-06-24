@@ -1,5 +1,9 @@
 # Response Time
 
+## 6/24/2026
+
+Just figured out the agents completely nerged the time tracking up to this point and did not log what I wanted them to log.  I just now manually wrote the time tracking reuqirements. Starting over...
+
 ## 6/23/2026
 
 I started out today looking at the time logs and everything is slower today. Initially the model tried to tell me it is faster today when it is clearly having some issues right now. It was misineterpreting or maying pulling the wrong date. Fixed that and got better analysis (supposedly - it's making a ton of mistakes right now):
