@@ -15,6 +15,12 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/response-time.md
 The mistake tracker is a new part of the project added a few months in. This is not super scientific as it is hard to quantify. 
 I'm just telling the model to increment the mistakes it's making +1 if it starts making a bunch of mistakes. This is not every mistakes mostly only when I start getting annoyed. :-D The mistakes are largely worded by the AI agent and sometimes it does not capture the correct mistake but I don't always fix that because I just want to get stuff done. It generally captures a valid mistake but not the one I actually wanted it to log. So these are all valid just some are missing I didn't bother to fix to the correct mistake. I don't care about typooooos this is just a fast as possible log. Trying to get things done.
 
+## 6/24/2026
+
+Also just figured out that the agents have bene logging time incorrectly this whole time. So all times prior to now need to be disregarded.
+
+Agenst are VERY BAD at Linux permissions. I've written it before and re-emphasizing here that you CANNOT TRUST ANTHROPIC MODELS OR OTHERS I HAVE TESTED TO CORRECTLY IMPLMENT LINUX PERMISSIONS. I found more premissions errors today where agent implemented permissions with gaps. After implementing the fix I manually tested the fix and it was incorrect. In fact failed multiple times.
+
 ## 6/23/2026
 
 Frustrating today...
