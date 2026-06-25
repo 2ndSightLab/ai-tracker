@@ -168,6 +168,16 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Environment Type Resource Types | 🟢 | 🟢 | 🟢 | n/a | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Default Org (define mangemnt env) | 🟢 | n/a | n/a | n/a | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
+### Configure Organization Actions ##
+| Management Environment - Type ID | 🟢 | 🟢 | 🔴 | 🔴 | 
+| Backup Environment - Type ID | 🟢 | 🟢 | 🔴 | 🔴 | 
+| View Settings XML | 🟢 | 🟢 | 🔴 | 🔴 | 
+| Organization Diagram - All | 🟢 | 🟢 | 🔴 | 🔴 | 
+| Organization Diagram - Enviroments | 🟢 | 🟢 | 🔴 | 🔴 | 
+| Organization Diagram - Accounts | 🟢 | 🟢 | 🔴 | 🔴 | 
+| Organization Diagram - Per org/env resources | 🟢 | 🟢 | 🔴 | 🔴 | 
+| Organization Diagram - Type descriptions | 🟢 | 🟢 | 🔴 | 🔴 | 
+
 ### Configure Organization ###
 
 * Multiple enviroments of a single type can be created (Web-Dev, Web-Prod, etc.)
@@ -208,10 +218,10 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Select Account | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Deploy Account Resources | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
-### Org Resources ###
+### Deploy Org Resources ###
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | Organization | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
 | Enable All Features | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
 | SCP: env-allowed-regions [env] | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
