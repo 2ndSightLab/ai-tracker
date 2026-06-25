@@ -7,7 +7,7 @@ Track how long it takes and how much it costs to create projects with AI 🤖 in
 ## Status Summary (Funcntional, limited code review):
 
 | Status | Description
-| :---: | :---: |
+| :---: | :--- |
 | 🟢 | Configure Reosurce Tyeps
 | 🟢 | Organization
 | 🟡 | Deploy Environment & Resources
