@@ -18,6 +18,21 @@ I'm just telling the model to increment the mistakes it's making +1 if it starts
 
 ## 6/24/2026
 
+2:32 PM 
+
+Not sure what this is all about. Seems to be an issue in the instrospection tool:
+
+ Neither Best nor Fast exists in your files as a config value.
+
+The only matches are:
+- project-create-agent-file.sh — the word "Fast" appears in human-readable tool descriptions ("Fast file discovery", "Fast content search"). These are
+display strings, not enum values.
+- .kiro/agents/botz-project.json — the match is "fastest" inside the prompt text ("smartest and fastest software engineer"), again just prose.
+
+There is no field set to Best or Fast anywhere in your project. This confirms the introspect parse error (unknown variant 'Best', expected 'Fast') is 
+coming from inside the Kiro CLI/tool layer, not from your botz-project files.
+
+
 9:52 PM 
 Kiro is having trouble responding right now: 
    0: Failed to receive the next message: request_id:, error: InternalServerError: Encountered an unexpected error when processing the request, please try again.
