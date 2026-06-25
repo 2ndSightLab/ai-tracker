@@ -6,6 +6,7 @@ Note that I use a global readme for my rules NOT a Kiro steering file because A)
 
 ## 6/25/2026 1:33 PM ET - Analysis
 
+```
 Looking at the times between the two days for trends here is what Agent 1 said about the time entries:
 
 Analysis of time and mistakes, day 1 (06-24 and earlier) vs day 2 (06-25):
@@ -24,9 +25,10 @@ Agent 2 tried to make the assumption that the more lines of code were longer ses
 From me: 
 
 I also figured out while working on these times entries that the agent absolutely does not keep everything in it's memory, cannot reproduce past data exactly as it gave it to me and that explains why it is making so many repeatd mistakes in a single session and cannot remember what it did before. Aha. That gave me some ideas for improving agent performance. We'll see how it goes. Basically the agent memory as currently working right now in Kiro/Anthropic is completely flawed.
+```
 
 ## 6/25/2026 6:15 PM - 1:05 PM ET
-
+```
 Project A:
 start:2026-06-25T05:52:13Z stop:2026-06-25T05:55:33Z overhead:~3s total:~204s req_words:14 resp_words:120 est_tokens:~
 187 rework:0 desc:FILE appends standard Back/Main Menu/Help trailer when engine context set; doc updated; added trailer
@@ -286,7 +288,7 @@ req:+0a/-0r code:+0a/-0r rework:0 desc:diagnosed Deploy Org menu error; root cau
 project
 start:2026-06-25T01:45:54Z stop:2026-06-25T01:46:09Z total:~30s overhead:~15s req_words:14 resp_words:120 tokens:~174 
 req:+0a/-0r code:+0a/-0r rework:0 desc:read all readmes and report
-
+```
 ## 6/23/2026
 
 I started out today looking at the time logs and everything is slower today. Initially the model tried to tell me it is faster today when it is clearly having some issues right now. It was misineterpreting or maying pulling the wrong date. Fixed that and got better analysis (supposedly - it's making a ton of mistakes right now):
