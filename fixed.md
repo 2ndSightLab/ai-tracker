@@ -28,6 +28,11 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 🟢 Added separate CIDR/IPs for web and console access as those are coming from two differnet places; bootstrap admin vs. users logging into aws or job console. 
 
+🟢 OMG more menus not implemented corectly. Serisiousy are there getting reverted or just didn't follow instructions to fix them before - reduced code in org project. 
+
+🟢 Menus in deploy proejct all wrong. Not using the global menu project. 
+
+🟢 Fix global menu project to add new filters to suport all types of menus.
 
 ## 6/23/2026
 
