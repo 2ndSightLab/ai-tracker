@@ -3,6 +3,8 @@
 
 Fixed issues in fixed.md
 
+🟡 Root SCPs - Bootstrap role perm - attach
+
 🟡 Seeing high route53 costs need to look into why that is. Check - need to query all DNS services and make sure DNS is locked down to only allowed accounts.
 
 # AWS Route 53 Cost Optimization Guide
