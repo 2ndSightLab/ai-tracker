@@ -6,13 +6,19 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 ## Today's objectives:
 
+🟡 Issue with illegal charcter in name what?
+
+🟡 Fix depoyment to align with diagra hierarchy.
+
+🟡 The action file is still not being pulled dynamically per resource; need to set action to take dyaniacli in menus project like action-resrouce
+
+🟡 Need a menu to list all actions for a resource and allow user to choose one.
+
 🟡 Test and fix each deployment step, fixing per account issues as arise, maybe convert lambdas to scripts in some cases > these will become jobs later...
 
 🟡 Add dependencies > KMS key before S3 encrytpion, e.g. as needed
 
 🟡 Add resource specific actions (like route 53 register domain)
-
-🟡 Revisit networking. Should that change somehow... that's big maybe later.
 
 ## 6/24/2026
 
