@@ -147,7 +147,7 @@ https://builder.aws.com/wishlist/3ETEXLx2zZ9GFzQHFYKqmJBcS9M_w/kiro-in-aws-conso
 
 🟢 🧡 Note related to the last post. I had some issues with slowness around midnight with Kiro and memory-related exceptions which seem to have been resolved. 
 
-🟠 Let me turn off os notifications in the AWS console. Seeing too many repeated connections that beacon like a C2 channel. Just want to turn it off.
+🟠 Let me turn off os notifications in the AWS console. Seeing too many repeated connections that beacon like a C2 channel. Just want to turn it off in some accounts and maybe it's only on in the acount where I actually want to see notifications. Let me use that with AWS Organizations and see all the notifications for my organizations in one account. Let me send a notification to my cell phone if a service I am actively using goes down rather than these constant pings and traffic in accounts. 
 
 🟠 Let me turn off os panorama requests in the AWS console. Seeing too many repeated connections that beacon like a C2 channel. Just want to turn it off. I find panorama API calls odd because Google aimode reports Panarama as a deperecated client camera service. What even is that?
 
@@ -165,7 +165,7 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/mistake-tracker.md
 
 🟠 I would prefer no third party domains when I load the AWS console. I see Adobe and Demdex. Can't you front those with your own doamins so you can see the traffic going to those third party domains? Or if you do inspect that traffic can you document and explain what those are used for and why they exist?
 
-🟠 What is tangerine box? Please provide more information about each domain and its purpose and why it is needed.
+🟠 What is tangerine box? Please provide more information about each domain and its purpose and why it is needed. Can I turn this off? It's another thing that seems to be constantly showing. Too much random traffic.
 
 🟠 When I go to the console in a us region why am I seeing EU regions popping up and Asian regions? I shoudl be getting the nearest regional endpoint or at least only US regions??? Maybe if an out of country region is required for perfromance region you ask the customer if they want to allow that - and in my case I do not.
 
