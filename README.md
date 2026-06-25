@@ -8,12 +8,12 @@ Track how long it takes and how much it costs to create projects with AI 🤖 in
 
 | Status | Description
 | :--- | :---: |
-🟢 Configure Reosurce Tyeps
-🟢 Organization
-🟡 Deploy Environment & Resources
-🟡 Verify Environment & Resources
-🟡 Delete Environent & Resources
-🟡 Manage Drift
+| 🟢 | Configure Reosurce Tyeps
+| 🟢 | Organization
+| 🟡 | Deploy Environment & Resources
+| 🟡 | Verify Environment & Resources
+| 🟡 | Delete Environent & Resources
+| 🟡 | Manage Drift
 
 ## Token / Credit Usage
 
