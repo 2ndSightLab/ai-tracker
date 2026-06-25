@@ -210,6 +210,8 @@ Configure organization to deploy; define environemnt types (allowed resources)
 
 ### Org Resources ###
 
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Organization | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
 | Enable All Features | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
 | SCP: env-allowed-regions [env] | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
