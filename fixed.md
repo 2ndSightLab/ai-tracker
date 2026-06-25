@@ -12,9 +12,9 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 🟡 The action file is still not being pulled dynamically per resource; need to set action to take dyaniacli in menus project like action-resrouce
 
-🟡 Need a menu to list all actions for a resource and allow user to choose one.
+🟡 Test and fix deploy each resource, then verify, then delete
 
-🟡 Test and fix each deployment step, fixing per account issues as arise, maybe convert lambdas to scripts in some cases > these will become jobs later...
+🟡 Need a menu to list all actions for a resource and allow user to choose one.
 
 🟡 Add dependencies > KMS key before S3 encrytpion, e.g. as needed
 
