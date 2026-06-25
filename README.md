@@ -85,7 +85,7 @@ This data is pulled from a custom Dashboard I created in the AWS Cost Management
 ### Status Legend ###
 
 | Status | Description | 
-| :--- | :---: | 
+| :---: | :---: | 
 | 🟢 | Done |
 | 🟡 | Broke or Implmeented Not Yet Run |
 | 🔴 | Not Done |
@@ -171,7 +171,7 @@ Configure organization to deploy; define environemnt types (allowed resources)
 ### Configure Organization Actions ##
 
 | Feature | List | Add | Delete | Rename | Menus | Tested | Code Review | Security Review |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | Management Environment - Type ID | 🟢 | 🟢 | 🔴 | 🔴 | 
 | Backup Environment - Type ID | 🟢 | 🟢 | 🔴 | 🔴 | 
 | View Settings XML | 🟢 | 🟢 | 🔴 | 🔴 | 
@@ -188,7 +188,7 @@ Configure organization to deploy; define environemnt types (allowed resources)
 * The resource list is pullled from the type configuration, not altered here.
 
 | Feature | List | Add | Delete | Rename | Menus | Tested | Code Review | Security Review |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | Organization | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Evironments | 🟢 | 🟢 | 🟢 | n/a | 🟢 | 🟢 | 🔴 | 🔴 |
 | Environment Accounts | 🟢 | 🟢 | 🟢 | n/a | 🟢 | 🟢 | 🔴 | 🔴 |
@@ -196,7 +196,7 @@ Configure organization to deploy; define environemnt types (allowed resources)
 ### Configure Actions ###
 
 | Feature | Run | Tested | Code Review | Security Review |
-| :---: | :---: | :---: | :---: | :---: | 
+| :--- | :---: | :---: | :---: | :---: | 
 | Create CLI Profiles | 🟡 | 🟡 | 🔴 | 🔴 |
 | Select CLI Profiles | 🟢 | 🟢 | 🔴 | 🔴 | 
 | Test CLI Porfile | 🟢 | 🟢 | 🔴 | 🔴 | 
@@ -213,7 +213,7 @@ Configure organization to deploy; define environemnt types (allowed resources)
 ### Deploy Steps ##
 
 | Feature | Menus | Run | Tested | Code Review | Security Review |
-| :---: | :---: | :---: | :---: | :---: | :---: | 
+| :--- | :---: | :---: | :---: | :---: | :---: | 
 | Select Organization | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 
 | Deploy Org Resources | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |  
 | Select Env | 🟡 | 🟡 | 🟡  | 🔴 | 🔴 |
@@ -224,7 +224,7 @@ Configure organization to deploy; define environemnt types (allowed resources)
 ### Deploy Org Resources ###
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Organization | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
 | Enable All Features | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
 | SCP: env-allowed-regions [env] | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
@@ -243,6 +243,9 @@ Configure organization to deploy; define environemnt types (allowed resources)
 
 ### Account Resources - every account ###
 
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Account | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Move account to OU | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Account aliase | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
@@ -251,6 +254,9 @@ Configure organization to deploy; define environemnt types (allowed resources)
 
 ### Deny All Environment Resources ###
 
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Deny-All OU | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | SCP: always-denied-actions [env] | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
