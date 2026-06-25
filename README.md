@@ -197,118 +197,128 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Organization Diagram - Per org/env resources | 🟢 | 🟢 | 🔴 | 🔴 | 
 | Organization Diagram - Type descriptions | 🟢 | 🟢 | 🔴 | 🔴 | 
 
-### Deploy ##
+### Deploy Steps ##
 
 | Feature | Menus | Run | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | 
-| Select Organization | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 
-| Deploy Org Resources | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 
-| Select Env | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 
-| Deploy Env Resources |  🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 
-| Select Account | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 
-| Deploy Account Resources | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 
+| Select Organization | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 
+| Deploy Org Resources | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |  
+| Select Env | 🟡 | 🟡 | 🟡  | 🔴 | 🔴 |
+| Deploy Env Resources | 🟡 | 🟡 | 🟡  | 🔴 | 🔴 |
+| Select Account | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Deploy Account Resources | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
+### Org Resources ###
 
-### Base Environment Resources ###
-
-Resources installed in every environment. Some are optinoal.
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Environment (OU) | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Accounts: IAM, KMS, Backup (in backup OU) | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Move accounts to OU | 🟢 | 🟡 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Account aliases | 🟢 | 🟡 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Admin users | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Admin user policy | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Admin roles | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Admin role policy | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Deployment Lambdas | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| S3 Logs bucket | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Logs KMS key | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| SCP: kms-account-allowed-services [env] | 🟢 | 🟢 | 🟢  | 🔴 | 🔴 | 🔴 |
-| SCP: deny-external-access [env] | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
-| SCP: always-denied-actions [env] | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
-| SCP: env-allowed-regions [env]  | 🟡 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
-
-### Management Environment Resources ###
-
-The management environment contains accounts where my organization deletegated administrators exist.
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Organization | 🟢 | 🔴 | 🟢 | 🟢  | 🔴 | 🔴 |
-| Enable Org all features | 🟢 | 🟡 | 🟢 | 🟢  | 🔴 | 🔴 |
-| Accounts: IAM, IPAM, Accounting, Org, Security, KMS, Security, Backup (in backup OU) | 🟢 | 🟡 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Org resource policy | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Delegate IPAM admin | 🟢 | 🟡 | 🟢 | 🟢  | 🔴 | 🔴 |
-| Delegate Security Hub admin | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Delegate GuardDuty admin | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Delegate CloudTrail admin | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Delegate AWS Config admin | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Delegate Firewall Manager admin | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Delegate Macie admin | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Delegate Inspector admin | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Delegate IAM Access Analyzer admin | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Delegate Audit Manager admin | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Delegate Health admin | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Delegate Detective admin | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Delegate Backup admin | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Delegate Network Manager admin | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Delegate VPC Reachability Analyzer admin | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Delegate Cost Optimization Hub admin | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Delegate Compute Optimizer admin | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| IPAM | 🟢 | 🟡 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Root SCPs | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| AWS Prefix Lists | 🟢 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Configure GuardDuty | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Configure Security Hub | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Configure CloudTrail | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Configure AWS Config | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Configure Macie | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Configure Inspector | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Configure IAM Access Analyzer | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Deny-All OU | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Organization | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
+| Enable All Features | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
+| SCP: env-allowed-regions [env] | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
+| SCP: IMDSV1 [env] | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
 | SCP: always-denied-actions [root] | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
-| SCP: deny-leave-organization[root]  | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
 | SCP: always-default-org-root [root] | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | SCP: deploy-scp-require-imdsv2.sh [root] | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Environment SCPs | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| SCP: deny-all [account or OU] | 🟡 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 
-| SCP: org-allowed-regions [root]  | 🟡 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
+
+### Env Resources ###
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Environment (OU) | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| OU SCPs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| SCP: deny-external-access [env] | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+
+### Account Resources - every account ###
+
+| Account | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Move account to OU | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Account aliase | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Admin roles | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Admin role policy | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+
+### Deny All Environment Resources ###
+
+| Deny-All OU | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| SCP: always-denied-actions [env] | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+
+### Management Environment ###
+
+The management environment contains accounts where my organization deletegated administrators exist.
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| OU | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+
+### Management Environment - Org Acount ###
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Org resource policy | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+
+#### Management Environment - IPAM Acount ###
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Delegate IPAM admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate Firewall Manager admin | | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate Network Manager admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate VPC Reachability Analyzer admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| IPAM  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| AWS Prefix Lists | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+
+#### Management Environment - Security Acount ###
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Delegate Security Hub admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate GuardDuty admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate CloudTrail admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate AWS Config admin  | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate Macie admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate Inspector admin || 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate IAM Access Analyzer admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate Audit Manager admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate Health admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate Detective admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| S3 Logs bucket | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Configure GuardDuty | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Configure Security Hub | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Configure CloudTrail | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Configure AWS Config | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Configure Macie | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Configure Inspector | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Configure IAM Access Analyzer | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Configure Security Alerts | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
+#### Management Environment - KMS Acount ###
 
-### Backup Environment ###
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| KMS Log Key | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| KMS Log Key Alias | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| SCP: kms-account-allowed-services [env] | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+
+#### Management Environment - Accounting Acount ###
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| Delegate Cost Optimization Hub admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate Compute Optimizer admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+
+#### Backup Environment ###
 
 Back up infrastructure segregated from other infrastructure
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Backup OU | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Backup Account Per Environment | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Archive Account Lambda Role | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Archive Account Lambda | 🟢 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Archive Account Lambda SG | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Backup VPC | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Backup Subnet | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Backup Security Group | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Backup Route Table | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Backup Lambda Security Groups | 🟢  | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Backup VPC Endpoints | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Backup VPC Endpoint SGs | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Backup VPC RAM share | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Bacup VPC Flowlogs | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Backup OU | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Backup Account Per Environment | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate Backup admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
-
-### Domains Envirnoment ( Base Environment +) ###
+#### Domains Envirnoment ###
 
 Domain name management. One for prod and one for test in my case. 
 Can lock when not in use with deny all SCP.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Accounts: dns (no backup) | 🟡 | 🟡 | 🟢 | 🟢 | 🔴 | 🔴 |
+| OU | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Accounts: dns | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
 
 ### Work Environment Resources ( Base Environment +) ###
@@ -317,36 +327,37 @@ Environment where people log into EC2 instances.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Accounts: work, amis, backup | 🟢 | 🟡 | 🟢 | 🟢 | 🔴 | 🔴 |
-| IPAM pool | 🟢 | 🟡  | 🟢 | 🟢 | 🔴 | 🔴 |
-| IPAM EIP allocation | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Environment SCPs | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| S3 buckets (no KMS) | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| KMS keys | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| KMS policies | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| KMS key aliases | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| VPC Flow Logs Role | 🟢 | 🟡 | 🟢| 🔴 | 🔴 | 🔴 |
-| Remote Access Prefix List | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Remote Access (Work) VPC | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Remote Access Subnet | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Remote Access Security Group | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Remote Access Internet Gateway | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Remote Access Route Table | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Remote Access NACLs | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Remote Access VPC Ram Shares | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Remote Access VPC Flowlogs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Delete default VPCs | n/a | n/a | 🟢 | 🟢 | 🔴 | 🔴 |
-| Deploy Deployment Lambdas | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| S3 buckets (with KMS) | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Bucket policies | 🟢 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
-| SSH Security Group | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| RDP Security Group | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| HTTP/HTTPS Security Group | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Budgets | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Base Ubuntu Instance Role | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Base Ubuntu ENI | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Base Ubuntu Instance | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Base Ubuntu AMI | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
+| OU|  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Accounts | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| IPAM pool |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| IPAM EIP allocation | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Environment SCPs |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| S3 buckets (no KMS) | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| KMS keys |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| KMS policies | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| KMS key aliases | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| VPC Flow Logs Role | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Remote Access Prefix List | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Remote Access (Work) VPC | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Remote Access Subnet |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Remote Access Security Group | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Remote Access Internet Gateway | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Remote Access Route Table | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Remote Access NACLs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Remote Access VPC Ram Shares | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Remote Access VPC Flowlogs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delete default VPCs | n/a | n/a | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Deploy Deployment Lambdas |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| S3 buckets (with KMS) | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Bucket policies | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| SSH Security Group | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| RDP Security Group | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| HTTP/HTTPS Security Group | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Budgets | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Base Ubuntu Instance Role | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Base Ubuntu ENI | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Base Ubuntu Instance | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Base Ubuntu AMI | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Base Amazon Linux Instance Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Base Amaxon Linux ENI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Base Amazon Linux Instance | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -384,8 +395,8 @@ Also separates account from specific projects or activities.
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Account (kiro mangement) | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Kiro | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Standalone Identity Center | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Kiro | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Standalone Identity Center | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | SCP: kiro-identity-center-only | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | SCP for us-east-1 only | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 
@@ -395,9 +406,9 @@ If I use CloudFront have to allow us-east-1 for ACM Cert. Lock down when not aci
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Accounts (web, backup)| 🟡 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Job Auth Lambdas | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Auth Lambda VPC Config | 🟡 | 🟢 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Accounts (web, backup)| 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Job Auth Lambdas | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Auth Lambda VPC Config | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | ACM Certificate | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | API Gateway | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | API Gateway CNAME | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
@@ -446,7 +457,7 @@ Some enviroments may include penetration testing and security research resources
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Accounts: project | 🟢 | 🟡 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Accounts: project | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Burp ENI | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Burp Instance Role | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Burp Instance | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
