@@ -4,7 +4,7 @@
 
 Track how long it takes and how much it costs to create projects with AI 🤖 in an attempt to optimize progress. Note that I have only been using Opus 6 and 8 same price per token. I have been trying to log my time but there are some gaps where I was working but making no progress because I'm fixing things that are broken or reworking code. Part of the rework is the model failing write the code as specifed. Part of it is my rearchitecting my data model after testing. See notes for details and time tracking file where I've strated tracking some (not all) rework.
 
-## Status Summary (Funcntional, limited code review):
+## Status Summary
 
 | Status | Description
 | :---: | :--- |
@@ -14,6 +14,10 @@ Track how long it takes and how much it costs to create projects with AI 🤖 in
 | 🟡 | Verify Environment & Resources
 | 🟡 | Delete Environent & Resources
 | 🟡 | Manage Drift
+| 🟡 | Packaged Code
+| 🟡 | QA
+| 🟡 | Code Review
+| 🟡 | Security Testing
 
 ## Token / Credit Usage
 
