@@ -14,6 +14,21 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 🟡 Revisit networking. Should that change somehow... that's big maybe later.
 
+## 6/24/2026
+
+🟢 Started a project today and somehow file permissions are wrong when they were not yesterady. How does this happen? I updated my perissions script again to fix the problem. More rework.
+
+🟢 Update time tracking instructions because I figured out they were written and followed in such a way that was NOT accurate. Ugh. Was tracking time between response and prompt instead of prompt time and first data execute total time.
+
+🟢 Aadded a help function to every menu using the common trailer and help node for every menu item.
+
+🟢 Figured out org settings were a bit wonky. Cleaning it up and adding help.
+
+🟢 Added ability to look up current host IP to add to settings. Had this in other cdoe before I moved settings configuration and forgot to implent here. IP addresses were wrong in config.
+
+🟢 Added separate CIDR/IPs for web and console access as those are coming from two differnet places; bootstrap admin vs. users logging into aws or job console. 
+
+
 ## 6/23/2026
 
 8:45 PM
