@@ -19,6 +19,7 @@ Track how long it takes and how much it costs to create projects with AI 🤖 in
 | 🟡 | Code Review
 | 🟡 | Security Testing
 
+
 ## Token / Credit Usage
 
 | Usage Dates | Plan | % usage | charges | days | cost per day
