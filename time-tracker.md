@@ -1,8 +1,6 @@
 # Time Tracker
 
-Note that the model/agent fails to follow the time tracking rules a lot and I don't always waste tokens on trying to get it to follow the rules correctly so this data is incomplete. It also likely has some hallucinations and inaccuraces. In fact it took many rounds to even get the agent to print out the correct time report on the 24th the first time. On 6/24/26 at 6:15 PM I realized that the model had written my time tracking instructions to the readme incorrectly and was not actually tracking time correctly. when it comes to time tracking the model actually feels very subversive. Check the mistake logs for just trying to extract this log in the correct format. Many repated mistakes and incomplete or malformed responses.
-
-Note that I use a global readme for my rules NOT a Kiro steering file because A) the agents ignore it anyway and B) I want to have that file in a shared project where I can update and check it into github and not have to copy it to every agent steering.md folder all the time. I should be able to put the rules for my project in any location and tell the agent to follow those rules. Not sure if Kiro has a better way to specify the location and name of a "rules" file to improve performance but normally it works decently after I tell the agent 10 times at the start of each session to follow those rules. Once it starts following the rules it usually does ok until it forgets and then I have to remind it again.
+This time is not 100% precise because it is very difficult to get the AI models to consistatently log time. I realized on 6/24 at 6:15 PM ET that the days before were logged incorrectly due to the model mangling the time tracking requirements I told it to write. Fixed that and found a way to get a bit better consistency and wrote some automated repoerts. As you can see the time tracking data can be lengthy so will probably just provide analysis after 6/25/26
 
 # Time Trend Analysis 2026-06-25
 ```
