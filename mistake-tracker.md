@@ -16,7 +16,7 @@ The mistake tracker is a new part of the project added a few months in. This is 
 I'm just telling the model to increment the mistakes it's making +1 if it starts making a bunch of mistakes. This is not every mistakes mostly only when I start getting annoyed. :-D The mistakes are largely worded by the AI agent and sometimes it does not capture the correct mistake but I don't always fix that because I just want to get stuff done. It generally captures a valid mistake but not the one I actually wanted it to log. So these are all valid just some are missing I didn't bother to fix to the correct mistake. I don't care about typooooos this is just a fast as possible log. Trying to get things done.
 
 # Daily Mistakes 2026-06-25
-
+```
 ## Project-1
 20260625-044011 M: Advised an action file to set MENU_LABEL, which init-menu.sh rules 15 and 16 forbid; the engine owns MENU_LABEL C: The engine must set MENU_LABEL the data-driven way; never tell an action file to assign an engine-owned variable
 20260625-052901 M: Set MENU_NO_CLEAR=1 in a test to force passing instead of asserting the real banner output the new clear produces C: Fix the test to assert actual output; never disable a behavior just to make a test pass
@@ -419,6 +419,7 @@ project-total: mistakes:1
 project-total: mistakes:3
 
 daily-totals: mistakes:178
+```
 
 ## 6/24/2026
 
