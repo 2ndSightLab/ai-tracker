@@ -187,6 +187,8 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Environment Type Account Types | 🟢 | 🟢 | 🟢 | n/a | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Environment Type Resource Types | 🟢 | 🟢 | 🟢 | n/a | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Default Org (define mangemnt env) | 🟢 | n/a | n/a | n/a | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Default Org (define backup env) | 🟢 | n/a | n/a | n/a | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Resource type Dependencies | 🟢 | n/a | n/a | n/a | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ### Configure Organization Actions ##
 
@@ -200,6 +202,7 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Organization Diagram - Accounts | 🟢 | 🟢 | 🔴 | 🔴 | 
 | Organization Diagram - Per org/env resources | 🟢 | 🟢 | 🔴 | 🔴 | 
 | Organization Diagram - Type descriptions | 🟢 | 🟢 | 🔴 | 🔴 | 
+| Actions File (menus) | 🟢 | n/a | n/a | n/a | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ### Configure Organization ###
 
@@ -229,6 +232,7 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Organization Diagram - Accounts | 🟢 | 🟢 | 🔴 | 🔴 | 
 | Organization Diagram - Per org/env resources | 🟢 | 🟢 | 🔴 | 🔴 | 
 | Organization Diagram - Type descriptions | 🟢 | 🟢 | 🔴 | 🔴 | 
+| Actions File (menus) | 🟢 | n/a | n/a | n/a | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ### Deploy Steps ##
 
@@ -236,10 +240,10 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | :--- | :---: | :---: | :---: | :---: | :---: | 
 | Select Organization | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 
 | Deploy Org Resources | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |  
-| Select Env | 🟡 | 🟡 | 🟡  | 🔴 | 🔴 |
-| Deploy Env Resources | 🟡 | 🟡 | 🟡  | 🔴 | 🔴 |
-| Select Account | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Deploy Account Resources | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Select Env | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Deploy Env Resources | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Select Account | 🟢 | 🟢 | 🟢  | 🔴 | 🔴 |
+| Deploy Account Resources | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ### Deploy Org Resources ###
 
@@ -257,7 +261,7 @@ Configure organization to deploy; define environemnt types (allowed resources)
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Environment (OU) | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Environment (OU) | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 | OU SCPs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | SCP: deny-external-access [env] | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
