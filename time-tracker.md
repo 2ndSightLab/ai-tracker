@@ -4,6 +4,8 @@ This time is not 100% precise because it is very difficult to get the AI models 
 
 # Time Trend Analysis 2026-06-25
 ```
+# Time Trend Analysis 2026-06-25
+
 compared-to: 2026-06-24
 verdict: faster
 
@@ -15,36 +17,82 @@ per-turn-change total:~-150s overhead:~-1s est_tokens:~36
 ## Time-of-Day Analysis (window 2026-06-21..2026-06-25)
 note: time periods shown in display timezone UTC-4
 time period | turns | avg_total | vs_mean | days_slowest
-8PM to 11PM | 158 | ~42s | -69% | 0/5
-12AM to 3AM | 67 | ~182s | +36% | 2/5
-12PM to 3PM | 13 | ~303s | +126% | 1/5
-4PM to 7PM | 59 | ~9s | -93% | 2/5
+8PM to 9PM | 5 | ~144s | +20% | 1/5
+9PM to 10PM | 66 | ~21s | -82% | 0/5
+10PM to 11PM | 67 | ~42s | -65% | 0/5
+11PM to 12AM | 20 | ~82s | -32% | 0/5
+12AM to 1AM | 18 | ~76s | -37% | 0/5
+1AM to 2AM | 32 | ~178s | +49% | 0/5
+2AM to 3AM | 16 | ~321s | +168% | 1/5
+3AM to 4AM | 1 | ~0s | -100% | 0/5
+2PM to 3PM | 3 | ~232s | +94% | 0/5
+3PM to 4PM | 10 | ~324s | +170% | 1/5
+6PM to 7PM | 38 | ~9s | -92% | 1/5
+7PM to 8PM | 21 | ~8s | -93% | 1/5
 
-slowest-time-period: 12PM to 3PM ~303s
-fastest-time-period: 4PM to 7PM ~9s
-gap: ~294s (~3316% slower)
-variance: range ~294s cv 0.876 (LARGE, threshold 0.30)
-consistently-slowest: none
+slowest time period: 3PM to 4PM ~324s
+fastest time period: 3AM to 4AM ~0s
+gap: ~324s (~0% slower)
+variance: range ~324s cv 0.955 (LARGE, threshold 0.30)
+consistently slowest: none
 
-## Rework and Mistake Analysis (window 2026-06-21..2026-06-25)
+## Rework Analysis (window 2026-06-21..2026-06-25)
 note: time periods shown in display timezone UTC-4
-time period | rework | mistakes
-8PM to 11PM | 202 | 138
-12AM to 3AM | 31 | 119
-12PM to 3PM | 16 | 90
-4PM to 7PM | 7 | 101
+time period | rework
+8PM to 9PM | 4
+9PM to 10PM | 7
+10PM to 11PM | 177
+11PM to 12AM | 14
+12AM to 1AM | 11
+1AM to 2AM | 16
+2AM to 3AM | 4
+3AM to 4AM | 0
+12PM to 1PM | 0
+1PM to 2PM | 0
+2PM to 3PM | 7
+3PM to 4PM | 9
+4PM to 5PM | 0
+6PM to 7PM | 2
+7PM to 8PM | 5
 
-day | rework | mistakes
-2026-06-21 | 0 | 65
-2026-06-22 | 1 | 66
-2026-06-23 | 14 | 88
-2026-06-24 | 17 | 51
-2026-06-25 | 224 | 178
+day | rework
+2026-06-21 | 0
+2026-06-22 | 1
+2026-06-23 | 14
+2026-06-24 | 17
+2026-06-25 | 224
 
-most-rework-time-period: 8PM to 11PM (202 rework)
-most-mistakes-time-period: 8PM to 11PM (138 mistakes)
-most-rework-day: 2026-06-25 (224 rework)
-most-mistakes-day: 2026-06-25 (178 mistakes)
+most rework time period: 10PM to 11PM (177 rework)
+most rework day: 2026-06-25 (224 rework)
+
+## Mistake Analysis (window 2026-06-21..2026-06-25)
+note: time periods shown in display timezone UTC-4
+time period | mistakes
+8PM to 9PM | 35
+9PM to 10PM | 37
+10PM to 11PM | 35
+11PM to 12AM | 31
+12AM to 1AM | 56
+1AM to 2AM | 45
+2AM to 3AM | 13
+3AM to 4AM | 5
+12PM to 1PM | 19
+1PM to 2PM | 38
+2PM to 3PM | 12
+3PM to 4PM | 21
+4PM to 5PM | 16
+6PM to 7PM | 53
+7PM to 8PM | 32
+
+day | mistakes
+2026-06-21 | 65
+2026-06-22 | 66
+2026-06-23 | 88
+2026-06-24 | 51
+2026-06-25 | 178
+
+most mistakes time period: 12AM to 1AM (56 mistakes)
+most mistakes day: 2026-06-25 (178 mistakes)
 ```
 
 ## 6/25/2026 6:15 PM - 1:05 PM ET
