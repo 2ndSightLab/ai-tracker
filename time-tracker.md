@@ -18,6 +18,7 @@ per-turn-change total:~-150s overhead:~-1s est_tokens:~36
 note: all times shown in ET (Eastern Time)
 time period | turns | avg total | vs mean | days slowest
 note: days slowest = on how many of the 5 analyzed days this hour was the slowest hour
+note: At this point all but part of yesterady and todday the time logging was messed up. This will be more accurate in about 3-4 days.
 8PM to 9PM | 5 | ~144s | +20% | 1/5
 9PM to 10PM | 66 | ~21s | -82% | 0/5
 10PM to 11PM | 67 | ~42s | -65% | 0/5
