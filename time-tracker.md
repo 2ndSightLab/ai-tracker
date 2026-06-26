@@ -14,9 +14,10 @@ prior-day turns:16 total:~3983s overhead:~248s est_tokens:~4885
 
 per-turn-change total:~-150s overhead:~-1s est_tokens:~36
 
-## Time-of-Day Analysis (window 2026-06-21..2026-06-25)
-note: time periods shown in display timezone UTC-4
-time period | turns | avg_total | vs_mean | days_slowest
+## Time of Day Analysis (window 2026-06-21..2026-06-25)
+note: all times shown in ET (Eastern Time)
+time period | turns | avg total | vs mean | days slowest
+note: days slowest is how many window days this hour was that day's slowest hour
 8PM to 9PM | 5 | ~144s | +20% | 1/5
 9PM to 10PM | 66 | ~21s | -82% | 0/5
 10PM to 11PM | 67 | ~42s | -65% | 0/5
@@ -37,7 +38,7 @@ variance: range ~324s cv 0.955 (LARGE, threshold 0.30)
 consistently slowest: none
 
 ## Rework Analysis (window 2026-06-21..2026-06-25)
-note: time periods shown in display timezone UTC-4
+note: all times shown in ET (Eastern Time)
 time period | rework
 8PM to 9PM | 4
 9PM to 10PM | 7
@@ -66,7 +67,7 @@ most rework time period: 10PM to 11PM (177 rework)
 most rework day: 2026-06-25 (224 rework)
 
 ## Mistake Analysis (window 2026-06-21..2026-06-25)
-note: time periods shown in display timezone UTC-4
+note: all times shown in ET (Eastern Time)
 time period | mistakes
 8PM to 9PM | 35
 9PM to 10PM | 37
