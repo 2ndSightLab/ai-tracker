@@ -4,290 +4,210 @@ Note that the model/agent fails to follow the time tracking rules a lot and I do
 
 Note that I use a global readme for my rules NOT a Kiro steering file because A) the agents ignore it anyway and B) I want to have that file in a shared project where I can update and check it into github and not have to copy it to every agent steering.md folder all the time. I should be able to put the rules for my project in any location and tell the agent to follow those rules. Not sure if Kiro has a better way to specify the location and name of a "rules" file to improve performance but normally it works decently after I tell the agent 10 times at the start of each session to follow those rules. Once it starts following the rules it usually does ok until it forgets and then I have to remind it again.
 
-## 6/25/2026 1:33 PM ET - Analysis
-
+# Time Trend Analysis 2026-06-25
 ```
-Looking at the times between the two days for trends here is what Agent 1 said about the time entries:
+compared-to: 2026-06-24
+verdict: faster
 
-Analysis of time and mistakes, day 1 (06-24 and earlier) vs day 2 (06-25):
-- Volume: day 2 has far more turns and far higher rework counts (one turn logged rework:140, another rework:22); day 1 
-rework was low (0-7).
-- Overhead: day 2 shows large system-overhead spikes (86s, 127s, 197s, 228s) versus mostly small gaps on day 1, 
-indicating injected-time-to-start delays grew.
-- Mistakes: day 2 mistakes cluster around timestamp-block omissions, masking, and window errors; day 1 mistakes were 
-mostly code/menu design and duplicate-section issues.
-- Productivity: day 1 had larger code deltas per turn; day 2 turns were dominated by rework and logging rather than new
-code.
-- Trend: repeated same mistakes on day 2 (timing format, masking) show the same errors recurring rather than new ones.
+current-day turns:138 total:~13569s overhead:~1935s est_tokens:~47115
+prior-day turns:16 total:~3983s overhead:~248s est_tokens:~4885
 
-Agent 2 tried to make the assumption that the more lines of code were longer sessions and therefore tiem increases were due to length of session but that was a false assumption. I frequently stop and start sessions to clear out context if things get slow or context is filling up. So I told it to remove that false asumption. Here's the analysis:
+per-turn-change total:~-150s overhead:~-1s est_tokens:~36
 
-From me: 
+## Time-of-Day Analysis (window 2026-06-21..2026-06-25)
+note: time periods shown in display timezone UTC-4
+time period | turns | avg_total | vs_mean | days_slowest
+8PM to 11PM | 158 | ~42s | -69% | 0/5
+12AM to 3AM | 67 | ~182s | +36% | 2/5
+12PM to 3PM | 13 | ~303s | +126% | 1/5
+4PM to 7PM | 59 | ~9s | -93% | 2/5
 
-I also figured out while working on these times entries that the agent absolutely does not keep everything in it's memory, cannot reproduce past data exactly as it gave it to me and that explains why it is making so many repeatd mistakes in a single session and cannot remember what it did before. Aha. That gave me some ideas for improving agent performance. We'll see how it goes. Basically the agent memory as currently working right now in Kiro/Anthropic is completely flawed.
+slowest-time-period: 12PM to 3PM ~303s
+fastest-time-period: 4PM to 7PM ~9s
+gap: ~294s (~3316% slower)
+variance: range ~294s cv 0.876 (LARGE, threshold 0.30)
+consistently-slowest: none
+
+## Rework and Mistake Analysis (window 2026-06-21..2026-06-25)
+note: time periods shown in display timezone UTC-4
+time period | rework | mistakes
+8PM to 11PM | 202 | 138
+12AM to 3AM | 31 | 119
+12PM to 3PM | 16 | 90
+4PM to 7PM | 7 | 101
+
+day | rework | mistakes
+2026-06-21 | 0 | 65
+2026-06-22 | 1 | 66
+2026-06-23 | 14 | 88
+2026-06-24 | 17 | 51
+2026-06-25 | 224 | 178
+
+most-rework-time-period: 8PM to 11PM (202 rework)
+most-mistakes-time-period: 8PM to 11PM (138 mistakes)
+most-rework-day: 2026-06-25 (224 rework)
+most-mistakes-day: 2026-06-25 (178 mistakes)
 ```
 
 ## 6/25/2026 6:15 PM - 1:05 PM ET
 ```
-Project A:
-start:2026-06-25T05:52:13Z stop:2026-06-25T05:55:33Z overhead:~3s total:~204s req_words:14 resp_words:120 est_tokens:~
-187 rework:0 desc:FILE appends standard Back/Main Menu/Help trailer when engine context set; doc updated; added trailer
-tests; suites 11/11/133/21/9 pass
-start:2026-06-25T05:46:46Z stop:2026-06-25T05:46:58Z overhead:~5s total:~17s req_words:30 resp_words:70 est_tokens:~130
-rework:1 desc:marked all multi-select work turns rework:1; cannot confirm PROJ completion from PROJ
-start:2026-06-25T05:40:20Z stop:2026-06-25T05:40:40Z overhead:~7s total:~27s req_words:30 resp_words:120 est_tokens:~
-195 rework:1 desc:added Multi Select Menu to Menu Types list, set count to five, logged overcomplication mistake, gave 
-PROJ prompt
-start:2026-06-25T05:35:36Z stop:2026-06-25T05:35:45Z overhead:~4s total:~13s req_words:16 resp_words:95 est_tokens:~144
-rework:1 desc:gave PROJ prompt to rely on engine banner clear and match doc multi-select layout
-start:2026-06-25T05:30:41Z stop:2026-06-25T05:32:37Z overhead:~7s total:~123s req_words:25 resp_words:120 est_tokens:~
-188 rework:1 desc:moved guarded clear into FILE, dropped init-menu stray blank line, added banner clear reqs and multi-
-select layout to doc; tests 9/133/11/21 pass
-start:2026-06-25T04:57:51Z stop:2026-06-25T04:58:02Z overhead:~18s total:~29s req_words:70 resp_words:90 est_tokens:~
-208 rework:1 desc:read FILE dispatch; root cause is no clear before sourcing a file action; engine defect not PROJ
-start:2026-06-25T04:44:43Z stop:2026-06-25T04:45:22Z overhead:~13s total:~52s req_words:18 resp_words:175 est_tokens:~
-251 rework:1 desc:re-read Multi Select Menu section; PROJ must set VAR before FILE per rule 13; corrected my engine-
-owned claim
-start:2026-06-25T04:37:59Z stop:2026-06-25T04:38:10Z overhead:~5s total:~16s req_words:8 resp_words:55 est_tokens:~82 
-rework:1 desc:logged time and rework omission; this turn is rework of the wrong remove-VAR advice
-start:2026-06-25T04:15:34Z stop:2026-06-25T04:15:43Z overhead:~86s total:~95s req_words:9 resp_words:90 est_tokens:~129
-desc:logged session timing and prose mistakes to the mistakes log
-start:2026-06-25T03:38:36.111+00:00 stop:2026-06-25T03:38:41Z elapsed:~5s overhead:~5s total:~5s req_words:13 resp_
-words:130 est_tokens:~186 req:+0/-0 code:+0/-0 rework:0 desc:verified mistake log complete; confirmed no further safe 
-simplification; remaining temp vars and per-key validation are required
-start:2026-06-25T03:37:17.321+00:00 stop:2026-06-25T03:37:46Z elapsed:~29s overhead:~5s total:~29s req_words:55 resp_
-words:140 est_tokens:~254 req:+0/-0 code:+0/-4 rework:0 desc:reviewed all 3 helpers; inlined unused VAR; left fragile 
-query surgery and required per-key checks as-is; tests 8/5/6
-start:2026-06-25T03:33:31.910+00:00 stop:2026-06-25T03:36:04Z elapsed:~153s overhead:~6s total:~153s req_words:30 resp_
-words:120 est_tokens:~195 req:+1/-1 code:+12/-24 rework:1 desc:removed duplicate VAR; filter helper now uses VAR like 
-other menus; doc/vars/tests updated; tests 8/5/6
-start:2026-06-25T03:31:58.654+00:00 stop:2026-06-25T03:32:55Z elapsed:~57s overhead:~3s total:~57s req_words:30 resp_
-words:120 est_tokens:~195 req:+0/-0 code:+0/-0 rework:0 desc:confirmed config projects use VAR via FILE; my filter 
-helper wrongly added VAR; logged mistakes
-start:2026-06-25T03:28:40.182+00:00 stop:2026-06-25T03:28:59Z elapsed:~19s overhead:~19s total:~19s req_words:14 resp_
-words:330 est_tokens:~447 req:+0/-0 code:+0/-0 rework:0 desc:traced label vars; PROJ uses VAR correctly, VAR is the 
-unused validator artifact; no edits, awaiting fix choice
-start:2026-06-25T03:26:17.563+00:00 stop:2026-06-25T03:26:55Z elapsed:~38s overhead:~38s total:~38s req_words:25 resp_
-words:50 est_tokens:~98 req:+0/-0 code:+0/-0 rework:0 desc:logged missed timing/logging and acting-before-approval 
-mistakes; no implementation
-start:2026-06-25T03:15:59.890+00:00 stop:2026-06-25T03:16:14Z elapsed:~14s overhead:~14s total:~14s req_words:90 resp_
-words:200 est_tokens:~377 req:+0/-0 code:+0/-0 rework:0 desc:confirmed VAR is required by FILE; my dead-code claim was 
-wrong, logged mistake
-start:2026-06-25T03:14:12.663+00:00 stop:2026-06-25T03:14:47Z elapsed:~35s overhead:~35s total:~35s req_words:20 resp_
-words:430 est_tokens:~585 req:+0/-0 code:+0/-0 rework:0 desc:read all 3 PROJ builders + shared dispatch; confirmed 
-trailers correct per rule 8, dispatch loop deduped into one file, merge/required helpers used; no edits here
-start:2026-06-25T03:09:47.674+00:00 stop:2026-06-25T03:10:10Z elapsed:~23s overhead:~23s total:~23s req_words:900 resp_
-words:340 est_tokens:~1612 req:+0/-0 code:+0/-0 rework:0 desc:reviewed PROJ agent reasoning; confirmed it uses menus 
-project correctly, loop belongs in PROJ not FILE/menus; no edits here
-start:2026-06-25T02:56:20.564+00:00 stop:2026-06-25T02:57:30Z elapsed:~70s overhead:~unavailable total:~70s req_words:
-18 resp_words:380 est_tokens:~518 req:+0/-0 code:+0/-0 rework:0 desc:grepped VAR usage across projects; gave targeted 
-bug prompt plus per-project audit prompts instead of guessing 60 files
-start:2026-06-25T02:55:28.455+00:00 stop:2026-06-25T02:55:55Z elapsed:~27s overhead:~27s total:~27s req_words:40 resp_
-words:300 est_tokens:~442 req:+0/-0 code:+0/-0 rework:0 desc:diagnosed missing trailer as PROJ bug (VAR=""), PROJ 
-correct; produced fix prompt
-start:2026-06-25T02:49:18.776+00:00 stop:2026-06-25T02:49:23Z elapsed:~5s overhead:~5s total:~5s req_words:14 resp_
-words:160 est_tokens:~226 req:+0/-0 code:+0/-0 rework:0 desc:verified logs complete, produced PROJ dedup prompt
-start:2026-06-25T02:45:51.083+00:00 stop:2026-06-25T02:47:50Z elapsed:~119s overhead:~5s total:~119s req_words:18 resp_
-words:90 est_tokens:~140 req:+4/-8 code:+70/-0 rework:1 desc:trimmed merge section to minimal, added required-marker 
-and merge helper, tests pass 8/5/6
-start:2026-06-25T02:43:59.022+00:00 stop:2026-06-25T02:44:30Z elapsed:~31s overhead:unavailable total:~31s req_words:7 
-resp_words:60 est_tokens:~88 req:+0/-0 code:+0/-0 rework:0 desc:logged self-as-separate-agent mistake
-start:2026-06-25T02:41:21.993+00:00 stop:2026-06-25T02:43:19Z elapsed:~117s overhead:~7s total:~117s req_words:60 resp_
-words:330 est_tokens:~507 req:+0/-0 code:+0/-0 rework:0 desc:verified claim against PROJ; no edits, analysis only
-start:2026-06-25T02:43:12.183+00:00 stop:2026-06-25T02:43:19Z elapsed:~7s overhead:~7s total:~7s req_words:7 resp_words
-:90 est_tokens:~126 req:+0/-0 code:+0/-0 rework:1 desc:logged repeated timing-format omission mistakes
-start:2026-06-25T02:33:52.558+00:00 stop:2026-06-25T02:34:10Z elapsed:~18s overhead:~3s total:~18s req_words:8 resp_
-words:200 est_tokens:~270 req:+0/-0 code:+0/-0 rework:2 desc:audited logs; logged duplicate-section and out-of-order 
-mistakes, fixed mistake order
-start:2026-06-25T02:32:07.703+00:00 stop:2026-06-25T02:33:01Z elapsed:~54s overhead:~unavailable total:~54s req_words:
-18 resp_words:90 est_tokens:~140 req:+0/-0 code:+95/-0 rework:0 desc:created tests and fixtures, both pass 7/0 and 6/0
-start:2026-06-25T02:29:25.937+00:00 stop:2026-06-25T02:32:07Z elapsed:~162s overhead:~11s total:~162s req_words:35 resp
-_words:120 est_tokens:~202 req:+39/-20 code:+187/-0 rework:1 desc:removed duplicate doc section I added; helpers and 
-fixtures created
-start:2026-06-25T02:29:25.937+00:00 stop:2026-06-25T02:29:37Z elapsed:~12s overhead:~11s total:unavailable req_words:35
-resp_words:0 est_tokens:~46 req:+0/-0 code:+0/-0 rework:0 desc:read global doc/logs, logged timestamp mistake
-prior-turns: full fields unavailable; earlier entries were logged before this format was applied and word/token/gap 
-values cannot be reconstructed accurately
+# Daily Summary 2026-06-25
 
-Project C:
-start:2026-06-25 01:05:43 stop:2026-06-25 01:07:48 total:~125s overhead:~70s req:+0a/-0r code:+0a/-0r words req:60 resp
-:120 tokens:~234 rework:0 none
+## Project A
+start:2026-06-25T05:52:13Z stop:2026-06-25T05:55:33Z overhead:~3s total:~204s req_words:14 resp_words:120 est_tokens:~187 req: code: rework:0 desc:menu-yes-no.sh appends standard Back/Main Menu/Help trailer when engine context set; README updated; added trailer tests; suites 11/11/133/21/9 pass
+start:2026-06-25T05:46:46Z stop:2026-06-25T05:46:58Z overhead:~5s total:~17s req_words:30 resp_words:70 est_tokens:~130 req: code: rework:1 desc:marked all multi-select work turns rework:1; cannot confirm deploy project completion from bash-menus
+start:2026-06-25T05:40:20Z stop:2026-06-25T05:40:40Z overhead:~7s total:~27s req_words:30 resp_words:120 est_tokens:~195 req: code: rework:1 desc:added Multi Select Menu to Menu Types list, set count to five, logged overcomplication mistake, gave deploy prompt
+start:2026-06-25T05:35:36Z stop:2026-06-25T05:35:45Z overhead:~4s total:~13s req_words:16 resp_words:95 est_tokens:~144 req: code: rework:1 desc:gave deploy project prompt to rely on engine banner clear and match README multi-select layout
+start:2026-06-25T05:30:41Z stop:2026-06-25T05:32:37Z overhead:~7s total:~123s req_words:25 resp_words:120 est_tokens:~188 req: code: rework:1 desc:moved guarded clear into menu-banner.sh, dropped init-menu stray blank line, added banner clear reqs and multi-select layout to README; tests 9/133/11/21 pass
+start:2026-06-25T04:57:51Z stop:2026-06-25T04:58:02Z overhead:~18s total:~29s req_words:70 resp_words:90 est_tokens:~208 req: code: rework:1 desc:read do-menu-action.sh dispatch; root cause is no clear before sourcing a file action; engine defect not deploy
+start:2026-06-25T04:44:43Z stop:2026-06-25T04:45:22Z overhead:~13s total:~52s req_words:18 resp_words:175 est_tokens:~251 req: code: rework:1 desc:re-read Multi Select Menu section; deploy project must set MENU_LABEL before menu-multi.sh per rule 13; corrected my engine-owned claim
+start:2026-06-25T04:37:59Z stop:2026-06-25T04:38:10Z overhead:~5s total:~16s req_words:8 resp_words:55 est_tokens:~82 req: code: rework:1 desc:logged time.md and rework omission; this turn is rework of the wrong remove-MENU_LABEL advice
+start:2026-06-25T04:15:34Z stop:2026-06-25T04:15:43Z overhead:~86s total:~95s req_words:9 resp_words:90 est_tokens:~129 req: code: rework: desc:logged session timing and prose mistakes to mistakes.md
+start:2026-06-25T03:38:36.111+00:00 stop:2026-06-25T03:38:41Z overhead:~5s total:~5s req_words:13 resp_words:130 est_tokens:~186 req:+0a/-0r code:+0a/-0r rework:0 desc:verified mistake log complete; confirmed no further safe simplification; remaining temp vars and per-key validation are required
+start:2026-06-25T03:37:17.321+00:00 stop:2026-06-25T03:37:46Z overhead:~5s total:~29s req_words:55 resp_words:140 est_tokens:~254 req:+0a/-0r code:+0a/-4r rework:0 desc:reviewed all 3 helpers; inlined unused _MFL_FILTERVAL; left fragile xpath surgery and required per-key checks as-is; tests 8/5/6
+start:2026-06-25T03:33:31.910+00:00 stop:2026-06-25T03:36:04Z overhead:~6s total:~153s req_words:30 resp_words:120 est_tokens:~195 req:+1a/-1r code:+12a/-24r rework:1 desc:removed duplicate MENU_LABEL_SOURCE; filter helper now uses MENU_XML_LABEL like other menus; README/vars/tests updated; tests 8/5/6
+start:2026-06-25T03:31:58.654+00:00 stop:2026-06-25T03:32:55Z overhead:~3s total:~57s req_words:30 resp_words:120 est_tokens:~195 req:+0a/-0r code:+0a/-0r rework:0 desc:confirmed config projects use MENU_XML_LABEL via menu-xml-labels.sh; my filter helper wrongly added MENU_LABEL_SOURCE; logged mistakes
+start:2026-06-25T03:28:40.182+00:00 stop:2026-06-25T03:28:59Z overhead:~19s total:~19s req_words:14 resp_words:330 est_tokens:~447 req:+0a/-0r code:+0a/-0r rework:0 desc:traced label vars; deploy uses MENU_LABEL_SOURCE correctly, MENU_XML_LABEL is the unused validator artifact; no edits, awaiting fix choice
+start:2026-06-25T03:26:17.563+00:00 stop:2026-06-25T03:26:55Z overhead:~38s total:~38s req_words:25 resp_words:50 est_tokens:~98 req:+0a/-0r code:+0a/-0r rework:0 desc:logged missed timing/logging and acting-before-approval mistakes; no implementation
+start:2026-06-25T03:15:59.890+00:00 stop:2026-06-25T03:16:14Z overhead:~14s total:~14s req_words:90 resp_words:200 est_tokens:~377 req:+0a/-0r code:+0a/-0r rework:0 desc:confirmed MENU_XML_LABEL is required by menu-xml-validate.sh; my dead-code claim was wrong, logged mistake
+start:2026-06-25T03:14:12.663+00:00 stop:2026-06-25T03:14:47Z overhead:~35s total:~35s req_words:20 resp_words:430 est_tokens:~585 req:+0a/-0r code:+0a/-0r rework:0 desc:read all 3 project-deploy builders + shared dispatch; confirmed trailers correct per rule 8, dispatch loop deduped into one file, merge/required helpers used; no edits here
+start:2026-06-25T03:09:47.674+00:00 stop:2026-06-25T03:10:10Z overhead:~23s total:~23s req_words:900 resp_words:340 est_tokens:~1612 req:+0a/-0r code:+0a/-0r rework:0 desc:reviewed project-deploy agent reasoning; confirmed it uses menus project correctly, loop belongs in project-deploy not actions.xml/menus; no edits here
+start:2026-06-25T02:56:20.564+00:00 stop:2026-06-25T02:57:30Z overhead:~unavailable total:~70s req_words:18 resp_words:380 est_tokens:~518 req:+0a/-0r code:+0a/-0r rework:0 desc:grepped MENU_TRAILER usage across projects; gave targeted bug prompt plus per-project audit prompts instead of guessing 60 files
+start:2026-06-25T02:55:28.455+00:00 stop:2026-06-25T02:55:55Z overhead:~27s total:~27s req_words:40 resp_words:300 est_tokens:~442 req:+0a/-0r code:+0a/-0r rework:0 desc:diagnosed missing trailer as project-deploy bug (MENU_TRAILER=""), bash-menus correct; produced fix prompt
+start:2026-06-25T02:49:18.776+00:00 stop:2026-06-25T02:49:23Z overhead:~5s total:~5s req_words:14 resp_words:160 est_tokens:~226 req:+0a/-0r code:+0a/-0r rework:0 desc:verified logs complete, produced project-deploy dedup prompt
+start:2026-06-25T02:45:51.083+00:00 stop:2026-06-25T02:47:50Z overhead:~5s total:~119s req_words:18 resp_words:90 est_tokens:~140 req:+4a/-8r code:+70a/-0r rework:1 desc:trimmed merge section to minimal, added required-marker and merge helper, tests pass 8/5/6
+start:2026-06-25T02:43:59.022+00:00 stop:2026-06-25T02:44:30Z overhead:unavailable total:~31s req_words:7 resp_words:60 est_tokens:~88 req:+0a/-0r code:+0a/-0r rework:0 desc:logged self-as-separate-agent mistake
+start:2026-06-25T02:41:21.993+00:00 stop:2026-06-25T02:43:19Z overhead:~7s total:~117s req_words:60 resp_words:330 est_tokens:~507 req:+0a/-0r code:+0a/-0r rework:0 desc:verified claim against project-deploy; no edits, analysis only
+start:2026-06-25T02:43:12.183+00:00 stop:2026-06-25T02:43:19Z overhead:~7s total:~7s req_words:7 resp_words:90 est_tokens:~126 req:+0a/-0r code:+0a/-0r rework:1 desc:logged repeated timing-format omission mistakes
+start:2026-06-25T02:33:52.558+00:00 stop:2026-06-25T02:34:10Z overhead:~3s total:~18s req_words:8 resp_words:200 est_tokens:~270 req:+0a/-0r code:+0a/-0r rework:2 desc:audited logs; logged duplicate-section and out-of-order mistakes, fixed mistake order
+start:2026-06-25T02:32:07.703+00:00 stop:2026-06-25T02:33:01Z overhead:~unavailable total:~54s req_words:18 resp_words:90 est_tokens:~140 req:+0a/-0r code:+95a/-0r rework:0 desc:created tests and fixtures, both pass 7/0 and 6/0
+start:2026-06-25T02:29:25.937+00:00 stop:2026-06-25T02:32:07Z overhead:~11s total:~162s req_words:35 resp_words:120 est_tokens:~202 req:+39a/-20r code:+187a/-0r rework:1 desc:removed duplicate README section I added; helpers and fixtures created
+start:2026-06-25T02:29:25.937+00:00 stop:2026-06-25T02:29:37Z overhead:~11s total:unavailable req_words:35 resp_words:0 est_tokens:~46 req:+0a/-0r code:+0a/-0r rework:0 desc:read global readme/logs, logged timestamp mistake
 
-Project D:
-start:2026-06-25T02:08:21.056+00:00 stop:2026-06-25T02:08:25.083+00:00 total:~8s overhead:~4s req_words:3 resp_words:70
-est_tokens:95 req:+0/-0 code:+0/-0 rework:0 confirmed fix complete and verified: FILE helper, IP-display branch, doc 
-reqs, 18/18 test pass
-start:2026-06-25T01:44:29.852+00:00 stop:2026-06-25T01:44:37.351+00:00 total:~10s overhead:~3s req_words:9 resp_words:
-80 est_tokens:116 req:+0/-0 code:+0/-0 rework:0 confirmed settings including VAR and VAR are stored in the org settings
-node; IP-display change does not alter storage
-start:2026-06-25T01:38:17.308+00:00 stop:2026-06-25T01:40:52.893+00:00 total:~161s overhead:~6s req_words:4 resp_words:
-120 est_tokens:161 req:+10/-0 code:+45/-2 rework:0 added FILE helper, VAR vars, CIDR VAR IP-display branch in FILE, doc
-reqs 31-33 and Get Public IP section; added test stub and IP-line assertion; 18/18 pass
-start:2026-06-25T01:36:31.743+00:00 stop:2026-06-25T01:37:30.216+00:00 total:~61s overhead:~2s req_words:35 resp_words:
-240 est_tokens:357 req:+0/-0 code:+0/-0 rework:0 located VAR prompt in FILE driven by types FILE; logged incomplete-
-task mistake; proposed plan to add IP-display requirement, implement metadata branch, fix test; awaiting confirm
-start:2026-06-25T01:24:26.401+00:00 stop:2026-06-25T01:24:38.352+00:00 total:~16s overhead:~4s req_words:13 resp_words:
-110 est_tokens:160 req:+0/-0 code:+0/-0 rework:0 reported task incomplete; logged stalling mistake; need target doc 
-section/file for admin-IP requirement to proceed
-start:2026-06-25T01:23:43.732+00:00 stop:2026-06-25T01:23:49.729+00:00 total:~9s overhead:~3s req_words:8 resp_words:
-120 est_tokens:166 req:+0/-0 code:+0/-0 rework:0 explained metadata works as the instance user without elevated rights;
-listed conditions where it fails
-start:2026-06-25T01:22:05.326+00:00 stop:2026-06-25T01:22:27.762+00:00 total:~25s overhead:~2s req_words:10 resp_words:
-90 est_tokens:130 req:+0/-0 code:+0/-0 rework:1 stopped running network/host-probe commands myself; logged mistake; 
-will write metadata code for user to run instead
-start:2026-06-25T01:21:36.999+00:00 stop:2026-06-25T01:21:43.064+00:00 total:~31s overhead:~0s req_words:9 resp_words:
-90 est_tokens:129 req:+0/-0 code:+0/-0 rework:0 answered that metadata public address returns the elastic IP when 
-attached else the auto-assigned IP; noted caveat
-start:2026-06-25T01:19:47.711+00:00 stop:2026-06-25T01:19:56.928+00:00 total:~11s overhead:~2s req_words:60 resp_words:
-170 est_tokens:299 req:+0/-0 code:+0/-0 rework:0 stopped on public-IP lookup conflicting with no-Internet rule and 
-undocumented admin-IP requirement; asked user before acting
-start:2026-06-25T01:17:00.610+00:00 stop:2026-06-25T01:17:22.459+00:00 total:~41s overhead:~19s req_words:18 resp_words
-:150 est_tokens:218 req:+0/-0 code:+0/-0 rework:0 read global, project, tests docs and mistakes log; reported; logged 
-timestamp-format mistake
-start:2026-06-25T01:08:33.297+00:00 stop:2026-06-25T01:12:13.364+00:00 total:~278s overhead:~4s req_words:40 resp_words
-:120 est_tokens:208 req:+1/-0 code:+22/-9 rework:0 fixed select-from-list settings menu to set VAR by matching the 
-stored environment id to its position so the shared menu shows [N]; added doc req 21; renumbered section; all 16 edit-
-settings assertions pass
-start:2026-06-25T00:51:16.650+00:00 stop:2026-06-25T01:00:29.301+00:00 total:~553s overhead:~3s req_words:30 resp_words
-:330 est_tokens:468 req:+2/-7 code:+30/-95 rework:2 replaced hand-built menu trailer/banner/Help loops in FILE, FILE, 
-FILE with shared FILE and FILE; removed inline help and dead VAR; updated tests; 2 pre-existing edit-settings validate-
-read fails remain
+## bash-xml-parser
+start:2026-06-25T22:01:00 stop:2026-06-25T22:01:31 overhead:~6s total:~31s req_words:~360 resp_words:~120 est_tokens:~624 req:+28a/-0r code:+0a/-0r rework:0 desc:none
 
-Project E:
-start:2026-06-25T06:29:38Z stop:2026-06-25T06:32:55Z total:~197s overhead:~unavailable req_words:60 resp_words:130 est_
-tokens:~250 req:+0a/-0r code:+0a/-0r rework:0 diagnosed that Deploy Org redisplays the org menu per requirement and 
-asked whether to change the requirement to navigate to Select Environment
-start:2026-06-25T06:14:32Z stop:2026-06-25T06:29:38Z total:~906s overhead:~unavailable req_words:45 resp_words:110 est_
-tokens:~230 req:+1a/-1r code:+4a/-1r rework:0 fixed missing VAR: added FILE and wired run-after-selected-file on the 
-environment list action so VAR sets only on env selection
-start:2026-06-25T06:13:14Z stop:2026-06-25T06:13:25Z total:~11s overhead:~unavailable req_words:9 resp_words:25 est_
-tokens:~45 req:+0a/-0r code:+0a/-0r rework:3 logged time entries that were missed for the last several turns and 
-answered whether time was logged
-start:2026-06-25T06:30:18Z stop:2026-06-25T06:35:28Z total:~316s overhead:~6s req_words:50 resp_words:140 est_tokens:~
-247 req:+0a/-0r code:+5a/-1r rework:0 fixed empty VAR in the env deploy path by setting the deployment-log target once 
-before the deploy loop so xml-write has VAR
-start:2026-06-25T06:11:39Z stop:2026-06-25T06:13:23Z total:~107s overhead:~3s req_words:1 resp_words:120 est_tokens:~
-157 req:+0a/-0r code:+18a/-4r rework:0 fixed SCP duplicate-attachment: verify attachment by policy id against the 
-target and treat the duplicate-attachment exception as already-attached at both attach sites
-start:2026-06-25T06:08:33Z stop:2026-06-25T06:10:03Z total:~338s overhead:~unavailable req_words:30 resp_words:120 est_
-tokens:~195 req:+0a/-0r code:+0a/-0r rework:1 re-read the global doc, logged this turn's violations, and traced the SCP
-duplicate-attachment root cause without yet fixing it
-start:2026-06-25T05:51:54Z stop:2026-06-25T05:54:09Z total:~149s overhead:~14s req_words:20 resp_words:130 est_tokens:~
-195 req:+0a/-0r code:+30a/-12r rework:3 implemented the new picker structure: org from org file, env from env file, 
-account = org-excluded then env-excluded then account resources, dropped deploy-to-all logic
-start:2026-06-25T05:48:45Z stop:2026-06-25T05:50:30Z total:~269s overhead:~unavailable req_words:40 resp_words:140 est_
-tokens:~234 req:+0a/-0r code:+0a/-0r rework:1 repaired corrupted time entries, fixed newest-first order and removed the
-duplicate line and the redundant reworked field, marked menu turns as rework, flagged the new filter structure not yet
-done
-start:2026-06-25T05:43:52Z stop:2026-06-25T05:45:08Z total:~82s overhead:~6s req_words:170 resp_words:110 est_tokens:~
-364 req:+0a/-0r code:+9a/-2r rework:2 reordered org picker to banner-then-trailer and added the missing banner to the 
-account picker for the new Multi Select Menu kind
-start:2026-06-25T05:21:47Z stop:2026-06-25T05:36:52Z total:~905s overhead:~unavailable req_words:120 resp_words:130 est
-_tokens:~325 req:+0a/-0r code:+0a/-0r rework:1 searched the menus doc for the new menu type and logged the file-action-
-renders-menu mistake on the org picker
-start:2026-06-25T05:16:27Z stop:2026-06-25T05:19:31Z total:~184s overhead:~3s req_words:90 resp_words:170 est_tokens:~
-338 req:+0a/-0r code:+0a/-0r rework:1 re-checked the org picker action-file resolution and menu code against the master
-list, no rename needed
-start:2026-06-25T05:08:30Z stop:2026-06-25T05:09:15Z total:~48s overhead:~3s req_words:15 resp_words:200 est_tokens:~
-280 req:+0a/-0r code:+0a/-0r rework:1 traced all menu-building scripts to find which menu bypasses FILE
-start:2026-06-25T05:07:20Z stop:2026-06-25T05:07:20Z total:~unavailable overhead:unavailable req_words:15 resp_words:40
-est_tokens:~72 req:+2a/-0r code:+0a/-0r rework:0 added the two doc lines and logged the missed time turns
-start:2026-06-25T05:03:56Z stop:2026-06-25T05:06:23Z total:~147s overhead:~4s req_words:30 resp_words:40 est_tokens:~91
-req:+0a/-0r code:+0a/-0r rework:0 refined line 5 wording for resource action-file source, shown not added
-start:2026-06-25T05:03:56Z stop:unavailable overhead:~4s req_words:20 resp_words:50 est_tokens:~91 req:+0a/-0r code:+0a
-/-0r rework:0 narrowed to the single master-resource-list line, shown not added
-start:2026-06-25T05:02:38Z stop:2026-06-25T05:03:09Z total:~34s overhead:~3s req_words:20 resp_words:300 est_tokens:~
-416 req:+0a/-0r code:+0a/-0r rework:0 reworked: none, traced action-file vs menu-structure sources and asked which 
-layer is the intended defect
-start:2026-06-25T04:59:57Z stop:2026-06-25T05:02:00Z total:~126s overhead:~3s req_words:120 resp_words:230 est_tokens:~
-455 req:+0a/-0r code:+0a/-0r rework:0 reworked: none, audited both menus against engine rules and confirmed compliance,
-no fix needed
-start:2026-06-25T04:49:53Z stop:2026-06-25T04:50:55Z total:~64s overhead:~3s req_words:110 resp_words:120 est_tokens:~
-299 req:+0a/-0r code:+1a/-0r rework:1 reworked: corrected my misdiagnosis and set VAR before FILE per Multi Select Menu
-rule 13
-start:2026-06-25T04:40:19Z stop:2026-06-25T04:40:53Z total:~85s overhead:~52s req_words:40 resp_words:150 est_tokens:~
-247 req:+0a/-0r code:+0a/-0r rework:1 reworked: logged this session's missing time entries and three mistakes for not 
-reading the global doc time/mistakes rules
-start:2026-06-25T04:39:14Z stop:2026-06-25T04:39:59Z total:unavailable overhead:unavailable req_words:120 resp_words:
-200 est_tokens:~416 req:+0a/-0r code:+0a/-0r rework:1 reworked: re-flagged the VAR conflict instead of applying it
-start:2026-06-25T04:38:01Z stop:2026-06-25T04:38:46Z total:unavailable overhead:unavailable req_words:90 resp_words:200
-est_tokens:~377 req:+0a/-0r code:+0a/-0r rework:1 reworked: flagged that restoring VAR violates engine-owned label 
-rules
-start:2026-06-25T04:35:27Z stop:2026-06-25T04:36:00Z total:unavailable overhead:unavailable req_words:120 resp_words:
-120 est_tokens:~312 req:+0a/-0r code:+1a/-1r rework:0 reworked: none, removed engine-owned VAR and sourced FILE
-start:2026-06-25T04:56:34Z stop:2026-06-25T04:56:40Z total:~6s overhead:~3s req_words:4 resp_words:40 est_tokens:~57 
-req:+0a/-0r code:+0a/-0r rework:0 reworked: none, verified VAR fully removed and syntax clean
-start:2026-06-25T04:52:39Z stop:2026-06-25T04:53:21Z total:~47s overhead:~5s req_words:70 resp_words:70 est_tokens:~182
-req:+0a/-0r code:+0a/-78r rework:0 reworked: none, removed dead VAR from 56 src files plus FILE after correcting prior
-wrong engine-gap framing
-start:2026-06-25T04:49:41Z stop:2026-06-25T04:50:41Z total:~62s overhead:~2s req_words:60 resp_words:230 est_tokens:~
-377 req:+0a/-0r code:+0a/-0r rework:0 reworked: none, compared this project menu usage to the menus doc and produced a 
-prompt for two engine mismatches
-start:2026-06-25T04:44:03Z stop:2026-06-25T04:48:28Z total:~267s overhead:~2s req_words:30 resp_words:140 est_tokens:~
-221 req:+3a/-14r code:+0a/-0r rework:1 reworked: re-added Menu data dir as three menu-data requirements after mid-edit 
-user change, removed three pure menu sections and dangling refs
-start:unavailable stop:2026-06-25T04:43:10Z total:~unavailable overhead:~unavailable req_words:30 resp_words:40 est_
-tokens:~91 req:+0a/-0r code:+0a/-0r rework:1 reworked: logged mistakes and time after failing to capture start/end 
-times for prior menu-removal prompts
-start:2026-06-25T04:41:31Z stop:2026-06-25T04:43:10Z total:~99s overhead:~3s req_words:30 resp_words:120 est_tokens:~
-195 req:+0a/-0r code:+0a/-0r rework:1 reworked: began wrong doc restructure approach before user corrected to full 
-removal
-start:2026-06-25T04:36:00Z stop:2026-06-25T04:36:35Z total:~38s overhead:~3s req_words:90 resp_words:90 est_tokens:~234
-req:+0a/-0r code:+2a/-0r rework:0 reworked: none, located the per-resource step menu and added blank line before both 
-banner renders
-start:2026-06-25T04:29:49Z stop:2026-06-25T04:35:24Z total:~338s overhead:~3s req_words:50 resp_words:200 est_tokens:~
-325 req:+1a/-1r code:+6a/-37r rework:2 reworked: reverted a doc-comment edit, then hardened role-type capture against 
-stale VAR leakage
-start:2026-06-25T04:26:10Z stop:2026-06-25T04:26:40Z total:~44s overhead:~14s req_words:60 resp_words:170 est_tokens:~
-299 req:+0a/-0r code:+0a/-0r rework:0 reworked: none, audited role references and asked scope before broad edit
-start:2026-06-25T03:42:32Z stop:2026-06-25T03:43:07Z total:~40s overhead:~4s req_words:230 resp_words:300 est_tokens:~
-689 req:+0a/-0r code:+0a/-0r rework:0 reworked: none, read diagram code and confirmed deploy-order understanding before
-coding
-start:2026-06-25T03:49:32Z stop:2026-06-25T03:50:03Z total:~321s overhead:~7s req_words:90 resp_words:120 est_tokens:~
-273 req:+0a/-0r code:+2a/-3r rework:4 reworked: removed VAR guard and VAR name from org root metadata SCP
-start:2026-06-25T03:38:44Z stop:2026-06-25T03:40:02Z total:~84s overhead:~6s req_words:110 resp_words:120 est_tokens:~
-299 req:+0a/-0r code:+3a/-9r rework:0 reworked: dropped VAR from account passes and test resets after org/env already 
-fixed
-start:2026-06-25T03:15:21Z stop:2026-06-25T03:20:09Z total:~292s overhead:~4s req_words:60 resp_words:230 est_tokens:~
-377 req:+0a/-6r code:+0a/-0r rework:6 reworked: removed duplicated menus-project requirement restatements from three 
-deploy sections
-start:2026-06-25T03:13:20Z stop:2026-06-25T03:14:17Z total:~60s overhead:~3s req_words:110 resp_words:150 est_tokens:~
-338 req:+0a/-0r code:+0a/-0r rework:0 reworked: none, audit already complete and enforced
-start:2026-06-25T03:10:25Z stop:2026-06-25T03:12:39Z total:~141s overhead:~8s req_words:1 resp_words:120 est_tokens:~
-157 req:+7a/-0r code:+47a/-66r rework:0 reworked: extracted shared deploy-selected-resources loop from three scripts
-start:2026-06-25T03:08:28Z stop:2026-06-25T03:08:40Z total:~21s overhead:~8s req_words:7 resp_words:230 est_tokens:~308
-req:+0a/-0r code:+0a/-0r rework:0 reworked: none, answered question only
-start:2026-06-25T03:04:16Z stop:2026-06-25T03:04:52Z total:~40s overhead:~4s req_words:110 resp_words:120 est_tokens:~
-299 req:+0a/-0r code:+0a/-0r rework:0 reworked: none, task already complete from prior turn
-start:2026-06-25T02:57:29Z stop:2026-06-25T03:03:22Z total:~456s overhead:~3s req_words:110 resp_words:300 est_tokens:~
-533 req:+3a/-0r code:+60a/-30r rework:3 reworked: added trailer+nav to three deploy menus, fixed cancel-nav exemption
-start:2026-06-25T02:50:16Z stop:2026-06-25T02:54:46Z total:~270s overhead:~3s req_words:210 resp_words:300 est_tokens:~
-663 req:+0a/-0r code:+60a/-150r rework:2 reworked: account test repointed to ACCT and assertions matched real data
-start:2026-06-25T02:42:32Z stop:2026-06-25T02:42:50Z total:~22s overhead:~5s req_words:7 resp_words:90 est_tokens:~126 
-req:+0a/-0r code:+0a/-0r rework:4 reworked: shortened recent mistake entries
-start:2026-06-25T02:33:50Z stop:2026-06-25T02:41:11Z total:~447s overhead:~6s req_words:120 resp_words:330 est_tokens:~
-585 req:+0a/-0r code:+0a/-0r rework:140 reworked: removed two project-local helpers and the project-side menu logic; 
-produced a prompt to add required-suffix and multi-source deduped list build to the menus project
-start:2026-06-25T02:19:39Z stop:2026-06-25T02:22:42Z total:~188s overhead:~5s req_words:70 resp_words:430 est_tokens:~
-650 req:+1a/-1r code:+13a/-9r rework:22 reworked: refactored Deploy Org selection loop to shared positional primitive, 
-removed eval, identified unsupported cross-file label join for a menu-project prompt
-start:2026-06-25T02:03:25Z stop:2026-06-25T02:16:58Z total:~816s overhead:~3s req_words:90 resp_words:430 est_tokens:~
-676 req:+2a/-2r code:+95a/-77r rework:1 reworked: aligned resource-flow account fixture after scope correction
-start:2026-06-25T02:00:34Z stop:2026-06-25T02:00:42Z total:~21s overhead:~13s req_words:14 resp_words:120 est_tokens:~
-174 req:+0a/-0r code:+0a/-0r rework:0 reworked: none
+## project-config-org
+start:2026-06-25T02:08:21.056+00:00 stop:2026-06-25T02:08:25.083+00:00 overhead:~4s total:~8s req_words:3 resp_words:70 est_tokens:~95 req:+0a/-0r code:+0a/-0r rework:0 desc:confirmed fix complete and verified: IMDSv2 helper, IP-display branch, README reqs, 18/18 test pass
+start:2026-06-25T01:44:29.852+00:00 stop:2026-06-25T01:44:37.351+00:00 overhead:~3s total:~10s req_words:9 resp_words:80 est_tokens:~116 req:+0a/-0r code:+0a/-0r rework:0 desc:confirmed settings including admin-ips and job-admin-ips are stored in the org xml settings node; IP-display change does not alter storage
+start:2026-06-25T01:38:17.308+00:00 stop:2026-06-25T01:40:52.893+00:00 overhead:~6s total:~161s req_words:4 resp_words:120 est_tokens:~161 req:+10a/-0r code:+45a/-2r rework:0 desc:added get-public-ip.sh IMDSv2 helper, PUBLIC_IP vars, CIDR admin-ips IP-display branch in type-edit-settings.sh, README reqs 31-33 and Get Public IP section; added test curl stub and IP-line assertion; 18/18 pass
+start:2026-06-25T01:36:31.743+00:00 stop:2026-06-25T01:37:30.216+00:00 overhead:~2s total:~61s req_words:35 resp_words:240 est_tokens:~357 req:+0a/-0r code:+0a/-0r rework:0 desc:located admin-ips prompt in type-edit-settings.sh driven by types settings.xml; logged incomplete-task mistake; proposed plan to add IP-display requirement, implement IMDSv2 branch, fix test; awaiting confirm
+start:2026-06-25T01:24:26.401+00:00 stop:2026-06-25T01:24:38.352+00:00 overhead:~4s total:~16s req_words:13 resp_words:110 est_tokens:~160 req:+0a/-0r code:+0a/-0r rework:0 desc:reported task incomplete; logged stalling mistake; need target README section/file for admin-IP requirement to proceed
+start:2026-06-25T01:23:43.732+00:00 stop:2026-06-25T01:23:49.729+00:00 overhead:~3s total:~9s req_words:8 resp_words:120 est_tokens:~166 req:+0a/-0r code:+0a/-0r rework:0 desc:explained IMDSv2 works as ec2-user without sudo/IAM; listed conditions where it fails
+start:2026-06-25T01:22:05.326+00:00 stop:2026-06-25T01:22:27.762+00:00 overhead:~2s total:~25s req_words:10 resp_words:90 est_tokens:~130 req:+0a/-0r code:+0a/-0r rework:1 desc:stopped running network/host-probe commands myself; logged mistake; will write IMDSv2 code for user to run instead
+start:2026-06-25T01:21:36.999+00:00 stop:2026-06-25T01:21:43.064+00:00 overhead:~0s total:~31s req_words:9 resp_words:90 est_tokens:~129 req:+0a/-0r code:+0a/-0r rework:0 desc:answered that IMDSv2 public-ipv4 returns the EIP when attached else the auto-assigned IP; noted NAT/LB caveat
+start:2026-06-25T01:19:47.711+00:00 stop:2026-06-25T01:19:56.928+00:00 overhead:~2s total:~11s req_words:60 resp_words:170 est_tokens:~299 req:+0a/-0r code:+0a/-0r rework:0 desc:stopped on public-IP lookup conflicting with no-Internet rule and undocumented admin-IP requirement; asked user before acting
+start:2026-06-25T01:17:00.610+00:00 stop:2026-06-25T01:17:22.459+00:00 overhead:~19s total:~41s req_words:18 resp_words:150 est_tokens:~218 req:+0a/-0r code:+0a/-0r rework:0 desc:read global, project, tests READMEs and mistakes.md; reported; logged timestamp-format mistake
+start:2026-06-25T01:08:33.297+00:00 stop:2026-06-25T01:12:13.364+00:00 overhead:~4s total:~278s req_words:40 resp_words:120 est_tokens:~208 req:+1a/-0r code:+22a/-9r rework:0 desc:fixed select-from-list settings menu to set MENU_DEFAULT by matching the stored environment id to its position so the shared menu.sh shows [N]; added README req 21; renumbered section; all 16 edit-settings assertions pass
+start:2026-06-25T00:51:16.650+00:00 stop:2026-06-25T01:00:29.301+00:00 overhead:~3s total:~553s req_words:30 resp_words:330 est_tokens:~468 req:+2a/-7r code:+30a/-95r rework:2 desc:replaced hand-built menu trailer/banner/Help loops in type-edit-settings, type-add, type-show-diagram with shared menu.sh and menu-nav-choice.sh; removed inline /h help and dead EDIT_HELP; updated tests; 2 pre-existing edit-settings validate-read fails remain
 
-Project F:
-start:2026-06-25T01:50:28Z stop:2026-06-25T01:50:42Z total:~18s overhead:~4s req_words:24 resp_words:120 tokens:~187 
-req:+0a/-0r code:+0a/-0r rework:0 desc:confirmed child-branch early return bug in the menus project; cannot edit from 
-this project
-start:2026-06-25T01:54:12Z stop:2026-06-25T01:54:16Z total:~233s overhead:~228s req_words:24 resp_words:130 tokens:~200
-req:+0a/-0r code:+0a/-0r rework:0 desc:confirmed bug and no write access to the menus project; produced fix prompt for
-owning project
-start:2026-06-25T01:46:55Z stop:2026-06-25T01:48:12Z total:~79s overhead:~2s req_words:60 resp_words:130 tokens:~247 
-req:+0a/-0r code:+0a/-0r rework:0 desc:diagnosed Deploy Org menu error; root cause in the menus/PROJ projects not this 
-project
-start:2026-06-25T01:45:54Z stop:2026-06-25T01:46:09Z total:~30s overhead:~15s req_words:14 resp_words:120 tokens:~174 
-req:+0a/-0r code:+0a/-0r rework:0 desc:read all readmes and report
+## project-config-org-types
+start:2026-06-25 stop:2026-06-25 overhead:~4s total:~9s req_words:22 resp_words:55 est_tokens:~101 req:+0a/-0r code:+0a/-0r rework:0 desc:listed flawed and 6/24 file names and flagged naming convention
+start:2026-06-25 stop:2026-06-25 overhead:~3s total:~8s req_words:14 resp_words:50 est_tokens:~83 req:+0a/-0r code:+0a/-0r rework:0 desc:asked which line to unflag as rework
+start:2026-06-25 stop:2026-06-25 overhead:~5s total:~10s req_words:75 resp_words:60 est_tokens:~176 req:+0a/-0r code:+0a/-0r rework:0 desc:explained red XML/JSON unterminated multiline string
+start:2026-06-25 stop:2026-06-25 overhead:~119s total:~168s req_words:60 resp_words:55 est_tokens:~150 req:+0a/-0r code:+0a/-0r rework:1 desc:rework: fixed UTC-vs-ET window error, moved flawed file, rewrote with all 54 in-window lines masked
+start:2026-06-25 stop:2026-06-25 overhead:~3s total:~25s req_words:18 resp_words:55 est_tokens:~95 req:+0a/-0r code:+0a/-0r rework:1 desc:rework: verified window coverage across all files and confirmed file complete
+start:2026-06-25 stop:2026-06-25 overhead:~152s total:~184s req_words:60 resp_words:60 est_tokens:~156 req:+0a/-0r code:+0a/-0r rework:1 desc:rework: moved flawed file to /tmp/flawed and rewrote with only in-window 06-24 entries
+start:2026-06-25 stop:2026-06-25 overhead:~5s total:~36s req_words:120 resp_words:60 est_tokens:~234 req:+0a/-0r code:+0a/-0r rework:1 desc:rework: regenerated complete 06-24 list to /tmp after earlier wrong from-memory attempts
+start:2026-06-25 stop:2026-06-25 overhead:~5s total:~15s req_words:9 resp_words:130 est_tokens:~181 req:+0a/-0r code:+0a/-0r rework:0 desc:analyzed time and mistake trends across the two days
+start:2026-06-25 stop:2026-06-25 overhead:~5s total:~13s req_words:18 resp_words:120 est_tokens:~179 req:+0a/-0r code:+0a/-0r rework:0 desc:analyzed format differences between the two days
+start:2026-06-25 stop:2026-06-25 overhead:~127s total:~292s req_words:12 resp_words:2600 est_tokens:~3134 req:+0a/-0r code:+0a/-0r rework:1 desc:redisplayed all 2026-06-25 entries normalized to start/stop format with consistent masking and lettered labels
+start:2026-06-25 stop:2026-06-25 overhead:~47s total:~59s req_words:18 resp_words:30 est_tokens:~62 req:+0a/-0r code:+0a/-0r rework:0 desc:logged all remaining output mistakes that broke instructions
+start:2026-06-25 stop:2026-06-25 overhead:~3s total:~12s req_words:15 resp_words:30 est_tokens:~59 req:+0a/-0r code:+0a/-0r rework:0 desc:logged four global-requirement violations from the last output
+start:2026-06-25 stop:2026-06-25 overhead:~3s total:~114s req_words:5 resp_words:2600 est_tokens:~3380 req:+0a/-0r code:+0a/-0r rework:0 desc:reproduced every 2026-06-25 entry from all sibling files verbatim, all lines kept, Project A/C/D/deploy/drift labels, names masked
+start:2026-06-25 stop:2026-06-25 overhead:~197s total:~224s req_words:60 resp_words:40 est_tokens:~130 req:+0a/-0r code:+0a/-0r rework:1 desc:logged all repeated mistakes and marked prior failed turns as rework without altering times
+start:2026-06-25 stop:2026-06-25 overhead:~73s total:~240s req_words:8 resp_words:2100 est_tokens:~2740 req:+0a/-0r code:+0a/-0r rework:1 desc:reproduced all 25th entries verbatim with names masked; rework: excluded a note line and used dash-style labels
+start:2026-06-25 stop:2026-06-25 overhead:~3s total:~73s req_words:13 resp_words:1400 est_tokens:~1837 req:+0a/-0r code:+0a/-0r rework:1 desc:reprinted all in-window entries with full date/time and every field, masking only names
+start:2026-06-25 stop:2026-06-25 overhead:~3s total:~37s req_words:14 resp_words:780 est_tokens:~1033 req:+0a/-0r code:+0a/-0r rework:1 desc:extracted entries across siblings; rework: shortened descriptions and used dash-style labels
+start:2026-06-25 stop:2026-06-25 overhead:~4s total:~12s req_words:14 resp_words:30 est_tokens:~57 req:+0a/-0r code:+0a/-0r rework:1 desc:logged prior-response mistakes; reworked time-block and masking compliance
+start:2026-06-25 stop:2026-06-25 overhead:~104s total:~135s req_words:13 resp_words:520 est_tokens:~693 req:+0a/-0r code:+0a/-0r rework:1 desc:extracted window entries across all sibling time.md files
+start:2026-06-25 stop:2026-06-25 overhead:~4s total:~8s req_words:10 resp_words:65 est_tokens:~98 req:+0a/-0r code:+0a/-0r rework:0 desc:restated task requirements
+start:2026-06-25 stop:2026-06-25 overhead:~4s total:~40s req_words:55 resp_words:75 est_tokens:~169 req:+0a/-0r code:+0a/-0r rework:1 desc:corrected window to yesterday 6PM-midnight ET
+start:2026-06-25 stop:2026-06-25 overhead:~2s total:~7s req_words:8 resp_words:40 est_tokens:~62 req:+0a/-0r code:+0a/-0r rework:1 desc:rework: wrongly claimed task complete on a too-narrow window
+start:2026-06-25 stop:2026-06-25 overhead:~2s total:~11s req_words:8 resp_words:55 est_tokens:~82 req:+0a/-0r code:+0a/-0r rework:1 desc:rework: extracted only one project and a too-narrow window
+start:2026-06-25 stop:2026-06-25 overhead:~7s total:~10s req_words:5 resp_words:70 est_tokens:~98 req:+0a/-0r code:+0a/-0r rework:0 desc:none
+start:2026-06-25 stop:2026-06-25 overhead:~8s total:~26s req_words:75 resp_words:60 est_tokens:~176 req:+0a/-0r code:+0a/-0r rework:1 desc:recomputed time source per requirement
+start:2026-06-25 stop:2026-06-25 overhead:~3s total:~6s req_words:22 resp_words:45 est_tokens:~87 req:+0a/-0r code:+0a/-0r rework:0 desc:checked siblings for time.md
+start:2026-06-25 stop:2026-06-25 overhead:~10s total:~13s req_words:25 resp_words:55 est_tokens:~104 req:+0a/-0r code:+0a/-0r rework:0 desc:read all readmes
+start:2026-06-25 stop:2026-06-25 overhead:~70s total:~125s req_words:60 resp_words:120 est_tokens:~234 req:+0a/-0r code:+0a/-0r rework:0 desc:none
+
+## project-deploy
+start:2026-06-25T06:29:38 stop:2026-06-25T06:32:55 overhead:~unavailable total:~197s req_words:60 resp_words:130 est_tokens:~250 req:+0a/-0r code:+0a/-0r rework:0 desc:diagnosed that Deploy Org redisplays the org menu per requirement and asked whether to change the requirement to navigate to Select Environment
+start:2026-06-25T06:14:32 stop:2026-06-25T06:29:38 overhead:~unavailable total:~906s req_words:45 resp_words:110 est_tokens:~230 req:+1a/-1r code:+4a/-1r rework:0 desc:fixed missing ENV_CONTEXT: added set-env-context.sh and wired run-after-selected-file on the environment list action so ENV_CONTEXT sets only on env selection
+start:2026-06-25T06:13:14 stop:2026-06-25T06:13:25 overhead:~unavailable total:~11s req_words:9 resp_words:25 est_tokens:~45 req:+0a/-0r code:+0a/-0r rework:3 desc:logged time entries that were missed for the last several turns and answered whether time was logged
+start:2026-06-25T06:30:18 stop:2026-06-25T06:35:28 overhead:~6s total:~316s req_words:50 resp_words:140 est_tokens:~247 req:+0a/-0r code:+5a/-1r rework:0 desc:fixed empty ENV_XML in the env deploy path by setting the deployment-log target once before the deploy loop so xml-write has XML_FILE
+start:2026-06-25T06:11:39 stop:2026-06-25T06:13:23 overhead:~3s total:~107s req_words:1 resp_words:120 est_tokens:~157 req:+0a/-0r code:+18a/-4r rework:0 desc:fixed SCP duplicate-attachment: verify attachment by policy id against the target and treat DuplicatePolicyAttachmentException as already-attached at both attach sites
+start:2026-06-25T06:08:33 stop:2026-06-25T06:10:03 overhead:~unavailable total:~338s req_words:30 resp_words:120 est_tokens:~195 req:+0a/-0r code:+0a/-0r rework:1 desc:re-read the global README, logged this turn's violations, and traced the SCP DuplicatePolicyAttachment root cause without yet fixing it
+start:2026-06-25T05:51:54 stop:2026-06-25T05:54:09 overhead:~14s total:~149s req_words:20 resp_words:130 est_tokens:~195 req:+0a/-0r code:+30a/-12r rework:3 desc:implemented the new picker structure: org=Y from org file, env=Y from env file, account = org<>Y then env<>Y then account resources, dropped deploy-to-all logic
+start:2026-06-25T05:48:45 stop:2026-06-25T05:50:30 overhead:~unavailable total:~269s req_words:40 resp_words:140 est_tokens:~234 req:+0a/-0r code:+0a/-0r rework:1 desc:repaired corrupted time.md entries, fixed newest-first order and removed the duplicate 05:03 line and the redundant reworked field, marked menu turns as rework, flagged the new filter structure not yet done
+start:2026-06-25T05:43:52 stop:2026-06-25T05:45:08 overhead:~6s total:~82s req_words:170 resp_words:110 est_tokens:~364 req:+0a/-0r code:+9a/-2r rework:2 desc:reordered org picker to banner-then-trailer and added the missing banner to the account picker for the new Multi Select Menu kind
+start:2026-06-25T05:21:47 stop:2026-06-25T05:36:52 overhead:~unavailable total:~905s req_words:120 resp_words:130 est_tokens:~325 req:+0a/-0r code:+0a/-0r rework:1 desc:searched the menus README for the new menu type and logged the file-action-renders-menu mistake on the org picker
+start:2026-06-25T05:16:27 stop:2026-06-25T05:19:31 overhead:~3s total:~184s req_words:90 resp_words:170 est_tokens:~338 req:+0a/-0r code:+0a/-0r rework:1 desc:re-checked the org picker action-file resolution and menu code against the master list, no rename needed
+start:2026-06-25T05:08:30 stop:2026-06-25T05:09:15 overhead:~3s total:~48s req_words:15 resp_words:200 est_tokens:~280 req:+0a/-0r code:+0a/-0r rework:1 desc:traced all menu-building scripts to find which menu bypasses actions.xml
+start:2026-06-25T05:07:20 stop:2026-06-25T05:07:20 overhead:unavailable total:~unavailable req_words:15 resp_words:40 est_tokens:~72 req:+2a/-0r code:+0a/-0r rework:0 desc:added the two README lines and logged the missed time turns
+start:2026-06-25T05:03:56 stop:2026-06-25T05:06:23 overhead:~4s total:~147s req_words:30 resp_words:40 est_tokens:~91 req:+0a/-0r code:+0a/-0r rework:0 desc:refined line 5 wording for resource action-file source, shown not added
+start:2026-06-25T05:03:56 stop:unavailable overhead:~4s total: req_words:20 resp_words:50 est_tokens:~91 req:+0a/-0r code:+0a/-0r rework:0 desc:narrowed to the single master-resource-list line, shown not added
+start:2026-06-25T05:02:38 stop:2026-06-25T05:03:09 overhead:~3s total:~34s req_words:20 resp_words:300 est_tokens:~416 req:+0a/-0r code:+0a/-0r rework:0 desc: none, traced action-file vs menu-structure sources and asked which layer is the intended defect
+start:2026-06-25T04:59:57 stop:2026-06-25T05:02:00 overhead:~3s total:~126s req_words:120 resp_words:230 est_tokens:~455 req:+0a/-0r code:+0a/-0r rework:0 desc: none, audited both menus against engine rules and confirmed compliance, no fix needed
+start:2026-06-25T04:49:53 stop:2026-06-25T04:50:55 overhead:~3s total:~64s req_words:110 resp_words:120 est_tokens:~299 req:+0a/-0r code:+1a/-0r rework:1 desc: corrected my misdiagnosis and set MENU_LABEL before menu-multi.sh per Multi Select Menu rule 13
+start:2026-06-25T04:40:19 stop:2026-06-25T04:40:53 overhead:~52s total:~85s req_words:40 resp_words:150 est_tokens:~247 req:+0a/-0r code:+0a/-0r rework:1 desc: logged this session's missing time entries and three mistakes for not reading the global README time/mistakes rules
+start:2026-06-25T04:39:14 stop:2026-06-25T04:39:59 overhead:unavailable total:unavailable req_words:120 resp_words:200 est_tokens:~416 req:+0a/-0r code:+0a/-0r rework:1 desc: re-flagged the MENU_LABEL conflict instead of applying it
+start:2026-06-25T04:38:01 stop:2026-06-25T04:38:46 overhead:unavailable total:unavailable req_words:90 resp_words:200 est_tokens:~377 req:+0a/-0r code:+0a/-0r rework:1 desc: flagged that restoring MENU_LABEL violates engine-owned label rules
+start:2026-06-25T04:35:27 stop:2026-06-25T04:36:00 overhead:unavailable total:unavailable req_words:120 resp_words:120 est_tokens:~312 req:+0a/-0r code:+1a/-1r rework:0 desc: none, removed engine-owned MENU_LABEL and sourced menu-banner
+start:2026-06-25T04:56:34 stop:2026-06-25T04:56:40 overhead:~3s total:~6s req_words:4 resp_words:40 est_tokens:~57 req:+0a/-0r code:+0a/-0r rework:0 desc: none, verified MENU_CANCEL_FILE fully removed and syntax clean
+start:2026-06-25T04:52:39 stop:2026-06-25T04:53:21 overhead:~5s total:~47s req_words:70 resp_words:70 est_tokens:~182 req:+0a/-0r code:+0a/-78r rework:0 desc: none, removed dead MENU_CANCEL_FILE from 56 src files plus variables.sh after correcting prior wrong engine-gap framing
+start:2026-06-25T04:49:41 stop:2026-06-25T04:50:41 overhead:~2s total:~62s req_words:60 resp_words:230 est_tokens:~377 req:+0a/-0r code:+0a/-0r rework:0 desc: none, compared this project menu usage to bash-menus README and produced a prompt for two engine mismatches
+start:2026-06-25T04:44:03 stop:2026-06-25T04:48:28 overhead:~2s total:~267s req_words:30 resp_words:140 est_tokens:~221 req:+3a/-14r code:+0a/-0r rework:1 desc: re-added Menu data dir as three menu-data requirements after mid-edit user change, removed three pure menu sections and dangling refs
+start:2026-06-25T??:??:?? stop:2026-06-25T04:43:10 overhead:~? total:~? req_words:30 resp_words:40 est_tokens:~91 req:+0a/-0r code:+0a/-0r rework:1 desc: logged mistakes and time after failing to capture start/end times for prior menu-removal prompts
+start:2026-06-25T04:41:31 stop:2026-06-25T04:43:10 overhead:~3s total:~99s req_words:30 resp_words:120 est_tokens:~195 req:+0a/-0r code:+0a/-0r rework:1 desc: began wrong README restructure approach before user corrected to full removal
+start:2026-06-25T04:36:00 stop:2026-06-25T04:36:35 overhead:~3s total:~38s req_words:90 resp_words:90 est_tokens:~234 req:+0a/-0r code:+2a/-0r rework:0 desc: none, located the per-resource step menu and added blank line before both banner renders
+start:2026-06-25T04:29:49 stop:2026-06-25T04:35:24 overhead:~3s total:~338s req_words:50 resp_words:200 est_tokens:~325 req:+1a/-1r code:+6a/-37r rework:2 desc: reverted a doc-comment edit, then hardened role-type capture against stale BOOTSTRAP leakage
+start:2026-06-25T04:26:10 stop:2026-06-25T04:26:40 overhead:~14s total:~44s req_words:60 resp_words:170 est_tokens:~299 req:+0a/-0r code:+0a/-0r rework:0 desc: none, audited role references and asked scope before broad edit
+start:2026-06-25T03:42:32 stop:2026-06-25T03:43:07 overhead:~4s total:~40s req_words:230 resp_words:300 est_tokens:~689 req:+0a/-0r code:+0a/-0r rework:0 desc: none, read diagram code and confirmed deploy-order understanding before coding
+start:2026-06-25T03:49:32 stop:2026-06-25T03:50:03 overhead:~7s total:~321s req_words:90 resp_words:120 est_tokens:~273 req:+0a/-0r code:+2a/-3r rework:4 desc: removed ENV_CONTEXT guard and ENV_CONTEXT name from org root IMDSv2 SCP
+start:2026-06-25T03:38:44 stop:2026-06-25T03:40:02 overhead:~6s total:~84s req_words:110 resp_words:120 est_tokens:~299 req:+0a/-0r code:+3a/-9r rework:0 desc: dropped MENU_LABEL_SOURCE from account passes and test resets after org/env already fixed
+start:2026-06-25T03:15:21 stop:2026-06-25T03:20:09 overhead:~4s total:~292s req_words:60 resp_words:230 est_tokens:~377 req:+0a/-6r code:+0a/-0r rework:6 desc: removed duplicated menus-project requirement restatements from three deploy sections
+start:2026-06-25T03:13:20 stop:2026-06-25T03:14:17 overhead:~3s total:~60s req_words:110 resp_words:150 est_tokens:~338 req:+0a/-0r code:+0a/-0r rework:0 desc: none, audit already complete and enforced
+start:2026-06-25T03:10:25 stop:2026-06-25T03:12:39 overhead:~8s total:~141s req_words:1 resp_words:120 est_tokens:~157 req:+7a/-0r code:+47a/-66r rework:0 desc: extracted shared deploy-selected-resources loop from three scripts
+start:2026-06-25T03:08:28 stop:2026-06-25T03:08:40 overhead:~8s total:~21s req_words:7 resp_words:230 est_tokens:~308 req:+0a/-0r code:+0a/-0r rework:0 desc: none, answered question only
+start:2026-06-25T03:04:16 stop:2026-06-25T03:04:52 overhead:~4s total:~40s req_words:110 resp_words:120 est_tokens:~299 req:+0a/-0r code:+0a/-0r rework:0 desc: none, task already complete from prior turn
+start:2026-06-25T02:57:29 stop:2026-06-25T03:03:22 overhead:~3s total:~456s req_words:110 resp_words:300 est_tokens:~533 req:+3a/-0r code:+60a/-30r rework:3 desc: added trailer+nav to three deploy menus, fixed cancel-nav exemption
+start:2026-06-25T02:50:16 stop:2026-06-25T02:54:46 overhead:~3s total:~270s req_words:210 resp_words:300 est_tokens:~663 req:+0a/-0r code:+60a/-150r rework:2 desc: account test repointed to savisec and assertions matched real data
+start:2026-06-25T02:42:32 stop:2026-06-25T02:42:50 overhead:~5s total:~22s req_words:7 resp_words:90 est_tokens:~126 req:+0a/-0r code:+0a/-0r rework:4 desc: shortened recent mistake entries
+start:2026-06-25T02:33:50 stop:2026-06-25T02:41:11 overhead:~6s total:~447s req_words:120 resp_words:330 est_tokens:~585 req:+0a/-0r code:+0a/-0r rework:140 desc: removed two project-local helpers and the project-side menu logic; produced a prompt to add required-suffix and multi-source deduped list build to bash-menus
+start:2026-06-25T02:19:39 stop:2026-06-25T02:22:42 overhead:~5s total:~188s req_words:70 resp_words:430 est_tokens:~650 req:+1a/-1r code:+13a/-9r rework:22 desc: refactored Deploy Org selection loop to shared positional primitive, removed eval, identified unsupported cross-file label join for a menu-project prompt
+start:2026-06-25T02:03:25 stop:2026-06-25T02:16:58 overhead:~3s total:~816s req_words:90 resp_words:430 est_tokens:~676 req:+2a/-2r code:+95a/-77r rework:1 desc: aligned resource-flow account fixture after scope correction
+start:2026-06-25T02:00:34 stop:2026-06-25T02:00:42 overhead:~13s total:~21s req_words:14 resp_words:120 est_tokens:~174 req:+0a/-0r code:+0a/-0r rework:0 desc: none
+
+## project-drift
+start:2026-06-25T01:50:28Z stop:2026-06-25T01:50:42Z overhead:~4s total:~18s req_words:24 resp_words:120 est_tokens:~187 req:+0a/-0r code:+0a/-0r rework:0 desc:confirmed child-branch early return bug in bash-menus; cannot edit from this project
+start:2026-06-25T01:54:12Z stop:2026-06-25T01:54:16Z overhead:~228s total:~233s req_words:24 resp_words:130 est_tokens:~200 req:+0a/-0r code:+0a/-0r rework:0 desc:confirmed bug and no write access to bash-menus; produced fix prompt for owning project
+start:2026-06-25T01:46:55Z stop:2026-06-25T01:48:12Z overhead:~2s total:~79s req_words:60 resp_words:130 est_tokens:~247 req:+0a/-0r code:+0a/-0r rework:0 desc:diagnosed Deploy Org menu error; root cause in bash-menus/project-deploy not this project
+start:2026-06-25T01:45:54Z stop:2026-06-25T01:46:09Z overhead:~15s total:~30s req_words:14 resp_words:120 est_tokens:~174 req:+0a/-0r code:+0a/-0r rework:0 desc:read all readmes and report
+
+## project-global-requirements
+start:2026-06-25T22:20:19Z stop:2026-06-25T22:20:38Z overhead:~2s total:~22s req_words:9 resp_words:230 est_tokens:~311 req:+0a/-0r code:+0a/-0r rework:0 desc:none
+start:2026-06-25T22:19:27Z stop:2026-06-25T22:19:31Z overhead:~4s total:~9s req_words:7 resp_words:80 est_tokens:~113 req:+0a/-0r code:+0a/-0r rework:0 desc:none
+start:2026-06-25T22:18:52Z stop:2026-06-25T22:19:03Z overhead:~3s total:~13s req_words:25 resp_words:30 est_tokens:~72 req:+0a/-1r code:+0a/-0r rework:0 desc:none
+start:2026-06-25T22:18:11Z stop:2026-06-25T22:18:28Z overhead:~2s total:~19s req_words:45 resp_words:75 est_tokens:~156 req:+0a/-0r code:+0a/-0r rework:0 desc:none
+start:2026-06-25T22:17:35Z stop:2026-06-25T22:17:42Z overhead:~4s total:~11s req_words:35 resp_words:45 est_tokens:~104 req:+0a/-0r code:+0a/-0r rework:0 desc:none
+start:2026-06-25T22:16:01Z stop:2026-06-25T22:16:32Z overhead:~3s total:~34s req_words:38 resp_words:80 est_tokens:~153 req:+4a/-6r code:+0a/-0r rework:0 desc:none
+start:2026-06-25T22:14:33Z stop:2026-06-25T22:14:49Z overhead:~3s total:~19s req_words:80 resp_words:60 est_tokens:~182 req:+0a/-0r code:+0a/-0r rework:1 desc:corrected prior memory to exact response
+start:2026-06-25T22:13:27Z stop:2026-06-25T22:13:48Z overhead:~2s total:~23s req_words:22 resp_words:230 est_tokens:~328 req:+0a/-0r code:+0a/-0r rework:0 desc:conflict-flagged
+start:2026-06-25T22:12:17Z stop:2026-06-25T22:12:34Z overhead:~2s total:~19s req_words:30 resp_words:90 est_tokens:~156 req:+0a/-1r code:+0a/-0r rework:0 desc:none
+start:2026-06-25T22:11:17Z stop:2026-06-25T22:11:32Z overhead:~3s total:~18s req_words:40 resp_words:70 est_tokens:~143 req:+0a/-2r code:+0a/-0r rework:0 desc:none
+start:2026-06-25T22:09:59Z stop:2026-06-25T22:10:16Z overhead:~3s total:~20s req_words:6 resp_words:300 est_tokens:~398 req:+0a/-0r code:+0a/-0r rework:0 desc:none
+start:2026-06-25T22:03:55Z stop:2026-06-25T22:05:05Z overhead:~5s total:~75s req_words:8 resp_words:120 est_tokens:~166 req:+0a/-0r code:+0a/-0r rework:0 desc:none
+
+## project-time-tracker
+start:2026-06-25T23:26:19 stop:2026-06-25T23:27:04 overhead:~3s total:~48s req_words:9 resp_words:120 est_tokens:~168 req:+33a/-0r code:+0a/-0r rework:1 desc:added-project-requirements-and-sample-log
+start:2026-06-25T23:25:50 stop:2026-06-25T23:26:00 overhead:~2s total:~13s req_words:13 resp_words:120 est_tokens:~173 req:+0a/-0r code:+0a/-0r rework:1 desc:corrected-false-conflict-will-fix-this-project-readme
+start:2026-06-25T23:24:38 stop:2026-06-25T23:24:47 overhead:~3s total:~12s req_words:9 resp_words:170 est_tokens:~233 req:+0a/-0r code:+0a/-0r rework:0 desc:reported-conflict-cannot-edit-global-readme-offered-options
+start:2026-06-25T23:23:34 stop:2026-06-25T23:23:49 overhead:~6s total:~20s req_words:1100 resp_words:300 est_tokens:~1820 req:+0a/-0r code:+0a/-0r rework:1 desc:corrected-memory-logging-to-verbatim-answered-perday-and-logging-questions
+start:2026-06-25T23:21:04 stop:2026-06-25T23-21-27 overhead:~2s total:~Ns req_words:11 resp_words:300 est_tokens:~404 req:+0a/-0r code:+0a/-0r rework:1 desc:deduped-proposal-to-reference-global-headers
+start:2026-06-25T23:18:11 stop:2026-06-25T23:18:43 overhead:~8s total:~40s req_words:11 resp_words:430 est_tokens:~574 req:+0a/-0r code:+0a/-0r rework:0 desc:proposed-requirements-no-file-written
+
+daily-totals: total:~13569s overhead:~1935s req_words:7810 resp_words:28600 est_tokens:~47115 rework:240
 ```
 
 ## Time Trend Analysis 2026-06-24
