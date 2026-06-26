@@ -6,19 +6,19 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 ## Today's objectives:
 
-🟡 Issue with illegal charcter in name what?
-
-🟡 Fix depoyment to align with diagra hierarchy.
-
-🟡 The action file is still not being pulled dynamically per resource; need to set action to take dyaniacli in menus project like action-resrouce
+🟡 if account role-proflie not set create or assist user to create or select
 
 🟡 Test and fix deploy each resource, then verify, then delete
 
-🟡 Need a menu to list all actions for a resource and allow user to choose one.
+🟡 Add resource specific actions (like route 53 register domain), user can choose action for resource...
 
-🟡 Add dependencies > KMS key before S3 encrytpion, e.g. as needed
+## 6/26/2026
 
-🟡 Add resource specific actions (like route 53 register domain)
+🟢 Add dependencies > KMS key before S3 encrytpion, e.g. as needed
+
+🟢 Issue with illegal charcter in name what?
+
+🟢 Fix depoyment to align with diagra hierarchy.
 
 ## 6/25/2026
 
