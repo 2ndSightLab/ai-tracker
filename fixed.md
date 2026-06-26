@@ -20,6 +20,20 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 🟡 Add resource specific actions (like route 53 register domain)
 
+## 6/25/2026
+
+🟢 Added time to time tracking page
+
+🟢 Figured out something key while trying to get teh time tracking reports to be accurate. Memory was cmopletely corrupted. I don't know if something is auto-summarizing which NEVER works for me but whatever the case what I was working on was not correctly in memory. Results were kind of garbage. That gave me an aha moment. I spent some time revising my global prompt and global readme requiremsnts. Now, for the moment, I'm getting much better consistencly in logging nad faster results overall. Let's see if this holds past midnight when the problems start.
+
+🟢 Implmeneted a time tracker that reads files across all proejcts and generates a report. Since I figured out my time was flawed after 6 pm yesterday, I'm going to redo the times and republish from that point forward to show how it's going up to midnight today and compare yesterady from that time on vs today after I fixed the time tracking (hopefully) and memory problem.
+
+🟢 Added Dpeendencies to the diaggram in the types project to show what rsources need to be deployed before or deleted before others.
+
+🟢 Poplualted dependency file with initial delete and deploy dependencies using AI (so no idea if it's accurate or copmlete at this point)
+
+🟢 Added a way to edit dependencies.
+
 ## 6/24/2026
 
 🟢 Started a project today and somehow file permissions are wrong when they were not yesterady. How does this happen? I updated my perissions script again to fix the problem. More rework.
