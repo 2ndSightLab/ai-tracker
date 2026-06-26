@@ -289,6 +289,47 @@ project
 start:2026-06-25T01:45:54Z stop:2026-06-25T01:46:09Z total:~30s overhead:~15s req_words:14 resp_words:120 tokens:~174 
 req:+0a/-0r code:+0a/-0r rework:0 desc:read all readmes and report
 ```
+
+## Time Trend Analysis 2026-06-24
+```
+compared-to: 2026-06-23
+verdict: slower
+
+current-day turns:16 total:~3983s overhead:~248s est_tokens:~4885
+prior-day turns:46 total:~7599s overhead:~504s est_tokens:~14361
+
+per-turn-change total:~83s overhead:~5s est_tokens:~-7
+```
+
+## Daily Summary 2026-06-24
+
+```
+## Project 1
+start:2026-06-24T19:41:52.318+00:00 stop:2026-06-24T19:42:40Z overhead:~3s total:~48s req_words:15 resp_words:60 est_tokens:~140 req:+0a/-0r code:+0a/-0r rework:1 desc:
+start:2026-06-24T19:40:35.832+00:00 stop:2026-06-24T19:46:00Z overhead:~5s total:~325s req_words:55 resp_words:260 est_tokens:~420 req:+0a/-0r code:+0a/-0r rework:1 desc:
+start:2026-06-24T19:35:14.105+00:00 stop:2026-06-24T19:43:00Z overhead:~5s total:~466s req_words:35 resp_words:520 est_tokens:~720 req:+8a/-4r code:+24a/-3r rework:3 desc:
+start:2026-06-24T19:11:18.005+00:00 stop:2026-06-24T19:12:13Z overhead:~8s total:~573s req_words:20 resp_words:160 est_tokens:~234 req:+1a/-1r code:+2a/-2r rework:0 desc:
+start:2026-06-24T19:07:29.561+00:00 stop:2026-06-24T19:09:21Z overhead:~12s total:~514s req_words:30 resp_words:280 est_tokens:~403 req:+1a/-1r code:+1a/-1r rework:1 desc:
+start:2026-06-24T18:48:47.101+00:00 stop:2026-06-24T18:55:12Z overhead:~3s total:~436s req_words:8 resp_words:900 est_tokens:~1180 req:+0a/-0r code:+38a/-7r rework:7 desc:
+start:2026-06-24T18:41:31.546+00:00 stop:2026-06-24T18:43:46Z overhead:~4s total:~261s req_words:5 resp_words:300 est_tokens:~397 req:+0a/-0r code:+24a/-4r rework:0 desc:
+start:2026-06-24T18:36:16.712+00:00 stop:2026-06-24T18:36:24Z overhead:~8s total:unavailable req_words:1 resp_words:150 est_tokens:~196 req:+0a/-0r code:+0a/-0r rework:0 desc:
+
+## Project 2
+start:2026-06-24T22:25:27+00:00 stop:2026-06-24T22:25:33+00:00 overhead:~31s total:~37s req_words:6 resp_words:20 est_tokens:~34 req:+0a/-0r code:+0a/-0r rework:0 desc:
+start:2026-06-24T22:16:37+00:00 stop:2026-06-24T22:16:37+00:00 overhead:~3s total:~4s req_words:3 resp_words:75 est_tokens:~100 req:+0a/-0r code:+0a/-0r rework:0 desc:
+start:2026-06-24T22:15:48+00:00 stop:2026-06-24T22:15:48+00:00 overhead:~5s total:~5s req_words:9 resp_words:110 est_tokens:~155 req:+0a/-0r code:+0a/-0r rework:1 desc:added missing timestamp header and <file> logging
+start:2026-06-24T19:51:48+00:00 stop:2026-06-24T19:51:58+00:00 overhead:~10s total:~10s req_words:38 resp_words:70 est_tokens:~140 req:+0a/-0r code:+0a/-0r rework:0 desc:
+
+## Project 3
+start:2026-06-24T19:23:12Z stop:2026-06-24T19:31:29Z overhead:unavailable_injected_time_not_recorded total:~497s req_words:48 resp_words:90 est_tokens:~179 req:+40a/-58r code:+210a/-170r rework:1 desc:
+start:2026-06-24T19:21:49Z stop:2026-06-24T19:21:49Z overhead:~0s total:~157s req_words:6 resp_words:70 est_tokens:~99 req:+0a/-0r code:+0a/-0r rework:0 desc:
+start:2026-06-24T19:12:55Z stop:2026-06-24T19:15:03Z overhead:~128s total:~238s req_words:78 resp_words:150 est_tokens:~296 req:+6a/-62r code:+0a/-0r rework:2 desc:
+start:2026-06-24T19:08:57Z stop:2026-06-24T19:09:20Z overhead:~23s total:~412s req_words:28 resp_words:120 est_tokens:~192 req:+0a/-0r code:+0a/-0r rework:0 desc:
+
+daily-totals: total:~3983s overhead:~248s req_words:385 resp_words:3335 est_tokens:~4885 rework:17
+
+```
+
 ## 6/23/2026
 
 I started out today looking at the time logs and everything is slower today. Initially the model tried to tell me it is faster today when it is clearly having some issues right now. It was misineterpreting or maying pulling the wrong date. Fixed that and got better analysis (supposedly - it's making a ton of mistakes right now):
