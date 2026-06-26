@@ -188,7 +188,7 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Environment Type Resource Types | 🟢 | 🟢 | 🟢 | n/a | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Default Org (define mangemnt env) | 🟢 | n/a | n/a | n/a | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Default Org (define backup env) | 🟢 | n/a | n/a | n/a | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Resource type Dependencies | 🟢 | n/a | n/a | n/a | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Resource type Dependencies | 🟢 | 🟢 | 🟢 |🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ### Configure Organization Actions ##
 
@@ -202,7 +202,7 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Organization Diagram - Accounts | 🟢 | 🟢 | 🔴 | 🔴 | 
 | Organization Diagram - Per org/env resources | 🟢 | 🟢 | 🔴 | 🔴 | 
 | Organization Diagram - Type descriptions | 🟢 | 🟢 | 🔴 | 🔴 | 
-| Actions File (menus) | 🟢 | n/a | n/a | n/a | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Actions File (menus) | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ### Configure Organization ###
 
@@ -232,7 +232,7 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Organization Diagram - Accounts | 🟢 | 🟢 | 🔴 | 🔴 | 
 | Organization Diagram - Per org/env resources | 🟢 | 🟢 | 🔴 | 🔴 | 
 | Organization Diagram - Type descriptions | 🟢 | 🟢 | 🔴 | 🔴 | 
-| Actions File (menus) | 🟢 | n/a | n/a | n/a | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Actions File (menus) | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ### Deploy Steps ##
 
@@ -261,13 +261,11 @@ Configure organization to deploy; define environemnt types (allowed resources)
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Environment (OU) | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Environment (OU) | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 
 | OU SCPs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | SCP: deny-external-access [env] | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
 ### Account Resources - every account ###
-
-
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Account | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
@@ -276,13 +274,12 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Admin roles | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Admin role policy | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
-### Deny All Environment Resources ###
-
+#### Deny All Envirnoment ###
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Deny-All OU | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| SCP: always-denied-actions [env] | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| OU | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| SCP: deny-all | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
 ### Management Environment ###
 
@@ -364,7 +361,6 @@ Can lock when not in use with deny all SCP.
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | OU | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Accounts: dns | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-
 
 ### Work Environment Resources ( Base Environment +) ###
 
