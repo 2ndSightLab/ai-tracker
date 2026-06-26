@@ -1,4 +1,4 @@
-# Response Time
+# Time Tracker
 
 Note that the model/agent fails to follow the time tracking rules a lot and I don't always waste tokens on trying to get it to follow the rules correctly so this data is incomplete. It also likely has some hallucinations and inaccuraces. In fact it took many rounds to even get the agent to print out the correct time report on the 24th the first time. On 6/24/26 at 6:15 PM I realized that the model had written my time tracking instructions to the readme incorrectly and was not actually tracking time correctly. when it comes to time tracking the model actually feels very subversive. Check the mistake logs for just trying to extract this log in the correct format. Many repated mistakes and incomplete or malformed responses.
 
