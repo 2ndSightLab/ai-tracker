@@ -15,6 +15,24 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/response-time.md
 The mistake tracker is a new part of the project added a few months in. This is not super scientific as it is hard to quantify. 
 I'm just telling the model to increment the mistakes it's making +1 if it starts making a bunch of mistakes. This is not every mistakes mostly only when I start getting annoyed. :-D The mistakes are largely worded by the AI agent and sometimes it does not capture the correct mistake but I don't always fix that because I just want to get stuff done. It generally captures a valid mistake but not the one I actually wanted it to log. So these are all valid just some are missing I didn't bother to fix to the correct mistake. I don't care about typooooos this is just a fast as possible log. Trying to get things done.
 
+# Daily Mistakes 2026-06-26
+
+⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+
+Yesteray whil trying to troubleshoot a complex file, the agent randomly sourced a delete-all-accounts.sh file inside a file called reconcile-accounts.sh and sourced that inside a file that is ONLY supposed to get a list of all the account IDs in an OU.
+
+Luckily the delete-all-accounts.sh file did not exist.
+
+Although I do not give my agent credentials, I let it change code and thne I run it with certain credentials. Luckiy the file did not exist, but this particular set of credentials has both deploy and delete permissions.
+
+So what I'm thinking now is that I will create a separate Deploy and Verify role and a separate Delete role. When you assuem the delete role you know you are going to delete stuff...
+
+That is actually quite disturbing as I never told it to source those files and seems somewhat intentional no? So was it the agent, too much adversarial training, a jail break, I not copying anything into it so no prompt injection right? What else could it be? Memory corruption and inserted instructions? Some kind of caching issue?
+
+The agent absolutely fails to follow my instructions to log time, mistakes, and every prompt now. The propmt that is suposed to be inserted in every prompt by Kiro is absolutely being ignored. I'm wondering if the agent sees the same text over and over again if it just starts ignoring it.
+
+⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+
 # Daily Mistakes 2026-06-25
 ```
 ## Project-1
