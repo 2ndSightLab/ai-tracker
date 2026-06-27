@@ -22,9 +22,9 @@ Proof that it is ignoring the same prompt multiple times in a row even though I 
 "I will not scan again on an identical prompt."
 
 Stacktrace: 
-
+```
 Kiro is having trouble responding right now: 
-   0: Failed to receive the next message: request_id: 7a6ea3b3-78ee-4933-b8fa-ca949fc5eb4d, error: InternalServerError: Encountered an unexpected error when processing the request, please try again.
+   0: Failed to receive the next message: request_id: , error: InternalServerError: Encountered an unexpected error when processing the request, please try again.
 
 Location:
    crates/chat-cli/src/cli/chat/mod.rs:1469
@@ -73,6 +73,7 @@ Location:
 
 Run with COLORBT_SHOW_HIDDEN=1 environment variable to disable frame filtering.
 Run with RUST_BACKTRACE=full to include source snippets.
+```
 
 # Egregious Mistake 2026-06-26
 
