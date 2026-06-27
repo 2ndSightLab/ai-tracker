@@ -265,6 +265,8 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | SCP: deny-external-access | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Delete Deafult VPCs (all accouts in env | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Sets budgets on all accounts | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| SCP: account specific OU only allowing resources deployed | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| SCP: for different regions than org regions (more restrictive) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Account Resources - every account ###
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
@@ -272,8 +274,20 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Move account to OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Account alias | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Admin roles | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Admin role policy | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Admin roles  | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Admin role policy | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+
+### Kiro management environment (Base Environment +) ###
+
+Separaete environment because it reuqires us-east-1. Manage Kiro subscriptions.
+Also separates account from specific projects or activities.
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Account (kiro mangement) | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Standalone Identity Center | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Kiro | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+
 
 #### Deny All Envirnoment ###
 
@@ -428,19 +442,6 @@ I have a separate project that allows deploying a static website in any web acco
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Accounts: web, backup | 🟢 | 🟡 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Deploy Web Lambda | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
-
-### Kiro management environment (Base Environment +) ###
-
-Separaete environment because it reuqires us-east-1. Manage Kiro subscriptions.
-Also separates account from specific projects or activities.
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Account (kiro mangement) | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Kiro | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Standalone Identity Center | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| SCP: kiro-identity-center-only | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| SCP for us-east-1 only | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 
 ### Jobs Auth Environment (Web Environment, +) ###
 
