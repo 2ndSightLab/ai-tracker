@@ -19,7 +19,7 @@ I'm just telling the model to increment the mistakes it's making +1 if it starts
 
 ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
 
-Yesteray whil trying to troubleshoot a complex file, the agent randomly sourced a delete-all-accounts.sh file inside a file called reconcile-accounts.sh and sourced that inside a file that is ONLY supposed to get a list of all the account IDs in an OU.
+Yesteray while trying to troubleshoot a complex file, the agent randomly sourced a delete-all-accounts.sh file inside a file called reconcile-accounts.sh and sourced that inside a file that is ONLY supposed to get a list of all the account IDs in an OU.
 
 Luckily the delete-all-accounts.sh file did not exist.
 
