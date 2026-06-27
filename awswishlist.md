@@ -182,3 +182,24 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/mistake-tracker.md
 🟠 When I visit the Kiro page in the AWS console I'm seeing sso connection attempts all over the world. Why? Please keep that in my own selected region only.
 
 🟠 There is a reason - and I'm trying to remember what it is here - why I cannot create an SCP to deny all external access using the OU path conidtion. It doesn't work for all types of resources, though I can't remember which ones right now. But it would be easy for someone at AWS to test this. Add an OU SCP that denies any actions except those perfomred by acounts in the OU. Test all AWS actions to see which ones are valid but get rejected. I would like that to work so I don't have to individually add each acount that is in the environment in my policy.
+
+🟠 It is difficult to create a read only and delete only scp to allow read and delete actions only for any unauthorized regions. I want to grant an addmin or drrift detection tool read only and delete only actions in any unauthorized regions to find and remove unauthorized resources. the problem right now is that I cannot use a construct like this to allow all describe and delete actions in my policy:
+```
+allow...
+
+*:delete-*
+*:describe-*
+```
+I have to list every single service like this:
+```
+ec2:delete-*
+s3:delete-*
+iam:delete-*
+ec2:describe-*
+s3:describe-*
+s3:list-*
+```
+So as you can see there is no easy way for me to add an allow drift detection and clean up VPC to easily detect and remove rogue resources without also allowing adding new resources.
+
+🟠 Create aliases so all services have the same action set instead of one off differently named acctions. Some services use list and some use describe and some use delete, detach, or different verbs for the same actions. You do not need to change the existing actions just create an alias so that every AWS CLI resource has a consistent action accross all services. Then make it easy to create an SCP to only allow the consistent aliased actions so all services can have the allowed same actions in all cases and not have to handle all the one-offs and variations.
+
