@@ -261,7 +261,7 @@ Configure organization to deploy; define environemnt types (allowed resources)
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Environment | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 
+| OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 
 | SCP: deny-external-access | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Delete Deafult VPCs (all accouts in env | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Sets budgets on all accounts | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
@@ -288,7 +288,6 @@ Also separates account from specific projects or activities.
 | Standalone Identity Center | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Kiro | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
-
 #### Deny All Envirnoment ###
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
@@ -299,6 +298,8 @@ Also separates account from specific projects or activities.
 ### Management Environment ###
 
 The management environment contains accounts where my organization deletegated administrators exist.
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | OU | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
