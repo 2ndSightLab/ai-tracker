@@ -249,28 +249,29 @@ Configure organization to deploy; define environemnt types (allowed resources)
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Organization | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
-| Enable All Features | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
-| SCP: env-allowed-regions [env] | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
-| SCP: IMDSV1 [env] | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
-| SCP: always-denied-actions [root] | 🟢 | 🟢  | 🟢 | 🔴 | 🔴 | 🔴 |
-| SCP: always-default-org-root [root] | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| SCP: deploy-scp-require-imdsv2.sh [root] | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Organization | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Enable All Features | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| SCP: env-allowed-regions [env] | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| SCP: IMDSV1 [env] | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| SCP: always-denied-actions [root] | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| SCP: always-default-org-root [root] | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| SCP: deploy-scp-require-imdsv2.sh [root] | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ### Env Resources ###
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Environment (OU) | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 
-| OU SCPs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| SCP: deny-external-access [env] | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Environment | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 
+| SCP: deny-external-access | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Delete Deafult VPCs (all accouts in env | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Sets budgets on all accounts | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ### Account Resources - every account ###
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Account | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Move account to OU | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Account aliase | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Move account to OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Account alias | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Admin roles | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Admin role policy | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
