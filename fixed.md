@@ -12,6 +12,18 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 🟡 Add resource specific actions (like route 53 register domain), user can choose action for resource...
 
+## 6/27/2026
+
+🟢 Menus: Again. See mistakes. Fixed to ask y/n before each reasource, pause after to see errors, if skip a resource go to the next one isntead of going back to the start.
+
+🟢 Fix allowed regions to allow viewing deleting default vpcs in all regions. 
+
+🟢 Delete default VPCs for all accounts/regions in env or single account.
+
+🟢 Budgets for all accouts in env or single acocunt.
+
+🟢 Tested ou, env, common acocunt resources - all working with new data model.
+
 ## 6/26/2026
 
 🟢 Add dependencies > KMS key before S3 encrytpion, e.g. as needed
