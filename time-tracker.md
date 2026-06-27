@@ -2,7 +2,18 @@
 
 This time is not 100% precise because it is very difficult to get the AI models to consistatently log time. I realized on 6/24 at 6:15 PM ET that the days before were logged incorrectly due to the model mangling the time tracking requirements I told it to write. Fixed that and found a way to get a bit better consistency and wrote some automated repoerts. As you can see the time tracking data can be lengthy so will probably just provide analysis after 6/25/26
 
-# Time Trend Analysis 2026-06-25
+## 6/27/2026 Checking Lines of Code
+
+Taking a look at lines of code added and removed in time logs for today so far - cleaning up a lot of dead code and fixing bugs:
+
+```
+From the time log (time.md — all 225 entries are today, 2026-06-27), summing the code:+Na/-Nr fields (202 entries):
+- Added: ~1,564 lines
+- Removed: ~2,237 lines
+- Net: ~−673 lines
+```
+
+## Time Trend Analysis 2026-06-25
 ```
 # Time Trend Analysis 2026-06-25
 
