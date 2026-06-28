@@ -650,10 +650,10 @@ If I use CloudFront have to allow us-east-1 for ACM Cert. Lock down when not aci
 
 ### Jobs
 
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| Feature | Run | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Deploy Web lambda | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| IAM Acccess Analyzer Report | 🟡 | 🔴 | 🔴 | 🔴 |
+| Deploy Web Site | 🔴 | 🔴 | 🔴 | 🔴 |
+| IAM Acccess Analyzer Report | 🔴 | 🔴 | 🔴 | 🔴 |
 | Prowler Report | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Enable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Disable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 |
@@ -667,11 +667,11 @@ If I use CloudFront have to allow us-east-1 for ACM Cert. Lock down when not aci
 | Troubleshoot Job | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Analyze Network Traffic | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Analyze System Logs | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Move Domain | 🟡 | 🔴 | 🔴 | 
-| Move Hosted Zone | 🟡 | 🔴 | 🔴 | 
-| Register domain | 🟡 | 🔴 | 🔴 | 
+| Move Domain | 🔴 | 🔴 | 🔴 | 
+| Move Hosted Zone | 🔴 | 🔴 | 🔴 | 
+| Register domain | 🔴 | 🔴 | 🔴 | 
 | Update Parent Hosted Zone (specific steps TBD) | 🔴 | 🔴 | 🔴 | 
-| Share all amis to all acounts in ou | 🟡 | 🔴 | 🔴 | 🔴 | 
+| Share all amis to all acounts in ou | 🔴  | 🔴 | 🔴 | 🔴 | 
 | Share AMI To External | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Archive Acount | 🔴 | 🔴 | 🔴 | 🔴 | 
 
