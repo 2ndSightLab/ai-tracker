@@ -313,12 +313,19 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Admin roles  | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Admin role policy | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
+
 ## Kiro Environment
 
-### Kiro management environment (Base Environment +) ###
+### Env OU
 
-Separaete environment because it reuqires us-east-1. Manage Kiro subscriptions.
-Also separates account from specific projects or activities.
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Budgets | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Delete Default VPCs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| SCP Deny external | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+
+### Kiro Account
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
@@ -326,20 +333,24 @@ Also separates account from specific projects or activities.
 | Standalone Identity Center | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Kiro | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
+
 ## Deny All Environment
 
-#### Deny All Envirnoment 
+#### Env OU
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Budgets | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Delete Default VPCs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | SCP: deny-all | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+
 
 ## Management Environment
 
-### Management Environment ###
-
 The management environment contains accounts where my organization deletegated administrators exist.
+
+### Env OU
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -350,7 +361,7 @@ The management environment contains accounts where my organization deletegated a
 | Delete Default VPCs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | SCP: deny-external-access | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
-### Management Environment - IAM Acount
+### IAM Acount
 
 IAM users in management environment
 
@@ -359,13 +370,13 @@ IAM users in management environment
 | Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | IAM User | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
-### Management Environment - Org Acount ###
+### Org Acount 
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Org resource policy | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
-#### Management Environment - IPAM Acount ###
+### IPAM Account (Network)
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -388,7 +399,7 @@ IAM users in management environment
 | Job VPC... | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Auth VPC... | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 
-#### Management Environment - Security Acount ###
+### Security Acount
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -413,7 +424,7 @@ IAM users in management environment
 | Configure IAM Access Analyzer | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Configure Security Alerts | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
-#### Management Environment - KMS Acount ###
+### KMS Acount
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -423,7 +434,7 @@ IAM users in management environment
 | KMS Log Key Policy | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | SCP: kms-account-allowed-services [env] | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
-#### Management Environment - Accounting Acount ###
+### Accounting Acount 
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -433,7 +444,7 @@ IAM users in management environment
 
 ## Domains Environment
 
-#### Domains Envirnoment
+### Env OU
 
 Domain name management. One for prod and one for test in my case. 
 Can lock when not in use with deny all SCP.
@@ -441,15 +452,19 @@ Can lock when not in use with deny all SCP.
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Account: domains | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Accounts: budgets | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Accounts: delete default vpcs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Accounts: roles  | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 
+
+### Domains Account
+
+| Account: domains | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Account: log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+
 
 ## Work Environment
 
-### Work Environment 
+### Env OU
 
 Environment where people log into EC2 instances.
 
@@ -460,7 +475,7 @@ Environment where people log into EC2 instances.
 | Budgets | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Delete Default VPCS | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
-### Work Environment - IAM Account
+### IAM Account
 
 IAM users in work environment
 
@@ -468,8 +483,9 @@ IAM users in work environment
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | IAM User |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | IAM Roles |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
-### Work Environment - KMS Account
+### KMS Account
 
 KMS keys used in enviroment
 
@@ -479,8 +495,9 @@ KMS keys used in enviroment
 | KMS policies | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | KMS key aliases | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Account: log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
-### Work Environment - Network Account
+### Network Account
 
 Network resources shared to environmeng via RAM
 
@@ -501,8 +518,9 @@ Network resources shared to environmeng via RAM
 | RDP Security Group | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | HTTP/HTTPS Security Group | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Account: log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
-### Work Environment - AMI Account
+### AMI Account
 
 Account where people log into EC2 instances.
 
@@ -516,8 +534,20 @@ Account where people log into EC2 instances.
 | Base Amaxon Linux ENI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Base Amazon Linux Instance | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Base Amazon Linux AMI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
-### Work Environment - Work Account
+### Repos Account
+
+Account where people log into EC2 instances.
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Code Commit Repo | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| ECR | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+
+### Work Account
 
 Account where people log into EC2 instances.
 
@@ -529,10 +559,12 @@ Account where people log into EC2 instances.
 | S3 buckets (no KMS) | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | S3 buckets (with KMS) | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Bucket policies | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+
 
 ## Project Environment
 
-### Project Environment
+### OU
 
 Some enviroments may include penetration testing and security research resources.
 
@@ -550,12 +582,14 @@ Some enviroments may include penetration testing and security research resources
 | Collab Instance Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Collab Instance | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Collab AMI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ( And other stuff not shown here :^) 
 
+
 ## Web Environment
 
-### Web Environment
+### Env OU
 
 This environment is used to host static websites and web applications.
 I have a separate project that allows deploying a static website in any web account in any enviroment
@@ -563,39 +597,24 @@ I have a separate project that allows deploying a static website in any web acco
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+
+### Account
 | Web Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Webs | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
-
-## Backup Environment
-
-#### Backup Environment
-
-Back up infrastructure segregated from other infrastructure
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Backup OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Backup Account Per Environment [env] | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Delegate Backup admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| admin roles | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| budgets | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| delete default vpcs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Account: iam | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Account: iam user | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| KMS account: kms | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| KMS backup key | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+
 
 ## Jobs Environment
 
-### Jobs Environment
+### Env OU
+
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | OU | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Budgets | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Delete Default VPCs | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 
-### Jobs Auth 
+### Jobs Auth Account
 
 If I use CloudFront have to allow us-east-1 for ACM Cert. Lock down when not acively making chanages.
 
@@ -611,6 +630,8 @@ If I use CloudFront have to allow us-east-1 for ACM Cert. Lock down when not aci
 | API Gateway | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | API Gateway CNAME | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | DynamoDB | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+
 
 ### Jobs Run Account
 
@@ -623,14 +644,7 @@ If I use CloudFront have to allow us-east-1 for ACM Cert. Lock down when not aci
 | Job EC2 Instance | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Job AMI | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Job Run (other resources, lambdas, micro VMs? TBD) | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-
-### KMS Keys Account
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Auth key | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Job key(s) | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Git Credentials Secrets | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
+| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Jobs
 
@@ -658,6 +672,30 @@ If I use CloudFront have to allow us-east-1 for ACM Cert. Lock down when not aci
 | Share all amis to all acounts in ou | 🟡 | 🔴 | 🔴 | 🔴 | 
 | Share AMI To External | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Archive Acount | 🔴 | 🔴 | 🔴 | 🔴 | 
+
+
+## Backup Environment
+
+### Env OU
+
+Back up infrastructure segregated from other infrastructure
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Backup OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| budgets | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| delete default vpcs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+
+### Backup Accounts
+
+| Backup Account Per Environment [env] | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Delegate Backup admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| admin roles | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| account: kms | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| KMS backup key | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| account: kms | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+
 
 ## Single Account Test Environment
 
