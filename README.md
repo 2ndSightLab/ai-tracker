@@ -330,7 +330,7 @@ The management environment contains accounts where my organization deletegated a
 | Delegate Firewall Manager admin | | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Delegate Network Manager admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Delegate VPC Reachability Analyzer admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| IPAM  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| IPAM | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | AWS Prefix Lists | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
 #### Management Environment - Security Acount ###
@@ -400,7 +400,7 @@ Environment where people log into EC2 instances.
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| IPAM pool |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| IPAM pool | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | IPAM EIP allocation | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | S3 buckets (no KMS) | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | KMS keys |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
