@@ -192,17 +192,17 @@ Configure organization to deploy; define environemnt types (allowed resources)
 
 ### Configure Organization Actions ##
 
-| Feature | List | Add | Delete | Rename | Menus | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Management Environment - Type ID | 🟢 | 🟢 | 🔴 | 🔴 | 
-| Backup Environment - Type ID | 🟢 | 🟢 | 🔴 | 🔴 | 
-| View Settings XML | 🟢 | 🟢 | 🔴 | 🔴 | 
-| Organization Diagram - All | 🟢 | 🟢 | 🔴 | 🔴 | 
-| Organization Diagram - Enviroments | 🟢 | 🟢 | 🔴 | 🔴 | 
-| Organization Diagram - Accounts | 🟢 | 🟢 | 🔴 | 🔴 | 
-| Organization Diagram - Per org/env resources | 🟢 | 🟢 | 🔴 | 🔴 | 
-| Organization Diagram - Type descriptions | 🟢 | 🟢 | 🔴 | 🔴 | 
-| Actions File (menus) | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Feature | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | 
+| Management Environment - Type ID | 🟢 | 🔴 | 🔴 | 
+| Backup Environment - Type ID | 🟢 | 🔴 | 🔴 | 
+| View Settings XML | 🟢 | 🔴 | 🔴 | 
+| Organization Diagram - All | 🟢 | 🔴 | 🔴 | 
+| Organization Diagram - Enviroments | 🟢 | 🔴 | 🔴 | 
+| Organization Diagram - Accounts | 🟢 | 🔴 | 🔴 | 
+| Organization Diagram - Per org/env resources | 🟢 | 🔴 | 🔴 | 
+| Organization Diagram - Type descriptions | 🟢 | 🔴 | 🔴 |  
+| Actions File (menus) | 🟢 | 🔴 | 🔴 | 
 
 ### Configure Organization ###
 
