@@ -232,7 +232,7 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Organization Diagram - Accounts | 🟢 | 🟢 | 🔴 | 🔴 | 
 | Organization Diagram - Per org/env resources | 🟢 | 🟢 | 🔴 | 🔴 | 
 | Organization Diagram - Type descriptions | 🟢 | 🟢 | 🔴 | 🔴 | 
-| Actions File (menus) | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Actions File (menus) | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ### Deploy Steps ##
 
