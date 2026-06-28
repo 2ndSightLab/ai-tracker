@@ -568,6 +568,22 @@ IAM users in management environment
 | Delegate Cost Optimization Hub admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Delegate Compute Optimizer admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
+### Repos Acount
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Account | 🔴 | 🔴  | 🔴 | 🔴 | 🔴 | 🔴 |
+| Code Commit Repos | 🔴 | 🔴  | 🔴 | 🔴 | 🔴 | 🔴 |
+| ECR | 🔴 | 🔴  | 🔴 | 🔴 | 🔴 | 🔴 |
+
+### AMIs Acount
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Account | 🔴 | 🔴  | 🔴 | 🔴 | 🔴 | 🔴 |
+| Code Commit Repos | 🔴 | 🔴  | 🔴 | 🔴 | 🔴 | 🔴 |
+| ECR | 🔴 | 🔴  | 🔴 | 🔴 | 🔴 | 🔴 |
+
 ## Domains Environment
 
 ### Env OU
