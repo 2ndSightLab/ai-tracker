@@ -598,6 +598,9 @@ I have a separate project that allows deploying a static website in any web acco
 | OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ### Account
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Web Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Webs | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
 | log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
