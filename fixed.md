@@ -12,6 +12,8 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 🟡 Add resource specific actions (like route 53 register domain), user can choose action for resource...
 
+🟡 Wrong IP in admin user policy
+
 ## 6/27/2026
 
 🟢 Menus: Again. See mistakes. Fixed to ask y/n before each reasource, pause after to see errors, if skip a resource go to the next one isntead of going back to the start.
