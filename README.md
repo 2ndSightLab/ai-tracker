@@ -687,6 +687,8 @@ Back up infrastructure segregated from other infrastructure
 
 ### Backup Accounts
 
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Backup Account Per Environment [env] | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Delegate Backup admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | admin roles | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
