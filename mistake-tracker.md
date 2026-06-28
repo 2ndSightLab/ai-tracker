@@ -17,6 +17,8 @@ I'm just telling the model to increment the mistakes it's making +1 if it starts
 
 # 2026-06-27
 
+OMG I fix one problem and go back to fix data in another projecct and now that project is broken. WTH. AI is really terrible about maintaining a proper architecture. I had it insert some XML data and now the edit functionality for environemtns is broken. Again.
+
 I'm fixing menus again. Here's why. All the data is pulled from the configuration to display all menu items and action types. However, the prompts before and after each resource action (deploy-*, verify-*, delete-* etc) is not consistent. It doesn't always ask the user if they want to take a step or skip it. It doesn't correctly pause after each step so I can't see if the action worked or failed. If a user skips a step it doesn't go to the next item on the list. The good thing is, this is all global code not per item so once I fix it, it should be fixed everywhere if implmented correctly. The main depioy project could NOT get this right. Finally I started the agent for the menu project and asked it what the problem was and had the two argue until they came to a consensus. Now the agent is taking forever to implment it.
 
 In the past I had a script that updated my host every time I start it. But since AWS changed to dnf releaeses it's not working anymore. I need to look into that. Today, I ran an update and almost immedateiy the agent got faster. Hmm.
