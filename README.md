@@ -257,6 +257,14 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | SCP: always-default-org-root [root] | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | SCP: deploy-scp-require-imdsv2.sh [root] | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
+### Drift Actions ##
+
+| Feature | Run | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: 
+| Drift Report | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Drift Delete Unauthorized Resources | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Drift Deploy Missing Resources | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
+
 ### Env Resources ###
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
@@ -308,7 +316,9 @@ The management environment contains accounts where my organization deletegated a
 | Delete Default VPCs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | SCP: deny-external-access | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
-### Management Environment - IAM Acount ###
+### Management Environment - IAM Acount
+
+IAM users in management environment
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -332,6 +342,17 @@ The management environment contains accounts where my organization deletegated a
 | Delegate VPC Reachability Analyzer admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | IPAM | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | AWS Prefix Lists | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Auth VPC | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Auth Subnet | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Auth Security Group | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Auth Route Table | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Auth VPC Endpoints | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Auth VPC Endpoint SGs | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Auth VPC RAM share | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Auth VPC Flowlogs | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Route 53 Hosted Zone | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Job VPC... | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Auth VPC... | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 
 #### Management Environment - Security Acount ###
 
@@ -387,9 +408,7 @@ Can lock when not in use with deny all SCP.
 | Account: domains | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Accounts: budgets | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Accounts: delete default vpcs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Accounts: roles  | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Account: iam | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Account: iam user | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Accounts: roles  | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 
 | Account: log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Work Environment 
@@ -403,6 +422,15 @@ Environment where people log into EC2 instances.
 | Budgets | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Delete Default VPCS | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
+### Work Environment - IAM Account
+
+IAM users in work environment
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| IAM User |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| IAM Roles |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+
 ### Work Environment - KMS Account
 
 KMS keys used in enviroment
@@ -412,6 +440,7 @@ KMS keys used in enviroment
 | KMS keys |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | KMS policies | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | KMS key aliases | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Account: log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Work Environment - Network Account
 
@@ -433,6 +462,7 @@ Network resources shared to environmeng via RAM
 | SSH Security Group | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | RDP Security Group | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | HTTP/HTTPS Security Group | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Account: log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Work Environment - AMI Account
 
@@ -462,7 +492,7 @@ Account where people log into EC2 instances.
 | S3 buckets (with KMS) | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Bucket policies | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
-### Web Environment ( Base Environment +) ###
+### Web Environment
 
 This environment is used to host static websites and web applications.
 I have a separate project that allows deploying a static website in any web account in any enviroment
@@ -471,65 +501,7 @@ I have a separate project that allows deploying a static website in any web acco
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Web Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| IAM Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Deploy Web Lambda | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Webs | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
-
-### Jobs Auth Environment (Web Environment, +) ###
-
-If I use CloudFront have to allow us-east-1 for ACM Cert. Lock down when not acively making chanages.
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| OU | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Web Account | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| IAM Account | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| KMS Account | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Budgets | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Admin Roles | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Job Auth Lambdas | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Auth Lambda VPC Config | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| ACM Certificate | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| API Gateway | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| API Gateway CNAME | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| DynamoDB | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| SCP for us-east-1 only | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-
-### Jobs Run Environment (Work Environment, Web Environment, +) ###
-
-The job framework infrastructure allows me to quickly and securely run jobs which could include AI agents.
-I have a separate set of projects for the Job and AI agent application layer framework and job infrastructure.
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Accounts: jobs | 🟢 | 🟡 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Job VPC | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Subnet | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Security Group | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Internet Gateway | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Route Table | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job Security Group | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job VPC Endpoints | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job RAM Share | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Job VPC Flow Logs | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Auth VPC | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Auth Subnet | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Auth Security Group | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Auth Route Table | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Auth Lambda Security Groups | 🟢 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Auth VPC Endpoints | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Auth VPC Endpoint SGs | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Auth VPC RAM share | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Auth VPC Flowlogs | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| S3 buckets (no KMS) | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| KMS keys | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Git Credentials Secrets | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Job Dev Instance Role | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Job Dev ENI | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Job Dev EC2 Instance | 🟢 | 🟡 | 🟢  | 🔴 | 🔴 | 🔴 |
-| Job Dev AMI | 🟢 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Route 53 Hosted Zone | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
-| Job Run Lambdas | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 |
 
 ### Project Environment
 
@@ -570,18 +542,70 @@ Back up infrastructure segregated from other infrastructure
 | KMS backup key | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
-### Drift Actions ##
+### Jobs Auth Environment
 
-| Feature | Run | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: 
-| Drift Report | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Drift Delete Unauthorized Resources | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Drift Deploy Missing Resources | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
+If I use CloudFront have to allow us-east-1 for ACM Cert. Lock down when not acively making chanages.
 
-### Management Environment Actions ###
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| OU | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Web Account | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| KMS Account | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Budgets | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Admin Roles | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Job Auth Lambdas | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Auth Lambda VPC Config | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| ACM Certificate | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| API Gateway | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| API Gateway CNAME | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| DynamoDB | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| SCP for us-east-1 only | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 
-| Feature | Run | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: |
+### Jobs Run Environment 
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| OU | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Budgets | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Delete Default VPCs | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+
+### Jobs Run Environment - Jobs Account
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Accounts: job | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| S3 buckets | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Job Instance Role | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Job ENI | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Job EC2 Instance | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Job AMI | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Job Run (other resources, lambdas, micro VMs? TBD) | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+
+### Jobs Run Environment - Network Account
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Job VPC | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Job Subnet | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Job Security Group | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Job Internet Gateway | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Job Route Table | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Job Security Group | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Job VPC Endpoints | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Job RAM Share | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Job VPC Flow Logs | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+
+### Jobs Run Environment - KMS Keys Account
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| KMS keys | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Git Credentials Secrets | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
+
+### Jobs Environment - Jobs
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Deploy Web lambda | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | IAM Acccess Analyzer Report | 🟡 | 🔴 | 🔴 | 🔴 |
 | Prowler Report | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Enable AWS default Org Role | 🔴 | 🔴 | 🔴 | 🔴 | 
@@ -591,60 +615,18 @@ Back up infrastructure segregated from other infrastructure
 | Unlock Environment (remove deny-all SCP) | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Lock Account (apply deny-all SCP) | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Unlock Account (remove deny-all SCP) | 🔴 | 🔴 | 🔴 | 🔴 | 
-
-### Domains Environment Actions ###
-
-| Feature | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | 
+| Transfer GitHub repo to Code Commit | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Transfer one Code Commit repo to Another | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Troubleshoot Job | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Analyze Network Traffic | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Analyze System Logs | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Move Domain | 🟡 | 🔴 | 🔴 | 
 | Move Hosted Zone | 🟡 | 🔴 | 🔴 | 
 | Register domain | 🟡 | 🔴 | 🔴 | 
 | Update Parent Hosted Zone (specific steps TBD) | 🔴 | 🔴 | 🔴 | 
-
-### AMI Account Actions ###
-
-| Feature | Run | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: |
 | Share all amis to all acounts in ou | 🟡 | 🔴 | 🔴 | 🔴 | 
 | Share AMI To External | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-
-### Repo Account Actions ###
-
-| Feature | Run | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: |
-| Transfer GitHub repo to Code Commit | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Transfer one Code Commit repo to Another | 🔴 | 🔴 | 🔴 | 🔴 | 
-
-### KMS Account Actions ###
-
-| Feature | Run | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: |
-| Deploy External AMI Share Key | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-
-### Web Environment Actions ###
-
-Feature | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | 
-| Deploy Static Website | 🔴 | 🔴 | 🔴 | 🔴 | 
-
-### Backup Environment Actions ###
-
-Feature | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | 
 | Archive Acount | 🔴 | 🔴 | 🔴 | 🔴 | 
-
-### Manage Organization Environment ###
-
-* Manage enviroment resources as a group
-  
-| Feature | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | 
-| Select Environment | 🟡 | 🔴 | 🔴 |
-| Deploy all resources | 🟡 | 🟡 | 🔴 | 
-| Auto-gen env SCP | 🔴 | 🔴 | 🔴 |
-| Auto-gen account SCP | 🔴 | 🔴 | 🔴 |
-| Delete all resources | 🔴 | 🔴 | 🔴 | 
-| View all resources | 🔴 | 🔴 | 🔴 | 
 
 ### Single Account Test Environment ##
 
