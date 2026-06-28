@@ -1,5 +1,39 @@
 ### Costs while building an AI Agent Bootstrap Script and Framework
 
+# Cost 
+
+**Date Range:** Jun 1, 2026 - Jun 12, 2026
+
+What is interesting here is that on the main readme I tracked cost per day and the cost per day is dramatically rising. Not sure if I'm really using it that much more. I have been working long hours all month. Seems like the cost is just going up. Also for each $200/month plan I started and canceled was not actually billed the full $200. Not sure if I'm going to get hit at the end of the month.
+
+### Costs while building an AI Agent Bootstrap Script and Framework
+**Date Range:** Jun 1, 2026 - Jun 28, 2026
+
+| Service / Category | Jun 2026* | Total |
+| :--- | :---: | :---: |
+| **Total costs** | **$674.26** | **$674.28** |
+| Kiro | $404.16 | $404.16 |
+| Virtual Private Cloud | $99.09 | $99.09 |
+| Elastic Compute Cloud - Compute | $85.65 | $85.65 |
+| EC2 - Other | $40.58 | $40.58 |
+| Key Management Service | $31.49 | $31.49 |
+| Route 53 | $7.70 | $7.70 |
+| Secrets Manager | $2.02 | $2.02 |
+| GuardDuty | $1.84 | $1.84 |
+| CloudWatch | $0.89 | $0.89 |
+| Inspector | $0.31 | $0.31 |
+| Security Hub | $0.20 | $0.20 |
+| Simple Storage Service | $0.15 | $0.15 |
+| CloudTrail | $0.10 | $0.10 |
+| EC2 Container Registry (ECR) | $0.10 | $0.10 |
+| Amplify | $0.00 | $0.00 |
+| CloudShell | $0.00 | $0.00 |
+| Glue | $0.00 | $0.00 |
+| Lambda | $0.00 | $0.00 |
+| Payment Cryptography | $0.00 | $0.00 |
+| Simple Notification Service | $0.00 | $0.00 |
+| Simple Queue Service | $0.00 | $0.00 |
+
 **Date Range:** Mar 7, 2026 - Jun 12, 2026
 
 This is interesting because I had a $200 plan which was all used up by June 10th so I cancelled it and started a new one. But this report is not reflecting that dollar amount. The total cost is < $200. Hmm. Also, my EC2 costs are higher than they should be for reasons...it's not you, it's me. VPC endpoints. WHY????
