@@ -358,16 +358,6 @@ The management environment contains accounts where my organization deletegated a
 | Delegate Cost Optimization Hub admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Delegate Compute Optimizer admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
-#### Backup Environment ###
-
-Back up infrastructure segregated from other infrastructure
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Backup OU | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Backup Account Per Environment | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delegate Backup admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-
 #### Domains Envirnoment ###
 
 Domain name management. One for prod and one for test in my case. 
@@ -375,8 +365,24 @@ Can lock when not in use with deny all SCP.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| OU | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Accounts: dns | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+
+| OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Account: domains | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Accounts: budgets | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Accounts: delete default vpcs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Accounts: roles  | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Account: iam | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Account: iam user | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Account: log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+
+### Domains Environment Actions ###
+
+| Feature | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | 
+| Move Domain | 🟡 | 🔴 | 🔴 | 
+| Move Hosted Zone | 🟡 | 🔴 | 🔴 | 
+| Register domain | 🟡 | 🔴 | 🔴 | 
+| Update Parent Hosted Zone (specific steps TBD) | 🔴 | 🔴 | 🔴 | 
 
 ### Work Environment Resources ( Base Environment +) ###
 
@@ -532,15 +538,6 @@ Deploy environment to single account (account in a different organization or sta
 | Drift Delete Unauthorized Resources | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Drift Deploy Missing Resources | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
 
-### DNS Environment Actions ###
-
-| Feature | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | 
-| Move Domain | 🟢 | 🟢 | 🔴 |
-| Move Hosted Zone | 🟢 | 🔴 | 🔴 |
-| Register domain | 🟡 | 🔴 | 🔴 | 
-| Update Parent Hosted Zone (specific steps TBD) | 🔴 | 🔴 | 🔴 | 
-
 ### AMI Account Actions ###
 
 | Feature | Run | Tested | Code Review | Security Review |
@@ -566,6 +563,19 @@ Deploy environment to single account (account in a different organization or sta
 Feature | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | 
 | Deploy Static Website | 🔴 | 🔴 | 🔴 | 🔴 | 
+
+#### Backup Environment ###
+
+Back up infrastructure segregated from other infrastructure
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Backup OU | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Backup Account Per Environment | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate Backup admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Account: iam | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Account: iam user | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Account: log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Backup Environment Actions ###
 
