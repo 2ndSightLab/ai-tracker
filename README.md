@@ -345,123 +345,6 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Delete Default VPCs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | SCP: deny-all | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
-
-## Management Environment
-
-The management environment contains accounts where my organization deletegated administrators exist.
-
-### Env OU
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Budgets | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Delete Default VPCs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Roles | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Delete Default VPCs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| SCP: deny-external-access | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-
-### IAM Acount
-
-IAM users in management environment
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Account |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| IAM User | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-
-### Org Acount 
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Org resource policy | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-
-### IPAM Account (Network)
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Delegate IPAM admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delegate Firewall Manager admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delegate Network Manager admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delegate VPC Reachability Analyzer admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| IPAM | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| AWS Prefix Lists | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Auth VPC | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Auth Subnet | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Auth Security Group | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Auth Route Table | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Auth VPC Endpoints | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Auth VPC Endpoint SGs | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Auth VPC RAM share | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Auth VPC Flowlogs | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Route 53 Hosted Zone | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Job VPC... | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Auth VPC... | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-
-### Security Acount
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Delegate Security Hub admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delegate GuardDuty admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delegate CloudTrail admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delegate AWS Config admin  | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delegate Macie admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delegate Inspector admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delegate IAM Access Analyzer admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delegate Audit Manager admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delegate Health admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delegate Detective admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| S3 Logs bucket | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Configure GuardDuty | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Configure Security Hub | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Configure CloudTrail | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Configure AWS Config | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Configure Macie | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Configure Inspector | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Configure IAM Access Analyzer | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Configure Security Alerts | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-
-### KMS Acount
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| KMS Log Key | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| KMS Log Key Alias | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| KMS Log Key Policy | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| SCP: kms-account-allowed-services [env] | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-
-### Accounting Acount 
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Delegate Cost Optimization Hub admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delegate Compute Optimizer admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-
-## Domains Environment
-
-### Env OU
-
-Domain name management. One for prod and one for test in my case. 
-Can lock when not in use with deny all SCP.
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Accounts: budgets | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Accounts: delete default vpcs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Accounts: roles  | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 
-
-### Domains Account
-
-| Account: domains | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Account: log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-
-
 ## Work Environment
 
 ### Env OU
@@ -585,6 +468,122 @@ Some enviroments may include penetration testing and security research resources
 | log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ( And other stuff not shown here :^) 
+
+
+## Management Environment
+
+The management environment contains accounts where my organization deletegated administrators exist.
+
+### Env OU
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Budgets | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Delete Default VPCs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Roles | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Delete Default VPCs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| SCP: deny-external-access | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+
+### IAM Acount
+
+IAM users in management environment
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Account |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| IAM User | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+
+### Org Acount 
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Org resource policy | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+
+### IPAM Account (Network)
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Delegate IPAM admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate Firewall Manager admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate Network Manager admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate VPC Reachability Analyzer admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| IPAM | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| AWS Prefix Lists | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Auth VPC | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Auth Subnet | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Auth Security Group | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Auth Route Table | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Auth VPC Endpoints | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Auth VPC Endpoint SGs | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Auth VPC RAM share | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Auth VPC Flowlogs | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Route 53 Hosted Zone | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Job VPC... | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Auth VPC... | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+
+### Security Acount
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Delegate Security Hub admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate GuardDuty admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate CloudTrail admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate AWS Config admin  | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate Macie admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate Inspector admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate IAM Access Analyzer admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate Audit Manager admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate Health admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate Detective admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| S3 Logs bucket | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Configure GuardDuty | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Configure Security Hub | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Configure CloudTrail | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Configure AWS Config | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Configure Macie | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Configure Inspector | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Configure IAM Access Analyzer | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Configure Security Alerts | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+
+### KMS Acount
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| KMS Log Key | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| KMS Log Key Alias | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| KMS Log Key Policy | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| SCP: kms-account-allowed-services [env] | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+
+### Accounting Acount 
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Delegate Cost Optimization Hub admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate Compute Optimizer admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+
+## Domains Environment
+
+### Env OU
+
+Domain name management. One for prod and one for test in my case. 
+Can lock when not in use with deny all SCP.
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Accounts: budgets | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Accounts: delete default vpcs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Accounts: roles  | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 
+
+### Domains Account
+
+| Account: domains | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Account: log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 
 ## Web Environment
