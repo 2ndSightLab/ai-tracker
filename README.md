@@ -327,7 +327,7 @@ The management environment contains accounts where my organization deletegated a
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Delegate IPAM admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delegate Firewall Manager admin | | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate Firewall Manager admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Delegate Network Manager admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Delegate VPC Reachability Analyzer admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | IPAM | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
