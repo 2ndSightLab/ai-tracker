@@ -651,7 +651,7 @@ If I use CloudFront have to allow us-east-1 for ACM Cert. Lock down when not aci
 ### Jobs
 
 | Feature | Run | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| :--- | :---: | :---: | :---: | :---: | 
 | Deploy Web Site | 🔴 | 🔴 | 🔴 | 🔴 |
 | IAM Acccess Analyzer Report | 🔴 | 🔴 | 🔴 | 🔴 |
 | Prowler Report | 🔴 | 🔴 | 🔴 | 🔴 | 
@@ -667,13 +667,13 @@ If I use CloudFront have to allow us-east-1 for ACM Cert. Lock down when not aci
 | Troubleshoot Job | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Analyze Network Traffic | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Analyze System Logs | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Move Domain | 🔴 | 🔴 | 🔴 | 
-| Move Hosted Zone | 🔴 | 🔴 | 🔴 | 
-| Register domain | 🔴 | 🔴 | 🔴 | 
-| Update Parent Hosted Zone (specific steps TBD) | 🔴 | 🔴 | 🔴 | 
-| Share all amis to all acounts in ou | 🔴  | 🔴 | 🔴 | 🔴 | 
-| Share AMI To External | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Archive Acount | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Move Domain | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Move Hosted Zone | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Register domain | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Update Parent Hosted Zone (specific steps TBD) | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Share all amis to all acounts in ou | 🔴  | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Share AMI To External | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Archive Acount | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
 
 
 ## Backup Environment
