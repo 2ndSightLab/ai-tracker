@@ -367,7 +367,7 @@ IAM users in management environment
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Account |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | IAM User | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
 ### Org Acount 
