@@ -178,7 +178,8 @@ Separate reusable project provides simple and xml driven menus for consistency a
 | Cross-Project Requiremetns and Logging | 🟢 |
 
 ### Test Runner
-| Feature | Run | Tested | 
+
+| Feature | Done | 
 | :--- | :---: | 
 | Run test for all projects | 🟢 | 
 
