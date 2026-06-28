@@ -582,6 +582,8 @@ Can lock when not in use with deny all SCP.
 
 ### Domains Account
 
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Account: domains | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Account: log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
