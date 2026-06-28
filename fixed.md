@@ -14,6 +14,24 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 🟡 Wrong IP in admin user policy
 
+🟡 Per account / per KMS key fail
+
+🟡 remove SECURITY_ACCOUNT_ID, etc. in delegate scripts, + configure > all these can be replaced with the deploy acct id
+
+🟡 No deploy action available for Delegate Org Admin
+
+🟡 log bucket script not ipmelmented
+
+🟡 Menu numbers are not aligned > chose 6 resource and tried to deploy 7
+
+🟡 Backup env should create a backup account for each env (confirmed by user), kms, iam
+
+🟡 Remove Select Environment from deploy menu
+
+🟡 Multiple enter in some places
+
+🟡 Create new acount: ERROR: ou-acct-nms not set
+
 ## 6/27/2026
 
 🟢 Menus: Again. See mistakes. Fixed to ask y/n before each reasource, pause after to see errors, if skip a resource go to the next one isntead of going back to the start.
@@ -25,6 +43,22 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 🟢 Budgets for all accouts in env or single acocunt.
 
 🟢 Tested ou, env, common acocunt resources - all working with new data model.
+
+🟢 Soemthing broke getting from project back to main orchestrator and none of the agents in any project could figure out how to fix it so finally I told them all to write tests to show when the navigation to child project and back failed and then somehow one of them figured it out kind of. Primarily the main menu project. Still need to test further.
+
+🟢 Rename failed to change all references in all files renaming an enviroment; config org project took forevery to figure that out and of course was at the end of my plan...
+
+🟢 added tests to keep requirements and comments under control and proper secure shebangs in projects; all of the shebangs were messed up. Getting tired of fixing these things over and over. Larger files are a waste of tokens.
+
+🟢 storing memory seems to be helping. Helped fix a few things.
+
+🟢 organized files to make it easier for agent in largest project to understand navigation and architecture. Seemded to help.
+
+🟢 Finally got the naviagation working for every single menu so now it's just a matter of plowing through the resources, mostly.
+
+🟢 Tested a bunch of resources. Updates on main readme. Main things left - removing some acccount specific vars and fixing some one-off issues on each resource.
+
+🟢 Add some scripts to loop through all accounts at the environment level and deploy all budgets, delete all default vpcs. Can add more like this and at org level call these scripts across all envs for governance purposes.
 
 ## 6/26/2026
 
