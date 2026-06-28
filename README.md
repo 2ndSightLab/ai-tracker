@@ -172,14 +172,15 @@ Separate reusable project provides simple and xml driven menus for consistency a
 | Report mistake logs per day | 🟢 | 🔴 | 🔴 |
 
 ### Global Requirements
+
 | Feature | Done | 
-| :--- | 
+| :--- | :---: | 
 | Cross-Project Requiremetns and Logging | 🟢 |
 
 ### Test Runner
 | Feature | Run | Tested | 
 | :--- | :---: | 
-| Run test for all projects | 🟢 | 🔴 | 🔴 |
+| Run test for all projects | 🟢 | 
 
 ## Bootstrap Code
 
