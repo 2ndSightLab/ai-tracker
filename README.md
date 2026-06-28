@@ -343,7 +343,7 @@ The management environment contains accounts where my organization deletegated a
 | Delegate CloudTrail admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Delegate AWS Config admin  | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Delegate Macie admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delegate Inspector admin || 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate Inspector admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Delegate IAM Access Analyzer admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Delegate Audit Manager admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Delegate Health admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
