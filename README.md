@@ -110,7 +110,10 @@ This data is pulled from a custom Dashboard I created in the AWS Cost Management
 | 🟡 | Broke or Implmeented Not Yet Run |
 | 🔴 | Not Done |
 
-### Bootstrap Role ###
+
+## Bootrstrap Role
+
+### Bootstrap Role Script 
 
 Role, policy and permission boundary deployed in root management account in AWS CloudShell.
 
@@ -121,7 +124,9 @@ Role, policy and permission boundary deployed in root management account in AWS 
 | Permission Boundary | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 |
 | Trust policy with MFA and IP condition  | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
 
-### AWS CLI Auth ###
+## Shared Code Projects
+
+### AWS CLI Auth with MFA
 
 Separate reusable project that handles configuring role profiles and role assumption with MFA.
 
@@ -132,7 +137,7 @@ I used some previously written code as a starting point in which the [role trust
 | Configure Role Profile | 🟢 | 🟢 | 🟢 |
 | Assume Role With MFA | 🟢 | 🟡 | 🟡 |
 
-### XML Parser ###
+### XML Parser
 
 A generic XML parser project that can be used by any bash project to move error prone and vulnerability prone code to a spearate locked down project.
 
@@ -145,7 +150,7 @@ A generic XML parser project that can be used by any bash project to move error 
 | XML write by single value | 🟢 | 🔴 | 🔴 |
 | XML load by single value | 🟢 | 🔴 | 🔴 |
 
-### Common Menus ###
+### Menus
 
 Separate reusable project provides simple and xml driven menus for consistency and easy updates
 
@@ -158,7 +163,27 @@ Separate reusable project provides simple and xml driven menus for consistency a
 | /c to return to previous menu | 🟢 | 🔴 | 🔴 |
 | common banner with lines above and below and text between | 🟢 | 🔴 | 🔴 |
 
-### Bootstrap Orchestrator Project ##
+### Time tracker
+
+| Feature | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | 
+| Time analysis | 🟢 | 🔴 | 🔴 |
+| Report time logs per day | 🟢 | 🔴 | 🔴 |
+| Report mistake logs per day | 🟢 | 🔴 | 🔴 |
+
+### Global Requirements
+| Feature | Done | 
+| :--- | 
+| Cross-Project Requiremetns and Logging | 🟢 |
+
+### Test Runner
+| Feature | Run | Tested | 
+| :--- | :---: | 
+| Run test for all projects | 🟢 | 🔴 | 🔴 |
+
+## Bootstrap Code
+
+### Bootstrap Orchestrator
 
 A project to manaage te handoff from org to environnet project so neither depends on the other.
 Reduces context and scope of the org and environment projects.
@@ -190,7 +215,7 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Default Org (define backup env) | 🟢 | n/a | n/a | n/a | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Resource type Dependencies | 🟢 | 🟢 | 🟢 |🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
-### Configure Organization Actions ##
+### Configure Organization Types Actions ##
 
 | Feature | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | 
@@ -216,7 +241,7 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Evironments | 🟢 | 🟢 | 🟢 | n/a | 🟢 | 🟢 | 🔴 | 🔴 |
 | Environment Accounts | 🟢 | 🟢 | 🟢 | n/a | 🟢 | 🟢 | 🔴 | 🔴 |
 
-### Configure Actions ###
+### Configure Organization Actions ###
 
 | Feature | Run | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | 
@@ -245,6 +270,17 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Select Account | 🟢 | 🟢 | 🟢  | 🔴 | 🔴 |
 | Deploy Account Resources | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
+
+### Drift Actions 
+
+| Feature | Run | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: 
+| Drift Report | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Drift Delete Unauthorized Resources | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
+| Drift Deploy Missing Resources | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
+
+## Resource Deployment Steps 
+
 ### Deploy Org Resources ###
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
@@ -256,14 +292,6 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | SCP: always-denied-actions [root] | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | SCP: always-default-org-root [root] | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | SCP: deploy-scp-require-imdsv2.sh [root] | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-
-### Drift Actions ##
-
-| Feature | Run | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: 
-| Drift Report | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Drift Delete Unauthorized Resources | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
-| Drift Deploy Missing Resources | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
 
 ### Env Resources ###
 
@@ -285,6 +313,8 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Admin roles  | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Admin role policy | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
+## Kiro Environment
+
 ### Kiro management environment (Base Environment +) ###
 
 Separaete environment because it reuqires us-east-1. Manage Kiro subscriptions.
@@ -296,12 +326,16 @@ Also separates account from specific projects or activities.
 | Standalone Identity Center | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Kiro | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
-#### Deny All Envirnoment ###
+## Deny All Environment
+
+#### Deny All Envirnoment 
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | SCP: deny-all | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+
+## Management Environment
 
 ### Management Environment ###
 
@@ -397,7 +431,9 @@ IAM users in management environment
 | Delegate Cost Optimization Hub admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Delegate Compute Optimizer admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
-#### Domains Envirnoment ###
+## Domains Environment
+
+#### Domains Envirnoment
 
 Domain name management. One for prod and one for test in my case. 
 Can lock when not in use with deny all SCP.
@@ -410,6 +446,8 @@ Can lock when not in use with deny all SCP.
 | Accounts: delete default vpcs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Accounts: roles  | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 
 | Account: log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+
+## Work Environment
 
 ### Work Environment 
 
@@ -492,16 +530,7 @@ Account where people log into EC2 instances.
 | S3 buckets (with KMS) | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Bucket policies | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
-### Web Environment
-
-This environment is used to host static websites and web applications.
-I have a separate project that allows deploying a static website in any web account in any enviroment
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Web Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Webs | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
+## Project Environment
 
 ### Project Environment
 
@@ -524,7 +553,22 @@ Some enviroments may include penetration testing and security research resources
 
 ( And other stuff not shown here :^) 
 
-#### Backup Environment ###
+## Web Environment
+
+### Web Environment
+
+This environment is used to host static websites and web applications.
+I have a separate project that allows deploying a static website in any web account in any enviroment
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Web Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Webs | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
+
+## Backup Environment
+
+#### Backup Environment
 
 Back up infrastructure segregated from other infrastructure
 
@@ -542,13 +586,21 @@ Back up infrastructure segregated from other infrastructure
 | KMS backup key | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
-### Jobs Auth Environment
+## Jobs Environment
+
+### Jobs Environment
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| OU | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Budgets | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Delete Default VPCs | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+
+### Jobs Auth 
 
 If I use CloudFront have to allow us-east-1 for ACM Cert. Lock down when not acively making chanages.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| OU | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Web Account | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | KMS Account | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Budgets | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
@@ -559,17 +611,8 @@ If I use CloudFront have to allow us-east-1 for ACM Cert. Lock down when not aci
 | API Gateway | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | API Gateway CNAME | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | DynamoDB | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| SCP for us-east-1 only | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 
-### Jobs Run Environment 
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| OU | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Budgets | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Delete Default VPCs | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-
-### Jobs Run Environment - Jobs Account
+### Jobs Run Account
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
@@ -581,28 +624,16 @@ If I use CloudFront have to allow us-east-1 for ACM Cert. Lock down when not aci
 | Job AMI | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Job Run (other resources, lambdas, micro VMs? TBD) | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 
-### Jobs Run Environment - Network Account
+### KMS Keys Account
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Job VPC | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Job Subnet | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Job Security Group | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Job Internet Gateway | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Job Route Table | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Job Security Group | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Job VPC Endpoints | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Job RAM Share | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Job VPC Flow Logs | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-
-### Jobs Run Environment - KMS Keys Account
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| KMS keys | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Auth key | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
+| Job key(s) | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
 | Git Credentials Secrets | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 |
 
-### Jobs Environment - Jobs
+### Jobs
+
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Deploy Web lambda | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
@@ -628,7 +659,9 @@ If I use CloudFront have to allow us-east-1 for ACM Cert. Lock down when not aci
 | Share AMI To External | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Archive Acount | 🔴 | 🔴 | 🔴 | 🔴 | 
 
-### Single Account Test Environment ##
+## Single Account Test Environment
+
+### Single Account Resources To Run Jobs (?)
 
 Deploy environment to single account (account in a different organization or standalone) 
 
