@@ -427,9 +427,9 @@ Account where people log into EC2 instances.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Code Commit Repo | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| ECR | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Code Commit Repo | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| ECR | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Work Account
