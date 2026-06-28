@@ -392,20 +392,33 @@ Can lock when not in use with deny all SCP.
 | Account: iam user | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Account: log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
-### Work Environment Resources ( Base Environment +) ###
+### Work Environment 
 
 Environment where people log into EC2 instances.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| IPAM pool | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| IPAM EIP allocation | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| S3 buckets (no KMS) | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| SCP | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Budgets | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delete Default VPCS | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+
+### Work Environment - KMS Account
+
+KMS keys used in enviroment
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | KMS keys |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | KMS policies | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | KMS key aliases | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+
+### Work Environment - Network Account
+
+Network resources shared to environmeng via RAM
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | VPC Flow Logs Role | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Remote Access Prefix List | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Remote Access (Work) VPC | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
@@ -417,13 +430,16 @@ Environment where people log into EC2 instances.
 | Remote Access VPC Ram Shares | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Remote Access VPC Flowlogs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Delete default VPCs | n/a | n/a | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Deploy Deployment Lambdas |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| S3 buckets (with KMS) | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Bucket policies | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | SSH Security Group | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | RDP Security Group | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | HTTP/HTTPS Security Group | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Budgets | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+
+### Work Environment - AMI Account
+
+Account where people log into EC2 instances.
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Base Ubuntu Instance Role | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Base Ubuntu ENI | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Base Ubuntu Instance | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
@@ -432,6 +448,19 @@ Environment where people log into EC2 instances.
 | Base Amaxon Linux ENI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Base Amazon Linux Instance | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Base Amazon Linux AMI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+
+### Work Environment - Work Account
+
+Account where people log into EC2 instances.
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| IPAM pool | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| IPAM EIP allocation | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| S3 buckets (no KMS) | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| S3 buckets (with KMS) | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Bucket policies | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
 ### Web Environment ( Base Environment +) ###
 
