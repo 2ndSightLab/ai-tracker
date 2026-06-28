@@ -292,8 +292,8 @@ Also separates account from specific projects or activities.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| OU | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| SCP: deny-all | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| SCP: deny-all | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ### Management Environment ###
 
