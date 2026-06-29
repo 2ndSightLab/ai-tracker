@@ -3,6 +3,15 @@
 
 Fixed issues in fixed.md
 
+🟡 Multiple press enter to continue
+
+🟡 after deploy IAM users wrong list of options - inconsistent
+
+Select an action for admin users:
+  1. Deploy admin users
+  2. Done
+  3. Exit
+
 🟡 Pauses/spaces betwene menus deploying resources
 
 🟡 Root SCPs - Bootstrap role perm - attach
