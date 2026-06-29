@@ -327,6 +327,8 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Budgets | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Delete Default VPCs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | SCP Deny external | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Admin roles | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Kiro Account
 
@@ -360,6 +362,8 @@ Environment where people log into EC2 instances.
 | SCP | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Budgets | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Delete Default VPCS | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Admin roles | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### IAM Account
 
@@ -368,8 +372,6 @@ IAM users in work environment
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | IAM User |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| IAM Roles |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### KMS Account
 
@@ -380,8 +382,6 @@ KMS keys used in enviroment
 | KMS keys |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | KMS policies | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | KMS key aliases | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Account: log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Network Account
 
@@ -404,7 +404,6 @@ Network resources shared to environmeng via RAM
 | RDP Security Group | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | HTTP/HTTPS Security Group | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Account: log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### AMI Account
 
@@ -420,7 +419,6 @@ Account where people log into EC2 instances.
 | Base Amaxon Linux ENI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Base Amazon Linux Instance | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Base Amazon Linux AMI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Repos Account
 
@@ -431,7 +429,6 @@ Account where people log into EC2 instances.
 | Account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Code Commit Repo | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | ECR | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Work Account
 
@@ -445,12 +442,17 @@ Account where people log into EC2 instances.
 | S3 buckets (no KMS) | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | S3 buckets (with KMS) | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Bucket policies | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-
 
 ## Project Environment
 
 ### OU
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Admin Roles | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+
+## Project Accounts
 
 Some enviroments may include penetration testing and security research resources.
 
@@ -468,7 +470,6 @@ Some enviroments may include penetration testing and security research resources
 | Collab Instance Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Collab Instance | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Collab AMI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ( And other stuff not shown here :^) 
 
@@ -484,9 +485,10 @@ The management environment contains accounts where my organization deletegated a
 | OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Budgets | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Delete Default VPCs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Roles | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Delete Default VPCs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | SCP: deny-external-access | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Admin Roles | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### IAM Acount
 
@@ -557,7 +559,7 @@ IAM users in management environment
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Account, Move to OU, Alias | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | KMS Log Key | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | KMS Log Key Alias | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | KMS Log Key Policy | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
@@ -566,7 +568,7 @@ IAM users in management environment
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Account, Move to OU, Alias | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Delegate Cost Optimization Hub admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Delegate Compute Optimizer admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
@@ -574,7 +576,7 @@ IAM users in management environment
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Account | 🔴 | 🔴  | 🔴 | 🔴 | 🔴 | 🔴 |
+| Account, Move to OU, Alias | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Code Commit Repos | 🔴 | 🔴  | 🔴 | 🔴 | 🔴 | 🔴 |
 | ECR | 🔴 | 🔴  | 🔴 | 🔴 | 🔴 | 🔴 |
 
@@ -582,7 +584,7 @@ IAM users in management environment
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Account | 🔴 | 🔴  | 🔴 | 🔴 | 🔴 | 🔴 |
+| Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Code Commit Repos | 🔴 | 🔴  | 🔴 | 🔴 | 🔴 | 🔴 |
 | ECR | 🔴 | 🔴  | 🔴 | 🔴 | 🔴 | 🔴 |
 
@@ -598,14 +600,15 @@ Can lock when not in use with deny all SCP.
 | OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Accounts: budgets | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Accounts: delete default vpcs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Accounts: roles  | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 
+| Admin Roles | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Domains Account
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Account: domains | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Account: log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Account, Move to OU, Alias | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+
 
 
 ## Web Environment
@@ -619,11 +622,11 @@ I have a separate project that allows deploying a static website in any web acco
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
-### Account
+### Web Account
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Web Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Account, Move to OU, Alias | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Webs | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
 | log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
@@ -637,6 +640,8 @@ I have a separate project that allows deploying a static website in any web acco
 | OU | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Budgets | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Delete Default VPCs | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| admin roles | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Jobs Auth Account
 
@@ -644,31 +649,32 @@ If I use CloudFront have to allow us-east-1 for ACM Cert. Lock down when not aci
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Web Account | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| KMS Account | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Budgets | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Admin Roles | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Account, Move to OU, Alias | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 
 | Job Auth Lambdas | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Auth Lambda VPC Config | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | ACM Certificate | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | API Gateway | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | API Gateway CNAME | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | DynamoDB | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
+### KMS Auth Account
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Account, Move to OU, Alias | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Jobs Run Account
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Accounts: job | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Account, Move to OU, Alias | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | S3 buckets | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Job Instance Role | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Job ENI | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Job EC2 Instance | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Job AMI | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Job Run (other resources, lambdas, micro VMs? TBD) | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Jobs
 
@@ -709,19 +715,25 @@ Back up infrastructure segregated from other infrastructure
 | Backup OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | budgets | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | delete default vpcs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| admin roles | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+
+### Backup Admin Account
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Delegate Backup admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+
+### KMS Account
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Delegate Backup admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
 ### Backup Accounts
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Backup Account Per Environment [env] | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Delegate Backup admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| admin roles | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| account: kms | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| KMS backup key | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| account: kms | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-
+| Backup Account Per Environment | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ## Single Account Test Environment
 
