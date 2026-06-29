@@ -510,7 +510,7 @@ IAM users in management environment
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Delegate IPAM admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate IPAM admin | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Delegate Firewall Manager admin | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Delegate Network Manager admin | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Delegate VPC Reachability Analyzer admin  | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
