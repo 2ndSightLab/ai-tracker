@@ -531,25 +531,27 @@ IAM users in management environment
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Delegate Security Hub admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delegate GuardDuty admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delegate CloudTrail admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delegate AWS Config admin  | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delegate Macie admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delegate Inspector admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delegate IAM Access Analyzer admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delegate Audit Manager admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delegate Health admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delegate Detective admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| S3 Logs bucket | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate Security Hub admin | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Delegate GuardDuty admin | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Delegate CloudTrail admin | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Delegate AWS Config admin  | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Delegate Macie admin | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Delegate Inspector admin | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Delegate IAM Access Analyzer admin | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Delegate Audit Manager admin | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Delegate Health admin | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Delegate Detective admin | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| S3 Logs buckets (one per env) | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| S3 Logs bucket - with encryption | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Configure GuardDuty | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Configure Security Hub | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Configure CloudTrail | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Configure AWS Config | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Configure Macie | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Configure Inspector | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Configure IAM Access Analyzer | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Configure Inspector | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Configure IAM Access Analyzer | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Configure Security Alerts | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+
 
 ### KMS Acount
 
@@ -559,7 +561,6 @@ IAM users in management environment
 | KMS Log Key | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | KMS Log Key Alias | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | KMS Log Key Policy | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| SCP: kms-account-allowed-services [env] | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
 ### Accounting Acount 
 
