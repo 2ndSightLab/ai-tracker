@@ -6,33 +6,27 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 ## Today's objectives:
 
-🟡 if account role-proflie not set create or assist user to create or select
-
-🟡 Test and fix deploy each resource, then verify, then delete
-
 🟡 Add resource specific actions (like route 53 register domain), user can choose action for resource...
 
 🟡 Wrong IP in admin user policy
 
-🟡 Per account / per KMS key fail
+🟡 Fix KMS key deployment
 
-🟡 remove SECURITY_ACCOUNT_ID, etc. in delegate scripts, + configure > all these can be replaced with the deploy acct id
+🟡 remove SECURITY_ACCOUNT_ID, etc. in delegate scripts, + configure > all these can be replaced with the deploy acct name/id
 
 🟡 No deploy action available for Delegate Org Admin
 
 🟡 log bucket script not ipmelmented
 
-🟡 Menu numbers are not aligned > chose 6 resource and tried to deploy 7
-
 🟡 Backup env should create a backup account for each env (confirmed by user), kms, iam
 
 🟡 Remove Select Environment from deploy menu
 
-🟡 Multiple enter in some places
-
-🟡 Create new acount: ERROR: ou-acct-nms not set
-
 ## 6/27/2026
+
+🟢 Create new acount: ERROR: ou-acct-nms not set
+
+🟢 if account role-proflie not set create or assist user to create or select
 
 🟢 Menus: Again. See mistakes. Fixed to ask y/n before each reasource, pause after to see errors, if skip a resource go to the next one isntead of going back to the start.
 
