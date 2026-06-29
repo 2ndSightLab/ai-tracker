@@ -3,6 +3,8 @@
 
 Fixed issues in fixed.md
 
+🟡 rename environment - fails to correct ids so files not found.
+
 🟡 When budget exists check to see that it is acutually replacing all existing budget amounts.
   Budget amount auto-set to $30 (highest threshold)
   x-org: budget exists ($50.0/month)
