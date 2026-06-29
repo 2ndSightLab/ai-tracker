@@ -3,6 +3,12 @@
 
 Fixed issues in fixed.md
 
+🟡 When budget exists check to see that it is acutually replacing all existing budget amounts.
+  Budget amount auto-set to $30 (highest threshold)
+  x-org: budget exists ($50.0/month)
+  Updated to $30/month
+  Account Budget complete
+
 🟡 Multiple press enter to continue
 
 🟡 after deploy IAM users wrong list of options - inconsistent
