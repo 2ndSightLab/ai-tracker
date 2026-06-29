@@ -588,8 +588,6 @@ Can lock when not in use with deny all SCP.
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Account, Move to OU, Alias | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
-
-
 ## Web Environment
 
 ### Env OU
