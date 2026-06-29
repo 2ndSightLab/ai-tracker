@@ -10,7 +10,7 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 🟡 Wrong IP in admin user policy
 
-🟡 Fix KMS key deployment
+🟡 Fix KMS key deployment - ERROR: deploy-kms-logs-key.sh is not implemented
 
 🟡 remove SECURITY_ACCOUNT_ID, etc. in delegate scripts, + configure > all these can be replaced with the deploy acct name/id
 
