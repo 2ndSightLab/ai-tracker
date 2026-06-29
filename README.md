@@ -511,22 +511,10 @@ IAM users in management environment
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Delegate IPAM admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delegate Firewall Manager admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delegate Network Manager admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delegate VPC Reachability Analyzer admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate Firewall Manager admin | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Delegate Network Manager admin | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Delegate VPC Reachability Analyzer admin  | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | IPAM | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| AWS Prefix Lists | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Auth VPC | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Auth Subnet | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Auth Security Group | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Auth Route Table | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Auth VPC Endpoints | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Auth VPC Endpoint SGs | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Auth VPC RAM share | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Auth VPC Flowlogs | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Route 53 Hosted Zone | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Job VPC... | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Auth VPC... | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 
 ### Security Acount
 
@@ -569,24 +557,15 @@ IAM users in management environment
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Account, Move to OU, Alias | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Delegate Cost Optimization Hub admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delegate Compute Optimizer admin | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delegate Cost Optimization Hub admin | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Delegate Compute Optimizer admin | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
-### Repos Acount
+### Org Acount 
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Account, Move to OU, Alias | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Code Commit Repos | 🔴 | 🔴  | 🔴 | 🔴 | 🔴 | 🔴 |
-| ECR | 🔴 | 🔴  | 🔴 | 🔴 | 🔴 | 🔴 |
-
-### AMIs Acount
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Code Commit Repos | 🔴 | 🔴  | 🔴 | 🔴 | 🔴 | 🔴 |
-| ECR | 🔴 | 🔴  | 🔴 | 🔴 | 🔴 | 🔴 |
+| Org Policy (org delegated admin) | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ## Domains Environment
 
@@ -629,7 +608,6 @@ I have a separate project that allows deploying a static website in any web acco
 | Account, Move to OU, Alias | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Webs | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
 | log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-
 
 ## Jobs Environment
 
