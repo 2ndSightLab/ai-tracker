@@ -6,6 +6,8 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 ## Today's objectives:
 
+🟡 S3 cloudwatch logging (to replae s3 access log bucket) - Delivery to CloudWatch Logs is billed at standard CloudWatch Logs rates: The Infrequent Access log class ingests at a lower cost than the Standard class, but does not support metric filters. >> need the option to specify infrequent or standrd access per bucket to log to cw
+
 🟡 Fix rename/menu issues
 
 🟡 When rename in config, rename in AWS > which means tracking the renaming actions (from > to)
