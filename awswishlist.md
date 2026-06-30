@@ -206,3 +206,5 @@ So as you can see there is no easy way for me to add an allow drift detection an
 🟠 Ability to use a Prefix List in an AWS IAM or resource condition in a policy. Why? I set my admin IP in a prefix. When that IP changes every policy would automatically use the new IP.
 
 🟠 I used the option to diagnose an error with an IAM policy in the AWS console and it's connecting to EU-central region when I am in a us-east region. That should stay within my selected region or ask me first if it needs to connect to some other region.
+
+🟠 When I add a new user in AWS IAM Identity Center (standalone) and then I log into that uesr's email and click the verify the link, the AWS SSO console does not show accurate information about that user until I completely leave the service dahsboard and come back. Clicking to another menu does not help and no way to refresh the page. Can be confusing for people new to the srvice and slightly annoying to those who know what's going on. :)
