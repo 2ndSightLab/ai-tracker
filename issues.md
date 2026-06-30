@@ -37,6 +37,8 @@ Fixed issues in fixed.md
 
 ## Later
 
+🟡 Standalone identity center was not properly enabled upon deploy - what happened?
+
 🟡 rename environment - fails to correct ids so files not found.
 
 🟡 When budget exists check to see that it is acutually replacing all existing budget amounts.
