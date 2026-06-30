@@ -3,6 +3,40 @@
 
 Fixed issues in fixed.md
 
+## Today's objectives:
+
+🟡 If I have OUs and accounts and I want to align them to teh configuration > using drift management, list all the OUS in config and all the OUs in the account. Specify if the OUs in the config should be renamed to OUs in the acount or vice versa...then do the same for accouunts in OUs...
+
+🟡 Need to fix SCP for manage kiro to allow identity center + kiro for that account only. All other accounts blocked from kiro. Fix SCP
+
+🟡 S3 cloudwatch logging (to replae s3 access log bucket) - Delivery to CloudWatch Logs is billed at standard CloudWatch Logs rates: The Infrequent Access log class ingests at a lower cost than the Standard class, but does not support metric filters. >> need the option to specify infrequent or standrd access per bucket to log to cw
+
+🟡 Fix rename/menu issues
+
+🟡 When rename in config, rename in AWS > which means tracking the renaming actions (from > to)
+
+🟡 Nested OUs
+
+🟡 Move OUs to align with config if theya re moved (which means tracking the moves)
+
+🟡 Add resource specific actions (like route 53 register domain), user can choose action for resource...
+
+🟡 Wrong IP in admin user policy
+
+🟡 Fix KMS key deployment - ERROR: deploy-kms-logs-key.sh is not implemented
+
+🟡 remove SECURITY_ACCOUNT_ID, etc. in delegate scripts, + configure > all these can be replaced with the deploy acct name/id
+
+🟡 No deploy action available for Delegate Org Admin
+
+🟡 log bucket script not ipmelmented
+
+🟡 Backup env should create a backup account for each env (confirmed by user), kms, iam
+
+🟡 Remove Select Environment from deploy menu
+
+## Later
+
 🟡 rename environment - fails to correct ids so files not found.
 
 🟡 When budget exists check to see that it is acutually replacing all existing budget amounts.
