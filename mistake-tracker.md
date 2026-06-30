@@ -15,6 +15,18 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/response-time.md
 The mistake tracker is a new part of the project added a few months in. This is not super scientific as it is hard to quantify. 
 I'm just telling the model to increment the mistakes it's making +1 if it starts making a bunch of mistakes. This is not every mistakes mostly only when I start getting annoyed. :-D The mistakes are largely worded by the AI agent and sometimes it does not capture the correct mistake but I don't always fix that because I just want to get stuff done. It generally captures a valid mistake but not the one I actually wanted it to log. So these are all valid just some are missing I didn't bother to fix to the correct mistake. I don't care about typooooos this is just a fast as possible log. Trying to get things done.
 
+# 2026-06-29
+
+My plan ran out so I coded manually. I can still do it. The problem I found was trying to deploy an S3 bucket with the naming convention that prevents typo-squatting turned up another error and I don't know how it happened. My AWS CLI version was somehow locked to an old version and wasn't updating and I did not realize it. I figured it out when Google AI mode (which I used for some commands since I ran out of Anthropic resources, suggested a bucket command and it wasn't working. After going around in circles turns out it is only suppored in a more recent version of the AWS CLI. The Anthropic models never told me this. I had to get a few commands to clear caches and such to get everything up to date. HMMMMMM.....
+
+I did some manual review of the code (not enough) and found a boatload of variables that never got updated the way I told the Anthropic models to do it and was causing errors. Fix some of it. I still write better code than an AI model in terms of brevity and accuracy and aethetics. But AI is definitly faster at preventing typos and syntax errors or at least it fixes all that by the time I see it and gets the job done faster.
+
+While testing I found more problems with renaming breaking menus because it's not accurately renaming all files and values. This is where a relational database might help but allowing the model to see all the data in XML is probably helping it understand the structure and fix things faster I'm guessing. But anyway, now I need to get the model up and running because it will be much faster to fix all that way.
+
+# 2026-06-28
+
+What happened to 6/28? IDK. I worked.
+
 # 2026-06-27
 
 OMG I fix one problem and go back to fix data in another projecct and now that project is broken. WTH. AI is really terrible about maintaining a proper architecture. I had it insert some XML data and now the edit functionality for environemtns is broken. Again.
