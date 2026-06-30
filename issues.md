@@ -5,7 +5,7 @@ Fixed issues in fixed.md
 
 ## Today's objectives:
 
-🟡 If I have OUs and accounts and I want to align them to teh configuration > using drift management, list all the OUS in config and all the OUs in the account. Specify if the OUs in the config should be renamed to OUs in the acount or vice versa...then do the same for accouunts in OUs...
+🟡 If I have OUs and accounts and I want to align them to teh configuration > using drift management, list all the OUS in config and all the OUs in the account. Specify if the OUs in the config should be renamed to OUs in the acount or vice versa...then do the same for accouunts in OUs...then resources
 
 🟡 Need to fix SCP for manage kiro to allow identity center + kiro for that account only. All other accounts blocked from kiro. Fix SCP
 
