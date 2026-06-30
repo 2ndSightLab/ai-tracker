@@ -6,6 +6,14 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 ## Today's objectives:
 
+🟡 Fix rename/menu issues
+
+🟡 When rename in config, rename in AWS > which means tracking the renaming actions (from > to)
+
+🟡 Nested OUs
+
+🟡 Move OUs to align with config if theya re moved (which means tracking the moves)
+
 🟡 Add resource specific actions (like route 53 register domain), user can choose action for resource...
 
 🟡 Wrong IP in admin user policy
