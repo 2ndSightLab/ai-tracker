@@ -208,3 +208,7 @@ So as you can see there is no easy way for me to add an allow drift detection an
 🟠 I used the option to diagnose an error with an IAM policy in the AWS console and it's connecting to EU-central region when I am in a us-east region. That should stay within my selected region or ask me first if it needs to connect to some other region.
 
 🟠 When I add a new user in AWS IAM Identity Center (standalone) and then I log into that uesr's email and click the verify the link, the AWS SSO console does not show accurate information about that user until I completely leave the service dahsboard and come back. Clicking to another menu does not help and no way to refresh the page. Can be confusing for people new to the srvice and slightly annoying to those who know what's going on. :)
+
+🟠 Save another way is actually more secure than using a PassKey as it saves the data to the Yubikey. Instead of save another way it should be "Store key to laptop" or "Store key to Yubikey (recommended)". I know this probably doesn't align with some standard but I think the standard is flawed. Saving to Yubikey is more secure because you can remove the Yubikey when not in use and not subjecct to attacks on a much more complicated OS.
+
+🟠 When adding MFA in AWS Identity Center (standalone) for use with Kiro, it does not make me enter the Yubikey pin when I choose save another way (it should).
