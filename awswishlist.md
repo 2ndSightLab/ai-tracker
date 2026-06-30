@@ -179,7 +179,7 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/mistake-tracker.md
 
 🟠 Why am I seeing repeated connections to the IAM api after I'm already logged in on main AWS page? Why do I see multiple attempts to connect to a help domain? I'm not doing anything just sitting here looking at the screen? I blocked them and it still seems to work. Would like that to not happen.
 
-🟠 When I visit the Kiro page in the AWS console I'm seeing sso connection attempts all over the world. Why? Please keep that in my own selected region only.
+🟠 When I visit the Kiro page in the AWS console I'm seeing sso connection attempts all over the world. Why? Please keep that in my own selected region only. It's connecting to Europe, Asia and others via sso domains.
 
 🟠 There is a reason - and I'm trying to remember what it is here - why I cannot create an SCP to deny all external access using the OU path conidtion. It doesn't work for all types of resources, though I can't remember which ones right now. But it would be easy for someone at AWS to test this. Add an OU SCP that denies any actions except those perfomred by acounts in the OU. Test all AWS actions to see which ones are valid but get rejected. I would like that to work so I don't have to individually add each acount that is in the environment in my policy.
 
