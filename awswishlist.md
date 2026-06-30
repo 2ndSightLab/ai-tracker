@@ -212,3 +212,5 @@ So as you can see there is no easy way for me to add an allow drift detection an
 🟠 Save another way is actually more secure than using a PassKey as it saves the data to the Yubikey. Instead of save another way it should be "Store key to laptop" or "Store key to Yubikey (recommended)". I know this probably doesn't align with some standard but I think the standard is flawed. Saving to Yubikey is more secure because you can remove the Yubikey when not in use and not subjecct to attacks on a much more complicated OS.
 
 🟠 When adding MFA in AWS Identity Center (standalone) for use with Kiro, it does not make me enter the Yubikey pin when I choose save another way (it should).
+
+🟠 On logout trying to connect to EU panorama domain. Why? No, please. Also marketing domain. Prefer did not do that.
