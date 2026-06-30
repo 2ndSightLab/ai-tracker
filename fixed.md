@@ -30,6 +30,16 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 🟡 Remove Select Environment from deploy menu
 
+## 6/29/2026
+
+🟢 Fixed a bunch of delegated admin stuff manually
+
+🟢 Addead a log bucket per account and now I see AWS is sending bucket logs to CloudWatch. Finally. Need to check the costs.
+
+## 6/28/2026
+
+? Time flies
+
 ## 6/27/2026
 
 🟢 Create new acount: ERROR: ou-acct-nms not set
