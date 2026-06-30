@@ -4,33 +4,6 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
-## Today's objectives:
-
-🟡 S3 cloudwatch logging (to replae s3 access log bucket) - Delivery to CloudWatch Logs is billed at standard CloudWatch Logs rates: The Infrequent Access log class ingests at a lower cost than the Standard class, but does not support metric filters. >> need the option to specify infrequent or standrd access per bucket to log to cw
-
-🟡 Fix rename/menu issues
-
-🟡 When rename in config, rename in AWS > which means tracking the renaming actions (from > to)
-
-🟡 Nested OUs
-
-🟡 Move OUs to align with config if theya re moved (which means tracking the moves)
-
-🟡 Add resource specific actions (like route 53 register domain), user can choose action for resource...
-
-🟡 Wrong IP in admin user policy
-
-🟡 Fix KMS key deployment - ERROR: deploy-kms-logs-key.sh is not implemented
-
-🟡 remove SECURITY_ACCOUNT_ID, etc. in delegate scripts, + configure > all these can be replaced with the deploy acct name/id
-
-🟡 No deploy action available for Delegate Org Admin
-
-🟡 log bucket script not ipmelmented
-
-🟡 Backup env should create a backup account for each env (confirmed by user), kms, iam
-
-🟡 Remove Select Environment from deploy menu
 
 ## 6/29/2026
 
