@@ -204,3 +204,5 @@ So as you can see there is no easy way for me to add an allow drift detection an
 🟠 Create aliases so all services have the same action set instead of one off differently named acctions. Some services use list and some use describe and some use delete, detach, or different verbs for the same actions. You do not need to change the existing actions just create an alias so that every AWS CLI resource has a consistent action accross all services. Then make it easy to create an SCP to only allow the consistent aliased actions so all services can have the allowed same actions in all cases and not have to handle all the one-offs and variations.
 
 🟠 Ability to use a Prefix List in an AWS IAM or resource condition in a policy. Why? I set my admin IP in a prefix. When that IP changes every policy would automatically use the new IP.
+
+🟠 I used the option to diagnose an error with an IAM policy in the AWS console and it's connecting to EU-central region when I am in a us-east region. That should stay within my selected region or ask me first if it needs to connect to some other region.
