@@ -244,6 +244,18 @@ Digging through the logs I find this which is not very helpful - my user has ful
    "errorCode": "AccessDenied",
     "errorMessage": "An unknown error occurred",
 ``` 
+Finally Q pops up somehow and I get this
+```
+The denied access is caused by an SCP (Service Control Policy) that explicitly denies to perform ``iam:CreateServiceLinkedRole``. Consult your administrator before performing the suggested steps to resolve the error. They should check your SCP in the AWS Organizations for a `"Deny"` statement for the action ``iam:CreateServiceLinkedRole``, which is often used intentionally.
+
+1. Sign in to the AWS Organizations console. You must sign in as an IAM user, assume an IAM role, or sign in as the root user (not recommended) in the organization's management account.
+2. On the **Service control policies** page, choose the name of the policy that you want to update.
+3. On the policy's detail page, choose **Edit policy**.
+4. Edit the policy to remove the `"Deny"` statement for the action ``iam:CreateServiceLinkedRole``.
+5. Review the updated policy for correctness, and then choose **Save changes** to save your changes.
+
+```
+A few problems with this. ServiceLinkedRole? Those are not subject to SCPs so prefer not to use them. Also, I have an SCP allowing that according to instructions I was given by Q. >>>  I cannot find this failure in the logs???
 
 🟠 AWS console when I try to add KMS key to identity center tells me that I do not have permissions to list aliases but when I go to CloudTrail I cannot find the failed action and error related to that attempt.
 
