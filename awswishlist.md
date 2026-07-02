@@ -256,6 +256,7 @@ The denied access is caused by an SCP (Service Control Policy) that explicitly d
 
 ```
 A few problems with this. ServiceLinkedRole? Those are not subject to SCPs so prefer not to use them. Also, I have an SCP allowing that according to instructions I was given by Q. >>>  I cannot find this failure in the logs???
+And worst of all > a free for all policy to create any service linked role instead of only the one(s) taht are needed in region needed by specific IP address (mine, not yours), and MFA required.
 
 🟠 AWS console when I try to add KMS key to identity center tells me that I do not have permissions to list aliases but when I go to CloudTrail I cannot find the failed action and error related to that attempt.
 
