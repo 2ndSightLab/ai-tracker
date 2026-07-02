@@ -272,6 +272,8 @@ Oh and then randomly I put a restriction on my SCP to only allow actions in regi
 
 Oh and I forgot to mention I removed the permission to CreateServiceLinkedRole from the SCP before that also. So telling me I need to allow creation of a ServiceLinkedRole in the SCP which both Amazon Q and Google aimode was telling me to do was not the problem.
 
+Aha I also had turned off all firewall rules so perhaps something was connecting outside of the selected AWS region (us-east-1). In addition, when I went back to enable my firewall rules it said it had blocked all traffic. I did not create that rule. I am constantly having problems with Little Snitch enabling all or disalbling all rules and trying to figure that out.
+
 🟠 AWS console when I try to add KMS key to identity center tells me that I do not have permissions to list aliases but when I go to CloudTrail I cannot find the failed action and error related to that attempt.
 
 🟠 When diagnosing someeting with Amazon Q need to be able to ask follow on questions when it gives incorrect or incomplete answer.
