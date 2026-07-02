@@ -268,6 +268,7 @@ The only error I find for ServiceLinkedRole is:
         "description": "Service-linked role used by AWS Organizations to enable integration of other AWS services with Organizations."
     },
 ```
+Oh and then randomly I put a restriction on my SCP to only allow actions in region us-east-1. I hit the enable button wone more time. And it works. What? Is this just a timing issue? What is going on here it is very, very confusing.
 
 🟠 AWS console when I try to add KMS key to identity center tells me that I do not have permissions to list aliases but when I go to CloudTrail I cannot find the failed action and error related to that attempt.
 
