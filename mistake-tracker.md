@@ -17,6 +17,9 @@ I'm just telling the model to increment the mistakes it's making +1 if it starts
 
 # 2026-07-01
 
+____________
+Supposedly Fable 5 came out and it's not in Kiro CLI yet. Meanwhile as per usual when a new model comes out the old models because super dumb and nearly useless. Today has been painful.
+_____________
 This happens every time a new model comes out. The existing model gets wonky. Right now getting tons of noops trying to fix some things with Opus 4.8. Last count was 50 noops. It's using the same value for old string and new string. Keeps stoping. I'm providing differnet instructions to try to work around it. Now this:
 
 Kiro is having trouble responding right now: 
