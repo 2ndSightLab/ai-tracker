@@ -1,4 +1,4 @@
-<img width="566" height="575" alt="traffic" src="https://github.com/user-attachments/assets/6bfd499f-4877-4b0d-b1e9-81a3e4585efd" />
+
 # My AWS Wishlist Items Related To This Project
 
 ## AWS Wish List
