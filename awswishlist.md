@@ -230,5 +230,12 @@ So as you can see there is no easy way for me to add an allow drift detection an
 
 🟠 Trying to use Amazon Q in console to create an SCP that allows creating a standaloen identity center instance and kiro and 1.) it gave me an SCP that doesn't work. 2.) It's too slow 3.) can't stop it once it starts thinking and thne it takes forever before I can correct what I wanted to ask. It's so slow right now I just shut it down.
 
-🟠 Trying to toubleshoot an SCP looking at countrail to figure out why it's blocking creation of stand alone identity center and nearly impossible to figure out. I can't filger on error messaes. The error messages are cryptic. I can't find the error mressages that are related to that specific action getting blocked. There's to omuch noise in the logs. There are too many other random failures for other services like health and cost and such. There's a dry run exception for Amazon Q. I try refreshing and performing the action again and still can't pinpoint the issue. Not all events have resource type / service in them.  Here's what I would expect: Go to to CLoudTrail. Filter on errors read only or not. Filter on Identity Cetner. Pinpoint the problem.
+🟠 Trying to toubleshoot an SCP looking at countrail to figure out why it's blocking creation of stand alone identity center and nearly impossible to figure out. I can't filger on error messaes. The error messages are cryptic. I can't find the error mressages that are related to that specific action getting blocked. There's to omuch noise in the logs. There are too many other random failures for other services like health and cost and such. There's a dry run exception for Amazon Q. I try refreshing and performing the action again and still can't pinpoint the issue. Not all events have resource type / service in them.  Here's what I would expect: Go to to CLoudTrail. Filter on errors read only or not. Filter on Identity Cetner. Pinpoint the problem. The only error I get in the console is: 
+
+You need permissions
+You do not have the permission required to perform this operation. Ask your administrator to add permissions.
+You don't have permissions to access this resource.
+
+🟠 AWS console when I try to add KMS key to identity center tells me that I do not have permissions to list aliases but when I go to CloudTrail I cannot find the failed action and error related to that attempt.
+
 
