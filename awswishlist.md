@@ -284,8 +284,20 @@ Aha I also had turned off all firewall rules so perhaps something was connecting
 
 🟠 Cannot remember if I wrote this already but Kiro console also tries to connect to AWS SSO regions all over the world rather than my selected region. Still says Q in the unified search dropdown and still seeing traffic to q and code whisperer domains.
 
+🟠 Please quantum encryption for Kiro CLI connections. I'm seeing a connection to keep the socket open and one to send the requests (right)? But not quantum?
 
-
++    15: Port/service: TCP 443, HTTPS.
++    16: Application protocol: HTTP/2 (ALPN negotiated h2).
++    17: TLS version: TLS 1.3 on every endpoint.
++    18: Cipher suite: TLS_AES_128_GCM_SHA256 (AES-128-GCM AEAD, SHA-256).
++    19: Key exchange: X25519 ECDHE, 253-bit ephemeral (forward secrecy).
++    20: Cert signature: rsa_pss_rsae_sha256. Chain verification: OK.
++    21: 
++    22: Certificate (identical on all four):
++    23:   subject CN=codewhisperer.us-east-1.amazonaws.com
++    24:   SAN DNS:codewhisperer.us-east-1.amazonaws.com
++    25:   issuer C=US, O=Amazon, CN=Amazon RSA 2048 M04
++    26:   notBefore Feb 17 2026, notAfter Mar 18 2027
 
 
 
