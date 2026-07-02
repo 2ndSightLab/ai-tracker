@@ -87,14 +87,15 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/response-time.md
 ## Cost: ##
 
 ### Costs while building an AI Agent Bootstrap Script and Framework
-**Date Range:** Mar 7, 2026 - Jun 12, 2026
 
-| Service / Category | Total | Mar 2026 | Apr 2026 | May 2026 | Jun 2026* |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| **Total costs** | **$1,571.19** | **$359.07** | **$387.55** | **$621.52** | **$203.04** |
-| Kiro | $692.19 | $193.55 | $129.07 | $285.79 | $83.77 |
-| Virtual Private Cloud | $344.92 | $50.07 | $118.34 | $137.58 | $38.94 |
-| Elastic Compute Cloud - Compute | $222.59 | $39.45 | $44.28 | $100.12 | $38.74 |
+**Date Range**: Mar 7, 2026 - Jul 2, 2026
+
+| Service / Resource | Total | Mar 2026 | Apr 2026 | May 2026 | Jun 2026 | Jul 2026* |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Total costs** | **\$2,151.92** | **\$359.07** | **\$387.55** | **\$621.52** | **\$755.02** | **\$28.76** |
+| Kiro | \$1,079.02 | \$193.55 | \$129.07 | \$285.79 | \$457.71 | \$12.90 |
+| Virtual Private Cloud | \$411.17 | \$50.07 | \$118.34 | \$137.58 | \$104.22 | \$0.97 |
+| Elastic Compute Cloud - Compute | \$283.88 | \$39.45 | \$44.28 | \$100.12 | \$96.80 | \$3.23 |
 
 Costs broken down by service can be found here:
 
