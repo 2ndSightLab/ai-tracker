@@ -4,6 +4,13 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
+## 7/1/2026
+
+🟢 Burned way too many tokens trying to fix some requirements that the agent was not properly formatting. It absolutely does not follow instrucctions for writing short requirements < 100 chars per line. Trying to fix them led to countless noops but it also coincided with a model release. Every time a model is released the agent performance degrades. Will try to log mistakes later. Got very frustrated.
+
+🟢 After fixing most requirements to proper format and creating tests to keep them on track, I moved towards fixing bugs. The agents were suuuuuper slow. While it was fixing bugs I strated manually testing and logging new bugs via my test agent. The test agent writes bugs that are way too verbose. I need to fix that. But anyway, it writes the bug and then the other agents pick them up and fix them. Once they are fixed them ove to teh fixed folder. This burned soo many tokens so fast. The agents were spinning on fixing bugs and not able to figure out how to fix things. They removed a bunch of duplicated code tha twas supposed to be in a shared project only. Then later reinroduced the same problem in the same session. They did not fix all the bugs. When they told me they fixed all the bugs, then I figured out the test agent was not correctly moving fixed bugs to the fixed folder so agents were spinning on already fixed bugs. What a mess. This really needs to get better - but I have a way to fix some of that I'm working on and then will continue that bug fixing process and see if I can get something deployed.
+
+🟢 Spent some time resarching a way to reduce the complexity of my org to lower costs and management overhead. New approach coming soon in blog psot at: https://teriradichel.substack.com/
 
 ## 6/29/2026
 
