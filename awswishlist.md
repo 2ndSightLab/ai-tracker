@@ -1,3 +1,4 @@
+<img width="566" height="575" alt="traffic" src="https://github.com/user-attachments/assets/6bfd499f-4877-4b0d-b1e9-81a3e4585efd" />
 # My AWS Wishlist Items Related To This Project
 
 ## AWS Wish List
@@ -224,3 +225,6 @@ So as you can see there is no easy way for me to add an allow drift detection an
 🟠 I cannot add MFA to an admin on an account in an organization in the new user setup flow. I have to skip it and do it in the AWS console. Is there some weird network traffic in that new user network flow that is using a global or out of region domain that is not used in the AWS console?
 
 🟠 Logging into a new account in a new organization in a brand new AWS account and I am getting popups for STS in aws regions all over the place not in my selected region. Please restrict that to my seleted retion. I have removed all the widgets except cost but they still keep coming. And SCP for this account only allows us-east-1.
+
+<img width="566" height="575" alt="traffic" src="https://github.com/user-attachments/assets/eeafc136-cb9e-4a98-9e36-58ca760d8309" />
+
