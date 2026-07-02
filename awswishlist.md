@@ -218,3 +218,7 @@ So as you can see there is no easy way for me to add an allow drift detection an
 🟠 When I create a new account the reuqest succeseeds but in the AWS Organizations console I see no indication of that on any screen I look at. I can go to CloudTrail and see that the request succeeded. I have to completely refresh the AWS Organizations page to see the account. It's confusing. 
 
 🟠 AWS Organizations has way too many different kinds of policies. There are SCPs (Rules that apply across the board in an organization to AWS actions), Resource Policies (Policies that shoudl work the same way for every resource but currently do not to define who is allowed to access or take actions on or with a resource), Principal Policies (what a user or application can do), Trust Policies (who can assume a role), and RAM Sharing Policies (to see everything shared across an org in one place). Consolidate please. Why are there so many one-off separate policies? Make Organization settigns just settings for all the weird one off things.
+
+🟠 Make the captcha easier to read. It's supposed to stop bots but it's so hard to read I never get it right on the first try. Or something else is going on. Is anyone getting it right on the first try?
+
+🟠 I cannot add MFA to an admin on an account in an organization in the new user setup flow. I have to skip it and do it in the AWS console. Is there some weird network traffic in that new user network flow that is using a global or out of region domain that is not used in the AWS console?
