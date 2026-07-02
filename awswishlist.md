@@ -214,3 +214,5 @@ So as you can see there is no easy way for me to add an allow drift detection an
 🟠 When adding MFA in AWS Identity Center (standalone) for use with Kiro, it does not make me enter the Yubikey pin when I choose save another way (it should).
 
 🟠 On logout trying to connect to EU panorama domain. Why? No, please. Also marketing domain. Prefer did not do that.
+
+🟠 When I create a new account the reuqest succeseeds but in the AWS Organizations console I see no indication of that on any screen I look at. I can go to CloudTrail and see that the request succeeded. I have to completely refresh the AWS Organizations page to see the account. It's confusing. 
