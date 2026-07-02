@@ -4,6 +4,12 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
+## 7/2/2026
+
+🟢 Added some info to cost tracking.
+
+🟢 Need to get the bugs fixed and get something deployed. Going to have agents log when they fix a bug to combat that problem.
+
 ## 7/1/2026
 
 🟢 Burned way too many tokens trying to fix some requirements that the agent was not properly formatting. It absolutely does not follow instrucctions for writing short requirements < 100 chars per line. Trying to fix them led to countless noops but it also coincided with a model release. Every time a model is released the agent performance degrades. Will try to log mistakes later. Got very frustrated.
