@@ -275,3 +275,16 @@ Oh and I forgot to mention I removed the permission to CreateServiceLinkedRole f
 🟠 AWS console when I try to add KMS key to identity center tells me that I do not have permissions to list aliases but when I go to CloudTrail I cannot find the failed action and error related to that attempt.
 
 🟠 When diagnosing someeting with Amazon Q need to be able to ask follow on questions when it gives incorrect or incomplete answer.
+
+🟠 My network allows access to regions outside of the one I'm working in and strange connections to undocumented domains. I don't know if that is waht is causing this but Identity Center console looks wrong in two different AWS accounts in two different organizations as a result
+
+<img width="866" height="447" alt="idc2" src="https://github.com/user-attachments/assets/a1d91996-1b26-404e-ad01-bde2b7f3e9b4" />
+
+
+
+
+
+
+
+
+
