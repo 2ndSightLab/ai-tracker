@@ -2,6 +2,10 @@
 
 # Cost 
 
+**Date:** July 2, 2026
+
+TIL after analyzing my costs what is really going on with some of the cost metrics and why I thought I had been billed for a full $200 plan when I couldn't use a single credit. When you log in and look at the cost dashboard, if you have signed up for a $200 plan, it shows you a $200 charge immediately. Blam. Then you look at your forecasted costs and it may be less than $200. Wat. Somehow if I cancel the plan mid-month I'm not charged the full $200 but that charge doesn't adjust to actual. It's all very confusing. All I know is that whether I am billed the full $200 or not I still haven't gotten this porject done and I'm burning a lot of tokens. Yesterday a new model was released and every time that happens the existing models go haywire. And I'm not sure it can be just racked up to system overload. If you know what noops are good for...I keep reporting this mantra that you need to track eveyrhing and we need to pinpoint and fully understand what is causing that to happen. It is a risk in more ways than one for businesses and potentially national security. WE NEED TO UNDERSTAND THIS STUFF BETTER AND FIX IT. I can't see inside the systems so I can't fully tell from the outside what is going on. I can only measure what I can see and the the data I can access.
+
 **Date Range:** July 1 - 2, 2026
 
 Used up a full Kiro $200 plan in two days. New models were released and the agents are really spinnning their wheels again. I noticed an interesting graph but apparently it onlys shows metrics for inactive subscriptions. This shows credits burned in the last couple of days mostly trying to fix issues with requirements and bugs. (i.e. no real progress made just trying to get things working I thought were working before.) I really think something is going on whenever new Anthropic models are release in AWS or on Anthropic or both. I'm going to try to track this better but as you can see burned way more tokens per day than before and I'm just trying to get something DONE. I mean really DONE.
