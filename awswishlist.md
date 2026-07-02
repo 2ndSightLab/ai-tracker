@@ -236,6 +236,15 @@ You need permissions
 You do not have the permission required to perform this operation. Ask your administrator to add permissions.
 You don't have permissions to access this resource.
 
+Digging through the logs I find this which is not very helpful - my user has full SSO permissions, is the root user for the account.
+
+```
+    "eventSource": "sso.amazonaws.com",
+    "eventName": "DescribeRegisteredRegions",
+   "errorCode": "AccessDenied",
+    "errorMessage": "An unknown error occurred",
+``` 
+
 🟠 AWS console when I try to add KMS key to identity center tells me that I do not have permissions to list aliases but when I go to CloudTrail I cannot find the failed action and error related to that attempt.
 
 
