@@ -270,6 +270,8 @@ The only error I find for ServiceLinkedRole is:
 ```
 Oh and then randomly I put a restriction on my SCP to only allow actions in region us-east-1. I hit the enable button wone more time. And it works. What? Is this just a timing issue? What is going on here it is very, very confusing.
 
+Oh and I forgot to mention I removed the permission to CreateServiceLinkedRole from the SCP before that also. So telling me I need to allow creation of a ServiceLinkedRole in the SCP which both Amazon Q and Google aimode was telling me to do was not the problem.
+
 🟠 AWS console when I try to add KMS key to identity center tells me that I do not have permissions to list aliases but when I go to CloudTrail I cannot find the failed action and error related to that attempt.
 
 🟠 When diagnosing someeting with Amazon Q need to be able to ask follow on questions when it gives incorrect or incomplete answer.
