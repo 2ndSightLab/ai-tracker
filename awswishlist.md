@@ -282,8 +282,7 @@ Aha I also had turned off all firewall rules so perhaps something was connecting
 
 <img width="866" height="447" alt="idc2" src="https://github.com/user-attachments/assets/a1d91996-1b26-404e-ad01-bde2b7f3e9b4" />
 
-
-
+🟠 Cannot remember if I wrote this already but Kiro console also tries to connect to AWS SSO regions all over the world rather than my selected region. Still says Q in the unified search dropdown and still seeing traffic to q and code whisperer domains.
 
 
 
