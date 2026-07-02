@@ -4,7 +4,7 @@
 
 **Date Range:** July 1 - 2, 2026
 
-Used up a full Kiro $200 plan in two days. New models were released and the agents are really spinnning their wheels again. I noticed an interesting graph but apparently it onlys shows metrics for inactive subscriptions. This shows credits burned in the last couple of days mostly trying to fix issues with requirements and bugs. (i.e. no real progress made just trying to get things working I thought were working before.)
+Used up a full Kiro $200 plan in two days. New models were released and the agents are really spinnning their wheels again. I noticed an interesting graph but apparently it onlys shows metrics for inactive subscriptions. This shows credits burned in the last couple of days mostly trying to fix issues with requirements and bugs. (i.e. no real progress made just trying to get things working I thought were working before.) I really think something is going on whenever new Anthropic models are release in AWS or on Anthropic or both. I'm going to try to track this better but as you can see burned way more tokens per day than before and I'm just trying to get something DONE. I mean really DONE.
 
 <img width="1308" height="561" alt="credit-usage" src="https://github.com/user-attachments/assets/7a4e5dad-c9cb-4f6d-b679-87971cbc6e2d" />
 
