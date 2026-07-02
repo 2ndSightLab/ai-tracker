@@ -271,4 +271,4 @@ The only error I find for ServiceLinkedRole is:
 
 🟠 AWS console when I try to add KMS key to identity center tells me that I do not have permissions to list aliases but when I go to CloudTrail I cannot find the failed action and error related to that attempt.
 
-
+🟠 When diagnosing someeting with Amazon Q need to be able to ask follow on questions when it gives incorrect or incomplete answer.
