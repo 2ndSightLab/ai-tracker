@@ -228,3 +228,7 @@ So as you can see there is no easy way for me to add an allow drift detection an
 
 <img width="566" height="575" alt="traffic" src="https://github.com/user-attachments/assets/eeafc136-cb9e-4a98-9e36-58ca760d8309" />
 
+🟠 Trying to use Amazon Q in console to create an SCP that allows creating a standaloen identity center instance and kiro and 1.) it gave me an SCP that doesn't work. 2.) It's too slow 3.) can't stop it once it starts thinking and thne it takes forever before I can correct what I wanted to ask. It's so slow right now I just shut it down.
+
+🟠 Trying to toubleshoot an SCP looking at countrail to figure out why it's blocking creation of stand alone identity center and nearly impossible to figure out. I can't filger on error messaes. The error messages are cryptic. I can't find the error mressages that are related to that specific action getting blocked. There's to omuch noise in the logs. There are too many other random failures for other services like health and cost and such. There's a dry run exception for Amazon Q. I try refreshing and performing the action again and still can't pinpoint the issue. Not all events have resource type / service in them.  Here's what I would expect: Go to to CLoudTrail. Filter on errors read only or not. Filter on Identity Cetner. Pinpoint the problem.
+
