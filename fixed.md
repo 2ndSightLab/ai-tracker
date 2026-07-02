@@ -8,7 +8,7 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 🟢 Added some info to cost tracking.
 
-🟡 Set up an account for Kiro in an Alt region in test account > So MANY PROBLEMS. See AWS Wish List
+🟢 Set up an account for Kiro in an Alt region in test account > So MANY PROBLEMS. See AWS Wish List >> THIS TOOK HOURS. SHOULD HAVE TAKEN MINUTES.
 
 ## 7/1/2026
 
