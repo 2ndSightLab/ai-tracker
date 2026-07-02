@@ -28,7 +28,15 @@ Track how long it takes and how much it costs to create projects with AI 🤖 in
 | June 13 - 17 9:00 pm | $200 plan | 100% | $67 | 4 | $16.75 | 
 | June 17 9:16PM - 23 3:00 AM | $200 plan | 100% | $120 | 6 | $20 | 
 | June 24 - 28 2:15 AM | $200 plan | 100% | 134.16 | 4 | $33.54 | 
-| Junly 1 - 2 4:00 AM | $200 plan | 100% | TBD | 2 | TBD | 
+| June 30 - June 30 ? | partial $200 plan | ? | $53.55 | < 1 | $53.55 | 
+
+Total Kiro charged for June: 	$457.71
+
+Note that I started a new $200 plan on the last day of June presumably a few hours before the UTC rollover time and the balance between what I was billed the full month and what I was billed prior to that was $53.55. Which equates to something like $20 per hour of churning nonsense since the models were going haywire at that point and didn't accomplish the current objective I was working on and was getting tons of noops. this was right after Fable came out. Happens every time a new Anthropic model comes out whether I have access to it or not.
+
+| Usage Dates | Plan | % usage | charges | days | cost per day
+| :---| :---: | :---: | :---: | :---: | :---: |
+| Junly 1 - 2 4:00 AM | $200 plan | 100% | 	$12.90 | 2 | $6.45 | 
 
 ## Support this research
 
