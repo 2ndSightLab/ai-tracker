@@ -6,6 +6,13 @@
 
 What is interesting here is that on the main readme I tracked cost per day and the cost per day is dramatically rising. Not sure if I'm really using it that much more. I have been working long hours all month. Seems like the cost is just going up. Also for each $200/month plan I started and canceled was not actually billed the full $200. Not sure if I'm going to get hit at the end of the month.
 
+**Date Range:** July 1 - 2, 2026
+
+Used up a full Kiro $200 plan in two days. New models were released and the agents are really spinnning their wheels again. I noticed an interesting graph but apparently it onlys shows metrics for inactive subscriptions. This shows credits burned in the last couple of days mostly trying to fix issues with requirements and bugs. (i.e. no real progress made just trying to get things working I thought were working before.)
+
+<img width="1308" height="561" alt="credit-usage" src="https://github.com/user-attachments/assets/7a4e5dad-c9cb-4f6d-b679-87971cbc6e2d" />
+
+
 ### Costs while building an AI Agent Bootstrap Script and Framework
 **Date Range:** Mar 7, 2026 - Jun 28, 2026
 
