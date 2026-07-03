@@ -81,6 +81,57 @@ Location:
 Run with COLORBT_SHOW_HIDDEN=1 environment variable to disable frame filtering.
 Run with RUST_BACKTRACE=full to include source snippets.
 
+# Daily Mistakes 2026-07-02
+
+```
+## Project 1
+20260702-020049 UTC M: New test asserted a state variable after capturing a render in a command-substitution subshell, so the reset inside the subshell did not surface and the assertion read a stale outer value. C: Assert subshell-local state by printing it inside the same subshell and parsing the captured output.
+20260702-020049 UTC M: New test expected the default banner on a menu whose own run-before hook re-sets the suppress flag, so the banner was correctly absent and the assertion failed. C: Test the default-banner path on a menu with no hook that sets the flag.
+20260702-061420 UTC M: Attempted to move repository records owned by another project using a malformed directory validation check. C: Never modify files outside the project; write an automated message for the owning project to handle them.
+20260702-061420 UTC M: A stale variable set by one render cycle leaked into the next because no cleanup routine reset it. C: Reset transient execution variables at the start of each display cycle.
+20260702-061420 UTC M: A shared list component applied a single-selection default on empty input, auto-selecting an item. C: Empty input on a multi-selection menu selects nothing and returns success; do not apply a default fallback.
+20260702-061420 UTC M: A runtime loop rewrote the trail logic with an active operation name, violating the isolation rules. C: An active operation must never modify the history trail; preserve the pre-action layout.
+20260702-061420 UTC M: An added requirement text entry exceeded the maximum length limit. C: Split long requirement entries into separate numbered items.
+20260702-061420 UTC M: A test asserted old behavior that a modification pass had removed. C: Update stale test assertions to match the updated contract when a requirement takes precedence.
+20260702-082700 UTC M: A navigation fix cleared a configuration variable too broadly, breaking a nested list re-render. C: On backward navigation, clear only the stale entry identifier; retain parent-scope configurations for the engine to manage.
+20260702-082700 UTC M: Two newly added requirement text entries exceeded the length limit. C: Keep each requirement entry under the maximum length; split or trim wording before saving.
+project-total: mistakes:10
+
+## Project 2
+20260702-040515 UTC M: A cross-project instruction named a directory that did not exist and used the wrong parent reference for the data store. C: Locate the real target directory under the sibling repository reference before acting and proceed with the correct path.
+project-total: mistakes:1
+
+## Project 3
+20260702-221100 UTC M: Asked a question already resolved by the agreed layout blueprint. C: Treat the confirmed mockup as the specification and implement it without re-asking.
+20260702-215257 UTC M: Marked issues unresolvable as engine-blocked without checking whether the core engine had since added the needed capability. C: Re-verify shared core functionality before marking an item unresolvable; reopen and implement when the capability lands.
+20260702-213628 UTC M: Asked for confirmation to proceed on a fix that was already specified and unblocked instead of executing it. C: When the implementation path is defined and unblocked, complete it without asking.
+20260702-212911 UTC M: ***** TRIED TO RUN S-U-D-O ***** Attempted an execution requiring elevated system permissions when unauthorized and unnecessary. C: Never attempt to execute elevated system commands; they are restricted and were not required.
+20260702-212837 UTC M: Ran a global project validator suite during development instead of targeting only the specific module under test. C: Run at most the single test file currently being verified; leave global integration checks to the final pipeline.
+20260702-211515 UTC M: Wrote long multi-paragraph responses to the terminal exceeding the 8-line output limit. C: Keep terminal output to 8 lines or less; log detailed output to text files.
+20260702-211515 UTC M: Left shared core documentation in a local module readme instead of a standard reference indicator. C: Reference global core sections; place explicit non-duplication markers in local sections.
+20260702-211515 UTC M: A string replacement routine removed a trailing line break and merged two requirement lines past the 100-character boundary. C: Verify one requirement per line and check character length limits after each modification.
+20260702-211515 UTC M: Asserted variable state after sourcing a handler module inside a command-substitution subshell, preventing state changes from propagating. C: Source handling scripts within the primary shell process for accurate state verification.
+20260702-211515 UTC M: Left a test checking that a handler utilizes navigation variables after removing that component's interface rendering. C: Update dependent tests when a handler stops rendering interface menus.
+20260702-211515 UTC M: Wrote long multi-paragraph responses to the terminal exceeding the 8-line output limit. C: Keep terminal output to 8 lines or less; log detailed output to text files.
+20260702-211515 UTC M: Left shared core documentation in a local module readme instead of a standard reference indicator. C: Reference global core sections; place explicit non-duplication markers in local sections.
+20260702-211515 UTC M: A string replacement routine removed a trailing line break and merged two requirement lines past the 100-character boundary. C: Verify one requirement per line and check character length limits after each modification.
+20260702-211515 UTC M: Asserted variable state after sourcing a handler module inside a command-substitution subshell, preventing state changes from propagating. C: Source handling scripts within the primary shell process for accurate state verification.
+20260702-211515 UTC M: Left a test checking that a handler utilizes navigation variables after removing that component's interface rendering. C: Update dependent tests when a handler stops rendering interface menus.
+project-total: mistakes:15
+
+## Project 4
+20260702-214719 UTC M: Marked an issue fixed based on an internal code trace, but the requirement mandated that the deletion helper explicitly clear the local record configuration, which it did not. C: Implement the exact behavior outlined in the issue description inside the target file, and create a reproduction test before marking it complete.
+20260702-213925 UTC M: Concluded an issue required a large structural redesign and almost rejected it, creating an incorrect initial execution pathway. C: Read the shared core logic first to find supported registration properties, wire the feature using existing integrations instead of a custom routine, and verify layout ordering on a running instance before updating assertions.
+20260702-204018 UTC M: Flagged a missing test asset and a script shell directive validation gap as requiring review, incorrectly treating a core compliance defect as out of scope. C: Fix required structural compliance defects immediately when discovered; standardize script directives, clean up redundant comments, and add mandatory tests.
+20260702-083500 UTC M: Built a custom standalone selection component when the operation belongs in the primary action graph and should utilize core engine execution pathways. C: Model pre-action selections as standard components in the main actions file using lifecycle hooks to leverage native navigation and selection utilities automatically.
+20260702-082847 UTC M: Stopped working after completing a partial fix and deferred the rest, instead of continuing until the task was fully complete. C: Work through every addressable open issue in a single pass; stop only when no actionable tasks remain.
+20260702-082514 UTC M: Deployed a shared helper module that aborted operations when help documentation was requested because it evaluated calls once without an active loop. C: Standalone helper scripts must maintain an execution loop while the documentation flag is active so help information re-renders properly and only explicit exit choices return execution control.
+20260702-082514 UTC M: Hand-coded an explicit display clear and selection reset routine when the shared layout engine already handles the display refresh. C: Allow the global engine layout to manage display clearing; configure only the specific labels and options, never clear or reset the terminal display manually.
+20260702-082514 UTC M: Wrote local module requirements that duplicated core platform behavior, enabling redundant documentation. C: Reference core documentation sections by heading only and do not restate global behaviors in local project specifications.
+20260702-082514 UTC M: Started modifying the global execution sequence via trial-and-error instead of consulting the system architecture documentation first. C: Read the core system documentation completely before modifying any code that relies on it.
+20260702-080713 UTC M: Claimed a module had no duplicated shared mechanisms...
+```
+
 # 2026-07-01
 
 Kiro is having trouble responding right now: 
@@ -241,6 +292,7 @@ Location:
 
 Run with COLORBT_SHOW_HIDDEN=1 environment variable to disable frame filtering.
 Run with RUST_BACKTRACE=full to include source snippets.
+
 # 2026-06-29
 
 My plan ran out so I coded manually. I can still do it. The problem I found was trying to deploy an S3 bucket with the naming convention that prevents typo-squatting turned up another error and I don't know how it happened. My AWS CLI version was somehow locked to an old version and wasn't updating and I did not realize it. I figured it out when Google AI mode (which I used for some commands since I ran out of Anthropic resources, suggested a bucket command and it wasn't working. After going around in circles turns out it is only suppored in a more recent version of the AWS CLI. The Anthropic models never told me this. I had to get a few commands to clear caches and such to get everything up to date. HMMMMMM.....
