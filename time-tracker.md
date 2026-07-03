@@ -4,7 +4,7 @@ This time is not 100% precise because it is very difficult to get the AI models 
 
 
 # Time Trend Analysis 2026-07-02
-
+```
 compared-to: 2026-07-01
 verdict: faster
 
@@ -110,9 +110,9 @@ day | mistakes
 
 most mistakes time period: 11PM to 12AM (56 mistakes)
 most mistakes day: 2026-06-27 (200 mistakes)
-
+```
 # Time Trend Analysis 2026-07-01
-
+```
 compared-to: 2026-06-28
 verdict: slower
 
@@ -218,9 +218,9 @@ day | mistakes
 
 most mistakes time period: 12AM to 1AM (77 mistakes)
 most mistakes day: 2026-06-27 (200 mistakes)
-
+```
 # Time Trend Analysis 2026-06-28
-
+```
 compared-to: 2026-06-27
 verdict: slower
 
@@ -424,9 +424,9 @@ day | mistakes
 
 most mistakes time period: 12AM to 1AM (91 mistakes)
 most mistakes day: 2026-06-27 (200 mistakes)
-
+```
 # Time Trend Analysis 2026-06-26
-
+```
 compared-to: 2026-06-25
 verdict: slower
 
@@ -524,7 +524,7 @@ day | mistakes
 
 most mistakes time period: 12AM to 1AM (85 mistakes)
 most mistakes day: 2026-06-26 (170 mistakes)
-
+```
 ## 6/27/2026 Checking Lines of Code
 
 Taking a look at lines of code added and removed in time logs for today so far - cleaning up a lot of dead code and fixing bugs:
