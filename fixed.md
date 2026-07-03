@@ -10,6 +10,8 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 🟢 Set up an account for Kiro in an Alt region in test account > So MANY PROBLEMS. See AWS Wish List >> THIS TOOK HOURS. SHOULD HAVE TAKEN MINUTES.
 
+🟢 For two days I tried to fix requirements and tests. I burned a $200 plan in less than two days. Today I started a new plan and refixed my bug fixing routine tracking fixed, blocked, etc. and got the tests all fixed finally. The model is crawling with various mistakes and errors on the mistakes page. Not stopping to log everything as I need to get things DONE.
+
 ## 7/1/2026
 
 🟢 Burned way too many tokens trying to fix some requirements that the agent was not properly formatting. It absolutely does not follow instrucctions for writing short requirements < 100 chars per line. Trying to fix them led to countless noops but it also coincided with a model release. Every time a model is released the agent performance degrades. Will try to log mistakes later. Got very frustrated.
