@@ -6,6 +6,20 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 ## 7/2/2026
 
+🟢 Added ability to align an existing rsource with a config resource so can update teh resource, redepoying with the new configuration (untested). For example use an existing OU with a different name and assign it to an OU in the configuration. That way the existing OU will be renamed and accounts in it wil be renamed to match the new confiugraiton (untested).
+
+🟢 Added a no confirm option to just deploy all resources wihtout confirming after each oen (untested).
+
+🟢 With deployment checking, can deploy resources in parallel with a rate limit to avoid hitting AWS rate limits. (untested)
+
+🟢 Added checking dependencies before deploying a resource based on resource deployment trackder. (untested)
+
+🟢 Added deployemnt trackign to trackthe id for a deployed resource and display a diagram in deploy project with aws id for the resource and the config-id from this app (untested)
+
+🟢 Added region settings with default region for entire org, region for managent resources, region overrides for environment, account, resource. (untested)
+
+🟢 Bug tracker/fixer method working pretty well. May still be burning a lot of tokens but makign decent progress; I still think there's something wrong with the model or harness but not as bad as before. But still very slow and getting hung up at time. Logged mistakes.
+
 🟢 Added some info to cost tracking.
 
 🟢 Set up an account for Kiro in an Alt region in test account > So MANY PROBLEMS. See AWS Wish List >> THIS TOOK HOURS. SHOULD HAVE TAKEN MINUTES.
