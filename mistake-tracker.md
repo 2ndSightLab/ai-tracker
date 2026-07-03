@@ -17,6 +17,13 @@ I'm just telling the model to increment the mistakes it's making +1 if it starts
 
 # 2026-07-02
 
+Um. What?
+
+ ● Execution failed after 0.1s:
+83042 occurrences of old_str were found when only 1 is expected
+
+_________
+
  Kiro is having trouble responding right now: 
    0: Failed to receive the next message: request_id: , error: InternalServerError: Encountered an unexpected error when processing the request, please try again.
 
