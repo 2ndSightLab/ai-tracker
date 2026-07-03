@@ -2,6 +2,529 @@
 
 This time is not 100% precise because it is very difficult to get the AI models to consistatently log time. I realized on 6/24 at 6:15 PM ET that the days before were logged incorrectly due to the model mangling the time tracking requirements I told it to write. Fixed that and found a way to get a bit better consistency and wrote some automated repoerts. As you can see the time tracking data can be lengthy so will probably just provide analysis after 6/25/26
 
+
+# Time Trend Analysis 2026-07-02
+
+compared-to: 2026-07-01
+verdict: faster
+
+current-day turns:259 total:~28121s overhead:~5440s est_tokens:~76358
+prior-day turns:119 total:~16955s overhead:~2377s est_tokens:~36546
+
+per-turn-change total:~-34s overhead:~2s est_tokens:~-13
+
+## Time of Day Analysis (window 2026-06-26..2026-07-02)
+note: all times shown in ET (Eastern Time)
+time period | turns | avg total | vs mean | days slowest
+note: days slowest = on how many of the 5 analyzed days this hour was the slowest hour
+8PM to 9PM | 56 | ~120s | +17% | 1/5
+9PM to 10PM | 40 | ~56s | -45% | 0/5
+10PM to 11PM | 30 | ~174s | +70% | 1/5
+11PM to 12AM | 55 | ~72s | -30% | 0/5
+12AM to 1AM | 69 | ~103s | +0% | 1/5
+1AM to 2AM | 63 | ~106s | +3% | 0/5
+2AM to 3AM | 49 | ~115s | +12% | 0/5
+3AM to 4AM | 33 | ~183s | +78% | 2/5
+4AM to 5AM | 44 | ~84s | -19% | 0/5
+5AM to 6AM | 8 | ~65s | -37% | 0/5
+10AM to 11AM | 3 | ~217s | +111% | 0/5
+11AM to 12PM | 4 | ~78s | -24% | 0/5
+1PM to 2PM | 9 | ~51s | -51% | 0/5
+2PM to 3PM | 48 | ~93s | -10% | 0/5
+3PM to 4PM | 55 | ~59s | -43% | 0/5
+4PM to 5PM | 61 | ~101s | -2% | 0/5
+5PM to 6PM | 48 | ~130s | +26% | 0/5
+6PM to 7PM | 26 | ~66s | -35% | 0/5
+7PM to 8PM | 47 | ~81s | -21% | 0/5
+
+slowest time period: 10AM to 11AM ~217s
+fastest time period: 1PM to 2PM ~51s
+gap: ~166s (~329% slower)
+variance: range ~166s cv 0.434 (LARGE, threshold 0.30)
+consistently slowest: none
+
+## Rework Analysis (window 2026-06-26..2026-07-02)
+note: all times shown in ET (Eastern Time)
+time period | rework
+8PM to 9PM | 32
+9PM to 10PM | 11
+10PM to 11PM | 10
+11PM to 12AM | 31
+12AM to 1AM | 69
+1AM to 2AM | 41
+2AM to 3AM | 12
+3AM to 4AM | 21
+4AM to 5AM | 23
+5AM to 6AM | 4
+10AM to 11AM | 1
+11AM to 12PM | 1
+12PM to 1PM | 0
+1PM to 2PM | 3
+2PM to 3PM | 14
+3PM to 4PM | 10
+4PM to 5PM | 19
+5PM to 6PM | 24
+6PM to 7PM | 12
+7PM to 8PM | 16
+
+day | rework
+2026-06-26 | 29
+2026-06-27 | 83
+2026-06-28 | 33
+2026-07-01 | 126
+2026-07-02 | 83
+
+most rework time period: 12AM to 1AM (69 rework)
+most rework day: 2026-07-01 (126 rework)
+
+## Mistake Analysis (window 2026-06-26..2026-07-02)
+note: all times shown in ET (Eastern Time)
+time period | mistakes
+8PM to 9PM | 36
+9PM to 10PM | 24
+10PM to 11PM | 46
+11PM to 12AM | 56
+12AM to 1AM | 42
+1AM to 2AM | 43
+2AM to 3AM | 39
+3AM to 4AM | 38
+4AM to 5AM | 38
+5AM to 6AM | 2
+10AM to 11AM | 5
+11AM to 12PM | 5
+12PM to 1PM | 8
+1PM to 2PM | 9
+2PM to 3PM | 28
+3PM to 4PM | 11
+4PM to 5PM | 41
+5PM to 6PM | 40
+6PM to 7PM | 39
+7PM to 8PM | 12
+
+day | mistakes
+2026-06-26 | 170
+2026-06-27 | 200
+2026-06-28 | 52
+2026-07-01 | 72
+2026-07-02 | 68
+
+most mistakes time period: 11PM to 12AM (56 mistakes)
+most mistakes day: 2026-06-27 (200 mistakes)
+
+# Time Trend Analysis 2026-07-01
+
+compared-to: 2026-06-28
+verdict: slower
+
+current-day turns:119 total:~16955s overhead:~2377s est_tokens:~36546
+prior-day turns:63 total:~5605s overhead:~632s est_tokens:~22754
+
+per-turn-change total:~54s overhead:~9s est_tokens:~-54
+
+## Time of Day Analysis (window 2026-06-25..2026-07-01)
+note: all times shown in ET (Eastern Time)
+time period | turns | avg total | vs mean | days slowest
+note: days slowest = on how many of the 5 analyzed days this hour was the slowest hour
+8PM to 9PM | 32 | ~180s | +80% | 1/5
+9PM to 10PM | 28 | ~47s | -53% | 1/5
+10PM to 11PM | 13 | ~319s | +219% | 1/5
+11PM to 12AM | 30 | ~93s | -7% | 0/5
+12AM to 1AM | 50 | ~105s | +5% | 1/5
+1AM to 2AM | 43 | ~79s | -21% | 0/5
+2AM to 3AM | 18 | ~24s | -76% | 0/5
+3AM to 4AM | 21 | ~102s | +2% | 1/5
+4AM to 5AM | 20 | ~61s | -39% | 0/5
+5AM to 6AM | 4 | ~59s | -41% | 0/5
+10AM to 11AM | 3 | ~217s | +116% | 0/5
+11AM to 12PM | 4 | ~78s | -22% | 0/5
+1PM to 2PM | 9 | ~51s | -50% | 0/5
+2PM to 3PM | 52 | ~88s | -12% | 0/5
+3PM to 4PM | 55 | ~59s | -41% | 0/5
+4PM to 5PM | 49 | ~84s | -16% | 0/5
+5PM to 6PM | 24 | ~112s | +12% | 0/5
+6PM to 7PM | 35 | ~54s | -47% | 0/5
+7PM to 8PM | 38 | ~90s | -10% | 0/5
+
+slowest time period: 10PM to 11PM ~319s
+fastest time period: 2AM to 3AM ~24s
+gap: ~295s (~1228% slower)
+variance: range ~295s cv 0.679 (LARGE, threshold 0.30)
+consistently slowest: none
+
+## Rework Analysis (window 2026-06-25..2026-07-01)
+note: all times shown in ET (Eastern Time)
+time period | rework
+8PM to 9PM | 24
+9PM to 10PM | 5
+10PM to 11PM | 10
+11PM to 12AM | 30
+12AM to 1AM | 63
+1AM to 2AM | 30
+2AM to 3AM | 3
+3AM to 4AM | 10
+4AM to 5AM | 13
+5AM to 6AM | 1
+10AM to 11AM | 1
+11AM to 12PM | 1
+12PM to 1PM | 0
+1PM to 2PM | 3
+2PM to 3PM | 15
+3PM to 4PM | 10
+4PM to 5PM | 16
+5PM to 6PM | 15
+6PM to 7PM | 11
+7PM to 8PM | 16
+
+day | rework
+2026-06-25 | 6
+2026-06-26 | 29
+2026-06-27 | 83
+2026-06-28 | 33
+2026-07-01 | 126
+
+most rework time period: 12AM to 1AM (63 rework)
+most rework day: 2026-07-01 (126 rework)
+
+## Mistake Analysis (window 2026-06-25..2026-07-01)
+note: all times shown in ET (Eastern Time)
+time period | mistakes
+8PM to 9PM | 36
+9PM to 10PM | 28
+10PM to 11PM | 66
+11PM to 12AM | 76
+12AM to 1AM | 77
+1AM to 2AM | 47
+2AM to 3AM | 35
+3AM to 4AM | 38
+4AM to 5AM | 27
+5AM to 6AM | 2
+10AM to 11AM | 5
+11AM to 12PM | 5
+12PM to 1PM | 8
+1PM to 2PM | 9
+2PM to 3PM | 30
+3PM to 4PM | 11
+4PM to 5PM | 33
+5PM to 6PM | 24
+6PM to 7PM | 38
+7PM to 8PM | 15
+
+day | mistakes
+2026-06-25 | 116
+2026-06-26 | 170
+2026-06-27 | 200
+2026-06-28 | 52
+2026-07-01 | 72
+
+most mistakes time period: 12AM to 1AM (77 mistakes)
+most mistakes day: 2026-06-27 (200 mistakes)
+
+# Time Trend Analysis 2026-06-28
+
+compared-to: 2026-06-27
+verdict: slower
+
+current-day turns:63 total:~5605s overhead:~632s est_tokens:~22754
+prior-day turns:244 total:~18879s overhead:~4772s est_tokens:~64956
+
+per-turn-change total:~11s overhead:~-9s est_tokens:~95
+
+## Time of Day Analysis (window 2026-06-22..2026-06-28)
+note: all times shown in ET (Eastern Time)
+time period | turns | avg total | vs mean | days slowest
+note: days slowest = on how many of the 7 analyzed days this hour was the slowest hour
+8PM to 9PM | 34 | ~170s | +151% | 2/7
+9PM to 10PM | 67 | ~20s | -71% | 1/7
+10PM to 11PM | 57 | ~32s | -52% | 1/7
+11PM to 12AM | 28 | ~85s | +26% | 1/7
+12AM to 1AM | 46 | ~56s | -18% | 0/7
+1AM to 2AM | 40 | ~50s | -26% | 0/7
+2AM to 3AM | 18 | ~24s | -64% | 0/7
+3AM to 4AM | 21 | ~102s | +51% | 1/7
+4AM to 5AM | 20 | ~61s | -9% | 0/7
+5AM to 6AM | 4 | ~59s | -12% | 0/7
+1PM to 2PM | 5 | ~35s | -48% | 0/7
+2PM to 3PM | 26 | ~78s | +16% | 0/7
+3PM to 4PM | 34 | ~91s | +35% | 1/7
+4PM to 5PM | 34 | ~82s | +21% | 0/7
+5PM to 6PM | 19 | ~83s | +23% | 0/7
+6PM to 7PM | 40 | ~54s | -19% | 0/7
+7PM to 8PM | 23 | ~64s | -5% | 0/7
+
+slowest time period: 8PM to 9PM ~170s
+fastest time period: 9PM to 10PM ~20s
+gap: ~150s (~764% slower)
+variance: range ~150s cv 0.512 (LARGE, threshold 0.30)
+consistently slowest: none
+
+## Rework Analysis (window 2026-06-22..2026-06-28)
+note: all times shown in ET (Eastern Time)
+time period | rework
+8PM to 9PM | 24
+9PM to 10PM | 5
+10PM to 11PM | 7
+11PM to 12AM | 21
+12AM to 1AM | 10
+1AM to 2AM | 10
+2AM to 3AM | 3
+3AM to 4AM | 10
+4AM to 5AM | 13
+5AM to 6AM | 1
+1PM to 2PM | 0
+2PM to 3PM | 8
+3PM to 4PM | 5
+4PM to 5PM | 12
+5PM to 6PM | 10
+6PM to 7PM | 10
+7PM to 8PM | 10
+
+day | rework
+2026-06-22 | 0
+2026-06-23 | 3
+2026-06-24 | 5
+2026-06-25 | 6
+2026-06-26 | 29
+2026-06-27 | 83
+2026-06-28 | 33
+
+most rework time period: 8PM to 9PM (24 rework)
+most rework day: 2026-06-27 (83 rework)
+
+## Mistake Analysis (window 2026-06-22..2026-06-28)
+note: all times shown in ET (Eastern Time)
+time period | mistakes
+8PM to 9PM | 57
+9PM to 10PM | 56
+10PM to 11PM | 69
+11PM to 12AM | 75
+12AM to 1AM | 91
+1AM to 2AM | 70
+2AM to 3AM | 41
+3AM to 4AM | 42
+4AM to 5AM | 27
+5AM to 6AM | 2
+1PM to 2PM | 4
+2PM to 3PM | 17
+3PM to 4PM | 57
+4PM to 5PM | 35
+5PM to 6PM | 31
+6PM to 7PM | 53
+7PM to 8PM | 23
+
+day | mistakes
+2026-06-22 | 47
+2026-06-23 | 83
+2026-06-24 | 82
+2026-06-25 | 116
+2026-06-26 | 170
+2026-06-27 | 200
+2026-06-28 | 52
+
+most mistakes time period: 12AM to 1AM (91 mistakes)
+most mistakes day: 2026-06-27 (200 mistakes)
+
+compared-to: 2026-06-26
+verdict: unchanged
+
+current-day turns:244 total:~18879s overhead:~4772s est_tokens:~64956
+prior-day turns:73 total:~5641s overhead:~1513s est_tokens:~16470
+
+per-turn-change total:~0s overhead:~-1s est_tokens:~41
+
+## Time of Day Analysis (window 2026-06-21..2026-06-27)
+note: all times shown in ET (Eastern Time)
+time period | turns | avg total | vs mean | days slowest
+note: days slowest = on how many of the 7 analyzed days this hour was the slowest hour
+8PM to 9PM | 8 | ~424s | +450% | 2/7
+9PM to 10PM | 44 | ~10s | -87% | 1/7
+10PM to 11PM | 48 | ~0s | -100% | 0/7
+11PM to 12AM | 23 | ~80s | +4% | 1/7
+12AM to 1AM | 46 | ~56s | -28% | 0/7
+1AM to 2AM | 40 | ~50s | -35% | 0/7
+2AM to 3AM | 18 | ~24s | -69% | 0/7
+3AM to 4AM | 21 | ~102s | +32% | 1/7
+4AM to 5AM | 20 | ~61s | -20% | 0/7
+5AM to 6AM | 4 | ~59s | -23% | 0/7
+1PM to 2PM | 5 | ~35s | -55% | 0/7
+2PM to 3PM | 26 | ~78s | +2% | 0/7
+3PM to 4PM | 34 | ~91s | +18% | 1/7
+4PM to 5PM | 34 | ~82s | +6% | 0/7
+5PM to 6PM | 19 | ~83s | +8% | 0/7
+6PM to 7PM | 62 | ~35s | -54% | 1/7
+7PM to 8PM | 37 | ~40s | -48% | 0/7
+
+slowest time period: 8PM to 9PM ~424s
+fastest time period: 10PM to 11PM ~0s
+gap: ~424s (~0% slower)
+variance: range ~424s cv 1.182 (LARGE, threshold 0.30)
+consistently slowest: none
+
+## Rework Analysis (window 2026-06-21..2026-06-27)
+note: all times shown in ET (Eastern Time)
+time period | rework
+8PM to 9PM | 4
+9PM to 10PM | 3
+10PM to 11PM | 0
+11PM to 12AM | 17
+12AM to 1AM | 10
+1AM to 2AM | 10
+2AM to 3AM | 3
+3AM to 4AM | 10
+4AM to 5AM | 13
+5AM to 6AM | 1
+1PM to 2PM | 0
+2PM to 3PM | 8
+3PM to 4PM | 5
+4PM to 5PM | 12
+5PM to 6PM | 10
+6PM to 7PM | 10
+7PM to 8PM | 10
+
+day | rework
+2026-06-21 | 0
+2026-06-22 | 0
+2026-06-23 | 3
+2026-06-24 | 5
+2026-06-25 | 6
+2026-06-26 | 29
+2026-06-27 | 83
+
+most rework time period: 11PM to 12AM (17 rework)
+most rework day: 2026-06-27 (83 rework)
+
+## Mistake Analysis (window 2026-06-21..2026-06-27)
+note: all times shown in ET (Eastern Time)
+time period | mistakes
+8PM to 9PM | 41
+9PM to 10PM | 50
+10PM to 11PM | 52
+11PM to 12AM | 62
+12AM to 1AM | 91
+1AM to 2AM | 70
+2AM to 3AM | 41
+3AM to 4AM | 43
+4AM to 5AM | 27
+5AM to 6AM | 2
+1PM to 2PM | 4
+2PM to 3PM | 17
+3PM to 4PM | 76
+4PM to 5PM | 49
+5PM to 6PM | 31
+6PM to 7PM | 53
+7PM to 8PM | 34
+
+day | mistakes
+2026-06-21 | 45
+2026-06-22 | 47
+2026-06-23 | 83
+2026-06-24 | 82
+2026-06-25 | 116
+2026-06-26 | 170
+2026-06-27 | 200
+
+most mistakes time period: 12AM to 1AM (91 mistakes)
+most mistakes day: 2026-06-27 (200 mistakes)
+
+# Time Trend Analysis 2026-06-26
+
+compared-to: 2026-06-25
+verdict: slower
+
+current-day turns:73 total:~5641s overhead:~1513s est_tokens:~16470
+prior-day turns:29 total:~978s overhead:~344s est_tokens:~7682
+
+per-turn-change total:~44s overhead:~9s est_tokens:~-39
+
+## Time of Day Analysis (window 2026-06-20..2026-06-26)
+note: all times shown in ET (Eastern Time)
+time period | turns | avg total | vs mean | days slowest
+note: days slowest = on how many of the 6 analyzed days this hour was the slowest hour
+8PM to 9PM | 2 | ~0s | -100% | 1/6
+9PM to 10PM | 43 | ~8s | -87% | 1/6
+10PM to 11PM | 48 | ~0s | -100% | 0/6
+11PM to 12AM | 10 | ~105s | +69% | 1/6
+12AM to 1AM | 15 | ~74s | +19% | 0/6
+1AM to 2AM | 17 | ~72s | +17% | 0/6
+3AM to 4AM | 10 | ~121s | +95% | 1/6
+2PM to 3PM | 4 | ~39s | -37% | 0/6
+3PM to 4PM | 5 | ~263s | +323% | 1/6
+4PM to 5PM | 19 | ~49s | -21% | 0/6
+5PM to 6PM | 5 | ~42s | -32% | 0/6
+6PM to 7PM | 45 | ~19s | -70% | 1/6
+7PM to 8PM | 22 | ~14s | -77% | 0/6
+
+slowest time period: 3PM to 4PM ~263s
+fastest time period: 8PM to 9PM ~0s
+gap: ~263s (~0% slower)
+variance: range ~263s cv 1.110 (LARGE, threshold 0.30)
+consistently slowest: none
+
+## Rework Analysis (window 2026-06-20..2026-06-26)
+note: all times shown in ET (Eastern Time)
+time period | rework
+8PM to 9PM | 0
+9PM to 10PM | 0
+10PM to 11PM | 0
+11PM to 12AM | 5
+12AM to 1AM | 3
+1AM to 2AM | 4
+2AM to 3AM | 0
+3AM to 4AM | 7
+4AM to 5AM | 0
+12PM to 1PM | 0
+1PM to 2PM | 0
+2PM to 3PM | 1
+3PM to 4PM | 3
+4PM to 5PM | 8
+5PM to 6PM | 2
+6PM to 7PM | 3
+7PM to 8PM | 7
+
+day | rework
+2026-06-20 | 0
+2026-06-21 | 0
+2026-06-22 | 0
+2026-06-23 | 3
+2026-06-24 | 5
+2026-06-25 | 6
+2026-06-26 | 29
+
+most rework time period: 4PM to 5PM (8 rework)
+most rework day: 2026-06-26 (29 rework)
+
+## Mistake Analysis (window 2026-06-20..2026-06-26)
+note: all times shown in ET (Eastern Time)
+time period | mistakes
+8PM to 9PM | 24
+9PM to 10PM | 51
+10PM to 11PM | 32
+11PM to 12AM | 41
+12AM to 1AM | 85
+1AM to 2AM | 63
+2AM to 3AM | 33
+3AM to 4AM | 32
+4AM to 5AM | 13
+12PM to 1PM | 5
+1PM to 2PM | 1
+2PM to 3PM | 8
+3PM to 4PM | 69
+4PM to 5PM | 45
+5PM to 6PM | 22
+6PM to 7PM | 46
+7PM to 8PM | 30
+
+day | mistakes
+2026-06-20 | 57
+2026-06-21 | 45
+2026-06-22 | 47
+2026-06-23 | 83
+2026-06-24 | 82
+2026-06-25 | 116
+2026-06-26 | 170
+
+most mistakes time period: 12AM to 1AM (85 mistakes)
+most mistakes day: 2026-06-26 (170 mistakes)
+
 ## 6/27/2026 Checking Lines of Code
 
 Taking a look at lines of code added and removed in time logs for today so far - cleaning up a lot of dead code and fixing bugs:
