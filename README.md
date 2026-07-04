@@ -28,7 +28,8 @@ Track how long it takes and how much it costs to create projects with AI 🤖 in
 | June 13 - 17 9:00 pm | $200 plan | 100% | $67 | 4 | $16.75 | 
 | June 17 9:16PM - 23 3:00 AM | $200 plan | 100% | $120 | 6 | $20 | 
 | June 24 - 28 2:15 AM | $200 plan | 100% | 134.16 | 4 | $33.54 | 
-| June 30 - June 30 ? | partial $200 plan | ? | $53.55 | < 1 | $53.55 | 
+| June 30 - July 1 | partial $200 plan | ? | $53.55 | < 1 | $53.55 | 
+| July 2 - July 3 | $200 plan | 100% | 2 | 90.5 | (new account, mult-agent bug fixes) 
 
 Total Kiro charged for June: 	$457.71
 
