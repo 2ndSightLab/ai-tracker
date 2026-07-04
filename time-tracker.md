@@ -3,39 +3,39 @@
 This time is not 100% precise because it is very difficult to get the AI models to consistatently log time. I realized on 6/24 at 6:15 PM ET that the days before were logged incorrectly due to the model mangling the time tracking requirements I told it to write. Fixed that and found a way to get a bit better consistency and wrote some automated repoerts. As you can see the time tracking data can be lengthy so will probably just provide analysis after 6/25/26
 
 # Time Trend Analysis 2026-07-04 
-(day is not over testing report - will update later)
+(day is not over testing report - will update later - model is currently very slow was faster in wee hours of the a.m.)
 
 ```
 compared-to: 2026-07-03
 verdict: faster
 
-current-day turns:120 total:~14804s overhead:~2333s est_tokens:~26314
-prior-day turns:251 total:~893519s overhead:~4208s est_tokens:~64103
+current-day turns:64 total:~9775s overhead:~1174s est_tokens:~13667
+prior-day turns:274 total:~546419s overhead:~4706s est_tokens:~64703
 
-per-turn-change total:~-3436s overhead:~3s est_tokens:~-36
+per-turn-change total:~-1842s overhead:~1s est_tokens:~-23
 
-current-day code lines added:953 removed:282 net:671
+current-day code lines added:744 removed:186 net:558
 
 ## Time of Day Analysis (window 2026-06-28..2026-07-04)
 note: all times shown in ET (Eastern Time)
 time period | turns | avg total | vs mean | days slowest
 note: days slowest = on how many of the 5 analyzed days this hour was the slowest hour
-8PM to 9PM | 74 | ~56s | -94% | 0/5
-9PM to 10PM | 51 | ~76s | -92% | 0/5
-10PM to 11PM | 38 | ~149s | -84% | 1/5
-11PM to 12AM | 60 | ~5922s | +541% | 0/5
+8PM to 9PM | 57 | ~48s | -95% | 0/5
+9PM to 10PM | 43 | ~87s | -91% | 0/5
+10PM to 11PM | 35 | ~139s | -85% | 1/5
+11PM to 12AM | 60 | ~5922s | +541% | 1/5
 12AM to 1AM | 58 | ~5586s | +505% | 3/5
 1AM to 2AM | 41 | ~5113s | +454% | 0/5
 2AM to 3AM | 50 | ~175s | -81% | 0/5
-3AM to 4AM | 36 | ~158s | -83% | 1/5
+3AM to 4AM | 36 | ~158s | -83% | 0/5
 4AM to 5AM | 24 | ~102s | -89% | 0/5
 5AM to 6AM | 4 | ~71s | -92% | 0/5
 10AM to 11AM | 7 | ~177s | -81% | 0/5
 11AM to 12PM | 18 | ~121s | -87% | 0/5
 12PM to 1PM | 9 | ~42s | -95% | 0/5
 1PM to 2PM | 31 | ~80s | -91% | 0/5
-2PM to 3PM | 43 | ~123s | -87% | 0/5
-3PM to 4PM | 47 | ~62s | -93% | 0/5
+2PM to 3PM | 45 | ~118s | -87% | 0/5
+3PM to 4PM | 55 | ~74s | -92% | 0/5
 4PM to 5PM | 40 | ~141s | -85% | 0/5
 5PM to 6PM | 41 | ~134s | -85% | 0/5
 6PM to 7PM | 29 | ~106s | -88% | 0/5
@@ -50,9 +50,9 @@ consistently slowest: 12AM to 1AM 3/5
 ## Rework Analysis (window 2026-06-28..2026-07-04)
 note: all times shown in ET (Eastern Time)
 time period | rework
-8PM to 9PM | 22
+8PM to 9PM | 12
 9PM to 10PM | 13
-10PM to 11PM | 9
+10PM to 11PM | 6
 11PM to 12AM | 22
 12AM to 1AM | 76
 1AM to 2AM | 36
@@ -65,29 +65,29 @@ time period | rework
 12PM to 1PM | 0
 1PM to 2PM | 11
 2PM to 3PM | 16
-3PM to 4PM | 15
+3PM to 4PM | 21
 4PM to 5PM | 7
 5PM to 6PM | 12
 6PM to 7PM | 7
 7PM to 8PM | 5
 
 day | rework
-2026-06-28 | 13
-2026-07-01 | 108
-2026-07-02 | 81
-2026-07-03 | 51
-2026-07-04 | 48
+2026-06-30 | 15
+2026-07-01 | 106
+2026-07-02 | 77
+2026-07-03 | 58
+2026-07-04 | 38
 
 most rework time period: 12AM to 1AM (76 rework)
-most rework day: 2026-07-01 (108 rework)
+most rework day: 2026-07-01 (106 rework)
 
 ## Mistake Analysis (window 2026-06-28..2026-07-04)
 note: all times shown in ET (Eastern Time)
 time period | mistakes
-8PM to 9PM | 36
-9PM to 10PM | 27
-10PM to 11PM | 33
-11PM to 12AM | 41
+8PM to 9PM | 20
+9PM to 10PM | 21
+10PM to 11PM | 16
+11PM to 12AM | 28
 12AM to 1AM | 37
 1AM to 2AM | 24
 2AM to 3AM | 19
@@ -99,28 +99,28 @@ time period | mistakes
 12PM to 1PM | 11
 1PM to 2PM | 22
 2PM to 3PM | 29
-3PM to 4PM | 24
+3PM to 4PM | 28
 4PM to 5PM | 34
 5PM to 6PM | 35
 6PM to 7PM | 22
 7PM to 8PM | 22
 
 day | mistakes
-2026-06-28 | 52
-2026-07-01 | 72
-2026-07-02 | 68
-2026-07-03 | 178
-2026-07-04 | 93
+2026-06-30 | 12
+2026-07-01 | 65
+2026-07-02 | 78
+2026-07-03 | 216
+2026-07-04 | 44
 
-most mistakes time period: 11PM to 12AM (41 mistakes)
-most mistakes day: 2026-07-03 (178 mistakes)
+most mistakes time period: 12AM to 1AM (37 mistakes)
+most mistakes day: 2026-07-03 (216 mistakes)
 
 ## Bug Categories (2026-07-04)
 category | count
-fixed | 381
-rejected | 1
-bugs open | 21
-n/a design changed | 13
+fixed | 50
+rejected | 0
+bugs open | 72
+n/a design changed | 2
 ```
 # Time Trend Analysis 2026-07-03
 ```
