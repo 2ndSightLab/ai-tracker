@@ -127,51 +127,51 @@ n/a design changed | 13
 compared-to: 2026-07-02
 verdict: slower
 
-current-day turns:251 total:~893519s overhead:~4208s est_tokens:~64103
-prior-day turns:244 total:~27496s overhead:~5293s est_tokens:~74555
+current-day turns:274 total:~546419s overhead:~4706s est_tokens:~64703
+prior-day turns:210 total:~376622s overhead:~5195s est_tokens:~64097
 
-per-turn-change total:~3447s overhead:~-5s est_tokens:~-50
+per-turn-change total:~201s overhead:~-7s est_tokens:~-69
 
-current-day code lines added:649 removed:219 net:430
+current-day code lines added:749 removed:299 net:450
 
 ## Time of Day Analysis (window 2026-06-27..2026-07-03)
 note: all times shown in ET (Eastern Time)
 time period | turns | avg total | vs mean | days slowest
 note: days slowest = on how many of the 5 analyzed days this hour was the slowest hour
-8PM to 9PM | 66 | ~97s | -92% | 1/5
-9PM to 10PM | 31 | ~64s | -95% | 0/5
-10PM to 11PM | 24 | ~174s | -86% | 1/5
-11PM to 12AM | 43 | ~8225s | +569% | 0/5
-12AM to 1AM | 34 | ~9369s | +662% | 2/5
-1AM to 2AM | 41 | ~5113s | +316% | 0/5
-2AM to 3AM | 50 | ~175s | -86% | 0/5
-3AM to 4AM | 38 | ~155s | -87% | 1/5
-4AM to 5AM | 24 | ~102s | -92% | 0/5
+8PM to 9PM | 74 | ~56s | -95% | 0/5
+9PM to 10PM | 51 | ~76s | -93% | 0/5
+10PM to 11PM | 38 | ~149s | -87% | 2/5
+11PM to 12AM | 60 | ~5922s | +433% | 1/5
+12AM to 1AM | 34 | ~9369s | +743% | 2/5
+1AM to 2AM | 41 | ~5113s | +360% | 0/5
+2AM to 3AM | 50 | ~175s | -84% | 0/5
+3AM to 4AM | 38 | ~155s | -86% | 0/5
+4AM to 5AM | 24 | ~102s | -91% | 0/5
 5AM to 6AM | 4 | ~71s | -94% | 0/5
-10AM to 11AM | 7 | ~177s | -86% | 0/5
-11AM to 12PM | 18 | ~121s | -90% | 0/5
-12PM to 1PM | 9 | ~42s | -97% | 0/5
-1PM to 2PM | 31 | ~80s | -94% | 0/5
-2PM to 3PM | 24 | ~120s | -90% | 0/5
+10AM to 11AM | 7 | ~177s | -84% | 0/5
+11AM to 12PM | 18 | ~121s | -89% | 0/5
+12PM to 1PM | 9 | ~42s | -96% | 0/5
+1PM to 2PM | 31 | ~80s | -93% | 0/5
+2PM to 3PM | 24 | ~120s | -89% | 0/5
 3PM to 4PM | 39 | ~60s | -95% | 0/5
-4PM to 5PM | 40 | ~141s | -88% | 0/5
-5PM to 6PM | 41 | ~134s | -89% | 0/5
-6PM to 7PM | 30 | ~106s | -91% | 0/5
+4PM to 5PM | 40 | ~141s | -87% | 0/5
+5PM to 6PM | 41 | ~134s | -88% | 0/5
+6PM to 7PM | 30 | ~106s | -90% | 0/5
 7PM to 8PM | 41 | ~69s | -94% | 0/5
 
 slowest time period: 12AM to 1AM ~9369s
 fastest time period: 12PM to 1PM ~42s
 gap: ~9326s (~22089% slower)
-variance: range ~9326s cv 2.238 (LARGE, threshold 0.30)
+variance: range ~9326s cv 2.244 (LARGE, threshold 0.30)
 consistently slowest: none
 
 ## Rework Analysis (window 2026-06-27..2026-07-03)
 note: all times shown in ET (Eastern Time)
 time period | rework
-8PM to 9PM | 24
-9PM to 10PM | 11
-10PM to 11PM | 6
-11PM to 12AM | 16
+8PM to 9PM | 22
+9PM to 10PM | 13
+10PM to 11PM | 9
+11PM to 12AM | 22
 12AM to 1AM | 62
 1AM to 2AM | 36
 2AM to 3AM | 17
@@ -190,22 +190,22 @@ time period | rework
 7PM to 8PM | 5
 
 day | rework
-2026-06-27 | 10
-2026-06-28 | 13
-2026-07-01 | 108
-2026-07-02 | 81
-2026-07-03 | 51
+2026-06-27 | 16
+2026-06-30 | 15
+2026-07-01 | 106
+2026-07-02 | 77
+2026-07-03 | 58
 
 most rework time period: 12AM to 1AM (62 rework)
-most rework day: 2026-07-01 (108 rework)
+most rework day: 2026-07-01 (106 rework)
 
 ## Mistake Analysis (window 2026-06-27..2026-07-03)
 note: all times shown in ET (Eastern Time)
 time period | mistakes
-8PM to 9PM | 42
-9PM to 10PM | 30
-10PM to 11PM | 46
-11PM to 12AM | 51
+8PM to 9PM | 36
+9PM to 10PM | 27
+10PM to 11PM | 33
+11PM to 12AM | 41
 12AM to 1AM | 41
 1AM to 2AM | 34
 2AM to 3AM | 27
@@ -224,21 +224,21 @@ time period | mistakes
 7PM to 8PM | 26
 
 day | mistakes
-2026-06-27 | 200
-2026-06-28 | 52
-2026-07-01 | 72
-2026-07-02 | 68
-2026-07-03 | 178
+2026-06-27 | 167
+2026-06-30 | 12
+2026-07-01 | 65
+2026-07-02 | 78
+2026-07-03 | 216
 
-most mistakes time period: 11PM to 12AM (51 mistakes)
-most mistakes day: 2026-06-27 (200 mistakes)
+most mistakes time period: 5PM to 6PM (44 mistakes)
+most mistakes day: 2026-07-03 (216 mistakes)
 
 ## Bug Categories (2026-07-03)
 category | count
-fixed | 156
+fixed | 481
 rejected | 0
-bugs open | 0
-n/a design changed | 4
+bugs open | 2
+n/a design changed | 16
 ```
 
 # Time Trend Analysis 2026-07-02
