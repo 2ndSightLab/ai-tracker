@@ -125,6 +125,10 @@ Run with COLORBT_SHOW_HIDDEN=1 environment variable to disable frame filtering.
 Run with RUST_BACKTRACE=full to include source snippets.
 ```
 
+Even after I thought the claimed bug path was fixed - I saw it make the correction - it somehow reverted. I think it reverted because the project wrote the bug wrong after it had ALREADY FIXED IT. Then it went back and messed up the desripction again. WHAT?????
+
+Also after having SO MANY TESTS the projects still managed to screw up the menus again. When I ran the orchestrator the jump to teh deploy step no longer worked!! HOW MANY TIMES DO I HAVE TO FIX THIS? The instructions for how it is implmented is in the bootstrap rojects and everything references that and still it keeps getting messed up. Then I asked the test project to explain why it was broken to log a bug and it ANALYZED INCORRECTLY. It saw the problem was related to the bootstrap project and yet it failed to read bootstrpa readme. What is so hard about that? Why does it repeatedly get this wrong and why do the proejcts eternally mess up mensu? I have pulled almost every piece of code related to menus they can mess up out of the project and they still find a way.
+
 
 # 2026-07-03
 
