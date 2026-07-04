@@ -37,7 +37,7 @@ Note that I started a new $200 plan on the last day of June presumably a few hou
 | Usage Dates | Plan | % usage | charges | days | cost per day
 | :---| :---: | :---: | :---: | :---: | :---: |
 | Junly 1 - 2 4:00 AM | $200 plan | 100% | 	$12.90 | 2 | $6.45 | 
-| July 2 - July 3 | $200 plan | 100% | 181 | 2 | 90.5 | (new account, mult-agent bug fixes) 
+| July 2 - July 3 | $200 plan | 100% | 181 | 2 | $90.5 | (new account, mult-agent bug fixes) 
 
 
 ## Support this research
