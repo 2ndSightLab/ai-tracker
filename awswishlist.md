@@ -300,4 +300,6 @@ Aha I also had turned off all firewall rules so perhaps something was connecting
 +    26:   notBefore Feb 17 2026, notAfter Mar 18 2027
 
 
+🟠 Trying to create a new Kiro subscription and it fails. The only message in CloudTrail is for Q not Kiro and the error message is not helpful:
 
+"errorMessage": "Your account is not authorized to make this call.",
