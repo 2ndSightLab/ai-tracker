@@ -56,11 +56,9 @@ spun on the hung-up terminal. Contributing factors: no pty/setsid wrapper (a han
 group); no timeout/process-group kill on the interactive path (unlike <SCRIPT_NAME>.sh, which wraps its call in 
 timeout -s KILL with empty stdin); and a launch-script bug leaving an empty variable (the double space).
 
-Root-only confirmation (I was denied — ptrace: Operation not permitted, and /proc/<PARENT_PID>/{fd,io,syscall,stack} are 
-root-owned): run sudo bash /usr/local/share/<PROJECT_DIR>/<AGENT_NAME>/mem/scripts/report-<PARENT_PID>.sh. It captures the 
-exact repeating syscall (strace), the polled fds, kernel stack, and a per-syscall count — which will directly show the 
-poll/read busy-loop. It does not kill the process; it just prints the kill -9 command for you to run after review.
-
+Running some root commands:
+Definitive conclusion: PID xxxxxxx is a stuck sudo/kiro-cli chat --agent xxxxxxx launcher whose controlling terminal
+was destroyed, now spinning on failing writes. Hammering the CPU.
 
 # 2026-07-05
 
