@@ -4,6 +4,12 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
+## 7/6/2026
+
+🟢 Recreated check bugs script. NOt sure what happened to it. Bug reports in test project were becoming super annoying to get it to show me the list of open bugs and counts so hopefully now it will just run that script and be accurate.
+
+🟢 Moved all the renaming and reconciliation code to a separate project because the main project keeps screwing it up. Hoping more focus will get it right.
+
 ## 7/5/2026
 
 🟢 Been fixing tons of bugs. So many bugs. 
