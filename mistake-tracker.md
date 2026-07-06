@@ -16,6 +16,8 @@ The mistake tracker is a new part of the project added a few months in. This is 
 
 # 2026-07-05
 
+Mistakes today were RIDICULOUS. AI not replacing me any time soon if this is how it operates. 2.5 hours or something on the same bug repeatedly so finally I walked it though step by step and guided to answer. Now still having problems with that same code. Will post mistakes later.
+
 Failed to validate tool parameters: The provided path must exist in order to replace or insert contents into it
 
 Model is slow and making mistakes around 1:12 AM
