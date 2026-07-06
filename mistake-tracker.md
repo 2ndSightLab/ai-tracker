@@ -20,45 +20,155 @@ So slow today.
 
 OMG SO SLOW.
 
-- The outer sudo binary (comm=sudo) from an agent launch, now orphaned.
-- PID <PARENT_PID>, PPid=1 (reparented to init — its launcher is gone), State R, 1 thread, RSS only 7856 kB.
-- cmdline: sudo -u <RUN_USER> bash -l -c /usr/local/bin/<CLI_TOOL> chat  --agent "<AGENT_NAME>"
-- Started 2026-07-06T01:12:08Z (from /proc starttime + btime; exe link mtime matches).
-- Its only child, PID <CHILD_PID>, is a sudo zombie (Z/<defunct>) it never reaped.
-- Note the double space chat  --agent — the launcher expanded an empty variable there. No --no-interactive, no prompt, 
-so it's an interactive session launch, not the batch <SCRIPT_NAME>.sh call.
+Well, this explains why it is so slow right now. But this does not explain the earlier model mistakes. Those two things should not be convoluted together. I frequently kill all my agents when starting up when things get slow. In fact I have a specific kill-all-agents script that I use for that puropose and then I check ps and lsof to see what's running. So I know this particular issue is not the source of all slowness I've reported. It's jsut the source of slowness at this moment. 
 
-What it is doing — hammering the kernel (the part you asked to keep)
-- Lifetime CPU at 16h15m age (from /proc/…/stat fields 14/15, CLK_TCK=100): user 4514s, system 34432s, total 38946s (
-10.82h of CPU). Kernel share = 88%.
-- Live 2s samples, repeated and consistent: 100% of one core, 89–92% of it in kernel/system time.
-- nonvoluntary_ctxt_switches: 2,427,320 — millions; the scheduler keeps preempting a process that never sleeps. That is
-a busy-spin.
-- Meaning: sudo sits in a poll/select event loop waiting to forward signals and reap its child. The child already died 
-(zombie, unreaped) and the controlling terminal/pty went away when the launcher died, so the fd it polls is permanently
-"ready" (POLLHUP/EOF). Each iteration: poll() returns instantly → read()/waitpid() gets nothing → loop again, no 
-blocking, no sleep. That is the kernel hammering — ~90% of a core spent issuing poll/read/wait syscalls that return 
-immediately, forever. It is not running <CLI_TOOL> (that child is dead) and computes nothing.
+In addition, the mistakes the model is making is coming from servers external to my machine so it does not explain other mistakes.
 
-How it got there
-1. 01:12:08Z <LAUNCHER_USER> (uid 1000) launched an interactive 
-sudo -u <RUN_USER> bash -l -c '<CLI_TOOL> chat  --agent "<AGENT_NAME>"'.
-2. sudo forked worker child <CHILD_PID> to exec under <RUN_USER>.
-3. The session's terminal/parent died or detached without tearing down sudo → sudo reparented to init (PPid=1).
-4. The child exited but was never wait()ed → became a zombie; sudo's cleanup never completed.
-5. sudo's monitor loop lost its blocking condition (hung-up pty now always signals ready) and began spinning, unable to
-exit. It has spun since.
+Bug Report: Orphaned sudo process spinning at 100% CPU (PID <PARENT_PID>)
 
-What caused it (root cause)
-An interactive sudo … <CLI_TOOL> chat agent session was launched without a durable session/pty and without cleanup on 
-session end. When the terminal/parent went away, sudo was orphaned, its child left unreaped, and its poll loop busy-
-spun on the hung-up terminal. Contributing factors: no pty/setsid wrapper (a hangup orphans sudo instead of killing the
-group); no timeout/process-group kill on the interactive path (unlike <SCRIPT_NAME>.sh, which wraps its call in 
-timeout -s KILL with empty stdin); and a launch-script bug leaving an empty variable (the double space).
+Collected: 2026-07-06 ~17:33 UTC by the <AGENT_NAME> agent, from /proc only.
+Reporter privileges: uid=1245(<AGENT_NAME>). Could NOT strace or read the
+root-owned /proc/<pid>/{fd,io,syscall,stack} (Operation not permitted).
+The process was NOT killed.
 
-Running some root commands:
-Definitive conclusion: PID xxxxxxx is a stuck sudo/kiro-cli chat --agent xxxxxxx launcher whose controlling terminal
-was destroyed, now spinning on failing writes. Hammering the CPU.
+================================================================
+1. WHAT IT IS
+================================================================
+It is the OUTER sudo binary from an agent launch, now orphaned.
+
+  PID     : <PARENT_PID>
+  comm    : sudo            (Name: sudo in /proc/<PARENT_PID>/status)
+  PPid    : 1               (reparented to init/systemd -> its launcher is gone)
+  Uid     : 1000 0 0 0      (started by <LAUNCHER_USER> (uid 1000), sudo is setuid-root)
+  State   : R (running)     (on-CPU, not sleeping/blocked)
+  Threads : 1
+  VmRSS   : 7856 kB         (tiny; it is not doing real work/allocating)
+  cmdline : sudo -u <RUN_USER> bash -l -c /usr/local/bin/<CLI_TOOL> chat  --agent "<AGENT_NAME>"
+  started : 2026-07-06T01:12:08Z  (from /proc stat starttime + /proc/stat btime)
+  exe link mtime: 2026-07-06 01:12:09Z  (matches launch time)
+
+Its ONLY child:
+  PID     : <CHILD_PID>
+  comm    : sudo
+  State   : Z (zombie / <defunct>)
+  PPid    : <PARENT_PID>         (parent is <PARENT_PID>, which never reaped it)
+
+Note the cmdline has a DOUBLE SPACE: "<CLI_TOOL> chat  --agent". That means the
+launcher built the command with an empty variable between "chat" and "--agent"
+(e.g. <CLI_TOOL> chat ${SOME_EMPTY_VAR} --agent ...). It is an INTERACTIVE launch:
+there is no --no-interactive and no prompt argument, so it is a person/session
+launch, NOT the batch <SCRIPT_NAME>.sh call (that one always passes
+--no-interactive --trust-all-tools --wrap never and a prompt).
+
+================================================================
+2. WHAT IT IS DOING  --  HAMMERING THE KERNEL
+================================================================
+It is doing NO useful work. It is stuck in a tight, non-blocking loop that
+pounds the kernel with syscalls that return immediately. Proof:
+
+Lifetime CPU (from /proc/<PARENT_PID>/stat fields 14/15, CLK_TCK=100), at 16h15m age:
+  user   = 4514 s
+  system = 34432 s
+  total  = 38946 s  (10.82 hours of CPU burned)
+  KERNEL SHARE = 88%   <-- almost all time is in the kernel, not userspace
+
+Live sampling (repeated, consistent):
+  sample A (2s window): user +17tk system +183tk => 100% of one core, 92% kernel
+  sample B (2s window): user +22tk system +179tk => 100% of one core, 89% kernel
+
+Context switches (from /proc/<PARENT_PID>/status):
+  voluntary_ctxt_switches    : 81153
+  nonvoluntary_ctxt_switches : 2,427,320  <-- millions; scheduler keeps
+                                              preempting a process that never
+                                              sleeps, i.e. a busy-spin
+
+Interpretation of the signature (R state + ~90% system time + millions of
+involuntary context switches + a tiny RSS + an unreaped zombie child):
+sudo runs the real command in a child and then sits in an event loop
+(poll/select over its signal pipe + the controlling tty/pty) waiting to
+forward signals and reap that child. Here the loop degenerated:
+  - the child sudo (<CHILD_PID>) already exited and is a zombie it never reaped, and
+  - the controlling terminal/pty the parent was monitoring went away when the
+    original launching process died (that is why PPid is now 1).
+So the fd sudo polls is permanently "ready" (hung-up tty / closed pipe returns
+POLLHUP/EOF instantly). Each loop iteration: poll() returns immediately ->
+read()/waitpid() returns nothing new -> loop again, with no blocking wait and
+no sleep. That is the kernel hammering: it is spending ~90% of a core issuing
+poll/read/wait syscalls that return instantly, forever. It is not running
+<CLI_TOOL> (that child is dead) and it is not computing anything.
+
+================================================================
+3. HOW IT GOT THERE  (sequence of events)
+================================================================
+1. At 2026-07-06T01:12:08Z, <LAUNCHER_USER> (uid 1000) launched an INTERACTIVE agent
+   session: sudo -u <RUN_USER> bash -l -c '/usr/local/bin/<CLI_TOOL> chat  --agent "<AGENT_NAME>"'.
+   (The double space shows a launcher variable expanded to empty.)
+2. sudo forked its worker child (<CHILD_PID>) to exec bash/<CLI_TOOL> under <RUN_USER>.
+3. The session's controlling terminal / parent process died or detached
+   (SSH/tmux pane closed, terminal hung up, or the wrapper exited) WITHOUT
+   tearing down this sudo. sudo (<PARENT_PID>) was reparented to init (PPid=1).
+4. The child (<CHILD_PID>) terminated but was never wait()ed on by <PARENT_PID>, so it
+   became a zombie (Z). The parent's cleanup path never completed.
+5. sudo's monitor loop lost its blocking condition (dead pty/pipe now always
+   signals ready) and began spinning, unable to exit because it is still trying
+   to finish handling the child it failed to reap. It has spun ever since.
+
+================================================================
+4. WHAT CAUSED IT  (root cause)
+================================================================
+A launcher started an interactive `sudo ... <CLI_TOOL> chat` agent session
+without a durable session/pty and without cleaning up sudo when the session
+ended. When the parent/terminal went away, sudo was orphaned, its child was
+left unreaped (zombie), and its poll-based monitor loop busy-spun on the
+hung-up terminal. Contributing factors to fix:
+  a) Interactive `sudo bash -l -c '<CLI_TOOL> chat ...'` launched without a pty
+     wrapper (no setsid/pty) so a terminal hangup orphans sudo instead of
+     killing the whole group. <SCRIPT_NAME>.sh correctly wraps its call in
+     `timeout -s KILL` and feeds empty stdin; the interactive launcher does not.
+  b) The launcher builds the command with an empty variable (double space
+     "chat  --agent"), evidence of an unset/blank option variable in the
+     launch script -- worth fixing so the intended flag is passed.
+  c) No timeout / no process-group kill on the interactive path, so a stuck
+     sudo runs forever (16h+ here).
+
+Recommended fixes:
+  - Launch agents in their own session/pty (setsid + a pty, or systemd-run
+    --pty --scope) so a terminal hangup kills the whole group, not orphans sudo.
+  - Bound even interactive sessions, or have a reaper that kills orphaned
+    `sudo -u <agent> ... <CLI_TOOL> chat` whose PPID has become 1 and whose child
+    is defunct.
+  - Fix the empty variable in the launch command (the double space).
+
+================================================================
+5. CONFIRMED BY ROOT strace + lsof (2026-07-06 ~17:38 UTC)
+================================================================
+strace -f -c over ~3s (the exact busy-loop, PROOF):
+  % time   seconds   usecs/call  calls    errors  syscall
+  42.09    0.147103  4           31565            rt_sigaction
+  34.89    0.121938  7           15782    15782    write     <-- 100% FAIL
+  23.03    0.080479  5           15782            ppoll
+  ----------------------------------------------------------
+  100.00   0.349520  5           63129    15782    total
+
+So in ~3s the process made ~63,000 syscalls (~5,000 loop iterations/sec).
+Each iteration is: rt_sigaction (reinstall handlers) x2 -> write() -> ppoll().
+EVERY write() FAILS (15782 calls / 15782 errors). That failing write is the
+core of the spin.
+
+lsof shows WHY the write fails -- the terminal was destroyed:
+  fd 0u,1u,2u -> CHR 136,10 /dev/pts/10 (deleted)   <-- stdin/out/err all
+                                                        point to a DELETED pty
+  fd 9u       -> /dev/ptmx                           <-- sudo ran in pty mode
+  fd 8u       -> /dev/tty
+  fd 3r/4w,10r/12w -> pipes (sudo's signal/monitor self-pipes)
+  txt -> /usr/bin/sudo   (legitimate binary, not replaced)
+
+EXACT MECHANISM (now proven, replaces the earlier hypothesis):
+sudo was running in PTY mode (it allocated a pty via /dev/ptmx to run the
+command; fd 9). The pty slave /dev/pts/10 was the session terminal. When the
+launching SSH/terminal session went away, /dev/pts/10 was revoked and is now
+"(deleted)". sudo's I/O-relay monitor loop...
+
 
 # 2026-07-05
 
