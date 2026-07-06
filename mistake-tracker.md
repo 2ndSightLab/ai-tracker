@@ -24,6 +24,7 @@ Well, this explains why it is so slow right now. But this does not explain the e
 
 In addition, the mistakes the model is making is coming from servers external to my machine so it does not explain other mistakes.
 
+```
 Bug Report: Orphaned sudo process spinning at 100% CPU (PID <PARENT_PID>)
 
 Collected: 2026-07-06 ~17:33 UTC by the <AGENT_NAME> agent, from /proc only.
@@ -168,7 +169,7 @@ sudo was running in PTY mode (it allocated a pty via /dev/ptmx to run the
 command; fd 9). The pty slave /dev/pts/10 was the session terminal. When the
 launching SSH/terminal session went away, /dev/pts/10 was revoked and is now
 "(deleted)". sudo's I/O-relay monitor loop...
-
+```
 
 # 2026-07-05
 
