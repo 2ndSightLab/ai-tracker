@@ -12,6 +12,7 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 🟢 Bugs tracked after moving rename to separate project.
 
+```
 REJECTED BUGS TO FIX:
   none
 
@@ -27,6 +28,7 @@ botz-env-deploy-vpc-config          0         0        0     1      0
 botz-run-aws-command                0         0        0     0      3
 botz-tests                          0         0        0     1      6
 TOTAL                              18         0       10    35   1026
+``
 
 ## 7/5/2026
 
