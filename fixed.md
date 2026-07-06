@@ -10,6 +10,24 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 🟢 Moved all the renaming and reconciliation code to a separate project because the main project keeps screwing it up. Hoping more focus will get it right.
 
+🟢 Bugs tracked after moving rename to separate project.
+
+REJECTED BUGS TO FIX:
+  none
+
+PROJECT                          OPEN  REJECTED  CANTFIX    NA  FIXED
+bash-menus                          0         0        0     2      9
+bash-xml-parser                     0         0        0     0      2
+botz-config-org                     2         0        0     2     50
+botz-config-org-types               1         0        1     3     61
+botz-deploy                        11         0        9    26    894
+botz-env-cli-role-profile           4         0        0     0      0
+botz-env-deploy-bootstrap-role      0         0        0     0      1
+botz-env-deploy-vpc-config          0         0        0     1      0
+botz-run-aws-command                0         0        0     0      3
+botz-tests                          0         0        0     1      6
+TOTAL                              18         0       10    35   1026
+
 ## 7/5/2026
 
 🟢 Been fixing tons of bugs. So many bugs. 
