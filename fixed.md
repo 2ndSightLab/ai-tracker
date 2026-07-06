@@ -4,6 +4,16 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
+## 7/5/2026
+
+🟢 Been fixing tons of bugs. So many bugs. 
+
+🟢 Revamped all the resources to work the same way working through them.
+
+🟢 One stupid issue forever to assume a role and switch roles between acocunts; move criticla code in that gregard out to anoter project.
+
+🟢 It's always the security adn roles code. Working on another related problem now to assume role. Why do I feel like the AI is copmletely subversive when it is working with crednetials. Now it's asking me over and over about a security account when that really doesn't matter. Hmm.
+
 ## 7/2/2026
 
 🟢 Added ability to align an existing rsource with a config resource so can update teh resource, redepoying with the new configuration (untested). For example use an existing OU with a different name and assign it to an OU in the configuration. That way the existing OU will be renamed and accounts in it wil be renamed to match the new confiugraiton (untested).
