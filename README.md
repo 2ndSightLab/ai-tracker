@@ -382,17 +382,11 @@ Network resources shared to environmeng via RAM
 | VPC Endpoints | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | VPC Flow Logs Role | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Remote Access Prefix List | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Remote Access (Work) VPC | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Remote Access Subnet |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Remote Access Security Group | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Remote Access Internet Gateway | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Remote Access Route Table | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Remote Access NACLs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Remote Access VPC Ram Shares | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Remote Access VPC Flowlogs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| AWS Services Prefix Lists | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| VPC Ram Shares | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Delete default VPCs | n/a | n/a | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| SSH Security Group | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| RDP Security Group | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| SSH Security Group | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| RDP Security Group | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | HTTP/HTTPS Security Group | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Account: log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
@@ -402,7 +396,7 @@ Account where people log into EC2 instances.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Base Ubuntu Instance Role | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Base Ubuntu Instance Role | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Base Ubuntu ENI | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Base Ubuntu Instance | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Base Ubuntu AMI | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
@@ -430,7 +424,6 @@ Account where people log into EC2 instances.
 | Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | IPAM pool | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | IPAM EIP allocation | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| S3 buckets (no KMS) | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | S3 buckets (with KMS) | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Bucket policies | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
@@ -566,9 +559,9 @@ IAM users in work environment
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Account, Move to OU, Alias | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| KMS Log Key | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| KMS Log Key Alias | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| KMS Log Key Policy | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| KMS Log Key | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| KMS Log Key Alias | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| KMS Log Key Policy | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
 ### Accounting Acount 
 
