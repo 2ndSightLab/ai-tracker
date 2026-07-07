@@ -13,11 +13,11 @@ Track how long it takes and how much it costs to create projects with AI 🤖 in
 | 🟡 | Deploy Environment & Resources
 | 🟡 | Verify Environment & Resources
 | 🟡 | Delete Environent & Resources
-| 🟡 | Manage Drift
+| 🔴 | Manage Drift
 | 🟡 | Packaged Code
 | 🟡 | QA
-| 🟡 | Code Review
-| 🟡 | Security Testing
+| 🔴 | Code Review
+| 🔴 | Security Testing
 
 
 ## Token / Credit Usage
@@ -283,7 +283,6 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Select Account | 🟢 | 🟢 | 🟢  | 🔴 | 🔴 |
 | Deploy Account Resources | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
-
 ### Drift Actions 
 
 | Feature | Run | Tested | Code Review | Security Review |
@@ -291,8 +290,6 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Drift Report | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Drift Delete Unauthorized Resources | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Drift Deploy Missing Resources | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
-
-## Resource Deployment Steps 
 
 ### Deploy Org Resources ###
 
@@ -312,68 +309,55 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 
 | SCP: deny-external-access | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Delete Default VPCs (all accouts in env | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Sets budgets on all accounts | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | SCP: account specific OU only allowing resources deployed | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | SCP: for different regions than org regions (more restrictive) | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Rename OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ### Account Resources - every account ###
+
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Accounts | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Move account to OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Account alias | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Admin roles  | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Admin role policy | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-
-
-## Kiro Environment
-
-### Env OU
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Budgets | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Delete Default VPCs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| SCP Deny external | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Admin roles | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-
-### Kiro Account
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Account (kiro mangement) | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Standalone Identity Center | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Kiro | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-
+| Delete Default VPC | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Rename account, alias, email, name | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ## Deny All Environment
 
-#### Env OU
-
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Budgets | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Delete Default VPCs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| SCP: deny-all | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Deny All SCP | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
-## Work Environment
-
-### Env OU
+## Test Environment
 
 Environment where people log into EC2 instances.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| SCP | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| SCP | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 
+| Accounts | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Budgets | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delete Default VPCS | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Admin roles | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Delete Default VPCs || 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Admin roles | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| VPCs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| KMS Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| KMS Keys | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Network Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| VCPs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| IGWs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Subnets | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Network ACLs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Route Table + Routes | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| SGs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| VPC Endpoints | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Repo Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Code Commit Repo | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
 ### IAM Account
 
