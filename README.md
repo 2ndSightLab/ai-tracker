@@ -174,6 +174,14 @@ Separate reusable project provides simple and xml driven menus for consistency a
 | /c to return to previous menu | 🟢 | 🔴 | 🔴 |
 | common banner with lines above and below and text between | 🟢 | 🔴 | 🔴 |
 
+### AWS Command Runner
+
+| Feature | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | 
+| Run AWS Command | 🟢 | 🔴 | 🔴 |
+| Track Deployed Resources | 🟢 | 🔴 | 🔴 |
+| Switch Role (org/acount) | 🟢 | 🔴 | 🔴 |
+
 ### Time tracker
 
 | Feature | Tested | Code Review | Security Review |
@@ -229,6 +237,8 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Default Org (define mangemnt env) | 🟢 | n/a | n/a | n/a | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Default Org (define backup env) | 🟢 | n/a | n/a | n/a | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Resource type Dependencies | 🟢 | 🟢 | 🟢 |🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Bootstrap / Account Role Resource Confit | 🟢 | 🟢 | 🟢 |🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+
 
 ### Configure Organization Types Actions ##
 
