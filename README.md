@@ -377,10 +377,10 @@ Network resources shared to environmeng via RAM
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Acoount resources | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| VPC  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| IGWs  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Subnets  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Network ACLs  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| VPC | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| IGWs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Subnets | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Network ACLs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Route Table + Routes | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | SGs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | VPC Endpoints | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
