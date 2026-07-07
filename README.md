@@ -425,7 +425,7 @@ Account where people log into EC2 instances.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Acoount resources || 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Acoount resources | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | IPAM pool | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | IPAM EIP allocation | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | S3 buckets (with KMS) | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
