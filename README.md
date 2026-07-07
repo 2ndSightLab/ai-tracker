@@ -344,7 +344,7 @@ Environment where people log into EC2 instances.
 | SCP | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 
 | Accounts | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Budgets | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delete Default VPCs || 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Delete Default VPCs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Admin roles | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
