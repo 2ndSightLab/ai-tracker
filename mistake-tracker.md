@@ -226,6 +226,8 @@ Run with COLORBT_SHOW_HIDDEN=1 environment variable to disable frame filtering.
 Run with RUST_BACKTRACE=full to include source snippets.
 ```
 
+Figured out that 
+
 # 2026-07-05
 
 Mistakes today were RIDICULOUS. AI not replacing me any time soon if this is how it operates. 2.5 hours or something on the same bug repeatedly so finally I walked it though step by step and guided to answer. Now still having problems with that same code. Will post mistakes later.
