@@ -354,6 +354,7 @@ IAM users in work environment
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Acoount resources | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | IAM User | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
 ### KMS Account
@@ -362,6 +363,7 @@ KMS keys used in enviroment
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Acoount resources | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | KMS keys | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | KMS policies | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | KMS key aliases | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
@@ -396,14 +398,14 @@ Account where people log into EC2 instances.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Base Ubuntu Instance Role | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Base Ubuntu ENI | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Base Ubuntu Instance | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Acoount resources | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Base Ubuntu AMI | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Base Amazon Linux Instance Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Base Amaxon Linux ENI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Base Amazon Linux Instance | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | Base Amazon Linux AMI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Burp AMI | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Collab AMI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Kiro Dev AMI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Claude Code Ami | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Codex Ami | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Repos Account
 
@@ -411,7 +413,7 @@ Account where people log into EC2 instances.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Acoount resources || 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Code Commit Repo | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 | ECR | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
@@ -421,7 +423,7 @@ Account where people log into EC2 instances.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Acoount resources || 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | IPAM pool | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | IPAM EIP allocation | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | S3 buckets (with KMS) | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
@@ -431,13 +433,13 @@ Account where people log into EC2 instances.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Account, Move to OU, Alias | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Acoount resources | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ### Web Account
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Account, Move to OU, Alias | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Acoount resources || 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Webs | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
 | log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
@@ -447,7 +449,7 @@ If I use CloudFront have to allow us-east-1 for ACM Cert. Lock down when not aci
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Account, Move to OU, Alias | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 
+| Acoount resources | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Job Auth Lambdas | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Auth Lambda VPC Config | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | ACM Certificate | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
@@ -459,7 +461,7 @@ If I use CloudFront have to allow us-east-1 for ACM Cert. Lock down when not aci
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Account, Move to OU, Alias | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Acoount resources | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | S3 buckets | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Job Instance Role | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Job ENI | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
@@ -473,10 +475,7 @@ Some enviroments may include penetration testing and security research resources
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Account - iam | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Account - project | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Account - kms | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Account - ami | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Acoount resources | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Burp ENI | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Burp Instance Role | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Burp Instance | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
@@ -513,6 +512,7 @@ IAM users in work environment
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Acoount resources | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Identity Center |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Kiro |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
