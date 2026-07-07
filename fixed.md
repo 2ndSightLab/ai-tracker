@@ -6,6 +6,14 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 ## 7/6/2026
 
+## Bug Categories (2026-07-05)
+
+category | count
+fixed | 299
+rejected | 0
+bugs open | 0
+n/a design changed | 2
+
 🟢 Recreated check bugs script. Not sure what happened to it. Bug reports in test project were becoming super annoying to get it to show me the list of open bugs and counts so hopefully now it will just run that script and be accurate.
 
 🟢 Moved all the renaming and reconciliation code to a separate project because the main project keeps screwing it up. Hoping more focus will get it right.
