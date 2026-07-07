@@ -14,6 +14,83 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/response-time.md
 
 The mistake tracker is a new part of the project added a few months in. This is not super scientific as it is hard to quantify. I'm just telling the model to increment the mistakes it's making +1 if it starts making a bunch of mistakes. This is not every mistakes mostly only when I start getting annoyed. :-D The mistakes are largely worded by the AI agent and sometimes it does not capture the correct mistake but I don't always fix that because I just want to get stuff done. It generally captures a valid mistake but not the one I actually wanted it to log. So these are all valid just some are missing I didn't bother to fix to the correct mistake. I don't care about typooooos this is just a fast as possible log. Trying to get things done. Note missing days/times may be because the model deleted the data or because I took some time off. In some cases I have to work on other things...
 
+# 2026-07-07
+
+Did an analysis of what is causing the most churn and token usage in logs. Here's what the agent found:
+```
+# Mistake-log churn / time / token analysis 20260707
+
+## Scope
+Read every sibling project mistakes.md and time.md under PROJECTS_DIR (read-only).
+1003 total mistake (M:) lines across 17 projects.
+
+## Theme counts across all M: lines
+110  diagnosis: unverified claims / theorizing before reproducing
+137  domain: menu engine logic (mostly bash-menus breadcrumb/banner/MENU_*)
+106  cross-project confusion (handoff, orchestrator, other-project edits)
+ 89  process: asking instead of acting / deferring
+ 81  process: time / timestamp logging
+ 52  process: verbosity / narration over line limit
+ 48  process: README requirement-line formatting (100-char)
+ 47  quality: tests pass while code still broken
+ 46  process: memory logging (verbatim)
+ 44  process: acting before reading readmes
+ 37  code: duplication
+ 28  code: banned constructs (eval/export/function/suppress)
+ 21  tooling: no-op verify str_replace edits
+  7  forbidden: git commands
+
+## Per-project turns / rework / time (time < 10000s to drop malformed lines)
+botz-tests                 turns 1086  rework 234  time 73585s
+bash-menus                 turns   93  rework 108  time 13725s
+botz-config-org            turns  111  rework  74  time 33317s
+botz-time-tracker          turns   92  rework  36  time  7514s
+botz-rename-org-resources  turns   55  rework  32  time 10151s
+botz-env-cli-role-profile  turns   45  rework  16  time  4873s
+botz-config-org-types      turns   32  rework  16  time 11274s
+botz-deploy                turns   41  rework  10  time  5240s
+botz-bootstrap             turns   46  rework  10  time  1294s
+
+## Most time-expensive single turns (realistic, with desc when present)
+1887s rw3 bash-menus
+1882s rw(all-rework) botz-config-org-types: removed Manage Dependencies action selector
+1320s rw1 botz-config-org-types: reworked Manage Dependencies to shared multi-pick
+1024s rw18 bash-menus
+ 979s rw16 bash-menus
+1014s rw2 botz-config-org-types: reworked write path off raw xmllint after guard test
+ 737s rw11 bash-menus
+
+## Highest-churn turns (rework count)
+rw18 bash-menus 1024s ; rw16 bash-menus 979s ; rw14 bash-menus 612s ;
+rw12 bash-menus 354s ; rw11 bash-menus 737s
+All top-churn turns are bash-menus and correlate with breadcrumb/banner/MENU_ state work.
+
+## Conclusions
+Longest tasks: bash-menus navigation/breadcrumb engine work and
+botz-config-org(-types) dependency/multi-select UI work. These combine
+high time AND high rework.
+Most churn: bash-menus MENU_* state (breadcrumb leaking across nested loops,
+banner re-render, Main Menu cross-project handoff).
+Most tokens: not directly attributable — most time.md lines carry no
+est_tokens or it is per-turn only; botz-tests est_tokens absent, and its
+total: fields are malformed (timestamps parsed as seconds).
+Biggest systemic cost driver: diagnosis before verification (110) plus
+tests-pass-while-broken (47) — churn comes from acting on unverified theories
+then reworking, especially where tests did not exercise real behavior.
+
+## Recommended additional tracking to pinpoint cost
+1 Add a task-type / category tag field to each time.md line (e.g. cat:menu-nav,
+  cat:xml, cat:test, cat:req-edit) so time and rework roll up by task type.
+2 Record est_tokens on every line without exception; several lines omit it so
+  token cost cannot be summed. Add prompt_tokens and response_tokens separately.
+3 Add an iterations/attempts count per turn distinct from rework (retries to
+  reach a passing state) to separate churn-from-error vs long-single-pass work.
+4 Link each mistake entry to the time.md turn (shared turn id) so a mistake's
+  token and time cost is measurable, not just its text.
+5 Tag rework with a cause code (unverified-diagnosis, test-gap, format,
+  cross-project) so the dominant churn driver is quantified, not inferred.
+6 Fix botz-tests time.md malformed total: fields so its 1086 turns are usable.
+```
 # 2026-07-06
 
 So slow today.
