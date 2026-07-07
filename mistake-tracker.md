@@ -16,7 +16,7 @@ The mistake tracker is a new part of the project added a few months in. This is 
 
 # 2026-07-07
 
-Did an analysis of what is causing the most churn and token usage in logs. Here's what the agent found. First it said tokens were missing but tokens is just an estimated caludation. I also re-renan the analysis for the last three daays with that calculated value and here's what it said:
+Did an analysis of what is causing the most churn and token usage in logs. Here's what the agent found. First it said tokens were missing but tokens is just an estimated caludation. I also re-renan the analysis for the last three daays with that calculated value and here's what it said. And since my test project is the one creting the most churn, I have some specific things I am going to do to turn some of that into deterministic code to reduce what that project does.
 
 ```
 # Calculated-token report, last three days (07-05, 07-06, 07-07)
