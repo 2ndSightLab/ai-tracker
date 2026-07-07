@@ -366,9 +366,9 @@ KMS keys used in enviroment
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Acoount resources | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| KMS keys | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| KMS policies | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| KMS key aliases | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| KMS keys | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| KMS policies | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| KMS key aliases | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
 ### Network Account
 
@@ -376,12 +376,12 @@ Network resources shared to environmeng via RAM
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| VPC | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| VCPs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| IGWs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Subnets | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Network ACLs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Route Table + Routes | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Acoount resources | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| VPC  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| IGWs  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Subnets  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Network ACLs  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Route Table + Routes | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | SGs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | VPC Endpoints | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | VPC Flow Logs Role | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
