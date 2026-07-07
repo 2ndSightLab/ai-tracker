@@ -30,6 +30,10 @@ botz-tests                          0         0        0     1      6
 TOTAL                              18         0       10    35   1026
 ```
 
+🟢 Finally got acocunt/ou rename with email, alias, role name - had to finally do some of it myself. The agent could never figure out that different roles were needed for different things. Account email has to be changed with a management role while alias needs to be changed with the account role. Also I made a dumb mistake. A role on a moved account had some one weird one-off emai. And that right there is why I want to automate this and have everything be consistent.
+
+🟢 No prompt gets through all the organizational resources fairly quickly with some parallelization and dependency checking but not fully. It's still forcing a wait on screen for some things which needs to be fixed. It also says it deploys things and that things already exist when they do not. Where are they going?? Tomorrow.
+
 ## 7/5/2026
 
 🟢 Been fixing tons of bugs. So many bugs. 
