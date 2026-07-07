@@ -284,6 +284,8 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Deploy Env Resources | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Select Account | 🟢 | 🟢 | 🟢  | 🔴 | 🔴 |
 | Deploy Account Resources | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Deployed Resources Tracking | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Deployed Resources Diagram | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ### Drift Actions 
 
