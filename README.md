@@ -178,9 +178,11 @@ Separate reusable project provides simple and xml driven menus for consistency a
 
 | Feature | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | 
-| Time analysis | 🟢 | 🔴 | 🔴 |
-| Report time logs per day | 🟢 | 🔴 | 🔴 |
-| Report mistake logs per day | 🟢 | 🔴 | 🔴 |
+| Analysis Report | 🟢 | 🔴 | 🔴 |
+| Report time (logs per day) | 🟢 | 🔴 | 🔴 |
+| Report mistake (logs per day) | 🟢 | 🔴 | 🔴 |
+| Bug Report | 🟢 | 🔴 | 🔴 |
+| Run all tests (all projects) | 🟢 | 🔴 | 🔴 |
 
 ### Global Requirements
 
@@ -330,7 +332,7 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Deny All SCP | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Deny All SCP | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ## Test Environment
 
@@ -428,6 +430,22 @@ Account where people log into EC2 instances.
 | IPAM EIP allocation | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | S3 buckets (with KMS) | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Bucket policies | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Acoount resources | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Kiro Dev ENI | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Kiro Instance Role | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Kiro Instance | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Burp ENI | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Burp Instance Role | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Burp Instance | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Collab ENI | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Collab Instance Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Collab Instance | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Claude Code Dev ENI | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Claude Code Instance Role | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Claude Code Instance | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Codex Dev ENI | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Codex Instance Role | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Codex Instance | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 
 ### Domains Account
 
@@ -468,24 +486,6 @@ If I use CloudFront have to allow us-east-1 for ACM Cert. Lock down when not aci
 | Job EC2 Instance | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Job AMI | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Job Run (other resources, lambdas, micro VMs? TBD) | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-
-## Project Accounts
-
-Some enviroments may include penetration testing and security research resources.
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Acoount resources | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Burp ENI | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Burp Instance Role | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Burp Instance | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Burp AMI | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Collab ENI | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Collab Instance Role | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Collab Instance | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| Collab AMI | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-
-( And other stuff not shown here :^) 
 
 ## Management Environment
 
