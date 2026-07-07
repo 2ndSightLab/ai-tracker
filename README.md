@@ -274,7 +274,7 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Organization Diagram - Type descriptions | 🟢 | 🟢 | 🔴 | 🔴 | 
 | Actions File (menus) | 🟢 | 🟢 | 🔴 | 🔴 |
 
-### Deploy Steps ##
+### Deploy Actions ##
 
 | Feature | Menus | Run | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | 
@@ -286,6 +286,8 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Deploy Account Resources | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Deployed Resources Tracking | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Deployed Resources Diagram | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Deploy With Confirm | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Deploy No Prompt | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ### Drift Actions 
 
@@ -294,7 +296,6 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Drift Report | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Drift Delete Unauthorized Resources | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
 | Drift Deploy Missing Resources | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 
-
 ### Deploy Org Resources ###
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
