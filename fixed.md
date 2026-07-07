@@ -20,12 +20,9 @@ n/a design changed | 2
 
 🟢 Moved all the renaming and reconciliation code to a separate project because the main project keeps screwing it up. Hoping more focus will get it right.
 
-🟢 Bugs tracked after moving rename to separate project.
+🟢 Bugs tracked after moving rename to separate project. Total bugs:
 
 ```
-REJECTED BUGS TO FIX:
-  none
-
 PROJECT                          OPEN  REJECTED  CANTFIX    NA  FIXED
 bash-menus                          0         0        0     2      9
 bash-xml-parser                     0         0        0     0      2
