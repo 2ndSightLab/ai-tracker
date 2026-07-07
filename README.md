@@ -336,6 +336,8 @@ Configure organization to deploy; define environemnt types (allowed resources)
 
 Environment where people log into EC2 instances.
 
+### OU
+
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
@@ -344,20 +346,7 @@ Environment where people log into EC2 instances.
 | Budgets | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Delete Default VPCs || 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Admin roles | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| VPCs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| KMS Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| KMS Keys | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Network Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| VCPs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| IGWs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Subnets | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Network ACLs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Route Table + Routes | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| SGs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| VPC Endpoints | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Repo Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Code Commit Repo | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
 ### IAM Account
 
@@ -365,7 +354,7 @@ IAM users in work environment
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| IAM User |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| IAM User | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
 ### KMS Account
 
@@ -373,9 +362,9 @@ KMS keys used in enviroment
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| KMS keys |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| KMS policies | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| KMS key aliases | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| KMS keys | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| KMS policies | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| KMS key aliases | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ### Network Account
 
@@ -383,6 +372,14 @@ Network resources shared to environmeng via RAM
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| VPC | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| VCPs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| IGWs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Subnets | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Network ACLs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Route Table + Routes | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| SGs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| VPC Endpoints | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | VPC Flow Logs Role | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Remote Access Prefix List | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Remote Access (Work) VPC | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
@@ -437,14 +434,45 @@ Account where people log into EC2 instances.
 | S3 buckets (with KMS) | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Bucket policies | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
-## Project Environment
-
-### OU
+### Domains Account
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Admin Roles | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Account, Move to OU, Alias | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+
+### Web Account
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Account, Move to OU, Alias | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Webs | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
 | log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+
+### Jobs Auth Account
+
+If I use CloudFront have to allow us-east-1 for ACM Cert. Lock down when not acively making chanages.
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Account, Move to OU, Alias | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 
+| Job Auth Lambdas | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Auth Lambda VPC Config | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| ACM Certificate | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| API Gateway | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| API Gateway CNAME | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| DynamoDB | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+
+### Jobs Run Account
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Account, Move to OU, Alias | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| S3 buckets | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Job Instance Role | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Job ENI | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Job EC2 Instance | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Job AMI | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
+| Job Run (other resources, lambdas, micro VMs? TBD) | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 
 ## Project Accounts
 
@@ -467,22 +495,9 @@ Some enviroments may include penetration testing and security research resources
 
 ( And other stuff not shown here :^) 
 
-
 ## Management Environment
 
 The management environment contains accounts where my organization deletegated administrators exist.
-
-### Env OU
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Budgets | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Delete Default VPCs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Delete Default VPCs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| SCP: deny-external-access | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Admin Roles | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### IAM Acount
 
@@ -490,14 +505,23 @@ IAM users in management environment
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Account |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| IAM User | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Account | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| IAM User | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ### Org Acount 
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Org resource policy | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Org resource policy| 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+
+### Kiro Account
+
+IAM users in work environment
+
+| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
+| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
+| Identity Center |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Kiro |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
 ### IPAM Account (Network)
 
@@ -542,9 +566,9 @@ IAM users in management environment
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Account, Move to OU, Alias | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| KMS Log Key | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| KMS Log Key Alias | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| KMS Log Key Policy | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| KMS Log Key | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| KMS Log Key Alias | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| KMS Log Key Policy | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ### Accounting Acount 
 
@@ -561,90 +585,6 @@ IAM users in management environment
 | Account, Move to OU, Alias | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Org Policy (org delegated admin) | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
-## Domains Environment
-
-### Env OU
-
-Domain name management. One for prod and one for test in my case. 
-Can lock when not in use with deny all SCP.
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Accounts: budgets | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Accounts: delete default vpcs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Admin Roles | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-
-### Domains Account
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Account, Move to OU, Alias | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-
-## Web Environment
-
-### Env OU
-
-This environment is used to host static websites and web applications.
-I have a separate project that allows deploying a static website in any web account in any enviroment
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-
-### Web Account
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Account, Move to OU, Alias | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Webs | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 |
-| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-
-## Jobs Environment
-
-### Env OU
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| OU | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Budgets | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Delete Default VPCs | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| admin roles | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-
-### Jobs Auth Account
-
-If I use CloudFront have to allow us-east-1 for ACM Cert. Lock down when not acively making chanages.
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Account, Move to OU, Alias | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 
-| Job Auth Lambdas | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Auth Lambda VPC Config | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| ACM Certificate | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| API Gateway | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| API Gateway CNAME | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| DynamoDB | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-
-### KMS Auth Account
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Account, Move to OU, Alias | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
-
-### Jobs Run Account
-
-| Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
-| :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Account, Move to OU, Alias | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| S3 buckets | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Job Instance Role | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Job ENI | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Job EC2 Instance | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Job AMI | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
-| Job Run (other resources, lambdas, micro VMs? TBD) | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 
 ### Jobs
 
