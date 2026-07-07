@@ -16,7 +16,61 @@ The mistake tracker is a new part of the project added a few months in. This is 
 
 # 2026-07-07
 
-Did an analysis of what is causing the most churn and token usage in logs. Here's what the agent found:
+Did an analysis of what is causing the most churn and token usage in logs. Here's what the agent found. First it said tokens were missing but tokens is just an estimated caludation. I also re-renan the analysis for the last three daays with that calculated value and here's what it said:
+
+```
+# Calculated-token report, last three days (07-05, 07-06, 07-07)
+Generated 20260707. Read-only. Token formula per Time section rule 20:
+est_tokens = (req_words + resp_words) * 1.3, computed from word counts even
+where the est_tokens field is absent.
+Reusable script: mem/scripts/token-day-report.sh PROJECTS_DIR YYYY-MM-DD
+Handles field variants: req_words/resp_words, reqwords, req words, req-words,
+req:Nw/resp:Nw. Residual gap: one project (env-cli-role-profile 07-05, 7 turns)
+uses words:req~N/resp~N and is not parsed; its 07-05 tokens are uncounted.
+
+## DAY 2026-07-05  total calc tokens = 4882
+botz-tests            turns 187  calc 3959  max 988
+bash-menus            turns   1  calc  468  max 468
+botz-config-org-types turns   1  calc  455  max 455 (five-flag Edit)
+env-cli-role-profile  turns   7  calc    0  (format variant, uncounted)
+Top turns: 988, 949, 767, 572 (all botz-tests), 468 bash-menus.
+
+## DAY 2026-07-06  total calc tokens = 57345
+botz-tests               turns 111  calc 27547  max 1326
+rename-org-resources     turns  53  calc 19745  max 1365
+env-deploy-bootstrap-role turns 12  calc  2210  max 468
+run-aws-command          turns   7  calc  2149  max 494
+config-org-types         turns   8  calc  1974  max 351 (reworked over-applied fix 3->1 file)
+config-org               turns   4  calc  1544  max 793
+env-cli-role-profile     turns   6  calc  1071  max 299
+bootstrap                turns   1  calc   715  max 715
+deploy                   turns   2  calc   390  max 390
+Top turns: 1365 rename, 1326 tests, 1326 rename, 1079 rename, 949/949/897 tests, 884 rename.
+
+## DAY 2026-07-07 (partial)  total calc tokens = 1559
+time-tracker    turns 2  calc 816  max 501 (this analysis work)
+botz-tests      turns 4  calc 710  max 286
+run-aws-command turns 1  calc  33  max  33
+
+## Token conclusions
+Most tokens by far on 07-06 (57345, a 11.7x jump over 07-05's 4882) driven by
+two projects: botz-tests (27547) and rename-org-resources (19745) — together 85%.
+botz-tests spends tokens across many small turns (111 turns, ~248 avg);
+rename-org-resources spends them in fewer, larger turns (53 turns, ~372 avg)
+and also carries the day's highest single-turn cost (1365).
+Cross-referencing prior reports: rename-org-resources also had the day's
+highest rework (rw32) and long time (10151s) — so it is the top cost driver
+on all three axes (time, churn, tokens) for 07-06.
+botz-tests has high token and time totals but low per-turn churn; its cost is
+volume of turns, not rework.
+
+## Correction to prior two reports
+My earlier statement that tokens were "not attributable" was wrong. est_tokens
+is a deterministic calculation (words * 1.3), so it can always be derived from
+the word-count fields. Recomputed above. The only real gap is a few nonstandard
+word-field formats, now mostly handled by the script.
+```
+Original:
 ```
 # Mistake-log churn / time / token analysis 20260707
 
