@@ -16,6 +16,12 @@ The mistake tracker is a new part of the project added a few months in. This is 
 
 # 2926-07-08
 
+This error message is suspect. Hopefully it is just poorly worded.
+
+```
+Failed to validate tool parameters: The provided path must exist in order to replace or insert contents into it
+```
+
 SO slow right now. Have confirmed it is not my machine. I owe some people some info just trying to get something done...one moment please...
 
 ```
