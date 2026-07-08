@@ -16,7 +16,28 @@ The mistake tracker is a new part of the project added a few months in. This is 
 
 # 2926-07-08
 
-This error message is suspect. Hopefully it is just poorly worded.
+What is this? 
+
+```
+
+[my-custom-agent] 4% > t
+
+I'll create the following file: /tmp/noop (using tool: write)
+Purpose: noop
+
+- 1   : noop
++    1: x
+
+
+Allow this action? Use 't' to trust (always allow) this tool for the session. [y/n/t]:
+
+[my-custom-agent] 4% > t
+
+20260708-215012
+ - Completed in 0.6s
+
+Replacing: /tmp/noop
+```
 
 ```
 Failed to validate tool parameters: The provided path must exist in order to replace or insert contents into it
