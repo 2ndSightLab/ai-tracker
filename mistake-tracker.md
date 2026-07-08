@@ -303,6 +303,9 @@ Location:
 Run with COLORBT_SHOW_HIDDEN=1 environment variable to disable frame filtering.
 Run with RUST_BACKTRACE=full to include source snippets.
 ```
+
+Agent trying to run sudo multiple times.
+
 # 2026-07-06
 
 So slow today.
