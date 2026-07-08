@@ -304,7 +304,12 @@ Run with COLORBT_SHOW_HIDDEN=1 environment variable to disable frame filtering.
 Run with RUST_BACKTRACE=full to include source snippets.
 ```
 
-Agent trying to run sudo multiple times.
+Agent trying to run sudo multiple times. > hopefully removing interactive terminal will prevent this and cause immediatel failure. More testing needed.
+
+```
+ ● Execution failed after 0.3s:
+3859 occurrences of old_str were found when only 1 is expected
+```
 
 # 2026-07-06
 
