@@ -5,6 +5,9 @@ Typos cuz these are just notes for me...
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
 ## 7/7/2026
+
+GOING SO SLOW.  Was going so slow in the wee hours of AM and stil is. But I create a whole new multi-agent bug triage process that seems to use a tad less tokens. Though if you aren't watching the agents, they will burn tokens more wastefully. Additionally, multipe agents use more tokens. Can't even track how many plans I've burned now just trying to get this doen.
+
 ```
 PROJECT                          OPEN    REVIEW REJECTED CANTFIX     NA  FIXED
 bash-menus                          0         0        0       0      2     10
