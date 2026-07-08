@@ -17,12 +17,14 @@ The mistake tracker is a new part of the project added a few months in. This is 
 # 2026-07-07
 
 In my monitor loop the test agent checks bug fixes. For one bug fix thes are all the things the agent did wrong trying to fix a bug. Sheesh.
-```
+
 1 Wrong code path fixed. The reported symptom is during AMI DEPLOYMENT ("when it gets to deploying AMIs you'll [see] there are no AMIs, none ever get deployed correctly, and the waiter is unnecessarily waiting"). That path is src/actions/helpers/deploy-ami.sh -> ${PROJECTS_DIR}/xxxx-env-create-ec2-ami/run.sh. run.sh still blocks in the FOREGROUND on `aws ec2 wait instance-stopped`, `aws ec2 wait image-available` (lines ~58, ~81, ~147) with no guard for a never-deployed AMI. The fix only touched src/actions/share-ami/share-ami.sh, the separate share/copy step, which is not the deploy waiter the bug describes.
+
 2 Foreground-not-background requirement unmet. Expected behavior: "It should wait in the background so other things can be deployed." No waiting was moved to the background anywhere. The bug asks for common waiting code in a common file that only waits in the background; none was added. The fix note explicitly declares this out of scope, but it is a stated requirement of this bug, not a separate bug.
+
 3 Never-deployed guard missing on the real path. The empty-state guard was added only to share-ami.sh copy loop. The create-AMI path in xxxx-env-create-ec2-ami/run.sh does not error-and-stop when the AMI never enters pending status; it relies on `aws ec2 wait` behavior and still blocks the deploy.
+
 4 Test does not reproduce the runtime symptom. tests/test-share-ami.sh is static grep/awk over source text (PASS=21 FAIL=0). Per this project's rules a fix must have a test that reproduces the actual runtime symptom end to end and fails against the old behavior; a text-match check is not proof. It also tests the wrong file (share-ami.sh, not the deploy waiter).
-```
 
 # 2026-07-07
 
