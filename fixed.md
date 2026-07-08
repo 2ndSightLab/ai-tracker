@@ -5,6 +5,23 @@ Typos cuz these are just notes for me...
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
 ## 7/7/2026
+```
+PROJECT                          OPEN    REVIEW REJECTED CANTFIX     NA  FIXED
+bash-menus                          0         0        0       0      2     10
+bash-xml-parser                     0         0        0       0      0      2
+botz-config-org                     0         0        0       0      2     58
+botz-config-org-types               1         1        0       0      3     76
+botz-deploy                        14         0        4       0     28    946
+botz-env-cli-role-profile           0         0        0       0      1      4
+botz-env-deploy-bootstrap-role      0         0        0       0      0      1
+botz-env-deploy-vpc-config          0         0        0       0      1      0
+botz-env-foxy-botz-instance         0         0        0       0      0      1
+botz-rename-org-resources           0         0        0       0      7     13
+botz-run-aws-command                0         0        0       0      2      6
+botz-tests                          0         0        0       0      1      6
+TOTAL                              15         1        4       0     47   1123
+```
+## 7/7/2026
 
 🟢 Since the test project was wasting way too many tokens and things were getting iterated on over and over agian created a way to deterministically review and fix and update bugs manually when needed. Some of the actions already existted and were added to an actions menu in the run file for the project. My framwork can execute the run file for any project so that allows me to run the project from a common menu and then run the actions in the test project. 
 
