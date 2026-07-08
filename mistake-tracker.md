@@ -69,6 +69,57 @@ Location:
 
 Run with COLORBT_SHOW_HIDDEN=1 environment variable to disable frame filtering.
 Run with RUST_BACKTRACE=full to include source snippets.
+
+Kiro is having trouble responding right now: 
+   0: Failed to receive the next message: request_id: , error: dispatch failure (io error): request or response body error
+
+Location:
+   crates/chat-cli/src/cli/chat/mod.rs:1469
+
+   BACKTRACE 
+                                 5 frames hidden                                
+   6: chat_cli::cli::chat::ChatSession::next::{{closure}}::hd7ff52367d6dc6bf
+      at /project/crates/chat-cli/src/cli/chat/mod.rs:1469
+   7: chat_cli::cli::chat::ChatSession::spawn::{{closure}}::h9d443386514e7c36
+      at /project/crates/chat-cli/src/cli/chat/mod.rs:2053
+   8: chat_cli::cli::chat::ChatArgs::execute::{{closure}}::h8871d61f44063874
+      at /project/crates/chat-cli/src/cli/chat/mod.rs:675
+   9: chat_cli::cli::RootSubcommand::execute::{{closure}}::he148c2452466ffc7
+      at /project/crates/chat-cli/src/cli/mod.rs:188
+  10: chat_cli::cli::Cli::execute::{{closure}}::h3309e27ff4b7fb35
+      at /project/crates/chat-cli/src/cli/mod.rs:277
+  11: <core::pin::Pin<P> as core::future::future::Future>::poll::heeafaa7e918c34aa
+      at /rustc/ded5c06cf21d2b93bffd5d884aa6e96934ee4234/library/core/src/future/future.rs:133
+  12: tokio::runtime::park::CachedParkThread::block_on::{{closure}}::hedc65b1337d65094
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.49.0/src/runtime/park.rs:284
+  13: tokio::task::coop::with_budget::h97ed798b660593db
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.49.0/src/task/coop/mod.rs:167
+  14: tokio::task::coop::budget::h1dfd2033f01fdce1
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.49.0/src/task/coop/mod.rs:133
+  15: tokio::runtime::park::CachedParkThread::block_on::h92e082592c21c1c4
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.49.0/src/runtime/park.rs:284
+  16: tokio::runtime::context::blocking::BlockingRegionGuard::block_on::hab882e9d067275f8
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.49.0/src/runtime/context/blocking.rs:66
+  17: tokio::runtime::scheduler::multi_thread::MultiThread::block_on::{{closure}}::hcf67cfe54b41ad2c
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.49.0/src/runtime/scheduler/multi_thread/mod.rs:89
+  18: tokio::runtime::context::runtime::enter_runtime::h92c3b1688dfb31d4
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.49.0/src/runtime/context/runtime.rs:65
+  19: tokio::runtime::scheduler::multi_thread::MultiThread::block_on::ha23206596b663289
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.49.0/src/runtime/scheduler/multi_thread/mod.rs:88
+  20: tokio::runtime::runtime::Runtime::block_on_inner::hc271bef437a4d4a7
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.49.0/src/runtime/runtime.rs:370
+  21: tokio::runtime::runtime::Runtime::block_on::h596ab112029ae7cd
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.49.0/src/runtime/runtime.rs:340
+  22: chat_cli::main::hecd8d819a4b4deea
+      at /project/crates/chat-cli/src/main.rs:43
+  23: core::ops::function::FnOnce::call_once::h71d4f46045494b03
+      at /rustc/ded5c06cf21d2b93bffd5d884aa6e96934ee4234/library/core/src/ops/function.rs:250
+  24: std::sys::backtrace::__rust_begin_short_backtrace::hdadb2871b1d37fb0
+      at /rustc/ded5c06cf21d2b93bffd5d884aa6e96934ee4234/library/std/src/sys/backtrace.rs:158
+                                 13 frames hidden                               
+
+Run with COLORBT_SHOW_HIDDEN=1 environment variable to disable frame filtering.
+Run with RUST_BACKTRACE=full to include source snippets.
 ```
 
 # 2026-07-07
