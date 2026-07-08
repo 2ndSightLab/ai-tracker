@@ -4,6 +4,22 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
+## 7/7/2026
+
+🟢 Since the test project was wasting way too many tokens and things were getting iterated on over and over agian created a way to deterministically review and fix and update bugs manually when needed. Some of the actions already existted and were added to an actions menu in the run file for the project. My framwork can execute the run file for any project so that allows me to run the project from a common menu and then run the actions in the test project. 
+
+🟢 Added an action to run an agent to fix a bug.
+
+🟢 Added an action to run multiple review agents to reivew and fix bugs.
+
+🟢 Added a loop that monitors and fixes bugs, monitors the agents for hung threads or orphaned processes and kills them, continuously checks for new bugs without stopping that need to be reviewd or fixed.
+
+🟢 Meanwhile there's a new step where I can log bugs manually because when I tell the agent to do it, it changes what I say and writes too many words. So while the loop is running I can be testing and adding bugs to fix.
+
+🟢 All loops allow the user to specify max agents and recommends a max based on system resources.
+
+🟢 One of the agnet tried to run a sudo command which mucked up the loop. Tryign to handle that via ctr-c, message to log a bug and then continue. We'll see if that works... I ahve a grid with bug statuses and it got all wonky when the agent ran sudo.
+
 ## 7/6/2026
 
 Bugs fixed
