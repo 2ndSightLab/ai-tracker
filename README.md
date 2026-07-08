@@ -294,7 +294,7 @@ Configure organization to deploy; define environemnt types (allowed resources)
 | Deploy Env Resources | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Select Account | 🟢 | 🟢 | 🟢  | 🔴 | 🔴 |
 | Deploy Account Resources | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Deployed Resources Tracking | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Deployed Resources Tracking | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Deployed Resources Diagram | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Deploy With Confirm | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Deploy No Prompt | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
@@ -359,7 +359,7 @@ Environment where people log into EC2 instances.
 | SCP | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 
 | Accounts | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Budgets | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delete Default VPCs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Delete Default VPCs | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Admin roles | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
@@ -370,7 +370,7 @@ IAM users in work environment
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Acoount resources | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| IAM User | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| IAM User | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ### KMS Account
 
@@ -379,9 +379,9 @@ KMS keys used in enviroment
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Acoount resources | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| KMS keys | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| KMS keys | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | KMS policies | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| KMS key aliases | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| KMS key aliases | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ### Network Account
 
@@ -556,12 +556,12 @@ IAM users in work environment
 | Delegate Health admin | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Delegate Detective admin | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | S3 Logs buckets (one per env) | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| S3 Logs bucket - with encryption | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Configure GuardDuty | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Configure Security Hub | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Configure CloudTrail | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Configure AWS Config | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Configure Macie | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| S3 Logs bucket - with encryption | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Configure GuardDuty | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Configure Security Hub | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Configure CloudTrail | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Configure AWS Config | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Configure Macie | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Configure Inspector | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Configure IAM Access Analyzer | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Configure Security Alerts | 🟡 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
