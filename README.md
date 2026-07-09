@@ -380,7 +380,7 @@ KMS keys used in enviroment
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Acoount resources | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | KMS keys | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| KMS policies | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| KMS policies | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | KMS key aliases | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ### Network Account
@@ -443,7 +443,6 @@ Account where people log into EC2 instances.
 | IPAM EIP allocation | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | S3 buckets (with KMS) | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Bucket policies | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Acoount resources | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Kiro Dev ENI | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Kiro Instance Role | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
 | Kiro Instance | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 | 🔴 |
@@ -538,7 +537,7 @@ IAM users in work environment
 | Delegate Firewall Manager admin | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Delegate Network Manager admin | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Delegate VPC Reachability Analyzer admin  | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| IPAM | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| IPAM | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ### Security Acount
 
@@ -572,8 +571,8 @@ IAM users in work environment
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Account, Move to OU, Alias | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| KMS Log Key | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| KMS Log Key Alias | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| KMS Log Key | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| KMS Log Key Alias | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | KMS Log Key Policy | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
 ### Accounting Acount 
