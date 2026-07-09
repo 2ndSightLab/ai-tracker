@@ -390,21 +390,41 @@ Network resources shared to environmeng via RAM
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Acoount resources | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| VPC | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| IGWs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Subnets | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Network ACLs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Route Table + Routes | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| SGs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| VPC Endpoints | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+
 | VPC Flow Logs Role | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Remote Access Prefix List | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+
+| Jobs VPC | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Jobs Subnet | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Jobs NACL | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Route Table + Routes | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| VPC Endpoints | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Vpc Endoint Security Groups | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Jobs VCP Flow Logs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Jobs Ram Share | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+
+| Work VPC | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Work Subnet | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Work NACL | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Work Route Table + Routes | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Work IGW | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Work Ram Share | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Work VCP Flow Logs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+
+| Jobs Auth VPC | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Jobs Auth Subnet | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Jobs Auth NACL | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Jobs Auth Route Auth Table + Routes | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Jobs AUth IGW | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Jobs Auth VCP Flow Logs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Jobs Auth Ram Share | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+
+| Remote Access Prefix List | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | AWS Services Prefix Lists | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| VPC Ram Shares | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Delete default VPCs | n/a | n/a | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+
 | SSH Security Group | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | RDP Security Group | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | HTTP/HTTPS Security Group | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+
 | Account: log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### AMI Account
@@ -428,8 +448,8 @@ Account where people log into EC2 instances.
 
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
-| Acoount resources || 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Code Commit Repo | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
+| Acoount resources | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
+| Code Commit Repo | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | ECR | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Work Account
@@ -573,7 +593,7 @@ IAM users in work environment
 | Account, Move to OU, Alias | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | KMS Log Key | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | KMS Log Key Alias | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| KMS Log Key Policy | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| KMS Log Key Policy | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 
 ### Accounting Acount 
 
@@ -630,7 +650,7 @@ Back up infrastructure segregated from other infrastructure
 | Backup OU | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | budgets | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | delete default vpcs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| admin roles | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| admin roles | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### Backup Admin Account
