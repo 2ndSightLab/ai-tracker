@@ -24,8 +24,6 @@ Great:
 
 > Nothing useful — that's not a real AWS CLI flag. I made it up.
 
-Use --debug on the AWS CLI call. It prints the exact cache file path it looks up and whether it's a hit or miss. That shows you why it's 
-prompting again.
 
 
 # 2926-07-08
