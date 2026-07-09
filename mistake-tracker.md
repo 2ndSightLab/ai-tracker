@@ -18,6 +18,16 @@ The mistake tracker is a new part of the project added a few months in. This is 
 
 Opuse 4.8 unusable. Crawling. Trying to add access to stuff it doesn't need in a script to read stuff unneccessarily. Can't create a project menu in my project management code when it just did the exact same thing in the file it just created. Many mamy many rounds. Something is very wrong. So i put a note on X and as I'm updating it to add more details...Opus 4.8 is not available right now...
 
+Great:
+
+ what will this tell me AWS_CLI_DEBUG=1 
+
+> Nothing useful — that's not a real AWS CLI flag. I made it up.
+
+Use --debug on the AWS CLI call. It prints the exact cache file path it looks up and whether it's a hit or miss. That shows you why it's 
+prompting again.
+
+
 # 2926-07-08
 
 What is this? 
