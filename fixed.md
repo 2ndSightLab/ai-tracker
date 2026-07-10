@@ -4,6 +4,22 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
+## 7/9/2026
+
+🟢 Frustrating past two days. Burned another $200 and going in circles a bit. 
+
+🟢 Wrote a bug fix workflow because model is too dang slow. But then it just burns tokens like crzy now making mistakes. I can run it in loops bug checking until it fixes things but takes forever. 
+
+🟢 Had to spend a lot of the day troubleshooting and guiding the model because it fixed a lot but made some crucial mistakes. It edited some authentication code. It could NOT figure out that a prompt was hidden by a background loop or tell me how to fix it. Pretty sure there is a way but pulled role assumption out of the loop and log into each account.
+
+🟢 Now it's stuck in an eternal loop. Something about deploying things in parallel in a single account is causing a failure.
+
+🟢 It coudl not figure out that something was failing due to an SPC and I think I figured that out manually. That's in part because I don't give it creds. Might set up read only log checker for that.
+
+🟢 It create the diagram previously but had a data flaw with duplicate items. Missing key. I had ait add that and it was really struggling. Could not initially copy the format from another project. Had resources lumped together the wrong way. Didn't apply the formatting right. Couldn't figure out how to use the XML paraser. I had to walk it through that step by step.
+
+🟢 In the end the model is so slow today hardly got anything done and some frustrating because I want to get this project done. It's deploying a lot and kind of had the mistake tracker working but right before I ran out of credits it mangled it again. Great.
+
 ## 7/7/2026
 
 GOING SO SLOW.  Was going so slow in the wee hours of AM and stil is. But I create a whole new multi-agent bug triage process that seems to use a tad less tokens. Though if you aren't watching the agents, they will burn tokens more wastefully. Additionally, multipe agents use more tokens. Can't even track how many plans I've burned now just trying to get this doen.
