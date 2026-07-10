@@ -539,8 +539,8 @@ IAM users in work environment
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Acoount resources | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-| Identity Center |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-| Kiro |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Identity Center (requires interaction) |  🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
+| Kiro (requires interaction) | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 
 ### IPAM Account (Network)
 
