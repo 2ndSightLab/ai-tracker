@@ -391,9 +391,7 @@ Network resources shared to environmeng via RAM
 | Feature | Deploy | Delete | Verify | Tested | Code Review | Security Review |
 | :--- | :---: | :---: | :---: | :---: | :---: |:---: |
 | Acoount resources | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
-
 | VPC Flow Logs Role | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-
 | Jobs VPC | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Jobs Subnet | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Jobs NACL | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
@@ -402,7 +400,6 @@ Network resources shared to environmeng via RAM
 | Vpc Endoint Security Groups | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Jobs VCP Flow Logs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Jobs Ram Share | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-
 | Work VPC | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Work Subnet | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Work NACL | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
@@ -410,7 +407,6 @@ Network resources shared to environmeng via RAM
 | Work IGW | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Work Ram Share | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Work VCP Flow Logs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-
 | Jobs Auth VPC | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Jobs Auth Subnet | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | Jobs Auth NACL | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
@@ -418,14 +414,11 @@ Network resources shared to environmeng via RAM
 | Jobs AUth IGW | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Jobs Auth VCP Flow Logs | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
 | Jobs Auth Ram Share | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-
 | Remote Access Prefix List | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | AWS Services Prefix Lists | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-
 | SSH Security Group | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | RDP Security Group | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 |
 | HTTP/HTTPS Security Group | 🟡 | 🟡 | 🟡 | 🟡 | 🔴 | 🔴 |
-
 | Account: log to security account | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 |
 
 ### AMI Account
