@@ -14,6 +14,13 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/response-time.md
 
 The mistake tracker is a new part of the project added a few months in. This is not super scientific as it is hard to quantify. I'm just telling the model to increment the mistakes it's making +1 if it starts making a bunch of mistakes. This is not every mistakes mostly only when I start getting annoyed. :-D The mistakes are largely worded by the AI agent and sometimes it does not capture the correct mistake but I don't always fix that because I just want to get stuff done. It generally captures a valid mistake but not the one I actually wanted it to log. So these are all valid just some are missing I didn't bother to fix to the correct mistake. I don't care about typooooos this is just a fast as possible log. Trying to get things done. Note missing days/times may be because the model deleted the data or because I took some time off. In some cases I have to work on other things...
 
+# 2026-07-11
+
+What?
+Nothing on my end is slow right now — the last few turns ran in 7–12s total. The big numbers you may have seen were "overhead" (~107s, ~123s 
+on two earlier turns), which is the gap between the system-injected timestamp and when my first date command ran — that's wait/queue time 
+before I start, not my processing. My actual work per turn has been fast. This turn: 3s overhead, and no tool work needed.
+
 # 2926-07-09
 
 Opuse 4.8 unusable. Crawling. Trying to add access to stuff it doesn't need in a script to read stuff unneccessarily. Can't create a project menu in my project management code when it just did the exact same thing in the file it just created. Many mamy many rounds. Something is very wrong. So i put a note on X and as I'm updating it to add more details...Opus 4.8 is not available right now...
