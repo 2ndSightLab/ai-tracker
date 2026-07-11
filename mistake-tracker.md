@@ -24,6 +24,25 @@ Nothing on my end is slow right now — the last few turns ran in 7–12s total.
 on two earlier turns), which is the gap between the system-injected timestamp and when my first date command ran — that's wait/queue time 
 before I start, not my processing. My actual work per turn has been fast. This turn: 3s overhead, and no tool work needed.
 ```
+Also
+```
+- RTT to the model endpoints: 9.8–13.5ms, minrtt ~9.7ms. Very low.
+- Zero retransmits on any connection (no retrans field appears).
+- Large healthy congestion windows (cwnd 102–309), send rates 270–305 Mbps, delivery rate up to 145 Mbps.
+- The busy socket sent 9.6 MB / received 657 KB with only 1450ms total busy time.
+
+The revealing field is app_limited on several connections. app_limited means the transfer was limited by the application, not the network — 
+TCP had capacity to send more but the app didn't hand it data fast enough. Combined with ~0.1% CPU and load 0.00, this points squarely at the
+far side: the model/inference service is the pacing factor. The agent receives tokens as fast as the service generates them, then waits.
+
+So, corrected and now evidence-backed conclusion:
+- Not the local box: idle CPU, 11Gi free, load 0.00.
+- Not the network: 10ms RTT, no packet loss, no retransmits, hundreds of Mbps available.
+- The connections are app_limited — the client and network are ready, but data arrives only as fast as the remote service produces it.
+
+The slowness is response-generation throughput at the model service endpoint. That's server-side token generation latency, not anything 
+tunable on this host or in this project.
+```
 
 # 2926-07-09
 
