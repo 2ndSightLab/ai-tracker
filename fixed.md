@@ -4,6 +4,26 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
+## 7/11/2026
+
+🟢 Created new project for generic parllel processor so the main project doesn't mess it up. Now can use that parallel processor for any project 👍 After fixes yesterady requied mnimal chages.
+
+## 7/10/2026
+
+🟢 Manual day except for some queries to Google AI
+
+🟢 First I went through my parallel processign code and mae sure every single error message was printed to screen correctly and nothing was hidden. Lots of missing things.
+
+🟢 Fixed bugs in parallel processor with code snippets sent to Google AI. It messed up a lot changing variables and wonky things but I in some cases opened new instances to double check other instance results and in other cases started over or kept refining my prompts.
+
+🟢 Google AI found problems with traps on exit and suggested a new tap to catch a particular problem which I honestly would not have thought of or even known to do myself. That is the beauty of AI sometimes.
+
+🟢 Tons of errors in Google Delegated Admins. Was duplicating the same code for ever admin. Google AI mode created some code with non-existent AWS commands and invalid principals - I think because the principals look like domain names and it tries to mask domains in output. I created a common helper to fix all the lookups one time. This is code that the agents COULD NOT get right for some reason. tons of wasted cycles and hiding things instead of fixing them. I don't know why this is so hard - see if the delegated admin exists, if not add it. If it already exists don't redeploy it. It's really not that many lines of code. Unfortunately there are a few differences between how different delegated admins do that whic his kind of annoying. I'm not sure if the global method I created works for all types of delegated admins. Network Firewall seems to be different but I need to double check if it will really work with the common code. There was one other I can't remember that was different. Need to revisit.
+
+🟢 Once the error messages were unhidden, parallel processing is fixed, and the delegated admins are fixed everything else seems to be attempting to deploy. I just need to figure out why the individual resources are having issues.
+
+🟢 I also fixed a lot of hidden error mesages in the aws command runner and added query and output to make it easier to lookup values. I need to double check some security checks that got removed but it seems to be working better now and pretty much everything input to an aws command gets validated properly (unlike some other code ...) though I still need to double check a few things.
+
 ## 7/9/2026
 
 🟢 Frustrating past two days. Burned another $200 and going in circles a bit. 
