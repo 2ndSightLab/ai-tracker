@@ -8,7 +8,7 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 🟢 Created new project for generic parllel processor so the main project doesn't mess it up. Now can use that parallel processor for any project 👍 After fixes yesterady requied mnimal chages.
 
-🟢 New account deployed but getting hung up trying to assume role becuase I presume things are not getting deployed in the correct order or the role name is wrong...checking...
+🟢 New account deployed but getting hung up trying to assume role becuase I presume things are not getting deployed in the correct order or the role name is wrong...checking...Hmm the role looks correct...
 
 ## 7/10/2026
 
