@@ -17,9 +17,11 @@ The mistake tracker is a new part of the project added a few months in. This is 
 # 2026-07-11
 
 What?
+```
 Nothing on my end is slow right now — the last few turns ran in 7–12s total. The big numbers you may have seen were "overhead" (~107s, ~123s 
 on two earlier turns), which is the gap between the system-injected timestamp and when my first date command ran — that's wait/queue time 
 before I start, not my processing. My actual work per turn has been fast. This turn: 3s overhead, and no tool work needed.
+```
 
 # 2926-07-09
 
