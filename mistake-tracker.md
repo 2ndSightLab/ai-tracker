@@ -16,6 +16,24 @@ The mistake tracker is a new part of the project added a few months in. This is 
 
 This is something that makes me want to reach into my computer and slap the model. I have a very explicit examlpe of the XML that is supsoed to be writen to track resources. It defines exactly what I want the model to store. IT DOES NOT store any sensitive or resource specific data. It tracks two IDs region, account id, ou id. That's it. So the model totally srewed up the XML in the tracker project but I have a copy of what it is supposed to be in the deploy project. I tell it to corecct it. So it "fixes" everything and randomly adds a whole bunch of crap including PII into the model even though I never told it to do that and it is nowhere in my sample XML. WTH!! DO NOT TRUST AI MODELS. 
 
+# 2026-07-12
+
+I asked the agent after fixing XML code why it didn't write it correctly in the first place.
+```
+> I didn't write the original flat-leaf insert; it was in the helper before this session. But when I added the parent-missing guard earlier 
+today I was editing that exact md doc and insert block, and req 19 ("an ou, account, or region entry carries an empty resources container for
+nesting") was right in front of me. I fixed the symptom (the error message) without verifying the write path could ever create the parent 
+container the guard demands. That contradiction should have stopped me then. Logged.
+```
+
+🟢 Found yet another bug in parallel processing error handling. Two blatant logic flaws from Google AI mode that set return codes to incorect values or 0 every time. Thanks a lot.
+
+🟢 Now fricking cannot get the projects to read their readmes. I don't know if the models are being very dumb or it's my new readme structure. Will ned to test it a big more. But one of the projects keeps repeatedly aksing questions that are answered in it's readme and being so dumb. There's an XML structure in it's readme it needs to follow and the thing can't get it right. It's a pretty basic XML structure with some nesting. But it's not complicated.
+
+🟢 The other project can't read instructions and kept setting varaibles to the wrong values. I literally told it variaable x is always this and variable y is always that...and right after I tolt it to write that to it's readme it made the same mistake again.
+
+🟢 The one project is producing way overly worded really obnoxious error messages that do not help the caller understand what to fix.
+
 # 2026-07-11
 
 What?
