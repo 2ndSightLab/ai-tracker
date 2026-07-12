@@ -4,117 +4,6 @@
 
 Track how long it takes and how much it costs to create projects with AI 🤖 in an attempt to optimize progress. Note that I have only been using Opus 6 and 8 same price per token. I have been trying to log my time but there are some gaps where I was working but making no progress because I'm fixing things that are broken or reworking code. Part of the rework is the model failing write the code as specifed. Part of it is my rearchitecting my data model after testing. See notes for details and time tracking file where I've strated tracking some (not all) rework.
 
-## Status Summary
-
-| Status | Description
-| :---: | :--- |
-| 🟢 | Configure Reosurce Tyeps
-| 🟢 | Organization
-| 🟡 | Deploy Environment & Resources
-| 🟡 | Verify Environment & Resources
-| 🟡 | Delete Environent & Resources
-| 🔴 | Manage Drift
-| 🟡 | Packaged Code
-| 🟡 | QA
-| 🔴 | Code Review
-| 🔴 | Security Testing
-
-
-## Token / Credit Usage
-
-| Usage Dates | Plan | % usage | charges | days | cost per day
-| :---| :---: | :---: | :---: | :---: | :---: |
-| June 1 - 12 | $200 plan | 100% | $83 | 12 | $6.92 | 
-| June 13 - 17 9:00 pm | $200 plan | 100% | $67 | 4 | $16.75 | 
-| June 17 9:16PM - 23 3:00 AM | $200 plan | 100% | $120 | 6 | $20 | 
-| June 24 - 28 2:15 AM | $200 plan | 100% | 134.16 | 4 | $33.54 | 
-| June 30 - July 1 | partial $200 plan | ? | $53.55 | < 1 | $53.55 | 
-
-Total Kiro charged for June: 	$457.71
-
-Note that I started a new $200 plan on the last day of June presumably a few hours before the UTC rollover time and the balance between what I was billed the full month and what I was billed prior to that was $53.55. Which equates to something like $20 per hour of churning nonsense since the models were going haywire at that point and didn't accomplish the current objective I was working on and was getting tons of noops. this was right after Fable came out. Happens every time a new Anthropic model comes out whether I have access to it or not.
-
-| Usage Dates | Plan | % usage | charges | days | cost per day
-| :---| :---: | :---: | :---: | :---: | :---: |
-| Junly 1 - 2 4:00 AM | $200 plan | 100% | 	$12.90 | 2 | $6.45 | 
-| July 2 - July 3 | $200 plan | 100% | 181 | 2 | $90.5 | (new account, mult-agent bug fixes) 
-
-I stopped posting here. I'm using a $200 plan about every 2 days now.
-I think I've spent another $200. Up to $1000 for the mont and it's July 10th. Still not done.
-
-## Support this research
-
-If you want to support of follow this research consider becoming a paid subscriber on my substack [technology and security research blog](https://teriradichel.substack.com). Paid subscribers can add comments and see the archives. Founding members can ask questions (i.e. consulting or training). You can also just sign up for free - no worries! All are welcome and appreciated. 🩵
-
-https://teriradichel.substack.com
-
-## Project Objective: AWS Bootstrap Script for AI Agent Environment 
-
-Build a script to deploy, delete, and test an AWS environment to securely run AI agents. Specifically I want to segregate my security testing, development, production, and management environments. The framework also sets up my organization with monitoring including budgets and security services used by delegated administrators (Guard Duty, etc.)
-
-The whole point of this is to be able to quickly spin up and tear down environments for projects. As for agents I want to be able to quickly deploy new ideas. That is in part achieved by my job framework which is the follow-on project to this one, but I need first and foremost to have the secure base infrastructure in which to deploy my agent framework and agent resources. 
-
-I also spin up separate environments for each penetration test so one test cannot affect another. If I am running AI agents in an environment and they mess it up, I can tear down the whole environment and rebuild it easily. In addition, it ensures that my agents cannot affect production resources with proper security boundaries. When something is deployed incorrectly or I have a billing issue I cannot fix, I can tear down the environment to stop the building and build a new one.
-
-A full series on what I am developing in this project can be found here:
-
-https://teriradichel.substack.com/p/toc-aws-organizations-and-ai-agent
-
-More granular updates on X @teriradichel and the AWS Builder Center.
-
-https://builder.aws.com/profile?tab=articles
-
-## Tools and models
-
-I'm primarily using Kiro CLI and anthropic models, though I do use Google aimode to ask questions at times and may branch out to test other models and technologies after this infrastructure is up and running.
-
-## Issues:
-
-https://github.com/2ndSightLab/ai-tracker/blob/main/issues.md
-
-## Fixed / Notes:
-
-https://github.com/2ndSightLab/ai-tracker/blob/main/fixed.md
-
-## AWS Wishlist
-
-https://github.com/2ndSightLab/ai-tracker/blob/main/awswishlist.md
-
-## My Time
-
-I started this project around March 7th. I had to take a break for about three weeks in May. I haven't really worked on anything else besides this and blog posts because I keep thinking it is "almost done." I've also been working kind of long hours to do it and figure things out.
-
-My initial post on this project tracks the start project and initial progress in 2.5 weeks
-
-https://teriradichel.substack.com/p/what-ive-vibe-coded-in-25-weeks
-
-The time it takes is demonstrated by feature completion and the timestamps in this GitHub repo, though my time may be taken away for other things periodically. 
-
-## Response Time
-
-Sometimes I am blocked by the system being slow or copmletely unsuable. It's hard to tell if it's the model or Kiro so I tried to measure gaps. This is a work in progress. I have limited information to work with, which I think needs to improve. We need more transparency for all metrics.
-
-https://github.com/2ndSightLab/ai-tracker/blob/main/response-time.md
-
-## Cost: ##
-
-### Costs while building an AI Agent Bootstrap Script and Framework
-
-**Date Range**: Mar 7, 2026 - Jul 2, 2026
-
-| Service / Resource | Total | Mar 2026 | Apr 2026 | May 2026 | Jun 2026 | Jul 2026* |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Total costs** | **\$2,151.92** | **\$359.07** | **\$387.55** | **\$621.52** | **\$755.02** | **\$28.76** |
-| Kiro | \$1,079.02 | \$193.55 | \$129.07 | \$285.79 | \$457.71 | \$12.90 |
-| Virtual Private Cloud | \$411.17 | \$50.07 | \$118.34 | \$137.58 | \$104.22 | \$0.97 |
-| Elastic Compute Cloud - Compute | \$283.88 | \$39.45 | \$44.28 | \$100.12 | \$96.80 | \$3.23 |
-
-Costs broken down by service and other details here:
-
-https://github.com/2ndSightLab/ai-tracker/blob/main/cost.md
-
-## Objectives
-
 ### Status Legend ###
 
 | Status | Description | 
@@ -471,6 +360,119 @@ org: xxxxxxx (xxxxxxxx)
       |____ 🔴 account: work-prod-domains
 
 ```
+
+## Status Summary
+
+| Status | Description
+| :---: | :--- |
+| 🟢 | Configure Reosurce Tyeps
+| 🟢 | Organization
+| 🟡 | Deploy Environment & Resources
+| 🟡 | Verify Environment & Resources
+| 🟡 | Delete Environent & Resources
+| 🔴 | Manage Drift
+| 🟡 | Packaged Code
+| 🟡 | QA
+| 🔴 | Code Review
+| 🔴 | Security Testing
+
+
+## Token / Credit Usage
+
+| Usage Dates | Plan | % usage | charges | days | cost per day
+| :---| :---: | :---: | :---: | :---: | :---: |
+| June 1 - 12 | $200 plan | 100% | $83 | 12 | $6.92 | 
+| June 13 - 17 9:00 pm | $200 plan | 100% | $67 | 4 | $16.75 | 
+| June 17 9:16PM - 23 3:00 AM | $200 plan | 100% | $120 | 6 | $20 | 
+| June 24 - 28 2:15 AM | $200 plan | 100% | 134.16 | 4 | $33.54 | 
+| June 30 - July 1 | partial $200 plan | ? | $53.55 | < 1 | $53.55 | 
+
+Total Kiro charged for June: 	$457.71
+
+Note that I started a new $200 plan on the last day of June presumably a few hours before the UTC rollover time and the balance between what I was billed the full month and what I was billed prior to that was $53.55. Which equates to something like $20 per hour of churning nonsense since the models were going haywire at that point and didn't accomplish the current objective I was working on and was getting tons of noops. this was right after Fable came out. Happens every time a new Anthropic model comes out whether I have access to it or not.
+
+| Usage Dates | Plan | % usage | charges | days | cost per day
+| :---| :---: | :---: | :---: | :---: | :---: |
+| Junly 1 - 2 4:00 AM | $200 plan | 100% | 	$12.90 | 2 | $6.45 | 
+| July 2 - July 3 | $200 plan | 100% | 181 | 2 | $90.5 | (new account, mult-agent bug fixes) 
+
+I stopped posting here. I'm using a $200 plan about every 2 days now.
+I think I've spent another $200. Up to $1000 for the mont and it's July 10th. Still not done.
+
+## Support this research
+
+If you want to support of follow this research consider becoming a paid subscriber on my substack [technology and security research blog](https://teriradichel.substack.com). Paid subscribers can add comments and see the archives. Founding members can ask questions (i.e. consulting or training). You can also just sign up for free - no worries! All are welcome and appreciated. 🩵
+
+https://teriradichel.substack.com
+
+## Project Objective: AWS Bootstrap Script for AI Agent Environment 
+
+Build a script to deploy, delete, and test an AWS environment to securely run AI agents. Specifically I want to segregate my security testing, development, production, and management environments. The framework also sets up my organization with monitoring including budgets and security services used by delegated administrators (Guard Duty, etc.)
+
+The whole point of this is to be able to quickly spin up and tear down environments for projects. As for agents I want to be able to quickly deploy new ideas. That is in part achieved by my job framework which is the follow-on project to this one, but I need first and foremost to have the secure base infrastructure in which to deploy my agent framework and agent resources. 
+
+I also spin up separate environments for each penetration test so one test cannot affect another. If I am running AI agents in an environment and they mess it up, I can tear down the whole environment and rebuild it easily. In addition, it ensures that my agents cannot affect production resources with proper security boundaries. When something is deployed incorrectly or I have a billing issue I cannot fix, I can tear down the environment to stop the building and build a new one.
+
+A full series on what I am developing in this project can be found here:
+
+https://teriradichel.substack.com/p/toc-aws-organizations-and-ai-agent
+
+More granular updates on X @teriradichel and the AWS Builder Center.
+
+https://builder.aws.com/profile?tab=articles
+
+## Tools and models
+
+I'm primarily using Kiro CLI and anthropic models, though I do use Google aimode to ask questions at times and may branch out to test other models and technologies after this infrastructure is up and running.
+
+## Issues:
+
+https://github.com/2ndSightLab/ai-tracker/blob/main/issues.md
+
+## Fixed / Notes:
+
+https://github.com/2ndSightLab/ai-tracker/blob/main/fixed.md
+
+## AWS Wishlist
+
+https://github.com/2ndSightLab/ai-tracker/blob/main/awswishlist.md
+
+## My Time
+
+I started this project around March 7th. I had to take a break for about three weeks in May. I haven't really worked on anything else besides this and blog posts because I keep thinking it is "almost done." I've also been working kind of long hours to do it and figure things out.
+
+My initial post on this project tracks the start project and initial progress in 2.5 weeks
+
+https://teriradichel.substack.com/p/what-ive-vibe-coded-in-25-weeks
+
+The time it takes is demonstrated by feature completion and the timestamps in this GitHub repo, though my time may be taken away for other things periodically. 
+
+## Response Time
+
+Sometimes I am blocked by the system being slow or copmletely unsuable. It's hard to tell if it's the model or Kiro so I tried to measure gaps. This is a work in progress. I have limited information to work with, which I think needs to improve. We need more transparency for all metrics.
+
+https://github.com/2ndSightLab/ai-tracker/blob/main/response-time.md
+
+## Cost: ##
+
+### Costs while building an AI Agent Bootstrap Script and Framework
+
+**Date Range**: Mar 7, 2026 - Jul 2, 2026
+
+| Service / Resource | Total | Mar 2026 | Apr 2026 | May 2026 | Jun 2026 | Jul 2026* |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Total costs** | **\$2,151.92** | **\$359.07** | **\$387.55** | **\$621.52** | **\$755.02** | **\$28.76** |
+| Kiro | \$1,079.02 | \$193.55 | \$129.07 | \$285.79 | \$457.71 | \$12.90 |
+| Virtual Private Cloud | \$411.17 | \$50.07 | \$118.34 | \$137.58 | \$104.22 | \$0.97 |
+| Elastic Compute Cloud - Compute | \$283.88 | \$39.45 | \$44.28 | \$100.12 | \$96.80 | \$3.23 |
+
+Costs broken down by service and other details here:
+
+https://github.com/2ndSightLab/ai-tracker/blob/main/cost.md
+
+## Details
+
+I was tracking all this manually but now I ahve the tracker diagram above to track deployments. But notice I haven't spent much time on actually security testing or code review. I review the code as it's being writtne a lot. I have crucial pieces of code that I move to other projects and lock down and some of that has been reviewed a bit more.
 
 ## Bootrstrap Role
 
