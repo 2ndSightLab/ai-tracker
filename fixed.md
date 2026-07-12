@@ -16,8 +16,6 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 🟢 Modified deployment project to use new tracker file. Now tracker code does not call AWS and seems to be working. And it's more efifcient. Same run same errors shows me that the Delegated Admisn still aren't deploying properly. But lots of other resources got correctly tracked. So now I can see what is deployed and what needs to be fixed more easily.
 
-🟢 Apparently my fixes to parallel processor fixed propmt mode as well. Clean code with proper error handling. What a concept.
-
 ## 7/10/2026
 
 🟢 Manual day except for some queries to Google AI
