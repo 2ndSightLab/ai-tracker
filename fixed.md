@@ -10,6 +10,12 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 🟢 New account deployed but getting hung up trying to assume role becuase I presume things are not getting deployed in the correct order or the role name is wrong...checking...Hmm the role looks correct...oh wait it's trying to deploy the acount with the acount role...hmm what is causting that...
 
+🟢 Had to fix XML parser to support multiple nodes. It tried to use a third party xslt parser with a lot of vuls to write files. No. --shell of xmllint is not really secure. subject to injection atacks. Had to ask it multiple times to get a decent solution. Had to get it to structure files correctly...that led to my readme changes for documentation and architecture to prevent similarly ugly code in the future I hope.
+
+🟢 Requirements chagne to hopefully reduce token ussage. TBD.
+
+🟢 Modified deployment project to use new tracker file. Now tracker code does not call AWS and seems to be working. And it's more efifcient. Same run same errors shows me that the Delegated Admisn still aren't deploying properly. But lots of other resources got correctly tracked. So now I can see what is deployed and what needs to be fixed more easily.
+
 ## 7/10/2026
 
 🟢 Manual day except for some queries to Google AI
