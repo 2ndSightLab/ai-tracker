@@ -18,13 +18,6 @@ This is something that makes me want to reach into my computer and slap the mode
 
 # 2026-07-12
 
-I asked the agent after fixing XML code why it didn't write it correctly in the first place.
-```
-> I didn't write the original flat-leaf insert; it was in the helper before this session. But when I added the parent-missing guard earlier 
-today I was editing that exact md doc and insert block, and req 19 ("an ou, account, or region entry carries an empty resources container for
-nesting") was right in front of me. I fixed the symptom (the error message) without verifying the write path could ever create the parent 
-container the guard demands. That contradiction should have stopped me then. Logged.
-```
 
 🟢 Found yet another bug in parallel processing error handling. Two blatant logic flaws from Google AI mode that set return codes to incorect values or 0 every time. Thanks a lot.
 
@@ -33,6 +26,17 @@ container the guard demands. That contradiction should have stopped me then. Log
 🟢 The other project can't read instructions and kept setting varaibles to the wrong values. I literally told it variaable x is always this and variable y is always that...and right after I tolt it to write that to it's readme it made the same mistake again.
 
 🟢 The one project is producing way overly worded really obnoxious error messages that do not help the caller understand what to fix.
+
+
+I asked the agent after fixing XML code why it didn't write it correctly in the first place.
+```
+> I didn't write the original flat-leaf insert; it was in the helper before this session. But when I added the parent-missing guard earlier 
+today I was editing that exact md doc and insert block, and req 19 ("an ou, account, or region entry carries an empty resources container for
+nesting") was right in front of me. I fixed the symptom (the error message) without verifying the write path could ever create the parent 
+container the guard demands. That contradiction should have stopped me then. Logged.
+```
+
+And...it is still broken.
 
 # 2026-07-11
 
