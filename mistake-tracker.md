@@ -50,11 +50,13 @@ container the guard demands. That contradiction should have stopped me then. Log
 
 🔴 Finally I ask it wwhere dose the tracker write it and it gives em the wrong XML path. SO I give it the righ XML path. UGGH. It's in the XML in the readme I've had it read over and over and over and over again.
 
+🔴 OMG Stab me in the pencil with an eyeball. No drill a screw into the hard drive of this thing. It just made chages to the diagram and I showed it the diagram is correct. And it incorrrectly made changes to the diagram in the section where it is correct. And then it said it was the other project's fault. But I literally just copied and pasted it the error mesage it wrote showing it IS GETTING ALL THE DATA. It is 100% in this project's code.
+
 
 =========================================
  savisec: Deploy Diagram
 =========================================
-org: savisec  config-id: [savisec] aws-id: [o-vif30ez4ew]
+org: savisec  config-id: [xxxxxx] aws-id: [o-xxxxxx]
 |
 |     Organization Resources:
 |____ Organization  config-id: [organization] aws-id: [o-xxxxxxx]
