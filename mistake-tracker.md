@@ -99,6 +99,30 @@ org: savisec  config-id: [xxxxxx] aws-id: [o-xxxxxx]
 
 🔴 So no error and finaly data getting to XML file. But NO. Did it fix or test the diagram? No. It's not correct. So I tell it to look in the file and then show it it's not in the diagram and instead of fixing it, it's writing a book explaining itself.
 
+🔴 So finally it kind of works but NO. It has resources outside regions and inside regions. Seriously.
+
+🔴 The delegated admins I fixed a million times not working because AWS did not create standards for these things an they are impelmented in different ways. So my nice clean helper script had to have an ugly case script added to it to handle these variaations.
+
++     20: case "${CHECK_SERVICE_PRINCIPAL}" in
++     21:   securityhub.amazonaws.com)
++     22:     RAC_SERVICE="securityhub"
++     23:     RAC_ACTION="list-organization-admin-accounts"
++     24:     RAC_QUERY="AdminAccounts[].AccountId"
++     25:     ;;
++     26:   guardduty.amazonaws.com)
++     27:     RAC_SERVICE="guardduty"
++     28:     RAC_ACTION="list-organization-admin-accounts"
++     29:     RAC_QUERY="AdminAccounts[].AdminAccountId"
++     30:     ;;
++     31:   macie.amazonaws.com)
++     32:     RAC_SERVICE="macie2"
++     33:     RAC_ACTION="get-administrator-account"
++     34:     RAC_QUERY="Administrator.AccountId"
++     35:     ;;
++     36: esac
++     37: 
+
+
 # 2026-07-11
 
 What?
