@@ -16,6 +16,19 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 🟢 Modified deployment project to use new tracker file. Now tracker code does not call AWS and seems to be working. And it's more efifcient. Same run same errors shows me that the Delegated Admisn still aren't deploying properly. But lots of other resources got correctly tracked. So now I can see what is deployed and what needs to be fixed more easily.
 
+🟢 Fixed yet another bug in parallel processor
+
+🟢 Tracker code the agent wrote according to requirements are not * AT ALL * following requirements. Over and over and over again to get the XML structure correct.
+
+🟢 Error mesasges are hideoous. How is a caller supposed to know what to fix? Calling the tracker file corrupted. You write the darn file fix it!
+
+🟢 Other project is repeately setting variables wrong but I think I got that fixed.
+
+🟢 Asking projects to add full test coverate. We'lls see.
+
+A mii
+
+
 ## 7/10/2026
 
 🟢 Manual day except for some queries to Google AI
@@ -31,6 +44,7 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 🟢 Once the error messages were unhidden, parallel processing is fixed, and the delegated admins are fixed everything else seems to be attempting to deploy. I just need to figure out why the individual resources are having issues.
 
 🟢 I also fixed a lot of hidden error mesages in the aws command runner and added query and output to make it easier to lookup values. I need to double check some security checks that got removed but it seems to be working better now and pretty much everything input to an aws command gets validated properly (unlike some other code ...) though I still need to double check a few things.
+
 
 ## 7/9/2026
 
