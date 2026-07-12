@@ -95,7 +95,7 @@ org: savisec  config-id: [xxxxxx] aws-id: [o-xxxxxx]
 
 
 ```
-🔴 FINALLY. HOURS AND HOURS LATER. It's working. So mental note. Pring otu every variable.
+cFINALLY. HOURS AND HOURS LATER. It's working. So mental note. Pring otu every variable.
 
 🔴 So no error and finaly data getting to XML file. But NO. Did it fix or test the diagram? No. It's not correct. So I tell it to look in the file and then show it it's not in the diagram and instead of fixing it, it's writing a book explaining itself.
 
@@ -122,6 +122,9 @@ org: savisec  config-id: [xxxxxx] aws-id: [o-xxxxxx]
 +     36: esac
 +     37: 
 
+🔴 I ask the model to fix all problems like the one it just fixed. It lists a bunch of problems but does not fix. I ask if it fixed. It says yes becuase of the one it fixed before.
+
+🔴 Cannot get the delegated admin code right!!
 
 # 2026-07-11
 
