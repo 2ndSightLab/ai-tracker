@@ -26,8 +26,13 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 🟢 Asking projects to add full test coverate. We'lls see.
 
-A mii
+🟢 Fixed sving to XML after a million tries in corrected data structure.
 
+🟢 Fixed diagram to correclty show data.
+
+🟢 Added a masked diagram.
+
+🟢 Model is STILL struggling with Delegated admis due to all the one-offs.
 
 ## 7/10/2026
 
