@@ -19,13 +19,13 @@ This is something that makes me want to reach into my computer and slap the mode
 # 2026-07-12
 
 
-🟢 Found yet another bug in parallel processing error handling. Two blatant logic flaws from Google AI mode that set return codes to incorect values or 0 every time. Thanks a lot.
+🔴 Found yet another bug in parallel processing error handling. Two blatant logic flaws from Google AI mode that set return codes to incorect values or 0 every time. Thanks a lot.
 
-🟢 Now fricking cannot get the projects to read their readmes. I don't know if the models are being very dumb or it's my new readme structure. Will ned to test it a big more. But one of the projects keeps repeatedly aksing questions that are answered in it's readme and being so dumb. There's an XML structure in it's readme it needs to follow and the thing can't get it right. It's a pretty basic XML structure with some nesting. But it's not complicated.
+🔴 Now fricking cannot get the projects to read their readmes. I don't know if the models are being very dumb or it's my new readme structure. Will ned to test it a big more. But one of the projects keeps repeatedly aksing questions that are answered in it's readme and being so dumb. There's an XML structure in it's readme it needs to follow and the thing can't get it right. It's a pretty basic XML structure with some nesting. But it's not complicated.
 
-🟢 The other project can't read instructions and kept setting varaibles to the wrong values. I literally told it variaable x is always this and variable y is always that...and right after I tolt it to write that to it's readme it made the same mistake again.
+🔴 The other project can't read instructions and kept setting varaibles to the wrong values. I literally told it variaable x is always this and variable y is always that...and right after I tolt it to write that to it's readme it made the same mistake again.
 
-🟢 The one project is producing way overly worded really obnoxious error messages that do not help the caller understand what to fix.
+🔴 The one project is producing way overly worded really obnoxious error messages that do not help the caller understand what to fix.
 
 
 I asked the agent after fixing XML code why it didn't write it correctly in the first place.
@@ -36,7 +36,65 @@ nesting") was right in front of me. I fixed the symptom (the error message) with
 container the guard demands. That contradiction should have stopped me then. Logged.
 ```
 
-And...it is still broken.
+🔴 And...it is still broken. It writes a million words to teh screen. Pointless. I say look at the XML in the readme. Oh. It doesn't match. DUH.
+
+🔴 It says it fixed it. I ask it why the test did not catch it. Create a test. In the meantime I test manually. NOT FIXED.
+
+🔴 Both projects are blaming each other for an incorrect value. I'm havign them both write tests to prove they are each doing the right thing.
+
+🔴 Again again. Finally I have it print out all the values it's using to decide where and how to bulid nodes. Clearly the problem exists in a particular project.
+
+🔴 Still can't figre it out. Finally I copy and paste the diagram with the missing node. But the diagram was never exactly right to begin with.
+
+🔴 It tells me the diagram is never reading teh node where the tracker writes it. HELLO! THE TRACKER NEVER WRITES IT. OMG.
+
+🔴 Finally I ask it wwhere dose the tracker write it and it gives em the wrong XML path. SO I give it the righ XML path. UGGH. It's in the XML in the readme I've had it read over and over and over and over again.
+
+
+=========================================
+ savisec: Deploy Diagram
+=========================================
+org: savisec  config-id: [savisec] aws-id: [o-vif30ez4ew]
+|
+|     Organization Resources:
+|____ Organization  config-id: [organization] aws-id: [o-xxxxxxx]
+|____ Enable All Features  config-id: [enable-all-features] aws-id: [o-xxxxxx]
+|____ Deny-All OU  config-id: [deny-all-ou] aws-id: [p-xxxxxx]
+|____ SCP Require IMDSv2  config-id: [scp-require-imdsv2] aws-id: [p-xxxxxxx]
+|____ SCP Deny Leave Org  config-id: [scp-deny-leave-org] aws-id: [p-xxxxxx]
+|____ SCP Allowed Regions  config-id: [scp-allowed-regions] aws-id: [p-xxxxxxx]
+|     Deploy For Each Env:
+|____ SCP Deny External  config-id: [scp-deny-external] aws-id: []
+|____ OU  config-id: [ou] aws-id: []
+|     Deploy To All Accounts:
+|____ Account  config-id: [account] aws-id: []
+|____ Move account to OU  config-id: [move-account-to-ou] aws-id: []
+|____ Account alias  config-id: [account-alias] aws-id: []
+|____ Budgets  config-id: [budgets] aws-id: []
+|____ Xadmin role  config-id: [xadmin-role] aws-id: []
+|____ Iadmin role  config-id: [iadmin-role] aws-id: []
+|____ Oadmin role  config-id: [oadmin-role] aws-id: []
+|
+|____ env: manage  config-id: [manage] aws-id: []
+|     |
+|     |     Environment Resources:
+|     |____ OU  config-id: [ou] aws-id: []
+|     |____ SCP Deny External  config-id: [scp-deny-external] aws-id: []
+|     |____ Budgets  config-id: [budgets] aws-id: []
+|     |
+|     |____ account: manage-iam  config-id: [manage-iam] aws-id: []
+|     |     |
+|     |     |     Resources:
+|     |     |____ Iadmin user  config-id: [iadmin-user] aws-id: []
+|     |     |____ Xadmin user  config-id: [xadmin-user] aws-id: []
+|     |
+|     |____ account: manage-kms  config-id: [manage-kms] aws-id: []
+|     |     |
+
+
+
+
+
 
 # 2026-07-11
 
