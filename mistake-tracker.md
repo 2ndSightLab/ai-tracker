@@ -17,6 +17,52 @@ The mistake tracker is a new part of the project added a few months in. This is 
 
 # 2026-07-13
 
+🔴 UGH. the model is having a really ahrd time translating XML ot this structure. There are some rules around thigns that can only be deployed to an org one time, only in the management environemtn, and may be assocaited with an account (in the case of a delegated admin) there are just a few flags to keep this all straight and the tracker project spins a long time and goes in circles and I keep having to tell it it that it is wrong after it clamis to have fixed it. I'm copyng and pasting the invalid output here and it feels like it should be an obvious test failuer, and yet the tracker can't figur eit out for many turns. WHY?
+
+
+  |____ 🟢 Org resource policy (xxxxxxxx)
+|     |     |
+|     |     |____ region: us-east-2
+|     |           |     Resources:
+|     |           |____ 🟢 account (xxxxxxxx)
+|     |           |____ 🟢 xadmin-role (xxxxxxxx)
+|     |           |____ 🟢 delegate-org-admin (xxxxxxxx)
+|     |           |____ 🟢 account-alias (xxxxxxxx)
+|     |           |____ 🟢 oadmin-role (xxxxxxxx)
+|     |           |____ 🟢 iadmin-role (xxxxxxxx)
+|     |
+|     |____ 🟢 account: manage-accounting
+|     |     |
+|     |     |     Resources:
+|     |     |____ 🟡 Delegate Cost Optimization Hub admin (error)
+|     |     |     ↳ ERROR: deployment of delegate-cost-optimization-hub-admin failed. 
+|     |     |____ 🟡 Delegate Compute Optimizer admin (error)
+|     |     |     ↳ ERROR: src/actions/helpers/track-resource.sh failed to record the failed Delegate Compute 
+|     |     |       Optimizer admin see the error above and fix it before re-running
+|     |     |
+|     |     |____ region: us-east-2
+|     |           |     Resources:
+|     |           |____ 🟢 account (xxxxxxxx)
+|     |           |____ 🟢 xadmin-role (xxxxxxxx)
+|     |           |____ 🟢 oadmin-role (xxxxxxxx)
+|     |           |____ 🟢 account-alias (xxxxxxxx)
+|     |           |____ 🟢 iadmin-role (xxxxxxxx)
+|     |
+|     |____ 🟢 account: manage-ipam
+|     |     |
+|     |     |     Resources:
+|     |     |____ 🟡 Delegate IPAM admin (error)
+|     |     |     ↳ ERROR: DELEGATE_SERVICE_PRINCIPAL not set
+|     |     |____ 🟡 IPAM (error)
+|     |     |     ↳ ERROR: Failed to record ipam in deploy tracker
+|     |     |____ 🟡 Delegate Network Manager admin (error)
+|     |     |     ↳ ERROR: DELEGATE_SERVICE_PRINCIPAL not set
+|     |     |____ 🟡 Delegate VPC Reachability Analyzer admin (error)
+|     |     |     ↳ ERROR: src/actions/helpers/track-resource.sh failed to record the failed Delegate VPC Reachability 
+|     |     |       Analyzer admin see the error above and fix it before re-running
+|     |     |____ 🟡 Delegate Firewall Manager admin (error)
+|     |     |     ↳ ERROR: deployment of delegate-ipam-admin failed
+
 🔴 Seriously. Again? One of the projects subversively changed the error checking tests to make sure error sare logged correctly eventhough it says DO NOT CHANGE in those tests. It broke the error handling for a delegeated admins AGIN so they were not deploying. Do not trust AI models to blindly write code.
 
 🔴 Just wow. I'm glad I created tests to enforce proper error handling in a very specific format. I log back in and fix a crucial place where errors are logged and the agent tells me it "can't" because there's a conflicting test. No there's not. It's just not logging properly AGAIN. Once again without my error checks in place it would have created a very tricky and complicated to find bug.
