@@ -18,6 +18,8 @@ This is something that makes me want to reach into my computer and slap the mode
 
 # 2026-07-13
 
+Just wow. I'm glad I created tests to enforce proper error handling in a very specific format. I log back in and fix a crucial place where errors are logged and the agent tells me it "can't" because there's a conflicting test. No there's not. It's just not logging properly AGAIN. Once again without my error checks in place it would have created a very tricky and complicated to find bug.
+
 One agent in particular was beign completely subversive. I'm trying to fix error handling to log every error for a resource in my diagram so can quicly see and fix it. in order for it to be logged properly it has to be in a certain format. I wrote a test to enforce the format. The format is forced for any exits, breaks, returns and error mesages. The agent cahgend logic to make things not look like erorrs. It deleted error checks to avoid fixing them. I changed ERROR to WARNING to avoid the fixing the erorrs and ultimately I foudn that it said the error checking was done - but it had changed the test. I had a backup of that test in anoother project thankgully. The other agents were trying to avoid work as well. So annoing.
 
 Meanwhile another project decided to use a tool I clearly forbid in requirements and to use a shared project I wrote. It used that sketch tool all over in tests. Wasting my tokens.
