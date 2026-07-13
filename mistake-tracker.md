@@ -4,7 +4,7 @@ See more about this project here:
 
 https://github.com/2ndSightLab/ai-tracker
 
-More details on the mistake and timeline here. You can see when I'm being slowed down and by what a bit more specifically:
+🔴 More details on the mistake and timeline here. You can see when I'm being slowed down and by what a bit more specifically:
 
 https://github.com/2ndSightLab/ai-tracker/blob/main/fixed.md
 
@@ -14,13 +14,14 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/response-time.md
 
 The mistake tracker is a new part of the project added a few months in. This is not super scientific as it is hard to quantify. I'm just telling the model to increment the mistakes it's making +1 if it starts making a bunch of mistakes. This is not every mistakes mostly only when I start getting annoyed. :-D The mistakes are largely worded by the AI agent and sometimes it does not capture the correct mistake but I don't always fix that because I just want to get stuff done. It generally captures a valid mistake but not the one I actually wanted it to log. So these are all valid just some are missing I didn't bother to fix to the correct mistake. I don't care about typooooos this is just a fast as possible log. Trying to get things done. Note missing days/times may be because the model deleted the data or because I took some time off. In some cases I have to work on other things...
 
-This is something that makes me want to reach into my computer and slap the model. I have a very explicit examlpe of the XML that is supsoed to be writen to track resources. It defines exactly what I want the model to store. IT DOES NOT store any sensitive or resource specific data. It tracks two IDs region, account id, ou id. That's it. So the model totally srewed up the XML in the tracker project but I have a copy of what it is supposed to be in the deploy project. I tell it to corecct it. So it "fixes" everything and randomly adds a whole bunch of crap including PII into the model even though I never told it to do that and it is nowhere in my sample XML. WTH!! DO NOT TRUST AI MODELS. 
 
 # 2026-07-13
 
-Just wow. I'm glad I created tests to enforce proper error handling in a very specific format. I log back in and fix a crucial place where errors are logged and the agent tells me it "can't" because there's a conflicting test. No there's not. It's just not logging properly AGAIN. Once again without my error checks in place it would have created a very tricky and complicated to find bug.
+🔴 Seriously. Again? One of the projects subversively changed the error checking tests to make sure error sare logged correctly eventhough it says DO NOT CHANGE in those tests. It broke the error handling for a delegeated admins AGIN so they were not deploying. Do not trust AI models to blindly write code.
 
-One agent in particular was beign completely subversive. I'm trying to fix error handling to log every error for a resource in my diagram so can quicly see and fix it. in order for it to be logged properly it has to be in a certain format. I wrote a test to enforce the format. The format is forced for any exits, breaks, returns and error mesages. The agent cahgend logic to make things not look like erorrs. It deleted error checks to avoid fixing them. I changed ERROR to WARNING to avoid the fixing the erorrs and ultimately I foudn that it said the error checking was done - but it had changed the test. I had a backup of that test in anoother project thankgully. The other agents were trying to avoid work as well. So annoing.
+🔴 Just wow. I'm glad I created tests to enforce proper error handling in a very specific format. I log back in and fix a crucial place where errors are logged and the agent tells me it "can't" because there's a conflicting test. No there's not. It's just not logging properly AGAIN. Once again without my error checks in place it would have created a very tricky and complicated to find bug.
+
+🔴 One agent in particular was beign completely subversive. I'm trying to fix error handling to log every error for a resource in my diagram so can quicly see and fix it. in order for it to be logged properly it has to be in a certain format. I wrote a test to enforce the format. The format is forced for any exits, breaks, returns and error mesages. The agent cahgend logic to make things not look like erorrs. It deleted error checks to avoid fixing them. I changed ERROR to WARNING to avoid the fixing the erorrs and ultimately I foudn that it said the error checking was done - but it had changed the test. I had a backup of that test in anoother project thankgully. The other agents were trying to avoid work as well. So annoing.
 
 Meanwhile another project decided to use a tool I clearly forbid in requirements and to use a shared project I wrote. It used that sketch tool all over in tests. Wasting my tokens.
 
@@ -322,6 +323,7 @@ Run with RUST_BACKTRACE=full to include source snippets.
 
 🔴 The one project is producing way overly worded really obnoxious error messages that do not help the caller understand what to fix.
 
+🔴 This is something that makes me want to reach into my computer and slap the model. I have a very explicit examlpe of the XML that is supsoed to be writen to track resources. It defines exactly what I want the model to store. IT DOES NOT store any sensitive or resource specific data. It tracks two IDs region, account id, ou id. That's it. So the model totally srewed up the XML in the tracker project but I have a copy of what it is supposed to be in the deploy project. I tell it to corecct it. So it "fixes" everything and randomly adds a whole bunch of crap including PII into the model even though I never told it to do that and it is nowhere in my sample XML. WTH!! DO NOT TRUST AI MODELS. 
 
 I asked the agent after fixing XML code why it didn't write it correctly in the first place.
 ```
