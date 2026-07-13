@@ -223,7 +223,7 @@ This is just the particular configuration I'm tesing. The configruation supports
       |
       |____ 🔴 account: work-test-domains
       |
-      |____ 🔴 account: work-test-pentest--vi24xnpciytghaq0g
+      |____ 🔴 account: work-test-pentest--adgoeinaananvansg
 
 ```
 
