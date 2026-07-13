@@ -17,6 +17,8 @@ The mistake tracker is a new part of the project added a few months in. This is 
 
 # 2026-07-13
 
+🔴 I literally JUST spent a ton of time fixing the parellel processor to never overwrite caller error messages and get all teh error handlign rith and write test for eveyrhing and not abort, contnue on error. So i had it add logic for three retries and it's aborting prematurely and not logging errors properly. it's doucmente din the readme with a big note to do it correctly and liteally jus tfixed that. FDSfas;ga;aiyhsaigna'pa'nphosj'hpsaqeb'pyurp5uybsvia,we
+
 🔴 UGH. the model is having a really ahrd time translating XML ot this structure. There are some rules around thigns that can only be deployed to an org one time, only in the management environemtn, and may be assocaited with an account (in the case of a delegated admin) there are just a few flags to keep this all straight and the tracker project spins a long time and goes in circles and I keep having to tell it it that it is wrong after it clamis to have fixed it. I'm copyng and pasting the invalid output here and it feels like it should be an obvious test failuer, and yet the tracker can't figur eit out for many turns. WHY? Finally...
 
 ```
