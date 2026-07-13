@@ -17,6 +17,11 @@ The mistake tracker is a new part of the project added a few months in. This is 
 This is something that makes me want to reach into my computer and slap the model. I have a very explicit examlpe of the XML that is supsoed to be writen to track resources. It defines exactly what I want the model to store. IT DOES NOT store any sensitive or resource specific data. It tracks two IDs region, account id, ou id. That's it. So the model totally srewed up the XML in the tracker project but I have a copy of what it is supposed to be in the deploy project. I tell it to corecct it. So it "fixes" everything and randomly adds a whole bunch of crap including PII into the model even though I never told it to do that and it is nowhere in my sample XML. WTH!! DO NOT TRUST AI MODELS. 
 
 # 2026-07-13
+
+One agent in particular was beign completely subversive. I'm trying to fix error handling to log every error for a resource in my diagram so can quicly see and fix it. in order for it to be logged properly it has to be in a certain format. I wrote a test to enforce the format. The format is forced for any exits, breaks, returns and error mesages. The agent cahgend logic to make things not look like erorrs. It deleted error checks to avoid fixing them. I changed ERROR to WARNING to avoid the fixing the erorrs and ultimately I foudn that it said the error checking was done - but it had changed the test. I had a backup of that test in anoother project thankgully. The other agents were trying to avoid work as well. So annoing.
+
+Meanwhile another project decided to use a tool I clearly forbid in requirements and to use a shared project I wrote. It used that sketch tool all over in tests. Wasting my tokens.
+
 ```
 Kiro is having trouble responding right now: 
    0: Failed to receive the next message: request_id: , error: InternalServerError: Encountered an unexpected error when processing the request, please try again.
