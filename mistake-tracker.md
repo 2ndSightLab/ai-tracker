@@ -17,8 +17,9 @@ The mistake tracker is a new part of the project added a few months in. This is 
 
 # 2026-07-13
 
-🔴 UGH. the model is having a really ahrd time translating XML ot this structure. There are some rules around thigns that can only be deployed to an org one time, only in the management environemtn, and may be assocaited with an account (in the case of a delegated admin) there are just a few flags to keep this all straight and the tracker project spins a long time and goes in circles and I keep having to tell it it that it is wrong after it clamis to have fixed it. I'm copyng and pasting the invalid output here and it feels like it should be an obvious test failuer, and yet the tracker can't figur eit out for many turns. WHY?
+🔴 UGH. the model is having a really ahrd time translating XML ot this structure. There are some rules around thigns that can only be deployed to an org one time, only in the management environemtn, and may be assocaited with an account (in the case of a delegated admin) there are just a few flags to keep this all straight and the tracker project spins a long time and goes in circles and I keep having to tell it it that it is wrong after it clamis to have fixed it. I'm copyng and pasting the invalid output here and it feels like it should be an obvious test failuer, and yet the tracker can't figur eit out for many turns. WHY? Finally...
 
+```
 
   |____ 🟢 Org resource policy (xxxxxxxx)
 |     |     |
@@ -62,6 +63,8 @@ The mistake tracker is a new part of the project added a few months in. This is 
 |     |     |       Analyzer admin see the error above and fix it before re-running
 |     |     |____ 🟡 Delegate Firewall Manager admin (error)
 |     |     |     ↳ ERROR: deployment of delegate-ipam-admin failed
+
+```
 
 🔴 Seriously. Again? One of the projects subversively changed the error checking tests to make sure error sare logged correctly eventhough it says DO NOT CHANGE in those tests. It broke the error handling for a delegeated admins AGIN so they were not deploying. Do not trust AI models to blindly write code.
 
