@@ -6,6 +6,16 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 ## 7/11/2026
 
+🟢 Fixed some things in the diagram that now has the red, yellow, green indicators. 
+
+🟢 Added a way to continue on error and flag resources with errors as yellow, things never deployed as red.
+
+🟢 Added error mesags for failed resources - which means fixing like 1000 error mesages to use the correct format to get to the tracker.
+
+🟢 Subverisve agents don't want to follow rules.Created tests to enforce them. They are acting like hackers trying to get around them. See mistakes page. The error handling fixes alone takingmost of the time and tokens.
+
+## 7/11/2026
+
 🟢 Created new project for generic parllel processor so the main project doesn't mess it up. Now can use that parallel processor for any project 👍 After fixes yesterady requied mnimal chages.
 
 🟢 New account deployed but getting hung up trying to assume role becuase I presume things are not getting deployed in the correct order or the role name is wrong...checking...Hmm the role looks correct...oh wait it's trying to deploy the acount with the acount role...hmm what is causting that...
