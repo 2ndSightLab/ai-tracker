@@ -22,6 +22,8 @@ One agent in particular was beign completely subversive. I'm trying to fix error
 
 Meanwhile another project decided to use a tool I clearly forbid in requirements and to use a shared project I wrote. It used that sketch tool all over in tests. Wasting my tokens.
 
+You know that delegated admin code that keeps getting mesaged up? I Put it in it's own project. Well that agent managled all the code with an update. Fixing. $$$$$$$$.
+
 ```
 Kiro is having trouble responding right now: 
    0: Failed to receive the next message: request_id: , error: InternalServerError: Encountered an unexpected error when processing the request, please try again.
