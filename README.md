@@ -18,7 +18,7 @@ This is just the particular configuration I'm tesing. The configruation supports
 
 ```
 =========================================
- savisec: Deploy Diagram
+ xxxxxx: Deploy Diagram
 =========================================
 🟡 org: savisec (xxxxxxxx)
 |
@@ -52,7 +52,7 @@ This is just the particular configuration I'm tesing. The configruation supports
 |     |           |____ 🟢 iadmin-user (xxxxxxxx)
 |     |           |____ 🟢 xadmin-user (xxxxxxxx)
 |     |
-|     |____ 🔴 account: manage-kms (xxxxxxxx)
+|     |____ 🟢 account: manage-kms (xxxxxxxx)
 |     |     |
 |     |     |     Resources:
 |     |     |____ 🔴 Move account to OU
@@ -70,7 +70,6 @@ This is just the particular configuration I'm tesing. The configruation supports
 |     |           |____ 🟢 kms-jobs-key (xxxxxxxx)
 |     |           |____ 🟢 kms-secrets-key (xxxxxxxx)
 |     |           |____ 🟢 kms-config-key (xxxxxxxx)
-|     |           |____ 🔴 kms-ami-key
 |     |
 |     |____ 🟢 account: manage-security (xxxxxxxx)
 |     |     |
@@ -151,7 +150,7 @@ This is just the particular configuration I'm tesing. The configruation supports
 |     |     |____ 🟢 Xadmin role (xxxxxxxx)
 |     |     |____ 🟢 Iadmin role (xxxxxxxx)
 |     |     |____ 🟢 Oadmin role (xxxxxxxx)
-|     |     |____ 🔴 Account Budget
+|     |     |____ 🟢 Account Budget (xxxxxxxx)
 |     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
 |     |     |
 |     |     |____ region: us-east-2
