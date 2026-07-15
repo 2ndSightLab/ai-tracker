@@ -16,6 +16,18 @@ The mistake tracker is a new part of the project added a few months in. This is 
 
 # 2026-07-15
 
+🔴 I put a note about all the things I ahve accomplished online. It seems like every time I do that the models degrade to nearly unusable.
+
+🔴 Something weird just happened. I swear I launched two agents for two different projects. Suddenly both the agents were in the same project. My current set up is not ideal. I have plans to change it but trying to get something done. That is very distrubing if my brain is not deceiving me.
+
+🔴 Aske dthe tracker to b64 encode error mesasges. It did it but didn't even test on a copy of the lieve tracker data and was an error in encode/decode obviously if run the live tracker diagram. Seems like that is such an obvious test.
+
+🔴 So slow and making mistakes so methodically hand holding to fix a few remaining issues.
+
+🔴 Asked for a list of retry nodes form new helper file to fix a bug. Got back nothing. Seems like the display didn't make it to the screen for some reason. When it did display them was completely wrong.
+
+___ Later ^^^
+
 🔴 Too many mistakes to record no time.
 
 🔴 Bad at multi-threaded programming across projects. But it's complicated. Took me a while to sort it out.
