@@ -4,6 +4,20 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
+## 7/15/2026
+
+🟢 It's working. 
+
+🟢 Figured out why delete default vpcs wasn't working. It was deleting all the vpcs for every single account. It's green in the list now but last time it was green in the list, it didn't really work. I'll check it later.
+
+🟢 Fixed some diagram issues. It's kinda pretty for a simple thing. I like easy to read data. Too much complexity as it is.
+
+🟢 I have a retry step that only re-deploys things that failed. NIIIIIICCCE. Helping me get done faster. Previously deployed things aren't touched.
+
+🟢 Keep fiddling with error handling - so errors show up an the right time, don't get overriden, don't kill parallel processing, don't get lost in multi-threaded gaps. Finally think it is pretty solid. And models are really bad that.
+
+🟢 The models had an insanely hard time and still keep reverting delegatetd admin scripts for some reason. I keep adding more and more scrpts and explanation. The thing is, it requires two different roles to change and configure the services. By design. And they keep wanting to use service specific list functions that don't work. Not allowed. I had them all right but one got flipped off. I think it's just a data isue that will be fixed next deploy.
+
 ## 7/11/2026
 
 🟢 Fixed some things in the diagram that now has the red, yellow, green indicators. 
