@@ -20,7 +20,7 @@ This is just the particular configuration I'm tesing. The configruation supports
 =========================================
  xxxxxx: Deploy Diagram
 =========================================
-🟡 org: savisec (xxxxxxxx)
+🟡 org: xxxxxxx (xxxxxxxx)
 |
 |     Organization Resources:
 |____ 🟢 Organization (xxxxxxxx)
