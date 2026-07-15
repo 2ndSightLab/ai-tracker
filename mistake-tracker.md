@@ -24,6 +24,8 @@ The mistake tracker is a new part of the project added a few months in. This is 
 
 🔴 Really bad at hierarchies.
 
+🔴 All I can say is thank goodness I'm not just telling the agent to figure something out and fix it today. SOOOOO many mistakes. so I'm wlking it through each one for the most art in the core engine and my wrists are tired from typing. Especially frustrated annoyed typing where I'm paying for explitive (oops I mean extranoues) tokens. Like fuu;dfoihnslnblj'adpbj'smh/dxgmza. IYKYK
+
 # 2026-07-13
 
 🔴 I literally JUST spent a ton of time fixing the parellel processor to never overwrite caller error messages and get all teh error handlign rith and write test for eveyrhing and not abort, contnue on error. So i had it add logic for three retries and it's aborting prematurely and not logging errors properly. it's doucmente din the readme with a big note to do it correctly and liteally jus tfixed that. FDSfas;ga;aiyhsaigna'pa'nphosj'hpsaqeb'pyurp5uybsvia,we
