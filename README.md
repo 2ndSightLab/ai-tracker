@@ -7,7 +7,7 @@ Track how long it takes and how much it costs to create projects with AI 🤖 in
 ### Status Legend ###
 
 | Status | Description | 
-| :---: | :---: | 
+| :---: | :--- | 
 | 🟢 | Done |
 | 🟡 | Broken |
 | 🔴 | Not attempted |
