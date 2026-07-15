@@ -22,6 +22,8 @@ The mistake tracker is a new part of the project added a few months in. This is 
 
 🔴 Incorrctly always going either straight to requirements but mostly to code and skipping requiremnets and almsot never the data. Someties the answer is in the data. It can't sort these things properly.
 
+🔴 Really bad at hierarchies.
+
 # 2026-07-13
 
 🔴 I literally JUST spent a ton of time fixing the parellel processor to never overwrite caller error messages and get all teh error handlign rith and write test for eveyrhing and not abort, contnue on error. So i had it add logic for three retries and it's aborting prematurely and not logging errors properly. it's doucmente din the readme with a big note to do it correctly and liteally jus tfixed that. FDSfas;ga;aiyhsaigna'pa'nphosj'hpsaqeb'pyurp5uybsvia,we
