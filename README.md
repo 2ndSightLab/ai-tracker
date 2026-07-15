@@ -18,9 +18,9 @@ This is just the particular configuration I'm tesing. The configruation supports
 
 ```
 =========================================
- xxxxxxx: Deploy Diagram
+ xxxxx: Deploy Diagram
 =========================================
-🟡 org: xxxxxxx (xxxxxxxx)
+🟡 org: xxxxx (xxxxxxxx)
 |
 |     Organization Resources:
 |____ 🟢 Organization (xxxxxxxx)
@@ -30,14 +30,16 @@ This is just the particular configuration I'm tesing. The configruation supports
 |____ 🟢 SCP Deny Leave Org (xxxxxxxx)
 |____ 🟢 SCP Allowed Regions (xxxxxxxx)
 |
-|____ 🟡 env: manage
+|____ 🔴 env: manage
 |     |
 |     |     Environment Resources:
 |     |____ 🟢 OU (xxxxxxxx)
 |     |____ 🟢 SCP Deny External (xxxxxxxx)
-|     |____ 🔴 Budgets
 |     |
 |     |____ 🟢 account: manage-iam
+|     |     |
+|     |     |     Resources:
+|     |     |____ 🔴 Move account to OU
 |     |     |
 |     |     |____ region: us-east-2
 |     |           |     Resources:
@@ -48,8 +50,15 @@ This is just the particular configuration I'm tesing. The configruation supports
 |     |           |____ 🟢 iadmin-user (xxxxxxxx)
 |     |           |____ 🟢 xadmin-user (xxxxxxxx)
 |     |           |____ 🟢 iadmin-role (xxxxxxxx)
+|     |           |____ 🟢 account-budget (xxxxxxxx)
+|     |           |____ 🟢 delete-default-vpcs (xxxxxxxx)
 |     |
-|     |____ 🟡 account: manage-kms
+|     |____ 🔴 account: manage-kms
+|     |     |
+|     |     |     Resources:
+|     |     |____ 🔴 Move account to OU
+|     |     |____ 🔴 Account Budget
+|     |     |____ 🔴 Delete default VPCs
 |     |     |
 |     |     |____ region: us-east-2
 |     |           |     Resources:
@@ -63,32 +72,30 @@ This is just the particular configuration I'm tesing. The configruation supports
 |     |           |____ 🟢 kms-jobs-key (xxxxxxxx)
 |     |           |____ 🟢 kms-secrets-key (xxxxxxxx)
 |     |           |____ 🟢 kms-config-key (xxxxxxxx)
-|     |           |____ 🟡 kms-ami-key (error)
-|     |           |     ↳ ERROR: ERROR: exit-conditions.sh failed for kms-ami-key
+|     |           |____ 🔴 kms-ami-key
 |     |
-|     |____ 🟡 account: manage-security
+|     |____ 🟢 account: manage-security
 |     |     |
 |     |     |     Resources:
-|     |     |____ 🔴 Delegate Security Hub admin
-|     |     |____ 🔴 Delegate GuardDuty admin
-|     |     |____ 🔴 Delegate CloudTrail admin
-|     |     |____ 🔴 Delegate AWS Config admin
-|     |     |____ 🔴 Delegate Macie admin
-|     |     |____ 🔴 Delegate Inspector admin
-|     |     |____ 🔴 Delegate IAM Access Analyzer admin
-|     |     |____ 🔴 Delegate Audit Manager admin
-|     |     |____ 🔴 Delegate Health admin
-|     |     |____ 🔴 Delegate Detective admin
-|     |     |____ 🔴 S3 Log Bucket Policy
-|     |     |____ 🔴 Configure GuardDuty
-|     |     |____ 🔴 Configure Security Hub
-|     |     |____ 🔴 Configure CloudTrail
-|     |     |____ 🔴 Configure AWS Config
-|     |     |____ 🔴 Configure Macie
-|     |     |____ 🔴 Configure Inspector
-|     |     |____ 🔴 Configure IAM Access Analyzer
-|     |     |____ 🔴 Configure Security Alerts
-|     |     |____ 🔴 S3 Log Bucket Policy
+|     |     |____ 🟢 Delegate Security Hub admin (xxxxxxxx)
+|     |     |____ 🟢 Delegate GuardDuty admin (xxxxxxxx)
+|     |     |____ 🟢 Delegate CloudTrail admin (xxxxxxxx)
+|     |     |____ 🟢 Delegate AWS Config admin (xxxxxxxx)
+|     |     |____ 🟢 Delegate Macie admin (xxxxxxxx)
+|     |     |____ 🟢 Delegate Inspector admin (xxxxxxxx)
+|     |     |____ 🟢 Delegate IAM Access Analyzer admin (xxxxxxxx)
+|     |     |____ 🟢 Delegate Audit Manager admin (xxxxxxxx)
+|     |     |____ 🟢 Delegate Health admin (xxxxxxxx)
+|     |     |____ 🟢 Delegate Detective admin (xxxxxxxx)
+|     |     |____ 🟢 Configure GuardDuty (xxxxxxxx)
+|     |     |____ 🟢 Configure CloudTrail (xxxxxxxx)
+|     |     |____ 🟢 Configure AWS Config (xxxxxxxx)
+|     |     |____ 🟢 Configure Macie (xxxxxxxx)
+|     |     |____ 🟢 Configure Inspector (xxxxxxxx)
+|     |     |____ 🟢 Configure IAM Access Analyzer (xxxxxxxx)
+|     |     |____ 🟢 Configure Security Alerts (xxxxxxxx)
+|     |     |____ 🔴 Account Budget
+|     |     |____ 🔴 Delete default VPCs
 |     |     |
 |     |     |____ region: us-east-2
 |     |           |     Resources:
@@ -97,29 +104,36 @@ This is just the particular configuration I'm tesing. The configruation supports
 |     |           |____ 🟢 account (xxxxxxxx)
 |     |           |____ 🟢 oadmin-role (xxxxxxxx)
 |     |           |____ 🟢 iadmin-role (xxxxxxxx)
-|     |           |____ 🟡 s3-log-bucket (error)
-|     |           |     ↳ ERROR: ERROR: deployment of delegate-security-hub-admin failed
+|     |           |____ 🟢 s3-log-bucket (xxxxxxxx)
+|     |           |____ 🟢 configure-security-hub (xxxxxxxx)
+|     |           |____ 🟢 s3-log-bucket-policy (xxxxxxxx)
+|     |           |____ 🟢 move-account-to-ou (xxxxxxxx)
 |     |
-|     |____ 🟡 account: manage-org
+|     |____ 🔴 account: manage-org
 |     |     |
 |     |     |     Resources:
-|     |     |____ 🔴 Org resource policy
+|     |     |____ 🟢 Org resource policy (xxxxxxxx)
+|     |     |____ 🔴 Move account to OU
+|     |     |____ 🔴 Account Budget
 |     |     |
 |     |     |____ region: us-east-2
 |     |           |     Resources:
 |     |           |____ 🟢 account (xxxxxxxx)
 |     |           |____ 🟢 xadmin-role (xxxxxxxx)
-|     |           |____ 🟡 delegate-org-admin (error)
-|     |           |     ↳ ERROR: ERROR: deployment of delegate-org-admin failed: [Redacted, non issue, to fix error handling]
+|     |           |____ 🟢 delegate-org-admin (xxxxxxxx)
 |     |           |____ 🟢 account-alias (xxxxxxxx)
 |     |           |____ 🟢 oadmin-role (xxxxxxxx)
 |     |           |____ 🟢 iadmin-role (xxxxxxxx)
+|     |           |____ 🔴 delete-default-vpcs
 |     |
 |     |____ 🟢 account: manage-accounting
 |     |     |
 |     |     |     Resources:
-|     |     |____ 🔴 Delegate Cost Optimization Hub admin
-|     |     |____ 🔴 Delegate Compute Optimizer admin
+|     |     |____ 🟢 Delegate Cost Optimization Hub admin (xxxxxxxx)
+|     |     |____ 🟢 Delegate Compute Optimizer admin (xxxxxxxx)
+|     |     |____ 🔴 Move account to OU
+|     |     |____ 🔴 Account Budget
+|     |     |____ 🔴 Delete default VPCs
 |     |     |
 |     |     |____ region: us-east-2
 |     |           |     Resources:
@@ -127,53 +141,104 @@ This is just the particular configuration I'm tesing. The configruation supports
 |     |           |____ 🟢 xadmin-role (xxxxxxxx)
 |     |           |____ 🟢 oadmin-role (xxxxxxxx)
 |     |           |____ 🟢 account-alias (xxxxxxxx)
+|     |           |____ 🟢 iadmin-role (xxxxxxxx)
 |     |
 |     |____ 🟢 account: manage-ipam
 |     |     |
 |     |     |     Resources:
-|     |     |____ 🔴 Delegate IPAM admin
-|     |     |____ 🔴 IPAM
-|     |     |____ 🔴 Delegate Network Manager admin
-|     |     |____ 🔴 Delegate VPC Reachability Analyzer admin
-|     |     |____ 🔴 Delegate Firewall Manager admin
+|     |     |____ 🟢 Delegate IPAM admin (xxxxxxxx)
+|     |     |____ 🟢 IPAM (xxxxxxxx)
+|     |     |____ 🟢 Delegate Network Manager admin (xxxxxxxx)
+|     |     |____ 🟢 Delegate VPC Reachability Analyzer admin (xxxxxxxx)
+|     |     |____ 🟢 Delegate Firewall Manager admin (xxxxxxxx)
+|     |     |____ 🔴 Move account to OU
+|     |     |____ 🔴 Account Budget
+|     |     |____ 🔴 Delete default VPCs
 |     |     |
 |     |     |____ region: us-east-2
 |     |           |     Resources:
 |     |           |____ 🟢 account (xxxxxxxx)
 |     |           |____ 🟢 xadmin-role (xxxxxxxx)
+|     |           |____ 🟢 iadmin-role (xxxxxxxx)
+|     |           |____ 🟢 account-alias (xxxxxxxx)
+|     |           |____ 🟢 oadmin-role (xxxxxxxx)
 |     |
-|     |____ 🟡 account: manage-kiro
+|     |____ 🔴 account: manage-kiro
 |           |
 |           |     Resources:
 |           |____ 🔴 kiro-cli-identity-center
+|           |____ 🔴 Move account to OU
+|           |____ 🔴 Account Budget
+|           |____ 🔴 Delete default VPCs
 |           |
 |           |____ region: us-east-2
 |                 |     Resources:
 |                 |____ 🟢 account (xxxxxxxx)
-|                 |____ 🟡 oadmin-role (error)
-|                 |     ↳ ERROR: ERROR: deployment of iadmin-role failed
-|                 |____ 🟡 iadmin-role (error)
-|                 |     ↳ ERROR: ERROR: Failed to record iadmin-role in deploy tracker
+|                 |____ 🔴 oadmin-role
+|                 |____ 🔴 iadmin-role
+|                 |____ 🔴 xadmin-role
+|                 |____ 🟢 account-alias (xxxxxxxx)
 |
-|____ 🔴 env: backup
+|____ 🟡 env: backup
 |     |
-|     |____ 🔴 account: backup-backup
+|     |     Environment Resources:
+|     |____ 🔴 OU
+|     |____ 🔴 SCP Deny External
+|     |
+|     |____ 🟡 account: backup-work-test
+|     |     |
+|     |     |     Resources:
+|     |     |____ 🟢 Delegate Backup admin (xxxxxxxx)
+|     |     |____ 🔴 Account
+|     |     |____ 🔴 Move account to OU
+|     |     |____ 🔴 Account alias
+|     |     |____ 🔴 Xadmin role
+|     |     |____ 🔴 Iadmin role
+|     |     |____ 🔴 Oadmin role
+|     |     |____ 🔴 Account Budget
+|     |     |____ 🔴 Delete default VPCs
+|     |     |
+|     |     |____ region: us-east-2
+|     |           |     Resources:
+|     |           |____ 🔴 backup-work-test
+|     |           |____ 🟡 kms-backup-key (error)
+|     |           |     ↳ ERROR: exit-conditions failed for kms key.
+|     |
+|     |____ 🔴 account: backup-manage
 |           |
 |           |     Resources:
-|           |____ 🔴 Delegate Backup admin
-|           |____ 🔴 KMS Backup Key
+|           |____ 🔴 Account
+|           |____ 🔴 Move account to OU
+|           |____ 🔴 Account alias
+|           |____ 🔴 Xadmin role
+|           |____ 🔴 Iadmin role
+|           |____ 🔴 Oadmin role
+|           |____ 🔴 Account Budget
+|           |____ 🔴 Delete default VPCs
 |
 |____ 🔴 env: deny-all
 |     |
 |     |     Environment Resources:
 |     |____ 🔴 SCP Always Denied Actions
+|     |____ 🔴 OU
+|     |____ 🔴 SCP Deny External
 |
 |____ 🟡 env: work-test
+      |
+      |     Environment Resources:
+      |____ 🔴 OU
+      |____ 🟢 SCP Deny External (xxxxxxxx)
       |
       |____ 🟢 account: work-test-iam
       |     |
       |     |     Resources:
       |     |____ 🔴 Iadmin user
+      |     |____ 🔴 Account
+      |     |____ 🔴 Move account to OU
+      |     |____ 🔴 Account alias
+      |     |____ 🔴 Oadmin role
+      |     |____ 🔴 Account Budget
+      |     |____ 🔴 Delete default VPCs
       |     |
       |     |____ region: us-east-2
       |           |     Resources:
@@ -181,49 +246,136 @@ This is just the particular configuration I'm tesing. The configruation supports
       |           |____ 🟢 xadmin-user (xxxxxxxx)
       |           |____ 🟢 iadmin-role (xxxxxxxx)
       |
-      |____ 🟡 account: work-test-kms
+      |____ 🔴 account: work-test-kms
       |     |
       |     |     Resources:
       |     |____ 🔴 KMS Secrets Key
+      |     |____ 🔴 Account
+      |     |____ 🔴 Move account to OU
+      |     |____ 🔴 Xadmin role
+      |     |____ 🔴 Iadmin role
+      |     |____ 🔴 Oadmin role
+      |     |____ 🔴 Account Budget
+      |     |____ 🔴 Delete default VPCs
       |     |
       |     |____ region: us-east-2
       |           |     Resources:
       |           |____ 🟢 account-alias (xxxxxxxx)
       |           |____ 🟢 kms-jobs-key (xxxxxxxx)
-      |           |____ 🟡 kms-ami-key (error)
-      |           |     ↳ ERROR: ERROR: exit-conditions.sh failed for kms-ami-key
+      |           |____ 🔴 kms-ami-key
       |
-      |____ 🔴 account: work-test-network
+      |____ 🟡 account: work-test-network
       |     |
       |     |     Resources:
-      |     |____ 🔴 Remote access prefix list
-      |     |____ 🔴 VPC Flow Logs Role
-      |     |____ 🔴 Jobs VPC
-      |     |____ 🔴 Auth VPC
-      |     |____ 🔴 Work VPC
-      |     |____ 🔴 Honeypot VPC
-      |     |____ 🔴 Backup VPC
-      |     |____ 🔴 IPAM pool
+      |     |____ 🔴 Account
+      |     |____ 🔴 Move account to OU
+      |     |____ 🔴 Account alias
+      |     |____ 🔴 Xadmin role
+      |     |____ 🔴 Iadmin role
+      |     |____ 🔴 Oadmin role
+      |     |____ 🔴 Account Budget
+      |     |____ 🔴 Delete default VPCs
       |     |
       |     |____ region: us-east-2
+      |           |     Resources:
+      |           |____ 🟢 remote-access-prefix-list (xxxxxxxx)
+      |           |____ 🔴 auth-vpc
+      |           |____ 🟡 work-vpc (error)
+      |           |____ 🔴 honeypot-vpc
+      |           |____ 🟡 backup-vpc (error)
+      |           |____ 🟢 ipam-pool (xxxxxxxx)
+      |           |____ 🟢 vpc-flow-logs-role (xxxxxxxx)
+      |           |____ 🟡 jobs-vpc (error)
+      |           |     ↳ ERROR: src/actions/helpers/deploy-x.sh failed see the error above and fix it before re-running
       |
-      |____ 🔴 account: work-test-ami
+      |____ 🟡 account: work-test-ami
       |     |
       |     |     Resources:
-      |     |____ 🔴 Base Amazon Linux AMI
-      |     |____ 🔴 Base Ubuntu AMI
-      |     |____ 🔴 Collab AMI
-      |     |____ 🔴 Share AMI
-      |     |____ 🔴 Share AMIs to OU
+      |     |____ 🔴 Account
+      |     |____ 🔴 Move account to OU
+      |     |____ 🔴 Account alias
+      |     |____ 🔴 Xadmin role
+      |     |____ 🔴 Iadmin role
+      |     |____ 🔴 Oadmin role
+      |     |____ 🔴 Account Budget
+      |     |____ 🔴 Delete default VPCs
+      |     |
+      |     |____ region: us-east-2
+      |           |     Resources:
+      |           |____ 🟡 collab-ami (error)
+      |           |     ↳ ERROR: collab-ami failed but no error message was set by the caller set ERROR_MESSAGE to the real failure 
+      |           |       detail to fix
+      |           |____ 🟡 base-ubuntu-ami (error)
+      |           |     ↳ ERROR: base-ubuntu-ami skipped: dependencies not ready: kms key
+      |           |____ 🟡 share-amis-to-ou (error)
+      |           |     ↳ ERROR: share-amis-to-ou failed but no error message was set by the caller set ERROR_MESSAGE to the real 
+      |           |       failure detail to fix
+      |           |____ 🔴 base-amazon-linux-ami
+      |           |____ 🟡 share-ami (error)
+      |           |     ↳ ERROR: share-ami failed but no error message was set by the caller set ERROR_MESSAGE to the real failure 
+      |           |       detail to fix
       |
-      |____ 🔴 account: work-test-repo
+      |____ 🟢 account: work-test-repo
       |     |
       |     |     Resources:
-      |     |____ 🔴 Code Commit Repository
+      |     |____ 🔴 Account
+      |     |____ 🔴 Move account to OU
+      |     |____ 🔴 Account alias
+      |     |____ 🔴 Xadmin role
+      |     |____ 🔴 Iadmin role
+      |     |____ 🔴 Oadmin role
+      |     |____ 🔴 Account Budget
+      |     |____ 🔴 Delete default VPCs
+      |     |
+      |     |____ region: us-east-2
+      |           |     Resources:
+      |           |____ 🟢 code-commit-repository (xxxxxxxx)
       |
       |____ 🔴 account: work-test-domains
+      |     |
+      |     |     Resources:
+      |     |____ 🔴 Account
+      |     |____ 🔴 Move account to OU
+      |     |____ 🔴 Account alias
+      |     |____ 🔴 Xadmin role
+      |     |____ 🔴 Iadmin role
+      |     |____ 🔴 Oadmin role
+      |     |____ 🔴 Account Budget
+      |     |____ 🔴 Delete default VPCs
       |
-      |____ 🔴 account: work-test-pentest--adgoeinaananvansg
+      |____ 🔴 account: work-test-project-alnzbinsdvnasaosfil
+            |
+            |     Resources:
+            |____ 🔴 Account
+            |____ 🔴 Move account to OU
+            |____ 🔴 Account alias
+            |____ 🔴 Xadmin role
+            |____ 🔴 Iadmin role
+            |____ 🔴 Oadmin role
+            |____ 🔴 Account Budget
+            |____ 🔴 Delete default VPCs
+            |
+            |____ region: us-east-2
+                  |     Resources:
+                  |____ 🔴 work-test-project-alnzbinsdvnasaosfil
+|
+|     All Errors (every level):
+|     |____ 🟡 work-vpc (error)
+|     |____ 🟡 backup-vpc (error)
+|     |____ 🟡 jobs-vpc (error)
+|           ↳ ERROR: src/actions/helpers/deploy-x.sh failed see the error above and fix it before re-running
+|     |____ 🟡 collab-ami (error)
+|           ↳ ERROR: collab-ami failed but no error message was set by the caller set ERROR_MESSAGE to the real failure detail to fix
+|     |____ 🟡 base-ubuntu-ami (error)
+|           ↳ ERROR: base-ubuntu-ami skipped: dependencies not ready: kms-ami-key
+|     |____ 🟡 share-amis-to-ou (error)
+|           ↳ ERROR: share-amis-to-ou failed but no error message was set by the caller set ERROR_MESSAGE to the real failure detail to 
+|             fix
+|     |____ 🟡 share-ami (error)
+|           ↳ ERROR: share-ami failed but no error message was set by the caller set ERROR_MESSAGE to the real failure detail to fix
+|     |____ 🟡 kms-backup-key (error)
+|           ↳ ERROR: exit-conditions failed for kms-backup-key. org=o-xxxxxx env=backup account=backup-work-test 
+|             resource=kms-backup-key 
 
 ```
 
