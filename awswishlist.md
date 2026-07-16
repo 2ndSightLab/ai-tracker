@@ -324,5 +324,6 @@ Aha I also had turned off all firewall rules so perhaps something was connecting
 +     35:     ;;
 +     36: esac
 
-+ 🟠 This has bit me more than once and I'm embarrassed at how much time I wasted. The AWS CLI should not allow creatign duplicate profile names using aws configure. In one case I had a single uppercase and lowercase letter in oen position. Don't know if matters. Repeatedly tryign to assuem a role and can se ethe role exist snad can't figure out the problem...finally looked at config... please disallow that. The role assumption just assuems the first or last. not sure which.
-+     
+🟠 This has bit me more than once and I'm embarrassed at how much time I wasted. The AWS CLI should not allow creatign duplicate profile names using aws configure. In one case I had a single uppercase and lowercase letter in oen position. Don't know if matters. Repeatedly tryign to assuem a role and can se ethe role exist snad can't figure out the problem...finally looked at config... please disallow that. The role assumption just assuems the first or last. not sure which.
+
+🟠  Last updated date on all policies in AWS console starting with SCPs.     
