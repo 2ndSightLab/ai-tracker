@@ -33,6 +33,8 @@ So anyway, it gave me a report but it keeps saying it's normal. But it's not. I 
 
 Here's the thing that doesn't make sense. It's telling me this is a race condition between Google Chrome and Mac OS and is no way a Key Logger. But it has to do with a queue if I understand correctly where keystrokes are captured. At one point I got this diagram. Is this right?
 
+```
+
 [Your Keyboard] 
        │
        ▼
@@ -45,7 +47,7 @@ Here's the thing that doesn't make sense. It's telling me this is a race conditi
        ├─► YES (Stalled): Hold all keystrokes in a queue. <─── (YOU ARE HERE)
        │
        └─► NO (Normal): Pass keystrokes immediately to Terminal.
-
+```
 
 That queue is interesting. Google aimode is telling me it's super secure. Don't worry about it. If someone could get at that they would already have complete access to your system. 
 
