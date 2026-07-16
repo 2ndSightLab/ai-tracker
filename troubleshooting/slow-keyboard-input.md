@@ -1,3 +1,5 @@
+# Troubleshooting slow keyboard input
+
 Tonight my keyboard input ws so slow. Everything was lagging. My first thought as a security nerd is...key logger?
 
 Don't ask me to tell you if this is all accurate but I hope someone at Apple or Google will see this and look into it.
