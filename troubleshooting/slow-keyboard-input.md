@@ -14,6 +14,7 @@ With the help of Google AI, which has been wrong a lot lately when I get Google 
 
 It pinpointed this log entry as the problem.
 
+```
 2026-07-15 19:28:19.231154-0400 0x90c      Default     0x0                  171    0    WindowServer: (SkyLight) [com.apple.SkyLight.processes:Focus] a3ee7[DoDeferredOrdering]: [DeferringManager] Deferring events from frontmost process PSN 0x0-0x28028 (Google Chrome) -> <pid: 948>
     [171-BC]; <keyboardFocus; Google Chrome:0x0-0x28028>; () -> <pid: 948>; reason: frontmost PSN --> outbound target,
     [171-BC]; <keyboardFocus; Google Chrome:0x0-0x28028>; () -> <pid: 948>; reason: frontmost PSN --> outbound target,
@@ -24,6 +25,7 @@ It pinpointed this log entry as the problem.
 2026-07-15 19:28:19.268232-0400 0x1036b    Default     0x0                  784    0    CursorUIViewService: (libxpc.dylib) [com.apple.xpc:connection] [0x71ccdd080] activating connection: mach=false listener=false peer=true name=com.apple.xpc.anonymous.0x71cc64780.peer[948].0x71ccdd080
 2026-07-15 19:28:19.291947-0400 0x1034c    Default     0x0                  171    0    WindowServer: (BackBoardHIDEventFoundation) [com.apple.BackBoard:EventDelivery] new deferring rules for pid:948: [[948-63]; <keyboardFocus>; () -> <token: viewbridge-key-window; pid: 948>; reason: …RemoteView deferKeyboardEventsToParticularWindow:forReason:]]
 2026-07-15 19:28:19.291962-0400 0x1034c    Default     0x0                  171    0    WindowServer: (BackBoardHIDEventFoundation) [com.apple.BackBoard:EventDelivery] [keyboardFocus 0xaab47ec60] setRules:forPID(948): [[948-63]; <keyboardFocus>; () -> <token: viewbridge-key-window; pid: 948>; reason: -[NSRemoteView deferKeyboardEventsToParticularWindow:forReason:]]
+```
 
 It gave me a repoort and description but it keeps changing the output. Temperature in Google aimode must be far from zero.
 
