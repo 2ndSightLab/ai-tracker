@@ -76,3 +76,15 @@ ViewBridge Connections: ViewBridgeAuxiliary handles communication between differ
 It ensures that even if a UI element runs in a separate background helper process, your keystrokes land exactly where your cursor is flashing.
 
 Event Delivery Rules: The final lines show BackBoardHIDEventFoundation establishing the precise rules for this interaction. It explicitly states it is routing keyboard focus to a remote view window (NSRemoteView).
+
+Another attempt ~
+
+The vmmap memory footprint provides the missing pieces. The target application (Terminal, PID 2755) has explicitly loaded components that explain exactly why the ViewBridge delegation is happening and where the latency is creeping in.Look closely at these three specific frameworks currently loaded into your Terminal process memory space:
+
+```
+text/System/Library/PrivateFrameworks/TextInputUIMacHelper.framework/Versions/A/TextInputUIMacHelper
+/System/Library/Frameworks/NetworkExtension.framework/Versions/A/NetworkExtension
+/System/Library/PrivateFrameworks/ConfigProfileHelper.framework/Versions/A/ConfigProfileHelper
+```
+
+Use code with caution.The Culprits Exploded1. TextInputUIMacHelper & ViewBridgeThis is the smoking gun for your keystroke delegation log (NSRemoteView). TextInputUIMacHelper handles out-of-process text input rendering (like the multilingual input method engine (IME), inline autocorrect popups, or the predictive text overlay framework).The Interception Mechanism: When you type, your keystrokes are contextually sent via ViewBridge to an isolated Apple system service (com.apple.TextInput.multilingual or similar running out-of-process) to check if an inline UI decoration needs to be drawn. If that daemon stalls, your raw keystroke text output lags.2. NetworkExtension & ConfigProfileHelperThese libraries handle deep packet inspection (DPI), content filtering, and enterprise policy enforcement.The Interception Mechanism: Because NetworkExtension is explicitly mapped directly into your Terminal process, you have an active network filter (VPN, split-tunneling agent, or zero-trust app scanner) hooking the system network socket layer.
