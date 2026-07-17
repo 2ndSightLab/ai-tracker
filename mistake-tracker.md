@@ -16,6 +16,22 @@ The mistake tracker is a new part of the project added a few months in. This is 
 
 # 2026-07-15
 
+After switching 
+
+After runing parallel processor test with OpenAI models found a bunch of bugs including one that failed to properly mask sensitive data in logs which I told Anthropic models to build a specific sensitive data masking helper. Fixing.
+
+```
+1. Fix the path bug: make mask-sensitive-data.sh accept an explicit input file; the stream helper passes _SRO_OUT_FILE, 
+so it masks the exact file it will display.
+
+2. Prevent unmasked secrets reaching disk: change the worker launch so action stdout/stderr flows through a streaming 
+masker before it is written to <id>.out. The current sed -i design masks only after the unmasked file already exists.
+
+Then <id>.out contains only masked output. Preventing any output from reaching disk conflicts with the scheduler’s 
+required per-item output files; preventing unmasked output from reaching disk is achievable.
+
+```
+
 Chinese characters output
 
 ```
