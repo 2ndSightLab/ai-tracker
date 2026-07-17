@@ -13,6 +13,8 @@ These wishes are likely most applicable to those involved in AWS account securit
 
 ## Wishes
 
+🟢 I want to be able to select OPEN AI models (this was my bigest ask in terms of models and calling this wish granted! TY
+
 🟠 I want to be able to select any model available in Amazon Bedrock in Kiro. https://builder.aws.com/wishlist/3EdZnhuYbi5bCR6vBvzE4THvE8C_w/i-wish-we-could-select-from-all-the-bedrock-models-in-kiro-cli-and-others
 
 🟠 If I forget to change the email address, alias or name of a closed account I can't recreatea new one with the same information. https://builder.aws.com/wishlist/3ETtg4AwifUcBqGG03ZknTjF1g3_w/cannot-use-alias-email-name-that-was-used-on-a-closed-account
