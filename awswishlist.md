@@ -308,25 +308,9 @@ Aha I also had turned off all firewall rules so perhaps something was connecting
 
 "errorMessage": "Your account is not authorized to make this call.",
 
-🟠 Deleagetd admins. This hurts me. Can you please use one consistent method for looking these things up, preferrably all at org level?
+🟢 N/A Deleagetd admins. This hurts me. Can you please use one consistent method for looking these things up, preferrably all at org level? 
 
-+     20: case "${CHECK_SERVICE_PRINCIPAL}" in
-+     21:   securityhub.amazonaws.com)
-+     22:     RAC_SERVICE="securityhub"
-+     23:     RAC_ACTION="list-organization-admin-accounts"
-+     24:     RAC_QUERY="AdminAccounts[].AccountId"
-+     25:     ;;
-+     26:   guardduty.amazonaws.com)
-+     27:     RAC_SERVICE="guardduty"
-+     28:     RAC_ACTION="list-organization-admin-accounts"
-+     29:     RAC_QUERY="AdminAccounts[].AdminAccountId"
-+     30:     ;;
-+     31:   macie.amazonaws.com)
-+     32:     RAC_SERVICE="macie2"
-+     33:     RAC_ACTION="get-administrator-account"
-+     34:     RAC_QUERY="Administrator.AccountId"
-+     35:     ;;
-+     36: esac
+This one was due to AI models randomly selecting the local account method or the org method. I changed all to the org method after I figured that out and it works. But it seems like the local acocunt methods are incosistently named for getting the delegated admin associated with a service.
 
 🟠 This has bit me more than once and I'm embarrassed at how much time I wasted. The AWS CLI should not allow creatign duplicate profile names using aws configure. In one case I had a single uppercase and lowercase letter in oen position. Don't know if matters. Repeatedly tryign to assuem a role and can se ethe role exist snad can't figure out the problem...finally looked at config... please disallow that. The role assumption just assuems the first or last. not sure which.
 
