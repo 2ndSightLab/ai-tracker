@@ -16,6 +16,8 @@ The mistake tracker is a new part of the project added a few months in. This is 
 
 # 2026-07-15
 
+Chinese characters output
+
 ```
 > [system injected time: Friday, 2026-07-17T23:03:50.636+00:00]  
 [date command time: 2026-07-17T23:03:56+00:00]  
