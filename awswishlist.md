@@ -19,7 +19,7 @@ These wishes are likely most applicable to those involved in AWS account securit
 
 🟠 If I forget to change the email address, alias or name of a closed account I can't recreatea new one with the same information. https://builder.aws.com/wishlist/3ETtg4AwifUcBqGG03ZknTjF1g3_w/cannot-use-alias-email-name-that-was-used-on-a-closed-account
 
-🟠  I'm having to redo my Kiro subscription again. I don't like it that overages cost more than the base plan. That means I keep having to delete and create subscriptions to get the lowest price per token at all times. Even though I deleted some subscriptions at the end of the month in the past they got renewed. The fine print says the rollover is UTC which I thought caused my initial issues. But then it rolled over pre-UTC at the end of the month and I still got billed for a subscription in the next month when I tried to cancel it because I as taking a trip. This whole monthly subscription thing is painful. Some months I need to use it a lot and others not so much. Pay as you go pricing like all the rest of AWS - one of the core principles on which the service was built - would be so much more cost-effective to manage. Monthly billing is simple - but in the end it is painful for the user and the customer when you get into the details of using it and are trying to track costs and get the best value. 
+🟠 I'm having to redo my Kiro subscription again. I don't like it that overages cost more than the base plan. That means I keep having to delete and create subscriptions to get the lowest price per token at all times. Even though I deleted some subscriptions at the end of the month in the past they got renewed. The fine print says the rollover is UTC which I thought caused my initial issues. But then it rolled over pre-UTC at the end of the month and I still got billed for a subscription in the next month when I tried to cancel it because I as taking a trip. This whole monthly subscription thing is painful. Some months I need to use it a lot and others not so much. Pay as you go pricing like all the rest of AWS - one of the core principles on which the service was built - would be so much more cost-effective to manage. Monthly billing is simple - but in the end it is painful for the user and the customer when you get into the details of using it and are trying to track costs and get the best value. 
 
 PLEASE VOTE FOR THIS WISH. You will save money if you are a heavy Kiro user and use over $200 per month and you won't have to keep switching plans and users to get the best price. You will only pay for what you use if you happen to not use the service as much in a particular month.
 
@@ -28,6 +28,8 @@ The other model I like is the Portswigger model where you can pay for a batch of
 The current Kiro subscription model is a pain.
 
 https://builder.aws.com/wishlist/3AKEJEKOukFAuKJYVme3zJQHVVF_w/pay-as-you-go-economical-kiro-cli-plan
+
+🟠 Can't add more than two kiro plans in an account then third one fails. Contacting support to fix is a nightmare. Please let me add more users to a single acount. I realize this may be a fraud issue but if the account is a known good user and trusted credit card...?
 
 🟠 VPC costs too much for this test project. $144 last month just for testing out deployment of VPC endpoints and IPAM. Does delete and re-deploy double my costs? And by the way I want VPC endpoints not application layer controls which do not provide the same security value. I already exclude NAT from this project though it is an option. I also tried Transit Gateway and was expensive.
 
