@@ -30,6 +30,8 @@ Now my code that makes aws commands is missing error logging. What? How did that
 
 Parellel processor has a bunch of tests that were workign and suddenly do not. 
 
+A bunch of things that were deployed with no error suddnely ahve error mesasages and no aws id.
+
 WHAT IS GOING ON. Trying to figure it all out and add some additional checks.
 
 # 2026-07-18
