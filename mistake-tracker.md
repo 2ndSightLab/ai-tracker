@@ -24,6 +24,8 @@ Also trying to inject seimicolors into errors mesages after user supplied input.
 
 So many errors whenever dealing with AWS profiles. Repeatedly trying to list all aws profiles when i tell it to check for only one.
 
+So many path traversal bugs.
+
 # 2026-07-19 - again
 
 Too many mistakes to log. I'm about to go back to manual.
