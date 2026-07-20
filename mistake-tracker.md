@@ -36,8 +36,6 @@ The model is currenlty taking an excessive amout of time to do simple things. Wh
 
 What the heck is wrong with this thing. I am explicitly tellign it not to chagne any code and it is chaing code anyway??? and files that have nothign to do with the problem.
 
-Just reaized on one subversive change when i told it to tell me all the files it changed it did not. specificaly in auth related code.
-
 # 2026-07-19 - again
 
 Too many mistakes to log. I'm about to go back to manual.
