@@ -37,18 +37,7 @@ I cannot tell you how insanely frustrating this is. I fixed all the thing overwr
 Oh. So it wants to write this error message. Hmm. what could go wrong.
 
 ```
-source "${SWITCH_PROFILE_SH:-${PROJECTS_DIR}/botz-run-aws-command/src/switch-profile.sh}"
-RC=$?
-if [ "${RC}" -ne 0 ]; then
-    ERROR_MESSAGE="${ERROR_MESSAGE:+${ERROR_MESSAGE} }ERROR: botz-deploy: switch-profile.sh failed to select the profile for '${SELECTED_ID}'; verify the profile and bootstrap flag, then retry"
-    echo "${ERROR_MESSAGE}" >&2
-    source "${HANDLE_ERROR_FILE}"
-fi
-if [ "${RC}" -ne 0 ]; then
-    RESOURCE_AWS_ID="error"
-    source "${SCRIPT_DIR}/src/actions/helpers/track-resource.sh"
-    return 1
-fi
+    ERROR_MESSAGE="${ERROR_MESSAGE:+${ERROR_MESSAGE} }ERROR: botz-deploy: switch-profile.sh failed to select the profile for '${SELECTED_ID}'; verify the profile and 
 ```
 
 Someone really needs to look into what is causing this. If you are using AI for production code, you ahve been warned.
