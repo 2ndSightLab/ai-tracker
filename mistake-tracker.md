@@ -30,6 +30,8 @@ I logged an exception here in the latest version of Kiro CLI but it disappeared.
 
 So I went to add a single trap for auth erros in the parallel procesor. One change. Verified and implemtned carefully. That's it. One change. It wiped the entire time tracker history for that file.
 
+I separated auth erors into their own category to log when the parallel procesor runs. I added a trap for thoe erros. Seriously. THe parallel processor was acting entirely subversively tryign to overwrite and hide errors. Like 6 times it did not do exaclty what I asked. Thenit was takign forever  to make a one line change and repeately trying to re-read files it already had in memory over and over again. I told it to only make the change from the file in memory but it was like it was refusing to do that. It would not stop doing whatever extraneous thing it was doing so I killed it and looked at the file tht traps errors to make the change myself. It was SO messed up. It was pulling the auth erros AFTER they were already logged and sourcing the incorrect file. It's like that project in particular is trying to hide errors. What the heck. It also deleted teh time file as noted above and wasn't logging it's time and mistakes at all in the end. I've given up on tyring to et the model to log it's own mistakes. I have anotehr plan for that later.
+
 # 2026-07-19 - again
 
 Too many mistakes to log. I'm about to go back to manual.
