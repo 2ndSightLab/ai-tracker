@@ -16,6 +16,12 @@ The mistake tracker is a new part of the project added a few months in. This is 
 
 # 2026-07-20
 
+Woah. I just logged a mistake here and it is gone let me try that agian:
+
+20260720-171330 UTC M: sourced a file from a caller-overridable variable with a default fallback, letting a rogue value point the source at an attacker file and execute arbitrary code. C: source only fixed trusted paths; never source a path taken from an overridable variable.
+
+Also trying to inject seimicolors into errors mesages after user supplied input.
+
 So many errors whenever dealing with AWS profiles. Repeatedly trying to list all aws profiles when i tell it to check for only one.
 
 # 2026-07-19 - again
