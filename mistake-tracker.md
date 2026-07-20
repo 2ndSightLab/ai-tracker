@@ -34,6 +34,8 @@ I separated auth erors into their own category to log when the parallel procesor
 
 The model is currenlty taking an excessive amout of time to do simple things. When I kill it and ask what it is doing it often says it is done. It's like it is taking extra actions on top of what I have asked it to do which makes me suspicious tha someone else is leveraging the model using my credits or something else subversive is going on here. But if it is happening inside systems I don't own and control I have no way to prove it.
 
+What the heck is wrong with this thing. I am explicitly tellign it not to chagne any code and it is chaing code anyway??? and files that have nothign to do with the problem.
+
 # 2026-07-19 - again
 
 Too many mistakes to log. I'm about to go back to manual.
