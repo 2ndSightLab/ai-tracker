@@ -43,8 +43,8 @@ why" rule.
 
 Why I keep looping: every attempt patches the tracker-reading query (get-already-deployed-resources.sh) against whatever's in the 
 live tracker — region cross-match, node conventions, stale ids — instead of fixing the actual design. The real fix, which I keep 
-circling but not implementing, is exactly what you just said: the deployed/desired check must be driven by ../botz-config-org (what 
-this account is configured to deploy) and ../botz-config-org-types (each type's scope), then check the ONE valid tracker path per 
+circling but not implementing, is exactly what you just said: the deployed/desired check must be driven by -config-org (what 
+this account is configured to deploy) and -config-org-types (each type's scope), then check the ONE valid tracker path per 
 resource — account-direct for global, region node for regional — and ignore any tracker entry not backed by config.
 
 How to break the loop: stop touching the generic XPath. Rebuild the check as config-driven scoping, agree the scope with you first, 
