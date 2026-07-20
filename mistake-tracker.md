@@ -26,6 +26,10 @@ So many errors whenever dealing with AWS profiles. Repeatedly trying to list all
 
 So many path traversal bugs.
 
+I logged an exception here in the latest version of Kiro CLI but it disappeared. Maybe in version history not time to look.
+
+So I went to add a single trap for auth erros in the parallel procesor. One change. Verified and implemtned carefully. That's it. One change. It wiped the entire time tracker history for that file.
+
 # 2026-07-19 - again
 
 Too many mistakes to log. I'm about to go back to manual.
