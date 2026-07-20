@@ -50,6 +50,76 @@ Oh. So it wants to write this error message. Hmm. what could go wrong.
 
 Someone really needs to look into what is causing this. If you are using AI for production code, you ahve been warned.
 
+Latest version:
+
+Kiro is having trouble responding right now: 
+   0: Failed to receive the next message: request_id: , error: InternalServerError: Encountered an unexpected error when processing the request, please try again.
+
+Location:
+   crates/chat-cli/src/cli/chat/mod.rs:2086
+
+   BACKTRACE 
+                                 5 frames hidden                                
+   6: chat_cli::cli::chat::ChatSession::next::{{closure}}::h6b7b2bb55cc2c5cc
+      at /project/crates/chat-cli/src/cli/chat/mod.rs:2086
+   7: chat_cli::cli::chat::ChatSession::spawn::{{closure}}::hc039589043532927
+      at /project/crates/chat-cli/src/cli/chat/mod.rs:2746
+   8: chat_cli::cli::chat::ChatArgs::execute::{{closure}}::hb2626956d50cbc2e
+      at /project/crates/chat-cli/src/cli/chat/mod.rs:1024
+   9: chat_cli::cli::RootSubcommand::execute::{{closure}}::hd10afa08e12f552f
+      at /project/crates/chat-cli/src/cli/mod.rs:551
+  10: chat_cli::cli::Cli::execute::{{closure}}::h68ffcaa71869be48
+      at /project/crates/chat-cli/src/cli/mod.rs:1094
+  11: <core::pin::Pin<P> as core::future::future::Future>::poll::he7f5bd396b7b6421
+      at /rustc/ded5c06cf21d2b93bffd5d884aa6e96934ee4234/library/core/src/future/future.rs:133
+  12: tokio::runtime::park::CachedParkThread::block_on::{{closure}}::h25da6a7f6abb59db
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.52.3/src/runtime/park.rs:284
+  13: tokio::task::coop::with_budget::h262734096f9ec0fc
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.52.3/src/task/coop/mod.rs:167
+  14: tokio::task::coop::budget::hba872363e4c9ddea
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.52.3/src/task/coop/mod.rs:133
+  15: tokio::runtime::park::CachedParkThread::block_on::h1660f8a147f1575b
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.52.3/src/runtime/park.rs:284
+  16: tokio::runtime::context::blocking::BlockingRegionGuard::block_on::h0910ee1f295941ba
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.52.3/src/runtime/context/blocking.rs:66
+  17: tokio::runtime::scheduler::multi_thread::MultiThread::block_on::{{closure}}::h0d47826ffef6be83
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.52.3/src/runtime/scheduler/multi_thread/mod.rs:92
+  18: tokio::runtime::context::runtime::enter_runtime::h5a50825c9d063acb
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.52.3/src/runtime/context/runtime.rs:65
+  19: tokio::runtime::scheduler::multi_thread::MultiThread::block_on::h4f398f5be1ae985e
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.52.3/src/runtime/scheduler/multi_thread/mod.rs:91
+  20: tokio::runtime::runtime::Runtime::block_on_inner::h560e209d7c7071bc
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.52.3/src/runtime/runtime.rs:373
+  21: tokio::runtime::runtime::Runtime::block_on::hc356d5e650a1baef
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.52.3/src/runtime/runtime.rs:343
+  22: chat_cli::main_inner::hb64fb69ba6af7cb2
+      at /project/crates/chat-cli/src/main.rs:74
+  23: core::ops::function::FnOnce::call_once::h3277e997e98480a3
+      at /rustc/ded5c06cf21d2b93bffd5d884aa6e96934ee4234/library/core/src/ops/function.rs:250
+  24: std::sys::backtrace::__rust_begin_short_backtrace::h8ff1c00fdfca2aa4
+      at /rustc/ded5c06cf21d2b93bffd5d884aa6e96934ee4234/library/std/src/sys/backtrace.rs:158
+  25: std::thread::Builder::spawn_unchecked_::{{closure}}::{{closure}}::h814956e585a369ed
+      at /rustc/ded5c06cf21d2b93bffd5d884aa6e96934ee4234/library/std/src/thread/mod.rs:562
+  26: <core::panic::unwind_safe::AssertUnwindSafe<F> as core::ops::function::FnOnce<()>>::call_once::h3b9cd890fd8f095e
+      at /rustc/ded5c06cf21d2b93bffd5d884aa6e96934ee4234/library/core/src/panic/unwind_safe.rs:274
+  27: std::panicking::catch_unwind::do_call::h7affac62f0ba0bad
+      at /rustc/ded5c06cf21d2b93bffd5d884aa6e96934ee4234/library/std/src/panicking.rs:590
+  28: std::panicking::catch_unwind::h6f849810de4a0495
+      at /rustc/ded5c06cf21d2b93bffd5d884aa6e96934ee4234/library/std/src/panicking.rs:553
+  29: std::panic::catch_unwind::hc43b32ca785ed6d7
+      at /rustc/ded5c06cf21d2b93bffd5d884aa6e96934ee4234/library/std/src/panic.rs:359
+  30: std::thread::Builder::spawn_unchecked_::{{closure}}::h59b3d0a65c54b268
+      at /rustc/ded5c06cf21d2b93bffd5d884aa6e96934ee4234/library/std/src/thread/mod.rs:560
+  31: core::ops::function::FnOnce::call_once{{vtable.shim}}::ha8f26def8c49433c
+      at /rustc/ded5c06cf21d2b93bffd5d884aa6e96934ee4234/library/core/src/ops/function.rs:250
+  32: <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once::hd207225a9c1c4f06
+      at /rustc/ded5c06cf21d2b93bffd5d884aa6e96934ee4234/library/alloc/src/boxed.rs:2005
+  33: std::sys::thread::unix::Thread::new::thread_start::h74c35d33e4a2199a
+      at /rustc/ded5c06cf21d2b93bffd5d884aa6e96934ee4234/library/std/src/sys/thread/unix.rs:126
+
+Run with COLORBT_SHOW_HIDDEN=1 environment variable to disable frame filtering.
+Run with RUST_BACKTRACE=full to include source snippets.
+
 # 2026-07-18 - evening
 
 I am seriously getting majorly frustrated. First of all I realized that all my models in Kiro said "expiramental." I took time to update Kiro to the latest hopign that woudl improve things because EVERYTHING IS GOING WRONG.
