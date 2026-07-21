@@ -16,6 +16,8 @@ The mistake tracker is a new part of the project added a few months in. This is 
 
 # 2026-07-21
 
+Somehow while testing and makeing random changes it changed my security delegated admins to the wrong account numbers. Not to worry they are all in the same ou and basicaly for security testing. But this was right. And for some unknown reason, AI agents mucked it up. I have a bazillion tests.
+
 Really starting to feel like AI is big waste of money right now but we'll see if it can figure it out. That's for development. With hacker fuzzing it's fine. You don't need a consistent, verifiable answer. You just need a hit.
 
 # 2026-07-20
