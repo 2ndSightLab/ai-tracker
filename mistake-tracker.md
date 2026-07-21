@@ -16,6 +16,16 @@ The mistake tracker is a new part of the project added a few months in. This is 
 
 # 2026-07-21
 
+OMG. I was mildly impressed tha the model recommended a producer-consumer and dead-letter queue to deal with some multi-threading issuse. I thought a lot of things had been fixed correctly. Finally got multipel projects on the same page as to what the data model is. But everything stopped woring again. I thought I was losing my mind. So just now, the tracker project agent, which seems to be the most sane, tells me all the tracker code, queues, etc. was reverted to an old version and a bunch of files were deleted. 
+
+OH I give up. This is not happening. Even if I have it in GitHub it takes forever to go back there and get it all out and fix it.
+
+In additon, I asked for a * proposal only * to fix some auth code. And the auth agent went crazy mucking up my file and hiding errors and adding a bunch of gibberish to make it very difficult to see logic errors.
+
+Yeah we're done here for a while.
+
+# 2026-07-21
+
 Somehow while testing and makeing random changes it changed my security delegated admins to the wrong account numbers. Not to worry they are all in the same ou and basicaly for security testing. But this was right. And for some unknown reason, AI agents mucked it up. I have a bazillion tests.
 
 Really starting to feel like AI is big waste of money right now but we'll see if it can figure it out. That's for development. With hacker fuzzing it's fine. You don't need a consistent, verifiable answer. You just need a hit.
