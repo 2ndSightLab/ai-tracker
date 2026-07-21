@@ -24,6 +24,14 @@ In additon, I asked for a * proposal only * to fix some auth code. And the auth 
 
 Yeah we're done here for a while.
 
+Oh and I happened to let it try to re-write the code and I see this:
+
+if [ "${RC}" -ne 0 ]; then HANDLED_ERROR_MESSAGE="ERROR: botz-deploy-tracker: failed resolving the organization context in init-select-org.sh; retry after correcting the operation input"; source "${TRACKER_ERROR_FILE:-${SCRIPT_DIR:-${BASH_SOURCE[0]%%/src/*}}/src/actions/helpers/handle-error.sh}"; return 1; fi
+
+So like anything could be injected into that variable and for the file to source. Great. This is such a mess now.
+
+Using Anthropic Opus 4.8.
+
 # 2026-07-21
 
 Somehow while testing and makeing random changes it changed my security delegated admins to the wrong account numbers. Not to worry they are all in the same ou and basicaly for security testing. But this was right. And for some unknown reason, AI agents mucked it up. I have a bazillion tests.
