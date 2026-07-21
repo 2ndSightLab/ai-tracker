@@ -30,6 +30,8 @@ if [ "${RC}" -ne 0 ]; then HANDLED_ERROR_MESSAGE="ERROR: botz-deploy-tracker: fa
 
 So like anything could be injected into that variable and for the file to source. Great. This is such a mess now.
 
+And it's hiding errors again. The code was kind of working and now it is a disaster.
+
 Using Anthropic Opus 4.8.
 
 # 2026-07-21
