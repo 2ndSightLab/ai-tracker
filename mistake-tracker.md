@@ -14,9 +14,19 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/response-time.
 
 The mistake tracker is a new part of the project added a few months in. This is not super scientific as it is hard to quantify. I'm just telling the model to increment the mistakes it's making +1 if it starts making a bunch of mistakes. This is not every mistakes mostly only when I start getting annoyed. :-D The mistakes are largely worded by the AI agent and sometimes it does not capture the correct mistake but I don't always fix that because I just want to get stuff done. It generally captures a valid mistake but not the one I actually wanted it to log. So these are all valid just some are missing I didn't bother to fix to the correct mistake. I don't care about typooooos this is just a fast as possible log. Trying to get things done. Note missing days/times may be because the model deleted the data or because I took some time off. In some cases I have to work on other things...
 
+# 2026-07-21 - after files deleted and rebuild
+
+I just let agent have it's way and rebuild what it had done before telling it to follow rules. It didn't.
+
+And nothing works. The items hang. Statuses don't chagne. No error messages appear. I'm going to have to revert the whole tracker later and manually get in and figure out what's going wrong but not time right now. All said and done, it helped me in some ways but has left me with a really frustrating experience.
+
+And another $200 down.
+
+I think I'm going to try another model but for now I need to get some other things done.
+
 # 2026-07-21
 
-OMG. I was mildly impressed tha the model recommended a producer-consumer and dead-letter queue to deal with some multi-threading issuse. I thought a lot of things had been fixed correctly. Finally got multipel projects on the same page as to what the data model is. But everything stopped woring again. I thought I was losing my mind. So just now, the tracker project agent, which seems to be the most sane, tells me all the tracker code, queues, etc. was reverted to an old version and a bunch of files were deleted. 
+I was mildly impressed tha the model recommended a producer-consumer and dead-letter queue to deal with some multi-threading issuse. I thought a lot of things had been fixed correctly. Finally got multipel projects on the same page as to what the data model is. But everything stopped woring again. I thought I was losing my mind. So just now, the tracker project agent, which seems to be the most sane, tells me all the tracker code, queues, etc. was reverted to an old version and a bunch of files were deleted. 
 
 OH I give up. This is not happening. Even if I have it in GitHub it takes forever to go back there and get it all out and fix it.
 
