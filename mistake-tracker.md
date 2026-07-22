@@ -24,6 +24,8 @@ And another $200 down.
 
 I think I'm going to try another model but for now I need to get some other things done.
 
+AI can help but it can also be a massive drain on time and money if you're not careful. I started this project to prove I could write working code to do something (or not) and at this point have not bee completely successful. It's not a total flop but it's also not "done." I don't have eternal funds to complete it so I have to go do some other paying work.
+
 # 2026-07-21
 
 I was mildly impressed tha the model recommended a producer-consumer and dead-letter queue to deal with some multi-threading issuse. I thought a lot of things had been fixed correctly. Finally got multipel projects on the same page as to what the data model is. But everything stopped woring again. I thought I was losing my mind. So just now, the tracker project agent, which seems to be the most sane, tells me all the tracker code, queues, etc. was reverted to an old version and a bunch of files were deleted. 
