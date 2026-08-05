@@ -369,7 +369,7 @@ This is just the particular configuration I'm tesing. The configruation supports
 | June 1 - 12 | $200 plan | 100% | $83 | 12 | $6.92 | 
 | June 13 - 17 9:00 pm | $200 plan | 100% | $67 | 4 | $16.75 | 
 | June 17 9:16PM - 23 3:00 AM | $200 plan | 100% | $120 | 6 | $20 | 
-| June 24 - 28 2:15 AM | $200 plan | 100% | 134.16 | 4 | $33.54 | 
+| June 24 - 28 2:15 AM | $200 plan | 100% | $134.16 | 4 | $33.54 | 
 | June 30 - July 1 | partial $200 plan | ? | $53.55 | < 1 | $53.55 | 
 
 Total Kiro charged for June: 	$457.71
@@ -379,7 +379,7 @@ Note that I started a new $200 plan on the last day of June presumably a few hou
 | Usage Dates | Plan | % usage | charges | days | cost per day
 | :---| :---: | :---: | :---: | :---: | :---: |
 | July 1 - 2 4:00 AM | $200 plan | 100% | 	$12.90 | 2 | $6.45 | 
-| July 2 - July 3 | $200 plan | 100% | 181 | 2 | $90.5 | (new account, mult-agent bug fixes) 
+| July 2 - July 3 | $200 plan | 100% | $181 | 2 | $90.5 | (new account, mult-agent bug fixes) 
 
 I stopped posting here. I'm using a $200 plan about every 2 days now.
 I think I've spent another $200. Up to $1000 for the mont and it's July 10th. Still not done.
