@@ -350,7 +350,7 @@ This is just the particular configuration I'm tesing. The configruation supports
 
 | Status | Description
 | :---: | :--- |
-| 🟢 | Configure Reosurce Tyeps
+| 🟢 | Configure Reosurce Types
 | 🟢 | Organization
 | 🟡 | Deploy Environment & Resources
 | 🟡 | Verify Environment & Resources
