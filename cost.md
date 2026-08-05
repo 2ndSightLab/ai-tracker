@@ -2,6 +2,49 @@
 
 # Cost 
 
+### Costs while building an AI Agent Bootstrap Script and Framework
+**Timeline:** Mar 7, 2026 - Aug 5, 2026
+
+| Service / Cost Item | Total | Mar 2026 | Apr 2026 | May 2026 | Jun 2026 | Jul 2026 | Aug 2026* |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Total costs** | **$3,824.49** | **$387.45** | **$427.51** | **$657.93** | **$786.01** | **$1,488.85** | **$76.75** |
+| Kiro | $2,290.80 | $193.55 | $129.07 | $285.79 | $457.71 | $1,192.42 | $32.26 |
+| Virtual Private Cloud | $468.62 | $53.44 | $121.94 | $141.30 | $107.82 | $36.78 | $7.36 |
+| Elastic Compute Cloud - Compute | $375.41 | $39.45 | $44.28 | $100.12 | $96.80 | $85.21 | $9.54 |
+| EC2 - Other | $270.34 | $43.20 | $54.37 | $56.12 | $54.54 | $55.39 | $6.72 |
+| Key Management Service | $188.80 | $24.61 | $28.95 | $33.12 | $41.56 | $52.83 | $7.72 |
+| Route 53 | $64.06 | $0.60 | $12.85 | $13.09 | $13.29 | $13.71 | $10.53 |
+| Registrar | $58.00 | $15.00 | $15.00 | $8.00 | - | $20.00 | - |
+| Secrets Manager | $25.58 | $7.06 | $7.80 | $6.08 | $2.29 | $2.07 | $0.28 |
+| GuardDuty | $23.87 | $3.67 | $5.19 | $5.68 | $3.25 | $5.57 | $0.50 |
+| Security Hub | $23.86 | $1.00 | $1.20 | $1.20 | $1.75 | $17.60 | $1.10 |
+| Simple Storage Service | $22.12 | $3.59 | $4.71 | $4.67 | $4.56 | $4.20 | $0.39 |
+| CloudWatch | $5.63 | $1.49 | $1.00 | $1.00 | $1.00 | $1.00 | $0.14 |
+| Budgets | $1.39 | $0.25 | $0.30 | $0.31 | $0.30 | $0.23 | - |
+| Relational Database Service | $1.29 | $0.23 | $0.28 | $0.29 | $0.28 | $0.21 | - |
+| Inspector | $1.08 | $0.00 | $0.00 | $0.00 | $0.38 | $0.62 | $0.09 |
+| CloudFront | $0.91 | $0.16 | $0.18 | $0.14 | $0.15 | $0.23 | $0.05 |
+| EC2 Container Registry (ECR) | $0.66 | $0.08 | $0.17 | $0.18 | $0.11 | $0.10 | $0.01 |
+| Config | $0.60 | - | - | $0.60 | - | - | - |
+| CloudTrail | $0.46 | $0.00 | $0.11 | $0.11 | $0.11 | $0.11 | $0.02 |
+| Macie | $0.43 | - | - | $0.00 | $0.02 | $0.36 | $0.05 |
+| Systems Manager | $0.33 | $0.04 | $0.09 | $0.10 | $0.07 | $0.03 | - |
+| Tax | $0.13 | $0.00 | $0.00 | $0.00 | - | $0.13 | $0.00 |
+| Detective | $0.12 | $0.02 | $0.02 | $0.03 | $0.03 | $0.02 | - |
+| Amplify | $0.00 | $0.00 | $0.00 | $0.00 | $0.00 | $0.00 | $0.00 |
+| CloudShell | $0.00 | $0.00 | $0.00 | $0.00 | $0.00 | $0.00 | - |
+| Glue | $0.00 | $0.00 | $0.00 | $0.00 | $0.00 | $0.00 | $0.00 |
+| Lambda | $0.00 | $0.00 | $0.00 | $0.00 | $0.00 | - | - |
+| DynamoDB | $0.00 | $0.00 | $0.00 | $0.00 | $0.00 | $0.00 | - |
+| Simple Notification Service | $0.00 | $0.00 | $0.00 | $0.00 | $0.00 | $0.00 | $0.00 |
+| Simple Queue Service | $0.00 | $0.00 | $0.00 | $0.00 | $0.00 | $0.00 | $0.00 |
+| Certificate Manager | $0.00 | - | $0.00 | $0.00 | - | $0.00 | - |
+| API Gateway | $0.00 | - | $0.00 | $0.00 | - | - | - |
+| Payment Cryptography | $0.00 | - | - | - | $0.00 | - | - |
+
+*\*Month ongoing / incomplete data.*
+
+
 **Date:** July 2, 2026
 
 TIL after analyzing my costs what is really going on with some of the cost metrics and why I thought I had been billed for a full $200 plan when I couldn't use a single credit. When you log in and look at the cost dashboard, if you have signed up for a $200 plan, it shows you a $200 charge immediately. Blam. Then you look at your forecasted costs and it may be less than $200. Wat. Somehow if I cancel the plan mid-month I'm not charged the full $200 but that charge doesn't adjust to actual. It's all very confusing. All I know is that whether I am billed the full $200 or not I still haven't gotten this porject done and I'm burning a lot of tokens. Yesterday a new model was released and every time that happens the existing models go haywire. And I'm not sure it can be just racked up to system overload. If you know what noops are good for...I keep reporting this mantra that you need to track eveyrhing and we need to pinpoint and fully understand what is causing that to happen. It is a risk in more ways than one for businesses and potentially national security. 
