@@ -14,17 +14,14 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/response-time.
 
 The mistake tracker is a new part of the project added a few months in. This is not super scientific as it is hard to quantify. I'm just telling the model to increment the mistakes it's making +1 if it starts making a bunch of mistakes. This is not every mistakes mostly only when I start getting annoyed. :-D The mistakes are largely worded by the AI agent and sometimes it does not capture the correct mistake but I don't always fix that because I just want to get stuff done. It generally captures a valid mistake but not the one I actually wanted it to log. So these are all valid just some are missing I didn't bother to fix to the correct mistake. I don't care about typooooos this is just a fast as possible log. Trying to get things done. Note missing days/times may be because the model deleted the data or because I took some time off. In some cases I have to work on other things...
 
-# 2026-07-21 - after files deleted and rebuild
+# 2026-08-09
 
-I just let agent have it's way and rebuild what it had done before telling it to follow rules. It didn't.
+Cannot get the agent to follow basic rules. Like write requirements < 100 chars per line. Log time in a specific format. Simple rules it has a hard time following. Adding tests and scripts but just figured out the time script I just copied to all the projects has a bug in it. Thanks...
 
-And nothing works. The items hang. Statuses don't chagne. No error messages appear. I'm going to have to revert the whole tracker later and manually get in and figure out what's going wrong but not time right now. All said and done, it helped me in some ways but has left me with a really frustrating experience.
+The agents did not properly copy all functionality from existing project when split. I told them to copy over and make sure all relevant tests pass.
 
-And another $200 down.
+The architecture agent randomly removed a statement that a particular project should not change and then wrote a prompt to chagne it. It was the hardest part of this whole architecture to get working. If I had randomly let the agents loose without watching it would be all screwed up right now.
 
-I think I'm going to try another model but for now I need to get some other things done.
-
-AI can help but it can also be a massive drain on time and money if you're not careful. I started this project to prove I could write working code to do something (or not) and at this point have not bee completely successful. It's not a total flop but it's also not "done." I don't have eternal funds to complete it so I have to go do some other paying work.
 
 # 2026-08-09
 
@@ -199,6 +196,18 @@ How to break the loop: stop touching the generic XPath. Rebuild the check as con
 write one focused test with a realistic fixture, and change nothing else. I won't touch code or tests now — tell me to proceed and I'
 ll do only that.
 ```
+
+# 2026-07-21 - after files deleted and rebuild
+
+I just let agent have it's way and rebuild what it had done before telling it to follow rules. It didn't.
+
+And nothing works. The items hang. Statuses don't chagne. No error messages appear. I'm going to have to revert the whole tracker later and manually get in and figure out what's going wrong but not time right now. All said and done, it helped me in some ways but has left me with a really frustrating experience.
+
+And another $200 down.
+
+I think I'm going to try another model but for now I need to get some other things done.
+
+AI can help but it can also be a massive drain on time and money if you're not careful. I started this project to prove I could write working code to do something (or not) and at this point have not bee completely successful. It's not a total flop but it's also not "done." I don't have eternal funds to complete it so I have to go do some other paying work.
 
 # 2026-07-19 - again
 
