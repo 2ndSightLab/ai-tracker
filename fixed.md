@@ -18,6 +18,8 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 🟢 Cleaned up project names in git where they exist.
 
+🟢 On the script I also revised the platform initialization script. I created a new EC2 instance and deployed the whole framework from scratch again to verify I can do that. Somehow I lost my old deploy script for the framwork but it needed to be cleaned up anyway.
+
 ## 7/21/2026
 
 🟡 Thought I had it all working and then the model deleted a critical file and messed the whol thing up again. In addition at some point it was working with the exception of a race condition/locking issue. So it got all mangled on this day and all credits were used up and I stopped...frustrated.
