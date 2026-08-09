@@ -4,7 +4,7 @@ This time is not 100% precise because it is very difficult to get the AI models 
 
 # 2026-08-09
 
-Shared this info with some folks who might be able to help resolve some of these problems going forward. As of right now I'm using Kiro and it is going soooo sloooow. I wrote a script to ensure time is logged in a consistent manner across projects. It's kind of like a hook but it's just scripts the project agents are supposed to run for consistency. I don't know if I can turn it into a hook because I can't get a handle on the system time that comes before the first date command is executed in a hook. Right now the agents are telling me the slowness is coming from a lag in communicating with the models. But it doesn't matter which model I piack - anthropic or open AI. They are all super slow right now.
+Shared this info with some folks who might be able to help resolve some of these problems going forward. As of right now I'm using Kiro and it is going soooo sloooow. I wrote a script to ensure time is logged in a consistent manner across projects. It's kind of like a hook but it's just scripts the project agents are supposed to run for consistency. I don't know if I can turn it into a hook because I can't get a handle on the system time that comes before the first date command is executed in a hook. Right now the agents are telling me the slowness is coming from a lag in communicating with the models. But it doesn't matter which model I piack - anthropic or open AI. They are all super slow right now. I've not worked a ton today and used up 6% of my plan.
 
 # Time Trend Analysis 2026-07-06
 ```
