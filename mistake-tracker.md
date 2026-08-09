@@ -22,6 +22,7 @@ The agents did not properly copy all functionality from existing project when sp
 
 The architecture agent randomly removed a statement that a particular project should not change and then wrote a prompt to chagne it. It was the hardest part of this whole architecture to get working. If I had randomly let the agents loose without watching it would be all screwed up right now.
 
+The architecture project is very clear that the deploy project should do zero error handling and log all errors via an error logging project. And yet, I catch the deploy project trying to write a file to handle errors. The agents are always always always trying to mess up error logging for some reason.
 
 # 2026-08-09
 
