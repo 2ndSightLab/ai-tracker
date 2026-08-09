@@ -26,6 +26,106 @@ I think I'm going to try another model but for now I need to get some other thin
 
 AI can help but it can also be a massive drain on time and money if you're not careful. I started this project to prove I could write working code to do something (or not) and at this point have not bee completely successful. It's not a total flop but it's also not "done." I don't have eternal funds to complete it so I have to go do some other paying work.
 
+# 2026-08-09
+
+Shortly after logging on this repo got another Kiro stacktrace.
+
+Kiro is having trouble responding right now: 
+   0: Failed to receive the next message: request_id: xxxxxxxxx, error: Kiro failed to generate a response
+
+Location:
+   crates/chat-cli/src/cli/chat/mod.rs:2214
+
+   BACKTRACE 
+                                 5 frames hidden                                
+   6: chat_cli::cli::chat::ChatSession::next::{{closure}}::h420b6a7b5a203458
+      at /project/crates/chat-cli/src/cli/chat/mod.rs:2214
+   7: chat_cli::cli::chat::ChatSession::run::{{closure}}::h40f9cced37bc722a
+      at /project/crates/chat-cli/src/cli/chat/mod.rs:2911
+   8: chat_cli::cli::chat::ChatSession::spawn_with_shutdown::{{closure}}::{{closure}}::h6a469afdb5bda16d
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.52.3/src/macros/select.rs:705
+   9: <core::future::poll_fn::PollFn<F> as core::future::future::Future>::poll::h5a59eb6475264b4b
+      at /rust/lib/rustlib/src/rust/library/core/src/future/poll_fn.rs:151
+  10: chat_cli::cli::chat::ChatSession::spawn_with_shutdown::{{closure}}::hbe85bb44a54ddc39
+      at /project/crates/chat-cli/src/cli/chat/mod.rs:2691
+  11: chat_cli::cli::chat::ChatArgs::execute::{{closure}}::hb8540b0b70ecefeb
+      at /project/crates/chat-cli/src/cli/chat/mod.rs:1088
+  12: <core::pin::Pin<P> as core::future::future::Future>::poll::hebec0786062dac2f
+      at /rust/lib/rustlib/src/rust/library/core/src/future/future.rs:133
+  13: <&mut F as core::future::future::Future>::poll::h8c518d98c71b82f5
+      at /rust/lib/rustlib/src/rust/library/core/src/future/future.rs:121
+  14: chat_cli::launch::v1::run_until_shutdown::{{closure}}::{{closure}}::hc1a494e24b14fdcd
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.52.3/src/macros/select.rs:705
+  15: <core::future::poll_fn::PollFn<F> as core::future::future::Future>::poll::h2b061fc199d7d513
+      at /rust/lib/rustlib/src/rust/library/core/src/future/poll_fn.rs:151
+  16: chat_cli::launch::v1::run_until_shutdown::{{closure}}::h21dff6bf241c20d4
+      at /project/crates/chat-cli/src/launch/v1.rs:102
+  17: chat_cli::launch::v1::launch::{{closure}}::{{closure}}::hf58493978362c674
+      at /project/crates/chat-cli/src/launch/v1.rs:76
+  18: chat_cli::launch::v1::run_lifecycle::{{closure}}::h3785e97eb4e7a752
+      at /project/crates/chat-cli/src/launch/v1.rs:251
+  19: chat_cli::launch::v1::launch::{{closure}}::hba1bc04d99d8f0f7
+      at /project/crates/chat-cli/src/launch/v1.rs:80
+  20: chat_cli::cli::execute_chat::{{closure}}::h56b2df89be17a782
+      at /project/crates/chat-cli/src/cli/mod.rs:650
+  21: chat_cli::cli::RootSubcommand::execute::{{closure}}::h9e73c17488f8e6a3
+      at /project/crates/chat-cli/src/cli/mod.rs:453
+  22: chat_cli::cli::Cli::execute::{{closure}}::hd9fde3303c3ce195
+      at /project/crates/chat-cli/src/cli/mod.rs:1098
+  23: <core::pin::Pin<P> as core::future::future::Future>::poll::h8e0183669d4bfb2e
+      at /rust/lib/rustlib/src/rust/library/core/src/future/future.rs:133
+  24: tokio::runtime::park::CachedParkThread::block_on::{{closure}}::he2e6c4b7c3bd3dca
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.52.3/src/runtime/park.rs:284
+  25: tokio::task::coop::with_budget::hd7ac86f95d5141e8
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.52.3/src/task/coop/mod.rs:167
+  26: tokio::task::coop::budget::h7bc1a1f4ae3b4e2b
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.52.3/src/task/coop/mod.rs:133
+  27: tokio::runtime::park::CachedParkThread::block_on::h5d66378f8fc1d3f9
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.52.3/src/runtime/park.rs:284
+  28: tokio::runtime::context::blocking::BlockingRegionGuard::block_on::h8ce312958d9cf001
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.52.3/src/runtime/context/blocking.rs:66
+  29: tokio::runtime::scheduler::multi_thread::MultiThread::block_on::{{closure}}::hf5f54be5c9d4b1f6
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.52.3/src/runtime/scheduler/multi_thread/mod.rs:92
+  30: tokio::runtime::context::runtime::enter_runtime::hdff38e7edddbcf09
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.52.3/src/runtime/context/runtime.rs:65
+  31: tokio::runtime::scheduler::multi_thread::MultiThread::block_on::h52c7ffb92e378ea2
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.52.3/src/runtime/scheduler/multi_thread/mod.rs:91
+  32: tokio::runtime::runtime::Runtime::block_on_inner::hcd69c731648ec65e
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.52.3/src/runtime/runtime.rs:373
+  33: tokio::runtime::runtime::Runtime::block_on::hb58636447dbd70e6
+      at /cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.52.3/src/runtime/runtime.rs:343
+  34: chat_cli::main_inner::he24c0b9af307d97b
+      at /project/crates/chat-cli/src/main.rs:75
+  35: core::ops::function::FnOnce::call_once::he68f968171bbab48
+      at /rust/lib/rustlib/src/rust/library/core/src/ops/function.rs:250
+  36: std::sys::backtrace::__rust_begin_short_backtrace::h33cce67e5f30a5ab
+      at /rust/lib/rustlib/src/rust/library/std/src/sys/backtrace.rs:158
+  37: std::thread::Builder::spawn_unchecked_::{{closure}}::{{closure}}::h2cb018b15a5934f4
+      at /rust/lib/rustlib/src/rust/library/std/src/thread/mod.rs:562
+  38: <core::panic::unwind_safe::AssertUnwindSafe<F> as core::ops::function::FnOnce<()>>::call_once::h8b2b903e1645f044
+      at /rust/lib/rustlib/src/rust/library/core/src/panic/unwind_safe.rs:274
+  39: std::panicking::catch_unwind::do_call::hb869dfb64ad80f33
+      at /rust/lib/rustlib/src/rust/library/std/src/panicking.rs:590
+  40: std::panicking::catch_unwind::hf4bb538da78131e1
+      at /rust/lib/rustlib/src/rust/library/std/src/panicking.rs:553
+  41: std::panic::catch_unwind::h26f2a83b7e2d776e
+      at /rust/lib/rustlib/src/rust/library/std/src/panic.rs:359
+  42: std::thread::Builder::spawn_unchecked_::{{closure}}::h72df1d27ac707069
+      at /rust/lib/rustlib/src/rust/library/std/src/thread/mod.rs:560
+  43: core::ops::function::FnOnce::call_once{{vtable.shim}}::h4111c5df52fe9c95
+      at /rust/lib/rustlib/src/rust/library/core/src/ops/function.rs:250
+  44: <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once::h441883027ddd5571
+      at /rustc/ded5c06cf21d2b93bffd5d884aa6e96934ee4234/library/alloc/src/boxed.rs:2005
+  45: std::sys::thread::unix::Thread::new::thread_start::hbf94d2f6a3490e76
+      at /rustc/ded5c06cf21d2b93bffd5d884aa6e96934ee4234/library/std/src/sys/thread/unix.rs:126
+  46: start_thread<unknown>
+      at <unknown source file>:<unknown line>
+  47: thread_start<unknown>
+      at <unknown source file>:<unknown line>
+
+Run with COLORBT_SHOW_HIDDEN=1 environment variable to disable frame filtering.
+Run with RUST_BACKTRACE=full to include source snippets.
+
 # 2026-07-21
 
 I was mildly impressed tha the model recommended a producer-consumer and dead-letter queue to deal with some multi-threading issuse. I thought a lot of things had been fixed correctly. Finally got multipel projects on the same page as to what the data model is. But everything stopped woring again. I thought I was losing my mind. So just now, the tracker project agent, which seems to be the most sane, tells me all the tracker code, queues, etc. was reverted to an old version and a bunch of files were deleted. 
