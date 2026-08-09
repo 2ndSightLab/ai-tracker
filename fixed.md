@@ -6,6 +6,12 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 ## 8/9/2026
 
+🟢 The project group configuration is now working and the architecture I defined to split the tracker into four sepraate projects worked. All new projects are created at agents are properly initialized.
+
+🟢 Told the architecture project to review the existing code and formulate prompts for al the new prjoects telling them to look at existing code. The code is being written now across 5 new projects plus the architecture project is prompting and reviewing implmenetation for gaps. Some mistakes like trying to modify a project should not be modified and gaps in functionality. Told the projects to copy over and make sure all relevant tests work. 
+
+## 8/8-9/2026
+
 🟢 Back from AWS Heroes conference. Asking about credit usage and told with 5 agents that's normal. 
 
 🟢 Added a project-group-init.sh function that initializes a group of projects I want to work on together defined in an architecture file. It creates or clones all projects and initiaizes as needed.
