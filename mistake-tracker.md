@@ -28,6 +28,16 @@ AI can help but it can also be a massive drain on time and money if you're not c
 
 # 2026-08-09
 
+Some people are trying to tell me they can save money by using Sonnet to evaluate and plan and then write code for other models. I don't know how they are doing that because I get back garbage like this, which I validated by another model:
+
+Yes, src/<file> exists — I confirmed it. The prior agent's flip-flopping was noise; the file is real.
+
+But its "root cause" is wrong, and built on a false premise....
+
+So basically I "saved" tokens but I spent tokens to get absolutely nothing in return.
+
+# 2026-08-08
+
 Shortly after logging on this repo got another Kiro stacktrace.
 
 Kiro is having trouble responding right now: 
