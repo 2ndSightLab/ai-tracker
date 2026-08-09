@@ -4,6 +4,10 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
+## 7/21/2026
+
+🟢 Thought I had it all working and then the model deleted a critical file and messed the whol thing up again. In addition at some point it was working with the exception of a race condition/locking issue. So it got all mangled on this day and all credits were used up and I stopped...frustrated.
+
 ## 7/15/2026
 
 🟢 It's working. 
