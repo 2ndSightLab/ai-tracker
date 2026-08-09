@@ -4,13 +4,27 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
+## 8/9/2026
+
+🟢 Back from AWS Heroes conference. Asking about credit usage and told with 5 agents that's normal. 
+
+🟢 Added a project-group-init.sh function that initializes a group of projects I want to work on together defined in an architecture file. It creates or clones all projects and initiaizes as needed.
+
+🟢 Revixed my agent prompt again to see if it helps.
+
+🟢 Created a script for consistent time tracking added to all initizialized projects.
+
+🟢 Cleaned up architecture README - I'm splitting the problematic project into multiple projects. I hope that helps. TBD.
+
+🟢 Cleaned up project names in git where they exist.
+
 ## 7/21/2026
 
-🟢 Thought I had it all working and then the model deleted a critical file and messed the whol thing up again. In addition at some point it was working with the exception of a race condition/locking issue. So it got all mangled on this day and all credits were used up and I stopped...frustrated.
+🟡 Thought I had it all working and then the model deleted a critical file and messed the whol thing up again. In addition at some point it was working with the exception of a race condition/locking issue. So it got all mangled on this day and all credits were used up and I stopped...frustrated.
 
 ## 7/15/2026
 
-🟢 It's working. 
+🟢 It's working. (Or so I thought.)
 
 🟢 Figured out why delete default vpcs wasn't working. It was deleting all the vpcs for every single account. It's green in the list now but last time it was green in the list, it didn't really work. I'll check it later.
 
