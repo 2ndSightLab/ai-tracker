@@ -17,7 +17,7 @@ The mistake tracker is a new part of the project added a few months in. This is 
 # 2026-08-10
 
 Barely started working and:
-
+```
 Kiro is having trouble responding right now: 
    0: Failed to receive the next message: request_id: xxxx, error: InternalServerError: Encountered an unexpected error when processing the request, please try again.
 
@@ -113,6 +113,7 @@ Location:
 
 Run with COLORBT_SHOW_HIDDEN=1 environment variable to disable frame filtering.
 Run with RUST_BACKTRACE=full to include source snippets.
+```
 
 # 2026-08-09 ..
 
@@ -141,7 +142,7 @@ So basically I "saved" tokens but I spent tokens to get absolutely nothing in re
 # 2026-08-08
 
 Shortly after logging on this repo got another Kiro stacktrace.
-
+```
 Kiro is having trouble responding right now: 
    0: Failed to receive the next message: request_id: xxxxxxxxx, error: Kiro failed to generate a response
 
@@ -237,6 +238,7 @@ Location:
 
 Run with COLORBT_SHOW_HIDDEN=1 environment variable to disable frame filtering.
 Run with RUST_BACKTRACE=full to include source snippets.
+```
 
 # 2026-07-21
 
