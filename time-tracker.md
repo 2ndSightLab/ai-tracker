@@ -2,6 +2,10 @@
 
 This time is not 100% precise because it is very difficult to get the AI models to consistatently log time. I realized on 6/24 at 6:15 PM ET that the days before were logged incorrectly due to the model mangling the time tracking requirements I told it to write. Fixed that and found a way to get a bit better consistency and wrote some automated repoerts. As you can see the time tracking data can be lengthy so will probably just provide analysis after 6/25/26
 
+# 2026-08-10
+
+It's just after midnight and like clockwork the models are going so slow almost not useful right now.
+
 # 2026-08-09
 
 Shared this info with some folks who might be able to help resolve some of these problems going forward. As of right now I'm using Kiro and it is going soooo sloooow. I wrote a script to ensure time is logged in a consistent manner across projects. It's kind of like a hook but it's just scripts the project agents are supposed to run for consistency. I don't know if I can turn it into a hook because I can't get a handle on the system time that comes before the first date command is executed in a hook. Right now the agents are telling me the slowness is coming from a lag in communicating with the models. But it doesn't matter which model I piack - anthropic or open AI. They are all super slow right now. I've not worked a ton today and used up 6% of my plan using 1-2 agents.
