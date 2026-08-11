@@ -14,6 +14,8 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/response-time.
 
 The mistake tracker is a new part of the project added a few months in. This is not super scientific as it is hard to quantify. I'm just telling the model to increment the mistakes it's making +1 if it starts making a bunch of mistakes. This is not every mistakes mostly only when I start getting annoyed. :-D The mistakes are largely worded by the AI agent and sometimes it does not capture the correct mistake but I don't always fix that because I just want to get stuff done. It generally captures a valid mistake but not the one I actually wanted it to log. So these are all valid just some are missing I didn't bother to fix to the correct mistake. I don't care about typooooos this is just a fast as possible log. Trying to get things done. Note missing days/times may be because the model deleted the data or because I took some time off. In some cases I have to work on other things...
 
+I feel like I'm going in circles with this thing.
+
 # 2026-08-11
 
 What is really annoying right now is that I broke a project into four projects and I have requirements to EXACTLY COPY the code that was working and deploying resources just fine. And the agents that split the projects are trying to tell me the problem is in projects that have worked for agents instead of figuring out they didn't correctly copy the code the requirements adamantly say to copy exactly. But they didn't.
