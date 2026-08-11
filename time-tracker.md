@@ -2,6 +2,10 @@
 
 This time is not 100% precise because it is very difficult to get the AI models to consistatently log time. I realized on 6/24 at 6:15 PM ET that the days before were logged incorrectly due to the model mangling the time tracking requirements I told it to write. Fixed that and found a way to get a bit better consistency and wrote some automated repoerts. As you can see the time tracking data can be lengthy so will probably just provide analysis after 6/25/26
 
+## 8/11/2026 4:59 PM
+
+Going so SLLLLOOWWW right now.
+
 # 2026-08-10
 
 It's just after midnight and like clockwork the models are going so slow almost not useful right now.
