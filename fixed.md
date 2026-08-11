@@ -4,9 +4,6 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
-## 8/11/2026 4:59 PM
-
-Going so SLLLLOOWWW right now.
 
 ## 8/9/2026
 
