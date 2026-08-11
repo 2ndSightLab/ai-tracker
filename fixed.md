@@ -4,6 +4,10 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
+## 8/11/2026 4:59 PM
+
+Going so SLLLLOOWWW right now.
+
 ## 8/9/2026
 
 🟢 The project group configuration is now working and the architecture I defined to split the tracker into four sepraate projects worked. All new projects are created at agents are properly initialized.
