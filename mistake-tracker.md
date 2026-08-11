@@ -18,6 +18,20 @@ I feel like I'm going in circles with this thing.
 
 # 2026-08-11
 
+You would think that renaming variables from one thing to another across projects would be easy when splitting up projects into a segregated architecture. But it's not. And adding a prefix to vraibles woudl be easy. But it's not. One of the most mind-blowingly annoying things is when models do mess up variables for no reason. For example:
+
+Add a prefix to the variable names like ORGANIZATION_ and it rnadomly chagnes ALLOWED_REGIONS to ORGANIZATION_REGIONS instead of ORGANIZATION_ALLOWED_REGIONS. I mean how much more clear does it need to be.
+
+And how about changing a variable used in every single project named RESOURCE_AWS_ID to AWS_RESOURCE_ID in the main project so that every other porject is then messed up?
+
+And failing to rename variables where it clearly says in the architecture README.md file to rename THIS to THAT.
+
+And failing to correctly copy and move all files out of other projects into the new project structure because, oh, I guess it thougth that was too much work.
+
+I'm spending time hand holding the model on a bunch of fiddly things you'd think it coudl figure out and burning tokens on that.
+
+# 2026-08-11
+
 What is really annoying right now is that I broke a project into four projects and I have requirements to EXACTLY COPY the code that was working and deploying resources just fine. And the agents that split the projects are trying to tell me the problem is in projects that have worked for agents instead of figuring out they didn't correctly copy the code the requirements adamantly say to copy exactly. But they didn't.
 
 # 2026-08-10
