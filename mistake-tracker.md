@@ -40,7 +40,9 @@ The other thing is, some roesl require MFA and otehrs do not for the org role. I
 
 What I really wish is that I could provide the MFA ARN and IP address when creating the account so they would get added to the org trust policy. Could be optional not to break other AWS stuff. But as it is I have no way to tell without logging into the account if the role does or does not have MFA associated with the trust policy. I could manually fix each account but that's dumb. I need to the code to try with MFA Then without if it fails. I'll fix that tomorrow. 
 
-So I think the concurrency issues are fixed now. And things are kind of logging. I just have a lot of details to fix. 
+So I think the concurrency issues are fixed now. And things are kind of logging. I just have a lot of details to fix.
+
+Oh yes and when I got to KMS keys the app turned in to an eternal loop. So was that something that just broke at the end when the model was about out of juice and getting dumber? Because it was working for other resources...and now it's not. I was trying to fix role assumption when that issue started right before the model got nerfed and then ran out of tokens. Great. Maybe I'll look into that manually tomorrow. Seems odd.
 
 I found myself using google/aimode for simple commands because the whole kiro/anthropic model combination is taking forever and it's a pain to try to switch around and figure out if a model is or is not going to give me useful responses. I had paying for bogus useless responses from dumber models.
 
