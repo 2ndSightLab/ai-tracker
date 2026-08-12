@@ -44,6 +44,8 @@ So I think the concurrency issues are fixed now. And things are kind of logging.
 
 Oh yes and when I got to KMS keys the app turned in to an eternal loop. So was that something that just broke at the end when the model was about out of juice and getting dumber? Because it was working for other resources...and now it's not. I was trying to fix role assumption when that issue started right before the model got nerfed and then ran out of tokens. Great. Maybe I'll look into that manually tomorrow. Seems odd.
 
+One other thing I noticed is my machine kept locking up when I loaded over 6 models. I would get logged out sometimes. Connection dropped. Other times the screen would just freeze. Overloaded? Or a concurrency issue with too many models? I didn't try to pin it down.
+
 I found myself using google/aimode for simple commands because the whole kiro/anthropic model combination is taking forever and it's a pain to try to switch around and figure out if a model is or is not going to give me useful responses. I had paying for bogus useless responses from dumber models.
 
 I was just watching that show Black Rabbit on Netflix - what's that they say - the cheap pay...twice.
