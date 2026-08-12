@@ -20,7 +20,15 @@ I feel like I'm going in circles with this thing.
 
 It's beena frustrating few days. Things that seem like they should be simple are overly complicated. I slowed the token burn but still used up my tokens in three days. Bottom line: AI models are not good at parallel processing. Said it before and I'll say it again. 
 
-I created a much simplified model and still messed things up. I had to do a lot of hand-holding today to get the application to even process the nodes, get rid of AWS errors, and walk the diagram through the steps to process a node over and over again until it finally found it's bug. It was not even processing nodes, wasn't putting them in the right place in the XML, didn't properly copy the XML structure or the diagram code from the old project.
+There's this moment where you are pushing and pushing the model to figure it out and that's what I was doing to the wee hours of the a.m. yesterday. I was so completely annoyed. It figures out all these things so why can't it just push it over the edge. That last step. What the heck is the problem?
+
+I created a much simplified model and still messed things up. And it couldn't read the architecture document which I thought would solve the problem but it did not.
+
+Today I stopped pushing it randomly and took each error one at a time and figured it out instead of randomly askign a bunch of different models to fix errors in different projects. I had to do a lot of hand-holding today to get the application to even process the nodes, get rid of AWS errors, and walk the diagram through the steps to process a node over and over again until it finally found it's bug. It was not even processing nodes, wasn't putting them in the right place in the XML, didn't properly copy the XML structure or the diagram code from the old project.
+
+At some point I got so frustrated I asked the architecture diagram why the other project couldn't get something right it had been trying to fix for two days. I was so overly completely annoyed to be honest. Turns out there was a gap in the architecture instructions and the model simply couldn't make the leap. It couldn't find a solution to bridge the gap between projects. It couldn't grok the parallel processing and figure out that some common global vars were getting clobbered. 
+
+So that was a bit maddeninng and cost me a bunch of credits - but something good did come out of it. I figured out a better way to track the hierarchy of resources to prevent some other complex mistakes I was seeing. I'm thining about teh resources as a graph of nodes versus just a group of attributes. That helps. Giving each resource a specific path creates a unique value by which the nodes can be tracked across threads. Hmm. I thought that would help a lot but I still have a lot to fix. Regardless I like it.
 
 I spent a lot of time step by step walking the model through fixing my aws command runner to properly set variables and source the error tracker file.
 
