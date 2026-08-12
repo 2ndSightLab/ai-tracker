@@ -16,6 +16,36 @@ The mistake tracker is a new part of the project added a few months in. This is 
 
 I feel like I'm going in circles with this thing.
 
+# 2026-08-11 - 11:22 PM
+
+It's beena frustrating few days. Things that seem like they should be simple are overly complicated. I slowed the token burn but still used up my tokens in three days. Bottom line: AI models are not good at parallel processing. Said it before and I'll say it again. 
+
+I created a much simplified model and still messed things up. I had to do a lot of hand-holding today to get the application to even process the nodes, get rid of AWS errors, and walk the diagram through the steps to process a node over and over again until it finally found it's bug. It was not even processing nodes, wasn't putting them in the right place in the XML, didn't properly copy the XML structure or the diagram code from the old project.
+
+I spent a lot of time step by step walking the model through fixing my aws command runner to properly set variables and source the error tracker file.
+
+Now the diagram is loading way too slow. I had to walk the agents through how and when to trigger creating the XML file. The XML creation is now handled by a single thread to prevent concurrency issues. The problem is that there's like 1000 nodes to process and when it runs it's too slow. 
+
+I need to revisit my dup node rejection. I was initially not going to to do that so nothing is missed but now reconsidering.
+
+I also told the tracker to create a process to process the nodes while other things are running started up with the app runs. It's basically ignoring me. 
+
+When the model gets to the trail end of credits it seems to get really dumb. It completely hosed the diagram xml which in turn hosed the diagram right before my tokens ran out.
+
+It also broke role assumption code right at that point. I revereted from github and manually fixed that issue. Kind of.
+
+I've got a diagram and nodes an burning less tokens but now I need to go back through each indivual resource project and get it working with the new diagram tracker. The agents did NOT follow instructions at all for correctly fixing variables, file paths, moving all code as specified in the architecture diagram and correclty logging errors nad success with the new loggers. I finally got some of the organization resources fixed but not all. 
+
+The other thing is, some roesl require MFA and otehrs do not for the org role. I got part of the way through. I need to figure out how to determine if the role does or does not have MFA associated with it and create the correct role acordingly and assume that. Since the assume role project agent broke the code I put something in place that asks if want to assume a role with MFA or not when creating the role. That sort of works but I've got too many prompts all over the place so I'll need to revisit that.
+
+What I really wish is that I could provide the MFA ARN and IP address when creating the account so they would get added to the org trust policy. Could be optional not to break other AWS stuff. But as it is I have no way to tell without logging into the account if the role does or does not have MFA associated with the trust policy. I could manually fix each account but that's dumb. I need to the code to try with MFA Then without if it fails. I'll fix that tomorrow. 
+
+So I think the concurrency issues are fixed now. And things are kind of logging. I just have a lot of details to fix. 
+
+I found myself using google/aimode for simple commands because the whole kiro/anthropic model combination is taking forever and it's a pain to try to switch around and figure out if a model is or is not going to give me useful responses. I had paying for bogus useless responses from dumber models.
+
+I was just watching that show Black Rabbit on Netflix - what's that they say - the cheap pay...twice.
+
 # 2026-08-11
 
 You would think that renaming variables from one thing to another across projects would be easy when splitting up projects into a segregated architecture. But it's not. And adding a prefix to vraibles woudl be easy. But it's not. One of the most mind-blowingly annoying things is when models do mess up variables for no reason. For example:
