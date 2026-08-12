@@ -32,6 +32,8 @@ So that was a bit maddeninng and cost me a bunch of credits - but something good
 
 I spent a lot of time step by step walking the model through fixing my aws command runner to properly set variables and source the error tracker file.
 
+The other thing that happened was at some point I realized that the architecture project had randomly changed some requirements. That caused me a fair amount of rework. Why the heck do the models have to randomly decide to do some arbritrary thing that screws everything up. I've been having teh agents write tons of tests which is only mildly helpful. I'm still having to brute force my way to a solution.
+
 Now the diagram is loading way too slow. I had to walk the agents through how and when to trigger creating the XML file. The XML creation is now handled by a single thread to prevent concurrency issues. The problem is that there's like 1000 nodes to process and when it runs it's too slow. 
 
 I need to revisit my dup node rejection. I was initially not going to to do that so nothing is missed but now reconsidering.
