@@ -18,7 +18,7 @@ I feel like I'm going in circles with this thing.
 
 # 2026-08-11 - 11:22 PM
 
-It's beena frustrating few days. Things that seem like they should be simple are overly complicated. I slowed the token burn but still used up my tokens [credits] in three days. Bottom line: AI models are not good at parallel processing. Said it before and I'll say it again. 
+It's been a frustrating few days. Things that seem like they should be simple are overly complicated. I slowed the token burn but still used up my tokens [credits] in three days. Bottom line: AI models are not good at parallel processing. Said it before and I'll say it again. 
 
 There's this moment where you are pushing and pushing the model to figure it out and that's what I was doing to the wee hours of the a.m. yesterday. I was so completely annoyed. It figures out all these things so why can't it just push it over the edge. That last step. What the heck is the problem?
 
