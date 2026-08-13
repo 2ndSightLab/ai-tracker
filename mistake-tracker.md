@@ -77,6 +77,18 @@ sudo rm -f ~/.local/bin/q*
 
 Now why would I need to do that if I'm installing Claude Code? What does it do? It deletes all the code related to the Amazon Q cli chatbot. Hmmm????
 
+Next it gives me code to copy a file to itself which kills the script.
+
+Next it tries to delete itself if the script fails. Um no.
+
+Now it's trying to add a symlink again when the binary is alreayd in the path as previously discussed.
+
+Next it tries to add || true to the end of the failing line to hide the error.
+
+Now I have the same permission error I started with because it tried to use a symlink again instated of copying files. Going in cricles.
+
+Finally..got it working. 
+
 # 2026-08-12 - 11:22 PM
 
 It's been a frustrating few days. Things that seem like they should be simple are overly complicated. I slowed the token burn but still used up my tokens [credits] in three days. Bottom line: AI models are not good at parallel processing. Said it before and I'll say it again. 
