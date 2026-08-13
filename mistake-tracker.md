@@ -15,8 +15,23 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/response-time.
 The mistake tracker is a new part of the project added a few months in. This is not super scientific as it is hard to quantify. I'm just telling the model to increment the mistakes it's making +1 if it starts making a bunch of mistakes. This is not every mistakes mostly only when I start getting annoyed. :-D The mistakes are largely worded by the AI agent and sometimes it does not capture the correct mistake but I don't always fix that because I just want to get stuff done. It generally captures a valid mistake but not the one I actually wanted it to log. So these are all valid just some are missing I didn't bother to fix to the correct mistake. I don't care about typooooos this is just a fast as possible log. Trying to get things done. Note missing days/times may be because the model deleted the data or because I took some time off. In some cases I have to work on other things...
 
 I feel like I'm going in circles with this thing.
+# 2026-08-13 - 12:00 AM
 
-# 2026-08-11 - 11:22 PM
+Today I tried to fire up Claude Code. I logged in to look around. I got an email saying I have security access but I don't see that anywnere in my account. I can't find a way to add a Yubikey for my web login or IP restrictions. Am I missing it?
+
+I also checked in my OpenAI account to see if I had been granted security access. I already did the thing to prove my identity but it was not showing up there. I did it over again. I'm not sure if I'm logging into the wrong place but I'm seeing the same org ID. In this account I see IP restrictions but no way to add a Yubikey for web logins.
+
+Anyway I got Claude Code installed on Amazon Linux. Google is trying to tell me to login I have to install Node. Absolutely not true. I just started the program and it let me login. So Google lies. It lied about a bunch of other things as well.
+
+Then I hit my first roadblock. How do I run Claude as a specific user like I do with Kiro. Claude tried to tell me that I can just configure some restrictions in some JSON file. Yeah right. It admitted that does nothing and the agent can get around it. Then on the SECOND COMMAND, it tried to use SUDO to get to the password file or something. Yeah, no. The SECOND COMMAND. 
+
+I went back to Google Cloud and asked how I can run the claude app with a specific user and this time Google did not lie. It gave me the right answer while Claude did not. 
+
+Now I have to wire up my framework to run Claude so I can compare it to Kiro. The first thing I noticed was that on one request to lock down the agent to a specific folder it burned 1500 tokens. That seems like a lot but I don't know how that compares to Kiro credits. More testing required...
+
+I *think* I am using the plan not API key so I should get more tokens. Right? I'm not sure. Anyway. More to follow.
+
+# 2026-08-12 - 11:22 PM
 
 It's been a frustrating few days. Things that seem like they should be simple are overly complicated. I slowed the token burn but still used up my tokens [credits] in three days. Bottom line: AI models are not good at parallel processing. Said it before and I'll say it again. 
 
