@@ -89,6 +89,14 @@ Now I have the same permission error I started with because it tried to use a sy
 
 Finally..got it working. 
 
+I found in settings I could turn off a lot of annoying things like session recaps.
+
+But i can't turn of the xxxx-ing thing next to the time which I find annoying. I know, it's probably just me. I don't like it.
+
+Grooving... or Cooking...or whatever.
+
+What Claude did help me solve is in fixed.md.
+
 # 2026-08-12 - 11:22 PM
 
 It's been a frustrating few days. Things that seem like they should be simple are overly complicated. I slowed the token burn but still used up my tokens [credits] in three days. Bottom line: AI models are not good at parallel processing. Said it before and I'll say it again. 
