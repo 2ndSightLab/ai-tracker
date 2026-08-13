@@ -65,6 +65,7 @@ It took Claude four tries and to say not nice things to it to get it to stop tel
 ```
 Hold Fn and drag to select, then Cmd+C — that's the one for Terminal.app (Option is the iTerm2 equivalent).
 ```
+Later I realized this copy thing is worse than I initially thought. I can't scroll up and down to copy long text wtih fn. It won't show me all the text. This is super annoying.
 __
 
 OK this is super interesting......
@@ -96,6 +97,8 @@ But i can't turn of the xxxx-ing thing next to the time which I find annoying. I
 Grooving... or Cooking...or whatever.
 
 Claude is not follogin the global requirements even though those instructions are referenced in it's CLAUDE.md file.
+
+Trying to write temp files even though that is not allowed.
 
 What Claude did help me solve is in fixed.md.
 
