@@ -3,15 +3,9 @@
 
 Fixed issues in fixed.md
 
-## Today's objectives:
-
-🟡 If I have OUs and accounts and I want to align them to teh configuration > using drift management, list all the OUS in config and all the OUs in the account. Specify if the OUs in the config should be renamed to OUs in the acount or vice versa...then do the same for accouunts in OUs...then resources
-
 🟡 Need to fix SCP for manage kiro to allow identity center + kiro for that account only. All other accounts blocked from kiro. Fix SCP
 
 🟡 S3 cloudwatch logging (to replae s3 access log bucket) - Delivery to CloudWatch Logs is billed at standard CloudWatch Logs rates: The Infrequent Access log class ingests at a lower cost than the Standard class, but does not support metric filters. >> need the option to specify infrequent or standrd access per bucket to log to cw
-
-🟡 Fix rename/menu issues
 
 🟡 When rename in config, rename in AWS > which means tracking the renaming actions (from > to)
 
@@ -21,44 +15,17 @@ Fixed issues in fixed.md
 
 🟡 Add resource specific actions (like route 53 register domain), user can choose action for resource...
 
-🟡 Wrong IP in admin user policy
-
-🟡 Fix KMS key deployment - ERROR: deploy-kms-logs-key.sh is not implemented
-
-🟡 remove SECURITY_ACCOUNT_ID, etc. in delegate scripts, + configure > all these can be replaced with the deploy acct name/id
-
-🟡 No deploy action available for Delegate Org Admin
-
 🟡 log bucket script not ipmelmented
 
 🟡 Backup env should create a backup account for each env (confirmed by user), kms, iam
-
-🟡 Remove Select Environment from deploy menu
-
-## Later
 
 🟡 Standalone identity center was not properly enabled upon deploy - what happened?
 
 🟡 rename environment - fails to correct ids so files not found.
 
-🟡 When budget exists check to see that it is acutually replacing all existing budget amounts.
-  Budget amount auto-set to $30 (highest threshold)
-  x-org: budget exists ($50.0/month)
-  Updated to $30/month
-  Account Budget complete
+🟡 Multiple press enter to continue (confirm mode)
 
-🟡 Multiple press enter to continue
-
-🟡 after deploy IAM users wrong list of options - inconsistent
-
-Select an action for admin users:
-  1. Deploy admin users
-  2. Done
-  3. Exit
-
-🟡 Pauses/spaces betwene menus deploying resources
-
-🟡 Root SCPs - Bootstrap role perm - attach
+🟡 Pauses/spaces betwene menus deploying resources (confirm mode)
 
 🟡 Seeing high route53 costs need to look into why that is. Check - need to query all DNS services and make sure DNS is locked down to only allowed accounts.
 
@@ -140,4 +107,3 @@ If you find active Inbound or Outbound endpoints that you do not need, you can d
 
 🟡 The KMS key polic is too broad - allows access to any key and is applying it to eevery lamda in ou. I have an SCP to block that but still annoying. I need to review all the policies in detail later and will use the IAM access analyzer plus manual review. I don't think IAM access analyzer handles resource policies but prowler will to a degree.
 
-🟡 Deploy resources concurrently where possible; my initial attempt to ask this quetion got really convoluted sugestions.
