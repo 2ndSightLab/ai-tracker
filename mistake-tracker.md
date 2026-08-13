@@ -65,6 +65,17 @@ It took Claude four tries and to say not nice things to it to get it to stop tel
 ```
 Hold Fn and drag to select, then Cmd+C — that's the one for Terminal.app (Option is the iTerm2 equivalent).
 ```
+__
+
+OK this is super interesting......
+
+I'm adding the claude install to my framework init file. It installes Kiro + Claude and configured the whole environment including getting the initial repo that manages the project. While giving me the lines to add Claude Code and set up the path and so on, it added this line:
+
+```
+sudo rm -f ~/.local/bin/q*
+```
+
+Now why would I need to do that if I'm installing Claude Code? What does it do? It deletes all the code related to the Amazon Q cli chatbot. Hmmm????
 
 # 2026-08-12 - 11:22 PM
 
