@@ -4,6 +4,13 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
+## 8/12/2026
+
+🟢 Set up my framework to work with Claude Code or Kiro (default). Wrote about some of the mistakes and issues using Claude Code to set that up in mistakes.md. Now I can use alias c to run claude code for a specific project or k to run kiro for a specific project. The tool runs with the specified linux user that has limited access to the specific project folder but can read the code in all the other projects on the system. How I plan to use this is to run the framework for different groups of projects on different systems to limit the amount of code an agent has to look at.
+
+## 8/11/2026
+
+🟢 Framework is kind of running with bugs as noted elsewhere. Burned another $200.
 
 ## 8/9/2026
 
