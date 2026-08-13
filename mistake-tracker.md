@@ -33,6 +33,20 @@ I *think* I am using the plan not API key so I should get more tokens. Right? I'
 
 BTW I am using a direct anthropic account to avoid any cross-cloud shenanigans. 
 
+--
+
+Wow so far not impressed. I asked what changes I need to make to configure existing projects that work with Kiro to work with Claude. For some reason Claude thought it needed to read the whole projects directory that has hundreds of projects in it to solve that problem. I wonder how many tokens that would have wasted. I stopped it after just seeing what it was trying to do. For some reason it was looking at files that define varaibles. Why?
+
+I had already researched this so I stopped it and told it it didn't need that directory and told it to change a specific file. 
+
+So here's where it gets interesting. It recommended code to delete the kiro files - and the .git directory?!?! What.
+
+Yeah no. So I had to explicitly tell it don't you just need a Claude.md file and that's it? Can't you just add that file to every project when initialized and tell it to follow the instructions in the existing readme? Oh yeah...you're right...
+
+So next I tell it to give me the code to do that and copy a sample Claude md into the project the same way the Kiro project code works. 
+
+So I burned like 10,000 tokesn for 3 lines of code in two files.
+
 # 2026-08-12 - 11:22 PM
 
 It's been a frustrating few days. Things that seem like they should be simple are overly complicated. I slowed the token burn but still used up my tokens [credits] in three days. Bottom line: AI models are not good at parallel processing. Said it before and I'll say it again. 
