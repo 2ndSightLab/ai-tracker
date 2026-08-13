@@ -95,6 +95,8 @@ But i can't turn of the xxxx-ing thing next to the time which I find annoying. I
 
 Grooving... or Cooking...or whatever.
 
+Claude is not follogin the global requirements even though those instructions are referenced in it's CLAUDE.md file.
+
 What Claude did help me solve is in fixed.md.
 
 # 2026-08-12 - 11:22 PM
