@@ -8,6 +8,11 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 🟢 Set up my framework to work with Claude Code or Kiro (default). Wrote about some of the mistakes and issues using Claude Code to set that up in mistakes.md. Now I can use alias c to run claude code for a specific project or k to run kiro for a specific project. The tool runs with the specified linux user that has limited access to the specific project folder but can read the code in all the other projects on the system. How I plan to use this is to run the framework for different groups of projects on different systems to limit the amount of code an agent has to look at.
 
+🟢 I spent most of the day manually fixing the role assumption issues because the agents just make a mess of that. I go to the very end and one thing was wonky. Claude figured out what it was kind of. I was choosing the wrong option at some point. I need to make that more clear, I think.
+
+🟢 After a lot of thinking Claude correctly diagnosed that the migration of the code to the new project architecture failed to copy over some critical logic for organization wide resources. The migration was literally suposed to copy that code over and yet it mucked it up along with a bunch of other things I'm having to redo now, creating really complicated problems. Sorting them out one at a time but I feel like I shouldn't have to be doing this since the instructions were literally, copy the code. Only make changes required by the architecture README.md. This was not a required chagne. Super annoying.
+
+
 Just going through issues list and some stuff has been fixed:
 
 🟢 Root SCPs - Bootstrap role perm - attach
