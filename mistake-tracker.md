@@ -47,6 +47,8 @@ So next I tell it to give me the code to do that and copy a sample Claude md int
 
 So I burned like 10,000 tokesn for 3 lines of code in two files.
 
+On the other hand, it got this right: starting an agent with claude instead of kiro was literally one line to handle a flag and an if statement to check the flag and start with either Claude or Kiro depending on the value of that flag.
+
 # 2026-08-12 - 11:22 PM
 
 It's been a frustrating few days. Things that seem like they should be simple are overly complicated. I slowed the token burn but still used up my tokens [credits] in three days. Bottom line: AI models are not good at parallel processing. Said it before and I'll say it again. 
