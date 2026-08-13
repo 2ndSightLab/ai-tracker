@@ -56,6 +56,14 @@ So right now I'm on Sonnet 5. And it's not clear to me if that is as good as 4.8
 
 Well, let's see if Opus 5 is any different.
 
+__
+
+OMG copy + Paste from mac/Amazon Linux ec2 sucks in Claude Code. Totally. 
+
+It took Claude four tries and to say not nice things to it to get it to stop telling me to write to a file since the file I'm writing to is in a different project to which I am NOT giving it access and I don't want to have temp files all over the place. Let me copy and paste! Finally I got this which is a royal pain. But at least it works:
+
+>>> Hold Fn and drag to select, then Cmd+C — that's the one for Terminal.app (Option is the iTerm2 equivalent).
+
 # 2026-08-12 - 11:22 PM
 
 It's been a frustrating few days. Things that seem like they should be simple are overly complicated. I slowed the token burn but still used up my tokens [credits] in three days. Bottom line: AI models are not good at parallel processing. Said it before and I'll say it again. 
