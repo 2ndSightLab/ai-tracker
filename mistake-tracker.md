@@ -31,6 +31,8 @@ Now I have to wire up my framework to run Claude so I can compare it to Kiro. Th
 
 I *think* I am using the plan not API key so I should get more tokens. Right? I'm not sure. Anyway. More to follow.
 
+BTW I am using a direct anthropic account to avoid any cross-cloud shenanigans. 
+
 # 2026-08-12 - 11:22 PM
 
 It's been a frustrating few days. Things that seem like they should be simple are overly complicated. I slowed the token burn but still used up my tokens [credits] in three days. Bottom line: AI models are not good at parallel processing. Said it before and I'll say it again. 
