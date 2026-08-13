@@ -48,6 +48,13 @@ So next I tell it to give me the code to do that and copy a sample Claude md int
 So I burned like 10,000 tokesn for 3 lines of code in two files.
 
 On the other hand, it got this right: starting an agent with claude instead of kiro was literally one line to handle a flag and an if statement to check the flag and start with either Claude or Kiro depending on the value of that flag.
+__
+
+So I sign up for an Anthropic plan thinking that will get me access to Fable. But no. You have to enable usage credits and pay for tokens beyond whatever plan you signed up for. 
+
+So right now I'm on Sonnet 5. And it's not clear to me if that is as good as 4.8 that I was using on Kiro. But it seems better than Sonnet on Kiro so far. Hmm. But I'm not yet working on the hardest and biggest tasks. Also Claude can't tell me anything about it's plans apparently beyond a very generic Fable 5 is pay as you go.
+
+Well, let's see if Opus 5 is any different.
 
 # 2026-08-12 - 11:22 PM
 
