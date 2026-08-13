@@ -20,7 +20,7 @@ I feel like I'm going in circles with this thing.
 
 I started out with one thing for Claude Code and anthropic models to fix - the issue with the organization role assumption. I thought it had fixed it. But now it's back. The model told me it worked just have to answer a question correctly but that was not it. The logic was wrong. The model couldn't figrue it out. I just fixed. it. 
 
-Now running the application and that $100 feels wasted because nothing is really fixed. 
+Now running the application and that $100 feels wasted because nothing is really fixed. Beyond that issue I'm still seeing the exact same problems I started with. Oh well. I'll have to babysit it tomorrow.
 
 # 2026-08-13 - 12:00 AM
 
