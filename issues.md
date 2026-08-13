@@ -5,7 +5,7 @@ Fixed issues in fixed.md
 
 🟡 Need to fix SCP for manage kiro to allow identity center + kiro for that account only. All other accounts blocked from kiro. Fix SCP
 
-🟡 S3 cloudwatch logging (to replae s3 access log bucket) - Delivery to CloudWatch Logs is billed at standard CloudWatch Logs rates: The Infrequent Access log class ingests at a lower cost than the Standard class, but does not support metric filters. >> need the option to specify infrequent or standrd access per bucket to log to cw
+🟡 S3 cloudwatch logging > CloudWatch logs (new feature)
 
 🟡 When rename in config, rename in AWS > which means tracking the renaming actions (from > to)
 
