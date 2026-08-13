@@ -8,6 +8,35 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 🟢 Set up my framework to work with Claude Code or Kiro (default). Wrote about some of the mistakes and issues using Claude Code to set that up in mistakes.md. Now I can use alias c to run claude code for a specific project or k to run kiro for a specific project. The tool runs with the specified linux user that has limited access to the specific project folder but can read the code in all the other projects on the system. How I plan to use this is to run the framework for different groups of projects on different systems to limit the amount of code an agent has to look at.
 
+Just going through issues list and some stuff has been fixed:
+
+🟢 Root SCPs - Bootstrap role perm - attach
+
+🟢 after deploy IAM users wrong list of options - inconsistent
+
+Select an action for admin users:
+  1. Deploy admin users
+  2. Done
+  3. Exit
+
+This is really n/a now.
+
+🟢 Fix rename/menu issues
+
+🟢 Deploy resources concurrently where possible; my initial attempt to ask this quetion got really convoluted sugestions. [working but a few bugs to sort out]
+
+🟢 Wrong IP in admin user policy
+
+🟢 Fix KMS key deployment - ERROR: deploy-kms-logs-key.sh is not implemented
+
+🟢 When budget exists check to see that it is acutually replacing all existing budget amounts.
+  Budget amount auto-set to $30 (highest threshold)
+  x-org: budget exists ($50.0/month)
+  Updated to $30/month
+  Account Budget complete
+
+  This was replaced with per account budgets. May need some additional testing but I think this is working.
+
 ## 8/11/2026
 
 🟢 Framework is kind of running with bugs as noted elsewhere. Burned another $200.
