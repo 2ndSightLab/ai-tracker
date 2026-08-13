@@ -62,7 +62,9 @@ OMG copy + Paste from mac/Amazon Linux ec2 sucks in Claude Code. Totally.
 
 It took Claude four tries and to say not nice things to it to get it to stop telling me to write to a file since the file I'm writing to is in a different project to which I am NOT giving it access and I don't want to have temp files all over the place. Let me copy and paste! Finally I got this which is a royal pain. But at least it works:
 
->>> Hold Fn and drag to select, then Cmd+C — that's the one for Terminal.app (Option is the iTerm2 equivalent).
+```
+Hold Fn and drag to select, then Cmd+C — that's the one for Terminal.app (Option is the iTerm2 equivalent).
+```
 
 # 2026-08-12 - 11:22 PM
 
