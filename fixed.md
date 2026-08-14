@@ -4,6 +4,26 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
+## 8/13/2026
+
+Objective today is to reduce the token burn and get the bugs fixed. I know what the bugs are and what caused them since they got reintroduced by migration. So why is the model spinning when trying to fix them? Claude is back so let's see what we can do.
+
+🟢 While testing figured out that the projects were not all initialized with Claude.md file. New projects will be not existing. Created a script for that an ran it.
+
+🟢 Eternal looping: I know what causes this. The role assumption is buried in a subshell. It needs to be pulled to the foreground becuase otherwise it hangs waiting for a code the user cannot enter. Well moving it to the foreground seems like the solution. It's what all the Anthroopic models have been claiming is the problem since I implemented the parallel processing. I told the model via Claude and Kiro before that repeatedly to fix it but it's still producing and reintroducing that problem after it was already fixed. I kept refereing to the old code but the models can fix it. So let's do a brute force trace of what files are causing the problem and be more explicity about telling the model how to fix it. I've got some tokens again for Claude so let's use that. To fix started by adding explicit instructions for the particular problem that keeps occuring...
+
+So what is interesting here is that way back when I started writing about this cybersecurity automation framework which is essentially a way to run jobs which now can include agents...I was assuming roles and using static credentials with the roles to run batch jobs, because I was passing the creds around to allow the role to have short term credentials assumed on a separate compute resource (locked down with IP restrictions also). But in this iteration I was doing the normal role assumption not putting the short term creds in a role configuration.
+
+I don't know how this worked before but I turned on ultrathink in claude and for the first time since I implemneted parallel processing it's telling me to assume the role and get the STS role creds and use those to "freeze" the role assumption. It's telling me that the role assumption cannot pass from the parent to the child process. HUH? That worked before I thought. But whatever fixes it. So assume a role, get short term creds, and use those to create a new role profile and use the role profile to carry out all the commands.
+
+So it did that and messed up a bunch of stuff but finally got it working I think. 
+
+I had also told claude to create tests for EVERYTHING. It failed to create tests or fix tests even though it was a requirement in the global requirements. The models do not work any better at reading the global requirements in Claude Code. In fact they seem to be skipping my logging instructions for the most part.
+
+But anyway that is sort of resolved.
+
+🟢 The diagram is improved, but still slow. I still have work to do there. But it works. I'm seeing a bunh of bugs I have to fix that weren't in the old code though.
+
 ## 8/12/2026
 
 🟢 Set up my framework to work with Claude Code or Kiro (default). Wrote about some of the mistakes and issues using Claude Code to set that up in mistakes.md. Now I can use alias c to run claude code for a specific project or k to run kiro for a specific project. The tool runs with the specified linux user that has limited access to the specific project folder but can read the code in all the other projects on the system. How I plan to use this is to run the framework for different groups of projects on different systems to limit the amount of code an agent has to look at.
