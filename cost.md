@@ -1,6 +1,38 @@
-### Costs while building an AI Agent Bootstrap Script and Framework
+# Costs while building an AI Agent Bootstrap Script and Framework
 
-# Cost 
+### 8/14/2026
+
+Started writing about using Claude 20 hours ago. When I thought I had used up a $50 plan. I thought it was $100 but it was $50 and I added another $50 but even after adding another $50 I couldn't do more and I'm very confused by that. The billing model for Claude Code is insanely confusing. You have some kind of limit but it's not your full budget but you run out of tokens or credits or whatever it is they track. It said I could pay for usage credits and I said Ok but it never worked so I gave up.
+
+I was able to work again today but then ran out of tokens/credits again in a few hours. I was using ultramode to get through a few bugs and I think it did actually help resovle an issue so fine. 
+
+But how many tokens or credits or dollars have I acutally used? So I'm looking in my account and I have two invoices for 6/29 and 7/29 and I don't understand that at all. Where did my $100 I added go? What is going on here?
+
+Wait what. I was logged in and under billing I saw:
+
+June 28 - $50
+July 28 - $50
+
+I was sure I added another $100 somewhere. 
+
+I logged in under my primary email thinking maybe that was it. Nothing. I have no account there.
+
+I logged out and logged back in and was having some problems getting into my account. It didn't fully log me out of my primary email account. I finally switched from Claude.ai ot the platform link.
+
+And now I see:
+
+June 30 - $20
+August 13 - $100
+
+What??? 
+
+And in this plan I see 0% used with a $1000 monthly spend limit? Oh. This says something about API key. Was I using the other account just now?
+
+Sorry bu this is too dang confusing. Maybe I'll try to use the API key tomorrow if I can't use the browser login. My understanding is that the API key option is more expensive. How do I tell which one I've used?
+
+Ah, there it is. I now can head over to Claude.ai with my login and there I see the two $50 charges. Hmm. Ok.
+
+Well mystery solved and time for bed anyway.
 
 ### Costs while building an AI Agent Bootstrap Script and Framework
 **Timeline:** Mar 7, 2026 - Aug 5, 2026
