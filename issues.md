@@ -5,7 +5,7 @@ Fixed issues in fixed.md
 
 ## Issues
 
-🟡 Update global requirements for erros to say that error messages need to always expose the exact error not summarize the error. The error needs to include any file names, specific XML nodes or errors directly from bash not some annoyingly useless truncation of the issue.
+🟡 Update global requirements for erros to say that error messages need to always expose the exact error not summarize the error. The error needs to include project, file name, line number, any file names trying to process or read, the specific bash or AWS error, any xml nodes or variables or parameters that caused the error, any malformed data.
 
 🟡 Just realized that after "freezing" credits to prevent login issues, that role assumption is failing for both the mfa and no-mfa role on and account. AGAIN. Fix one and another appears. Will be manually revisiting that code tomorrow and cleaning it up. I think the solution is not to overwrite the account but to configure a temp role for the "frozen" credentials and just add a new role name to the mix. I'll need to sort that out when not so tired. 
 
