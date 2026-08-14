@@ -20,7 +20,11 @@ So it did that and messed up a bunch of stuff but finally got it working I think
 
 I had also told claude to create tests for EVERYTHING. It failed to create tests or fix tests even though it was a requirement in the global requirements. The models do not work any better at reading the global requirements in Claude Code. In fact they seem to be skipping my logging instructions for the most part.
 
-But anyway that is sort of resolved.
+But anyway that is sort of resolved. But is it?
+
+Digging through the logs. no it is not. I had it assuming a no-mfa role and if that fails assuem the mfa role (because initially the org role has no MFA). That was working. But something with the role was not working during parallel processing which I thought got fixed. But it did not.
+
+Now for an account role neither is assumed. Great thanks. I'll probably fix that manually tomorrow as I think it won't be that hard to fix and the models just think forever and cannot solve it.
 
 🟢 The diagram is improved, but still slow. I still have work to do there. But it works. I'm seeing a bunh of bugs I have to fix that weren't in the old code though.
 
