@@ -5,6 +5,8 @@ Fixed issues in fixed.md
 
 ## Issues
 
+🟡 Just realized that after "freezing" credits to prevent login issues, that role assumption is failing for both the mfa and no-mfa role on and account. AGAIN. Fix one and another appears. Will be manually revisiting that code tomorrow and cleaning it up. I think the solution is not to overwrite the account but to configure a temp role for the "frozen" credentials and just add a new role name to the mix. I'll need to sort that out when not so tired. 
+
 🟡 Clear tracker errors is not clearing errors from the diagram.
 
 🟡 I "fixed" something with the org admin role to remove the extranoues policy and now that role is not deploying and things are hung up that depend upon it, blocking everything.
