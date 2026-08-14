@@ -3,6 +3,42 @@
 
 Fixed issues in fixed.md
 
+## Issues
+
+🟡 Clear tracker errors is not clearing errors from the diagram.
+
+🟡 I "fixed" something with the org admin role to remove the extranoues policy and now that role is not deploying and things are hung up that depend upon it, blocking everything.
+
+🟡 Empty tracker error - why?
+
+🟡 Diagram is better but still slow. It doesn't seem to load whene the app is running.
+
+🟡 Some of the errors are still base64 encoded in the diagram they need to be converted to text when displayed.
+
+🟡 Some of the error messsages do not have enough information. It is not clear what the problem is.
+
+🟡 Need to clear the errors because I think some of them are bogus.
+
+🟡 No errror are associated with the nodes the caused the errors anymore.
+
+🟡 Make sure there is a timeout on waiting for depedencies.
+
+🟡 Fix action inputs - what does that even mean?
+
+🟡 Maybe just include parent error id instead of full error in logs because getting a bit wordy.
+
+🟡 Make sure there are not too many children under deny exernal 
+
+🟡 env yellow when nothing deployed in
+
+🟡 account resource should be under the account heading - is missing and should have id associated with it
+
+🟡 account should be green when deployed, heading yellow if some reasons not deployed
+
+
+
+## Later
+
 🟡 Need to fix SCP for manage kiro to allow identity center + kiro for that account only. All other accounts blocked from kiro. Fix SCP
 
 🟡 S3 cloudwatch logging > CloudWatch logs (new feature)
