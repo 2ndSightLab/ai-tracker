@@ -5,19 +5,29 @@ Fixed issues in fixed.md
 
 ## Issues
 
-🟡 Update global requirements for erros to say that error messages need to always expose the exact error not summarize the error. The error needs to include project, file name, line number, any file names trying to process or read, the specific bash or AWS error, any xml nodes or variables or parameters that caused the error, any malformed data.
+🟡 Errors getting logged when there are no errors - is it inadvertanly calling error logger instead of success logger? 
 
-🟡 Just realized that after "freezing" credits to prevent login issues, that role assumption is failing for both the mfa and no-mfa role on and account. AGAIN. Fix one and another appears. Will be manually revisiting that code tomorrow and cleaning it up. I think the solution is not to overwrite the account but to configure a temp role for the "frozen" credentials and just add a new role name to the mix. I'll need to sort that out when not so tired. 
+🟡 org: savisec (xxxxxxxx)
+|
+|     All Errors (every level):
+|     |____ 🔴 savisec (error)
+|           ↳ ERROR: botz-tracker-diagram: no error message recorded
+|     |____ 🔴 organization (error)
+|           ↳ ERROR: botz-tracker-diagram: no error message recorded
+|     |____ 🔴 scp-deny-leave-org (error)
+|           ↳ ERROR: botz-tracker-diagram: no error message recorded
+|     |____ 🔴 scp-allowed-regions (error)
+|           ↳ ERROR: botz-tracker-diagram: no error message recorded
+|     |____ 🔴 savisec (error)
+|           ↳ ERROR: botz-tracker-diagram: no error message recorded
+|     |____ 🔴 account (error)
+
+
+🟡 Update global requirements for erros to say that error messages need to always expose the exact error not summarize the error. The error needs to include project, file name, line number, any file names trying to process or read, the specific bash or AWS error, any xml nodes or variables or parameters that caused the error, any malformed data.
 
 🟡 Clear tracker errors is not clearing errors from the diagram.
 
-🟡 I "fixed" something with the org admin role to remove the extranoues policy and now that role is not deploying and things are hung up that depend upon it, blocking everything.
-
 🟡 Empty tracker error - why?
-
-🟡 Diagram is better but still slow. It doesn't seem to load whene the app is running.
-
-🟡 Some of the errors are still base64 encoded in the diagram they need to be converted to text when displayed.
 
 🟡 Some of the error messsages do not have enough information. It is not clear what the problem is.
 
@@ -38,7 +48,6 @@ Fixed issues in fixed.md
 🟡 account resource should be under the account heading - is missing and should have id associated with it
 
 🟡 account should be green when deployed, heading yellow if some reasons not deployed
-
 
 
 ## Later
