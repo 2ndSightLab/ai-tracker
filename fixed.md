@@ -6,6 +6,8 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 ## 8/14/2026
 
+🟢 Fixed manually: Should not be logging errors when roles are not configured because they get configured in the process.
+
 🟢 Finally parallel process is getting through all accounts and role assumption at all points is working correctly. No eternal loops and fixed a bunch of wonky errors.
 
 🟢 Fixed an error that after some other "fix" by the model caused the diagram to completely hang. That took a while for the model to sort out and stop finger pointing between projects.
