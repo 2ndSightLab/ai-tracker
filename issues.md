@@ -28,6 +28,7 @@ EID: <project>: <file>: <lineno>: Parent EID : <project>: <file>: <lineno> : Add
 
 🟡 Errors getting logged when there are no errors - is it inadvertanly calling error logger instead of success logger? 
 
+```
 🟡 org: savisec (xxxxxxxx)
 |
 |     All Errors (every level):
@@ -42,6 +43,7 @@ EID: <project>: <file>: <lineno>: Parent EID : <project>: <file>: <lineno> : Add
 |     |____ 🔴 savisec (error)
 |           ↳ ERROR: botz-tracker-diagram: no error message recorded
 |     |____ 🔴 account (error)
+```
 
 🟡 With profile fixes can probably deploy accounts in parallel now after handing off to parallel processor. TBD
 
