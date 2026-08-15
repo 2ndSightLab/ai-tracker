@@ -4,6 +4,19 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
+## 8/15/2026
+
+🟢 OK I fixed the parallel processing issues related to role assumption with profiles that use short term creds. I fixed the problem with xml tracker file locking by writing success and error nodes to separate files and processing those queues in a single threaded queue processor. But one problem remains. Global vars can be clobbered while deploying multiple resources at the same time. So I spent the morning adding requiremtns to exec a file and pass in the NODE_PATH for a resource and teh exec wrapper runs in teh background in it's own process. It parses out the neccessary globals that can chagne from the path in it's own thread and sources the deployment script. That way the vars are local to the deployment action and should not get clobbered.
+
+🟢 Another problem: error logging is writing useless error messages. The first step to solving that probelm is to include the file path and line number in the error so I added that requirement to the global readme. I need to do more but that's a start.
+
+🟢 I wrote explicit instructions related to the node path and files in the architecture readme so those file paths and parsing out the aligned path in the diagram are explicitly defined and the process for adding ids and errors to the correct nodes is clearer.
+
+🟢 I added explicit instructions to put the base64 encoded error message in the error file ONLY. 
+
+🟢 Kicked off five agents to fix the related projects according to those instructions...running....
+
+
 ## 8/14/2026
 
 🟢 Fixed manually: Should not be logging errors when roles are not configured because they get configured in the process.
