@@ -1,5 +1,9 @@
 # Costs while building an AI Agent Bootstrap Script and Framework
 
+# 2026-08-15 3:13 PM
+
+Kicked off five agents to fix the related projects according to those instructions...running....but then i set only ONE project to ultrathink and IMMEDIATELY ran out of credits. In the past I had 2-3 projects running in ultrathink and this did not happen. I don't understand this at all. I only changed some requirements, kicked off the agents, and I'm already out of credits.
+
 ### 8/15/2026 2:07 AM
 
 I don't understand Anthropic credits yet. At some point tonight said I had used 90% of my credits/tokens whatever. I had just started. Then it reset before I even stopped and I was working again. I worked from afternoon sometime till about midnight or 1 a.m.
