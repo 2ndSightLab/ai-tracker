@@ -6,8 +6,9 @@ Fixed issues in fixed.md
 ## Issues
 
 🟡 New error message format:
-
-EID: <project>: <file>: <lineno>: explantaiont (if appropriate) with relevant data (parameters, values, file paths, etc.) so it is clear EXACTLY WHAT TO FIX | exact error message from system not overwritten | \[ Parent EID : <project>: <file>: <lineno> \]
+```
+EID: <project>: <file>: <lineno>: explanation (if appropriate) with relevant data (parameters, values, file paths, etc.) so it is clear EXACTLY WHAT TO FIX | exact error message from system not overwritten | [ Parent EID : <project>: <file>: <lineno> ]
+```
 
 If there is a parent EID, can simply repeate the pararent error message if there is no new information to add.
 
