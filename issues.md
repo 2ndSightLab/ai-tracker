@@ -9,9 +9,7 @@ Fixed issues in fixed.md
 
 🟡 Everything repeatedly getting re-deployed due to errors.
 
-🟡 For some reason now exiting instead of letting me re-enter a role.
-
-🟡 Should not be logging errors when roles are not configured because they get configured in the process.
+🟡 For some reason now exiting instead of letting me re-enter a mfa code if i make a mistake.
 
 🟡 After fixing most of the encoded error messages some still remain.
 
