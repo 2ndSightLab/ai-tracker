@@ -20,6 +20,8 @@ Had to re-write what the model did again to have clean decent file names, abstra
 
 🟢 I "fixed" something with the org admin role to remove the extranoues policy and now that role is not deploying and things are hung up that depend upon it, blocking everything.
 
+🟢  Empty tracker error - why? No idea but gone after above fixes.
+
 ## 8/13/2026
 
 Objective today is to reduce the token burn and get the bugs fixed. I know what the bugs are and what caused them since they got reintroduced by migration. So why is the model spinning when trying to fix them? Claude is back so let's see what we can do.
