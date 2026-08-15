@@ -5,6 +5,12 @@ Fixed issues in fixed.md
 
 ## Issues
 
+🟡 New error message format:
+
+EID: <project>: <file>: <lineno>: explantaiont (if appropriate) with relevant data (parameters, values, file paths, etc.) so it is clear EXACTLY WHAT TO FIX | exact error message from system not overwritten | \[ Parent EID : <project>: <file>: <lineno> \]
+
+If there is a parent EID, can simply repeate the pararent error message if there is no new information to add.
+
 🟡 With profile fixes can probably deploy accounts in parallel now after handing off to parallel processor. TBD
 
 🟡 Everything repeatedly getting re-deployed due to errors.
@@ -30,12 +36,6 @@ Fixed issues in fixed.md
 |           ↳ ERROR: botz-tracker-diagram: no error message recorded
 |     |____ 🔴 account (error)
 
-
-🟡 New error message format:
-
-EID: <project>-<file>-<lineno>: what to fix | exact error message from system not overwritten | relevant data (parameters, values, file paths, etc.) | <parent EID if there is one> 
-
-If there is a parent EID, can simply repeate the pararent error message if there is no new information to add.
 
 🟡 Clear tracker errors is not clearing errors from the diagram.
 
