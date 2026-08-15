@@ -6,6 +6,8 @@ I don't understand Anthropic credits yet. At some point tonight said I had used 
 
 I'm still on the same $50 plan I think. Haven't gotten into my API credits yet. So how does this work anyway? I've been working since August 13th. Let's check usage. Apparently you can do that the same way you can do on Kiro: /usage
 
+I dont know how to control subagent spawning. Maybe something to look into. I don't care I just want it to get the problem solved correctly. Can we please just focus on that? I mean if you get the problem right in the first place it won't use as many tokens right? So spawn whatever agents are needed to get it done correctly and quickly. Maybe I'll look into that later.
+
 Note that it says Sonnet below but I've mostly used Opus 5. I have avoided Fable because it costs usage credits but will try it through another option I have later. Looks like my session is working again. But it's time for bed...
 
 ```
