@@ -14,7 +14,7 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 🟢 I added explicit instructions to put the base64 encoded error message in the error file ONLY. 
 
-🟢 Kicked off five agents to fix the related projects according to those instructions...running....
+🟢 Kicked off five agents to fix the related projects according to those instructions...running....but then i set only ONE project to ultrathink and IMMEDIATELY ran out of credits. In the past I had 2-3 projects running in ultrathink and this did not happen. I don't understand this at all.
 
 
 ## 8/14/2026
