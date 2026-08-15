@@ -14,7 +14,7 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 Had to re-write what the model did again to have clean decent file names, abstraction, deduplicated and logical code. Fixed a logical flow issue that was preventing new account creation and role assumption.
 
-🟢 Fixed: Some of the errors are still base64 encoded in the diagram they need to be converted to text when displayed.
+🟢 Fixed: Some of the errors are still base64 encoded in the diagram they need to be converted to text when displayed. > this is partially fixed but not completely. Part of the problem is that the error logging is messed up as explained in mistakes section. TO DO.
 
 🟢 Better: Diagram is better but still slow. It doesn't seem to load whene the app is running. (good enough for now)
 
