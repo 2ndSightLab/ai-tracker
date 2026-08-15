@@ -61,25 +61,25 @@ EID: <project>: <file>: <lineno>: Parent EID : <project>: <file>: <lineno> : Add
 
 🟡 S3 cloudwatch logging > CloudWatch logs (new feature)
 
-🟡 When rename in config, rename in AWS > which means tracking the renaming actions (from > to)
-
 🟡 Nested OUs
 
-🟡 Move OUs to align with config if theya re moved (which means tracking the moves)
+🟡 Move an OU (align with a config change)
 
-🟡 Add resource specific actions (like route 53 register domain), user can choose action for resource...
+🟡 An account (align with a config change)
 
-🟡 log bucket script not ipmelmented
+🟡 Resource specific actions - need to figure out how to handle these
 
 🟡 Backup env should create a backup account for each env (confirmed by user), kms, iam
 
-🟡 Standalone identity center was not properly enabled upon deploy - what happened?
+🟡 rename org 
 
-🟡 rename environment - fails to correct ids so files not found.
+🟡 rename env 
 
-🟡 Multiple press enter to continue (confirm mode)
+🟡 rename account 
 
-🟡 Pauses/spaces betwene menus deploying resources (confirm mode)
+🟡 rename a resource
+
+🟡 Remove confirm mode
 
 🟡 Seeing high route53 costs need to look into why that is. Check - need to query all DNS services and make sure DNS is locked down to only allowed accounts.
 
@@ -153,11 +153,9 @@ If you find active Inbound or Outbound endpoints that you do not need, you can d
 
 🟡 Delete hosted zone didn't work becuase need to delete child records first.
 
-🟡 Ram sharing worked for one VPC but it's not working for the other three nad the models are going aroudn and around in circles and cannot figure it out.
+🟡 close an account - ask if user wants to change name, email, alias so account can be recreated with same values
 
-🟡 Rename and account - name, email, alias - use this before closing an account
+🟡  Review and fix KMS key policies, bucket policies, SCPs, iam policies, etc. etc. etc.
 
-🟡 Close account is not working and before closing an account need to fix the following: change alias name, change account name, change email address - to avoid conflicts if need to recreate the account.
 
-🟡 The KMS key polic is too broad - allows access to any key and is applying it to eevery lamda in ou. I have an SCP to block that but still annoying. I need to review all the policies in detail later and will use the IAM access analyzer plus manual review. I don't think IAM access analyzer handles resource policies but prowler will to a degree.
 
