@@ -6,11 +6,14 @@ Fixed issues in fixed.md
 ## Issues
 
 🟡 New error message format:
-```
-EID: <project>: <file>: <lineno>: explanation (if appropriate) with relevant data (parameters, values, file paths, etc.) so it is clear EXACTLY WHAT TO FIX | exact error message from system not overwritten | [ Parent EID : <project>: <file>: <lineno> ]
-```
 
-If there is a parent EID, can simply repeate the pararent error message if there is no new information to add.
+```
+EID: <project>: <file>: <lineno>: explanation (if appropriate) with relevant data (parameters, values, file paths, etc.) so it is clear EXACTLY WHAT TO FIX | exact error message from system not overwritten 
+```
+If there's a parent error that caused the error:
+```
+EID: <project>: <file>: <lineno>: Parent EID : <project>: <file>: <lineno> : Additional information if needed : Exact parent message
+```
 
 🟡 With profile fixes can probably deploy accounts in parallel now after handing off to parallel processor. TBD
 
