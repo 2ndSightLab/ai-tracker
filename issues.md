@@ -14,14 +14,17 @@ If there's a parent error that caused the error:
 ```
 EID: <project>: <file>: <lineno>: Parent EID : <project>: <file>: <lineno> : Additional information if needed : Exact parent message
 ```
-
-🟡 With profile fixes can probably deploy accounts in parallel now after handing off to parallel processor. TBD
-
-🟡 Everything repeatedly getting re-deployed due to errors.
+🟡 No errror are associated with the nodes anymore. Errors need to be logged to this path where IDs are the ids in the config not aws IDS.
+```
+<org id>/<env id>/<account id>/<resource type id>/<resource id>/timestamp.txt
+```
+🟡 Success logging is not working. Success logging needs to be logged to this path where IDs are the ids in the config not aws IDS except for the value of the aws id in the file.
+```
+<org id>/<env id>/<account id>/<resource type id>/<resource id>/AWS_RESOURCE_ID.txt
+```
+🟡 Remove XML from error files. Encoded error message ONLY.
 
 🟡 For some reason now exiting instead of letting me re-enter a mfa code if i make a mistake.
-
-🟡 After fixing most of the encoded error messages some still remain.
 
 🟡 Errors getting logged when there are no errors - is it inadvertanly calling error logger instead of success logger? 
 
@@ -40,22 +43,11 @@ EID: <project>: <file>: <lineno>: Parent EID : <project>: <file>: <lineno> : Add
 |           ↳ ERROR: botz-tracker-diagram: no error message recorded
 |     |____ 🔴 account (error)
 
+🟡 With profile fixes can probably deploy accounts in parallel now after handing off to parallel processor. TBD
 
-🟡 Clear tracker errors is not clearing errors from the diagram.
-
-🟡 Some of the error messsages do not have enough information. It is not clear what the problem is.
-
-🟡 Need to clear the errors because I think some of them are bogus.
-
-🟡 No errror are associated with the nodes the caused the errors anymore.
+🟡 Clear tracker errors is still not correctly clearing errors.
 
 🟡 Make sure there is a timeout on waiting for depedencies.
-
-🟡 Fix action inputs - what does that even mean?
-
-🟡 Maybe just include parent error id instead of full error in logs because getting a bit wordy.
-
-🟡 Make sure there are not too many children under deny exernal 
 
 🟡 env yellow when nothing deployed in
 
