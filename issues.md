@@ -5,7 +5,9 @@ Fixed issues in fixed.md
 
 ## Issues
 
-🟡 Everythign repeatedly getting re-deployed due to errors.
+🟡 With profile fixes can probably deploy accounts in parallel now after handing off to parallel processor. TBD
+
+🟡 Everythig repeatedly getting re-deployed due to errors.
 
 🟡 For some reason now exiting instead of letting me re-enter a role.
 
