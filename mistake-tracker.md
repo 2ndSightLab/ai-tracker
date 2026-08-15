@@ -14,7 +14,31 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/response-time.
 
 The mistake tracker is a new part of the project added a few months in. This is not super scientific as it is hard to quantify. I'm just telling the model to increment the mistakes it's making +1 if it starts making a bunch of mistakes. This is not every mistakes mostly only when I start getting annoyed. :-D The mistakes are largely worded by the AI agent and sometimes it does not capture the correct mistake but I don't always fix that because I just want to get stuff done. It generally captures a valid mistake but not the one I actually wanted it to log. So these are all valid just some are missing I didn't bother to fix to the correct mistake. I don't care about typooooos this is just a fast as possible log. Trying to get things done. Note missing days/times may be because the model deleted the data or because I took some time off. In some cases I have to work on other things...
 
-I feel like I'm going in circles with this thing.
+# 2026-08-14  11:00 PM
+
+Today discovered that the model wrote code that encoded error messages twice when logged but diagram only decodes once, which explains why it was still encoded in the output not showing the actual errors. WHY?!
+
+There was a stale pid blocking the diagram and took many rounds to get the the models to determine the excact soure of that blocking pid and how to remove it.
+
+After a very short time teh model told me my usage was 90% used up. As soon as I complained on X magically it stopped saying that. Interesting...but then nearing midnight I'm blocked again. This billing model is so confusing. They all are a bit odd honestly.
+
+I had to completely rewrite (AGAIN) the code to assume and create roles to greatly simplify it and create meaningful file names and abstract out common code so it made sense. It was getting so convoluted and disjointed again and that part of the project has very little code. Why the heck do I feel like the models are completely subversive whenever they start working with authentication code?
+
+At one point to get the model to stop trying to change the wrong file I removed write access to that file. I literally changed the linux permissions so the model could not write to it until it completed the part I wanted it to complete. 
+
+After many attempts and writing TODO comments into every single file with instructions what that file would do and explicitly reiterating to the model what each file should do and how it should work it got it right. Finally did. Now the code is so much cleaner.
+
+Basically I create a source profile, a no mfa role profile, mfa role profile - if no mfa didn't work, try mfa. Once role assumption is successful, run an sts command to get short term creads and create the boostrap or account role using those. In theory that should fix all the problem where the parallel processor is trying to reassume the role behind the scenes and so far seems to work.
+
+The orignal ask was to simply copy the diagram and error tracking code into separate projects. The diagram is completely mucked up. The structure is there but the error logging is a mess both in the files and in the diagram. Tomorrow when I have more credits I guess.
+
+Items aren't getting logged as completed which was also working in the old code and not correctly carried over potentially. Not sure if they are all erroring out or just not getting logged correctly. I'll figure that out by first fixing the error logging then seeing if they have errrors or not and go from there.
+
+New accounts weren't getting created becuase it was trying to assume a role that didn't exist. Model couln't figure out when it wrote the code that would never work.
+
+Basically I'm getting through all the accounts now so I need to figure out why the errors are not associated with resources and fix each of those errors and make sure the success logging is working. The errors may be core logic or logic deploying a particular resource in the resource project.
+
+Overall, I'd say the model did slightly better today in some respects but it still took a LOT of handholding.
 
 # 2026-08-13 - 5:00 AM
 
