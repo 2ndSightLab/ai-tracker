@@ -4,7 +4,9 @@
 
 I don't understand Anthropic credits yet. At some point tonight said I had used 90% of my credits/tokens whatever. I had just started. Then it reset before I even stopped and I was working again. I worked till about midnight or 1 a.m.
 
-I'm still on the same $50 plan I think. Haven't gottne into my API credits yet. So how does this work anyway? I've been working since August 13th. Let's check usage:
+I'm still on the same $50 plan I think. Haven't gotten into my API credits yet. So how does this work anyway? I've been working since August 13th. Let's check usage. Apparently you can do that the same way you can do on Kiro: /usage
+
+Note that it says Sonnet below but I've mostly used Opus 5. I have avoided Fable because it costs usage credits but will try it through another option I have later. Looks like my session is working again. But it's time for bed...
 
 ```
 
