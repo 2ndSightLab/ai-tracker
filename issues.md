@@ -5,6 +5,10 @@ Fixed issues in fixed.md
 
 ## Issues
 
+🟡 Everythign repeatedly getting re-deployed due to errors.
+
+🟡 For some reason now exiting instead of letting me re-enter a role.
+
 🟡 Should not be logging errors when roles are not configured because they get configured in the process.
 
 🟡 After fixing most of the encoded error messages some still remain.
@@ -27,11 +31,13 @@ Fixed issues in fixed.md
 |     |____ 🔴 account (error)
 
 
-🟡 Update global requirements for erros to say that error messages need to always expose the exact error not summarize the error. The error needs to include project, file name, line number, any file names trying to process or read, the specific bash or AWS error, any xml nodes or variables or parameters that caused the error, any malformed data.
+🟡 New error message format:
+
+EID: <project>-<file>-<lineno>: what to fix | exact error message from system not overwritten | relevant data (parameters, values, file paths, etc.) | <parent EID if there is one> 
+
+If there is a parent EID, can simply repeate the pararent error message if there is no new information to add.
 
 🟡 Clear tracker errors is not clearing errors from the diagram.
-
-🟡 Empty tracker error - why?
 
 🟡 Some of the error messsages do not have enough information. It is not clear what the problem is.
 
