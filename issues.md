@@ -5,7 +5,7 @@ Fixed issues in fixed.md
 
 ## Issues
 
-🟡 Shoudl not be logging errors when roles are not configured because they get configured in the process.
+🟡 Should not be logging errors when roles are not configured because they get configured in the process.
 
 🟡 After fixing most of the encoded error messages some still remain.
 
