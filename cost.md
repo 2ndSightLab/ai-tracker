@@ -1,5 +1,56 @@
 # Costs while building an AI Agent Bootstrap Script and Framework
 
+### 8/15/2026 2:07 AM
+
+I don't understand Anthropic credits yet. At some point tonight said I had used 90% of my credits/tokens whatever. I had just started. Then it reset before I even stopped and I was working again. I worked till about midnight or 1 a.m.
+
+I'm still on the same $50 plan I think. Haven't gottne into my API credits yet. So how does this work anyway? I've been working since August 13th. Let's check usage:
+
+```
+
+ ▐▛███▜▌   Claude Code v2.1.231
+▝▜█████▛▘  Sonnet 5 · Claude Team
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+   Settings  Status   Config   Usage   Stats
+   
+   Session
+   
+   Total cost:            $0.0000
+   Total duration (API):  0s
+   Total duration (wall): 6s
+   Total code changes:    0 lines added, 0 lines removed
+   Usage:                 0 input, 0 output, 0 cache read, 0 cache write
+   
+   Current session
+                                                      0% used
+   
+   Current week (all models)
+   ██████████████████████████▌                        53% used
+   Resets Aug 18, 1am (UTC)
+   +50% weekly limits promo through Aug 19 · clau.de/cc-50-promo
+   
+   What's contributing to your limits usage?
+   Approximate, based on local sessions on this machine — does not include other devices or claude.ai
+   
+   Last 24h · these are independent characteristics of your usage, not a breakdown
+   
+   100% of your usage came from subagent-heavy sessions
+    Each subagent runs its own requests. Be deliberate about spawning them — and 
+    consider configuring a cheaper model for simpler subagents.
+   
+   35% of your usage was at >150k context
+    Longer sessions are more expensive even when cached. /compact mid-task, /clear 
+    when switching to new tasks.
+   
+   Subagents               % of usage
+   general-purpose                 8%
+   
+   d to day · w to week
+
+   Esc to cancel
+
+```
+
 ### 8/14/2026
 
 Started writing about using Claude 20 hours ago. When I thought I had used up a $50 plan. I thought it was $100 but it was $50 and I added another $50 but even after adding another $50 I couldn't do more and I'm very confused by that. The billing model for Claude Code is insanely confusing. You have some kind of limit but it's not your full budget but you run out of tokens or credits or whatever it is they track. It said I could pay for usage credits and I said Ok but it never worked so I gave up.
