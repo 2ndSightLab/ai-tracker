@@ -4,6 +4,22 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
+## 8/14/2026
+
+🟢 Finally parallel process is getting through all accounts and role assumption at all points is working correctly. No eternal loops and fixed a bunch of wonky errors.
+
+🟢 Fixed an error that after some other "fix" by the model caused the diagram to completely hang. That took a while for the model to sort out and stop finger pointing between projects.
+
+🟢 Fixed: Just realized that after "freezing" credits to prevent login issues, that role assumption is failing for both the mfa and no-mfa role on and account. AGAIN. Fix one and another appears. Will be manually revisiting that code tomorrow and cleaning it up. I think the solution is not to overwrite the account but to configure a temp role for the "frozen" credentials and just add a new role name to the mix. I'll need to sort that out when not so tired. 
+
+Had to re-write what the model did again to have clean decent file names, abstraction, deduplicated and logical code. Fixed a logical flow issue that was preventing new account creation and role assumption.
+
+🟢 Fixed: Some of the errors are still base64 encoded in the diagram they need to be converted to text when displayed.
+
+🟢 Better: Diagram is better but still slow. It doesn't seem to load whene the app is running. (good enough for now)
+
+🟢 I "fixed" something with the org admin role to remove the extranoues policy and now that role is not deploying and things are hung up that depend upon it, blocking everything.
+
 ## 8/13/2026
 
 Objective today is to reduce the token burn and get the bugs fixed. I know what the bugs are and what caused them since they got reintroduced by migration. So why is the model spinning when trying to fix them? Claude is back so let's see what we can do.
