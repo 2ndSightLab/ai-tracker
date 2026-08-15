@@ -49,12 +49,9 @@ EID: <project>: <file>: <lineno>: Parent EID : <project>: <file>: <lineno> : Add
 
 🟡 Make sure there is a timeout on waiting for depedencies.
 
-🟡 env yellow when nothing deployed in
-
 🟡 account resource should be under the account heading - is missing and should have id associated with it
 
-🟡 account should be green when deployed, heading yellow if some reasons not deployed
-
+🟡 account group header should be green when deployed, heading yellow if some reasons not deployed
 
 ## Later
 
