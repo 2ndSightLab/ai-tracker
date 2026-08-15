@@ -2,7 +2,7 @@
 
 ### 8/15/2026 2:07 AM
 
-I don't understand Anthropic credits yet. At some point tonight said I had used 90% of my credits/tokens whatever. I had just started. Then it reset before I even stopped and I was working again. I worked till about midnight or 1 a.m.
+I don't understand Anthropic credits yet. At some point tonight said I had used 90% of my credits/tokens whatever. I had just started. Then it reset before I even stopped and I was working again. I worked from afternoon sometime till about midnight or 1 a.m.
 
 I'm still on the same $50 plan I think. Haven't gotten into my API credits yet. So how does this work anyway? I've been working since August 13th. Let's check usage. Apparently you can do that the same way you can do on Kiro: /usage
 
