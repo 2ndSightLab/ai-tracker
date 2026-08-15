@@ -5,6 +5,8 @@ Fixed issues in fixed.md
 
 ## Issues
 
+🟡 After fixing most of the encoded error messages some still remain.
+
 🟡 Errors getting logged when there are no errors - is it inadvertanly calling error logger instead of success logger? 
 
 🟡 org: savisec (xxxxxxxx)
