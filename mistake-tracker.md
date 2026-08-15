@@ -16,6 +16,8 @@ The mistake tracker is a new part of the project added a few months in. This is 
 
 # 2026-08-14  11:00 PM
 
+Tried to repeatedly clear mistake tracker. still not working right.
+
 Today discovered that the model wrote code that encoded error messages twice when logged but diagram only decodes once, which explains why it was still encoded in the output not showing the actual errors. WHY?!
 
 There was a stale pid blocking the diagram and took many rounds to get the the models to determine the excact soure of that blocking pid and how to remove it.
