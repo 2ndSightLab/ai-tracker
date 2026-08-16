@@ -4,6 +4,14 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
+## 8/16/2026
+
+🟢 Fixed: No errror are associated with the nodes anymore. Errors need to be logged to this path where IDs are the ids in the config not aws IDS.
+
+🟢 Fixed: Success logging is not working. Success logging needs to be logged to this path where IDs are the ids in the config not aws IDS except for the value of the aws id in the file.
+
+🟢 Fixed: For some reason now exiting instead of letting me re-enter a mfa code if i make a mistake.
+
 ## 8/15/2026
 
 🟢 OK I fixed the parallel processing issues related to role assumption with profiles that use short term creds. I fixed the problem with xml tracker file locking by writing success and error nodes to separate files and processing those queues in a single threaded queue processor. But one problem remains. Global vars can be clobbered while deploying multiple resources at the same time. So I spent the morning adding requiremtns to exec a file and pass in the NODE_PATH for a resource and teh exec wrapper runs in teh background in it's own process. It parses out the neccessary globals that can chagne from the path in it's own thread and sources the deployment script. That way the vars are local to the deployment action and should not get clobbered.
