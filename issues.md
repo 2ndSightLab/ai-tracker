@@ -5,19 +5,8 @@ Fixed issues in fixed.md
 
 ## Issues
 
-🟡 New error message format:
+🟡 Error messages should include file name and line number (wrote requirememnts, no project have yet picked up and implemented correctly.)
 
-```
-EID: <project>: <file>: <lineno>: explanation (if appropriate) with relevant data (parameters, values, file paths, etc.) so it is clear EXACTLY WHAT TO FIX | exact error message from system not overwritten 
-```
-If there's a parent error that caused the error:
-```
-EID: <project>: <file>: <lineno>: Parent EID : <project>: <file>: <lineno> : Additional information if needed : Exact parent message
-```
-🟡 No errror are associated with the nodes anymore. Errors need to be logged to this path where IDs are the ids in the config not aws IDS.
-```
-<org id>/<env id>/<account id>/<resource type id>/<resource id>/timestamp.txt
-```
 🟡 Success logging is not working. Success logging needs to be logged to this path where IDs are the ids in the config not aws IDS except for the value of the aws id in the file.
 ```
 <org id>/<env id>/<account id>/<resource type id>/<resource id>/AWS_RESOURCE_ID.txt
