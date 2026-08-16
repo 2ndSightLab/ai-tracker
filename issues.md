@@ -7,13 +7,7 @@ Fixed issues in fixed.md
 
 🟡 Error messages should include file name and line number (wrote requirememnts, no project have yet picked up and implemented correctly.)
 
-🟡 Success logging is not working. Success logging needs to be logged to this path where IDs are the ids in the config not aws IDS except for the value of the aws id in the file.
-```
-<org id>/<env id>/<account id>/<resource type id>/<resource id>/AWS_RESOURCE_ID.txt
-```
 🟡 Remove XML from error files. Encoded error message ONLY.
-
-🟡 For some reason now exiting instead of letting me re-enter a mfa code if i make a mistake.
 
 🟡 Errors getting logged when there are no errors - is it inadvertanly calling error logger instead of success logger? 
 
