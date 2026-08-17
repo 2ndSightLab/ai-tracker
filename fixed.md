@@ -4,7 +4,19 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
+## 8/17/2026
+
+🟢 Clear tracker errors is still not correctly clearing errors.
+
 ## 8/16/2026
+
+🟢 account resource should be under the account heading - is missing and should have id associated with it
+
+🟢 Projects still failing to review and correctly understand organization configuration - fixed again and logged mistakes.
+
+🟢 Various errors re-introduced by orchestrator.
+
+🟢 Remove XML from error files. Encoded error message ONLY.
 
 🟢 Fixed: No errror are associated with the nodes anymore. Errors need to be logged to this path where IDs are the ids in the config not aws IDS.
 
