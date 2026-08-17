@@ -34,6 +34,10 @@ Fixed issues in fixed.md
 
 🟡 account group header should be green when deployed, heading yellow if some reasons not deployed
 
+🟡 Figure out why projects are not reading configuration file projects and aligning to them > architecture not clear enough?
+
+🟡 Go through every resource project and tell it to fix error handling. If errors are clear fixes should be easier.
+
 ## Later
 
 🟡 With profile fixes can probably deploy accounts in parallel now after handing off to parallel processor. TBD
