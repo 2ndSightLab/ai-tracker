@@ -28,8 +28,6 @@ Fixed issues in fixed.md
 |     |____ 🔴 account (error)
 ```
 
-🟡 With profile fixes can probably deploy accounts in parallel now after handing off to parallel processor. TBD
-
 🟡 Make sure there is a timeout on waiting for depedencies.
 
 🟡 Not correctly looking up already deployed account
@@ -37,6 +35,8 @@ Fixed issues in fixed.md
 🟡 account group header should be green when deployed, heading yellow if some reasons not deployed
 
 ## Later
+
+🟡 With profile fixes can probably deploy accounts in parallel now after handing off to parallel processor. TBD
 
 🟡 Need to fix SCP for manage kiro to allow identity center + kiro for that account only. All other accounts blocked from kiro. Fix SCP
 
