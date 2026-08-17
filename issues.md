@@ -5,11 +5,11 @@ Fixed issues in fixed.md
 
 ## Issues
 
-🟡 Error messages should include file name and line number (wrote requirememnts, no project have yet picked up and implemented correctly.)
+🟡 If account fails to deploy should not be looking up account resources and deploying them.
 
-🟡 Remove XML from error files. Encoded error message ONLY.
+🟡 In Progress: Error messages should include file name and line number (wrote requirememnts, no project have yet picked up and implemented correctly.)
 
-🟡 Errors getting logged when there are no errors - is it inadvertanly calling error logger instead of success logger? 
+🟡 Errors getting logged when there are no errors - is it inadvertanly calling error logger instead of success logger? > tracked this down to incorrect error logging for org resources - to fix.
 
 ```
 🟡 org: savisec (xxxxxxxx)
@@ -30,11 +30,9 @@ Fixed issues in fixed.md
 
 🟡 With profile fixes can probably deploy accounts in parallel now after handing off to parallel processor. TBD
 
-🟡 Clear tracker errors is still not correctly clearing errors.
-
 🟡 Make sure there is a timeout on waiting for depedencies.
 
-🟡 account resource should be under the account heading - is missing and should have id associated with it
+🟡 Not correctly looking up already deployed account
 
 🟡 account group header should be green when deployed, heading yellow if some reasons not deployed
 
