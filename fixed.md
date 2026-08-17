@@ -10,6 +10,12 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 ## 8/16/2026
 
+🟢 Only run failed items (supposedly fixed) > reverted logic that had to be fixed again in the deployment orchestrator.
+
+🟢 Fixed error logging in run aws command and cli project.
+
+🟢 Menu bug in run aws command project
+
 🟢 account resource should be under the account heading - is missing and should have id associated with it
 
 🟢 Projects still failing to review and correctly understand organization configuration - fixed again and logged mistakes.
