@@ -14,6 +14,7 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/response-time.
 
 The mistake tracker is a new part of the project added a few months in. This is not super scientific as it is hard to quantify. I'm just telling the model to increment the mistakes it's making +1 if it starts making a bunch of mistakes. This is not every mistakes mostly only when I start getting annoyed. :-D The mistakes are largely worded by the AI agent and sometimes it does not capture the correct mistake but I don't always fix that because I just want to get stuff done. It generally captures a valid mistake but not the one I actually wanted it to log. So these are all valid just some are missing I didn't bother to fix to the correct mistake. I don't care about typooooos this is just a fast as possible log. Trying to get things done. Note missing days/times may be because the model deleted the data or because I took some time off. In some cases I have to work on other things...
 
+
 # 2026-08-18 10:50 AM
 
 Just realized that the error logger completely destroyed the error logging functionality also. Great. This is what happens when you leave models unattended.
@@ -23,6 +24,8 @@ I just realized I have a big mistake today self-induced. I change the strucuture
 I changed the comment to reference the individual file md for requirements plus the global architecture and global requirements. I also added a ## mistakes section to each individual file. I am hoping that reducing the size of the mistakes.md file and putting mistakes in each individual md file will imrpove model performance, as well as referencing the global architecture and global requirements.
 
 I jsut found that the success logger was failing to report errors correctly as well, which made it difficult to troubleshoot. Fixing that and adding file names and line numbers to that as well (and everything else as I go) to hopefully reduce the time it takes the model to pinpoint problems.
+
+OMG. Killing me. Absolute frigging nonsnese. I figured out there is a parallel processing bug in id logging because the code is still trying to write a file in a global spot where it should be usign a node path variable. So i am talking to the model about fixing tha tproblem by just adding the ID to the end of the node path. And the frigging model came up with all these more convoluted schemes and then addmitted my idea was "clever". But instaed of just simly adding the id to teh end of the varabile on success, it has to create awhole new variable with some weird non-sensical format. #1 no new var is needed. The whole point of the success path is to send that var to the success tracker. That is it's sole purpose adn reason for being so WTH do you need to invent a new variable? And secondly WTH can't variables be named to describe what they actually do? So much garbage in the code I can't stand it today. This shoudl have been doen months ago. Some things are way faster but some things are such a waste of time. And you have to monitor it all the time or create a test for every stinking little thing. Yes, slightly annoyed today. This needs to be DONE.
 
 # 2026-08-17 3:13 PM
 
