@@ -16,7 +16,7 @@ The mistake tracker is a new part of the project added a few months in. This is 
 
 # 2026-08-18
 
-I went to enable some other models in Amazon Bedrock.
+I went to request access to some other models in Amazon Bedrock.
 
 Wat? Why would I want to use this?
 
