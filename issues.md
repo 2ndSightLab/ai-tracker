@@ -5,6 +5,10 @@ Fixed issues in fixed.md
 
 ## Issues
 
+🟡 Keep running out of credits and is stopping me. Usage based credits cost more. If I am goign to use those probably want to use those through AWS so I can track the cost. So combined with figuring out how to use Fable I want to have an alternative when my credits run out. I tried Claude but it doesn't work the way I want as logged under mistakes. I wish I could use Kiro only but so far Claude is lasting longer, but with timeouts. So with the timeouts is it really less expensive? What if I switch to the $200 plan because in theor then I get even more tokens/credits. Hmm.
+
+🟡 Cannot use Fable in Claude with a subscription. Need to figure out how to set up API key or usage based access to use Fable. Possibly billed through AWS or test billed through AWS and not through AWS to see if there is any difference.
+
 🟡 If account fails to deploy should not be looking up account resources and deploying them.
 
 🟡 In Progress: Error messages should include file name and line number (wrote requirememnts, no project have yet picked up and implemented correctly.)
