@@ -14,7 +14,22 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/response-time.
 
 The mistake tracker is a new part of the project added a few months in. This is not super scientific as it is hard to quantify. I'm just telling the model to increment the mistakes it's making +1 if it starts making a bunch of mistakes. This is not every mistakes mostly only when I start getting annoyed. :-D The mistakes are largely worded by the AI agent and sometimes it does not capture the correct mistake but I don't always fix that because I just want to get stuff done. It generally captures a valid mistake but not the one I actually wanted it to log. So these are all valid just some are missing I didn't bother to fix to the correct mistake. I don't care about typooooos this is just a fast as possible log. Trying to get things done. Note missing days/times may be because the model deleted the data or because I took some time off. In some cases I have to work on other things...
 
+# 2026-08-18
 
+I went to enable some other models in Amazon Bedrock.
+
+Wat? Speak English please.
+```
+Amazon Bedrock supports various endpoints for performing inference operations.
+
+Note
+
+Both endpoints run on the same underlying Mantle inference engine, so all Amazon Bedrock models benefit from Mantle's zero operator access (ZOA) design. The bedrock-mantle endpoint name refers only to one of the two endpoint surfaces — not to whether the Mantle engine is used.
+
+Inference operations
+
+For new applications, we recommend the bedrock-runtime endpoint. It supports the Bedrock-native InvokeModel and Converse APIs, the OpenAI-compatible Responses and Chat Completions APIs, and the Anthropic Messages API, and it is where Amazon Bedrock features such as Guardrails, intelligent prompt routing, and cross-Region inference are available. Amazon Bedrock also supports a second endpoint, bedrock-mantle, which currently offers additional capabilities such as server-side and pre-configured tool use (including web search), asynchronous inference with background=true, and creating Projects and Workspaces. To see which endpoint each model supports, see Endpoint availability.
+```
 # 2026-08-18 10:50 AM
 
 Just realized that the error logger completely destroyed the error logging functionality also. Great. This is what happens when you leave models unattended.
