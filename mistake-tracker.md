@@ -22,6 +22,8 @@ Wat? Why would I want to use this?
 
 I scroll down. No InvokeModel? Yeah no that doesn't sound like what I want at all.
 
+No IAM user restrictions? WHAT?
+
 ```
 Amazon Bedrock supports various endpoints for performing inference operations.
 
