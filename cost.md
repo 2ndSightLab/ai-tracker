@@ -1,6 +1,26 @@
 # Costs while building an AI Agent Bootstrap Script and Framework
 
-# 2026-08-15 3:13 PM
+A couple of years ago Werner Vogels did a whole talk on looking at the cost of your architecture which I loved. So that's what I'm doing here.
+
+### 8/15/2026
+
+I am looking at Bedrock pricing compared to Anthropic direct pricing:
+
+
+| Model | Input | Output | Input (Batch) | Output (Batch) | Input (5m Cache Write) | Input (1h Cache Write) | Input (Cache Read) |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Claude Opus 5** | $5.00 | $25.00 | $2.50 | $12.50 | $6.25 | $10.00 | $0.50 |
+| **Claude Sonnet 5** | $2.00 | $10.00 | N/A | N/A | $2.50 | $4.00 | $0.20 |
+| **Claude Fable 5** | $10.00 | $50.00 | N/A | N/A | $12.50 | $20.00 | $1.00 |
+| **Claude Opus 4.8** | $5.00 | $25.00 | N/A | N/A | $6.25 | $10.00 | $0.50 |
+
+I asked google/aimode which is cheaper. I haven't verified or tested it but here's what it says:
+
+If you are running short prompts under 200K tokens or heavily using asynchronous batches, switching to the direct Anthropic API will be identical or slightly cheaper. However, if you regularly use massive prompts over 200K tokens, staying with a provider that skips the 2x long-context surcharge will save you significant money.
+
+Well, in my case I do short prompts switching between agents all the time. So does that mean Anthropic is cheaper in that case? That's when I do autonomous programming. But what about when I'm just chatting? Sometimes my conversations get lengthy. Hmm. IDK. More testing is needed.
+
+### 2026-08-15 3:13 PM
 
 Kicked off five agents to fix the related projects according to those instructions...running....but then i set only ONE project to ultrathink and IMMEDIATELY ran out of credits. In the past I had 2-3 projects running in ultrathink and this did not happen. I don't understand this at all. I only changed some requirements, kicked off the agents, and I'm already out of credits.
 
