@@ -20,6 +20,8 @@ I went to enable some other models in Amazon Bedrock.
 
 Wat? Why would I want to use this?
 
+I scroll down. No InvokeModel? Yeah no that doesn't sound like what I want at all.
+
 ```
 Amazon Bedrock supports various endpoints for performing inference operations.
 
