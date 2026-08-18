@@ -5,9 +5,9 @@ Fixed issues in fixed.md
 
 ## Issues
 
-🟡 Keep running out of credits and is stopping me. Usage based credits cost more. If I am goign to use those probably want to use those through AWS so I can track the cost. So combined with figuring out how to use Fable I want to have an alternative when my credits run out. I tried Claude but it doesn't work the way I want as logged under mistakes. I wish I could use Kiro only but so far Claude is lasting longer, but with timeouts. So with the timeouts is it really less expensive? What if I switch to the $200 plan because in theor then I get even more tokens/credits. Hmm.
+🟡 Keep running out of credits and is stopping me. Figure out a plan for switching to another option when credits expire. Tried to use Codex. Model didnt work that great for my particular project and sandboxing doesn't work with my framework very well. So will not be Codex. I can be those models through Amazon Bedrock. I can also use Kiro. I can also set up accounts for Claude through AWS.
 
-🟡 Cannot use Fable in Claude with a subscription. Need to figure out how to set up API key or usage based access to use Fable. Possibly billed through AWS or test billed through AWS and not through AWS to see if there is any difference.
+🟡 Cannot use Fable in Claude with a subscription. Figure out how I can try out Fable and see if it makes a difference without turning on usage-based billing for my subs which could lead to accidentally huge bills.
 
 🟡 If account fails to deploy should not be looking up account resources and deploying them.
 
