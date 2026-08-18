@@ -18,6 +18,12 @@ The mistake tracker is a new part of the project added a few months in. This is 
 
 Just realized that the error logger completely destroyed the error logging functionality also. Great. This is what happens when you leave models unattended.
 
+I just realized I have a big mistake today self-induced. I change the strucuture of projects and requiremetns but forgot to change the commet at the top of every file where it tells it to get those requirements. I have a test checking that comment is correct and not other comments exist in files to reduce bloat. What I am wondering right now though, is why the models did not alert me to this problem when I made the change. Here's the fix, and another optimization:
+
+I changed the comment to reference the individual file md for requirements plus the global architecture and global requirements. I also added a ## mistakes section to each individual file. I am hoping that reducing the size of the mistakes.md file and putting mistakes in each individual md file will imrpove model performance, as well as referencing the global architecture and global requirements.
+
+I jsut found that the success logger was failing to report errors correctly as well, which made it difficult to troubleshoot. Fixing that and adding file names and line numbers to that as well (and everything else as I go) to hopefully reduce the time it takes the model to pinpoint problems.
+
 # 2026-08-17 3:13 PM
 
 Just when I start to trust Claude Code the model makes one of the hugest mistakes it is has made in a while. It changed a critical file to remove the way I make AWS calls - the crux of how my configurations and calls work - to source the action file directly. That means all the action files since that point are probably wrong too. Which means a ton of rework. So mad when I saw that. Such a waste of my time.
