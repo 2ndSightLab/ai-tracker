@@ -22,6 +22,8 @@ You have to share your data with Anthropic if you want to use it in Amazon Bedro
 
 aws bedrock put-account-data-retention --mode provider_data_share
 
+https://docs.aws.amazon.com/bedrock/latest/userguide/data-retention.html
+
 # 2026-08-18
 
 I went to request access to some other models in Amazon Bedrock.
