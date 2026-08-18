@@ -20,6 +20,8 @@ If you are running short prompts under 200K tokens or heavily using asynchronous
 
 Well, in my case I do short prompts switching between agents all the time. So does that mean Anthropic is cheaper in that case? That's when I do autonomous programming. But what about when I'm just chatting? Sometimes my conversations get lengthy. Hmm. IDK. More testing is needed.
 
+Also, is Fable 5 really that much better???
+
 ### 2026-08-15 3:13 PM
 
 Kicked off five agents to fix the related projects according to those instructions...running....but then i set only ONE project to ultrathink and IMMEDIATELY ran out of credits. In the past I had 2-3 projects running in ultrathink and this did not happen. I don't understand this at all. I only changed some requirements, kicked off the agents, and I'm already out of credits.
