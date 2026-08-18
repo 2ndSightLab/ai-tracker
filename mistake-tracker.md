@@ -14,6 +14,10 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/response-time.
 
 The mistake tracker is a new part of the project added a few months in. This is not super scientific as it is hard to quantify. I'm just telling the model to increment the mistakes it's making +1 if it starts making a bunch of mistakes. This is not every mistakes mostly only when I start getting annoyed. :-D The mistakes are largely worded by the AI agent and sometimes it does not capture the correct mistake but I don't always fix that because I just want to get stuff done. It generally captures a valid mistake but not the one I actually wanted it to log. So these are all valid just some are missing I didn't bother to fix to the correct mistake. I don't care about typooooos this is just a fast as possible log. Trying to get things done. Note missing days/times may be because the model deleted the data or because I took some time off. In some cases I have to work on other things...
 
+# 2026-08-18 10:50 AM
+
+Just realized that the error logger completely destroyed the error logging functionality also. Great. This is what happens when you leave models unattended.
+
 # 2026-08-17 3:13 PM
 
 Just when I start to trust Claude Code the model makes one of the hugest mistakes it is has made in a while. It changed a critical file to remove the way I make AWS calls - the crux of how my configurations and calls work - to source the action file directly. That means all the action files since that point are probably wrong too. Which means a ton of rework. So mad when I saw that. Such a waste of my time.
