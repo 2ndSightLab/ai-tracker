@@ -18,7 +18,8 @@ The mistake tracker is a new part of the project added a few months in. This is 
 
 I went to enable some other models in Amazon Bedrock.
 
-Wat? Speak English please.
+Wat? Why would I want to use this?
+
 ```
 Amazon Bedrock supports various endpoints for performing inference operations.
 
