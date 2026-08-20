@@ -6,7 +6,9 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 ## 8/17/2026
 
-🟢 Fix: Keep running out of credits and is stopping me. Figure out a plan for switching to another option when credits expire. Tried to use Codex. Model didnt work that great for my particular project and sandboxing doesn't work with my framework very well. So will not be Codex. I can be those models through Amazon Bedrock. I can also use Kiro. I can also set up accounts for Claude through AWS. - updated Claude plan for one user. Also then Fable showed up. When I tried to use Amazon Bedrock ran into some issues:
+🟢 Fixed: Cannot use Fable in Claude with a subscription. Figure out how I can try out Fable and see if it makes a difference without turning on usage-based billing for my subs which could lead to accidentally huge bills. - Fable showed up when I upgraded my plan.
+
+🟢 Fixed: Keep running out of credits and is stopping me. Figure out a plan for switching to another option when credits expire. Tried to use Codex. Model didnt work that great for my particular project and sandboxing doesn't work with my framework very well. So will not be Codex. I can be those models through Amazon Bedrock. I can also use Kiro. I can also set up accounts for Claude through AWS. - updated Claude plan for one user. Also then Fable showed up. When I tried to use Amazon Bedrock ran into some issues:
 
 https://teriradichel.substack.com/p/cant-get-role-with-mfa-to-work-on
 
