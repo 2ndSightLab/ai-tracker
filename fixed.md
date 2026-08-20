@@ -6,6 +6,35 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 ## 8/17/2026
 
+🟢  Not correctly looking up already deployed account
+
+🟢 Added file path and line number to diagram project
+
+🟢 Added caller to aws run project because other projects aren't logging correctly, but they all have to call that project to do anything in AWS.
+
+🟢 Fixed: Errors getting logged when there are no errors - is it inadvertanly calling error logger instead of success logger? > tracked this down to incorrect error logging for org resources - to fix. >> something in diagram XML creation.
+
+```
+🟡 org: savisec (xxxxxxxx)
+|
+|     All Errors (every level):
+|     |____ 🔴 savisec (error)
+|           ↳ ERROR: botz-tracker-diagram: no error message recorded
+|     |____ 🔴 organization (error)
+|           ↳ ERROR: botz-tracker-diagram: no error message recorded
+|     |____ 🔴 scp-deny-leave-org (error)
+|           ↳ ERROR: botz-tracker-diagram: no error message recorded
+|     |____ 🔴 scp-allowed-regions (error)
+|           ↳ ERROR: botz-tracker-diagram: no error message recorded
+|     |____ 🔴 savisec (error)
+|           ↳ ERROR: botz-tracker-diagram: no error message recorded
+|     |____ 🔴 account (error)
+```
+
+## 8/17/2026
+
+🟢 If account fails to deploy should not be looking up account resources and deploying them.
+
 🟢 Fixed: Cannot use Fable in Claude with a subscription. Figure out how I can try out Fable and see if it makes a difference without turning on usage-based billing for my subs which could lead to accidentally huge bills. - Fable showed up when I upgraded my plan.
 
 🟢 Fixed: Keep running out of credits and is stopping me. Figure out a plan for switching to another option when credits expire. Tried to use Codex. Model didnt work that great for my particular project and sandboxing doesn't work with my framework very well. So will not be Codex. I can be those models through Amazon Bedrock. I can also use Kiro. I can also set up accounts for Claude through AWS. - updated Claude plan for one user. Also then Fable showed up. When I tried to use Amazon Bedrock ran into some issues:
