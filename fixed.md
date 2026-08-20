@@ -6,6 +6,10 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 ## 8/17/2026
 
+🟢 Fix: Keep running out of credits and is stopping me. Figure out a plan for switching to another option when credits expire. Tried to use Codex. Model didnt work that great for my particular project and sandboxing doesn't work with my framework very well. So will not be Codex. I can be those models through Amazon Bedrock. I can also use Kiro. I can also set up accounts for Claude through AWS. - updated Claude plan for one user. Also then Fable showed up. When I tried to use Amazon Bedrock ran into some issues:
+
+https://teriradichel.substack.com/p/cant-get-role-with-mfa-to-work-on
+
 🟢 Clear tracker errors is still not correctly clearing errors.
 
 ## 8/16/2026
