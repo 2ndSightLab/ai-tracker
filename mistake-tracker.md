@@ -16,7 +16,7 @@ The mistake tracker is a new part of the project added a few months in. This is 
 
 # 2026-08-23 
 
-Too many mistakes to log. Just need to get done. Got all the parallel processing mostly to a working state a couple of days ago. Seeing a couple of wonky issues but mostly solid.
+Too many mistakes to log. Just need to get done. Got all the parallel processing mostly to a working state a couple of days ago. Seeing a couple of wonky issues but pretty much solid.
 
 # 2026-08-18 4:24PM
 
