@@ -8,6 +8,8 @@ Just logged into Claude Code and realized it has screen for Claude Code in API u
 
 A better question is ... what has it completed that is usable and useful? How much did it cost and how much time did it take to get to that point?
 
+By the way to answer the question if Fable is better I'd say depends what you are doing. For small stuff it is a waste of time and get things wrong anyway. But it seems like if I'm troubleshooting a tricky cross project but of some kind complex bugs where the model is banging it's head against a wall it seems it might help. But sometimes in those cases I just to dig in more myself. Overall I rarely use it.
+
 ### 8/15/2026
 
 I am looking at Bedrock pricing compared to Anthropic direct pricing:
