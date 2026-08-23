@@ -11,7 +11,7 @@ Fixed issues in fixed.md
 
 🟡 added code to log dependencies not met not showing in diagram
 
-🟡 role deployment is using the wrong account id
+🟡 role deployment is using the wrong account id - need to be able to specifiy account + resource in dependencies
 
 🟡 backup delegated admin - look up backup account id
 
