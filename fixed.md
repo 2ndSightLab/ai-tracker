@@ -4,6 +4,24 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
+## 8/23/2026
+
+Fixed over past few days
+
+🟢 Challenging problem getting the scp with account numbers to update in all the right places
+
+🟢 Dependency configuration graph in org types configuration
+
+🟢 Added ability to drain the queue prior to running app but after speeding up the queue probably don't need it.
+
+🟢 A myriad of resource deployment issues.
+
+🟢 Slow Queue - many iterations until finally figured out some quadratic blah blah issue with XML parser - need to be able to troubleshoot that faster.
+
+🟢 Make sure there is a timeout on waiting for depedencies - may need to be increased but it's there.
+
+🟢 Error messages should include file name and line number (wrote requirememnts, no project have yet picked up and implemented correctly.)
+ 
 ## 8/17/2026
 
 🟢  Not correctly looking up already deployed account
