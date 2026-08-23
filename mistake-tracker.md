@@ -20,7 +20,11 @@ Something I started doing was tracking the mistakes in the documentation for spe
 
 Another thing I'm doing before making a critical change is telling the agent to backup any files it changes before it does it to a specific folder. That way I can tell it to put those files back if something is messed up. I had a backer-upper service but finding mosty the models get it right and for some projects I don't care enough about backups and they won't break everything and are simpler. But for core projects changes can break everything so being more careful.
 
-I also have been asking the model to tell me what files do a certain thing before asking for a change. Seems to help keep it focused in the right part of the code. 
+I also have been asking the model to tell me what files do a certain thing before asking for a change. Seems to help keep it focused in the right part of the code.
+
+Error handling is very important. Everything is logged in a certain format.
+
+Also very important to make sure you have a way to visualize internals to make sure the guts of the app are doing what you think like draining queues properly, etc.
 
 # 2026-08-23 wee hours of AM
 
