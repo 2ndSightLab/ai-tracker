@@ -25,6 +25,8 @@ Fixed issues in fixed.md
 
 🟡 Log Bucket >> Cloudwatch org logs? 
 
+🟡 Queue detail report
+
 ## Add
 
 🟡  Pentest jobs 
