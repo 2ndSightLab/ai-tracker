@@ -29,6 +29,8 @@ Fixed issues in fixed.md
 
 🟡 Queue detail report
 
+🟡 Error for a global resource not showing for every account where the error occurs only one.
+
 ## Add
 
 🟡  Pentest jobs 
