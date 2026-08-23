@@ -23,6 +23,8 @@ Fixed issues in fixed.md
 
 🟡 SCP Deny External - need a way to exclude an account from an org resource deployment
 
+🟡 Log Bucket >> Cloudwatch org logs? 
+
 ## Add
 
 🟡  Pentest jobs 
@@ -73,7 +75,7 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/troubleshooting/route-53-cos
 
 🟡 close an account - ask if user wants to change name, email, alias so account can be recreated with same values
 
-🟡  Review and fix KMS key policies, bucket policies, SCPs, iam policies, etc. etc. etc.
+🟡 Review and fix KMS key policies, bucket policies, SCPs, iam policies, etc. etc. etc.
 
 
 
