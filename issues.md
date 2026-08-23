@@ -5,42 +5,31 @@ Fixed issues in fixed.md
 
 ## Issues
 
-🟡 Keep running out of credits and is stopping me. Figure out a plan for switching to another option when credits expire. Tried to use Codex. Model didnt work that great for my particular project and sandboxing doesn't work with my framework very well. So will not be Codex. I can be those models through Amazon Bedrock. I can also use Kiro. I can also set up accounts for Claude through AWS.
+🟡 possibly queue is not waiting for last items to complete before existing
 
-🟡 Cannot use Fable in Claude with a subscription. Figure out how I can try out Fable and see if it makes a difference without turning on usage-based billing for my subs which could lead to accidentally huge bills.
+🟡 should be reporting scp output when blocked by scp is not
 
-🟡 If account fails to deploy should not be looking up account resources and deploying them.
+🟡 added code to log dependencies not met not showing in diagram
 
-🟡 In Progress: Error messages should include file name and line number (wrote requirememnts, no project have yet picked up and implemented correctly.)
+🟡 role deployment is using the wrong account id
 
-🟡 Errors getting logged when there are no errors - is it inadvertanly calling error logger instead of success logger? > tracked this down to incorrect error logging for org resources - to fix.
+🟡 backup delegated admin - look up backup account id
 
-```
-🟡 org: savisec (xxxxxxxx)
-|
-|     All Errors (every level):
-|     |____ 🔴 savisec (error)
-|           ↳ ERROR: botz-tracker-diagram: no error message recorded
-|     |____ 🔴 organization (error)
-|           ↳ ERROR: botz-tracker-diagram: no error message recorded
-|     |____ 🔴 scp-deny-leave-org (error)
-|           ↳ ERROR: botz-tracker-diagram: no error message recorded
-|     |____ 🔴 scp-allowed-regions (error)
-|           ↳ ERROR: botz-tracker-diagram: no error message recorded
-|     |____ 🔴 savisec (error)
-|           ↳ ERROR: botz-tracker-diagram: no error message recorded
-|     |____ 🔴 account (error)
-```
+🟡 ec2 instances 
 
-🟡 Make sure there is a timeout on waiting for depedencies.
+🟡 configuration issue - account not deploying: work-test-domains2 - and not reporting an error? 
 
-🟡 Not correctly looking up already deployed account
+🟡 IPAM and IPAM Pool
 
-🟡 account group header should be green when deployed, heading yellow if some reasons not deployed
+🟡 SCP Deny External - need a way to exclude an account from an org resource deployment
 
-🟡 Figure out why projects are not reading configuration file projects and aligning to them > architecture not clear enough?
+## Add
 
-🟡 Go through every resource project and tell it to fix error handling. If errors are clear fixes should be easier.
+🟡  Pentest jobs 
+
+🟡  VPN
+
+🟡  Yubikey Auth
 
 ## Later
 
