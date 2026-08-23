@@ -20,10 +20,10 @@ This is just the particular configuration I'm tesing. The configuration supports
 
 ```
 =========================================
- savisec: Deploy Diagram
+ testorg: Deploy Diagram
 =========================================
 
-🟢 org: savisec
+🟢 org: testorg
 |
 |     Organization Resources:
 |____ 🟢 Organization (xxxxxxxx)
@@ -372,10 +372,10 @@ This is just the particular configuration I'm tesing. The configuration supports
                   |____ 🟢 Account Budget (xxxxxxxx)
                   |____ 🟢 Account alias (xxxxxxxx)
 =========================================
- savisec: All Errors
+ testorg: All Errors
 =========================================
 
-🟡 org: savisec (xxxxxxxx)
+🟡 org: testorg (xxxxxxxx)
 |
 |     All Errors (every level):
 |     |____ 🔴 deploy-resources (error)
