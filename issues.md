@@ -7,6 +7,8 @@ Fixed issues in fixed.md
 
 🟡 possibly queue is not waiting for last items to complete before existing
 
+🟡 Stopping when it doesn't need to when still more stuff it can deploy poss. related to last item.
+
 🟡 should be reporting scp output when blocked by scp is not
 
 🟡 added code to log dependencies not met not showing in diagram
