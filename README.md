@@ -20,14 +20,14 @@ This is just the particular configuration I'm tesing. The configuration supports
 
 ```
 =========================================
- xxxxxx: Deploy Diagram
+ savisec: Deploy Diagram
 =========================================
-🟡 org: xxxxxxx (xxxxxxxx)
+
+🟢 org: savisec
 |
 |     Organization Resources:
 |____ 🟢 Organization (xxxxxxxx)
 |____ 🟢 Enable All Features (xxxxxxxx)
-|____ 🟢 Deny-All OU (xxxxxxxx)
 |____ 🟢 SCP Require IMDSv2 (xxxxxxxx)
 |____ 🟢 SCP Deny Leave Org (xxxxxxxx)
 |____ 🟢 SCP Allowed Regions (xxxxxxxx)
@@ -38,313 +38,362 @@ This is just the particular configuration I'm tesing. The configuration supports
 |     |____ 🟢 OU (xxxxxxxx)
 |     |____ 🟢 SCP Deny External (xxxxxxxx)
 |     |
-|     |____ 🟢 account: manage-iam (xxxxxxxx)
+|     |____ 🟢 account: manage-iam
 |     |     |
 |     |     |     Resources:
-|     |     |____ 🔴 Move account to OU
-|     |     |____ 🟢 Account alias (xxxxxxxx)
-|     |     |____ 🟢 Xadmin role (xxxxxxxx)
-|     |     |____ 🟢 Iadmin role (xxxxxxxx)
-|     |     |____ 🟢 Oadmin role (xxxxxxxx)
-|     |     |____ 🟢 Account Budget (xxxxxxxx)
-|     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
-|     |     |
-|     |     |____ region: us-east-2
-|     |           |     Resources:
-|     |           |____ 🟢 iadmin-user (xxxxxxxx)
-|     |           |____ 🟢 xadmin-user (xxxxxxxx)
-|     |
-|     |____ 🟢 account: manage-kms (xxxxxxxx)
-|     |     |
-|     |     |     Resources:
-|     |     |____ 🔴 Move account to OU
-|     |     |____ 🟢 Account alias (xxxxxxxx)
-|     |     |____ 🟢 Xadmin role (xxxxxxxx)
-|     |     |____ 🟢 Iadmin role (xxxxxxxx)
-|     |     |____ 🟢 Oadmin role (xxxxxxxx)
-|     |     |____ 🟢 Account Budget (xxxxxxxx)
-|     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
-|     |     |
-|     |     |____ region: us-east-2
-|     |           |     Resources:
-|     |           |____ 🟢 kms-logs-key (xxxxxxxx)
-|     |           |____ 🟢 kms-auth-key (xxxxxxxx)
-|     |           |____ 🟢 kms-jobs-key (xxxxxxxx)
-|     |           |____ 🟢 kms-secrets-key (xxxxxxxx)
-|     |           |____ 🟢 kms-config-key (xxxxxxxx)
-|     |
-|     |____ 🟢 account: manage-security (xxxxxxxx)
-|     |     |
-|     |     |     Resources:
-|     |     |____ 🟢 Delegate Security Hub admin (xxxxxxxx)
-|     |     |____ 🟢 Delegate GuardDuty admin (xxxxxxxx)
-|     |     |____ 🟢 Delegate CloudTrail admin (xxxxxxxx)
-|     |     |____ 🟢 Delegate AWS Config admin (xxxxxxxx)
-|     |     |____ 🟢 Delegate Macie admin (xxxxxxxx)
-|     |     |____ 🟢 Delegate Inspector admin (xxxxxxxx)
-|     |     |____ 🟢 Delegate IAM Access Analyzer admin (xxxxxxxx)
-|     |     |____ 🟢 Delegate Audit Manager admin (xxxxxxxx)
-|     |     |____ 🟢 Delegate Health admin (xxxxxxxx)
-|     |     |____ 🟢 Delegate Detective admin (xxxxxxxx)
-|     |     |____ 🟢 Configure GuardDuty (xxxxxxxx)
-|     |     |____ 🟢 Configure CloudTrail (xxxxxxxx)
-|     |     |____ 🟢 Configure AWS Config (xxxxxxxx)
-|     |     |____ 🟢 Configure Macie (xxxxxxxx)
-|     |     |____ 🟢 Configure Inspector (xxxxxxxx)
-|     |     |____ 🟢 Configure IAM Access Analyzer (xxxxxxxx)
-|     |     |____ 🟢 Configure Security Alerts (xxxxxxxx)
+|     |     |____ 🟢 Account (xxxxxxxx)
+|     |     |____ 🟢 Iadmin user (xxxxxxxx)
 |     |     |____ 🟢 Move account to OU (xxxxxxxx)
-|     |     |____ 🟢 Account alias (xxxxxxxx)
-|     |     |____ 🟢 Xadmin role (xxxxxxxx)
 |     |     |____ 🟢 Iadmin role (xxxxxxxx)
 |     |     |____ 🟢 Oadmin role (xxxxxxxx)
-|     |     |____ 🟢 Account Budget (xxxxxxxx)
-|     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
 |     |     |
 |     |     |____ region: us-east-2
 |     |           |     Resources:
-|     |           |____ 🟢 s3-log-bucket (xxxxxxxx)
-|     |           |____ 🟢 configure-security-hub (xxxxxxxx)
-|     |           |____ 🟢 s3-log-bucket-policy (xxxxxxxx)
+|     |           |____ 🟢 Account alias (xxxxxxxx)
+|     |           |____ 🟢 Account Budget (xxxxxxxx)
+|     |           |____ 🟢 Xadmin user (xxxxxxxx)
+|     |           |____ 🟢 Xadmin role (xxxxxxxx)
+|     |           |____ 🟢 Delete default VPCs (xxxxxxxx)
 |     |
-|     |____ 🟢 account: manage-org (xxxxxxxx)
+|     |____ 🟡 account: manage-kms
 |     |     |
 |     |     |     Resources:
+|     |     |____ 🟢 Account (xxxxxxxx)
+|     |     |____ 🟢 Move account to OU (xxxxxxxx)
+|     |     |____ 🔴 Iadmin role
+|     |     |____ 🟢 Oadmin role (xxxxxxxx)
+|     |     |
+|     |     |____ region: us-east-2
+|     |           |     Resources:
+|     |           |____ 🟢 KMS Secrets Key (xxxxxxxx)
+|     |           |____ 🟢 Account Budget (xxxxxxxx)
+|     |           |____ 🟢 Account alias (xxxxxxxx)
+|     |           |____ 🟢 Delete default VPCs (xxxxxxxx)
+|     |           |____ 🟢 KMS Logs Key (xxxxxxxx)
+|     |           |____ 🟢 Xadmin role (xxxxxxxx)
+|     |
+|     |____ 🟡 account: manage-security
+|     |     |
+|     |     |     Resources:
+|     |     |____ 🟢 Account (xxxxxxxx)
+|     |     |____ 🔴 Delegate Macie admin
+|     |     |____ 🔴 S3 Log Bucket Policy
+|     |     |____ 🔴 Configure GuardDuty
+|     |     |____ 🔴 Configure Security Hub
+|     |     |____ 🔴 Configure CloudTrail
+|     |     |____ 🔴 Configure AWS Config
+|     |     |____ 🔴 Configure Macie
+|     |     |____ 🔴 Configure Inspector
+|     |     |____ 🔴 Configure IAM Access Analyzer
+|     |     |____ 🔴 Configure Security Alerts
+|     |     |____ 🔴 S3 Log Bucket
+|     |     |____ 🔴 S3 Log Bucket Policy
+|     |     |____ 🟢 Move account to OU (xxxxxxxx)
+|     |     |____ 🔴 Account alias
+|     |     |____ 🔴 Xadmin role
+|     |     |____ 🔴 Iadmin role
+|     |     |____ 🔴 Oadmin role
+|     |     |____ 🔴 Account Budget
+|     |     |____ 🔴 Delete default VPCs
+|     |     |
+|     |     |____ region: us-east-2
+|     |           |     Resources:
+|     |           |____ 🔴 Delegate Security Hub admin (error)
+|     |           |     ↳ ERROR: tracker-diagram: ERROR: ..../deploy-delega
+|     |           |       te-security-hub-admin.sh:51
+|     |           |____ 🟢 Delegate GuardDuty admin (xxxxxxxx)
+|     |           |____ 🟢 Delegate CloudTrail admin (xxxxxxxx)
+|     |           |____ 🟢 Delegate AWS Config admin (xxxxxxxx)
+|     |           |____ 🟢 Delegate Health admin (xxxxxxxx)
+|     |           |____ 🟢 Delegate IAM Access Analyzer admin (xxxxxxxx)
+|     |           |____ 🟢 Delegate Inspector admin (xxxxxxxx)
+|     |           |____ 🟢 Delegate Detective admin (xxxxxxxx)
+|     |           |____ 🟢 Delegate Audit Manager admin (xxxxxxxx)
+|     |
+|     |____ 🟡 account: manage-org
+|     |     |
+|     |     |     Resources:
+|     |     |____ 🟢 Account (xxxxxxxx)
 |     |     |____ 🟢 Org resource policy (xxxxxxxx)
 |     |     |____ 🟢 Move account to OU (xxxxxxxx)
-|     |     |____ 🟢 Account alias (xxxxxxxx)
-|     |     |____ 🟢 Xadmin role (xxxxxxxx)
-|     |     |____ 🟢 Iadmin role (xxxxxxxx)
+|     |     |____ 🔴 Iadmin role
 |     |     |____ 🟢 Oadmin role (xxxxxxxx)
-|     |     |____ 🟢 Account Budget (xxxxxxxx)
-|     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
 |     |     |
 |     |     |____ region: us-east-2
 |     |           |     Resources:
-|     |           |____ 🟢 delegate-org-admin (xxxxxxxx)
+|     |           |____ 🟢 Delegate Org Admin (xxxxxxxx)
+|     |           |____ 🟢 Delete default VPCs (xxxxxxxx)
+|     |           |____ 🟢 Xadmin role (xxxxxxxx)
+|     |           |____ 🟢 Account Budget (xxxxxxxx)
+|     |           |____ 🟢 Account alias (xxxxxxxx)
 |     |
-|     |____ 🟢 account: manage-accounting (xxxxxxxx)
+|     |____ 🟡 account: manage-accounting
 |     |     |
 |     |     |     Resources:
-|     |     |____ 🟢 Delegate Cost Optimization Hub admin (xxxxxxxx)
-|     |     |____ 🟢 Delegate Compute Optimizer admin (xxxxxxxx)
+|     |     |____ 🟢 Account (xxxxxxxx)
 |     |     |____ 🟢 Move account to OU (xxxxxxxx)
-|     |     |____ 🟢 Account alias (xxxxxxxx)
-|     |     |____ 🟢 Xadmin role (xxxxxxxx)
-|     |     |____ 🟢 Iadmin role (xxxxxxxx)
+|     |     |____ 🔴 Iadmin role
 |     |     |____ 🟢 Oadmin role (xxxxxxxx)
-|     |     |____ 🟢 Account Budget (xxxxxxxx)
-|     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
 |     |     |
 |     |     |____ region: us-east-2
 |     |           |     Resources:
+|     |           |____ 🟢 Account Budget (xxxxxxxx)
+|     |           |____ 🟢 Delegate Compute Optimizer admin (xxxxxxxx)
+|     |           |____ 🟢 Delegate Cost Optimization Hub admin (xxxxxxxx)
+|     |           |____ 🟢 Account alias (xxxxxxxx)
+|     |           |____ 🟢 Delete default VPCs (xxxxxxxx)
+|     |           |____ 🟢 Xadmin role (xxxxxxxx)
 |     |
-|     |____ 🟢 account: manage-ipam (xxxxxxxx)
+|     |____ 🟡 account: manage-ipam
 |     |     |
 |     |     |     Resources:
-|     |     |____ 🟢 Delegate IPAM admin (xxxxxxxx)
-|     |     |____ 🟢 IPAM (xxxxxxxx)
-|     |     |____ 🟢 Delegate Network Manager admin (xxxxxxxx)
-|     |     |____ 🟢 Delegate VPC Reachability Analyzer admin (xxxxxxxx)
-|     |     |____ 🟢 Delegate Firewall Manager admin (xxxxxxxx)
-|     |     |____ 🔴 Move account to OU
-|     |     |____ 🟢 Account alias (xxxxxxxx)
-|     |     |____ 🟢 Xadmin role (xxxxxxxx)
-|     |     |____ 🟢 Iadmin role (xxxxxxxx)
+|     |     |____ 🟢 Account (xxxxxxxx)
+|     |     |____ 🔴 IPAM
+|     |     |____ 🟢 Move account to OU (xxxxxxxx)
+|     |     |____ 🔴 Iadmin role
 |     |     |____ 🟢 Oadmin role (xxxxxxxx)
-|     |     |____ 🟢 Account Budget (xxxxxxxx)
-|     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
 |     |     |
 |     |     |____ region: us-east-2
 |     |           |     Resources:
+|     |           |____ 🟢 Delegate Network Manager admin (xxxxxxxx)
+|     |           |____ 🟢 Delegate VPC Reachability Analyzer admin (xxxxxxxx)
+|     |           |____ 🔴 Delegate IPAM admin
+|     |           |____ 🟢 Delegate Firewall Manager admin (xxxxxxxx)
+|     |           |____ 🟢 Delete default VPCs (xxxxxxxx)
+|     |           |____ 🟢 Account alias (xxxxxxxx)
+|     |           |____ 🟢 Xadmin role (xxxxxxxx)
+|     |           |____ 🟢 Account Budget (xxxxxxxx)
 |     |
-|     |____ 🟡 account: manage-kiro (xxxxxxxx)
+|     |____ 🟡 account: manage-kiro
 |           |
 |           |     Resources:
+|           |____ 🟢 Account (xxxxxxxx)
 |           |____ 🔴 kiro-cli-identity-center
-|           |____ 🔴 Move account to OU
-|           |____ 🟢 Account alias (xxxxxxxx)
-|           |____ 🔴 Xadmin role
-|           |____ 🟡 Iadmin role (error)
-|           |     ↳ ERROR: exit-conditions.sh failed for iadmin-role. [...renamed account problem]
-|           |____ 🟡 Oadmin role (error)
-|           |     ↳ ERROR: deployment of oadmin-role failed. [...renamed account problem]
-|           |____ 🟡 Account Budget (error)
-|           |     ↳ ERROR: deployment of account-budget failed.[...renamed account problem]
-|           |____ 🟢 Delete default VPCs (xxxxxxxx)
+|           |____ 🟢 Move account to OU (xxxxxxxx)
+|           |____ 🔴 Iadmin role
+|           |____ 🟢 Oadmin role (xxxxxxxx)
 |           |
 |           |____ region: us-east-2
 |                 |     Resources:
+|                 |____ 🟢 Account alias (xxxxxxxx)
+|                 |____ 🟢 Account Budget (xxxxxxxx)
+|                 |____ 🟢 Delete default VPCs (xxxxxxxx)
+|                 |____ 🟢 Xadmin role (xxxxxxxx)
 |
 |____ 🟡 env: backup
 |     |
 |     |     Environment Resources:
-|     |____ 🔴 OU
-|     |____ 🔴 SCP Deny External
+|     |____ 🟢 OU (xxxxxxxx)
+|     |____ 🟢 SCP Deny External (xxxxxxxx)
 |     |
-|     |____ 🟡 account: backup-work-test (xxxxxxxx)
+|     |____ 🟡 account: backup-work-test
 |     |     |
 |     |     |     Resources:
-|     |     |____ 🟢 Delegate Backup admin (xxxxxxxx)
-|     |     |____ 🔴 Move account to OU
-|     |     |____ 🟡 Account alias (error)
-|     |     |     ↳ ERROR: Failed to list aliases
-|     |     |____ 🟡 Xadmin role (error)
-|     |     |     ↳ ERROR: deployment of xadmin-role failed. [...renamed account problem]
-|     |     |____ 🟡 Iadmin role (error)
-|     |     |     ↳ ERROR: deployment of iadmin-role failed. [...renamed account problem]
-|     |     |____ 🟡 Oadmin role (error)
-|     |     |     ↳ ERROR: exit-conditions.sh failed for oadmin-role. [...renamed account problem]
-|     |     |____ 🟡 Account Budget (error)
-|     |     |     ↳ ERROR: deployment of account-budget failed. org=o-vif30ez4ew env=backup account=backup-work-test 
-|     |     |       resource=account-budget action=deploy [...renamed account problem]
-|     |     |____ 🟡 Delete default VPCs (error)
-|     |     |     ↳ ERROR: deployment of delete-default-vpcs failed. o[...renamed account problem]
+|     |     |____ 🟢 Account (xxxxxxxx)
+|     |     |____ 🟢 Move account to OU (xxxxxxxx)
+|     |     |____ 🔴 Iadmin role
+|     |     |____ 🟢 Oadmin role (xxxxxxxx)
 |     |     |
 |     |     |____ region: us-east-2
 |     |           |     Resources:
-|     |           |____ 🔴 backup-work-test
-|     |           |____ 🟡 kms-backup-key (error)
-|     |           |     ↳ ERROR: parallel run aborted: [...renamed account problem]
+|     |           |____ 🟢 Account alias (xxxxxxxx)
+|     |           |____ 🟢 Delete default VPCs (xxxxxxxx)
+|     |           |____ 🟢 KMS Backup Key (xxxxxxxx)
+|     |           |____ 🟢 Account Budget (xxxxxxxx)
+|     |           |____ 🔴 Xadmin role
 |     |
-|     |____ 🔴 account: backup-manage
+|     |____ 🟡 account: backup-manage
+|     |     |
+|     |     |     Resources:
+|     |     |____ 🔴 Account
+|     |     |____ 🔴 Move account to OU
+|     |     |____ 🔴 Iadmin role
+|     |     |____ 🟢 Oadmin role (xxxxxxxx)
+|     |     |
+|     |     |____ region: us-east-2
+|     |           |     Resources:
+|     |           |____ 🟢 Account alias (xxxxxxxx)
+|     |           |____ 🟢 Delete default VPCs (xxxxxxxx)
+|     |           |____ 🟢 Account Budget (xxxxxxxx)
+|     |           |____ 🔴 Xadmin role
+|     |
+|     |____ 🟡 account: backup-admin
+|     |     |
+|     |     |     Resources:
+|     |     |____ 🟢 Account (xxxxxxxx)
+|     |     |____ 🟢 Move account to OU (xxxxxxxx)
+|     |     |____ 🔴 Account alias
+|     |     |____ 🔴 Xadmin role
+|     |     |____ 🔴 Iadmin role
+|     |     |____ 🔴 Oadmin role
+|     |     |____ 🔴 Account Budget
+|     |     |____ 🔴 Delete default VPCs
+|     |     |
+|     |     |____ region: us-east-2
+|     |           |     Resources:
+|     |           |____ 🔴 Delegate Backup admin (error)
+|     |           |     ↳ ERROR: tracker-diagram: ERROR: 
+|     |           |       /shared/path//projects/aws-organizations/src/actions/delegate-backup-admin/deploy-delegate-b
+|     |           |       ackup-admin.sh:37: aws-organizations: XXXXXX not set
+|     |
+|     |____ 🟡 account: backup-iam
 |           |
 |           |     Resources:
+|           |____ 🔴 Account
 |           |____ 🔴 Move account to OU
-|           |____ 🔴 Account alias
-|           |____ 🔴 Xadmin role
 |           |____ 🔴 Iadmin role
-|           |____ 🔴 Oadmin role
-|           |____ 🔴 Account Budget
-|           |____ 🔴 Delete default VPCs
+|           |____ 🟢 Oadmin role (xxxxxxxx)
+|           |
+|           |____ region: us-east-2
+|                 |     Resources:
+|                 |____ 🟢 Delete default VPCs (xxxxxxxx)
+|                 |____ 🟢 Xadmin role (xxxxxxxx)
+|                 |____ 🟢 Account Budget (xxxxxxxx)
+|                 |____ 🟢 Account alias (xxxxxxxx)
 |
-|____ 🔴 env: deny-all
+|____ 🟡 env: deny-all
 |     |
 |     |     Environment Resources:
-|     |____ 🔴 SCP Always Denied Actions
-|     |____ 🔴 OU
+|     |____ 🟢 SCP Always Denied Actions (xxxxxxxx)
+|     |____ 🟢 OU (xxxxxxxx)
 |     |____ 🔴 SCP Deny External
 |
-|____ 🔴 env: work-test
+|____ 🟡 env: work-test
       |
       |     Environment Resources:
-      |____ 🔴 OU
+      |____ 🟢 OU (xxxxxxxx)
       |____ 🟢 SCP Deny External (xxxxxxxx)
       |
-      |____ 🟢 account: work-test-iam
+      |____ 🟡 account: work-test-iam
       |     |
       |     |     Resources:
-      |     |____ 🔴 Iadmin user
-      |     |____ 🔴 Move account to OU
-      |     |____ 🔴 Account alias
-      |     |____ 🟢 Xadmin role (xxxxxxxx)
-      |     |____ 🟢 Iadmin role (xxxxxxxx)
-      |     |____ 🔴 Oadmin role
-      |     |____ 🔴 Account Budget
-      |     |____ 🔴 Delete default VPCs
+      |     |____ 🟢 Account (xxxxxxxx)
+      |     |____ 🟢 Iadmin user (xxxxxxxx)
+      |     |____ 🟢 Move account to OU (xxxxxxxx)
+      |     |____ 🔴 Iadmin role
+      |     |____ 🟢 Oadmin role (xxxxxxxx)
       |     |
       |     |____ region: us-east-2
       |           |     Resources:
-      |           |____ 🟢 xadmin-user (xxxxxxxx)
+      |           |____ 🟢 Xadmin user (xxxxxxxx)
+      |           |____ 🟢 Account alias (xxxxxxxx)
+      |           |____ 🟢 Account Budget (xxxxxxxx)
+      |           |____ 🟢 Xadmin role (xxxxxxxx)
+      |           |____ 🟢 Delete default VPCs (xxxxxxxx)
       |
-      |____ 🔴 account: work-test-kms
+      |____ 🟡 account: work-test-kms
       |     |
       |     |     Resources:
-      |     |____ 🔴 KMS Secrets Key
-      |     |____ 🔴 Move account to OU
-      |     |____ 🟢 Account alias (xxxxxxxx)
-      |     |____ 🔴 Xadmin role
+      |     |____ 🟢 Account (xxxxxxxx)
+      |     |____ 🟢 Move account to OU (xxxxxxxx)
       |     |____ 🔴 Iadmin role
-      |     |____ 🔴 Oadmin role
-      |     |____ 🔴 Account Budget
-      |     |____ 🔴 Delete default VPCs
+      |     |____ 🟢 Oadmin role (xxxxxxxx)
       |     |
       |     |____ region: us-east-2
       |           |     Resources:
-      |           |____ 🟢 kms-jobs-key (xxxxxxxx)
-      |           |____ 🔴 kms-ami-key
+      |           |____ 🟢 KMS Jobs Key (xxxxxxxx)
+      |           |____ 🟢 KMS Secrets Key (xxxxxxxx)
+      |           |____ 🟢 Account alias (xxxxxxxx)
+      |           |____ 🟢 Account Budget (xxxxxxxx)
+      |           |____ 🟢 Delete default VPCs (xxxxxxxx)
+      |           |____ 🟢 Xadmin role (xxxxxxxx)
       |
-      |____ 🔴 account: work-test-network
+      |____ 🟡 account: work-test-network
       |     |
       |     |     Resources:
-      |     |____ 🔴 Move account to OU
-      |     |____ 🔴 Account alias
-      |     |____ 🔴 Xadmin role
+      |     |____ 🟢 Account (xxxxxxxx)
+      |     |____ 🔴 IPAM pool
+      |     |____ 🟢 Move account to OU (xxxxxxxx)
       |     |____ 🔴 Iadmin role
-      |     |____ 🔴 Oadmin role
-      |     |____ 🔴 Account Budget
-      |     |____ 🔴 Delete default VPCs
+      |     |____ 🟢 Oadmin role (xxxxxxxx)
       |     |
       |     |____ region: us-east-2
       |           |     Resources:
-      |           |____ 🟢 remote-access-prefix-list (xxxxxxxx)
-      |           |____ 🔴 auth-vpc
-      |           |____ 🔴 work-vpc
-      |           |____ 🔴 honeypot-vpc
-      |           |____ 🔴 backup-vpc
-      |           |____ 🟢 ipam-pool (xxxxxxxx)
-      |           |____ 🟢 vpc-flow-logs-role (xxxxxxxx)
-      |           |____ 🔴 jobs-vpc
+      |           |____ 🟢 VPC Flow Logs Role (xxxxxxxx)
+      |           |____ 🟢 Account Budget (xxxxxxxx)
+      |           |____ 🟢 Account alias (xxxxxxxx)
+      |           |____ 🟢 Remote access prefix list (xxxxxxxx)
+      |           |____ 🟢 Auth VPC (xxxxxxxx)
+      |           |____ 🟢 Backup VPC (xxxxxxxx)
+      |           |____ 🟢 Honeypot VPC (xxxxxxxx)
+      |           |____ 🟢 Jobs VPC (xxxxxxxx)
+      |           |____ 🟢 Work VPC (xxxxxxxx)
+      |           |____ 🟢 Delete default VPCs (xxxxxxxx)
+      |           |____ 🟢 Xadmin role (xxxxxxxx)
       |
-      |____ 🔴 account: work-test-ami
+      |____ 🟡 account: work-test-ami
       |     |
       |     |     Resources:
-      |     |____ 🔴 Move account to OU
-      |     |____ 🔴 Account alias
-      |     |____ 🔴 Xadmin role
+      |     |____ 🟢 Account (xxxxxxxx)
+      |     |____ 🔴 Base Amazon Linux AMI
+      |     |____ 🔴 Base Ubuntu AMI
+      |     |____ 🔴 Collab AMI
+      |     |____ 🔴 Share AMI
+      |     |____ 🔴 Share AMIs to OU
+      |     |____ 🟢 Move account to OU (xxxxxxxx)
       |     |____ 🔴 Iadmin role
-      |     |____ 🔴 Oadmin role
-      |     |____ 🔴 Account Budget
-      |     |____ 🔴 Delete default VPCs
+      |     |____ 🟢 Oadmin role (xxxxxxxx)
       |     |
       |     |____ region: us-east-2
       |           |     Resources:
-      |           |____ 🔴 collab-ami
-      |           |____ 🔴 base-ubuntu-ami
-      |           |____ 🔴 share-amis-to-ou
-      |           |____ 🔴 base-amazon-linux-ami
-      |           |____ 🔴 share-ami
+      |           |____ 🟢 Account Budget (xxxxxxxx)
+      |           |____ 🟢 Account alias (xxxxxxxx)
+      |           |____ 🟢 Delete default VPCs (xxxxxxxx)
+      |           |____ 🟢 Xadmin role (xxxxxxxx)
       |
-      |____ 🟢 account: work-test-repo
+      |____ 🟡 account: work-test-repo
       |     |
       |     |     Resources:
-      |     |____ 🔴 Move account to OU
-      |     |____ 🔴 Account alias
-      |     |____ 🔴 Xadmin role
+      |     |____ 🟢 Account (xxxxxxxx)
+      |     |____ 🟢 Move account to OU (xxxxxxxx)
       |     |____ 🔴 Iadmin role
-      |     |____ 🔴 Oadmin role
-      |     |____ 🔴 Account Budget
-      |     |____ 🔴 Delete default VPCs
+      |     |____ 🟢 Oadmin role (xxxxxxxx)
       |     |
       |     |____ region: us-east-2
       |           |     Resources:
-      |           |____ 🟢 code-commit-repository (xxxxxxxx)
+      |           |____ 🟢 Account Budget (xxxxxxxx)
+      |           |____ 🟢 Account alias (xxxxxxxx)
+      |           |____ 🟢 Delete default VPCs (xxxxxxxx)
+      |           |____ 🟢 Code Commit Repository (xxxxxxxx)
+      |           |____ 🟢 Xadmin role (xxxxxxxx)
       |
-      |____ 🔴 account: work-test-domains
-      |     |
-      |     |     Resources:
-      |     |____ 🔴 Move account to OU
-      |     |____ 🔴 Account alias
-      |     |____ 🔴 Xadmin role
-      |     |____ 🔴 Iadmin role
-      |     |____ 🔴 Oadmin role
-      |     |____ 🔴 Account Budget
-      |     |____ 🔴 Delete default VPCs
-      |
-      |____ 🔴 account: work-test-project-alnzbinsdvnasaosfil
+      |____ 🟡 account: work-test-domains2
             |
             |     Resources:
+            |____ 🔴 Account
             |____ 🔴 Move account to OU
-            |____ 🔴 Account alias
-            |____ 🔴 Xadmin role
-            |____ 🔴 Iadmin role
-            |____ 🔴 Oadmin role
-            |____ 🔴 Account Budget
-            |____ 🔴 Delete default VPCs
+            |____ 🟢 Iadmin role (xxxxxxxx)
+            |____ 🟢 Oadmin role (xxxxxxxx)
             |
             |____ region: us-east-2
                   |     Resources:
-                  |____ 🔴 work-test-project-alnzbinsdvnasaosfil
+                  |____ 🟢 Delete default VPCs (xxxxxxxx)
+                  |____ 🟢 Xadmin role (xxxxxxxx)
+                  |____ 🟢 Account Budget (xxxxxxxx)
+                  |____ 🟢 Account alias (xxxxxxxx)
+=========================================
+ savisec: All Errors
+=========================================
+
+🟡 org: savisec (xxxxxxxx)
+|
+|     All Errors (every level):
+|     |____ 🔴 deploy-resources (error)
+|           ↳ ERROR: ..../deploy-selected-resources.sh:119: 
+|             parallel-processor failed for the selected resources  | org=savisec | env=work-test | account=work-test-repo | 
+|             action=deploy | resources=iadmin-role 
+|     |____ 🔴 delegate-security-hub-admin (error)
+|           ↳ ERROR: ..../run-aws-command.sh:193: aws organizations 
+|             list-delegated-administrators --cli-input-json 
+|             ... list-delegated-administrators-deployed.json --query 
+|             DelegatedAdministrators[].Id --output text --profile org-admin-bootstrap --region us-east-2 --no-cli-pager failed 
+|             rc=254:  An error occurred .... | called from 
+|             /shared/path/projects/aws-securityhub/src/actions/delegate-security-hub-admin/deploy-delegate-security-
+|             hub-admin.sh:51
+|     |____ 🔴 delegate-backup-admin (error)
+|           ↳ ERROR: tracker-diagram: ERROR: 
+|             /shared/path/projects/aws-organizations/src/actions/delegate-backup-admin/deploy-delegate-backup-admin.
+|             sh:37: aws-organizations: XXXXXXX not set
 
 ```
 
