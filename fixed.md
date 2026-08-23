@@ -8,6 +8,8 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 Fixed over past few days
 
+🟢 PARALLEL PROCESSING IS WORKING! I got that done a couple of days ago but was too tired to login and write it down. So close and stayed up 24 hours knocking it out. Just want to be DONE.
+
 🟢 Challenging problem getting the scp with account numbers to update in all the right places
 
 🟢 Dependency configuration graph in org types configuration
