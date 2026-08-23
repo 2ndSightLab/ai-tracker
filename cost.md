@@ -2,6 +2,12 @@
 
 A couple of years ago Werner Vogels did a whole talk on looking at the cost of your architecture which I loved. So that's what I'm doing here.
 
+### 8/23/2026
+
+Just logged into Claude Code and realized it has screen for Claude Code in API usage mode. It shows cost and lines accepted. I've written before that lines accepted is meaningless because sometimes you have to accept the lines and then test and you find out after it's done that their wrong and have to fix them. So that is not really a true tracker of efficiency of an AI model. 
+
+A better question is ... what has it completed that is usable and useful? How much did it cost and how much time did it take to get to that point?
+
 ### 8/15/2026
 
 I am looking at Bedrock pricing compared to Anthropic direct pricing:
