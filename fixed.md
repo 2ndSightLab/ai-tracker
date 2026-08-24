@@ -4,6 +4,10 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
+# 2026-08-24
+
+First ask the model what file is sommething in. Then ask it why something is the way it is.
+
 ## 8/23/2026
 
 Fixed over past few days
