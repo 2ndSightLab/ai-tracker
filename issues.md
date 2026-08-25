@@ -7,11 +7,9 @@ Fixed issues in fixed.md
 
 🟡 Possible race condition or something causing an issue trying to deploy roles.
 
-🟡 Delegated admin service config - there's an issue looking up dependencies at different hierarchies
+🟡 Delegated admin, IPAM - Bug related to looking up resources at different levels of hierarchy
 
-🟡 IPAM and IPAM Pool > IPAM is waiting on delegated admin - same bug as others with dependency lookup
-
-🟡 SCP Deny External - need a way to exclude an account from an org resource deployment
+🟡 SCP Deny External on Deny All - need a way to exclude an account from an org resource deployment
 
 🟡 ec2 instances, remaining roles - have to get past role assumption issue to test this.
 
