@@ -39,58 +39,43 @@ This is just the particular configuration I'm tesing. The configuration supports
 |     |     |     Resources:
 |     |     |____ 🟢 Account (xxxxxxxx)
 |     |     |____ 🟢 Iadmin user (xxxxxxxx)
+|     |     |____ 🟢 Xadmin user (xxxxxxxx)
 |     |     |____ 🟢 Move account to OU (xxxxxxxx)
+|     |     |____ 🟢 Account alias (xxxxxxxx)
 |     |     |____ 🟢 Xadmin role (xxxxxxxx)
 |     |     |____ 🟢 Iadmin role (xxxxxxxx)
 |     |     |____ 🟢 Oadmin role (xxxxxxxx)
-|     |     |
-|     |     |____ region: us-east-2
-|     |           |     Resources:
-|     |           |____ 🟢 Account alias (xxxxxxxx)
-|     |           |____ 🟢 Account Budget (xxxxxxxx)
-|     |           |____ 🟢 Xadmin user (xxxxxxxx)
-|     |           |____ 🟢 Delete default VPCs (xxxxxxxx)
+|     |     |____ 🟢 Account Budget (xxxxxxxx)
+|     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
 |     |
-|     |____ 🟡 account: manage-kms
+|     |____ 🟢 account: manage-kms
 |     |     |
 |     |     |     Resources:
 |     |     |____ 🟢 Account (xxxxxxxx)
 |     |     |____ 🟢 Move account to OU (xxxxxxxx)
+|     |     |____ 🟢 Account alias (xxxxxxxx)
 |     |     |____ 🟢 Xadmin role (xxxxxxxx)
 |     |     |____ 🟢 Iadmin role (xxxxxxxx)
 |     |     |____ 🟢 Oadmin role (xxxxxxxx)
+|     |     |____ 🟢 Account Budget (xxxxxxxx)
+|     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
 |     |     |
 |     |     |____ region: us-east-2
 |     |           |     Resources:
 |     |           |____ 🟢 KMS Secrets Key (xxxxxxxx)
-|     |           |____ 🔴 Account Budget
-|     |           |____ 🟢 Account alias (xxxxxxxx)
-|     |           |____ 🟢 Delete default VPCs (xxxxxxxx)
 |     |           |____ 🟢 KMS Logs Key (xxxxxxxx)
 |     |
-|     |____ 🟢 account: manage-security
+|     |____ 🟡 account: manage-security
 |     |     |
 |     |     |     Resources:
 |     |     |____ 🟢 Account (xxxxxxxx)
-|     |     |____ 🔴 Delegate Macie admin
-|     |     |____ 🔴 S3 Log Bucket Policy
-|     |     |____ 🔴 Configure GuardDuty
-|     |     |____ 🔴 Configure Security Hub
-|     |     |____ 🔴 Configure CloudTrail
-|     |     |____ 🔴 Configure AWS Config
-|     |     |____ 🔴 Configure Macie
-|     |     |____ 🔴 Configure Inspector
-|     |     |____ 🔴 Configure IAM Access Analyzer
-|     |     |____ 🔴 Configure Security Alerts
-|     |     |____ 🔴 S3 Log Bucket
-|     |     |____ 🔴 S3 Log Bucket Policy
 |     |     |____ 🟢 Move account to OU (xxxxxxxx)
-|     |     |____ 🔴 Account alias
-|     |     |____ 🔴 Xadmin role
-|     |     |____ 🔴 Iadmin role
-|     |     |____ 🔴 Oadmin role
-|     |     |____ 🔴 Account Budget
-|     |     |____ 🔴 Delete default VPCs
+|     |     |____ 🟢 Account alias (xxxxxxxx)
+|     |     |____ 🟢 Xadmin role (xxxxxxxx)
+|     |     |____ 🟢 Iadmin role (xxxxxxxx)
+|     |     |____ 🟢 Oadmin role (xxxxxxxx)
+|     |     |____ 🟢 Account Budget (xxxxxxxx)
+|     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
 |     |     |
 |     |     |____ region: us-east-2
 |     |           |     Resources:
@@ -103,76 +88,107 @@ This is just the particular configuration I'm tesing. The configuration supports
 |     |           |____ 🟢 Delegate Inspector admin (xxxxxxxx)
 |     |           |____ 🟢 Delegate Detective admin (xxxxxxxx)
 |     |           |____ 🟢 Delegate Audit Manager admin (xxxxxxxx)
+|     |           |____ 🟢 Delegate Macie admin (xxxxxxxx)
+|     |           |____ 🔴 Configure GuardDuty (error)
+|     |           |     ↳ ERROR: tracker-diagram: ERROR: aws-deploy-resources: 
+|     |           |       /usr/local/share/projects/aws-deploy-resources/src/deploy-selected-resources.sh:137: resource 
+|     |           |       configure-guardduty was not deployed, its dependencies were never met: delegate-guardduty-admin | org=testorg | 
+|     |           |       env=manage | account=manage-security | action=deploy 
+|     |           |____ 🟢 Configure Security Hub (xxxxxxxx)
+|     |           |____ 🔴 Configure CloudTrail (error)
+|     |           |     ↳ ERROR: tracker-diagram: ERROR: aws-deploy-resources: 
+|     |           |       /usr/local/share/projects/aws-deploy-resources/src/deploy-selected-resources.sh:137: resource 
+|     |           |       configure-cloudtrail was not deployed, its dependencies were never met: delegate-cloudtrail-admin | org=testorg | 
+|     |           |       env=manage | account=manage-security | action=deploy 
+|     |           |____ 🔴 Configure AWS Config (error)
+|     |           |     ↳ ERROR: tracker-diagram: ERROR: aws-deploy-resources: 
+|     |           |       /usr/local/share/projects/aws-deploy-resources/src/deploy-selected-resources.sh:137: resource 
+|     |           |       configure-aws-config was not deployed, its dependencies were never met: delegate-aws-config-admin | org=testorg | 
+|     |           |       env=manage | account=manage-security | action=deploy 
+|     |           |____ 🔴 Configure Macie (error)
+|     |           |     ↳ ERROR: tracker-diagram: ERROR: aws-deploy-resources: 
+|     |           |       /usr/local/share/projects/aws-deploy-resources/src/deploy-selected-resources.sh:137: resource 
+|     |           |       configure-macie was not deployed, its dependencies were never met: delegate-macie-admin | org=testorg | env=manage | 
+|     |           |       account=manage-security | action=deploy 
+|     |           |____ 🟡 Configure IAM Access Analyzer (xxxxxxxx)
+|     |           |____ 🟡 Configure Inspector (xxxxxxxx)
+|     |           |____ 🔴 Configure Security Alerts (error)
+|     |           |     ↳ ERROR: tracker-diagram: ERROR: aws-deploy-resources: 
+|     |           |       /usr/local/share/projects/aws-deploy-resources/src/deploy-selected-resources.sh:137: resource 
+|     |           |       configure-security-alerts was not deployed, its dependencies were never met: delegate-cloudtrail-admin 
+|     |           |       configure-cloudtrail configure-guardduty | org=testorg | env=manage | account=manage-security | action=deploy 
+|     |           |____ 🟢 S3 Log Bucket (xxxxxxxx)
+|     |           |____ 🟢 S3 Log Bucket Policy (xxxxxxxx)
 |     |
-|     |____ 🟡 account: manage-org
+|     |____ 🟢 account: manage-org
 |     |     |
 |     |     |     Resources:
 |     |     |____ 🟢 Account (xxxxxxxx)
 |     |     |____ 🟢 Org resource policy (xxxxxxxx)
 |     |     |____ 🟢 Move account to OU (xxxxxxxx)
+|     |     |____ 🟢 Account alias (xxxxxxxx)
 |     |     |____ 🟢 Xadmin role (xxxxxxxx)
 |     |     |____ 🟢 Iadmin role (xxxxxxxx)
 |     |     |____ 🟢 Oadmin role (xxxxxxxx)
+|     |     |____ 🟢 Account Budget (xxxxxxxx)
+|     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
 |     |     |
 |     |     |____ region: us-east-2
 |     |           |     Resources:
 |     |           |____ 🟢 Delegate Org Admin (xxxxxxxx)
-|     |           |____ 🔴 Delete default VPCs
-|     |           |____ 🟢 Account Budget (xxxxxxxx)
-|     |           |____ 🟢 Account alias (xxxxxxxx)
 |     |
 |     |____ 🟢 account: manage-accounting
 |     |     |
 |     |     |     Resources:
 |     |     |____ 🟢 Account (xxxxxxxx)
 |     |     |____ 🟢 Move account to OU (xxxxxxxx)
+|     |     |____ 🟢 Account alias (xxxxxxxx)
 |     |     |____ 🟢 Xadmin role (xxxxxxxx)
 |     |     |____ 🟢 Iadmin role (xxxxxxxx)
 |     |     |____ 🟢 Oadmin role (xxxxxxxx)
+|     |     |____ 🟢 Account Budget (xxxxxxxx)
+|     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
 |     |     |
 |     |     |____ region: us-east-2
 |     |           |     Resources:
-|     |           |____ 🟢 Account Budget (xxxxxxxx)
 |     |           |____ 🟢 Delegate Compute Optimizer admin (xxxxxxxx)
 |     |           |____ 🟢 Delegate Cost Optimization Hub admin (xxxxxxxx)
-|     |           |____ 🟢 Account alias (xxxxxxxx)
-|     |           |____ 🟢 Delete default VPCs (xxxxxxxx)
 |     |
-|     |____ 🟡 account: manage-ipam
+|     |____ 🟢 account: manage-ipam
 |     |     |
 |     |     |     Resources:
 |     |     |____ 🟢 Account (xxxxxxxx)
 |     |     |____ 🟢 Move account to OU (xxxxxxxx)
+|     |     |____ 🟢 Account alias (xxxxxxxx)
 |     |     |____ 🟢 Xadmin role (xxxxxxxx)
-|     |     |____ 🔴 Iadmin role
+|     |     |____ 🟢 Iadmin role (xxxxxxxx)
 |     |     |____ 🟢 Oadmin role (xxxxxxxx)
+|     |     |____ 🟢 Account Budget (xxxxxxxx)
+|     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
 |     |     |
 |     |     |____ region: us-east-2
 |     |           |     Resources:
 |     |           |____ 🟢 Delegate Network Manager admin (xxxxxxxx)
 |     |           |____ 🟢 Delegate VPC Reachability Analyzer admin (xxxxxxxx)
 |     |           |____ 🟢 Delegate IPAM admin (xxxxxxxx)
-|     |           |____ 🟡 Delegate Firewall Manager admin (xxxxxxxx)
-|     |           |____ 🟢 Delete default VPCs (xxxxxxxx)
-|     |           |____ 🟢 Account alias (xxxxxxxx)
-|     |           |____ 🟢 Account Budget (xxxxxxxx)
-|     |           |____ 🔴 IPAM
+|     |           |____ 🟢 Delegate Firewall Manager admin (xxxxxxxx)
+|     |           |____ 🟡 IPAM (xxxxxxxx)
 |     |
-|     |____ 🟡 account: manage-kiro
+|     |____ 🟢 account: manage-kiro
 |           |
 |           |     Resources:
 |           |____ 🟢 Account (xxxxxxxx)
-|           |____ 🔴 kiro-cli-identity-center
 |           |____ 🟢 Move account to OU (xxxxxxxx)
+|           |____ 🟢 Account alias (xxxxxxxx)
 |           |____ 🟢 Xadmin role (xxxxxxxx)
 |           |____ 🟢 Iadmin role (xxxxxxxx)
 |           |____ 🟢 Oadmin role (xxxxxxxx)
+|           |____ 🟢 Account Budget (xxxxxxxx)
+|           |____ 🟢 Delete default VPCs (xxxxxxxx)
 |           |
 |           |____ region: us-east-2
 |                 |     Resources:
-|                 |____ 🔴 Account alias
-|                 |____ 🟢 Account Budget (xxxxxxxx)
-|                 |____ 🟢 Delete default VPCs (xxxxxxxx)
+|                 |____ 🟢 AWS Identity Center Instance (xxxxxxxx)
 |
 |____ 🟡 env: backup
 |     |
@@ -180,92 +196,63 @@ This is just the particular configuration I'm tesing. The configuration supports
 |     |____ 🟢 OU (xxxxxxxx)
 |     |____ 🟢 SCP Deny External (xxxxxxxx)
 |     |
-|     |____ 🟡 account: backup-work-test
+|     |____ 🟢 account: backup-work-test
 |     |     |
 |     |     |     Resources:
 |     |     |____ 🟢 Account (xxxxxxxx)
 |     |     |____ 🟢 Move account to OU (xxxxxxxx)
-|     |     |____ 🔴 Xadmin role
-|     |     |____ 🔴 Iadmin role
+|     |     |____ 🟢 Account alias (xxxxxxxx)
+|     |     |____ 🟢 Xadmin role (xxxxxxxx)
+|     |     |____ 🟢 Iadmin role (xxxxxxxx)
 |     |     |____ 🟢 Oadmin role (xxxxxxxx)
+|     |     |____ 🟢 Account Budget (xxxxxxxx)
+|     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
 |     |     |
 |     |     |____ region: us-east-2
 |     |           |     Resources:
-|     |           |____ 🔴 Account alias (error)
-|     |           |     ↳ ERROR: tracker-diagram: ERROR: aws-deploy-resources: 
-|     |           |       projects/aws-deploy-resources/src/deploy-selected-resources.sh:137: 
-|     |           |       resource iadmin-role was not deployed, its dependencies were never met: iadmin-user 
-|     |           |____ 🟢 Delete default VPCs (xxxxxxxx)
-|     |           |____ 🔴 KMS Backup Key (error)
-|     |           |     ↳ ERROR: tracker-diagram: ERROR: aws-deploy-resources: 
-|     |           |       projects/aws-deploy-resources/src/deploy-selected-resources.sh:137: 
-|     |           |       resource xadmin-role was not deployed, its dependencies were never met: xadmin-user 
-|     |           |____ 🟢 Account Budget (xxxxxxxx)
+|     |           |____ 🟢 KMS Backup Key (xxxxxxxx)
 |     |
-|     |____ 🟡 account: backup-manage
+|     |____ 🟢 account: backup-manage
 |     |     |
 |     |     |     Resources:
-|     |     |____ 🔴 Account
-|     |     |____ 🔴 Move account to OU
-|     |     |____ 🔴 Iadmin role
+|     |     |____ 🟢 Account (xxxxxxxx)
+|     |     |____ 🟢 Move account to OU (xxxxxxxx)
+|     |     |____ 🟢 Account alias (xxxxxxxx)
+|     |     |____ 🟢 Xadmin role (xxxxxxxx)
+|     |     |____ 🟢 Iadmin role (xxxxxxxx)
 |     |     |____ 🟢 Oadmin role (xxxxxxxx)
-|     |     |
-|     |     |____ region: us-east-2
-|     |           |     Resources:
-|     |           |____ 🔴 Account alias (error)
-|     |           |     ↳ ERROR: tracker-diagram: no error message recorded
-|     |           |____ 🟢 Delete default VPCs (xxxxxxxx)
-|     |           |____ 🔴 Account Budget (error)
-|     |           |     ↳ ERROR: tracker-diagram: ERROR: tracker-xml: 
-|     |           |       projects/tracker-xml/src/helpers/reject-global-region-conflict.sh:86: 
-|     |           |       rejected writing file 
-|     |           |       projects/tracker-xml/config/deploy/xxxxxxxxxxxxx.xml.wip-20260824-085037.t
-|     |           |       xt account backup-manage resource xadmin-role recorded at the account level and under region 
-|     |           |       us-east-2 and a global=Y type belongs at the account node
-|     |           |____ 🔴 Xadmin role
+|     |     |____ 🟢 Account Budget (xxxxxxxx)
+|     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
 |     |
 |     |____ 🟡 account: backup-admin
 |     |     |
 |     |     |     Resources:
 |     |     |____ 🟢 Account (xxxxxxxx)
 |     |     |____ 🟢 Move account to OU (xxxxxxxx)
-|     |     |____ 🔴 Account alias
+|     |     |____ 🟢 Account alias (xxxxxxxx)
 |     |     |____ 🔴 Xadmin role
 |     |     |____ 🔴 Iadmin role
-|     |     |____ 🔴 Oadmin role
-|     |     |____ 🔴 Account Budget
-|     |     |____ 🔴 Delete default VPCs
+|     |     |____ 🟢 Oadmin role (xxxxxxxx)
+|     |     |____ 🟢 Account Budget (xxxxxxxx)
+|     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
 |     |     |
 |     |     |____ region: us-east-2
 |     |           |     Resources:
-|     |           |____ 🔴 Delegate Backup admin (error)
-|     |           |     ↳ ERROR: tracker-diagram: ERROR: 
-|     |           |       projects/aws-organizations/src/actions/delegate-backup-admin/deploy-deleg
-|     |           |       ate-backup-admin.sh:37: aws-organizations: XXXXXXXXXXX not set
+|     |           |____ 🟢 Delegate Backup admin (xxxxxxxx)
 |     |
-|     |____ 🟡 account: backup-iam
-|     |     ↳ ERROR: tracker-diagram: ERROR: tracker-xml: 
-|     |       projects/tracker-xml/src/helpers/reject-global-region-conflict.sh:86: rejected 
-|     |       writing file 
-|     |       projects/tracker-xml/config/deploy/xxxxxxxxxxxxx.xml.wip-20260824-085223.txt account 
-|     |       backup-iam resource xadmin-role recorded at the account level and under region us-east-2 and a global=Y type 
-|     |       belongs at the account node
+|     |____ 🟢 account: backup-iam
 |           |
 |           |     Resources:
-|           |____ 🔴 Account
-|           |____ 🔴 Move account to OU
-|           |____ 🔴 Iadmin role
+|           |____ 🟢 Account (xxxxxxxx)
+|           |____ 🟢 Iadmin user (xxxxxxxx)
+|           |____ 🟢 Xadmin user (xxxxxxxx)
+|           |____ 🟢 Move account to OU (xxxxxxxx)
+|           |____ 🟢 Account alias (xxxxxxxx)
+|           |____ 🟢 Xadmin role (xxxxxxxx)
+|           |____ 🟢 Iadmin role (xxxxxxxx)
 |           |____ 🟢 Oadmin role (xxxxxxxx)
-|           |
-|           |____ region: us-east-2
-|                 |     Resources:
-|                 |____ 🔴 Delete default VPCs (error)
-|                 |     ↳ ERROR: tracker-diagram: ERROR: aws-deploy-resources: 
-|                 |       projects/aws-deploy-resources/src/deploy-selected-resources.sh:137: 
-|                 |       resource iadmin-role was not deployed, its dependencies were never met: iadmin-user 
-|                 |____ 🟢 Xadmin role (xxxxxxxx)
-|                 |____ 🟢 Account Budget (xxxxxxxx)
-|                 |____ 🟢 Account alias (xxxxxxxx)
+|           |____ 🟢 Account Budget (xxxxxxxx)
+|           |____ 🟢 Delete default VPCs (xxxxxxxx)
 |
 |____ 🟡 env: deny-all
 |     |
@@ -280,140 +267,107 @@ This is just the particular configuration I'm tesing. The configuration supports
       |____ 🟢 OU (xxxxxxxx)
       |____ 🟢 SCP Deny External (xxxxxxxx)
       |
-      |____ 🟡 account: work-test-iam
+      |____ 🟢 account: work-test-iam
       |     |
       |     |     Resources:
       |     |____ 🟢 Account (xxxxxxxx)
-      |     |____ 🔴 Iadmin user
-      |     |____ 🔴 Move account to OU
-      |     |____ 🔴 Iadmin role
-      |     |____ 🔴 Oadmin role
-      |     |
-      |     |____ region: us-east-2
-      |           |     Resources:
-      |           |____ 🟢 Xadmin user (xxxxxxxx)
-      |           |____ 🟢 Account alias (xxxxxxxx)
-      |           |____ 🔴 Account Budget (error)
-      |           |     ↳ ERROR: tracker-diagram: ERROR: aws-deploy-resources: 
-      |           |       projects/aws-deploy-resources/src/deploy-selected-resources.sh:137: 
-      |           |       resource iadmin-role was not deployed, its dependencies were never met: iadmin-user 
-      |           |____ 🟢 Xadmin role (xxxxxxxx)
-      |           |____ 🟢 Delete default VPCs (xxxxxxxx)
+      |     |____ 🟢 Iadmin user (xxxxxxxx)
+      |     |____ 🟢 Xadmin user (xxxxxxxx)
+      |     |____ 🟢 Move account to OU (xxxxxxxx)
+      |     |____ 🟢 Account alias (xxxxxxxx)
+      |     |____ 🟢 Xadmin role (xxxxxxxx)
+      |     |____ 🟢 Iadmin role (xxxxxxxx)
+      |     |____ 🟢 Oadmin role (xxxxxxxx)
+      |     |____ 🟢 Account Budget (xxxxxxxx)
+      |     |____ 🟢 Delete default VPCs (xxxxxxxx)
       |
       |____ 🟡 account: work-test-kms
       |     |
       |     |     Resources:
       |     |____ 🟢 Account (xxxxxxxx)
-      |     |____ 🔴 Move account to OU
+      |     |____ 🟢 Move account to OU (xxxxxxxx)
+      |     |____ 🟢 Account alias (xxxxxxxx)
+      |     |____ 🟢 Xadmin role (xxxxxxxx)
       |     |____ 🔴 Iadmin role
       |     |____ 🟢 Oadmin role (xxxxxxxx)
+      |     |____ 🟢 Account Budget (xxxxxxxx)
+      |     |____ 🟢 Delete default VPCs (xxxxxxxx)
       |     |
       |     |____ region: us-east-2
       |           |     Resources:
       |           |____ 🟢 KMS Jobs Key (xxxxxxxx)
-      |           |____ 🔴 KMS Secrets Key
-      |           |____ 🟢 Account alias (xxxxxxxx)
-      |           |____ 🟢 Account Budget (xxxxxxxx)
-      |           |____ 🟢 Delete default VPCs (xxxxxxxx)
-      |           |____ 🟢 Xadmin role (xxxxxxxx)
+      |           |____ 🟢 KMS Secrets Key (xxxxxxxx)
       |
       |____ 🟡 account: work-test-network
       |     |
       |     |     Resources:
       |     |____ 🟢 Account (xxxxxxxx)
-      |     |____ 🔴 Move account to OU
-      |     |____ 🔴 Iadmin role
+      |     |____ 🟢 Move account to OU (xxxxxxxx)
+      |     |____ 🟢 Account alias (xxxxxxxx)
+      |     |____ 🟢 Xadmin role (xxxxxxxx)
+      |     |____ 🟢 Iadmin role (xxxxxxxx)
       |     |____ 🟢 Oadmin role (xxxxxxxx)
+      |     |____ 🟢 Account Budget (xxxxxxxx)
+      |     |____ 🟢 Delete default VPCs (xxxxxxxx)
       |     |
       |     |____ region: us-east-2
       |           |     Resources:
-      |           |____ 🔴 VPC Flow Logs Role
-      |           |____ 🟢 Account Budget (xxxxxxxx)
-      |           |____ 🟢 Account alias (xxxxxxxx)
+      |           |____ 🟢 VPC Flow Logs Role (xxxxxxxx)
       |           |____ 🟢 Remote access prefix list (xxxxxxxx)
       |           |____ 🟢 Auth VPC (xxxxxxxx)
       |           |____ 🟢 Backup VPC (xxxxxxxx)
       |           |____ 🟢 Honeypot VPC (xxxxxxxx)
       |           |____ 🟢 Jobs VPC (xxxxxxxx)
       |           |____ 🟢 Work VPC (xxxxxxxx)
-      |           |____ 🟢 Delete default VPCs (xxxxxxxx)
-      |           |____ 🟢 Xadmin role (xxxxxxxx)
       |           |____ 🔴 IPAM pool
-      |           |     ↳ ERROR: tracker-diagram: ERROR: aws-deploy-resources: 
-      |           |       projects/aws-deploy-resources/src/deploy-selected-resources.sh:137: 
-      |           |       resource ipam-pool was not deployed, its dependencies were never met: ipam 
       |
       |____ 🟡 account: work-test-ami
       |     |
       |     |     Resources:
       |     |____ 🟢 Account (xxxxxxxx)
-      |     |____ 🔴 Move account to OU
-      |     |____ 🔴 Iadmin role
+      |     |____ 🟢 Move account to OU (xxxxxxxx)
+      |     |____ 🟢 Account alias (xxxxxxxx)
+      |     |____ 🟢 Xadmin role (xxxxxxxx)
+      |     |____ 🟢 Iadmin role (xxxxxxxx)
       |     |____ 🟢 Oadmin role (xxxxxxxx)
+      |     |____ 🟢 Account Budget (xxxxxxxx)
+      |     |____ 🟢 Delete default VPCs (xxxxxxxx)
       |     |
       |     |____ region: us-east-2
       |           |     Resources:
-      |           |____ 🟢 Account Budget (xxxxxxxx)
-      |           |____ 🔴 Account alias
-      |           |____ 🟢 Delete default VPCs (xxxxxxxx)
-      |           |____ 🟢 Xadmin role (xxxxxxxx)
       |           |____ 🔴 Base Amazon Linux AMI
-      |           |     ↳ ERROR: tracker-diagram: ERROR: aws-deploy-resources: 
-      |           |       projects/aws-deploy-resources/src/deploy-selected-resources.sh:137: 
-      |           |       resource base-amazon-linux-ami was not deployed, its dependencies were never met: kms-ami-key 
-      |           |____ 🔴 Base Ubuntu AMI
-      |           |     ↳ ERROR: tracker-diagram: ERROR: aws-deploy-resources: 
-      |           |       projects/aws-deploy-resources/src/deploy-selected-resources.sh:137: 
-      |           |       resource base-ubuntu-ami was not deployed, its dependencies were never met: kms-ami-key 
+      |           |____ 🟢 Base Ubuntu AMI (xxxxxxxx)
       |           |____ 🔴 Collab AMI
-      |           |     ↳ ERROR: tracker-diagram: ERROR: aws-deploy-resources: 
-      |           |       projects/aws-deploy-resources/src/deploy-selected-resources.sh:137: 
-      |           |       resource collab-ami was not deployed, its dependencies were never met: base-ubuntu-ami 
-      |           |     ↳ ERROR: tracker-diagram: ERROR: aws-deploy-resources: 
-      |           |       projects/aws-deploy-resources/src/check-dependencies.sh:121: cannot 
-      |           |       deploy collab-ami: dependency base-ubuntu-ami failed in this run so it is skipped 
       |           |____ 🔴 Share AMIs to OU
-      |           |     ↳ ERROR: tracker-diagram: ERROR: aws-deploy-resources: 
-      |           |       projects/aws-deploy-resources/src/deploy-selected-resources.sh:137: 
-      |           |       resource share-amis-to-ou was not deployed, its dependencies were never met: base-amazon-linux-ami 
-      |           |     ↳ ERROR: tracker-diagram: ERROR: aws-deploy-resources: 
-      |           |       projects/aws-deploy-resources/src/check-dependencies.sh:121: cannot 
-      |           |       deploy share-amis-to-ou: dependency base-amazon-linux-ami failed in this run so it is skipped 
       |           |____ 🔴 Share AMI
-      |           |     ↳ ERROR: tracker-diagram: ERROR: aws-deploy-resources: 
-      |           |       projects/aws-deploy-resources/src/deploy-selected-resources.sh:137: 
-      |           |       resource share-ami was not deployed, its dependencies were never met: kms-external-ami-share-key 
       |
       |____ 🟡 account: work-test-repo
       |     |
       |     |     Resources:
       |     |____ 🟢 Account (xxxxxxxx)
       |     |____ 🟢 Move account to OU (xxxxxxxx)
+      |     |____ 🟢 Account alias (xxxxxxxx)
+      |     |____ 🟢 Xadmin role (xxxxxxxx)
       |     |____ 🔴 Iadmin role
       |     |____ 🟢 Oadmin role (xxxxxxxx)
+      |     |____ 🟢 Account Budget (xxxxxxxx)
+      |     |____ 🟢 Delete default VPCs (xxxxxxxx)
       |     |
       |     |____ region: us-east-2
       |           |     Resources:
-      |           |____ 🔴 Account Budget
-      |           |____ 🟢 Account alias (xxxxxxxx)
-      |           |____ 🟢 Delete default VPCs (xxxxxxxx)
       |           |____ 🟢 Code Commit Repository (xxxxxxxx)
-      |           |____ 🟢 Xadmin role (xxxxxxxx)
       |
-      |____ 🟡 account: work-test-domains2
+      |____ 🟢 account: work-test-domains2
             |
             |     Resources:
-            |____ 🔴 Account
-            |____ 🔴 Move account to OU
+            |____ 🟢 Account (xxxxxxxx)
+            |____ 🟢 Move account to OU (xxxxxxxx)
+            |____ 🟢 Account alias (xxxxxxxx)
+            |____ 🟢 Xadmin role (xxxxxxxx)
             |____ 🟢 Iadmin role (xxxxxxxx)
             |____ 🟢 Oadmin role (xxxxxxxx)
-            |
-            |____ region: us-east-2
-                  |     Resources:
-                  |____ 🟢 Delete default VPCs (xxxxxxxx)
-                  |____ 🟢 Xadmin role (xxxxxxxx)
-                  |____ 🟢 Account Budget (xxxxxxxx)
-                  |____ 🟢 Account alias (xxxxxxxx)
+            |____ 🟢 Account Budget (xxxxxxxx)
+            |____ 🟢 Delete default VPCs (xxxxxxxx)
 
 [erorr queue / dead letter queue]
 ```
