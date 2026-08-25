@@ -5,31 +5,15 @@ Fixed issues in fixed.md
 
 ## Issues
 
-🟡 possibly queue is not waiting for last items to complete before existing
+🟡 Possible race condition or something causing an issue trying to deploy roles.
 
-🟡 Stopping when it doesn't need to when still more stuff it can deploy poss. related to last item.
+🟡 Delegated admin service config - there's an issue looking up dependencies at different hierarchies
 
-🟡 should be reporting scp output when blocked by scp is not
-
-🟡 added code to log dependencies not met not showing in diagram
-
-🟡 role deployment is using the wrong account id - need to be able to specifiy account + resource in dependencies
-
-🟡 backup delegated admin - look up backup account id
-
-🟡 ec2 instances 
-
-🟡 configuration issue - account not deploying: work-test-domains2 - and not reporting an error? 
-
-🟡 IPAM and IPAM Pool
+🟡 IPAM and IPAM Pool > IPAM is waiting on delegated admin - same bug as others with dependency lookup
 
 🟡 SCP Deny External - need a way to exclude an account from an org resource deployment
 
-🟡 Log Bucket >> Cloudwatch org logs? 
-
-🟡 Queue detail report
-
-🟡 Error for a global resource not showing for every account where the error occurs only one.
+🟡 ec2 instances, remaining roles - have to get past role assumption issue to test this.
 
 ## Add
 
@@ -39,7 +23,10 @@ Fixed issues in fixed.md
 
 🟡  Yubikey Auth
 
+🟡 Log Bucket >> Cloudwatch org logs? 
 ## Later
+
+🟡 should be reporting scp output when blocked by scp is not
 
 🟡 With profile fixes can probably deploy accounts in parallel now after handing off to parallel processor. TBD
 
