@@ -14,6 +14,14 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/response-time.
 
 The mistake tracker is a new part of the project added a few months in. This is not super scientific as it is hard to quantify. I'm just telling the model to increment the mistakes it's making +1 if it starts making a bunch of mistakes. This is not every mistakes mostly only when I start getting annoyed. :-D The mistakes are largely worded by the AI agent and sometimes it does not capture the correct mistake but I don't always fix that because I just want to get stuff done. It generally captures a valid mistake but not the one I actually wanted it to log. So these are all valid just some are missing I didn't bother to fix to the correct mistake. I don't care about typooooos this is just a fast as possible log. Trying to get things done. Note missing days/times may be because the model deleted the data or because I took some time off. In some cases I have to work on other things...
 
+# 2026-08-25 4:00 AM
+
+Sometimes ok, sometime not today.
+
+I remember this brief moment in time when the model was fast and mostly did everything right. Those days seem to be over. There were moments of absolute frustration today. Things got reverted. Had to re-fix. Bot overall made progress. Not fast enough though.
+
+I think I know what is causing the few remaining bugs just not sure how to fix yet. Tricky. Tired. Tomorrow.
+
 # 2026-08-23 5:31 PM
 
 Something I started doing was tracking the mistakes in the documentation for specific files. Not sure how much that is happening.
