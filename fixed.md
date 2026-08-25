@@ -8,6 +8,31 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 First ask the model what file is sommething in. Then ask it why something is the way it is.
 
+## 8/24/2026
+
+🟢 Stopping when it doesn't need to when still more stuff it can. A return 1 in a loop instead of continue. Multiple loops.
+
+🟢 Main deployer reverted some stuff had to fix again.
+
+🟢 Configuration issues.
+
+🟢 added code to log dependencies not met not showing in diagram
+
+🟢 role deployment is using the wrong account id - need to be able to specifiy account + resource in dependencies
+
+🟢 configuration issue - account not deploying: work-test-domains2 - and not reporting an error? 
+
+🟢 Queue detail report at top of menu
+
+🟢 Error for a global resource not showing for every account where the error occurs only one.
+
+🟢 backup delegated admin - look up backup account id
+
+🟢 S3 log bucket
+
+🟢 possibly queue is not waiting for last items to complete before existing - n/a last account deployed
+
+
 ## 8/23/2026
 
 Fixed over past few days
