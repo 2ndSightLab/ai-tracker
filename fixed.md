@@ -8,6 +8,8 @@ The way I'm ordering this is weird sorry. I write the date/time and stuff I did 
 
 🟢 Possible race condition or something causing an issue trying to deploy roles. > No. 100th time. Set selected id. Switch Role. Never Assume it makes an... well you know.
 
+🟢 SCP Deny External on Deny All - need a way to exclude an account from an org resource deployment
+
 ## 8/24/2026
 
 First ask the model what file is sommething in. Then ask it why something is the way it is.
