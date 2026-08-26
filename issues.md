@@ -5,9 +5,15 @@ Fixed issues in fixed.md
 
 ## Issues
 
-🟡 Delegated admin, IPAM - Bug related to looking up resources at different levels of hierarchy
+🟡 IPAM Pool
 
-🟡 ec2 instances, remaining roles - have to get past role assumption issue to test this.
+🟡 CloudTrail
+
+🟡 Ec2 Instances
+
+🟡 AMIs
+
+🟡 Ami share to OU
 
 ## Add
 
