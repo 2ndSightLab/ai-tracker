@@ -4,7 +4,11 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
-# 2026-08-24
+## 8/25/2026
+
+🟢 Possible race condition or something causing an issue trying to deploy roles. > No. 100th time. Set selected id. Switch Role. Never Assume it makes an... well you know.
+
+## 8/24/2026
 
 First ask the model what file is sommething in. Then ask it why something is the way it is.
 
