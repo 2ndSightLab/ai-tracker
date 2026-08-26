@@ -4,6 +4,17 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
+## 8/26/2026 - 4:33 PM
+
+Been going in circles. 75% of my plan used up. What plan. The whole plan? A weekly plan? A session? A month? I'm so confused.
+
+Time to dig in and do some stuff manually. I have some working EC2 scripts that I'll just dump in there and tell it to conver to the new architecture as it's been really fighting to go off the rails. Mildy complying and then doing something wacky. So time to copy the scripts.
+
+Also, the model is really bad at figuring out which role to assume. Time to login, see what it's trying to do, and explicitly tell it what to do.
+
+Only two things left to fix. It almost went completely off the rails again but I had a recent backup and restored.
+
+
 ## 8/25/2026
 
 🟢 Possible race condition or something causing an issue trying to deploy roles. > No. 100th time. Set selected id. Switch Role. Never Assume it makes an... well you know.
