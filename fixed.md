@@ -14,6 +14,7 @@ Also, the model is really bad at figuring out which role to assume. Time to logi
 
 Only two things left to fix. It almost went completely off the rails again but I had a recent backup and restored.
 
+🟢 Delegated admins complete, most service config, S3 bucket fixes and KMS fixes for CLoudtrail, IPAM
 
 ## 8/25/2026
 
