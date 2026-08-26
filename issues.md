@@ -15,6 +15,8 @@ Fixed issues in fixed.md
 
 🟡 Ami share to OU
 
+🟡 Split KMS Key and Policy deployment so can deploy separately
+
 ## Add
 
 🟡  Pentest jobs 
