@@ -28,6 +28,8 @@ Only two things left to fix. It almost went completely off the rails again but I
 
 🟢 Split KMS Key and Policy deployment so can deploy separately
 
+🟢 New xml-parser function to remove by node path
+
 ## 8/25/2026
 
 🟢 Possible race condition or something causing an issue trying to deploy roles. > No. 100th time. Set selected id. Switch Role. Never Assume it makes an... well you know.
