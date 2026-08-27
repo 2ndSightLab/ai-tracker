@@ -5,17 +5,17 @@ Fixed issues in fixed.md
 
 ## Issues
 
-🟡 IPAM Pool
-
-🟡 CloudTrail
-
 🟡 Ec2 Instances
 
 🟡 AMIs
 
 🟡 Ami share to OU
 
-🟡 Split KMS Key and Policy deployment so can deploy separately
+🟡 New account not deploying due to stopping other accounts on error - resolve manually.
+
+🟡 Added ECR not right - maybe deploying with wrong role
+
+🟡 All ec2 error handling
 
 ## Add
 
