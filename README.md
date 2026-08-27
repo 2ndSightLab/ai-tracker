@@ -19,7 +19,11 @@ This is just the particular configuration I'm tesing. The configuration supports
 ~~ Right now the reoprting below is a bit messed up so what is shown below is no longer accurate. I'll update it shortly. As explained on social media and in the details of the mistakes, fixed, and time tracking mds, I'm revamping the architecture to overcome some concurrency issues. I've pretty much fixed the concurrency issues and tracker diagram creation - though I have some slowness to address. Though it's "working" to some degree, I have to fix a role assumption issue (mfa v no mfa before trust policy is updated), diagram slowness, an eternal loop on certain resources, and the individual resource issues). More in mistakes.md. I'll update this hoepfully shortly.
 
 ```
-🟡 org: testorg
+=========================================
+ xxxxxxxx: Deploy Diagram
+=========================================
+
+🟡 org: xxxxxxxx
 |
 |     Organization Resources:
 |____ 🟢 Organization (xxxxxxxx)
@@ -28,7 +32,7 @@ This is just the particular configuration I'm tesing. The configuration supports
 |____ 🟢 SCP Deny Leave Org (xxxxxxxx)
 |____ 🟢 SCP Allowed Regions (xxxxxxxx)
 |
-|____ 🟡 env: manage
+|____ 🟢 env: manage
 |     |
 |     |     Environment Resources:
 |     |____ 🟢 OU (xxxxxxxx)
@@ -47,6 +51,8 @@ This is just the particular configuration I'm tesing. The configuration supports
 |     |     |____ 🟢 Oadmin role (xxxxxxxx)
 |     |     |____ 🟢 Account Budget (xxxxxxxx)
 |     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
+|     |     |
+|     |     |____ region: us-east-2
 |     |
 |     |____ 🟢 account: manage-kms
 |     |     |
@@ -64,8 +70,9 @@ This is just the particular configuration I'm tesing. The configuration supports
 |     |           |     Resources:
 |     |           |____ 🟢 KMS Secrets Key (xxxxxxxx)
 |     |           |____ 🟢 KMS Logs Key (xxxxxxxx)
+|     |           |____ 🟢 KMS Logs Key Policy (xxxxxxxx)
 |     |
-|     |____ 🟡 account: manage-security
+|     |____ 🟢 account: manage-security
 |     |     |
 |     |     |     Resources:
 |     |     |____ 🟢 Account (xxxxxxxx)
@@ -89,34 +96,14 @@ This is just the particular configuration I'm tesing. The configuration supports
 |     |           |____ 🟢 Delegate Detective admin (xxxxxxxx)
 |     |           |____ 🟢 Delegate Audit Manager admin (xxxxxxxx)
 |     |           |____ 🟢 Delegate Macie admin (xxxxxxxx)
-|     |           |____ 🔴 Configure GuardDuty (error)
-|     |           |     ↳ ERROR: tracker-diagram: ERROR: aws-deploy-resources: 
-|     |           |       /usr/local/share/projects/aws-deploy-resources/src/deploy-selected-resources.sh:137: resource 
-|     |           |       configure-guardduty was not deployed, its dependencies were never met: delegate-guardduty-admin | org=testorg | 
-|     |           |       env=manage | account=manage-security | action=deploy 
+|     |           |____ 🟢 Configure GuardDuty (xxxxxxxx)
 |     |           |____ 🟢 Configure Security Hub (xxxxxxxx)
-|     |           |____ 🔴 Configure CloudTrail (error)
-|     |           |     ↳ ERROR: tracker-diagram: ERROR: aws-deploy-resources: 
-|     |           |       /usr/local/share/projects/aws-deploy-resources/src/deploy-selected-resources.sh:137: resource 
-|     |           |       configure-cloudtrail was not deployed, its dependencies were never met: delegate-cloudtrail-admin | org=testorg | 
-|     |           |       env=manage | account=manage-security | action=deploy 
-|     |           |____ 🔴 Configure AWS Config (error)
-|     |           |     ↳ ERROR: tracker-diagram: ERROR: aws-deploy-resources: 
-|     |           |       /usr/local/share/projects/aws-deploy-resources/src/deploy-selected-resources.sh:137: resource 
-|     |           |       configure-aws-config was not deployed, its dependencies were never met: delegate-aws-config-admin | org=testorg | 
-|     |           |       env=manage | account=manage-security | action=deploy 
-|     |           |____ 🔴 Configure Macie (error)
-|     |           |     ↳ ERROR: tracker-diagram: ERROR: aws-deploy-resources: 
-|     |           |       /usr/local/share/projects/aws-deploy-resources/src/deploy-selected-resources.sh:137: resource 
-|     |           |       configure-macie was not deployed, its dependencies were never met: delegate-macie-admin | org=testorg | env=manage | 
-|     |           |       account=manage-security | action=deploy 
-|     |           |____ 🟡 Configure IAM Access Analyzer (xxxxxxxx)
-|     |           |____ 🟡 Configure Inspector (xxxxxxxx)
-|     |           |____ 🔴 Configure Security Alerts (error)
-|     |           |     ↳ ERROR: tracker-diagram: ERROR: aws-deploy-resources: 
-|     |           |       /usr/local/share/projects/aws-deploy-resources/src/deploy-selected-resources.sh:137: resource 
-|     |           |       configure-security-alerts was not deployed, its dependencies were never met: delegate-cloudtrail-admin 
-|     |           |       configure-cloudtrail configure-guardduty | org=testorg | env=manage | account=manage-security | action=deploy 
+|     |           |____ 🟢 Configure CloudTrail (xxxxxxxx)
+|     |           |____ 🟢 Configure AWS Config (xxxxxxxx)
+|     |           |____ 🟢 Configure Macie (xxxxxxxx)
+|     |           |____ 🟢 Configure IAM Access Analyzer (xxxxxxxx)
+|     |           |____ 🟢 Configure Inspector (xxxxxxxx)
+|     |           |____ 🟢 Configure Security Alerts (xxxxxxxx)
 |     |           |____ 🟢 S3 Log Bucket (xxxxxxxx)
 |     |           |____ 🟢 S3 Log Bucket Policy (xxxxxxxx)
 |     |
@@ -172,7 +159,8 @@ This is just the particular configuration I'm tesing. The configuration supports
 |     |           |____ 🟢 Delegate VPC Reachability Analyzer admin (xxxxxxxx)
 |     |           |____ 🟢 Delegate IPAM admin (xxxxxxxx)
 |     |           |____ 🟢 Delegate Firewall Manager admin (xxxxxxxx)
-|     |           |____ 🟡 IPAM (xxxxxxxx)
+|     |           |____ 🟢 IPAM (xxxxxxxx)
+|     |           |____ 🟢 IPAM pool (xxxxxxxx)
 |     |
 |     |____ 🟢 account: manage-kiro
 |           |
@@ -190,7 +178,7 @@ This is just the particular configuration I'm tesing. The configuration supports
 |                 |     Resources:
 |                 |____ 🟢 AWS Identity Center Instance (xxxxxxxx)
 |
-|____ 🟡 env: backup
+|____ 🟢 env: backup
 |     |
 |     |     Environment Resources:
 |     |____ 🟢 OU (xxxxxxxx)
@@ -224,14 +212,14 @@ This is just the particular configuration I'm tesing. The configuration supports
 |     |     |____ 🟢 Account Budget (xxxxxxxx)
 |     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
 |     |
-|     |____ 🟡 account: backup-admin
+|     |____ 🟢 account: backup-admin
 |     |     |
 |     |     |     Resources:
 |     |     |____ 🟢 Account (xxxxxxxx)
 |     |     |____ 🟢 Move account to OU (xxxxxxxx)
 |     |     |____ 🟢 Account alias (xxxxxxxx)
-|     |     |____ 🔴 Xadmin role
-|     |     |____ 🔴 Iadmin role
+|     |     |____ 🟢 Xadmin role (xxxxxxxx)
+|     |     |____ 🟢 Iadmin role (xxxxxxxx)
 |     |     |____ 🟢 Oadmin role (xxxxxxxx)
 |     |     |____ 🟢 Account Budget (xxxxxxxx)
 |     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
@@ -254,12 +242,11 @@ This is just the particular configuration I'm tesing. The configuration supports
 |           |____ 🟢 Account Budget (xxxxxxxx)
 |           |____ 🟢 Delete default VPCs (xxxxxxxx)
 |
-|____ 🟡 env: deny-all
+|____ 🟢 env: deny-all
 |     |
 |     |     Environment Resources:
 |     |____ 🟢 SCP Always Denied Actions (xxxxxxxx)
 |     |____ 🟢 OU (xxxxxxxx)
-|     |____ 🔴 SCP Deny External
 |
 |____ 🟡 env: work-test
       |
@@ -281,14 +268,14 @@ This is just the particular configuration I'm tesing. The configuration supports
       |     |____ 🟢 Account Budget (xxxxxxxx)
       |     |____ 🟢 Delete default VPCs (xxxxxxxx)
       |
-      |____ 🟡 account: work-test-kms
+      |____ 🟢 account: work-test-kms
       |     |
       |     |     Resources:
       |     |____ 🟢 Account (xxxxxxxx)
       |     |____ 🟢 Move account to OU (xxxxxxxx)
       |     |____ 🟢 Account alias (xxxxxxxx)
       |     |____ 🟢 Xadmin role (xxxxxxxx)
-      |     |____ 🔴 Iadmin role
+      |     |____ 🟢 Iadmin role (xxxxxxxx)
       |     |____ 🟢 Oadmin role (xxxxxxxx)
       |     |____ 🟢 Account Budget (xxxxxxxx)
       |     |____ 🟢 Delete default VPCs (xxxxxxxx)
@@ -297,8 +284,10 @@ This is just the particular configuration I'm tesing. The configuration supports
       |           |     Resources:
       |           |____ 🟢 KMS Jobs Key (xxxxxxxx)
       |           |____ 🟢 KMS Secrets Key (xxxxxxxx)
+      |           |____ 🟢 KMS AMI Key (xxxxxxxx)
+      |           |____ 🟢 KMS Extenal AMI Share Key (xxxxxxxx)
       |
-      |____ 🟡 account: work-test-network
+      |____ 🟢 account: work-test-network
       |     |
       |     |     Resources:
       |     |____ 🟢 Account (xxxxxxxx)
@@ -319,7 +308,6 @@ This is just the particular configuration I'm tesing. The configuration supports
       |           |____ 🟢 Honeypot VPC (xxxxxxxx)
       |           |____ 🟢 Jobs VPC (xxxxxxxx)
       |           |____ 🟢 Work VPC (xxxxxxxx)
-      |           |____ 🔴 IPAM pool
       |
       |____ 🟡 account: work-test-ami
       |     |
@@ -335,11 +323,27 @@ This is just the particular configuration I'm tesing. The configuration supports
       |     |
       |     |____ region: us-east-2
       |           |     Resources:
-      |           |____ 🔴 Base Amazon Linux AMI
-      |           |____ 🟢 Base Ubuntu AMI (xxxxxxxx)
-      |           |____ 🔴 Collab AMI
-      |           |____ 🔴 Share AMIs to OU
-      |           |____ 🔴 Share AMI
+      |           |____ 🔴 Base Amazon Linux AMI (error)
+      |           |     ↳ ERROR: aws-deploy-resources: 
+      |           |       /usr/local/share/projects/aws-deploy-resources/src/confirm-run-resource.sh:48: Base Amazon Linux AMI 
+      |           |       FAILED
+      |           |____ 🔴 Base Ubuntu AMI (error)
+      |           |     ↳ ERROR: aws-ec2: /usr/local/share/projects/aws-ec2/src/helpers/stop-ec2-instance.sh:8: 
+      |           |       EC2_STOP_INSTANCE_ID not set for base-ubuntu-ami. resolve the instance id before stopping it
+      |           |____ 🔴 Collab AMI (error)
+      |           |     ↳ ERROR: aws-deploy-resources: 
+      |           |       /usr/local/share/projects/aws-deploy-resources/src/deploy-selected-resources.sh:204: resource 
+      |           |       collab-ami was not deployed, its dependencies were never met: base-ubuntu-ami | org=savisec | env=work-test | 
+      |           |       account=work-test-ami | action=deploy 
+      |           |____ 🔴 Share AMIs to OU (error)
+      |           |     ↳ ERROR: aws-deploy-resources: 
+      |           |       /usr/local/share/projects/aws-deploy-resources/src/deploy-selected-resources.sh:204: resource 
+      |           |       share-amis-to-ou was not deployed, its dependencies were never met: base-amazon-linux-ami | org=savisec | 
+      |           |       env=work-test | account=work-test-ami | action=deploy 
+      |           |____ 🔴 Share AMI (error)
+      |           |     ↳ ERROR: aws-run-command: failed to populate 
+      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-share-ami/copy-image.json | called from 
+      |           |       /usr/local/share/projects/aws-ec2/src/helpers/resolve-ami-share-copy.sh:70
       |
       |____ 🟡 account: work-test-repo
       |     |
@@ -348,7 +352,7 @@ This is just the particular configuration I'm tesing. The configuration supports
       |     |____ 🟢 Move account to OU (xxxxxxxx)
       |     |____ 🟢 Account alias (xxxxxxxx)
       |     |____ 🟢 Xadmin role (xxxxxxxx)
-      |     |____ 🔴 Iadmin role
+      |     |____ 🟢 Iadmin role (xxxxxxxx)
       |     |____ 🟢 Oadmin role (xxxxxxxx)
       |     |____ 🟢 Account Budget (xxxxxxxx)
       |     |____ 🟢 Delete default VPCs (xxxxxxxx)
@@ -356,20 +360,88 @@ This is just the particular configuration I'm tesing. The configuration supports
       |     |____ region: us-east-2
       |           |     Resources:
       |           |____ 🟢 Code Commit Repository (xxxxxxxx)
+      |           |____ 🔴 ECR (error)
+      |           |     ↳ ERROR: aws-run-command: 
+      |           |       /usr/local/share/projects/aws-run-command/src/actions/helpers/run-aws-command.sh:201: An error 
+      |           |       occurred (KmsException) when calling the CreateRepository operation: The Amazon ECR action failed due to a KMS 
+      |           |       exception: User: arn:aws:sts::xxxxx:assumed-role/xxxxx/botocore-session-1787816296 is 
+      |           |       not authorized to perform: kms:DescribeKey on this resource because the resource does not exist in this 
+      |           |       Region, no resource-based policies allow access, or a resource-based policy explicitly denies access (Service: 
+      |           |       AWSKMS; Status Code: 400; Error Code: AccessDeniedException; Request ID: ; 
+      |           |       Proxy: null) | called from 
+      |           |       /usr/local/share/projects/aws-ecr/src/actions/helpers/deploy-ecr-repository.sh:xxxx: 
+      |           |       aws-ecr: /usr/local/share/projects/aws-ecr/src/actions/helpers/deploy-ecr-repository.sh:74: 
+      |           |       failed to create repo xxxxxxx. 
       |
       |____ 🟢 account: work-test-domains2
+      |     |
+      |     |     Resources:
+      |     |____ 🟢 Account (xxxxxxxx)
+      |     |____ 🟢 Move account to OU (xxxxxxxx)
+      |     |____ 🟢 Account alias (xxxxxxxx)
+      |     |____ 🟢 Xadmin role (xxxxxxxx)
+      |     |____ 🟢 Iadmin role (xxxxxxxx)
+      |     |____ 🟢 Oadmin role (xxxxxxxx)
+      |     |____ 🟢 Account Budget (xxxxxxxx)
+      |     |____ 🟢 Delete default VPCs (xxxxxxxx)
+      |
+      |____ 🟢 account: work-test-jobs
             |
             |     Resources:
             |____ 🟢 Account (xxxxxxxx)
-            |____ 🟢 Move account to OU (xxxxxxxx)
-            |____ 🟢 Account alias (xxxxxxxx)
-            |____ 🟢 Xadmin role (xxxxxxxx)
-            |____ 🟢 Iadmin role (xxxxxxxx)
-            |____ 🟢 Oadmin role (xxxxxxxx)
-            |____ 🟢 Account Budget (xxxxxxxx)
-            |____ 🟢 Delete default VPCs (xxxxxxxx)
+            |____ 🔴 Move account to OU
+            |____ 🔴 Account alias
+            |____ 🔴 Xadmin role
+            |____ 🔴 Iadmin role
+            |____ 🔴 Oadmin role
+            |____ 🔴 Account Budget
+            |____ 🔴 Delete default VPCs
 
-[erorr queue / dead letter queue]
+=========================================
+ xxxxxxxx: All Errors
+=========================================
+
+🟡 org: xxxxxxxx (xxxxxxxx)
+|
+|     All Errors (every level):
+|     |____ 🔴 aws-deploy-resources (error)
+|           ↳ ERROR: aws-deploy-resources: 
+|             /usr/local/share/projects/aws-deploy-resources/src/deploy-selected-resources.sh:217: parallel-processor 
+|             failed for the selected resources  | org=savisec | env=work-test | account=work-test-repo | action=deploy | resources=ecr 
+|             account-alias xadmin-role iadmin-role oadmin-role account-budget delete-default-vpcs 
+|     |____ 🔴 base-amazon-linux-ami (error)
+|           ↳ ERROR: aws-deploy-resources: /usr/local/share/projects/aws-deploy-resources/src/confirm-run-resource.sh:48: 
+|             Base Amazon Linux AMI FAILED
+|     |____ 🔴 base-ubuntu-ami (error)
+|           ↳ ERROR: aws-ec2: /usr/local/share/projects/aws-ec2/src/helpers/stop-ec2-instance.sh:8: EC2_STOP_INSTANCE_ID 
+|             not set for base-ubuntu-ami. resolve the instance id before stopping it
+|     |____ 🔴 collab-ami (error)
+|           ↳ ERROR: aws-deploy-resources: 
+|             /usr/local/share/projects/aws-deploy-resources/src/deploy-selected-resources.sh:204: resource collab-ami was not 
+|             deployed, its dependencies were never met: base-ubuntu-ami | org=savisec | env=work-test | account=work-test-ami | 
+|             action=deploy 
+|     |____ 🔴 share-amis-to-ou (error)
+|           ↳ ERROR: aws-deploy-resources: 
+|             /usr/local/share/projects/aws-deploy-resources/src/deploy-selected-resources.sh:204: resource share-amis-to-ou 
+|             was not deployed, its dependencies were never met: base-amazon-linux-ami | org=savisec | env=work-test | 
+|             account=work-test-ami | action=deploy 
+|     |____ 🔴 share-ami (error)
+|           ↳ ERROR: aws-run-command: failed to populate 
+|             /usr/local/share/projects/aws-ec2-config/config/deploy-share-ami/copy-image.json | called from 
+|             /usr/local/share/projects/aws-ec2/src/helpers/resolve-ami-share-copy.sh:70
+|     |____ 🔴 ecr (error)
+|           ↳ ERROR: aws-run-command: 
+|             /usr/local/share/projects/aws-run-command/src/actions/helpers/run-aws-command.sh:201: aws ecr create-repository 
+|            ...
+
+=========================================
+ xxxxxxxx: Skipped Resources
+=========================================
+
+|
+|     Skipped Resources (configured to be skipped):
+|     |____ INFO: Resource skipped as configured: xxxxxxxx/deny-all/scp-deny-external
+
 ```
 
 ## Status Summary
