@@ -16,7 +16,8 @@ Track how long it takes and how much it costs to create projects with AI 🤖 in
 
 This is just the particular configuration I'm tesing. The configuration supports any AWS resources and account structure.
 
-~~ Right now the reoprting below is a bit messed up so what is shown below is no longer accurate. I'll update it shortly. As explained on social media and in the details of the mistakes, fixed, and time tracking mds, I'm revamping the architecture to overcome some concurrency issues. I've pretty much fixed the concurrency issues and tracker diagram creation - though I have some slowness to address. Though it's "working" to some degree, I have to fix a role assumption issue (mfa v no mfa before trust policy is updated), diagram slowness, an eternal loop on certain resources, and the individual resource issues). More in mistakes.md. I'll update this hoepfully shortly.
+Up to the point of finalizing my job infrastructure. Need to retest deploying whole org from scratch.
+
 
 ```
 =========================================
@@ -333,12 +334,12 @@ This is just the particular configuration I'm tesing. The configuration supports
       |           |____ 🔴 Collab AMI (error)
       |           |     ↳ ERROR: aws-deploy-resources: 
       |           |       /usr/local/share/projects/aws-deploy-resources/src/deploy-selected-resources.sh:204: resource 
-      |           |       collab-ami was not deployed, its dependencies were never met: base-ubuntu-ami | org=savisec | env=work-test | 
+      |           |       collab-ami was not deployed, its dependencies were never met: base-ubuntu-ami | org= | env=work-test | 
       |           |       account=work-test-ami | action=deploy 
       |           |____ 🔴 Share AMIs to OU (error)
       |           |     ↳ ERROR: aws-deploy-resources: 
       |           |       /usr/local/share/projects/aws-deploy-resources/src/deploy-selected-resources.sh:204: resource 
-      |           |       share-amis-to-ou was not deployed, its dependencies were never met: base-amazon-linux-ami | org=savisec | 
+      |           |       share-amis-to-ou was not deployed, its dependencies were never met: base-amazon-linux-ami | org= | 
       |           |       env=work-test | account=work-test-ami | action=deploy 
       |           |____ 🔴 Share AMI (error)
       |           |     ↳ ERROR: aws-run-command: failed to populate 
@@ -407,7 +408,7 @@ This is just the particular configuration I'm tesing. The configuration supports
 |     |____ 🔴 aws-deploy-resources (error)
 |           ↳ ERROR: aws-deploy-resources: 
 |             /usr/local/share/projects/aws-deploy-resources/src/deploy-selected-resources.sh:217: parallel-processor 
-|             failed for the selected resources  | org=savisec | env=work-test | account=work-test-repo | action=deploy | resources=ecr 
+|             failed for the selected resources  | org= | env=work-test | account=work-test-repo | action=deploy | resources=ecr 
 |             account-alias xadmin-role iadmin-role oadmin-role account-budget delete-default-vpcs 
 |     |____ 🔴 base-amazon-linux-ami (error)
 |           ↳ ERROR: aws-deploy-resources: /usr/local/share/projects/aws-deploy-resources/src/confirm-run-resource.sh:48: 
@@ -418,12 +419,12 @@ This is just the particular configuration I'm tesing. The configuration supports
 |     |____ 🔴 collab-ami (error)
 |           ↳ ERROR: aws-deploy-resources: 
 |             /usr/local/share/projects/aws-deploy-resources/src/deploy-selected-resources.sh:204: resource collab-ami was not 
-|             deployed, its dependencies were never met: base-ubuntu-ami | org=savisec | env=work-test | account=work-test-ami | 
+|             deployed, its dependencies were never met: base-ubuntu-ami | org= | env=work-test | account=work-test-ami | 
 |             action=deploy 
 |     |____ 🔴 share-amis-to-ou (error)
 |           ↳ ERROR: aws-deploy-resources: 
 |             /usr/local/share/projects/aws-deploy-resources/src/deploy-selected-resources.sh:204: resource share-amis-to-ou 
-|             was not deployed, its dependencies were never met: base-amazon-linux-ami | org=savisec | env=work-test | 
+|             was not deployed, its dependencies were never met: base-amazon-linux-ami | org= | env=work-test | 
 |             account=work-test-ami | action=deploy 
 |     |____ 🔴 share-ami (error)
 |           ↳ ERROR: aws-run-command: failed to populate 
