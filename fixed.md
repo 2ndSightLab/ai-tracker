@@ -22,7 +22,11 @@ Only two things left to fix. It almost went completely off the rails again but I
 
 🟢 CloudTrail
 
-🟢 New account for jobs
+🟢 New account for jobs (acct deployed other stuff is blocked by one var/gate)
+
+🟢 Added ECR to configuration (deploy in progress)
+
+🟢 Moved IPAM Pool to correct account in config and redeployed
 
 🟢 Remove stuff from old locations in tracker diagram when moved in configuration (to match)
 
