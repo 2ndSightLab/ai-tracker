@@ -16,7 +16,9 @@ Track how long it takes and how much it costs to create projects with AI 🤖 in
 
 This is just the particular configuration I'm tesing. The configuration supports any AWS resources and account structure.
 
-Up to the point of finalizing my job infrastructure. Need to retest deploying whole org from scratch.
+Up to the point of finalizing my job infrastructure. 
+
+Now that the system is basically runnign this POC will be converted to a microservices architecture of sorts. And that is a topif for another day.
 
 
 ```
