@@ -24,6 +24,7 @@ Fixed issues in fixed.md
       }                                                                                                                 
 }
 
+the telemetry flags live in ~/.claude/settings.json env
 
 🟡 Open up SCP to SSM get param to use this:
 
