@@ -7,8 +7,6 @@ Fixed issues in fixed.md
 
 🟡 SSH key
 
-🟡 SSH secret
-
 🟡 KMS key policies not allowing whole env
 
 🟡 Secrets key not restricted to secrets manager
