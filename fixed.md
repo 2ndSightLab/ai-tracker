@@ -14,6 +14,14 @@ Also, the model is really bad at figuring out which role to assume. Time to logi
 
 Only two things left to fix. It almost went completely off the rails again but I had a recent backup and restored.
 
+🟢 KMS key policies not allowing whole env
+
+🟢 Secrets key not restricted to secrets manager
+
+🟢 Added ECR - issues with KMS key policy
+
+🟢 SSH secret - issues with KMS key policy
+
 🟢 Account was moved to a different ou and account and ou jobs not handling that correctly
 
 🟢 All kms error handling
