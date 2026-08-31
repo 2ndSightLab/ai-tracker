@@ -6,13 +6,13 @@ Fixed issues in fixed.md
 ## Issues
 
 🟡 Just realized need depedendency types at ORG level.
-   > copy dependenty file from default org
-   > add aility to edit it
-   > deploy project needs to use it
-   > make sure dep on resource ids not types
+   - copy dependenty file from default org
+   - add aility to edit it
+   - deploy project needs to use it
+   - make sure dep on resource ids not types
 
 🟡 Add individual network resources with correct types.
-   > need vpc, etc. in ami account to complete ami deployment
+   - need vpc, etc. in ami account to complete ami deployment
 
 🟡 Open up SCP to SSM get param to use this:
 
