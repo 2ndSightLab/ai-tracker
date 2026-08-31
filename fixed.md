@@ -14,6 +14,8 @@ Also, the model is really bad at figuring out which role to assume. Time to logi
 
 Only two things left to fix. It almost went completely off the rails again but I had a recent backup and restored.
 
+🟢 SSH key
+
 🟢 KMS key policies not allowing whole env
 
 🟢 Secrets key not restricted to secrets manager
