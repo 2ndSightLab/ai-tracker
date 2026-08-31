@@ -5,11 +5,13 @@ Fixed issues in fixed.md
 
 ## Issues
 
-🟡 Just realized need depedendency types at ORG level.
-   - copy dependenty file from default org
-   - add aility to edit it
-   - deploy project needs to use it
-   - make sure dep on resource ids not types
+🟡 AWS type depedencies configuration
+
+🟡 Org config id dependencies configuration
+
+🟡 Dependency validator that flags dependency errors based on AWS dependency file
+
+🟡 Change dependency file in deployer to point to org dependencies
 
 🟡 Add individual network resources with correct types.
    - need vpc, etc. in ami account to complete ami deployment
