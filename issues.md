@@ -5,10 +5,6 @@ Fixed issues in fixed.md
 
 ## Issues
 
-🟡 AWS type depedencies configuration
-
-🟡 Org config id dependencies configuration
-
 🟡 Dependency validator that flags dependency errors based on AWS dependency file
 
 🟡 Change dependency file in deployer to point to org dependencies
