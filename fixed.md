@@ -4,6 +4,16 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
+## 9/1/2026 - 12:52 AM
+
+Not sure why it took me so long to figure this out or make the neccessary chnage. Major XML restructuring but minimal changes otherwise.
+
+Dependencies need to be on the config ids for individual resources, not their types. Separately I added a dependency tree for AWS resources. haven't added that validation yet but moved the data over.
+
+🟢 AWS type depedencies configuration
+
+🟢 Org config id dependencies configuration
+
 ## 8/26/2026 - 4:33 PM
 
 Been going in circles. 75% of my plan used up. What plan. The whole plan? A weekly plan? A session? A month? I'm so confused.
