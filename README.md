@@ -29,7 +29,7 @@ Now that the system is basically runnign this POC will be converted to a microse
 🟡 org: xxxxxxxx
 |
 |     Organization Resources:
-|____ 🟢 savisec (xxxxxxxx)
+|____ 🟢 xxxxxxxx (xxxxxxxx)
 |____ 🟢 Enable All Features (xxxxxxxx)
 |____ 🟢 SCP Require IMDSv2 (xxxxxxxx)
 |____ 🟢 SCP Deny Leave Org (xxxxxxxx)
