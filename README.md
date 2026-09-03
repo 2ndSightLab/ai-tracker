@@ -636,34 +636,7 @@ Now that the system is basically runnign this POC will be converted to a microse
 🟡 org: xxxxxxxx (xxxxxxxx)
 |
 |     All Errors (every level):
-|     |____ 🔴 aws-deploy-resources (error)
-|           ↳ ERROR: aws-deploy-resources: 
-|             /usr/local/share/projects/aws-deploy-resources/src/deploy-selected-resources.sh:217: parallel-processor 
-|             failed for the selected resources  | org= | env=work-test | account=work-test-repo | action=deploy | resources=ecr 
-|             account-alias xadmin-role iadmin-role oadmin-role account-budget delete-default-vpcs 
-|     |____ 🔴 base-amazon-linux-ami (error)
-|           ↳ ERROR: aws-deploy-resources: /usr/local/share/projects/aws-deploy-resources/src/confirm-run-resource.sh:48: 
-|             Base Amazon Linux AMI FAILED
-|     |____ 🔴 base-ubuntu-ami (error)
-|           ↳ ERROR: aws-ec2: /usr/local/share/projects/aws-ec2/src/helpers/stop-ec2-instance.sh:8: EC2_STOP_INSTANCE_ID 
-|             not set for base-ubuntu-ami. resolve the instance id before stopping it
-|     |____ 🔴 collab-ami (error)
-|           ↳ ERROR: aws-deploy-resources: 
-|             /usr/local/share/projects/aws-deploy-resources/src/deploy-selected-resources.sh:204: resource collab-ami was not 
-|             deployed, its dependencies were never met: base-ubuntu-ami | org= | env=work-test | account=work-test-ami | 
-|             action=deploy 
-|     |____ 🔴 share-amis-to-ou (error)
-|           ↳ ERROR: aws-deploy-resources: 
-|             /usr/local/share/projects/aws-deploy-resources/src/deploy-selected-resources.sh:204: resource share-amis-to-ou 
-|             was not deployed, its dependencies were never met: base-amazon-linux-ami | org= | env=work-test | 
-|             account=work-test-ami | action=deploy 
-|     |____ 🔴 share-ami (error)
-|           ↳ ERROR: aws-run-command: failed to populate 
-|             /usr/local/share/projects/aws-ec2-config/config/deploy-share-ami/copy-image.json | called from 
-|             /usr/local/share/projects/aws-ec2/src/helpers/resolve-ami-share-copy.sh:70
-|     |____ 🔴 ecr (error)
-|           ↳ ERROR: aws-run-command: 
-|             /usr/local/share/projects/aws-run-command/src/actions/helpers/run-aws-command.sh:201: aws ecr create-repository 
+|     |____ 🔴 ...
 |            ...
 
 =========================================
