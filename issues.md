@@ -5,7 +5,7 @@ Fixed issues in fixed.md
 
 ## Issues
 
-🟡 Delete invalid entries in the XML validator - user has option to delete after reviewing
+🟡 Delete invalid entries in the XML validator - user has option to delete after reviewing - regional nodes at global account level need to be removed.
 
 🟡 Force redeploy a specific node (one that is green)
 
