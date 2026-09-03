@@ -29,7 +29,7 @@ Now that the system is basically runnign this POC will be converted to a microse
 🟡 org: xxxxxxxx
 |
 |     Organization Resources:
-|____ 🟢 Organization (xxxxxxxx)
+|____ 🟢 savisec (xxxxxxxx)
 |____ 🟢 Enable All Features (xxxxxxxx)
 |____ 🟢 SCP Require IMDSv2 (xxxxxxxx)
 |____ 🟢 SCP Deny Leave Org (xxxxxxxx)
@@ -38,13 +38,13 @@ Now that the system is basically runnign this POC will be converted to a microse
 |____ 🟢 env: manage
 |     |
 |     |     Environment Resources:
-|     |____ 🟢 OU (xxxxxxxx)
+|     |____ 🟢 manage (xxxxxxxx)
 |     |____ 🟢 SCP Deny External (xxxxxxxx)
 |     |
 |     |____ 🟢 account: manage-iam
 |     |     |
 |     |     |     Resources:
-|     |     |____ 🟢 Account (xxxxxxxx)
+|     |     |____ 🟢 manage-iam (xxxxxxxx)
 |     |     |____ 🟢 Iadmin user (xxxxxxxx)
 |     |     |____ 🟢 Xadmin user (xxxxxxxx)
 |     |     |____ 🟢 Move account to OU (xxxxxxxx)
@@ -52,7 +52,10 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |     |____ 🟢 Xadmin role (xxxxxxxx)
 |     |     |____ 🟢 Iadmin role (xxxxxxxx)
 |     |     |____ 🟢 Oadmin role (xxxxxxxx)
-|     |     |____ 🟢 Account Budget (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
 |     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
 |     |     |
 |     |     |____ region: us-east-2
@@ -60,13 +63,16 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |____ 🟢 account: manage-kms
 |     |     |
 |     |     |     Resources:
-|     |     |____ 🟢 Account (xxxxxxxx)
+|     |     |____ 🟢 manage-kms (xxxxxxxx)
 |     |     |____ 🟢 Move account to OU (xxxxxxxx)
 |     |     |____ 🟢 Account alias (xxxxxxxx)
 |     |     |____ 🟢 Xadmin role (xxxxxxxx)
 |     |     |____ 🟢 Iadmin role (xxxxxxxx)
 |     |     |____ 🟢 Oadmin role (xxxxxxxx)
-|     |     |____ 🟢 Account Budget (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
 |     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
 |     |     |
 |     |     |____ region: us-east-2
@@ -78,13 +84,16 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |____ 🟢 account: manage-security
 |     |     |
 |     |     |     Resources:
-|     |     |____ 🟢 Account (xxxxxxxx)
+|     |     |____ 🟢 manage-security (xxxxxxxx)
 |     |     |____ 🟢 Move account to OU (xxxxxxxx)
 |     |     |____ 🟢 Account alias (xxxxxxxx)
 |     |     |____ 🟢 Xadmin role (xxxxxxxx)
 |     |     |____ 🟢 Iadmin role (xxxxxxxx)
 |     |     |____ 🟢 Oadmin role (xxxxxxxx)
-|     |     |____ 🟢 Account Budget (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
 |     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
 |     |     |
 |     |     |____ region: us-east-2
@@ -113,14 +122,17 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |____ 🟢 account: manage-org
 |     |     |
 |     |     |     Resources:
-|     |     |____ 🟢 Account (xxxxxxxx)
+|     |     |____ 🟢 manage-org (xxxxxxxx)
 |     |     |____ 🟢 Org resource policy (xxxxxxxx)
 |     |     |____ 🟢 Move account to OU (xxxxxxxx)
 |     |     |____ 🟢 Account alias (xxxxxxxx)
 |     |     |____ 🟢 Xadmin role (xxxxxxxx)
 |     |     |____ 🟢 Iadmin role (xxxxxxxx)
 |     |     |____ 🟢 Oadmin role (xxxxxxxx)
-|     |     |____ 🟢 Account Budget (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
 |     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
 |     |     |
 |     |     |____ region: us-east-2
@@ -130,13 +142,16 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |____ 🟢 account: manage-accounting
 |     |     |
 |     |     |     Resources:
-|     |     |____ 🟢 Account (xxxxxxxx)
+|     |     |____ 🟢 manage-accounting (xxxxxxxx)
 |     |     |____ 🟢 Move account to OU (xxxxxxxx)
 |     |     |____ 🟢 Account alias (xxxxxxxx)
 |     |     |____ 🟢 Xadmin role (xxxxxxxx)
 |     |     |____ 🟢 Iadmin role (xxxxxxxx)
 |     |     |____ 🟢 Oadmin role (xxxxxxxx)
-|     |     |____ 🟢 Account Budget (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
 |     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
 |     |     |
 |     |     |____ region: us-east-2
@@ -147,13 +162,16 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |____ 🟢 account: manage-ipam
 |     |     |
 |     |     |     Resources:
-|     |     |____ 🟢 Account (xxxxxxxx)
+|     |     |____ 🟢 manage-ipam (xxxxxxxx)
 |     |     |____ 🟢 Move account to OU (xxxxxxxx)
 |     |     |____ 🟢 Account alias (xxxxxxxx)
 |     |     |____ 🟢 Xadmin role (xxxxxxxx)
 |     |     |____ 🟢 Iadmin role (xxxxxxxx)
 |     |     |____ 🟢 Oadmin role (xxxxxxxx)
-|     |     |____ 🟢 Account Budget (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
 |     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
 |     |     |
 |     |     |____ region: us-east-2
@@ -168,13 +186,16 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |____ 🟢 account: manage-kiro
 |           |
 |           |     Resources:
-|           |____ 🟢 Account (xxxxxxxx)
+|           |____ 🟢 manage-kiro (xxxxxxxx)
 |           |____ 🟢 Move account to OU (xxxxxxxx)
 |           |____ 🟢 Account alias (xxxxxxxx)
 |           |____ 🟢 Xadmin role (xxxxxxxx)
 |           |____ 🟢 Iadmin role (xxxxxxxx)
 |           |____ 🟢 Oadmin role (xxxxxxxx)
-|           |____ 🟢 Account Budget (xxxxxxxx)
+|           |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
+|           |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
+|           |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
+|           |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
 |           |____ 🟢 Delete default VPCs (xxxxxxxx)
 |           |
 |           |____ region: us-east-2
@@ -184,19 +205,22 @@ Now that the system is basically runnign this POC will be converted to a microse
 |____ 🟢 env: backup
 |     |
 |     |     Environment Resources:
-|     |____ 🟢 OU (xxxxxxxx)
+|     |____ 🟢 backup (xxxxxxxx)
 |     |____ 🟢 SCP Deny External (xxxxxxxx)
 |     |
 |     |____ 🟢 account: backup-work-test
 |     |     |
 |     |     |     Resources:
-|     |     |____ 🟢 Account (xxxxxxxx)
+|     |     |____ 🟢 backup-work-test (xxxxxxxx)
 |     |     |____ 🟢 Move account to OU (xxxxxxxx)
 |     |     |____ 🟢 Account alias (xxxxxxxx)
 |     |     |____ 🟢 Xadmin role (xxxxxxxx)
 |     |     |____ 🟢 Iadmin role (xxxxxxxx)
 |     |     |____ 🟢 Oadmin role (xxxxxxxx)
-|     |     |____ 🟢 Account Budget (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
 |     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
 |     |     |
 |     |     |____ region: us-east-2
@@ -206,25 +230,33 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |____ 🟢 account: backup-manage
 |     |     |
 |     |     |     Resources:
-|     |     |____ 🟢 Account (xxxxxxxx)
+|     |     |____ 🟢 backup-manage (xxxxxxxx)
 |     |     |____ 🟢 Move account to OU (xxxxxxxx)
 |     |     |____ 🟢 Account alias (xxxxxxxx)
 |     |     |____ 🟢 Xadmin role (xxxxxxxx)
 |     |     |____ 🟢 Iadmin role (xxxxxxxx)
 |     |     |____ 🟢 Oadmin role (xxxxxxxx)
-|     |     |____ 🟢 Account Budget (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
 |     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
+|     |     |
+|     |     |____ region: us-east-2
 |     |
 |     |____ 🟢 account: backup-admin
 |     |     |
 |     |     |     Resources:
-|     |     |____ 🟢 Account (xxxxxxxx)
+|     |     |____ 🟢 backup-admin (xxxxxxxx)
 |     |     |____ 🟢 Move account to OU (xxxxxxxx)
 |     |     |____ 🟢 Account alias (xxxxxxxx)
 |     |     |____ 🟢 Xadmin role (xxxxxxxx)
 |     |     |____ 🟢 Iadmin role (xxxxxxxx)
 |     |     |____ 🟢 Oadmin role (xxxxxxxx)
-|     |     |____ 🟢 Account Budget (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
 |     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
 |     |     |
 |     |     |____ region: us-east-2
@@ -234,7 +266,7 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |____ 🟢 account: backup-iam
 |           |
 |           |     Resources:
-|           |____ 🟢 Account (xxxxxxxx)
+|           |____ 🟢 backup-iam (xxxxxxxx)
 |           |____ 🟢 Iadmin user (xxxxxxxx)
 |           |____ 🟢 Xadmin user (xxxxxxxx)
 |           |____ 🟢 Move account to OU (xxxxxxxx)
@@ -242,25 +274,31 @@ Now that the system is basically runnign this POC will be converted to a microse
 |           |____ 🟢 Xadmin role (xxxxxxxx)
 |           |____ 🟢 Iadmin role (xxxxxxxx)
 |           |____ 🟢 Oadmin role (xxxxxxxx)
-|           |____ 🟢 Account Budget (xxxxxxxx)
+|           |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
+|           |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
+|           |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
+|           |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
 |           |____ 🟢 Delete default VPCs (xxxxxxxx)
+|           |
+|           |____ region: us-east-2
 |
 |____ 🟢 env: deny-all
 |     |
 |     |     Environment Resources:
+|     |____ 🟢 deny-all (xxxxxxxx)
+|     |____ 🟢 SCP Deny All (xxxxxxxx)
 |     |____ 🟢 SCP Always Denied Actions (xxxxxxxx)
-|     |____ 🟢 OU (xxxxxxxx)
 |
 |____ 🟡 env: work-test
       |
       |     Environment Resources:
-      |____ 🟢 OU (xxxxxxxx)
+      |____ 🟢 work-test (xxxxxxxx)
       |____ 🟢 SCP Deny External (xxxxxxxx)
       |
       |____ 🟢 account: work-test-iam
       |     |
       |     |     Resources:
-      |     |____ 🟢 Account (xxxxxxxx)
+      |     |____ 🟢 work-test-iam (xxxxxxxx)
       |     |____ 🟢 Iadmin user (xxxxxxxx)
       |     |____ 🟢 Xadmin user (xxxxxxxx)
       |     |____ 🟢 Move account to OU (xxxxxxxx)
@@ -268,19 +306,27 @@ Now that the system is basically runnign this POC will be converted to a microse
       |     |____ 🟢 Xadmin role (xxxxxxxx)
       |     |____ 🟢 Iadmin role (xxxxxxxx)
       |     |____ 🟢 Oadmin role (xxxxxxxx)
-      |     |____ 🟢 Account Budget (xxxxxxxx)
+      |     |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
+      |     |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
+      |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
+      |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
       |     |____ 🟢 Delete default VPCs (xxxxxxxx)
+      |     |
+      |     |____ region: us-east-2
       |
       |____ 🟢 account: work-test-kms
       |     |
       |     |     Resources:
-      |     |____ 🟢 Account (xxxxxxxx)
+      |     |____ 🟢 work-test-kms (xxxxxxxx)
       |     |____ 🟢 Move account to OU (xxxxxxxx)
       |     |____ 🟢 Account alias (xxxxxxxx)
       |     |____ 🟢 Xadmin role (xxxxxxxx)
       |     |____ 🟢 Iadmin role (xxxxxxxx)
       |     |____ 🟢 Oadmin role (xxxxxxxx)
-      |     |____ 🟢 Account Budget (xxxxxxxx)
+      |     |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
+      |     |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
+      |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
+      |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
       |     |____ 🟢 Delete default VPCs (xxxxxxxx)
       |     |
       |     |____ region: us-east-2
@@ -289,17 +335,28 @@ Now that the system is basically runnign this POC will be converted to a microse
       |           |____ 🟢 KMS Secrets Key (xxxxxxxx)
       |           |____ 🟢 KMS AMI Key (xxxxxxxx)
       |           |____ 🟢 KMS Extenal AMI Share Key (xxxxxxxx)
+      |           |____ 🟢 KMS AMI Key Policy (xxxxxxxx)
+      |           |____ 🟢 KMS Extenal AMI Share Key Policy (xxxxxxxx)
+      |           |____ 🟢 KMS Jobs Key Policy (xxxxxxxx)
+      |           |____ 🟢 KMS Secrets Key Policy (xxxxxxxx)
       |
-      |____ 🟢 account: work-test-network
+      |____ 🟡 account: work-test-network
       |     |
       |     |     Resources:
-      |     |____ 🟢 Account (xxxxxxxx)
+      |     |____ 🟢 work-test-network (xxxxxxxx)
+      |     |____ 🔴 Work VPC Public Route Table
+      |     |____ 🔴 Work VPC Public Route
+      |     |____ 🔴 Work VPC Public Flow Logs
+      |     |____ 🔴 Work VPC Public Network ACL
       |     |____ 🟢 Move account to OU (xxxxxxxx)
       |     |____ 🟢 Account alias (xxxxxxxx)
       |     |____ 🟢 Xadmin role (xxxxxxxx)
       |     |____ 🟢 Iadmin role (xxxxxxxx)
       |     |____ 🟢 Oadmin role (xxxxxxxx)
-      |     |____ 🟢 Account Budget (xxxxxxxx)
+      |     |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
+      |     |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
+      |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
+      |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
       |     |____ 🟢 Delete default VPCs (xxxxxxxx)
       |     |
       |     |____ region: us-east-2
@@ -311,94 +368,266 @@ Now that the system is basically runnign this POC will be converted to a microse
       |           |____ 🟢 Honeypot VPC (xxxxxxxx)
       |           |____ 🟢 Jobs VPC (xxxxxxxx)
       |           |____ 🟢 Work VPC (xxxxxxxx)
+      |           |____ 🟢 Jobs VPC Public Subnet (xxxxxxxx)
+      |           |____ 🟢 HTTP-S Out Security Group (xxxxxxxx)
+      |           |____ 🟢 Remote Access Security Group (xxxxxxxx)
+      |           |____ 🟢 Auth VPC Public Subnet (xxxxxxxx)
+      |           |____ 🟢 Backup VPC Private Subnet (xxxxxxxx)
+      |           |____ 🟢 Jobs VPC Route Table (xxxxxxxx)
+      |           |____ 🟢 Auth VPC Route Table (xxxxxxxx)
+      |           |____ 🟢 Work VPC Route Table (xxxxxxxx)
+      |           |____ 🟢 Honeypot VPC Route Table (xxxxxxxx)
+      |           |____ 🟢 Backup VPC Route Table (xxxxxxxx)
+      |           |____ 🟢 Jobs VPC Public Route Table (xxxxxxxx)
+      |           |____ 🟢 Jobs VPC Public Flow Logs (xxxxxxxx)
+      |           |____ 🟢 Jobs VPC Public Network ACL (xxxxxxxx)
+      |           |____ 🟢 Auth VPC Public Route Table (xxxxxxxx)
+      |           |____ 🟢 Auth VPC Public Flow Logs (xxxxxxxx)
+      |           |____ 🟢 Auth VPC Public Network ACL (xxxxxxxx)
+      |           |____ 🟢 Auth VPC HTTP-S Out Security Group (xxxxxxxx)
+      |           |____ 🟢 Auth VPC SSH In Security Group (xxxxxxxx)
+      |           |____ 🟢 Jobs VPC HTTP Out (xxxxxxxx)
+      |           |____ 🟢 Jobs VPC HTTPS Out (xxxxxxxx)
+      |           |____ 🟢 Jobs VPC RDP In (xxxxxxxx)
+      |           |____ 🟢 Auth VPC RDP In Security Group (xxxxxxxx)
+      |           |____ 🟡 Work VPC Public Subnet (error)
+      |           |     ↳ ERROR: aws-ec2: /usr/local/share/projects/aws-ec2/src/helpers/lookup-vpc-id.sh:82: 0 vpcs 
+      |           |       match /usr/local/share/projects/aws-ec2-config/config/deploy-subnet/describe-vpcs.json in 
+      |           |       work-test-network us-east-2. exactly one must match AWS RESPONSE: an empty list
+      |           |____ 🟢 Jobs VPC SSH In (xxxxxxxx)
+      |           |____ 🟢 Work VPC HTTP Out (xxxxxxxx)
+      |           |____ 🟢 Work VPC HTTPS Out (xxxxxxxx)
+      |           |____ 🟢 Work VPC RDP In (xxxxxxxx)
+      |           |____ 🟢 Work VPC SSH In (xxxxxxxx)
+      |           |____ 🟢 Honeypot VPC Public Subnet (xxxxxxxx)
+      |           |____ 🟢 Honeypot VPC HTTP-S Out Security Group (xxxxxxxx)
+      |           |____ 🟢 Honeypot VPC SSH In Security Group (xxxxxxxx)
+      |           |____ 🟢 Honeypot VPC RDP In Security Group (xxxxxxxx)
+      |           |____ 🟢 Backup VPC Public Subnet (xxxxxxxx)
+      |           |____ 🟢 Jobs VPC HTTP-S Out Security Group (xxxxxxxx)
+      |           |____ 🟢 Jobs VPC Internet Gateway (xxxxxxxx)
+      |           |____ 🟢 Jobs VPC RDP In Security Group (xxxxxxxx)
+      |           |____ 🟢 Jobs VPC SSH In Security Group (xxxxxxxx)
+      |           |____ 🟢 Work VPC HTTP-S Out Security Group (xxxxxxxx)
+      |           |____ 🟢 Work VPC RDP In Security Group (xxxxxxxx)
+      |           |____ 🟢 Work VPC SSH In Security Group (xxxxxxxx)
+      |           |____ 🟢 Backup VPC HTTP Out (xxxxxxxx)
+      |           |____ 🟢 Backup VPC HTTPS Out (xxxxxxxx)
+      |           |____ 🟢 Backup VPC RDP In (xxxxxxxx)
+      |           |____ 🟢 Backup VPC SSH In (xxxxxxxx)
+      |           |____ 🟢 Backup VPC HTTP-S Out Security Group (xxxxxxxx)
+      |           |____ 🟢 Backup VPC RDP In Security Group (xxxxxxxx)
+      |           |____ 🟢 Backup VPC SSH In Security Group (xxxxxxxx)
+      |           |____ 🟢 Jobs VPC Public Route (xxxxxxxx)
+      |           |____ 🟢 Auth VPC Internet Gateway (xxxxxxxx)
+      |           |____ 🟢 Work VPC Internet Gateway (xxxxxxxx)
+      |           |____ 🟢 Honeypot VPC Internet Gateway (xxxxxxxx)
+      |           |____ 🟢 Backup VPC Internet Gateway (xxxxxxxx)
+      |           |____ 🟢 Auth VPC HTTP Out (xxxxxxxx)
+      |           |____ 🟢 Auth VPC HTTPS Out (xxxxxxxx)
+      |           |____ 🟢 Auth VPC RDP In (xxxxxxxx)
+      |           |____ 🟢 Auth VPC SSH In (xxxxxxxx)
+      |           |____ 🟢 Auth VPC Public Route (xxxxxxxx)
+      |           |____ 🟢 Honeypot VPC HTTP Out (xxxxxxxx)
+      |           |____ 🟢 Honeypot VPC HTTPS Out (xxxxxxxx)
+      |           |____ 🟢 Honeypot VPC RDP In (xxxxxxxx)
+      |           |____ 🟢 Honeypot VPC SSH In (xxxxxxxx)
+      |           |____ 🟢 Honeypot VPC Public Flow Logs (xxxxxxxx)
+      |           |____ 🟢 Honeypot VPC Public Network ACL (xxxxxxxx)
+      |           |____ 🟢 Honeypot VPC Public Route Table (xxxxxxxx)
+      |           |____ 🟢 Honeypot VPC Public Route (xxxxxxxx)
+      |           |____ 🟢 Backup VPC Public Flow Logs (xxxxxxxx)
+      |           |____ 🟢 Backup VPC Public Network ACL (xxxxxxxx)
+      |           |____ 🟢 Backup VPC Public Route Table (xxxxxxxx)
+      |           |____ 🟢 Backup VPC Public Route (xxxxxxxx)
       |
       |____ 🟡 account: work-test-ami
       |     |
       |     |     Resources:
-      |     |____ 🟢 Account (xxxxxxxx)
+      |     |____ 🟢 work-test-ami (xxxxxxxx)
+      |     |____ 🔴 Job Dev AMI
+      |     |____ 🔴 Burp AMI
+      |     |____ 🔴 Pentest Linux ARM Ami
       |     |____ 🟢 Move account to OU (xxxxxxxx)
       |     |____ 🟢 Account alias (xxxxxxxx)
       |     |____ 🟢 Xadmin role (xxxxxxxx)
       |     |____ 🟢 Iadmin role (xxxxxxxx)
       |     |____ 🟢 Oadmin role (xxxxxxxx)
-      |     |____ 🟢 Account Budget (xxxxxxxx)
+      |     |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
+      |     |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
+      |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
+      |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
       |     |____ 🟢 Delete default VPCs (xxxxxxxx)
       |     |
       |     |____ region: us-east-2
       |           |     Resources:
-      |           |____ 🔴 Base Amazon Linux AMI (error)
-      |           |     ↳ ERROR: aws-deploy-resources: 
-      |           |       /usr/local/share/projects/aws-deploy-resources/src/confirm-run-resource.sh:48: Base Amazon Linux AMI 
-      |           |       FAILED
-      |           |____ 🔴 Base Ubuntu AMI (error)
-      |           |     ↳ ERROR: aws-ec2: /usr/local/share/projects/aws-ec2/src/helpers/stop-ec2-instance.sh:8: 
-      |           |       EC2_STOP_INSTANCE_ID not set for base-ubuntu-ami. resolve the instance id before stopping it
-      |           |____ 🔴 Collab AMI (error)
-      |           |     ↳ ERROR: aws-deploy-resources: 
-      |           |       /usr/local/share/projects/aws-deploy-resources/src/deploy-selected-resources.sh:204: resource 
-      |           |       collab-ami was not deployed, its dependencies were never met: base-ubuntu-ami | org= | env=work-test | 
-      |           |       account=work-test-ami | action=deploy 
-      |           |____ 🔴 Share AMIs to OU (error)
-      |           |     ↳ ERROR: aws-deploy-resources: 
-      |           |       /usr/local/share/projects/aws-deploy-resources/src/deploy-selected-resources.sh:204: resource 
-      |           |       share-amis-to-ou was not deployed, its dependencies were never met: base-amazon-linux-ami | org= | 
-      |           |       env=work-test | account=work-test-ami | action=deploy 
-      |           |____ 🔴 Share AMI (error)
+      |           |____ 🟡 Base Amazon Linux AMI (error)
+      |           |     ↳ ERROR: aws-ec2: /usr/local/share/projects/aws-ec2/src/helpers/lookup-instance-id.sh:47: 
+      |           |       no instance tagged work-test-base-amazon-linux-ami-instance in work-test-ami us-east-2 for 
+      |           |       base-amazon-linux-ami. deploy that instance first
+      |           |____ 🟡 Base Ubuntu AMI (error)
+      |           |     ↳ ERROR: aws-ec2: /usr/local/share/projects/aws-ec2/src/helpers/lookup-instance-id.sh:47: 
+      |           |       no instance tagged work-test-base-ubuntu-ami-instance in work-test-ami us-east-2 for base-ubuntu-ami. 
+      |           |       deploy that instance first
+      |           |____ 🟡 Collab AMI (error)
+      |           |     ↳ ERROR: aws-ec2: /usr/local/share/projects/aws-ec2/src/helpers/lookup-instance-id.sh:47: 
+      |           |       no instance tagged work-test-collab-ami-instance in work-test-ami us-east-2 for collab-ami. deploy that 
+      |           |       instance first
+      |           |____ 🔴 Share AMIs to OU
+      |           |____ 🟡 Share AMI (error)
+      |           |     ↳ ERROR: aws-ec2: 
+      |           |       /usr/local/share/projects/aws-ec2/src/helpers/resolve-ami-share-copy.sh:63: source ami not 
+      |           |       found named work-test-base-amazon-linux-ami in work-test-ami us-east-2 for share-ami. build that image 
+      |           |       first
+      |           |____ 🟢 EC2 SSH Key Secret (xxxxxxxx)
+      |           |____ 🟢 Base Amazon Linux AMI Instance (xxxxxxxx)
+      |           |____ 🟢 Base Ubuntu AMI Instance (xxxxxxxx)
+      |           |____ 🟢 EC2 SSH Key (xxxxxxxx)
+      |           |____ 🟢 Collab AMI Instance (xxxxxxxx)
+      |           |____ 🟢 AMI VPC (xxxxxxxx)
+      |           |____ 🟢 AMI VPC Route Table (xxxxxxxx)
+      |           |____ 🟢 AMI VPC Internet Gateway (xxxxxxxx)
+      |           |____ 🟢 AMI VPC Public Subnet (xxxxxxxx)
+      |           |____ 🟢 AMI VPC HTTP-S Out Security Group (xxxxxxxx)
+      |           |____ 🟢 AMI VPC RDP In Security Group (xxxxxxxx)
+      |           |____ 🟢 AMI VPC SSH In Security Group (xxxxxxxx)
+      |           |____ 🟢 AMI VPC HTTP Out (xxxxxxxx)
+      |           |____ 🟢 AMI VPC HTTPS Out (xxxxxxxx)
+      |           |____ 🟢 AMI VPC Public Route Table (xxxxxxxx)
+      |           |____ 🟢 AMI VPC Public Flow Logs (xxxxxxxx)
+      |           |____ 🟡 AMI VPC RDP In (error)
+      |           |     ↳ ERROR: aws-ec2: 
+      |           |       /usr/local/share/projects/aws-ec2/src/helpers/lookup-prefix-list-id.sh:60: 0 prefix lists 
+      |           |       match 
+      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-security-group-ingress-rule/describe-man
+      |           |       aged-prefix-lists.json in work-test-ami us-east-2. exactly one must match AWS RESPONSE: an empty list
+      |           |____ 🟡 AMI VPC SSH In (error)
+      |           |     ↳ ERROR: aws-ec2: 
+      |           |       /usr/local/share/projects/aws-ec2/src/helpers/lookup-prefix-list-id.sh:60: 0 prefix lists 
+      |           |       match 
+      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-security-group-ingress-rule/describe-man
+      |           |       aged-prefix-lists.json in work-test-ami us-east-2. exactly one must match AWS RESPONSE: an empty list
+      |           |____ 🟢 AMI VPC Public Network ACL (xxxxxxxx)
+      |           |____ 🟢 AMI VPC Public Route (xxxxxxxx)
+      |           |____ 🟡 Job Dev AMI Instance (error)
+      |           |     ↳ ERROR: aws-run-command: failed resolving scalars in 
+      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/job-dev-ami-instance.json. set 
+      |           |       each %%NAME%% to a scalar | called from 
+      |           |       /usr/local/share/projects/aws-run-command/src/actions/helpers/run-aws-command.sh:141
       |           |     ↳ ERROR: aws-run-command: failed to populate 
-      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-share-ami/copy-image.json | called from 
-      |           |       /usr/local/share/projects/aws-ec2/src/helpers/resolve-ami-share-copy.sh:70
+      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/job-dev-ami-instance.json | 
+      |           |       called from /usr/local/share/projects/aws-ec2/src/helpers/deploy-ec2-resource.sh:450
+      |           |     ↳ ERROR: aws-ec2: /usr/local/share/projects/aws-ec2/src/helpers/deploy-ec2-resource.sh:468: 
+      |           |       run-instances failed for job-dev-ami-instance AWS ERROR: ERROR: aws-run-command: failed to populate 
+      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/job-dev-ami-instance.json | 
+      |           |       called from /usr/local/share/projects/aw...
+      |           |     ↳ ERROR: aws-run-command: unresolved placeholder %%AMI_ID%% in 
+      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/job-dev-ami-instance.json | 
+      |           |       called from /usr/local/share/projects/aws-run-command/src/actions/helpers/populate-json.sh:267
+      |           |____ 🟡 Burp AMI Instance (error)
+      |           |     ↳ ERROR: aws-ec2: /usr/local/share/projects/aws-ec2/src/helpers/deploy-ec2-resource.sh:212: 
+      |           |       describe-instances failed in us-east-2 AWS ERROR:  Error parsing parameter --cli-input-json: Unable to 
+      |           |       load paramfile 
+      |           |       file:///usr/local/share/projects/aws-ec2-config/config/deploy-instance/describe-instances-deplo
+      |           |       yed.json: [Errno 2] No su...
+      |           |     ↳ ERROR: aws-run-command: 
+      |           |       /usr/local/share/projects/aws-run-command/src/actions/helpers/run-aws-command.sh:201: aws ec2 
+      |           |       describe-instances --cli-input-json 
+      |           |       file:///usr/local/share/projects/aws-ec2-config/config/deploy-instance/describe-instances-deplo
+      |           |       yed.json --query Reservations[].Instances[].InstanceId --output text --profile work-test-ami-oadmin 
+      |           |       --region us-east-2 --no-cli-pager failed rc=252:  Error parsing parameter '--cli-input-json': Unable to 
+      |           |       load paramfile 
+      |           |       file:///usr/local/share/projects/aws-ec2-config/config/deploy-instance/describe-instances-deplo
+      |           |       yed.json: [Errno 2] No such file or directory: 
+      |           |       '/usr/local/share/projects/aws-ec2-config/config/deploy-instance/describe-instances-deployed.js
+      |           |       on' | called from /usr/local/share/projects/aws-ec2/src/helpers/deploy-ec2-resource.sh:198
+      |           |____ 🟡 Pentest Linux ARM Ami Instance (error)
+      |           |     ↳ ERROR: aws-run-command: failed resolving scalars in 
+      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/pentest-linux-arm-ami-instance.
+      |           |       json. set each %%NAME%% to a scalar | called from 
+      |           |       /usr/local/share/projects/aws-run-command/src/actions/helpers/run-aws-command.sh:141
+      |           |     ↳ ERROR: aws-run-command: failed to populate 
+      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/pentest-linux-arm-ami-instance.
+      |           |       json | called from /usr/local/share/projects/aws-ec2/src/helpers/deploy-ec2-resource.sh:450
+      |           |     ↳ ERROR: aws-ec2: /usr/local/share/projects/aws-ec2/src/helpers/deploy-ec2-resource.sh:468: 
+      |           |       run-instances failed for pentest-linux-arm-ami-instance AWS ERROR: ERROR: aws-run-command: failed 
+      |           |       to populate 
+      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/pentest-linux-arm-ami-instance.
+      |           |       json | called from /usr/local/share/projec...
+      |           |     ↳ ERROR: aws-run-command: unresolved placeholder %%AMI_ID%% in 
+      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/pentest-linux-arm-ami-instance.
+      |           |       json | called from 
+      |           |       /usr/local/share/projects/aws-run-command/src/actions/helpers/populate-json.sh:267
+      |           |     ↳ ERROR: aws-run-command: failed resolving scalars in 
+      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/pentest-linux-arm-ami-instance.
+      |           |       json. set each %%NAME%% to a scalar | called from 
+      |           |       /usr/local/share/projects/aws-run-command/src/actions/helpers/run-aws-command.sh:141
+      |           |     ↳ ERROR: aws-run-command: failed to populate 
+      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/pentest-linux-arm-ami-instance.
+      |           |       json | called from /usr/local/share/projects/aws-ec2/src/helpers/deploy-ec2-resource.sh:450
+      |           |     ↳ ERROR: aws-ec2: /usr/local/share/projects/aws-ec2/src/helpers/deploy-ec2-resource.sh:468: 
+      |           |       run-instances failed for pentest-linux-arm-ami-instance AWS ERROR: ERROR: aws-run-command: failed 
+      |           |       to populate 
+      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/pentest-linux-arm-ami-instance.
+      |           |       json | called from /usr/local/share/projec...
+      |           |     ↳ ERROR: aws-run-command: unresolved placeholder %%AMI_ID%% in 
+      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/pentest-linux-arm-ami-instance.
+      |           |       json | called from 
+      |           |       /usr/local/share/projects/aws-run-command/src/actions/helpers/populate-json.sh:267
       |
-      |____ 🟡 account: work-test-repo
+      |____ 🟢 account: work-test-repo
       |     |
       |     |     Resources:
-      |     |____ 🟢 Account (xxxxxxxx)
+      |     |____ 🟢 work-test-repo (xxxxxxxx)
       |     |____ 🟢 Move account to OU (xxxxxxxx)
       |     |____ 🟢 Account alias (xxxxxxxx)
       |     |____ 🟢 Xadmin role (xxxxxxxx)
       |     |____ 🟢 Iadmin role (xxxxxxxx)
       |     |____ 🟢 Oadmin role (xxxxxxxx)
-      |     |____ 🟢 Account Budget (xxxxxxxx)
+      |     |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
+      |     |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
+      |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
+      |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
       |     |____ 🟢 Delete default VPCs (xxxxxxxx)
       |     |
       |     |____ region: us-east-2
       |           |     Resources:
       |           |____ 🟢 Code Commit Repository (xxxxxxxx)
-      |           |____ 🔴 ECR (error)
-      |           |     ↳ ERROR: aws-run-command: 
-      |           |       /usr/local/share/projects/aws-run-command/src/actions/helpers/run-aws-command.sh:201: An error 
-      |           |       occurred (KmsException) when calling the CreateRepository operation: The Amazon ECR action failed due to a KMS 
-      |           |       exception: User: arn:aws:sts::xxxxx:assumed-role/xxxxx/botocore-session-1787816296 is 
-      |           |       not authorized to perform: kms:DescribeKey on this resource because the resource does not exist in this 
-      |           |       Region, no resource-based policies allow access, or a resource-based policy explicitly denies access (Service: 
-      |           |       AWSKMS; Status Code: 400; Error Code: AccessDeniedException; Request ID: ; 
-      |           |       Proxy: null) | called from 
-      |           |       /usr/local/share/projects/aws-ecr/src/actions/helpers/deploy-ecr-repository.sh:xxxx: 
-      |           |       aws-ecr: /usr/local/share/projects/aws-ecr/src/actions/helpers/deploy-ecr-repository.sh:74: 
-      |           |       failed to create repo xxxxxxx. 
+      |           |____ 🟢 ECR (xxxxxxxx)
       |
       |____ 🟢 account: work-test-domains2
       |     |
       |     |     Resources:
-      |     |____ 🟢 Account (xxxxxxxx)
+      |     |____ 🟢 work-test-domains2 (xxxxxxxx)
       |     |____ 🟢 Move account to OU (xxxxxxxx)
       |     |____ 🟢 Account alias (xxxxxxxx)
       |     |____ 🟢 Xadmin role (xxxxxxxx)
       |     |____ 🟢 Iadmin role (xxxxxxxx)
       |     |____ 🟢 Oadmin role (xxxxxxxx)
-      |     |____ 🟢 Account Budget (xxxxxxxx)
+      |     |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
+      |     |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
+      |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
+      |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
       |     |____ 🟢 Delete default VPCs (xxxxxxxx)
+      |     |
+      |     |____ region: us-east-2
       |
       |____ 🟢 account: work-test-jobs
             |
             |     Resources:
-            |____ 🟢 Account (xxxxxxxx)
-            |____ 🔴 Move account to OU
-            |____ 🔴 Account alias
-            |____ 🔴 Xadmin role
-            |____ 🔴 Iadmin role
-            |____ 🔴 Oadmin role
-            |____ 🔴 Account Budget
-            |____ 🔴 Delete default VPCs
+            |____ 🟢 work-test-jobs (xxxxxxxx)
+            |____ 🟢 Move account to OU (xxxxxxxx)
+            |____ 🟢 Account alias (xxxxxxxx)
+            |____ 🟢 Xadmin role (xxxxxxxx)
+            |____ 🟢 Iadmin role (xxxxxxxx)
+            |____ 🟢 Oadmin role (xxxxxxxx)
+            |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
+            |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
+            |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
+            |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
+            |____ 🟢 Delete default VPCs (xxxxxxxx)
+            |
+            |____ region: us-east-2
 
 =========================================
  xxxxxxxx: All Errors
