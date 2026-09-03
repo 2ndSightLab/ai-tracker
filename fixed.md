@@ -4,6 +4,27 @@ Typos cuz these are just notes for me...
 
 The way I'm ordering this is weird sorry. I write the date/time and stuff I did between the two dates and times is bottom up. Probably should do it dff but just notes.
 
+## 9/2/2026 - 12:08 AM
+
+I realized that I have two diff kind of dep. the org depedendencies and the AWS dependencies. Two different things at two levesl. The specific resources you deploy may have depedencies on each ohther as well as the underlying resouces. You have to distinguish between the type depedencies and the individual resource dependencise. Another architectural refactor. I also broke down compound resources into individual resources with dependencies. I have a new kind of resource coming to deal with the customized actions.
+
+🟢 Change dependency file in deployer to point to org dependencies
+
+🟢 Add individual network resources with correct types.
+   - need vpc, etc. in ami account to complete ami deployment
+
+🟢 Ec2 Instances to create amis - a work in progress but ome have been deployed. Customizing the rest.
+
+🟢 AMIs - same as above work in progress
+
+🟢 Added a validator to show nodes that are at the wrong level in the tracker. Want to auto remove those next.
+
+🟢 Fix error with tracker loggging and error on every tracker logging error which flooded the logs.
+
+🟢 The xml tracker is the most deviant project it messed up multipel times and I had to restore it.
+
+🟢 Had to delete some incorrectly deployed resources
+
 ## 9/1/2026 - 12:52 AM
 
 Not sure why it took me so long to figure this out or make the neccessary chnage. Major XML restructuring but minimal changes otherwise.
