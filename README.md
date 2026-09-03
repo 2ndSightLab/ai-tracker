@@ -390,10 +390,7 @@ Now that the system is basically runnign this POC will be converted to a microse
       |           |____ 🟢 Jobs VPC HTTPS Out (xxxxxxxx)
       |           |____ 🟢 Jobs VPC RDP In (xxxxxxxx)
       |           |____ 🟢 Auth VPC RDP In Security Group (xxxxxxxx)
-      |           |____ 🟡 Work VPC Public Subnet (error)
-      |           |     ↳ ERROR: aws-ec2: /usr/local/share/projects/aws-ec2/src/helpers/lookup-vpc-id.sh:82: 0 vpcs 
-      |           |       match /usr/local/share/projects/aws-ec2-config/config/deploy-subnet/describe-vpcs.json in 
-      |           |       work-test-network us-east-2. exactly one must match AWS RESPONSE: an empty list
+      |           |____ 🟢 Work VPC Public Subnet (error)
       |           |____ 🟢 Jobs VPC SSH In (xxxxxxxx)
       |           |____ 🟢 Work VPC HTTP Out (xxxxxxxx)
       |           |____ 🟢 Work VPC HTTPS Out (xxxxxxxx)
@@ -460,23 +457,23 @@ Now that the system is basically runnign this POC will be converted to a microse
       |     |____ 🟢 Delete default VPCs (xxxxxxxx)
       |     |
       |     |____ region: us-east-2
-      |           |     Resources:
+      |           |      Resources:
       |           |____ 🟡 Base Amazon Linux AMI (error)
-      |           |     ↳ ERROR: aws-ec2: /usr/local/share/projects/aws-ec2/src/helpers/lookup-instance-id.sh:47: 
+      |           |     ↳ ERROR: botz-aws-ec2: /usr/local/share/botz-projects/botz-aws-ec2/src/helpers/lookup-instance-id.sh:47: 
       |           |       no instance tagged work-test-base-amazon-linux-ami-instance in work-test-ami us-east-2 for 
       |           |       base-amazon-linux-ami. deploy that instance first
       |           |____ 🟡 Base Ubuntu AMI (error)
-      |           |     ↳ ERROR: aws-ec2: /usr/local/share/projects/aws-ec2/src/helpers/lookup-instance-id.sh:47: 
+      |           |     ↳ ERROR: botz-aws-ec2: /usr/local/share/botz-projects/botz-aws-ec2/src/helpers/lookup-instance-id.sh:47: 
       |           |       no instance tagged work-test-base-ubuntu-ami-instance in work-test-ami us-east-2 for base-ubuntu-ami. 
       |           |       deploy that instance first
       |           |____ 🟡 Collab AMI (error)
-      |           |     ↳ ERROR: aws-ec2: /usr/local/share/projects/aws-ec2/src/helpers/lookup-instance-id.sh:47: 
+      |           |     ↳ ERROR: botz-aws-ec2: /usr/local/share/botz-projects/botz-aws-ec2/src/helpers/lookup-instance-id.sh:47: 
       |           |       no instance tagged work-test-collab-ami-instance in work-test-ami us-east-2 for collab-ami. deploy that 
       |           |       instance first
       |           |____ 🔴 Share AMIs to OU
       |           |____ 🟡 Share AMI (error)
-      |           |     ↳ ERROR: aws-ec2: 
-      |           |       /usr/local/share/projects/aws-ec2/src/helpers/resolve-ami-share-copy.sh:63: source ami not 
+      |           |     ↳ ERROR: botz-aws-ec2: 
+      |           |       /usr/local/share/botz-projects/botz-aws-ec2/src/helpers/resolve-ami-share-copy.sh:63: source ami not 
       |           |       found named work-test-base-amazon-linux-ami in work-test-ami us-east-2 for share-ami. build that image 
       |           |       first
       |           |____ 🟢 EC2 SSH Key Secret (xxxxxxxx)
@@ -495,85 +492,57 @@ Now that the system is basically runnign this POC will be converted to a microse
       |           |____ 🟢 AMI VPC HTTPS Out (xxxxxxxx)
       |           |____ 🟢 AMI VPC Public Route Table (xxxxxxxx)
       |           |____ 🟢 AMI VPC Public Flow Logs (xxxxxxxx)
-      |           |____ 🟡 AMI VPC RDP In (error)
-      |           |     ↳ ERROR: aws-ec2: 
-      |           |       /usr/local/share/projects/aws-ec2/src/helpers/lookup-prefix-list-id.sh:60: 0 prefix lists 
-      |           |       match 
-      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-security-group-ingress-rule/describe-man
-      |           |       aged-prefix-lists.json in work-test-ami us-east-2. exactly one must match AWS RESPONSE: an empty list
-      |           |____ 🟡 AMI VPC SSH In (error)
-      |           |     ↳ ERROR: aws-ec2: 
-      |           |       /usr/local/share/projects/aws-ec2/src/helpers/lookup-prefix-list-id.sh:60: 0 prefix lists 
-      |           |       match 
-      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-security-group-ingress-rule/describe-man
-      |           |       aged-prefix-lists.json in work-test-ami us-east-2. exactly one must match AWS RESPONSE: an empty list
+      |           |____ 🟢 AMI VPC RDP In (xxxxxxxx)
+      |           |____ 🟢 AMI VPC SSH In (xxxxxxxx)
       |           |____ 🟢 AMI VPC Public Network ACL (xxxxxxxx)
       |           |____ 🟢 AMI VPC Public Route (xxxxxxxx)
       |           |____ 🟡 Job Dev AMI Instance (error)
-      |           |     ↳ ERROR: aws-run-command: failed resolving scalars in 
-      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/job-dev-ami-instance.json. set 
+      |           |     ↳ ERROR: botz-aws-run-command: failed resolving scalars in 
+      |           |       /usr/local/share/botz-projects/botz-aws-ec2-config/config/deploy-instance/job-dev-ami-instance.json. set 
       |           |       each %%NAME%% to a scalar | called from 
-      |           |       /usr/local/share/projects/aws-run-command/src/actions/helpers/run-aws-command.sh:141
-      |           |     ↳ ERROR: aws-run-command: failed to populate 
-      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/job-dev-ami-instance.json | 
-      |           |       called from /usr/local/share/projects/aws-ec2/src/helpers/deploy-ec2-resource.sh:450
-      |           |     ↳ ERROR: aws-ec2: /usr/local/share/projects/aws-ec2/src/helpers/deploy-ec2-resource.sh:468: 
-      |           |       run-instances failed for job-dev-ami-instance AWS ERROR: ERROR: aws-run-command: failed to populate 
-      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/job-dev-ami-instance.json | 
-      |           |       called from /usr/local/share/projects/aw...
-      |           |     ↳ ERROR: aws-run-command: unresolved placeholder %%AMI_ID%% in 
-      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/job-dev-ami-instance.json | 
-      |           |       called from /usr/local/share/projects/aws-run-command/src/actions/helpers/populate-json.sh:267
+      |           |       /usr/local/share/botz-projects/botz-aws-run-command/src/actions/helpers/run-aws-command.sh:141
+      |           |     ↳ ERROR: botz-aws-run-command: unresolved placeholder %%AMI_ID%% in 
+      |           |       /usr/local/share/botz-projects/botz-aws-ec2-config/config/deploy-instance/job-dev-ami-instance.json | 
+      |           |       called from /usr/local/share/botz-projects/botz-aws-run-command/src/actions/helpers/populate-json.sh:267
+      |           |     ↳ ERROR: botz-aws-ec2: /usr/local/share/botz-projects/botz-aws-ec2/src/helpers/deploy-ec2-resource.sh:484: 
+      |           |       run-instances failed for job-dev-ami-instance AWS ERROR: ERROR: botz-aws-run-command: failed to populate 
+      |           |       /usr/local/share/botz-projects/botz-aws-ec2-config/config/deploy-instance/job-dev-ami-instance.json | 
+      |           |       called from /usr/local/share/botz-projects/botz-aw...
+      |           |     ↳ ERROR: botz-aws-run-command: failed to populate 
+      |           |       /usr/local/share/botz-projects/botz-aws-ec2-config/config/deploy-instance/job-dev-ami-instance.json | 
+      |           |       called from /usr/local/share/botz-projects/botz-aws-ec2/src/helpers/deploy-ec2-resource.sh:466
       |           |____ 🟡 Burp AMI Instance (error)
-      |           |     ↳ ERROR: aws-ec2: /usr/local/share/projects/aws-ec2/src/helpers/deploy-ec2-resource.sh:212: 
-      |           |       describe-instances failed in us-east-2 AWS ERROR:  Error parsing parameter --cli-input-json: Unable to 
-      |           |       load paramfile 
-      |           |       file:///usr/local/share/projects/aws-ec2-config/config/deploy-instance/describe-instances-deplo
-      |           |       yed.json: [Errno 2] No su...
-      |           |     ↳ ERROR: aws-run-command: 
-      |           |       /usr/local/share/projects/aws-run-command/src/actions/helpers/run-aws-command.sh:201: aws ec2 
-      |           |       describe-instances --cli-input-json 
-      |           |       file:///usr/local/share/projects/aws-ec2-config/config/deploy-instance/describe-instances-deplo
-      |           |       yed.json --query Reservations[].Instances[].InstanceId --output text --profile work-test-ami-oadmin 
-      |           |       --region us-east-2 --no-cli-pager failed rc=252:  Error parsing parameter '--cli-input-json': Unable to 
-      |           |       load paramfile 
-      |           |       file:///usr/local/share/projects/aws-ec2-config/config/deploy-instance/describe-instances-deplo
-      |           |       yed.json: [Errno 2] No such file or directory: 
-      |           |       '/usr/local/share/projects/aws-ec2-config/config/deploy-instance/describe-instances-deployed.js
-      |           |       on' | called from /usr/local/share/projects/aws-ec2/src/helpers/deploy-ec2-resource.sh:198
+      |           |     ↳ ERROR: botz-aws-run-command: failed resolving scalars in 
+      |           |       /usr/local/share/botz-projects/botz-aws-ec2-config/config/deploy-instance/burp-ami-instance.json. set 
+      |           |       each %%NAME%% to a scalar | called from 
+      |           |       /usr/local/share/botz-projects/botz-aws-run-command/src/actions/helpers/run-aws-command.sh:141
+      |           |     ↳ ERROR: botz-aws-run-command: failed to populate 
+      |           |       /usr/local/share/botz-projects/botz-aws-ec2-config/config/deploy-instance/burp-ami-instance.json | 
+      |           |       called from /usr/local/share/botz-projects/botz-aws-ec2/src/helpers/deploy-ec2-resource.sh:466
+      |           |     ↳ ERROR: botz-aws-ec2: /usr/local/share/botz-projects/botz-aws-ec2/src/helpers/deploy-ec2-resource.sh:484: 
+      |           |       run-instances failed for burp-ami-instance AWS ERROR: ERROR: botz-aws-run-command: failed to populate 
+      |           |       /usr/local/share/botz-projects/botz-aws-ec2-config/config/deploy-instance/burp-ami-instance.json | 
+      |           |       called from /usr/local/share/botz-projects/botz-aws-e...
+      |           |     ↳ ERROR: botz-aws-run-command: unresolved placeholder %%AMI_ID%% in 
+      |           |       /usr/local/share/botz-projects/botz-aws-ec2-config/config/deploy-instance/burp-ami-instance.json | 
+      |           |       called from /usr/local/share/botz-projects/botz-aws-run-command/src/actions/helpers/populate-json.sh:267
       |           |____ 🟡 Pentest Linux ARM Ami Instance (error)
-      |           |     ↳ ERROR: aws-run-command: failed resolving scalars in 
-      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/pentest-linux-arm-ami-instance.
+      |           |     ↳ ERROR: botz-aws-run-command: failed resolving scalars in 
+      |           |       /usr/local/share/botz-projects/botz-aws-ec2-config/config/deploy-instance/pentest-linux-arm-ami-instance.
       |           |       json. set each %%NAME%% to a scalar | called from 
-      |           |       /usr/local/share/projects/aws-run-command/src/actions/helpers/run-aws-command.sh:141
-      |           |     ↳ ERROR: aws-run-command: failed to populate 
-      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/pentest-linux-arm-ami-instance.
-      |           |       json | called from /usr/local/share/projects/aws-ec2/src/helpers/deploy-ec2-resource.sh:450
-      |           |     ↳ ERROR: aws-ec2: /usr/local/share/projects/aws-ec2/src/helpers/deploy-ec2-resource.sh:468: 
-      |           |       run-instances failed for pentest-linux-arm-ami-instance AWS ERROR: ERROR: aws-run-command: failed 
+      |           |       /usr/local/share/botz-projects/botz-aws-run-command/src/actions/helpers/run-aws-command.sh:141
+      |           |     ↳ ERROR: botz-aws-run-command: failed to populate 
+      |           |       /usr/local/share/botz-projects/botz-aws-ec2-config/config/deploy-instance/pentest-linux-arm-ami-instance.
+      |           |       json | called from /usr/local/share/botz-projects/botz-aws-ec2/src/helpers/deploy-ec2-resource.sh:466
+      |           |     ↳ ERROR: botz-aws-ec2: /usr/local/share/botz-projects/botz-aws-ec2/src/helpers/deploy-ec2-resource.sh:484: 
+      |           |       run-instances failed for pentest-linux-arm-ami-instance AWS ERROR: ERROR: botz-aws-run-command: failed 
       |           |       to populate 
-      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/pentest-linux-arm-ami-instance.
-      |           |       json | called from /usr/local/share/projec...
-      |           |     ↳ ERROR: aws-run-command: unresolved placeholder %%AMI_ID%% in 
-      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/pentest-linux-arm-ami-instance.
+      |           |       /usr/local/share/botz-projects/botz-aws-ec2-config/config/deploy-instance/pentest-linux-arm-ami-instance.
+      |           |       json | called from /usr/local/share/botz-projec...
+      |           |     ↳ ERROR: botz-aws-run-command: unresolved placeholder %%AMI_ID%% in 
+      |           |       /usr/local/share/botz-projects/botz-aws-ec2-config/config/deploy-instance/pentest-linux-arm-ami-instance.
       |           |       json | called from 
-      |           |       /usr/local/share/projects/aws-run-command/src/actions/helpers/populate-json.sh:267
-      |           |     ↳ ERROR: aws-run-command: failed resolving scalars in 
-      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/pentest-linux-arm-ami-instance.
-      |           |       json. set each %%NAME%% to a scalar | called from 
-      |           |       /usr/local/share/projects/aws-run-command/src/actions/helpers/run-aws-command.sh:141
-      |           |     ↳ ERROR: aws-run-command: failed to populate 
-      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/pentest-linux-arm-ami-instance.
-      |           |       json | called from /usr/local/share/projects/aws-ec2/src/helpers/deploy-ec2-resource.sh:450
-      |           |     ↳ ERROR: aws-ec2: /usr/local/share/projects/aws-ec2/src/helpers/deploy-ec2-resource.sh:468: 
-      |           |       run-instances failed for pentest-linux-arm-ami-instance AWS ERROR: ERROR: aws-run-command: failed 
-      |           |       to populate 
-      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/pentest-linux-arm-ami-instance.
-      |           |       json | called from /usr/local/share/projec...
-      |           |     ↳ ERROR: aws-run-command: unresolved placeholder %%AMI_ID%% in 
-      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/pentest-linux-arm-ami-instance.
-      |           |       json | called from 
-      |           |       /usr/local/share/projects/aws-run-command/src/actions/helpers/populate-json.sh:267
+      |           |       /usr/local/share/botz-projects/botz-aws-run-command/src/actions/helpers/populate-json.sh:267
       |
       |____ 🟢 account: work-test-repo
       |     |
