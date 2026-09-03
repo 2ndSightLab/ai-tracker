@@ -344,10 +344,6 @@ Now that the system is basically runnign this POC will be converted to a microse
       |     |
       |     |     Resources:
       |     |____ 🟢 work-test-network (xxxxxxxx)
-      |     |____ 🔴 Work VPC Public Route Table
-      |     |____ 🔴 Work VPC Public Route
-      |     |____ 🔴 Work VPC Public Flow Logs
-      |     |____ 🔴 Work VPC Public Network ACL
       |     |____ 🟢 Move account to OU (xxxxxxxx)
       |     |____ 🟢 Account alias (xxxxxxxx)
       |     |____ 🟢 Xadmin role (xxxxxxxx)
@@ -442,9 +438,6 @@ Now that the system is basically runnign this POC will be converted to a microse
       |     |
       |     |     Resources:
       |     |____ 🟢 work-test-ami (xxxxxxxx)
-      |     |____ 🔴 Job Dev AMI
-      |     |____ 🔴 Burp AMI
-      |     |____ 🔴 Pentest Linux ARM Ami
       |     |____ 🟢 Move account to OU (xxxxxxxx)
       |     |____ 🟢 Account alias (xxxxxxxx)
       |     |____ 🟢 Xadmin role (xxxxxxxx)
