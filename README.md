@@ -26,10 +26,14 @@ Now that the system is basically runnign this POC will be converted to a microse
  xxxxxxxx: Deploy Diagram
 =========================================
 
-🟡 org: xxxxxxxx
+=========================================
+ xxxxxxxx: Deploy Diagram
+=========================================
+
+🟢 org: xxxxxxxx
 |
 |     Organization Resources:
-|____ 🟢 xxxxxxxx (xxxxxxxx)
+|____ 🟢 xxxxxx (xxxxxxxx)
 |____ 🟢 Enable All Features (xxxxxxxx)
 |____ 🟢 SCP Require IMDSv2 (xxxxxxxx)
 |____ 🟢 SCP Deny Leave Org (xxxxxxxx)
@@ -57,8 +61,6 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
 |     |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
 |     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
-|     |     |
-|     |     |____ region: us-east-2
 |     |
 |     |____ 🟢 account: manage-kms
 |     |     |
@@ -85,6 +87,16 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |     |
 |     |     |     Resources:
 |     |     |____ 🟢 manage-security (xxxxxxxx)
+|     |     |____ 🟢 Delegate Security Hub admin (xxxxxxxx)
+|     |     |____ 🟢 Delegate GuardDuty admin (xxxxxxxx)
+|     |     |____ 🟢 Delegate CloudTrail admin (xxxxxxxx)
+|     |     |____ 🟢 Delegate AWS Config admin (xxxxxxxx)
+|     |     |____ 🟢 Delegate Macie admin (xxxxxxxx)
+|     |     |____ 🟢 Delegate Inspector admin (xxxxxxxx)
+|     |     |____ 🟢 Delegate IAM Access Analyzer admin (xxxxxxxx)
+|     |     |____ 🟢 Delegate Audit Manager admin (xxxxxxxx)
+|     |     |____ 🟢 Delegate Health admin (xxxxxxxx)
+|     |     |____ 🟢 Delegate Detective admin (xxxxxxxx)
 |     |     |____ 🟢 Move account to OU (xxxxxxxx)
 |     |     |____ 🟢 Account alias (xxxxxxxx)
 |     |     |____ 🟢 Xadmin role (xxxxxxxx)
@@ -98,16 +110,6 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |     |
 |     |     |____ region: us-east-2
 |     |           |     Resources:
-|     |           |____ 🟢 Delegate Security Hub admin (xxxxxxxx)
-|     |           |____ 🟢 Delegate GuardDuty admin (xxxxxxxx)
-|     |           |____ 🟢 Delegate CloudTrail admin (xxxxxxxx)
-|     |           |____ 🟢 Delegate AWS Config admin (xxxxxxxx)
-|     |           |____ 🟢 Delegate Health admin (xxxxxxxx)
-|     |           |____ 🟢 Delegate IAM Access Analyzer admin (xxxxxxxx)
-|     |           |____ 🟢 Delegate Inspector admin (xxxxxxxx)
-|     |           |____ 🟢 Delegate Detective admin (xxxxxxxx)
-|     |           |____ 🟢 Delegate Audit Manager admin (xxxxxxxx)
-|     |           |____ 🟢 Delegate Macie admin (xxxxxxxx)
 |     |           |____ 🟢 Configure GuardDuty (xxxxxxxx)
 |     |           |____ 🟢 Configure Security Hub (xxxxxxxx)
 |     |           |____ 🟢 Configure CloudTrail (xxxxxxxx)
@@ -124,6 +126,7 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |     |     Resources:
 |     |     |____ 🟢 manage-org (xxxxxxxx)
 |     |     |____ 🟢 Org resource policy (xxxxxxxx)
+|     |     |____ 🟢 Delegate Org Admin (xxxxxxxx)
 |     |     |____ 🟢 Move account to OU (xxxxxxxx)
 |     |     |____ 🟢 Account alias (xxxxxxxx)
 |     |     |____ 🟢 Xadmin role (xxxxxxxx)
@@ -134,15 +137,13 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
 |     |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
 |     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
-|     |     |
-|     |     |____ region: us-east-2
-|     |           |     Resources:
-|     |           |____ 🟢 Delegate Org Admin (xxxxxxxx)
 |     |
 |     |____ 🟢 account: manage-accounting
 |     |     |
 |     |     |     Resources:
 |     |     |____ 🟢 manage-accounting (xxxxxxxx)
+|     |     |____ 🟢 Delegate Cost Optimization Hub admin (xxxxxxxx)
+|     |     |____ 🟢 Delegate Compute Optimizer admin (xxxxxxxx)
 |     |     |____ 🟢 Move account to OU (xxxxxxxx)
 |     |     |____ 🟢 Account alias (xxxxxxxx)
 |     |     |____ 🟢 Xadmin role (xxxxxxxx)
@@ -153,16 +154,15 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
 |     |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
 |     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
-|     |     |
-|     |     |____ region: us-east-2
-|     |           |     Resources:
-|     |           |____ 🟢 Delegate Compute Optimizer admin (xxxxxxxx)
-|     |           |____ 🟢 Delegate Cost Optimization Hub admin (xxxxxxxx)
 |     |
 |     |____ 🟢 account: manage-ipam
 |     |     |
 |     |     |     Resources:
 |     |     |____ 🟢 manage-ipam (xxxxxxxx)
+|     |     |____ 🟢 Delegate IPAM admin (xxxxxxxx)
+|     |     |____ 🟢 Delegate Firewall Manager admin (xxxxxxxx)
+|     |     |____ 🟢 Delegate Network Manager admin (xxxxxxxx)
+|     |     |____ 🟢 Delegate VPC Reachability Analyzer admin (xxxxxxxx)
 |     |     |____ 🟢 Move account to OU (xxxxxxxx)
 |     |     |____ 🟢 Account alias (xxxxxxxx)
 |     |     |____ 🟢 Xadmin role (xxxxxxxx)
@@ -176,12 +176,11 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |     |
 |     |     |____ region: us-east-2
 |     |           |     Resources:
-|     |           |____ 🟢 Delegate Network Manager admin (xxxxxxxx)
-|     |           |____ 🟢 Delegate VPC Reachability Analyzer admin (xxxxxxxx)
-|     |           |____ 🟢 Delegate IPAM admin (xxxxxxxx)
-|     |           |____ 🟢 Delegate Firewall Manager admin (xxxxxxxx)
 |     |           |____ 🟢 IPAM (xxxxxxxx)
 |     |           |____ 🟢 IPAM pool (xxxxxxxx)
+|     |           |____ 🟢 Work Test Jobs EIP Pool Share (xxxxxxxx)
+|     |           |____ 🟢 Work Test AMI EIP Pool Share (xxxxxxxx)
+|     |           |____ 🟢 IPAM Pool Share Permission (xxxxxxxx)
 |     |
 |     |____ 🟢 account: manage-kiro
 |           |
@@ -241,13 +240,12 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
 |     |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
 |     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
-|     |     |
-|     |     |____ region: us-east-2
 |     |
 |     |____ 🟢 account: backup-admin
 |     |     |
 |     |     |     Resources:
 |     |     |____ 🟢 backup-admin (xxxxxxxx)
+|     |     |____ 🟢 Delegate Backup admin (xxxxxxxx)
 |     |     |____ 🟢 Move account to OU (xxxxxxxx)
 |     |     |____ 🟢 Account alias (xxxxxxxx)
 |     |     |____ 🟢 Xadmin role (xxxxxxxx)
@@ -258,10 +256,6 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
 |     |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
 |     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
-|     |     |
-|     |     |____ region: us-east-2
-|     |           |     Resources:
-|     |           |____ 🟢 Delegate Backup admin (xxxxxxxx)
 |     |
 |     |____ 🟢 account: backup-iam
 |           |
@@ -279,8 +273,6 @@ Now that the system is basically runnign this POC will be converted to a microse
 |           |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
 |           |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
 |           |____ 🟢 Delete default VPCs (xxxxxxxx)
-|           |
-|           |____ region: us-east-2
 |
 |____ 🟢 env: deny-all
 |     |
@@ -289,7 +281,7 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |____ 🟢 SCP Deny All (xxxxxxxx)
 |     |____ 🟢 SCP Always Denied Actions (xxxxxxxx)
 |
-|____ 🟡 env: work-test
+|____ 🟢 env: work-test
       |
       |     Environment Resources:
       |____ 🟢 work-test (xxxxxxxx)
@@ -301,6 +293,7 @@ Now that the system is basically runnign this POC will be converted to a microse
       |     |____ 🟢 work-test-iam (xxxxxxxx)
       |     |____ 🟢 Iadmin user (xxxxxxxx)
       |     |____ 🟢 Xadmin user (xxxxxxxx)
+      |     |____ 🟢 Pentester user (xxxxxxxx)
       |     |____ 🟢 Move account to OU (xxxxxxxx)
       |     |____ 🟢 Account alias (xxxxxxxx)
       |     |____ 🟢 Xadmin role (xxxxxxxx)
@@ -311,8 +304,6 @@ Now that the system is basically runnign this POC will be converted to a microse
       |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
       |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
       |     |____ 🟢 Delete default VPCs (xxxxxxxx)
-      |     |
-      |     |____ region: us-east-2
       |
       |____ 🟢 account: work-test-kms
       |     |
@@ -334,16 +325,17 @@ Now that the system is basically runnign this POC will be converted to a microse
       |           |____ 🟢 KMS Jobs Key (xxxxxxxx)
       |           |____ 🟢 KMS Secrets Key (xxxxxxxx)
       |           |____ 🟢 KMS AMI Key (xxxxxxxx)
-      |           |____ 🟢 KMS Extenal AMI Share Key (xxxxxxxx)
+      |           |____ 🟢 KMS External AMI Share Key (xxxxxxxx)
       |           |____ 🟢 KMS AMI Key Policy (xxxxxxxx)
-      |           |____ 🟢 KMS Extenal AMI Share Key Policy (xxxxxxxx)
+      |           |____ 🟢 KMS External AMI Share Key Policy (xxxxxxxx)
       |           |____ 🟢 KMS Jobs Key Policy (xxxxxxxx)
       |           |____ 🟢 KMS Secrets Key Policy (xxxxxxxx)
       |
-      |____ 🟡 account: work-test-network
+      |____ 🟢 account: work-test-network
       |     |
       |     |     Resources:
       |     |____ 🟢 work-test-network (xxxxxxxx)
+      |     |____ 🟢 VPC Flow Logs Role (xxxxxxxx)
       |     |____ 🟢 Move account to OU (xxxxxxxx)
       |     |____ 🟢 Account alias (xxxxxxxx)
       |     |____ 🟢 Xadmin role (xxxxxxxx)
@@ -357,7 +349,6 @@ Now that the system is basically runnign this POC will be converted to a microse
       |     |
       |     |____ region: us-east-2
       |           |     Resources:
-      |           |____ 🟢 VPC Flow Logs Role (xxxxxxxx)
       |           |____ 🟢 Remote access prefix list (xxxxxxxx)
       |           |____ 🟢 Auth VPC (xxxxxxxx)
       |           |____ 🟢 Backup VPC (xxxxxxxx)
@@ -365,8 +356,6 @@ Now that the system is basically runnign this POC will be converted to a microse
       |           |____ 🟢 Jobs VPC (xxxxxxxx)
       |           |____ 🟢 Work VPC (xxxxxxxx)
       |           |____ 🟢 Jobs VPC Public Subnet (xxxxxxxx)
-      |           |____ 🟢 HTTP-S Out Security Group (xxxxxxxx)
-      |           |____ 🟢 Remote Access Security Group (xxxxxxxx)
       |           |____ 🟢 Auth VPC Public Subnet (xxxxxxxx)
       |           |____ 🟢 Backup VPC Private Subnet (xxxxxxxx)
       |           |____ 🟢 Jobs VPC Route Table (xxxxxxxx)
@@ -374,70 +363,53 @@ Now that the system is basically runnign this POC will be converted to a microse
       |           |____ 🟢 Work VPC Route Table (xxxxxxxx)
       |           |____ 🟢 Honeypot VPC Route Table (xxxxxxxx)
       |           |____ 🟢 Backup VPC Route Table (xxxxxxxx)
-      |           |____ 🟢 Jobs VPC Public Route Table (xxxxxxxx)
-      |           |____ 🟢 Jobs VPC Public Flow Logs (xxxxxxxx)
-      |           |____ 🟢 Jobs VPC Public Network ACL (xxxxxxxx)
-      |           |____ 🟢 Auth VPC Public Route Table (xxxxxxxx)
-      |           |____ 🟢 Auth VPC Public Flow Logs (xxxxxxxx)
-      |           |____ 🟢 Auth VPC Public Network ACL (xxxxxxxx)
-      |           |____ 🟢 Auth VPC HTTP-S Out Security Group (xxxxxxxx)
-      |           |____ 🟢 Auth VPC SSH In Security Group (xxxxxxxx)
-      |           |____ 🟢 Jobs VPC HTTP Out (xxxxxxxx)
-      |           |____ 🟢 Jobs VPC HTTPS Out (xxxxxxxx)
-      |           |____ 🟢 Jobs VPC RDP In (xxxxxxxx)
-      |           |____ 🟢 Auth VPC RDP In Security Group (xxxxxxxx)
-      |           |____ 🟢 Work VPC Public Subnet (error)
-      |           |____ 🟢 Jobs VPC SSH In (xxxxxxxx)
-      |           |____ 🟢 Work VPC HTTP Out (xxxxxxxx)
-      |           |____ 🟢 Work VPC HTTPS Out (xxxxxxxx)
-      |           |____ 🟢 Work VPC RDP In (xxxxxxxx)
-      |           |____ 🟢 Work VPC SSH In (xxxxxxxx)
+      |           |____ 🟢 Work VPC Public Subnet (xxxxxxxx)
       |           |____ 🟢 Honeypot VPC Public Subnet (xxxxxxxx)
-      |           |____ 🟢 Honeypot VPC HTTP-S Out Security Group (xxxxxxxx)
-      |           |____ 🟢 Honeypot VPC SSH In Security Group (xxxxxxxx)
-      |           |____ 🟢 Honeypot VPC RDP In Security Group (xxxxxxxx)
       |           |____ 🟢 Backup VPC Public Subnet (xxxxxxxx)
-      |           |____ 🟢 Jobs VPC HTTP-S Out Security Group (xxxxxxxx)
       |           |____ 🟢 Jobs VPC Internet Gateway (xxxxxxxx)
-      |           |____ 🟢 Jobs VPC RDP In Security Group (xxxxxxxx)
-      |           |____ 🟢 Jobs VPC SSH In Security Group (xxxxxxxx)
-      |           |____ 🟢 Work VPC HTTP-S Out Security Group (xxxxxxxx)
-      |           |____ 🟢 Work VPC RDP In Security Group (xxxxxxxx)
-      |           |____ 🟢 Work VPC SSH In Security Group (xxxxxxxx)
-      |           |____ 🟢 Backup VPC HTTP Out (xxxxxxxx)
-      |           |____ 🟢 Backup VPC HTTPS Out (xxxxxxxx)
-      |           |____ 🟢 Backup VPC RDP In (xxxxxxxx)
-      |           |____ 🟢 Backup VPC SSH In (xxxxxxxx)
-      |           |____ 🟢 Backup VPC HTTP-S Out Security Group (xxxxxxxx)
-      |           |____ 🟢 Backup VPC RDP In Security Group (xxxxxxxx)
-      |           |____ 🟢 Backup VPC SSH In Security Group (xxxxxxxx)
-      |           |____ 🟢 Jobs VPC Public Route (xxxxxxxx)
       |           |____ 🟢 Auth VPC Internet Gateway (xxxxxxxx)
+      |           |____ 🟢 AMI VPC (xxxxxxxx)
+      |           |____ 🟢 AMI VPC Route Table (xxxxxxxx)
+      |           |____ 🟢 AMI VPC Internet Gateway (xxxxxxxx)
+      |           |____ 🟢 AMI VPC Public Subnet (xxxxxxxx)
+      |           |____ 🟢 Backup VPC Internet Gateway (xxxxxxxx)
+      |           |____ 🟢 Work VPC Public Network ACL (xxxxxxxx)
+      |           |____ 🟢 Honeypot VPC Public Route Table (xxxxxxxx)
+      |           |____ 🟢 Honeypot VPC Public Network ACL (xxxxxxxx)
+      |           |____ 🟢 Backup VPC Public Route Table (xxxxxxxx)
+      |           |____ 🟢 Backup VPC Public Network ACL (xxxxxxxx)
+      |           |____ 🟢 AMI VPC Public Route Table (xxxxxxxx)
+      |           |____ 🟢 AMI VPC Public Network ACL (xxxxxxxx)
       |           |____ 🟢 Work VPC Internet Gateway (xxxxxxxx)
       |           |____ 🟢 Honeypot VPC Internet Gateway (xxxxxxxx)
-      |           |____ 🟢 Backup VPC Internet Gateway (xxxxxxxx)
-      |           |____ 🟢 Auth VPC HTTP Out (xxxxxxxx)
-      |           |____ 🟢 Auth VPC HTTPS Out (xxxxxxxx)
-      |           |____ 🟢 Auth VPC RDP In (xxxxxxxx)
-      |           |____ 🟢 Auth VPC SSH In (xxxxxxxx)
+      |           |____ 🟢 Jobs VPC Public Route Table (xxxxxxxx)
+      |           |____ 🟢 Jobs VPC Public Network ACL (xxxxxxxx)
+      |           |____ 🟢 Auth VPC Public Route Table (xxxxxxxx)
+      |           |____ 🟢 Auth VPC Public Network ACL (xxxxxxxx)
+      |           |____ 🟢 Work VPC Public Route Table (xxxxxxxx)
+      |           |____ 🟢 Auth VPC Public Flow Logs (xxxxxxxx)
+      |           |____ 🟢 Jobs VPC Public Flow Logs (xxxxxxxx)
+      |           |____ 🟢 Jobs VPC Public Route (xxxxxxxx)
       |           |____ 🟢 Auth VPC Public Route (xxxxxxxx)
-      |           |____ 🟢 Honeypot VPC HTTP Out (xxxxxxxx)
-      |           |____ 🟢 Honeypot VPC HTTPS Out (xxxxxxxx)
-      |           |____ 🟢 Honeypot VPC RDP In (xxxxxxxx)
-      |           |____ 🟢 Honeypot VPC SSH In (xxxxxxxx)
-      |           |____ 🟢 Honeypot VPC Public Flow Logs (xxxxxxxx)
-      |           |____ 🟢 Honeypot VPC Public Network ACL (xxxxxxxx)
-      |           |____ 🟢 Honeypot VPC Public Route Table (xxxxxxxx)
       |           |____ 🟢 Honeypot VPC Public Route (xxxxxxxx)
-      |           |____ 🟢 Backup VPC Public Flow Logs (xxxxxxxx)
-      |           |____ 🟢 Backup VPC Public Network ACL (xxxxxxxx)
-      |           |____ 🟢 Backup VPC Public Route Table (xxxxxxxx)
       |           |____ 🟢 Backup VPC Public Route (xxxxxxxx)
+      |           |____ 🟢 Work VPC Public Route (xxxxxxxx)
+      |           |____ 🟢 AMI VPC Public Route (xxxxxxxx)
+      |           |____ 🟢 Work VPC Public Flow Logs (xxxxxxxx)
+      |           |____ 🟢 Work Test AMI Subnet Share (xxxxxxxx)
+      |           |____ 🟢 Work Test AMI Prefix List Share (xxxxxxxx)
+      |           |____ 🟢 Work Test Jobs Subnet Share (xxxxxxxx)
+      |           |____ 🟢 Honeypot VPC Public Flow Logs (xxxxxxxx)
+      |           |____ 🟢 Backup VPC Public Flow Logs (xxxxxxxx)
+      |           |____ 🟢 AMI VPC Public Flow Logs (xxxxxxxx)
       |
       |____ 🟡 account: work-test-ami
       |     |
       |     |     Resources:
       |     |____ 🟢 work-test-ami (xxxxxxxx)
+      |     |____ 🟢 AMI Admin Role EC2 (xxxxxxxx)
+      |     |____ 🟢 AMI Admin Role EC2 Policy (xxxxxxxx)
+      |     |____ 🔴 AMI Admin Role EC2 Instance Profile
       |     |____ 🟢 Move account to OU (xxxxxxxx)
       |     |____ 🟢 Account alias (xxxxxxxx)
       |     |____ 🟢 Xadmin role (xxxxxxxx)
@@ -450,92 +422,33 @@ Now that the system is basically runnign this POC will be converted to a microse
       |     |____ 🟢 Delete default VPCs (xxxxxxxx)
       |     |
       |     |____ region: us-east-2
-      |           |      Resources:
-      |           |____ 🟡 Base Amazon Linux AMI (error)
-      |           |     ↳ ERROR: aws-ec2: /usr/local/share/projects/aws-ec2/src/helpers/lookup-instance-id.sh:47: 
-      |           |       no instance tagged work-test-base-amazon-linux-ami-instance in work-test-ami us-east-2 for 
-      |           |       base-amazon-linux-ami. deploy that instance first
-      |           |____ 🟡 Base Ubuntu AMI (error)
-      |           |     ↳ ERROR: aws-ec2: /usr/local/share/projects/aws-ec2/src/helpers/lookup-instance-id.sh:47: 
-      |           |       no instance tagged work-test-base-ubuntu-ami-instance in work-test-ami us-east-2 for base-ubuntu-ami. 
-      |           |       deploy that instance first
-      |           |____ 🟡 Collab AMI (error)
-      |           |     ↳ ERROR: aws-ec2: /usr/local/share/projects/aws-ec2/src/helpers/lookup-instance-id.sh:47: 
-      |           |       no instance tagged work-test-collab-ami-instance in work-test-ami us-east-2 for collab-ami. deploy that 
-      |           |       instance first
-      |           |____ 🔴 Share AMIs to OU
-      |           |____ 🟡 Share AMI (error)
-      |           |     ↳ ERROR: aws-ec2: 
-      |           |       /usr/local/share/projects/aws-ec2/src/helpers/resolve-ami-share-copy.sh:63: source ami not 
-      |           |       found named work-test-base-amazon-linux-ami in work-test-ami us-east-2 for share-ami. build that image 
-      |           |       first
+      |           |     Resources:
       |           |____ 🟢 EC2 SSH Key Secret (xxxxxxxx)
-      |           |____ 🟢 Base Amazon Linux AMI Instance (xxxxxxxx)
-      |           |____ 🟢 Base Ubuntu AMI Instance (xxxxxxxx)
       |           |____ 🟢 EC2 SSH Key (xxxxxxxx)
-      |           |____ 🟢 Collab AMI Instance (xxxxxxxx)
-      |           |____ 🟢 AMI VPC (xxxxxxxx)
-      |           |____ 🟢 AMI VPC Route Table (xxxxxxxx)
-      |           |____ 🟢 AMI VPC Internet Gateway (xxxxxxxx)
-      |           |____ 🟢 AMI VPC Public Subnet (xxxxxxxx)
+      |           |____ 🟢 Work Test AMI Subnet Share Accept (xxxxxxxx)
+      |           |____ 🟢 Work Test AMI EIP Pool Share Accept (xxxxxxxx)
+      |           |____ 🔴 Base Amazon Linux AMI
+      |           |____ 🔴 Job Dev AMI Instance
+      |           |____ 🔴 Job Dev AMI
+      |           |____ 🔴 Burp AMI Instance
+      |           |____ 🔴 Base Ubuntu AMI
+      |           |____ 🔴 Burp AMI
+      |           |____ 🔴 Pentest Linux ARM Ami Instance
+      |           |____ 🟢 Work Test AMI Prefix List Share Accept (xxxxxxxx)
+      |           |____ 🔴 Collab AMI
+      |           |____ 🔴 Pentest Linux ARM Ami
+      |           |____ 🔴 Base Amazon Linux AMI Instance
+      |           |____ 🔴 Base Ubuntu AMI Instance
+      |           |____ 🔴 Collab AMI Instance
       |           |____ 🟢 AMI VPC HTTP-S Out Security Group (xxxxxxxx)
-      |           |____ 🟢 AMI VPC RDP In Security Group (xxxxxxxx)
       |           |____ 🟢 AMI VPC SSH In Security Group (xxxxxxxx)
-      |           |____ 🟢 AMI VPC HTTP Out (xxxxxxxx)
-      |           |____ 🟢 AMI VPC HTTPS Out (xxxxxxxx)
-      |           |____ 🟢 AMI VPC Public Route Table (xxxxxxxx)
-      |           |____ 🟢 AMI VPC Public Flow Logs (xxxxxxxx)
-      |           |____ 🟢 AMI VPC RDP In (xxxxxxxx)
-      |           |____ 🟢 AMI VPC SSH In (xxxxxxxx)
-      |           |____ 🟢 AMI VPC Public Network ACL (xxxxxxxx)
-      |           |____ 🟢 AMI VPC Public Route (xxxxxxxx)
-      |           |____ 🟡 Job Dev AMI Instance (error)
-      |           |     ↳ ERROR: aws-run-command: failed resolving scalars in 
-      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/job-dev-ami-instance.json. set 
-      |           |       each %%NAME%% to a scalar | called from 
-      |           |       /usr/local/share/projects/aws-run-command/src/actions/helpers/run-aws-command.sh:141
-      |           |     ↳ ERROR: aws-run-command: unresolved placeholder %%AMI_ID%% in 
-      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/job-dev-ami-instance.json | 
-      |           |       called from /usr/local/share/projects/aws-run-command/src/actions/helpers/populate-json.sh:267
-      |           |     ↳ ERROR: aws-ec2: /usr/local/share/projects/aws-ec2/src/helpers/deploy-ec2-resource.sh:484: 
-      |           |       run-instances failed for job-dev-ami-instance AWS ERROR: ERROR: aws-run-command: failed to populate 
-      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/job-dev-ami-instance.json | 
-      |           |       called from /usr/local/share/projects/aw...
-      |           |     ↳ ERROR: aws-run-command: failed to populate 
-      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/job-dev-ami-instance.json | 
-      |           |       called from /usr/local/share/projects/aws-ec2/src/helpers/deploy-ec2-resource.sh:466
-      |           |____ 🟡 Burp AMI Instance (error)
-      |           |     ↳ ERROR: aws-run-command: failed resolving scalars in 
-      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/burp-ami-instance.json. set 
-      |           |       each %%NAME%% to a scalar | called from 
-      |           |       /usr/local/share/projects/aws-run-command/src/actions/helpers/run-aws-command.sh:141
-      |           |     ↳ ERROR: aws-run-command: failed to populate 
-      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/burp-ami-instance.json | 
-      |           |       called from /usr/local/share/projects/aws-ec2/src/helpers/deploy-ec2-resource.sh:466
-      |           |     ↳ ERROR: aws-ec2: /usr/local/share/projects/aws-ec2/src/helpers/deploy-ec2-resource.sh:484: 
-      |           |       run-instances failed for burp-ami-instance AWS ERROR: ERROR: aws-run-command: failed to populate 
-      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/burp-ami-instance.json | 
-      |           |       called from /usr/local/share/projects/aws-e...
-      |           |     ↳ ERROR: aws-run-command: unresolved placeholder %%AMI_ID%% in 
-      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/burp-ami-instance.json | 
-      |           |       called from /usr/local/share/projects/aws-run-command/src/actions/helpers/populate-json.sh:267
-      |           |____ 🟡 Pentest Linux ARM Ami Instance (error)
-      |           |     ↳ ERROR: aws-run-command: failed resolving scalars in 
-      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/pentest-linux-arm-ami-instance.
-      |           |       json. set each %%NAME%% to a scalar | called from 
-      |           |       /usr/local/share/projects/aws-run-command/src/actions/helpers/run-aws-command.sh:141
-      |           |     ↳ ERROR: aws-run-command: failed to populate 
-      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/pentest-linux-arm-ami-instance.
-      |           |       json | called from /usr/local/share/projects/aws-ec2/src/helpers/deploy-ec2-resource.sh:466
-      |           |     ↳ ERROR: aws-ec2: /usr/local/share/projects/aws-ec2/src/helpers/deploy-ec2-resource.sh:484: 
-      |           |       run-instances failed for pentest-linux-arm-ami-instance AWS ERROR: ERROR: aws-run-command: failed 
-      |           |       to populate 
-      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/pentest-linux-arm-ami-instance.
-      |           |       json | called from /usr/local/share/projec...
-      |           |     ↳ ERROR: aws-run-command: unresolved placeholder %%AMI_ID%% in 
-      |           |       /usr/local/share/projects/aws-ec2-config/config/deploy-instance/pentest-linux-arm-ami-instance.
-      |           |       json | called from 
-      |           |       /usr/local/share/projects/aws-run-command/src/actions/helpers/populate-json.sh:267
+      |           |____ 🟢 AMI VPC RDP In Security Group (xxxxxxxx)
+      |           |____ 🟢 AMI VPC SG HTTP Out Rule (xxxxxxxx)
+      |           |____ 🟢 AMI VPC SG HTTPS Out Rule (xxxxxxxx)
+      |           |____ 🟢 AMI VPC SG RDP In Rule (xxxxxxxx)
+      |           |____ 🟢 AMI VPC SG SSH In Rule (xxxxxxxx)
+      |           |____ 🟢 AMI Artifacts S3 Bucket (xxxxxxxx)
+      |           |____ 🟢 AMI Artifacts S3 Bucket Policy (xxxxxxxx)
       |
       |____ 🟢 account: work-test-repo
       |     |
@@ -571,13 +484,18 @@ Now that the system is basically runnign this POC will be converted to a microse
       |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
       |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
       |     |____ 🟢 Delete default VPCs (xxxxxxxx)
-      |     |
-      |     |____ region: us-east-2
       |
-      |____ 🟢 account: work-test-jobs
+      |____ 🟡 account: work-test-jobs
             |
             |     Resources:
             |____ 🟢 work-test-jobs (xxxxxxxx)
+            |____ 🟢 EC2 Jobs Hacker (xxxxxxxx)
+            |____ 🟢 EC2 Jobs Hacker Policy (xxxxxxxx)
+            |____ 🟢 Jobs Hacker Execution Role (xxxxxxxx)
+            |____ 🟢 Jobs Hacker Execution Role Policy (xxxxxxxx)
+            |____ 🟢 Pentester role (xxxxxxxx)
+            |____ 🟢 Pentester role policy (xxxxxxxx)
+            |____ 🔴 EC2 Jobs Hacker Instance Profile
             |____ 🟢 Move account to OU (xxxxxxxx)
             |____ 🟢 Account alias (xxxxxxxx)
             |____ 🟢 Xadmin role (xxxxxxxx)
@@ -590,28 +508,18 @@ Now that the system is basically runnign this POC will be converted to a microse
             |____ 🟢 Delete default VPCs (xxxxxxxx)
             |
             |____ region: us-east-2
-
-=========================================
- xxxxxxxx: All Errors
-=========================================
-
-🟡 org: xxxxxxxx (xxxxxxxx)
-|
-|     All Errors (every level):
-|     |____ 🔴 ...
-|            ...
-
-=========================================
- xxxxxxxx: Skipped Resources
-=========================================
-
-|
-|     Skipped Resources (configured to be skipped):
-|     |____ INFO: Resource skipped as configured: xxxxxxxx/deny-all/scp-deny-external
-
-```
+                  |     Resources:
+                  |____ 🟢 Work Test Jobs Subnet Share Accept (xxxxxxxx)
+                  |____ 🟢 Work Test Jobs EIP Pool Share Accept (xxxxxxxx)
+                  |____ 🟢 EC2 Jobs Hacker Parameter (xxxxxxxx)
+                  |____ 🟢 Pentester Secret Policy (xxxxxxxx)
+                  |____ 🟢 EC2 Jobs Hacker Bucket (xxxxxxxx)
+                  |____ 🟢 Pentester Secret (xxxxxxxx)
+                  |____ 🟢 EC2 Jobs Hacker Bucket Policy (xxxxxxxx)
 
 ## Status Summary
+
+Initially I was going to try to do all the things below but at the moment that is not really feasible. I hope to write more about it on my blog as time allows with more of the gotchas and strategies for using AI safely adn optimally.
 
 | Status | Description
 | :---: | :--- |
@@ -626,6 +534,9 @@ Now that the system is basically runnign this POC will be converted to a microse
 | 🔴 | Code Review
 | 🔴 | Security Testing
 
+Here's what my costs looked liek at some point. Right now I'm getting by on a $200/month plan from Claude Code - but I do not really like the security implications. I tried Codex but does not work with my framework at all. I probably don't even need Claude Code but the API is more expensive so wrappig up the project with Claude.
+
+One of the interesting things below was the jump in cost per day. Note that I had to limit my usage way more than I wanted to because I can't afford to do what I really want to do with my multi-agent framework at these prices. I'm currently exploring other options. Follow my blog for updates.
 
 ## Token / Credit Usage
 
