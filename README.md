@@ -512,7 +512,7 @@ Now that the system is basically runnign this POC will be converted to a microse
 
 ## Status Summary
 
-Initially I was going to try to do all the things below but at the moment that is not really feasible. I hope to write more about it on my blog as time allows with more of the gotchas and strategies for using AI safely adn optimally.
+Initially I was going to try to do all the things below but at the moment that is not really feasible. I hope to write more about it on my blog as time allows with more of the gotchas and strategies for using AI safely and optimally.
 
 | Status | Description
 | :---: | :--- |
