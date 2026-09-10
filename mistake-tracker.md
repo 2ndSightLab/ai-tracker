@@ -14,6 +14,28 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/response-time.
 
 The mistake tracker is a new part of the project added a few months in. This is not super scientific as it is hard to quantify. I'm just telling the model to increment the mistakes it's making +1 if it starts making a bunch of mistakes. This is not every mistakes mostly only when I start getting annoyed. :-D The mistakes are largely worded by the AI agent and sometimes it does not capture the correct mistake but I don't always fix that because I just want to get stuff done. It generally captures a valid mistake but not the one I actually wanted it to log. So these are all valid just some are missing I didn't bother to fix to the correct mistake. I don't care about typooooos this is just a fast as possible log. Trying to get things done. Note missing days/times may be because the model deleted the data or because I took some time off. In some cases I have to work on other things...
 
+# 2026-09-10 1:36 PM
+
+Didn't have time to write a lot because need to get this thing D.O.N.E. and use it.
+
+Not sure if this is a mistake but when an agent didn't have git it dug through deleted files still in memory to get some code back. Interesting.
+
+Many flames over here yesterday when agents kept royally messing up over here late last night. Always late. You can blame me for being tired but I've been up over 24 hours trying to get this done and the agents are working decently now.
+
+Because every time I get close to the finish line the agents do something to sabotage the project, I didn't let them touch the core code in the final stretch. I asked them what to change for some tricky bugs and chagned it myself.
+
+As always the tracker and diagram project was one that the agents really wanated to mess up. It keep trying to make changes all over the place and was literally ignoring my requests to put it in a few lines in the diagram. It was basically arguing with me. I have found the agent to be more argumentative lately.
+
+I cleaned up some atrocious overly complicated code in the first core project - the producer in the producer consumer queue and dependency manager. A lot of it had to do with which node was being processed. So many crossed wires and unneccesary variables. What a mess. I reduced a bunch. I eliminated some nonsense but not all. No time.
+
+I need to give agents a way to make read only queries on AWS, but not today. I've found that they can't figure it out but I can ask Amazon Q and usually get an answer faster. I run queries for the agents. Interstingly Google AI is often better than answering Amazon questions that Q - probably on newer things.
+
+The thing that really got to me today is the agent was not following error handling instructions and try to write code to subvert the error and write straight to the tracker and created a royal mess. Got me thinking about limiting what agents can see a bit more. Like you only get to see what you interface with.
+
+I asked one agent to read it's CLAUDE.md file nad it starated reading all 100+ project CLAUDE.md files on disk. Why is that file even there again? The agents clearly aren't aware of it and don't read or follow it unless I tell them to. 
+
+Another really intersting thing is that I had disabled Claude Code updates and yet it updated. I thought I copied the settings everywhere. Kind of annoying to manage settings across multiple projects. I'm going to set up my agent harness differntly when I get around to it.
+
 # 2026-08-31 4:00 AM
 
 So torqued. One of the agents started completely re-writing a project tonight and had to revert a ton of code. The agents are not even reading CLAUDE.md or looking at the architecture docs right now. Not doing error handling and success tracking correctly. But has been doing ok for the most part since major meltdown a few days back.
