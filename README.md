@@ -555,7 +555,7 @@ Note that I started a new $200 plan on the last day of June presumably a few hou
 | July 2 - July 3 | $200 plan | 100% | $181 | 2 | $90.5 | (new account, mult-agent bug fixes) 
 
 I stopped posting here. I'm using a $200 plan about every 2 days now.
-I think I've spent another $200. Up to $1000 for the mont and it's July 10th. Still not done.
+I think I've spent another $200. Up to $1000 for the month and it's July 10th. Still not done.
 
 ## Support this research
 
