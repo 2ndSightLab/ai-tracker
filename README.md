@@ -512,6 +512,7 @@ Now that the system is basically runnign this POC will be converted to a microse
                   |____ 🟢 EC2 Jobs Hacker Bucket (xxxxxxxx)
                   |____ 🟢 Pentester Secret (xxxxxxxx)
                   |____ 🟢 EC2 Jobs Hacker Bucket Policy (xxxxxxxx)
+```
 
 ## Status Summary
 
