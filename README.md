@@ -395,13 +395,13 @@ Now that the system is basically runnign this POC will be converted to a microse
       |           |____ 🟢 Backup VPC Public Flow Logs (xxxxxxxx)
       |           |____ 🟢 AMI VPC Public Flow Logs (xxxxxxxx)
       |
-      |____ 🟡 account: work-test-ami
+       |____ 🟡 account: work-test-ami
       |     |
       |     |     Resources:
       |     |____ 🟢 work-test-ami (xxxxxxxx)
       |     |____ 🟢 AMI Admin Role EC2 (xxxxxxxx)
       |     |____ 🟢 AMI Admin Role EC2 Policy (xxxxxxxx)
-      |     |____ 🔴 AMI Admin Role EC2 Instance Profile
+      |     |____ 🟢 AMI Admin Role EC2 Instance Profile (xxxxxxxx)
       |     |____ 🟢 Move account to OU (xxxxxxxx)
       |     |____ 🟢 Account alias (xxxxxxxx)
       |     |____ 🟢 Xadmin role (xxxxxxxx)
@@ -477,7 +477,7 @@ Now that the system is basically runnign this POC will be converted to a microse
       |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
       |     |____ 🟢 Delete default VPCs (xxxxxxxx)
       |
-      |____ 🟡 account: work-test-jobs
+      |____ 🟢 account: work-test-jobs
             |
             |     Resources:
             |____ 🟢 work-test-jobs (xxxxxxxx)
@@ -487,7 +487,7 @@ Now that the system is basically runnign this POC will be converted to a microse
             |____ 🟢 Jobs Hacker Execution Role Policy (xxxxxxxx)
             |____ 🟢 Pentester role (xxxxxxxx)
             |____ 🟢 Pentester role policy (xxxxxxxx)
-            |____ 🔴 EC2 Jobs Hacker Instance Profile
+            |____ 🟢 EC2 Jobs Hacker Instance Profile (xxxxxxxx)
             |____ 🟢 Move account to OU (xxxxxxxx)
             |____ 🟢 Account alias (xxxxxxxx)
             |____ 🟢 Xadmin role (xxxxxxxx)
