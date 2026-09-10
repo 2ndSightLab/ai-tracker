@@ -22,14 +22,10 @@ Now that the system is basically runnign this POC will be converted to a microse
 
 
 ```
-=========================================
- xxxxxxxx: Deploy Diagram
-=========================================
-
-🟢 org: xxxxxxxx
+🟡 org: xxxxxxxx
 |
 |     Organization Resources:
-|____ 🟢 xxxxxx (xxxxxxxx)
+|____ 🟢 xxxxxxxxx (xxxxxxxx)
 |____ 🟢 Enable All Features (xxxxxxxx)
 |____ 🟢 SCP Require IMDSv2 (xxxxxxxx)
 |____ 🟢 SCP Deny Leave Org (xxxxxxxx)
@@ -424,18 +420,18 @@ Now that the system is basically runnign this POC will be converted to a microse
       |           |____ 🟢 Work Test AMI Subnet Share Accept (xxxxxxxx)
       |           |____ 🟢 Work Test AMI EIP Pool Share Accept (xxxxxxxx)
       |           |____ 🔴 Base Amazon Linux AMI
-      |           |____ 🔴 Job Dev AMI Instance
+      |           |____ 🟢 Job Dev AMI Instance (xxxxxxxx)
       |           |____ 🔴 Job Dev AMI
-      |           |____ 🔴 Burp AMI Instance
+      |           |____ 🟢 Burp AMI Instance (xxxxxxxx)
       |           |____ 🔴 Base Ubuntu AMI
       |           |____ 🔴 Burp AMI
-      |           |____ 🔴 Pentest Linux ARM Ami Instance
+      |           |____ 🟢 Pentest Linux ARM Ami Instance (xxxxxxxx)
       |           |____ 🟢 Work Test AMI Prefix List Share Accept (xxxxxxxx)
       |           |____ 🔴 Collab AMI
       |           |____ 🔴 Pentest Linux ARM Ami
-      |           |____ 🔴 Base Amazon Linux AMI Instance
-      |           |____ 🔴 Base Ubuntu AMI Instance
-      |           |____ 🔴 Collab AMI Instance
+      |           |____ 🟢 Base Amazon Linux AMI Instance (xxxxxxxx)
+      |           |____ 🟢 Base Ubuntu AMI Instance (xxxxxxxx)
+      |           |____ 🟢 Collab AMI Instance (xxxxxxxx)
       |           |____ 🟢 AMI VPC HTTP-S Out Security Group (xxxxxxxx)
       |           |____ 🟢 AMI VPC SSH In Security Group (xxxxxxxx)
       |           |____ 🟢 AMI VPC RDP In Security Group (xxxxxxxx)
