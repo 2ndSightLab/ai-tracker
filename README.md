@@ -22,20 +22,27 @@ Now that the system is basically runnign this POC will be converted to a microse
 
 
 ```
-🟡 org: xxxxxxxx
+=========================================
+ xxxxxxxx: Deploy Diagram
+=========================================
+
+🟢 org: xxxxxxxx
 |
 |     Organization Resources:
-|____ 🟢 xxxxxxxxx (xxxxxxxx)
+|____ 🟢 xxxxxxxx (xxxxxxxx)
 |____ 🟢 Enable All Features (xxxxxxxx)
 |____ 🟢 SCP Require IMDSv2 (xxxxxxxx)
 |____ 🟢 SCP Deny Leave Org (xxxxxxxx)
 |____ 🟢 SCP Allowed Regions (xxxxxxxx)
+|____ 🟢 SCP Always Denied Actions (xxxxxxxx)
 |
 |____ 🟢 env: manage
 |     |
 |     |     Environment Resources:
 |     |____ 🟢 manage (xxxxxxxx)
 |     |____ 🟢 SCP Deny External (xxxxxxxx)
+|     |____ 🟢 SCP Deny Compute (xxxxxxxx)
+|     |____ 🟢 Manage Environemnt SCP (xxxxxxxx)
 |     |
 |     |____ 🟢 account: manage-iam
 |     |     |
@@ -43,7 +50,9 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |     |____ 🟢 manage-iam (xxxxxxxx)
 |     |     |____ 🟢 Iadmin user (xxxxxxxx)
 |     |     |____ 🟢 Xadmin user (xxxxxxxx)
-|     |     |____ 🟢 Move account to OU (xxxxxxxx)
+|     |     |____ 🟢 Radmin role (xxxxxxxx)
+|     |     |____ 🟢 Radmin ReadOnlyAccess (xxxxxxxx)
+|     |     |____ 🟢 Radmin SecurityAudit (xxxxxxxx)
 |     |     |____ 🟢 Account alias (xxxxxxxx)
 |     |     |____ 🟢 Xadmin role (xxxxxxxx)
 |     |     |____ 🟢 Iadmin role (xxxxxxxx)
@@ -53,12 +62,19 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
 |     |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
 |     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
+|     |     |
+|     |     |____ region: us-east-2
+|     |           |     Resources:
+|     |           |____ 🟢 GPG Secret Policy (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret (xxxxxxxx)
 |     |
 |     |____ 🟢 account: manage-kms
 |     |     |
 |     |     |     Resources:
 |     |     |____ 🟢 manage-kms (xxxxxxxx)
-|     |     |____ 🟢 Move account to OU (xxxxxxxx)
+|     |     |____ 🟢 Radmin role (xxxxxxxx)
+|     |     |____ 🟢 Radmin ReadOnlyAccess (xxxxxxxx)
+|     |     |____ 🟢 Radmin SecurityAudit (xxxxxxxx)
 |     |     |____ 🟢 Account alias (xxxxxxxx)
 |     |     |____ 🟢 Xadmin role (xxxxxxxx)
 |     |     |____ 🟢 Iadmin role (xxxxxxxx)
@@ -74,6 +90,9 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |           |____ 🟢 KMS Secrets Key (xxxxxxxx)
 |     |           |____ 🟢 KMS Logs Key (xxxxxxxx)
 |     |           |____ 🟢 KMS Logs Key Policy (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret Policy (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret (xxxxxxxx)
+|     |           |____ 🟢 KMS Secrets Key Policy (xxxxxxxx)
 |     |
 |     |____ 🟢 account: manage-security
 |     |     |
@@ -89,7 +108,9 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |     |____ 🟢 Delegate Audit Manager admin (xxxxxxxx)
 |     |     |____ 🟢 Delegate Health admin (xxxxxxxx)
 |     |     |____ 🟢 Delegate Detective admin (xxxxxxxx)
-|     |     |____ 🟢 Move account to OU (xxxxxxxx)
+|     |     |____ 🟢 Radmin role (xxxxxxxx)
+|     |     |____ 🟢 Radmin ReadOnlyAccess (xxxxxxxx)
+|     |     |____ 🟢 Radmin SecurityAudit (xxxxxxxx)
 |     |     |____ 🟢 Account alias (xxxxxxxx)
 |     |     |____ 🟢 Xadmin role (xxxxxxxx)
 |     |     |____ 🟢 Iadmin role (xxxxxxxx)
@@ -112,6 +133,8 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |           |____ 🟢 Configure Security Alerts (xxxxxxxx)
 |     |           |____ 🟢 S3 Log Bucket (xxxxxxxx)
 |     |           |____ 🟢 S3 Log Bucket Policy (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret Policy (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret (xxxxxxxx)
 |     |
 |     |____ 🟢 account: manage-org
 |     |     |
@@ -119,7 +142,9 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |     |____ 🟢 manage-org (xxxxxxxx)
 |     |     |____ 🟢 Org resource policy (xxxxxxxx)
 |     |     |____ 🟢 Delegate Org Admin (xxxxxxxx)
-|     |     |____ 🟢 Move account to OU (xxxxxxxx)
+|     |     |____ 🟢 Radmin role (xxxxxxxx)
+|     |     |____ 🟢 Radmin ReadOnlyAccess (xxxxxxxx)
+|     |     |____ 🟢 Radmin SecurityAudit (xxxxxxxx)
 |     |     |____ 🟢 Account alias (xxxxxxxx)
 |     |     |____ 🟢 Xadmin role (xxxxxxxx)
 |     |     |____ 🟢 Iadmin role (xxxxxxxx)
@@ -129,6 +154,11 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
 |     |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
 |     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
+|     |     |
+|     |     |____ region: us-east-2
+|     |           |     Resources:
+|     |           |____ 🟢 GPG Secret Policy (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret (xxxxxxxx)
 |     |
 |     |____ 🟢 account: manage-accounting
 |     |     |
@@ -136,7 +166,9 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |     |____ 🟢 manage-accounting (xxxxxxxx)
 |     |     |____ 🟢 Delegate Cost Optimization Hub admin (xxxxxxxx)
 |     |     |____ 🟢 Delegate Compute Optimizer admin (xxxxxxxx)
-|     |     |____ 🟢 Move account to OU (xxxxxxxx)
+|     |     |____ 🟢 Radmin role (xxxxxxxx)
+|     |     |____ 🟢 Radmin ReadOnlyAccess (xxxxxxxx)
+|     |     |____ 🟢 Radmin SecurityAudit (xxxxxxxx)
 |     |     |____ 🟢 Account alias (xxxxxxxx)
 |     |     |____ 🟢 Xadmin role (xxxxxxxx)
 |     |     |____ 🟢 Iadmin role (xxxxxxxx)
@@ -146,6 +178,11 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
 |     |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
 |     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
+|     |     |
+|     |     |____ region: us-east-2
+|     |           |     Resources:
+|     |           |____ 🟢 GPG Secret Policy (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret (xxxxxxxx)
 |     |
 |     |____ 🟢 account: manage-ipam
 |     |     |
@@ -155,7 +192,9 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |     |____ 🟢 Delegate Firewall Manager admin (xxxxxxxx)
 |     |     |____ 🟢 Delegate Network Manager admin (xxxxxxxx)
 |     |     |____ 🟢 Delegate VPC Reachability Analyzer admin (xxxxxxxx)
-|     |     |____ 🟢 Move account to OU (xxxxxxxx)
+|     |     |____ 🟢 Radmin role (xxxxxxxx)
+|     |     |____ 🟢 Radmin ReadOnlyAccess (xxxxxxxx)
+|     |     |____ 🟢 Radmin SecurityAudit (xxxxxxxx)
 |     |     |____ 🟢 Account alias (xxxxxxxx)
 |     |     |____ 🟢 Xadmin role (xxxxxxxx)
 |     |     |____ 🟢 Iadmin role (xxxxxxxx)
@@ -173,12 +212,22 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |           |____ 🟢 Work Test Jobs EIP Pool Share (xxxxxxxx)
 |     |           |____ 🟢 Work Test AMI EIP Pool Share (xxxxxxxx)
 |     |           |____ 🟢 IPAM Pool Share Permission (xxxxxxxx)
+|     |           |____ 🟢 Work Test Jobs Auth EIP Pool Share (xxxxxxxx)
+|     |           |____ 🟢 Work Test Sandbox EIP Pool Share (xxxxxxxx)
+|     |           |____ 🟢 Backup Work Test EIP Pool Share (xxxxxxxx)
+|     |           |____ 🟢 Backup Admin EIP Pool Share (xxxxxxxx)
+|     |           |____ 🟢 Backup IAM EIP Pool Share (xxxxxxxx)
+|     |           |____ 🟢 Backup Manage EIP Pool Share (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret Policy (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret (xxxxxxxx)
 |     |
 |     |____ 🟢 account: manage-kiro
 |           |
 |           |     Resources:
 |           |____ 🟢 manage-kiro (xxxxxxxx)
-|           |____ 🟢 Move account to OU (xxxxxxxx)
+|           |____ 🟢 Radmin role (xxxxxxxx)
+|           |____ 🟢 Radmin ReadOnlyAccess (xxxxxxxx)
+|           |____ 🟢 Radmin SecurityAudit (xxxxxxxx)
 |           |____ 🟢 Account alias (xxxxxxxx)
 |           |____ 🟢 Xadmin role (xxxxxxxx)
 |           |____ 🟢 Iadmin role (xxxxxxxx)
@@ -192,18 +241,23 @@ Now that the system is basically runnign this POC will be converted to a microse
 |           |____ region: us-east-2
 |                 |     Resources:
 |                 |____ 🟢 AWS Identity Center Instance (xxxxxxxx)
+|                 |____ 🟢 GPG Secret (xxxxxxxx)
+|                 |____ 🟢 GPG Secret Policy (xxxxxxxx)
 |
 |____ 🟢 env: backup
 |     |
 |     |     Environment Resources:
 |     |____ 🟢 backup (xxxxxxxx)
 |     |____ 🟢 SCP Deny External (xxxxxxxx)
+|     |____ 🟢 SCP Deny Compute (xxxxxxxx)
 |     |
 |     |____ 🟢 account: backup-work-test
 |     |     |
 |     |     |     Resources:
 |     |     |____ 🟢 backup-work-test (xxxxxxxx)
-|     |     |____ 🟢 Move account to OU (xxxxxxxx)
+|     |     |____ 🟢 Radmin role (xxxxxxxx)
+|     |     |____ 🟢 Radmin ReadOnlyAccess (xxxxxxxx)
+|     |     |____ 🟢 Radmin SecurityAudit (xxxxxxxx)
 |     |     |____ 🟢 Account alias (xxxxxxxx)
 |     |     |____ 🟢 Xadmin role (xxxxxxxx)
 |     |     |____ 🟢 Iadmin role (xxxxxxxx)
@@ -217,12 +271,22 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |     |____ region: us-east-2
 |     |           |     Resources:
 |     |           |____ 🟢 KMS Backup Key (xxxxxxxx)
+|     |           |____ 🟢 Backup Work Test Subnet Share Accept (xxxxxxxx)
+|     |           |____ 🟢 Backup Work Test HTTP-S Out Security Group Share Accept (xxxxxxxx)
+|     |           |____ 🟢 Backup Work Test SSH In Security Group Share Accept (xxxxxxxx)
+|     |           |____ 🟢 Backup Work Test RDP In Security Group Share Accept (xxxxxxxx)
+|     |           |____ 🟢 Backup Work Test EIP Pool Share Accept (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret Policy (xxxxxxxx)
+|     |           |____ 🟢 KMS Backup Key Policy (xxxxxxxx)
 |     |
 |     |____ 🟢 account: backup-manage
 |     |     |
 |     |     |     Resources:
 |     |     |____ 🟢 backup-manage (xxxxxxxx)
-|     |     |____ 🟢 Move account to OU (xxxxxxxx)
+|     |     |____ 🟢 Radmin role (xxxxxxxx)
+|     |     |____ 🟢 Radmin ReadOnlyAccess (xxxxxxxx)
+|     |     |____ 🟢 Radmin SecurityAudit (xxxxxxxx)
 |     |     |____ 🟢 Account alias (xxxxxxxx)
 |     |     |____ 🟢 Xadmin role (xxxxxxxx)
 |     |     |____ 🟢 Iadmin role (xxxxxxxx)
@@ -232,13 +296,27 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
 |     |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
 |     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
+|     |     |
+|     |     |____ region: us-east-2
+|     |           |     Resources:
+|     |           |____ 🟢 Backup Manage Subnet Share Accept (xxxxxxxx)
+|     |           |____ 🟢 Backup Manage HTTP-S Out Security Group Share Accept (xxxxxxxx)
+|     |           |____ 🟢 Backup Manage SSH In Security Group Share Accept (xxxxxxxx)
+|     |           |____ 🟢 Backup Manage RDP In Security Group Share Accept (xxxxxxxx)
+|     |           |____ 🟢 Backup Manage EIP Pool Share Accept (xxxxxxxx)
+|     |           |____ 🟢 KMS Backup Key Policy (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret Policy (xxxxxxxx)
+|     |           |____ 🟢 KMS Backup Key (xxxxxxxx)
 |     |
 |     |____ 🟢 account: backup-admin
 |     |     |
 |     |     |     Resources:
 |     |     |____ 🟢 backup-admin (xxxxxxxx)
 |     |     |____ 🟢 Delegate Backup admin (xxxxxxxx)
-|     |     |____ 🟢 Move account to OU (xxxxxxxx)
+|     |     |____ 🟢 Radmin role (xxxxxxxx)
+|     |     |____ 🟢 Radmin ReadOnlyAccess (xxxxxxxx)
+|     |     |____ 🟢 Radmin SecurityAudit (xxxxxxxx)
 |     |     |____ 🟢 Account alias (xxxxxxxx)
 |     |     |____ 🟢 Xadmin role (xxxxxxxx)
 |     |     |____ 🟢 Iadmin role (xxxxxxxx)
@@ -248,14 +326,55 @@ Now that the system is basically runnign this POC will be converted to a microse
 |     |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
 |     |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
 |     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
+|     |     |
+|     |     |____ region: us-east-2
+|     |           |     Resources:
+|     |           |____ 🟢 Backup Admin Subnet Share Accept (xxxxxxxx)
+|     |           |____ 🟢 Backup Admin HTTP-S Out Security Group Share Accept (xxxxxxxx)
+|     |           |____ 🟢 Backup Admin SSH In Security Group Share Accept (xxxxxxxx)
+|     |           |____ 🟢 Backup Admin RDP In Security Group Share Accept (xxxxxxxx)
+|     |           |____ 🟢 Backup Admin EIP Pool Share Accept (xxxxxxxx)
+|     |           |____ 🟢 KMS Backup Key Policy (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret Policy (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret (xxxxxxxx)
+|     |           |____ 🟢 KMS Backup Key (xxxxxxxx)
 |     |
 |     |____ 🟢 account: backup-iam
+|     |     |
+|     |     |     Resources:
+|     |     |____ 🟢 backup-iam (xxxxxxxx)
+|     |     |____ 🟢 Iadmin user (xxxxxxxx)
+|     |     |____ 🟢 Xadmin user (xxxxxxxx)
+|     |     |____ 🟢 Radmin role (xxxxxxxx)
+|     |     |____ 🟢 Radmin ReadOnlyAccess (xxxxxxxx)
+|     |     |____ 🟢 Radmin SecurityAudit (xxxxxxxx)
+|     |     |____ 🟢 Account alias (xxxxxxxx)
+|     |     |____ 🟢 Xadmin role (xxxxxxxx)
+|     |     |____ 🟢 Iadmin role (xxxxxxxx)
+|     |     |____ 🟢 Oadmin role (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
+|     |     |
+|     |     |____ region: us-east-2
+|     |           |     Resources:
+|     |           |____ 🟢 Backup IAM Subnet Share Accept (xxxxxxxx)
+|     |           |____ 🟢 Backup IAM HTTP-S Out Security Group Share Accept (xxxxxxxx)
+|     |           |____ 🟢 Backup IAM SSH In Security Group Share Accept (xxxxxxxx)
+|     |           |____ 🟢 Backup IAM RDP In Security Group Share Accept (xxxxxxxx)
+|     |           |____ 🟢 Backup IAM EIP Pool Share Accept (xxxxxxxx)
+|     |           |____ 🟢 KMS Backup Key Policy (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret Policy (xxxxxxxx)
+|     |           |____ 🟢 KMS Backup Key (xxxxxxxx)
+|     |
+|     |____ 🟢 account: backup-network
 |           |
 |           |     Resources:
-|           |____ 🟢 backup-iam (xxxxxxxx)
-|           |____ 🟢 Iadmin user (xxxxxxxx)
-|           |____ 🟢 Xadmin user (xxxxxxxx)
-|           |____ 🟢 Move account to OU (xxxxxxxx)
+|           |____ 🟢 backup-network (xxxxxxxx)
+|           |____ 🟢 Backup VPC Flow Logs Role (xxxxxxxx)
 |           |____ 🟢 Account alias (xxxxxxxx)
 |           |____ 🟢 Xadmin role (xxxxxxxx)
 |           |____ 🟢 Iadmin role (xxxxxxxx)
@@ -265,249 +384,490 @@ Now that the system is basically runnign this POC will be converted to a microse
 |           |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
 |           |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
 |           |____ 🟢 Delete default VPCs (xxxxxxxx)
+|           |
+|           |____ region: us-east-2
+|                 |     Resources:
+|                 |____ 🟢 Backup Admin Subnet (xxxxxxxx)
+|                 |____ 🟢 Backup HTTP-S Out Security Group (xxxxxxxx)
+|                 |____ 🟢 Backup IAM Subnet (xxxxxxxx)
+|                 |____ 🟢 Backup Manage Subnet (xxxxxxxx)
+|                 |____ 🟢 Backup RDP In Security Group (xxxxxxxx)
+|                 |____ 🟢 Backup SG HTTP Out Rule (xxxxxxxx)
+|                 |____ 🟢 Backup SG HTTPS Out Rule (xxxxxxxx)
+|                 |____ 🟢 Backup SSH In Security Group (xxxxxxxx)
+|                 |____ 🟢 Backup VPC Internet Gateway (xxxxxxxx)
+|                 |____ 🟢 Backup VPC Route Table (xxxxxxxx)
+|                 |____ 🟢 Backup VPC (xxxxxxxx)
+|                 |____ 🟢 Backup Work Test Subnet (xxxxxxxx)
+|                 |____ 🟢 Backup Remote access prefix list (xxxxxxxx)
+|                 |____ 🟢 Backup Admin Subnet Share (xxxxxxxx)
+|                 |____ 🟢 Backup IAM Subnet Share (xxxxxxxx)
+|                 |____ 🟢 Backup Manage Subnet Share (xxxxxxxx)
+|                 |____ 🟢 Backup Work Test Subnet Share (xxxxxxxx)
+|                 |____ 🟢 Backup SG SSH In Rule (xxxxxxxx)
+|                 |____ 🟢 Backup SG RDP In Rule (xxxxxxxx)
+|                 |____ 🟢 Backup Admin HTTP-S Out Security Group Share (xxxxxxxx)
+|                 |____ 🟢 Backup Admin SSH In Security Group Share (xxxxxxxx)
+|                 |____ 🟢 Backup Admin RDP In Security Group Share (xxxxxxxx)
+|                 |____ 🟢 Backup IAM HTTP-S Out Security Group Share (xxxxxxxx)
+|                 |____ 🟢 Backup IAM SSH In Security Group Share (xxxxxxxx)
+|                 |____ 🟢 Backup IAM RDP In Security Group Share (xxxxxxxx)
+|                 |____ 🟢 Backup Manage HTTP-S Out Security Group Share (xxxxxxxx)
+|                 |____ 🟢 Backup Manage SSH In Security Group Share (xxxxxxxx)
+|                 |____ 🟢 Backup Manage RDP In Security Group Share (xxxxxxxx)
+|                 |____ 🟢 Backup Work Test HTTP-S Out Security Group Share (xxxxxxxx)
+|                 |____ 🟢 Backup Work Test SSH In Security Group Share (xxxxxxxx)
+|                 |____ 🟢 Backup Work Test RDP In Security Group Share (xxxxxxxx)
+|                 |____ 🟢 Backup Security Group Share Permission (xxxxxxxx)
+|                 |____ 🟢 Backup Admin Network ACL (xxxxxxxx)
+|                 |____ 🟢 Backup Admin Subnet Always Block 45 In (xxxxxxxx)
+|                 |____ 🟢 Backup Admin Subnet Always Block 77 In (xxxxxxxx)
+|                 |____ 🟢 Backup Admin Subnet Always Block 78 In (xxxxxxxx)
+|                 |____ 🟢 Backup Admin Subnet Always Block 79 In (xxxxxxxx)
+|                 |____ 🟢 Backup IAM Network ACL (xxxxxxxx)
+|                 |____ 🟢 Backup IAM Subnet Always Block 77 In (xxxxxxxx)
+|                 |____ 🟢 Backup Manage Network ACL (xxxxxxxx)
+|                 |____ 🟢 Backup Work Test Network ACL (xxxxxxxx)
+|                 |____ 🟢 Backup IAM Subnet Always Block 78 In (xxxxxxxx)
+|                 |____ 🟢 Backup IAM Subnet Always Block 45 In (xxxxxxxx)
+|                 |____ 🟢 Backup IAM Subnet Always Block 79 In (xxxxxxxx)
+|                 |____ 🟢 Backup Manage Subnet Always Block 77 In (xxxxxxxx)
+|                 |____ 🟢 Backup Manage Subnet Always Block 78 In (xxxxxxxx)
+|                 |____ 🟢 Backup Manage Subnet Always Block 79 In (xxxxxxxx)
+|                 |____ 🟢 Backup Manage Subnet Always Block 45 In (xxxxxxxx)
+|                 |____ 🟢 Backup Work Test Subnet Always Block 77 In (xxxxxxxx)
+|                 |____ 🟢 Backup Work Test Subnet Always Block 45 In (xxxxxxxx)
+|                 |____ 🟢 Backup Work Test Subnet Always Block 78 In (xxxxxxxx)
+|                 |____ 🟢 Backup Work Test Subnet Always Block 79 In (xxxxxxxx)
+|                 |____ 🟢 Backup Admin Subnet RDP In (xxxxxxxx)
+|                 |____ 🟢 Backup Admin Subnet SSH In (xxxxxxxx)
+|                 |____ 🟢 Backup Admin Subnet Ephemeral In (xxxxxxxx)
+|                 |____ 🟢 Backup Admin Subnet Ephemeral Out (xxxxxxxx)
+|                 |____ 🟢 Backup Admin Subnet HTTP Out (xxxxxxxx)
+|                 |____ 🟢 Backup Admin Subnet HTTPS Out (xxxxxxxx)
+|                 |____ 🟢 Backup IAM Subnet RDP In (xxxxxxxx)
+|                 |____ 🟢 Backup IAM Subnet Ephemeral In (xxxxxxxx)
+|                 |____ 🟢 Backup IAM Subnet SSH In (xxxxxxxx)
+|                 |____ 🟢 Backup IAM Subnet Ephemeral Out (xxxxxxxx)
+|                 |____ 🟢 Backup IAM Subnet HTTP Out (xxxxxxxx)
+|                 |____ 🟢 Backup IAM Subnet HTTPS Out (xxxxxxxx)
+|                 |____ 🟢 Backup Manage Subnet RDP In (xxxxxxxx)
+|                 |____ 🟢 Backup Manage Subnet SSH In (xxxxxxxx)
+|                 |____ 🟢 Backup Manage Subnet Ephemeral In (xxxxxxxx)
+|                 |____ 🟢 Backup Manage Subnet Ephemeral Out (xxxxxxxx)
+|                 |____ 🟢 Backup Manage Subnet HTTP Out (xxxxxxxx)
+|                 |____ 🟢 Backup Manage Subnet HTTPS Out (xxxxxxxx)
+|                 |____ 🟢 Backup Work Test Subnet RDP In (xxxxxxxx)
+|                 |____ 🟢 Backup Work Test Subnet Ephemeral In (xxxxxxxx)
+|                 |____ 🟢 Backup Work Test Subnet Ephemeral Out (xxxxxxxx)
+|                 |____ 🟢 Backup Work Test Subnet SSH In (xxxxxxxx)
+|                 |____ 🟢 Backup Work Test Subnet HTTP Out (xxxxxxxx)
+|                 |____ 🟢 Backup Work Test Subnet HTTPS Out (xxxxxxxx)
+|                 |____ 🟢 KMS Backup Key Policy (xxxxxxxx)
+|                 |____ 🟢 GPG Secret Policy (xxxxxxxx)
+|                 |____ 🟢 GPG Secret (xxxxxxxx)
+|                 |____ 🟢 KMS Backup Key (xxxxxxxx)
 |
 |____ 🟢 env: deny-all
 |     |
 |     |     Environment Resources:
 |     |____ 🟢 deny-all (xxxxxxxx)
 |     |____ 🟢 SCP Deny All (xxxxxxxx)
-|     |____ 🟢 SCP Always Denied Actions (xxxxxxxx)
 |
 |____ 🟢 env: work-test
+|     |
+|     |     Environment Resources:
+|     |____ 🟢 work-test (xxxxxxxx)
+|     |____ 🟢 SCP Deny External (xxxxxxxx)
+|     |____ 🟢 SCP Allowed AMI Owners (xxxxxxxx)
+|     |
+|     |____ 🟢 account: work-test-iam
+|     |     |
+|     |     |     Resources:
+|     |     |____ 🟢 work-test-iam (xxxxxxxx)
+|     |     |____ 🟢 Iadmin user (xxxxxxxx)
+|     |     |____ 🟢 Xadmin user (xxxxxxxx)
+|     |     |____ 🟢 Pentester user (xxxxxxxx)
+|     |     |____ 🟢 Radmin role (xxxxxxxx)
+|     |     |____ 🟢 Radmin ReadOnlyAccess (xxxxxxxx)
+|     |     |____ 🟢 Radmin SecurityAudit (xxxxxxxx)
+|     |     |____ 🟢 Account alias (xxxxxxxx)
+|     |     |____ 🟢 Xadmin role (xxxxxxxx)
+|     |     |____ 🟢 Iadmin role (xxxxxxxx)
+|     |     |____ 🟢 Oadmin role (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
+|     |     |
+|     |     |____ region: us-east-2
+|     |           |     Resources:
+|     |           |____ 🟢 GPG Secret Policy (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret (xxxxxxxx)
+|     |
+|     |____ 🟢 account: work-test-kms
+|     |     |
+|     |     |     Resources:
+|     |     |____ 🟢 work-test-kms (xxxxxxxx)
+|     |     |____ 🟢 Radmin role (xxxxxxxx)
+|     |     |____ 🟢 Radmin ReadOnlyAccess (xxxxxxxx)
+|     |     |____ 🟢 Radmin SecurityAudit (xxxxxxxx)
+|     |     |____ 🟢 Account alias (xxxxxxxx)
+|     |     |____ 🟢 Xadmin role (xxxxxxxx)
+|     |     |____ 🟢 Iadmin role (xxxxxxxx)
+|     |     |____ 🟢 Oadmin role (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
+|     |     |
+|     |     |____ region: us-east-2
+|     |           |     Resources:
+|     |           |____ 🟢 KMS Jobs Key (xxxxxxxx)
+|     |           |____ 🟢 KMS Secrets Key (xxxxxxxx)
+|     |           |____ 🟢 KMS AMI Key (xxxxxxxx)
+|     |           |____ 🟢 KMS External AMI Share Key (xxxxxxxx)
+|     |           |____ 🟢 KMS AMI Key Policy (xxxxxxxx)
+|     |           |____ 🟢 KMS External AMI Share Key Policy (xxxxxxxx)
+|     |           |____ 🟢 KMS Jobs Key Policy (xxxxxxxx)
+|     |           |____ 🟢 KMS Secrets Key Policy (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret Policy (xxxxxxxx)
+|     |           |____ 🟢 KMS Data Key Policy (xxxxxxxx)
+|     |           |____ 🟢 KMS Data Key (xxxxxxxx)
+|     |
+|     |____ 🟢 account: work-test-network
+|     |     |
+|     |     |     Resources:
+|     |     |____ 🟢 work-test-network (xxxxxxxx)
+|     |     |____ 🟢 VPC Flow Logs Role (xxxxxxxx)
+|     |     |____ 🟢 Radmin role (xxxxxxxx)
+|     |     |____ 🟢 Radmin ReadOnlyAccess (xxxxxxxx)
+|     |     |____ 🟢 Radmin SecurityAudit (xxxxxxxx)
+|     |     |____ 🟢 Account alias (xxxxxxxx)
+|     |     |____ 🟢 Xadmin role (xxxxxxxx)
+|     |     |____ 🟢 Iadmin role (xxxxxxxx)
+|     |     |____ 🟢 Oadmin role (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
+|     |     |
+|     |     |____ region: us-east-2
+|     |           |     Resources:
+|     |           |____ 🟢 Remote access prefix list (xxxxxxxx)
+|     |           |____ 🟢 Auth VPC (xxxxxxxx)
+|     |           |____ 🟢 Honeypot VPC (xxxxxxxx)
+|     |           |____ 🟢 Jobs VPC (xxxxxxxx)
+|     |           |____ 🟢 Work VPC (xxxxxxxx)
+|     |           |____ 🟢 Jobs VPC Public Subnet (xxxxxxxx)
+|     |           |____ 🟢 Jobs VPC Route Table (xxxxxxxx)
+|     |           |____ 🟢 Auth VPC Route Table (xxxxxxxx)
+|     |           |____ 🟢 Work VPC Route Table (xxxxxxxx)
+|     |           |____ 🟢 Honeypot VPC Route Table (xxxxxxxx)
+|     |           |____ 🟢 Jobs VPC Internet Gateway (xxxxxxxx)
+|     |           |____ 🟢 Auth VPC Internet Gateway (xxxxxxxx)
+|     |           |____ 🟢 AMI VPC (xxxxxxxx)
+|     |           |____ 🟢 AMI VPC Route Table (xxxxxxxx)
+|     |           |____ 🟢 AMI VPC Internet Gateway (xxxxxxxx)
+|     |           |____ 🟢 AMI VPC Public Subnet (xxxxxxxx)
+|     |           |____ 🟢 AMI VPC Public Route Table (xxxxxxxx)
+|     |           |____ 🟢 AMI VPC Public Network ACL (xxxxxxxx)
+|     |           |____ 🟢 Work VPC Internet Gateway (xxxxxxxx)
+|     |           |____ 🟢 Honeypot VPC Internet Gateway (xxxxxxxx)
+|     |           |____ 🟢 Jobs VPC Public Route Table (xxxxxxxx)
+|     |           |____ 🟢 Jobs VPC Public Network ACL (xxxxxxxx)
+|     |           |____ 🟢 Jobs VPC Public Flow Logs (xxxxxxxx)
+|     |           |____ 🟢 Jobs VPC Public Route (xxxxxxxx)
+|     |           |____ 🟢 AMI VPC Public Route (xxxxxxxx)
+|     |           |____ 🟢 Work Test AMI Subnet Share (xxxxxxxx)
+|     |           |____ 🟢 Work Test AMI Prefix List Share (xxxxxxxx)
+|     |           |____ 🟢 Work Test Jobs Subnet Share (xxxxxxxx)
+|     |           |____ 🟢 AMI VPC Public Flow Logs (xxxxxxxx)
+|     |           |____ 🟢 Security Group Share Permission (xxxxxxxx)
+|     |           |____ 🟢 Work Test Jobs Auth Subnet (xxxxxxxx)
+|     |           |____ 🟢 Work Test Jobs Auth Subnet Share (xxxxxxxx)
+|     |           |____ 🟢 Work Test Sandbox Subnet (xxxxxxxx)
+|     |           |____ 🟢 Work Test Sandbox Subnet Share (xxxxxxxx)
+|     |           |____ 🟢 Work Test HTTP-S Out Security Group (xxxxxxxx)
+|     |           |____ 🟢 Work Test SSH In Security Group (xxxxxxxx)
+|     |           |____ 🟢 Work Test RDP In Security Group (xxxxxxxx)
+|     |           |____ 🟢 Work Test SG HTTP Out Rule (xxxxxxxx)
+|     |           |____ 🟢 Work Test SG HTTPS Out Rule (xxxxxxxx)
+|     |           |____ 🟢 Work Test SG SSH In Rule (xxxxxxxx)
+|     |           |____ 🟢 Work Test SG RDP In Rule (xxxxxxxx)
+|     |           |____ 🟢 Work Test AMI HTTP-S Out Security Group Share (xxxxxxxx)
+|     |           |____ 🟢 Work Test AMI SSH In Security Group Share (xxxxxxxx)
+|     |           |____ 🟢 Work Test AMI RDP In Security Group Share (xxxxxxxx)
+|     |           |____ 🟢 Work Test Jobs HTTP-S Out Security Group Share (xxxxxxxx)
+|     |           |____ 🟢 Work Test Jobs SSH In Security Group Share (xxxxxxxx)
+|     |           |____ 🟢 Work Test Jobs RDP In Security Group Share (xxxxxxxx)
+|     |           |____ 🟢 Work Test Jobs Auth HTTP-S Out Security Group Share (xxxxxxxx)
+|     |           |____ 🟢 Work Test Jobs Auth SSH In Security Group Share (xxxxxxxx)
+|     |           |____ 🟢 Work Test Jobs Auth RDP In Security Group Share (xxxxxxxx)
+|     |           |____ 🟢 Work Test Sandbox HTTP-S Out Security Group Share (xxxxxxxx)
+|     |           |____ 🟢 Work Test Sandbox SSH In Security Group Share (xxxxxxxx)
+|     |           |____ 🟢 Work Test Sandbox RDP In Security Group Share (xxxxxxxx)
+|     |           |____ 🟢 Work Test Jobs Auth Subnet HTTPS In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Jobs Auth Subnet Ephemeral Out (xxxxxxxx)
+|     |           |____ 🟢 Work Test Sandbox Subnet RDP In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Sandbox Subnet SSH In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Sandbox Subnet Ephemeral In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Sandbox Subnet Ephemeral Out (xxxxxxxx)
+|     |           |____ 🟢 Work Test Sandbox Subnet HTTP Out (xxxxxxxx)
+|     |           |____ 🟢 Work Test Sandbox Subnet HTTPS Out (xxxxxxxx)
+|     |           |____ 🟢 Work Test Burp Network ACL (xxxxxxxx)
+|     |           |____ 🟢 Work Test Burp Subnet SSH In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Burp Subnet RDP In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Burp Subnet Collab Out (xxxxxxxx)
+|     |           |____ 🟢 Work Test Burp Subnet HTTP Out (xxxxxxxx)
+|     |           |____ 🟢 Work Test Burp Subnet HTTPS Out (xxxxxxxx)
+|     |           |____ 🟢 Work Test Burp Subnet Ephemeral In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Burp Subnet Ephemeral Out (xxxxxxxx)
+|     |           |____ 🟢 Work Test Collab Network ACL (xxxxxxxx)
+|     |           |____ 🟢 Work Test Collab Subnet SSH In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Collab Subnet HTTP In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Collab Subnet HTTPS In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Collab Subnet DNS In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Collab Subnet SMTP In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Collab Subnet SMTPS In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Collab Subnet HTTP Out (xxxxxxxx)
+|     |           |____ 🟢 Work Test Collab Subnet HTTPS Out (xxxxxxxx)
+|     |           |____ 🟢 Work Test Collab Subnet Burp In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Collab Subnet Ephemeral In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Collab Subnet Ephemeral Out (xxxxxxxx)
+|     |           |____ 🟢 Work Test Collab Subnet Ephemeral UDP Out (xxxxxxxx)
+|     |           |____ 🟢 Work Test Jobs Auth Subnet Always Block 77 In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Jobs Auth Subnet Always Block 78 In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Jobs Auth Subnet Always Block 79 In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Jobs Auth Subnet Always Block 45 In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Sandbox Subnet Always Block 77 In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Sandbox Subnet Always Block 78 In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Sandbox Subnet Always Block 79 In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Sandbox Subnet Always Block 45 In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Burp Subnet Always Block 77 In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Burp Subnet Always Block 78 In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Burp Subnet Always Block 79 In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Burp Subnet Always Block 45 In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Collab Subnet Always Block 77 In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Collab Subnet Always Block 78 In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Collab Subnet Always Block 79 In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Collab Subnet Always Block 45 In (xxxxxxxx)
+|     |           |____ 🟢 Jobs VPC Public Subnet HTTP Out (xxxxxxxx)
+|     |           |____ 🟢 AMI VPC Public Subnet RDP In (xxxxxxxx)
+|     |           |____ 🟢 AMI VPC Public Subnet SSH In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Collab Subnet (xxxxxxxx)
+|     |           |____ 🟢 Work Test Jobs Auth Network ACL (xxxxxxxx)
+|     |           |____ 🟢 Work Test Sandbox Network ACL (xxxxxxxx)
+|     |           |____ 🟢 Jobs VPC Public Subnet HTTPS Out (xxxxxxxx)
+|     |           |____ 🟢 Jobs VPC Public Subnet Ephemeral In (xxxxxxxx)
+|     |           |____ 🟢 AMI VPC Public Subnet Ephemeral In (xxxxxxxx)
+|     |           |____ 🟢 AMI VPC Public Subnet Ephemeral Out (xxxxxxxx)
+|     |           |____ 🟢 AMI VPC Public Subnet HTTP Out (xxxxxxxx)
+|     |           |____ 🟢 AMI VPC Public Subnet HTTPS Out (xxxxxxxx)
+|     |           |____ 🟢 Work Test Burp Subnet (xxxxxxxx)
+|     |           |____ 🟢 Jobs VPC Public Subnet Always Block 77 In (xxxxxxxx)
+|     |           |____ 🟢 Jobs VPC Public Subnet Always Block 78 In (xxxxxxxx)
+|     |           |____ 🟢 Jobs VPC Public Subnet Always Block 79 In (xxxxxxxx)
+|     |           |____ 🟢 Jobs VPC Public Subnet Always Block 45 In (xxxxxxxx)
+|     |           |____ 🟢 AMI VPC Public Subnet Always Block 77 In (xxxxxxxx)
+|     |           |____ 🟢 AMI VPC Public Subnet Always Block 78 In (xxxxxxxx)
+|     |           |____ 🟢 AMI VPC Public Subnet Always Block 79 In (xxxxxxxx)
+|     |           |____ 🟢 AMI VPC Public Subnet Always Block 45 In (xxxxxxxx)
+|     |           |____ 🟢 Work Test Burp SG Collab Out Rule (xxxxxxxx)
+|     |           |____ 🟢 Work Test Collab SG SSH In Rule (xxxxxxxx)
+|     |           |____ 🟢 Work Test Collab SG HTTP In Rule (xxxxxxxx)
+|     |           |____ 🟢 Work Test Collab SG HTTPS In Rule (xxxxxxxx)
+|     |           |____ 🟢 Work Test Collab SG DNS In Rule (xxxxxxxx)
+|     |           |____ 🟢 Work Test Collab SG SMTP In Rule (xxxxxxxx)
+|     |           |____ 🟢 Work Test Collab SG SMTPS In Rule (xxxxxxxx)
+|     |           |____ 🟢 Work Test Collab SG Burp In Rule (xxxxxxxx)
+|     |           |____ 🟢 Work Test Collab SG HTTP Out Rule (xxxxxxxx)
+|     |           |____ 🟢 Work Test Burp Security Group (xxxxxxxx)
+|     |           |____ 🟢 Work Test Collab Security Group (xxxxxxxx)
+|     |           |____ 🟢 Work Test Collab SG HTTPS Out Rule (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret Policy (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret (xxxxxxxx)
+|     |
+|     |____ 🟢 account: work-test-ami
+|     |     |
+|     |     |     Resources:
+|     |     |____ 🟢 work-test-ami (xxxxxxxx)
+|     |     |____ 🟢 AMI Admin Role EC2 (xxxxxxxx)
+|     |     |____ 🟢 AMI Admin Role EC2 Policy (xxxxxxxx)
+|     |     |____ 🟢 AMI Admin Role EC2 Instance Profile (xxxxxxxx)
+|     |     |____ 🟢 Radmin role (xxxxxxxx)
+|     |     |____ 🟢 Radmin ReadOnlyAccess (xxxxxxxx)
+|     |     |____ 🟢 Radmin SecurityAudit (xxxxxxxx)
+|     |     |____ 🟢 Account alias (xxxxxxxx)
+|     |     |____ 🟢 Xadmin role (xxxxxxxx)
+|     |     |____ 🟢 Iadmin role (xxxxxxxx)
+|     |     |____ 🟢 Oadmin role (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
+|     |     |
+|     |     |____ region: us-east-2
+|     |           |     Resources:
+|     |           |____ 🟢 EC2 SSH Key Secret (xxxxxxxx)
+|     |           |____ 🟢 EC2 SSH Key (xxxxxxxx)
+|     |           |____ 🟢 Work Test AMI Subnet Share Accept (xxxxxxxx)
+|     |           |____ 🟢 Work Test AMI EIP Pool Share Accept (xxxxxxxx)
+|     |           |____ 🟢 Base Amazon Linux AMI (xxxxxxxx)
+|     |           |____ 🟢 Job Dev AMI Instance (xxxxxxxx)
+|     |           |____ 🟢 Job Dev AMI (xxxxxxxx)
+|     |           |____ 🟢 Burp AMI Instance (xxxxxxxx)
+|     |           |____ 🟢 Base Ubuntu AMI (xxxxxxxx)
+|     |           |____ 🟢 Burp AMI (xxxxxxxx)
+|     |           |____ 🟢 Pentest Linux ARM Ami Instance (xxxxxxxx)
+|     |           |____ 🟢 Work Test AMI Prefix List Share Accept (xxxxxxxx)
+|     |           |____ 🟢 Collab AMI (xxxxxxxx)
+|     |           |____ 🟢 Pentest Linux ARM Ami (xxxxxxxx)
+|     |           |____ 🟢 Base Amazon Linux AMI Instance (xxxxxxxx)
+|     |           |____ 🟢 Base Ubuntu AMI Instance (xxxxxxxx)
+|     |           |____ 🟢 Collab AMI Instance (xxxxxxxx)
+|     |           |____ 🟢 AMI Artifacts S3 Bucket (xxxxxxxx)
+|     |           |____ 🟢 AMI Artifacts S3 Bucket Policy (xxxxxxxx)
+|     |           |____ 🟢 Work Test AMI RDP In Security Group Share Accept (xxxxxxxx)
+|     |           |____ 🟢 Work Test AMI SSH In Security Group Share Accept (xxxxxxxx)
+|     |           |____ 🟢 Work Test AMI HTTP-S Out Security Group Share Accept (xxxxxxxx)
+|     |           |____ 🟢 Base Ubuntu AMI Instance Secret Policy (xxxxxxxx)
+|     |           |____ 🟢 Burp AMI Instance Secret Policy (xxxxxxxx)
+|     |           |____ 🟢 Collab AMI Instance Secret Policy (xxxxxxxx)
+|     |           |____ 🟢 Base Ubuntu AMI Instance Secret (xxxxxxxx)
+|     |           |____ 🟢 Burp AMI Instance Secret (xxxxxxxx)
+|     |           |____ 🟢 Collab AMI Instance Secret (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret Policy (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret (xxxxxxxx)
+|     |           |____ 🟢 Ec2 Ssh Key Secret Policy (xxxxxxxx)
+|     |
+|     |____ 🟢 account: work-test-repo
+|     |     |
+|     |     |     Resources:
+|     |     |____ 🟢 work-test-repo (xxxxxxxx)
+|     |     |____ 🟢 Radmin role (xxxxxxxx)
+|     |     |____ 🟢 Radmin ReadOnlyAccess (xxxxxxxx)
+|     |     |____ 🟢 Radmin SecurityAudit (xxxxxxxx)
+|     |     |____ 🟢 Account alias (xxxxxxxx)
+|     |     |____ 🟢 Xadmin role (xxxxxxxx)
+|     |     |____ 🟢 Iadmin role (xxxxxxxx)
+|     |     |____ 🟢 Oadmin role (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
+|     |     |
+|     |     |____ region: us-east-2
+|     |           |     Resources:
+|     |           |____ 🟢 Code Commit Repository (xxxxxxxx)
+|     |           |____ 🟢 Work Test Jobs ECR Repository (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret Policy (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret (xxxxxxxx)
+|     |
+|     |____ 🟢 account: work-test-jobs
+|     |     |
+|     |     |     Resources:
+|     |     |____ 🟢 work-test-jobs (xxxxxxxx)
+|     |     |____ 🟢 EC2 Jobs Hacker (xxxxxxxx)
+|     |     |____ 🟢 EC2 Jobs Hacker Policy (xxxxxxxx)
+|     |     |____ 🟢 Jobs Hacker Execution Role (xxxxxxxx)
+|     |     |____ 🟢 Jobs Hacker Execution Role Policy (xxxxxxxx)
+|     |     |____ 🟢 Pentester role (xxxxxxxx)
+|     |     |____ 🟢 Pentester role policy (xxxxxxxx)
+|     |     |____ 🟢 EC2 Jobs Hacker Instance Profile (xxxxxxxx)
+|     |     |____ 🟢 Radmin role (xxxxxxxx)
+|     |     |____ 🟢 Radmin ReadOnlyAccess (xxxxxxxx)
+|     |     |____ 🟢 Radmin SecurityAudit (xxxxxxxx)
+|     |     |____ 🟢 Account alias (xxxxxxxx)
+|     |     |____ 🟢 Xadmin role (xxxxxxxx)
+|     |     |____ 🟢 Iadmin role (xxxxxxxx)
+|     |     |____ 🟢 Oadmin role (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
+|     |     |
+|     |     |____ region: us-east-2
+|     |           |     Resources:
+|     |           |____ 🟢 Work Test Jobs Subnet Share Accept (xxxxxxxx)
+|     |           |____ 🟢 Work Test Jobs EIP Pool Share Accept (xxxxxxxx)
+|     |           |____ 🟢 EC2 Jobs Hacker Parameter (xxxxxxxx)
+|     |           |____ 🟢 Pentester Secret Policy (xxxxxxxx)
+|     |           |____ 🟢 EC2 Jobs Hacker Bucket (xxxxxxxx)
+|     |           |____ 🟢 Pentester Secret (xxxxxxxx)
+|     |           |____ 🟢 EC2 Jobs Hacker Bucket Policy (xxxxxxxx)
+|     |           |____ 🟢 Work Test Jobs HTTP-S Out Security Group Share Accept (xxxxxxxx)
+|     |           |____ 🟢 Work Test Jobs RDP In Security Group Share Accept (xxxxxxxx)
+|     |           |____ 🟢 Work Test Jobs SSH In Security Group Share Accept (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret Policy (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret (xxxxxxxx)
+|     |           |____ 🟢 PJobs 2026 Bucket Policy (xxxxxxxx)
+|     |           |____ 🟢 PJobs 2026 Bucket (xxxxxxxx)
+|     |           |____ 🟢 Job GetAwsAccountIps Parameter (xxxxxxxx)
+|     |           |____ 🟢 Job GetAwsAccountIps Run Parameter (xxxxxxxx)
+|     |           |____ 🟢 Job ProwlerJfw Parameter (xxxxxxxx)
+|     |           |____ 🟢 Job ProwlerJfw Run Parameter (xxxxxxxx)
+|     |
+|     |____ 🟢 account: work-test-jobs-auth
+|     |     |
+|     |     |     Resources:
+|     |     |____ 🟢 work-test-jobs-auth (xxxxxxxx)
+|     |     |____ 🟢 Account alias (xxxxxxxx)
+|     |     |____ 🟢 Xadmin role (xxxxxxxx)
+|     |     |____ 🟢 Iadmin role (xxxxxxxx)
+|     |     |____ 🟢 Oadmin role (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
+|     |     |____ 🟢 Delete default VPCs (xxxxxxxx)
+|     |     |
+|     |     |____ region: us-east-2
+|     |           |     Resources:
+|     |           |____ 🟢 Work Test Jobs Auth Subnet Share Accept (xxxxxxxx)
+|     |           |____ 🟢 Work Test Jobs Auth HTTP-S Out Security Group Share Accept (xxxxxxxx)
+|     |           |____ 🟢 Work Test Jobs Auth SSH In Security Group Share Accept (xxxxxxxx)
+|     |           |____ 🟢 Work Test Jobs Auth RDP In Security Group Share Accept (xxxxxxxx)
+|     |           |____ 🟢 Work Test Jobs Auth EIP Pool Share Accept (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret Policy (xxxxxxxx)
+|     |           |____ 🟢 GPG Secret (xxxxxxxx)
+|     |
+|     |____ 🟢 account: work-test-sandbox
+|           |
+|           |     Resources:
+|           |____ 🟢 work-test-sandbox (xxxxxxxx)
+|           |____ 🟢 Account alias (xxxxxxxx)
+|           |____ 🟢 Xadmin role (xxxxxxxx)
+|           |____ 🟢 Iadmin role (xxxxxxxx)
+|           |____ 🟢 Oadmin role (xxxxxxxx)
+|           |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
+|           |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
+|           |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
+|           |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
+|           |____ 🟢 Delete default VPCs (xxxxxxxx)
+|           |
+|           |____ region: us-east-2
+|                 |     Resources:
+|                 |____ 🟢 Work Test Sandbox Subnet Share Accept (xxxxxxxx)
+|                 |____ 🟢 Work Test Sandbox HTTP-S Out Security Group Share Accept (xxxxxxxx)
+|                 |____ 🟢 Work Test Sandbox SSH In Security Group Share Accept (xxxxxxxx)
+|                 |____ 🟢 Work Test Sandbox RDP In Security Group Share Accept (xxxxxxxx)
+|                 |____ 🟢 Work Test Sandbox EIP Pool Share Accept (xxxxxxxx)
+|                 |____ 🟢 GPG Secret (xxxxxxxx)
+|                 |____ 🟢 GPG Secret Policy (xxxxxxxx)
+|
+|____ 🟢 env: domains-test
       |
       |     Environment Resources:
-      |____ 🟢 work-test (xxxxxxxx)
+      |____ 🟢 domains-test (xxxxxxxx)
       |____ 🟢 SCP Deny External (xxxxxxxx)
-      |
-      |____ 🟢 account: work-test-iam
-      |     |
-      |     |     Resources:
-      |     |____ 🟢 work-test-iam (xxxxxxxx)
-      |     |____ 🟢 Iadmin user (xxxxxxxx)
-      |     |____ 🟢 Xadmin user (xxxxxxxx)
-      |     |____ 🟢 Pentester user (xxxxxxxx)
-      |     |____ 🟢 Move account to OU (xxxxxxxx)
-      |     |____ 🟢 Account alias (xxxxxxxx)
-      |     |____ 🟢 Xadmin role (xxxxxxxx)
-      |     |____ 🟢 Iadmin role (xxxxxxxx)
-      |     |____ 🟢 Oadmin role (xxxxxxxx)
-      |     |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
-      |     |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
-      |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
-      |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
-      |     |____ 🟢 Delete default VPCs (xxxxxxxx)
-      |
-      |____ 🟢 account: work-test-kms
-      |     |
-      |     |     Resources:
-      |     |____ 🟢 work-test-kms (xxxxxxxx)
-      |     |____ 🟢 Move account to OU (xxxxxxxx)
-      |     |____ 🟢 Account alias (xxxxxxxx)
-      |     |____ 🟢 Xadmin role (xxxxxxxx)
-      |     |____ 🟢 Iadmin role (xxxxxxxx)
-      |     |____ 🟢 Oadmin role (xxxxxxxx)
-      |     |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
-      |     |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
-      |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
-      |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
-      |     |____ 🟢 Delete default VPCs (xxxxxxxx)
-      |     |
-      |     |____ region: us-east-2
-      |           |     Resources:
-      |           |____ 🟢 KMS Jobs Key (xxxxxxxx)
-      |           |____ 🟢 KMS Secrets Key (xxxxxxxx)
-      |           |____ 🟢 KMS AMI Key (xxxxxxxx)
-      |           |____ 🟢 KMS External AMI Share Key (xxxxxxxx)
-      |           |____ 🟢 KMS AMI Key Policy (xxxxxxxx)
-      |           |____ 🟢 KMS External AMI Share Key Policy (xxxxxxxx)
-      |           |____ 🟢 KMS Jobs Key Policy (xxxxxxxx)
-      |           |____ 🟢 KMS Secrets Key Policy (xxxxxxxx)
-      |
-      |____ 🟢 account: work-test-network
-      |     |
-      |     |     Resources:
-      |     |____ 🟢 work-test-network (xxxxxxxx)
-      |     |____ 🟢 VPC Flow Logs Role (xxxxxxxx)
-      |     |____ 🟢 Move account to OU (xxxxxxxx)
-      |     |____ 🟢 Account alias (xxxxxxxx)
-      |     |____ 🟢 Xadmin role (xxxxxxxx)
-      |     |____ 🟢 Iadmin role (xxxxxxxx)
-      |     |____ 🟢 Oadmin role (xxxxxxxx)
-      |     |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
-      |     |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
-      |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
-      |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
-      |     |____ 🟢 Delete default VPCs (xxxxxxxx)
-      |     |
-      |     |____ region: us-east-2
-      |           |     Resources:
-      |           |____ 🟢 Remote access prefix list (xxxxxxxx)
-      |           |____ 🟢 Auth VPC (xxxxxxxx)
-      |           |____ 🟢 Backup VPC (xxxxxxxx)
-      |           |____ 🟢 Honeypot VPC (xxxxxxxx)
-      |           |____ 🟢 Jobs VPC (xxxxxxxx)
-      |           |____ 🟢 Work VPC (xxxxxxxx)
-      |           |____ 🟢 Jobs VPC Public Subnet (xxxxxxxx)
-      |           |____ 🟢 Auth VPC Public Subnet (xxxxxxxx)
-      |           |____ 🟢 Backup VPC Private Subnet (xxxxxxxx)
-      |           |____ 🟢 Jobs VPC Route Table (xxxxxxxx)
-      |           |____ 🟢 Auth VPC Route Table (xxxxxxxx)
-      |           |____ 🟢 Work VPC Route Table (xxxxxxxx)
-      |           |____ 🟢 Honeypot VPC Route Table (xxxxxxxx)
-      |           |____ 🟢 Backup VPC Route Table (xxxxxxxx)
-      |           |____ 🟢 Work VPC Public Subnet (xxxxxxxx)
-      |           |____ 🟢 Honeypot VPC Public Subnet (xxxxxxxx)
-      |           |____ 🟢 Backup VPC Public Subnet (xxxxxxxx)
-      |           |____ 🟢 Jobs VPC Internet Gateway (xxxxxxxx)
-      |           |____ 🟢 Auth VPC Internet Gateway (xxxxxxxx)
-      |           |____ 🟢 AMI VPC (xxxxxxxx)
-      |           |____ 🟢 AMI VPC Route Table (xxxxxxxx)
-      |           |____ 🟢 AMI VPC Internet Gateway (xxxxxxxx)
-      |           |____ 🟢 AMI VPC Public Subnet (xxxxxxxx)
-      |           |____ 🟢 Backup VPC Internet Gateway (xxxxxxxx)
-      |           |____ 🟢 Work VPC Public Network ACL (xxxxxxxx)
-      |           |____ 🟢 Honeypot VPC Public Route Table (xxxxxxxx)
-      |           |____ 🟢 Honeypot VPC Public Network ACL (xxxxxxxx)
-      |           |____ 🟢 Backup VPC Public Route Table (xxxxxxxx)
-      |           |____ 🟢 Backup VPC Public Network ACL (xxxxxxxx)
-      |           |____ 🟢 AMI VPC Public Route Table (xxxxxxxx)
-      |           |____ 🟢 AMI VPC Public Network ACL (xxxxxxxx)
-      |           |____ 🟢 Work VPC Internet Gateway (xxxxxxxx)
-      |           |____ 🟢 Honeypot VPC Internet Gateway (xxxxxxxx)
-      |           |____ 🟢 Jobs VPC Public Route Table (xxxxxxxx)
-      |           |____ 🟢 Jobs VPC Public Network ACL (xxxxxxxx)
-      |           |____ 🟢 Auth VPC Public Route Table (xxxxxxxx)
-      |           |____ 🟢 Auth VPC Public Network ACL (xxxxxxxx)
-      |           |____ 🟢 Work VPC Public Route Table (xxxxxxxx)
-      |           |____ 🟢 Auth VPC Public Flow Logs (xxxxxxxx)
-      |           |____ 🟢 Jobs VPC Public Flow Logs (xxxxxxxx)
-      |           |____ 🟢 Jobs VPC Public Route (xxxxxxxx)
-      |           |____ 🟢 Auth VPC Public Route (xxxxxxxx)
-      |           |____ 🟢 Honeypot VPC Public Route (xxxxxxxx)
-      |           |____ 🟢 Backup VPC Public Route (xxxxxxxx)
-      |           |____ 🟢 Work VPC Public Route (xxxxxxxx)
-      |           |____ 🟢 AMI VPC Public Route (xxxxxxxx)
-      |           |____ 🟢 Work VPC Public Flow Logs (xxxxxxxx)
-      |           |____ 🟢 Work Test AMI Subnet Share (xxxxxxxx)
-      |           |____ 🟢 Work Test AMI Prefix List Share (xxxxxxxx)
-      |           |____ 🟢 Work Test Jobs Subnet Share (xxxxxxxx)
-      |           |____ 🟢 Honeypot VPC Public Flow Logs (xxxxxxxx)
-      |           |____ 🟢 Backup VPC Public Flow Logs (xxxxxxxx)
-      |           |____ 🟢 AMI VPC Public Flow Logs (xxxxxxxx)
-      |
-       |____ 🟡 account: work-test-ami
-      |     |
-      |     |     Resources:
-      |     |____ 🟢 work-test-ami (xxxxxxxx)
-      |     |____ 🟢 AMI Admin Role EC2 (xxxxxxxx)
-      |     |____ 🟢 AMI Admin Role EC2 Policy (xxxxxxxx)
-      |     |____ 🟢 AMI Admin Role EC2 Instance Profile (xxxxxxxx)
-      |     |____ 🟢 Move account to OU (xxxxxxxx)
-      |     |____ 🟢 Account alias (xxxxxxxx)
-      |     |____ 🟢 Xadmin role (xxxxxxxx)
-      |     |____ 🟢 Iadmin role (xxxxxxxx)
-      |     |____ 🟢 Oadmin role (xxxxxxxx)
-      |     |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
-      |     |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
-      |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
-      |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
-      |     |____ 🟢 Delete default VPCs (xxxxxxxx)
-      |     |
-      |     |____ region: us-east-2
-      |           |     Resources:
-      |           |____ 🟢 EC2 SSH Key Secret (xxxxxxxx)
-      |           |____ 🟢 EC2 SSH Key (xxxxxxxx)
-      |           |____ 🟢 Work Test AMI Subnet Share Accept (xxxxxxxx)
-      |           |____ 🟢 Work Test AMI EIP Pool Share Accept (xxxxxxxx)
-      |           |____ 🔴 Base Amazon Linux AMI
-      |           |____ 🟢 Job Dev AMI Instance (xxxxxxxx)
-      |           |____ 🔴 Job Dev AMI
-      |           |____ 🟢 Burp AMI Instance (xxxxxxxx)
-      |           |____ 🔴 Base Ubuntu AMI
-      |           |____ 🔴 Burp AMI
-      |           |____ 🟢 Pentest Linux ARM Ami Instance (xxxxxxxx)
-      |           |____ 🟢 Work Test AMI Prefix List Share Accept (xxxxxxxx)
-      |           |____ 🔴 Collab AMI
-      |           |____ 🔴 Pentest Linux ARM Ami
-      |           |____ 🟢 Base Amazon Linux AMI Instance (xxxxxxxx)
-      |           |____ 🟢 Base Ubuntu AMI Instance (xxxxxxxx)
-      |           |____ 🟢 Collab AMI Instance (xxxxxxxx)
-      |           |____ 🟢 AMI VPC HTTP-S Out Security Group (xxxxxxxx)
-      |           |____ 🟢 AMI VPC SSH In Security Group (xxxxxxxx)
-      |           |____ 🟢 AMI VPC RDP In Security Group (xxxxxxxx)
-      |           |____ 🟢 AMI VPC SG HTTP Out Rule (xxxxxxxx)
-      |           |____ 🟢 AMI VPC SG HTTPS Out Rule (xxxxxxxx)
-      |           |____ 🟢 AMI VPC SG RDP In Rule (xxxxxxxx)
-      |           |____ 🟢 AMI VPC SG SSH In Rule (xxxxxxxx)
-      |           |____ 🟢 AMI Artifacts S3 Bucket (xxxxxxxx)
-      |           |____ 🟢 AMI Artifacts S3 Bucket Policy (xxxxxxxx)
-      |
-      |____ 🟢 account: work-test-repo
-      |     |
-      |     |     Resources:
-      |     |____ 🟢 work-test-repo (xxxxxxxx)
-      |     |____ 🟢 Move account to OU (xxxxxxxx)
-      |     |____ 🟢 Account alias (xxxxxxxx)
-      |     |____ 🟢 Xadmin role (xxxxxxxx)
-      |     |____ 🟢 Iadmin role (xxxxxxxx)
-      |     |____ 🟢 Oadmin role (xxxxxxxx)
-      |     |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
-      |     |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
-      |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
-      |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
-      |     |____ 🟢 Delete default VPCs (xxxxxxxx)
-      |     |
-      |     |____ region: us-east-2
-      |           |     Resources:
-      |           |____ 🟢 Code Commit Repository (xxxxxxxx)
-      |           |____ 🟢 ECR (xxxxxxxx)
-      |
-      |____ 🟢 account: work-test-domains2
-      |     |
-      |     |     Resources:
-      |     |____ 🟢 work-test-domains2 (xxxxxxxx)
-      |     |____ 🟢 Move account to OU (xxxxxxxx)
-      |     |____ 🟢 Account alias (xxxxxxxx)
-      |     |____ 🟢 Xadmin role (xxxxxxxx)
-      |     |____ 🟢 Iadmin role (xxxxxxxx)
-      |     |____ 🟢 Oadmin role (xxxxxxxx)
-      |     |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
-      |     |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
-      |     |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
-      |     |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
-      |     |____ 🟢 Delete default VPCs (xxxxxxxx)
-      |
-      |____ 🟢 account: work-test-jobs
-            |
-            |     Resources:
-            |____ 🟢 work-test-jobs (xxxxxxxx)
-            |____ 🟢 EC2 Jobs Hacker (xxxxxxxx)
-            |____ 🟢 EC2 Jobs Hacker Policy (xxxxxxxx)
-            |____ 🟢 Jobs Hacker Execution Role (xxxxxxxx)
-            |____ 🟢 Jobs Hacker Execution Role Policy (xxxxxxxx)
-            |____ 🟢 Pentester role (xxxxxxxx)
-            |____ 🟢 Pentester role policy (xxxxxxxx)
-            |____ 🟢 EC2 Jobs Hacker Instance Profile (xxxxxxxx)
-            |____ 🟢 Move account to OU (xxxxxxxx)
-            |____ 🟢 Account alias (xxxxxxxx)
-            |____ 🟢 Xadmin role (xxxxxxxx)
-            |____ 🟢 Iadmin role (xxxxxxxx)
-            |____ 🟢 Oadmin role (xxxxxxxx)
-            |____ 🟢 Account Budget 10 Monthly (xxxxxxxx)
-            |____ 🟢 Account Budget 20 Monthly (xxxxxxxx)
-            |____ 🟢 Account Budget 40 Monthly (xxxxxxxx)
-            |____ 🟢 Account Budget 100 Monthly (xxxxxxxx)
-            |____ 🟢 Delete default VPCs (xxxxxxxx)
-            |
-            |____ region: us-east-2
-                  |     Resources:
-                  |____ 🟢 Work Test Jobs Subnet Share Accept (xxxxxxxx)
-                  |____ 🟢 Work Test Jobs EIP Pool Share Accept (xxxxxxxx)
-                  |____ 🟢 EC2 Jobs Hacker Parameter (xxxxxxxx)
-                  |____ 🟢 Pentester Secret Policy (xxxxxxxx)
-                  |____ 🟢 EC2 Jobs Hacker Bucket (xxxxxxxx)
-                  |____ 🟢 Pentester Secret (xxxxxxxx)
-                  |____ 🟢 EC2 Jobs Hacker Bucket Policy (xxxxxxxx)
 ```
 
 ## Status Summary
