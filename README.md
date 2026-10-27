@@ -988,3 +988,63 @@ https://github.com/2ndSightLab/ai-tracker/blob/main/cost.md
 
 I was tracking all this manually but now I ahve the tracker diagram above to track deployments. But notice I haven't spent much time on actually security testing or code review. I review the code as it's being writtne a lot. I have crucial pieces of code that I move to other projects and lock down and some of that has been reviewed a bit more.
 
+## Adding a staged configuration to my organization to analyze cost and configuration prior to deployment
+
+I added functionality to allow me to add a new configuration for analysis prior to deployment which I cover in this post:
+
+And I asked an agent to give me the cost of my configuration which it claims to be as follows for this network implmentation:
+
+ | Resource | Total monthly | Total usage |
+  |---|---:|---|
+  | 67 interface VPC endpoints, 1 AZ each | $489.10 (67 x $7.30) | $0.01/GB processed |
+  | 3 network firewalls, 4 AZ endpoints (hub 2, backup 1, bootstrap 1) | $1,153.40 (4 x $288.35) | $0.065/GB processed |
+  | 5 network firewall VPC endpoint associations | $576.70 (5 x $115.34) | $0.065/GB processed |
+  | 2 network firewall policies | $0.00 | $0 |
+  | 2 network firewall rule groups | $0.00 | $0 |
+  | 3 network firewall logging configurations | $0.00 | $0.50/GB to CloudWatch, $0.25/GB to S3 |
+  | 3 Route 53 Resolver endpoints, 2 ENIs each | $547.50 (6 x $91.25) | $0.40/M queries |
+  | 3 Route 53 Resolver rules | $0.00 | $0 |
+  | 3 Route 53 Resolver rule associations | $0.00 | $0 |
+  | 3 Route 53 outpost resolvers | $0.00, needs an AWS Outpost, none in config | $0 |
+  | 3 DNS firewall domain lists | $0.00 (AWS managed lists) | $0.0005/custom domain |
+  | 3 DNS firewall rule groups | $0.00 | $0 |
+  | 3 DNS firewall rules | $0.00 | $0 |
+  | 8 DNS firewall rule group associations | $0.00 | $0.60/M queries |
+  | 8 DNS firewall configs (fail closed) | $0.00 | $0 |
+  | 3 Resolver query log configs | $0.00 | $0.50/GB to CloudWatch, $0.25/GB to S3 |
+  | 8 Resolver query log config associations | $0.00 | $0 |
+  | 6 transit gateway VPC attachments | $219.00 (6 x $36.50) | $0.02/GB processed |
+  | 1 transit gateway | $0.00 | $0 |
+  | 2 transit gateway route tables | $0.00 | $0 |
+  | 6 transit gateway routes | $0.00 | $0 |
+  | 6 transit gateway route table associations | $0.00 | $0 |
+  | 2 NAT gateways | $65.70 (2 x $32.85) | $0.045/GB processed |
+  | 17 elastic IPs | $61.20 (17 x $3.60) | $0 |
+  | 0 VPC peering connections | $0.00 | $0.01/GB cross-AZ |
+  | 8 S3 gateway VPC endpoints | $0.00 | $0 |
+  | 1 IPAM | $0.00 (Free tier) | Advanced tier $0.00027/active IP/hr |
+  | 1 IPAM pool | $0.00 | $0 |
+  | 56 RAM resource shares | $0.00 | $0 |
+  | 55 RAM resource share invitations | $0.00 | $0 |
+  | 3 RAM permissions | $0.00 | $0 |
+  | 17 flow logs (16 VPC/subnet, 1 transit gateway) | $0.00 | $0.50/GB to CloudWatch, $0.25/GB to S3 |
+  | 2 security log groups | $0.00 | $0.50/GB ingest + $0.03/GB-month |
+  | 25 OAM links + 1 OAM sink, us-east-2 and us-east-1 | $0.00 | $0 |
+  | 22 private hosted zones | $11.00 (22 x $0.50) | $0.40/M queries |
+  | 3 public hosted zones | $1.50 (3 x $0.50) | $0.40/M queries |
+  | 110 hosted zone VPC associations | $0.00 | $0 |
+  | 11 resource record sets | $0.00 | $0 |
+  | 3 DNSSEC key signing keys | $0.00 | $0 |
+  | 2 DNSSEC KMS keys | $2.00 (2 x $1.00) | $0 |
+  | 8 VPCs | $0.00 | $0 |
+  | 8 internet gateways | $0.00 | $0 |
+  | 31 subnets | $0.00 | $0 |
+  | 22 route tables | $0.00 | $0 |
+  | 15 route table associations | $0.00 | $0 |
+  | 49 routes | $0.00 | $0 |
+  | 17 network ACLs | $0.00 | $0 |
+  | 104 network ACL entries | $0.00 | $0 |
+  | 27 security groups | $0.00 | $0 |
+  | 6 managed prefix lists | $0.00 | $0 |
+  | **TOTAL** | **$3,127.10 /month** | GB and query rates above x usage |
+
